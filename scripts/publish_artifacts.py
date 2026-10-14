@@ -13,6 +13,7 @@ import re
 import ssl
 import subprocess
 import sys
+import time
 from urllib.error import HTTPError, URLError
 from urllib.parse import quote, urlencode, urlsplit
 from urllib.request import Request, urlopen
@@ -34,7 +35,14 @@ def read_json(path: Path):
 def write_json(path: Path, value) -> None:
     temporary = path.with_suffix(path.suffix + ".tmp")
     temporary.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    os.replace(temporary, path)
+    for attempt in range(7):
+        try:
+            os.replace(temporary, path)
+            return
+        except PermissionError:
+            if attempt == 6:
+                raise
+            time.sleep(min(0.25 * (2 ** attempt), 4))
 
 
 def sha256_file(path: Path) -> str:
@@ -199,12 +207,67 @@ def asset_name(kind: str, key: str, record: dict, digest: str, extension: str) -
     return f"{identity}-{digest[:12]}.{extension}"
 
 
+def reconcile(token: str, kind: str, snapshot_id: str, rows: list[tuple[str, dict]], manifest_path: Path, states: dict, extension: str, keep_local: bool) -> int:
+    releases: dict[str, tuple[dict | None, dict[str, dict]]] = {}
+    repaired = 0
+    for index, (key, catalog_row) in enumerate(rows):
+        state = states.get(key, {})
+        if state.get("status") == "uploaded" and state.get("remote_url"):
+            continue
+        digest = state.get("sha256")
+        size = state.get("bytes")
+        if not digest or size is None:
+            continue
+        tag = f"{kind}-{snapshot_id[:10].lower()}-{index // MAX_ASSETS_PER_RELEASE + 1:04d}"
+        if tag not in releases:
+            release = get_release(token, tag)
+            assets = release_assets(token, release["id"]) if release else {}
+            releases[tag] = (release, assets)
+        release, assets = releases[tag]
+        name = asset_name(kind, key, {**catalog_row, **state}, str(digest), extension)
+        remote = assets.get(name)
+        if remote is None:
+            continue
+        remote_digest = str(remote.get("digest") or "").removeprefix("sha256:").lower()
+        if remote_digest != str(digest).lower() or int(remote.get("size", -1)) != int(size):
+            print(f"Remote asset found but digest or size differs. Kept local state for {key}", file=sys.stderr)
+            continue
+        relative_path = state.get("storage_path")
+        local = (ROOT / Path(relative_path)).resolve() if relative_path else None
+        if local and local.exists():
+            if not local.is_relative_to(ROOT / "archive") or local.stat().st_size != int(size) or sha256_file(local) != digest:
+                raise GitHubError(f"Local file does not match the verified remote artifact. It was left intact: {local}")
+        updated = {
+            **catalog_row,
+            **state,
+            "status": "uploaded",
+            "remote_repo": REPOSITORY,
+            "remote_tag": tag,
+            "remote_asset_name": name,
+            "remote_url": remote["browser_download_url"],
+            "remote_sha256": remote_digest,
+            "remote_asset_id": remote["id"],
+            "uploaded_at": remote.get("updated_at"),
+            "storage_path": None,
+            "local_deleted": not keep_local,
+        }
+        states[key] = updated
+        write_json(manifest_path, states)
+        if local and local.exists() and not keep_local:
+            local.unlink()
+        repaired += 1
+        print(f"Reconciled {kind} {key} against the remote SHA-256", flush=True)
+    print(f"Reconciled {repaired} {kind} assets. Manifest: {manifest_path}")
+    return repaired
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--snapshot", help="snapshot id, defaults to the current snapshot")
     parser.add_argument("--kind", choices=("plugins", "virions", "sources"), required=True)
     parser.add_argument("--limit", type=int, default=0, help="maximum new uploads, 0 means all available")
     parser.add_argument("--keep-local", action="store_true", help="verify remote assets but keep local files")
+    parser.add_argument("--reconcile", action="store_true", help="restore manifest links for existing remote assets")
     args = parser.parse_args()
 
     if args.snapshot:
@@ -217,6 +280,9 @@ def main() -> int:
     manifest_path, rows, extension = manifest_setup(snapshot_dir, args.kind)
     states = read_json(manifest_path) if manifest_path.exists() else {}
     token = get_token()
+    if args.reconcile:
+        reconcile(token, args.kind, snapshot_id, rows, manifest_path, states, extension, args.keep_local)
+        return 0
     release_cache: dict[str, tuple[dict, dict[str, dict]]] = {}
     completed = 0
     unavailable = 0

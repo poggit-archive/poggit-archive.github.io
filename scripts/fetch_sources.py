@@ -136,12 +136,14 @@ def main() -> int:
     publishable_since_sync = 0
 
     def publish_ready() -> None:
+        nonlocal progress
         if args.publish_every <= 0:
             return
         subprocess.run(
             [sys.executable, str(ROOT / "scripts" / "publish_artifacts.py"), "--kind", "sources", "--snapshot", args.snapshot or source_map["snapshot_id"]],
             check=True,
         )
+        progress = json.loads(progress_path.read_text(encoding="utf-8"))
 
     for index, job in enumerate(pending, 1):
         target = root / safe_slug(str(job.get("repo_id") or job["repo_name"])) / f"{job['commit'].lower()}.zip"

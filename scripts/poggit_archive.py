@@ -182,7 +182,14 @@ def write_json(path: Path, value: object) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     temporary = path.with_suffix(path.suffix + ".tmp")
     temporary.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    temporary.replace(path)
+    for attempt in range(7):
+        try:
+            temporary.replace(path)
+            return
+        except PermissionError:
+            if attempt == 6:
+                raise
+            time.sleep(min(0.25 * (2 ** attempt), 4))
 
 
 def sha256_file(path: Path) -> str:
@@ -418,12 +425,14 @@ def download(args: argparse.Namespace) -> int:
     publishable_since_sync = 0
 
     def publish_ready() -> None:
+        nonlocal states
         if args.publish_every <= 0:
             return
         subprocess.run(
             [sys.executable, str(ROOT / "scripts" / "publish_artifacts.py"), "--kind", args.kind, "--snapshot", args.snapshot or summary["snapshot_id"]],
             check=True,
         )
+        states = json.loads(status_path.read_text(encoding="utf-8"))
 
     for index, record in enumerate(selected, 1):
         previous = states.get(record["id"], {})
