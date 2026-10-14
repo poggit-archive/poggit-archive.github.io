@@ -246,7 +246,7 @@
       render();
     } catch (error) {
       const notice = $("#error");
-      notice.textContent = `Could not load the saved catalog. ${error.message}. Open this site through a local web server because browser security blocks data files opened directly from disk.`;
+      notice.textContent = `Could not load the saved catalog. ${error.message}. Open this site through a local web server because browser security blocks data files opened directly from disk.`.replace(/[\u2013\u2014]/g, "-");
       notice.classList.remove("hidden");
       $("#results-count").textContent = "Catalog unavailable";
       results.replaceChildren();

@@ -77,12 +77,13 @@ The public catalog is hosted at <https://poggit-archive.github.io/>. Original PH
 
 The API is versioned and immutable by snapshot:
 
-- `data/api/v1/current.json` — latest snapshot pointer
-- `data/snapshots/<snapshot-id>/releases.json` — all Poggit release rows in that snapshot
-- `data/snapshots/<snapshot-id>/virions.json` — parsed entries from the ranked top-300 virion page
-- `data/snapshots/<snapshot-id>/sources.json` — unique GitHub repositories and observed build commits
-- `data/snapshots/<snapshot-id>/downloads-plugins.json` / `downloads-virions.json` — local download state and SHA-256
-- `data/snapshots/<snapshot-id>/source-downloads.json` — exact source commits, verified ZIP URLs, and SHA-256
+- `data/api/v1/current.json` - latest snapshot pointer
+- `data/snapshots/<snapshot-id>/releases.json` - all Poggit release rows in that snapshot
+- `data/snapshots/<snapshot-id>/virions.json` - parsed entries from the ranked top-300 virion page
+- `data/snapshots/<snapshot-id>/sources.json` - unique GitHub repositories and observed build commits
+- `data/snapshots/<snapshot-id>/downloads-plugins.json` - plugin artifact state and SHA-256
+- `data/snapshots/<snapshot-id>/downloads-virions.json` - virion artifact state and SHA-256
+- `data/snapshots/<snapshot-id>/source-downloads.json` - exact source commits, verified ZIP URLs, and SHA-256
 
 The browser links to a verified GitHub release asset when one is available, otherwise it points to the original Poggit artifact. Source ZIP URLs and full hashes are exposed through the source download manifest.
 
