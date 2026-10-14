@@ -73,6 +73,8 @@ python -m http.server 8000
 
 Open `http://localhost:8000/`. `file://` preview does not work because browsers block JSON fetches from local files.
 
+The public catalog is hosted at <https://poggit-archive.github.io/>. Original PHAR and source ZIP assets are stored in <https://github.com/poggit-archive/artifacts> releases.
+
 The API is versioned and immutable by snapshot:
 
 - `data/api/v1/current.json` — latest snapshot pointer
