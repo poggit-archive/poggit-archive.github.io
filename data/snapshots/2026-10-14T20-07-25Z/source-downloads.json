@@ -1,0 +1,27 @@
+{
+  "100204385@62ce75df3d0ac0fa11f4224ad7a79b964d281aa5": {
+    "key": "100204385@62ce75df3d0ac0fa11f4224ad7a79b964d281aa5",
+    "repo_id": 100204385,
+    "repo_name": "SuperKali/CustomBar",
+    "commit": "62ce75df3d0ac0fa11f4224ad7a79b964d281aa5",
+    "source_url": "https://github.com/SuperKali/CustomBar",
+    "candidates": [],
+    "status": "uploaded",
+    "bytes": 12145,
+    "sha256": "3c2d95a4f2cb3b5df66b4c958ba43565fa34348cf939bce88e37b640a6e1aab1",
+    "final_url": "https://github.com/SuperKali/CustomBar/archive/62ce75df3d0ac0fa11f4224ad7a79b964d281aa5.zip",
+    "storage_path": null,
+    "provider": "SuperKali/CustomBar",
+    "tried": [
+      "SuperKali/CustomBar"
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-100204385-62ce75df3d0ac0fa11f4224ad7a79b964d281aa5-3c2d95a4f2cb.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-100204385-62ce75df3d0ac0fa11f4224ad7a79b964d281aa5-3c2d95a4f2cb.zip",
+    "remote_sha256": "3c2d95a4f2cb3b5df66b4c958ba43565fa34348cf939bce88e37b640a6e1aab1",
+    "remote_asset_id": 641605836,
+    "uploaded_at": "2026-10-14T20:42:21Z",
+    "local_deleted": true
+  }
+}

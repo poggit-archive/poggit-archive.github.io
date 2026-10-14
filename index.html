@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="An independent archive of PocketMine-MP plugins and virions listed on Poggit.">
+    <title>Poggit Archive</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./">Poggit Archive</a>
+      <p id="snapshot-label" class="snapshot-label">Loading snapshot</p>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <h1 id="page-title">Plugins and virions</h1>
+        <p>A read-only archive of entries listed on Poggit. This independent project preserves available metadata and files.</p>
+      </section>
+
+      <section class="catalog" aria-label="Catalog">
+        <div class="catalog-tools">
+          <div class="tabs" role="tablist" aria-label="Catalog type">
+            <button class="tab active" id="tab-plugins" role="tab" aria-selected="true" aria-controls="results" data-kind="plugins">Plugins <span id="plugins-tab-count"></span></button>
+            <button class="tab" id="tab-virions" role="tab" aria-selected="false" aria-controls="results" data-kind="virions">Virions <span id="virions-tab-count"></span></button>
+          </div>
+          <label class="search-field">
+            <span class="sr-only">Search plugins and virions</span>
+            <input id="search" type="search" placeholder="Search plugins and virions" autocomplete="off" aria-label="Search plugins and virions">
+          </label>
+        </div>
+
+        <p id="results-count" class="results-count" aria-live="polite">Loading catalog</p>
+        <div id="error" class="error hidden" role="alert"></div>
+        <div id="results" class="results" role="tabpanel" aria-labelledby="tab-plugins"></div>
+        <nav class="pagination" aria-label="Catalog pages">
+          <button id="prev-page" class="page-button" type="button" disabled>Previous</button>
+          <span id="page-label">Page 1</span>
+          <button id="next-page" class="page-button" type="button" disabled>Next</button>
+        </nav>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Independent community archive</span>
+      <nav aria-label="Archive links">
+        <a href="data/api/v1/current.json" target="_blank" rel="noreferrer">API index</a>
+        <a href="https://github.com/poggit-archive" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://poggit.pmmp.io/" target="_blank" rel="noreferrer">Poggit</a>
+      </nav>
+    </footer>
+  </body>
+</html>

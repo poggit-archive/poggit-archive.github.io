@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+
+# Large binary mirrors are kept outside Git's normal source tree.
+/archive/
+/data/downloads/
+/data/pm-pl-raw.json
+

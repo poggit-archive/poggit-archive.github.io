@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "snapshot_id": "2026-10-14T20-07-25Z",
+  "captured_at": "2026-10-14T20:07:25Z",
+  "files": {
+    "summary": "../../snapshots/2026-10-14T20-07-25Z/summary.json",
+    "releases": "../../snapshots/2026-10-14T20-07-25Z/releases.json",
+    "virions": "../../snapshots/2026-10-14T20-07-25Z/virions.json",
+    "sources": "../../snapshots/2026-10-14T20-07-25Z/sources.json",
+    "downloads_plugins": "../../snapshots/2026-10-14T20-07-25Z/downloads-plugins.json",
+    "downloads_virions": "../../snapshots/2026-10-14T20-07-25Z/downloads-virions.json",
+    "source_downloads": "../../snapshots/2026-10-14T20-07-25Z/source-downloads.json"
+  }
+}

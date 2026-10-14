@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "snapshot_id": "2026-10-14T20-07-25Z",
+  "captured_at": "2026-10-14T20:07:25Z",
+  "source": "Poggit public read-only endpoints",
+  "source_endpoints": {
+    "plugins": "https://poggit.pmmp.io/releases.json",
+    "virions": "https://poggit.pmmp.io/v?top=300"
+  },
+  "counts": {
+    "plugin_release_rows": 5021,
+    "plugin_projects": 1450,
+    "plugin_artifact_urls": 5021,
+    "virion_entries": 265,
+    "virion_entries_with_reported_version": 238
+  },
+  "sha256": {
+    "releases.json": "3069fdf59912070110e8f2a0e8ee05559dbeb5af9eb0e864ef4e2fa4767dc1da",
+    "virions.json": "e7496b15b7d6023c0c7eda888adaf3dee8e33ae88690b00309cc83a0b365c0fa",
+    "virions-top.html": "2a7d7ca8935f99ae768cd0d8c002279aec98ae2b42237ca1e7c730c1e784fd2a"
+  },
+  "notes": [
+    "Poggit release index contains approved plugin release versions, not hidden or rejected submissions.",
+    "Virions are the visible top-300 ranked page only; it is not a complete registry export.",
+    "Artifact downloads remain pending until independently fetched and hashed."
+  ]
+}
