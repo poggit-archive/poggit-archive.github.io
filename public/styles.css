@@ -70,7 +70,7 @@ main { min-height: calc(100vh - 130px); }
 .tab.active::after { position: absolute; right: 0; bottom: -1px; left: 0; height: 2px; background: var(--text); content: ""; }
 .search-controls { display: flex; width: min(650px, 68%); gap: 6px; margin-bottom: 4px; }
 .search-field { width: auto; min-width: 0; flex: 1 1 auto; }
-.search-field input { width: 100%; min-height: 40px; padding: 8px 40px 8px 12px; border: 1px solid #b8b8b8; border-radius: 0; background: #fff; accent-color: var(--text); font-size: 13px; }
+.search-field input { width: 100%; min-height: 34px; padding: 6px 40px 6px 12px; border: 1px solid #b8b8b8; border-radius: 0; background: #fff; accent-color: var(--text); font-size: 13px; }
 .search-field input:hover { border-color: #888; }
 .search-field input::placeholder { color: var(--muted); }
 .search-field input:focus-visible { border-color: var(--text); outline-offset: 1px; }
@@ -78,7 +78,7 @@ main { min-height: calc(100vh - 130px); }
 .search-mode { position: relative; display: block; flex: 0 0 104px; }
 .search-mode.is-open { z-index: 30; }
 .search-mode-trigger, .api-filter-trigger, .version-trigger { border: 1px solid #b8b8b8; border-radius: 0; background: #fff; color: var(--text); cursor: pointer; font: inherit; font-size: 13px; text-align: left; }
-.search-mode-trigger, .api-filter-trigger { display: flex; width: 100%; min-height: 40px; align-items: center; justify-content: space-between; gap: 12px; padding: 0 10px; }
+.search-mode-trigger, .api-filter-trigger { display: flex; width: 100%; min-height: 34px; align-items: center; justify-content: space-between; gap: 12px; padding: 0 10px; }
 .search-mode-trigger:hover, .api-filter-trigger:hover, .version-trigger:hover { border-color: #888; }
 .search-mode-trigger:focus-visible, .api-filter-trigger:focus-visible, .version-trigger:focus-visible { border-color: var(--text); outline-offset: 1px; }
 .search-mode-caret { width: 6px; height: 6px; flex: 0 0 auto; margin-top: -3px; transform: rotate(45deg); border-right: 1px solid currentColor; border-bottom: 1px solid currentColor; }
