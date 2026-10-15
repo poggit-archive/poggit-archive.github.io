@@ -39,6 +39,21 @@
     }).format(parsed);
   }
 
+  function versionDate(value) {
+    const parsed = new Date(Number(value) * 1000);
+    if (!Number.isFinite(parsed.getTime())) return "Date unknown";
+    return new Intl.DateTimeFormat("en-GB", {
+      day: "numeric",
+      month: "short",
+      year: "numeric",
+      timeZone: "UTC",
+    }).format(parsed);
+  }
+
+  function versionOptionLabel(release) {
+    return `${release.version || "Version unknown"} (${versionDate(release.submission_date)}) ${release.state_name || "Status unknown"}`;
+  }
+
   function snapshotDate(value) {
     const parsed = new Date(value);
     if (!Number.isFinite(parsed.getTime())) return value || "unknown date";
@@ -159,24 +174,78 @@
     });
   }
 
+  function closeVersionControl(control, restoreFocus = false) {
+    const trigger = control.querySelector(".version-trigger");
+    const menu = control.querySelector(".version-menu");
+    control.classList.remove("is-open");
+    trigger.setAttribute("aria-expanded", "false");
+    menu.hidden = true;
+    menu.classList.remove("opens-up");
+    if (restoreFocus) trigger.focus();
+  }
+
   function renderVersionControl(project, selected, title, onChange) {
-    const label = element("label", "version-control");
-    label.append(element("span", "version-label", "Version"));
-    const select = document.createElement("select");
-    select.setAttribute("aria-label", `Version for ${title}`);
+    const control = element("div", "version-control");
+    const label = element("span", "version-label", "Version");
+    const trigger = document.createElement("button");
+    trigger.type = "button";
+    trigger.className = "version-trigger";
+    trigger.setAttribute("aria-label", `Version for ${title}: ${versionOptionLabel(selected)}`);
+    trigger.setAttribute("aria-expanded", "false");
+    const currentVersion = element("span", "version-current", versionOptionLabel(selected));
+    const caret = element("span", "version-caret");
+    caret.setAttribute("aria-hidden", "true");
+    trigger.append(currentVersion, caret);
+
+    const menu = element("div", "version-menu");
+    menu.id = `versions-${project.key.replace(/[^\w-]/g, "-")}`;
+    menu.setAttribute("role", "group");
+    menu.setAttribute("aria-label", `Versions for ${title}`);
+    menu.hidden = true;
+    trigger.setAttribute("aria-controls", menu.id);
+
     for (const release of project.releases) {
-      const option = document.createElement("option");
-      option.value = String(release.id);
-      option.textContent = release.version || "Version unknown";
-      select.append(option);
+      const option = document.createElement("button");
+      option.type = "button";
+      option.className = "version-option";
+      option.setAttribute("aria-current", String(String(release.id) === String(selected.id)));
+      option.append(
+        element("span", "version-option-name", release.version || "Version unknown"),
+        element("span", "version-option-date", versionDate(release.submission_date)),
+        element("span", "version-option-state", release.state_name || "Status unknown"),
+      );
+      option.addEventListener("click", () => {
+        currentVersion.textContent = versionOptionLabel(release);
+        trigger.setAttribute("aria-label", `Version for ${title}: ${versionOptionLabel(release)}`);
+        menu.querySelectorAll(".version-option").forEach((entry) => entry.setAttribute("aria-current", "false"));
+        option.setAttribute("aria-current", "true");
+        closeVersionControl(control);
+        onChange(release);
+        trigger.focus();
+      });
+      menu.append(option);
     }
-    select.value = String(selected.id);
-    select.addEventListener("change", () => {
-      const release = project.releases.find((candidate) => String(candidate.id) === select.value);
-      if (release) onChange(release);
+
+    trigger.addEventListener("click", () => {
+      if (control.classList.contains("is-open")) {
+        closeVersionControl(control);
+        return;
+      }
+      document.querySelectorAll(".version-control.is-open").forEach((openControl) => closeVersionControl(openControl));
+      menu.hidden = false;
+      const below = window.innerHeight - trigger.getBoundingClientRect().bottom;
+      menu.classList.toggle("opens-up", below < Math.min(menu.scrollHeight, 280) + 8);
+      control.classList.add("is-open");
+      trigger.setAttribute("aria-expanded", "true");
+      const active = menu.querySelector('[aria-current="true"]') || menu.querySelector(".version-option");
+      active?.focus();
     });
-    label.append(select);
-    return label;
+
+    control.addEventListener("focusout", (event) => {
+      if (!control.contains(event.relatedTarget)) closeVersionControl(control);
+    });
+    control.append(label, trigger, menu);
+    return control;
   }
 
   function renderRow(entry) {
@@ -326,6 +395,19 @@
 
   document.querySelectorAll(".tab").forEach((tab) => {
     tab.addEventListener("click", () => setKind(tab.dataset.kind));
+  });
+  document.addEventListener("click", (event) => {
+    document.querySelectorAll(".version-control.is-open").forEach((control) => {
+      if (!control.contains(event.target)) closeVersionControl(control);
+    });
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape") return;
+    const control = document.querySelector(".version-control.is-open");
+    if (control) {
+      event.preventDefault();
+      closeVersionControl(control, true);
+    }
   });
   $("#search").addEventListener("input", (event) => {
     state.query = event.target.value;
