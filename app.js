@@ -51,7 +51,7 @@
   }
 
   function versionOptionLabel(release) {
-    return `${release.version || "Version unknown"} (${versionDate(release.submission_date)}) ${release.state_name || "Status unknown"}`;
+    return `${release.version || "Version unknown"} (${versionDate(release.submission_date)})`;
   }
 
   function cleanText(value) {
@@ -225,7 +225,6 @@
       option.append(
         element("span", "version-option-name", release.version || "Version unknown"),
         element("span", "version-option-date", versionDate(release.submission_date)),
-        element("span", "version-option-state", release.state_name || "Status unknown"),
       );
       option.addEventListener("click", () => {
         currentVersion.textContent = versionOptionLabel(release);
