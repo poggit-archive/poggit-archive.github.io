@@ -1,16 +1,21 @@
+---
+import SeoHead from "../components/SeoHead.astro";
+
+const title = "Memory - Poggit Archive";
+const description = "Historical icons from PocketMine-MP plugins across archived Poggit releases, ordered from oldest to newest.";
+---
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#ffffff">
-    <meta name="description" content="Historical plugin icons from archived Poggit releases, shown oldest first.">
+    <SeoHead title={title} description={description} path="/memory/" collection={true} />
     <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
     <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
     <link rel="manifest" href="/site.webmanifest">
-    <title>Memory - Poggit Archive</title>
     <link rel="stylesheet" href="/styles.css?v=memory-author-1">
     <script is:inline src="/memory.js?v=memory-author-1" defer></script>
   </head>

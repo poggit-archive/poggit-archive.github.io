@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://poggit-archive.github.io/sitemap.xml
