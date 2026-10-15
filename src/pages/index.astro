@@ -34,13 +34,16 @@
               <span class="sr-only">Search releases</span>
               <input id="search" type="search" placeholder="Search Releases" autocomplete="off" aria-label="Search releases">
             </label>
-            <label class="search-mode">
-              <span class="sr-only">Search by</span>
-              <select id="search-mode" aria-label="Search by">
-                <option value="name">Plugin</option>
-                <option value="author">Author</option>
-              </select>
-            </label>
+            <div id="search-mode-control" class="search-mode">
+              <button id="search-mode-trigger" class="search-mode-trigger" type="button" aria-haspopup="listbox" aria-expanded="false" aria-controls="search-mode-menu">
+                <span id="search-mode-current">Plugin</span>
+                <span class="search-mode-caret" aria-hidden="true"></span>
+              </button>
+              <div id="search-mode-menu" class="search-mode-menu" role="listbox" aria-label="Search by" hidden>
+                <button class="search-mode-option" type="button" role="option" aria-selected="true" data-search-field="name">Plugin</button>
+                <button class="search-mode-option" type="button" role="option" aria-selected="false" data-search-field="author">Author</button>
+              </div>
+            </div>
           </div>
         </div>
 

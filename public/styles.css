@@ -73,10 +73,17 @@ main { min-height: calc(100vh - 130px); }
 .search-field input:focus-visible { border-color: var(--text); outline-offset: 1px; }
 .search-field input::-webkit-search-cancel-button { filter: grayscale(1) brightness(0); opacity: 0.8; }
 .search-mode { position: relative; display: block; flex: 0 0 104px; }
-.search-mode select { appearance: none; width: 100%; min-height: 40px; padding: 0 30px 0 10px; border: 1px solid #b8b8b8; border-radius: 0; background: #fff; color: var(--text); font: inherit; font-size: 13px; }
-.search-mode::after { position: absolute; top: 50%; right: 12px; width: 6px; height: 6px; transform: translateY(-70%) rotate(45deg); border-right: 1px solid var(--text); border-bottom: 1px solid var(--text); content: ""; pointer-events: none; }
-.search-mode select:hover { border-color: #888; }
-.search-mode select:focus-visible { border-color: var(--text); outline-offset: 1px; }
+.search-mode.is-open { z-index: 30; }
+.search-mode-trigger { display: flex; width: 100%; min-height: 40px; align-items: center; justify-content: space-between; gap: 12px; padding: 0 10px; border: 1px solid #b8b8b8; border-radius: 0; background: #fff; color: var(--text); cursor: pointer; font: inherit; font-size: 13px; text-align: left; }
+.search-mode-trigger:hover { border-color: #888; }
+.search-mode-trigger:focus-visible { border-color: var(--text); outline-offset: 1px; }
+.search-mode-caret { width: 6px; height: 6px; flex: 0 0 auto; margin-top: -3px; transform: rotate(45deg); border-right: 1px solid currentColor; border-bottom: 1px solid currentColor; }
+.search-mode.is-open .search-mode-caret { margin-top: 3px; transform: rotate(225deg); }
+.search-mode-menu { position: absolute; top: calc(100% + 4px); right: 0; z-index: 30; display: flex; width: 100%; flex-direction: column; padding: 3px; border: 1px solid var(--line); background: #fff; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); }
+.search-mode-menu[hidden] { display: none; }
+.search-mode-option { width: 100%; min-height: 34px; padding: 6px 8px; border: 0; border-bottom: 1px solid var(--line); background: #fff; color: var(--text); cursor: pointer; font: inherit; font-size: 13px; text-align: left; }
+.search-mode-option:last-child { border-bottom: 0; }
+.search-mode-option:hover, .search-mode-option[aria-selected="true"] { background: var(--soft); }
 .results-count { margin: 16px 0 0; color: var(--muted); font-size: 12px; }
 .results { margin-top: 4px; }
 .result-row { display: grid; grid-template-columns: minmax(0, 1fr); align-items: center; gap: 24px; padding: 17px 0; border-bottom: 1px solid var(--line); }

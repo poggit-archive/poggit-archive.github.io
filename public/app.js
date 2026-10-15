@@ -438,12 +438,35 @@
   function setKind(kind) {
     state.kind = kind;
     state.page = 1;
-    $("#search-mode").querySelector('[value="name"]').textContent = kind === "plugins" ? "Plugin" : "Virion";
+    const nameLabel = kind === "plugins" ? "Plugin" : "Virion";
+    $("#search-mode-menu").querySelector('[data-search-field="name"]').textContent = nameLabel;
+    if (state.searchField === "name") $("#search-mode-current").textContent = nameLabel;
     document.querySelectorAll(".tab").forEach((tab) => {
       const active = tab.dataset.kind === kind;
       tab.classList.toggle("active", active);
       tab.setAttribute("aria-selected", String(active));
     });
+    render();
+  }
+
+  function closeSearchModeMenu(restoreFocus = false) {
+    const control = $("#search-mode-control");
+    control.classList.remove("is-open");
+    $("#search-mode-trigger").setAttribute("aria-expanded", "false");
+    $("#search-mode-menu").hidden = true;
+    if (restoreFocus) $("#search-mode-trigger").focus();
+  }
+
+  function setSearchField(field) {
+    state.searchField = field;
+    state.page = 1;
+    $("#search-mode-current").textContent = field === "author"
+      ? "Author"
+      : state.kind === "plugins" ? "Plugin" : "Virion";
+    $("#search-mode-menu").querySelectorAll("[data-search-field]").forEach((option) => {
+      option.setAttribute("aria-selected", String(option.dataset.searchField === field));
+    });
+    closeSearchModeMenu(true);
     render();
   }
 
@@ -497,14 +520,36 @@
     tab.addEventListener("click", () => setKind(tab.dataset.kind));
   });
   document.addEventListener("click", (event) => {
+    if (!(event.target instanceof Node) || !$("#search-mode-control").contains(event.target)) {
+      closeSearchModeMenu();
+    }
     document.querySelectorAll(".version-control.is-open").forEach((control) => {
       if (!control.contains(event.target)) closeVersionControl(control);
     });
   });
   document.addEventListener("keydown", (event) => {
-    if (event.key !== "Escape") return;
-    const control = document.querySelector(".version-control.is-open");
-    if (control) {
+    const searchControl = $("#search-mode-control");
+    const searchMenu = $("#search-mode-menu");
+    if (searchControl.classList.contains("is-open")) {
+      const options = Array.from(searchMenu.querySelectorAll("[data-search-field]"));
+      const activeIndex = options.indexOf(document.activeElement);
+      if (event.key === "Escape") {
+        event.preventDefault();
+        closeSearchModeMenu(true);
+      } else if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+        event.preventDefault();
+        const offset = event.key === "ArrowDown" ? 1 : -1;
+        options[(activeIndex + offset + options.length) % options.length]?.focus();
+      } else if (event.key === "Home") {
+        event.preventDefault();
+        options[0]?.focus();
+      } else if (event.key === "End") {
+        event.preventDefault();
+        options.at(-1)?.focus();
+      }
+    } else if (event.key === "Escape") {
+      const control = document.querySelector(".version-control.is-open");
+      if (!control) return;
       event.preventDefault();
       closeVersionControl(control, true);
     }
@@ -514,10 +559,24 @@
     state.page = 1;
     render();
   });
-  $("#search-mode").addEventListener("change", (event) => {
-    state.searchField = event.target.value;
-    state.page = 1;
-    render();
+  $("#search-mode-trigger").addEventListener("click", () => {
+    const control = $("#search-mode-control");
+    const trigger = $("#search-mode-trigger");
+    const menu = $("#search-mode-menu");
+    if (control.classList.contains("is-open")) {
+      closeSearchModeMenu();
+      return;
+    }
+    menu.hidden = false;
+    control.classList.add("is-open");
+    trigger.setAttribute("aria-expanded", "true");
+    menu.querySelector('[aria-selected="true"]')?.focus();
+  });
+  $("#search-mode-menu").querySelectorAll("[data-search-field]").forEach((option) => {
+    option.addEventListener("click", () => setSearchField(option.dataset.searchField));
+  });
+  $("#search-mode-control").addEventListener("focusout", (event) => {
+    if (!$("#search-mode-control").contains(event.relatedTarget)) closeSearchModeMenu();
   });
   $("#page-input").addEventListener("keydown", (event) => {
     if (event.key !== "Enter") return;
