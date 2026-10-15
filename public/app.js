@@ -279,7 +279,7 @@
       : cleanText(item.namespace || "Virion");
     content.append(element("p", "result-description", description));
 
-    const meta = element("p", "result-meta");
+    const meta = element("div", "result-meta");
     let releaseMeta = null;
     if (isPlugin && project.releases.length > 1) {
       releaseMeta = element("span", "result-release-meta");
@@ -306,9 +306,10 @@
     content.append(meta);
 
     let actions = renderActions(item, title);
+    meta.append(actions);
 
     if (icon) row.append(icon);
-    row.append(content, actions);
+    row.append(content);
     return row;
   }
 
