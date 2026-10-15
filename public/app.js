@@ -68,6 +68,11 @@
     return description || "No description recorded";
   }
 
+  function pluginAuthor(item) {
+    const owner = String(item?.repo_name || "").split("/")[0].trim();
+    return owner || null;
+  }
+
   function link(text, href, className, external = false) {
     const anchor = element("a", className, text);
     anchor.href = href;
@@ -284,6 +289,14 @@
     const title = item.name || item.project_name || "Unnamed project";
     content.append(element("h2", "result-title", title));
 
+    const author = isPlugin ? element("p", "result-author") : null;
+    if (author) {
+      const name = pluginAuthor(item);
+      author.textContent = name ? `by ${name}` : "";
+      author.hidden = !name;
+      content.append(author);
+    }
+
     const description = isPlugin
       ? cleanDescription(item.tagline || item.description)
       : cleanText(item.namespace || "Virion");
@@ -297,6 +310,9 @@
       meta.append(renderVersionControl(project, item, title, (release) => {
         state.selectedPluginVersions.set(project.key, String(release.id));
         updatePluginIcon(icon, release);
+        const nextAuthor = pluginAuthor(release);
+        author.textContent = nextAuthor ? `by ${nextAuthor}` : "";
+        author.hidden = !nextAuthor;
         description.textContent = cleanDescription(release.tagline || release.description);
         releaseMeta.replaceChildren();
         addPluginMeta(releaseMeta, release, project.totalDownloads);
