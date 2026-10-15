@@ -63,15 +63,31 @@ python .\scripts\fetch_sources.py --limit 10
 
 For each recorded build commit, this tries the original GitHub repository first and then its `pm-pl` basename candidate if the original cannot serve that commit. ZIP files are stored under `archive/sources/<repo-id>/<commit>.zip`, are not extracted, and get a SHA-256 entry in `source-downloads.json`. The default size ceiling is 25 MiB per ZIP. Large/all-history imports can take hours and consume substantial disk; use `--offset`, `--limit`, `--delay`, and `--max-mib` deliberately. This captures source at Poggit build commits, not the full Git commit history.
 
-## Static site and JSON API
+## Astro site and JSON API
 
-The catalog is dependency-free and can be hosted as static files. Start a local preview from the repository root:
+The catalog is built as a static Astro site and deployed to GitHub Pages with GitHub Actions. Requires Node.js 22.12 or later and npm.
+
+Install dependencies and start the local development server:
 
 ```powershell
-python -m http.server 8000
+npm ci
+npm run dev
 ```
 
-Open `http://localhost:8000/`. `file://` preview does not work because browsers block JSON fetches from local files.
+The development command serves the catalog data and removes its temporary copy when the server stops. To build and preview the deployment output:
+
+```powershell
+npm run build
+npm run preview
+```
+
+The source snapshots stay under `data/`. The build copies the API, snapshots, and pm-pl repository inventory into `dist/`. Local archived source ZIPs and PHARs are never included in the Pages artifact.
+
+Remove the generated site, caches, and installed dependencies after previewing:
+
+```powershell
+npm run clean
+```
 
 The public catalog is hosted at <https://poggit-archive.github.io/>. Original PHAR and source ZIP assets are stored in <https://github.com/poggit-archive/artifacts> releases.
 

@@ -1,5 +1,10 @@
 __pycache__/
 *.py[cod]
+node_modules/
+dist/
+.astro/
+/.npm-cache/
+/public/data/
 
 # Large binary mirrors are kept outside Git's normal source tree.
 /archive/
