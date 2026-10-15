@@ -329,10 +329,7 @@
     const isPlugin = state.kind === "plugins";
     const releases = isPlugin ? item.releases : [];
     const authors = isPlugin
-      ? releases.flatMap((release) => [
-        ...Object.values(release.producers || {}).flatMap((names) => Array.isArray(names) ? names : [names]),
-        String(release.repo_name || "").split("/")[0],
-      ])
+      ? releases.map((release) => String(release.repo_name || "").split("/")[0])
       : [item.owner, String(item.source_url || "").split("/")[3]];
     if (state.searchField === "author") return textMatches(authors, query) ? 0 : null;
 
