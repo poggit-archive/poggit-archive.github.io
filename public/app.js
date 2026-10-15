@@ -120,7 +120,6 @@
 
   function addPluginMeta(container, item) {
     addMeta(container, `${number(item.downloads)} downloads`);
-    addMeta(container, item.state_name);
     addMeta(container, item.license ? `License ${item.license}` : "License unknown");
   }
 

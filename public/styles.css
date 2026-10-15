@@ -65,7 +65,7 @@ main { min-height: calc(100vh - 130px); }
 .tab span { margin-left: 4px; color: #999; font-size: 11px; }
 .tab.active { color: var(--text); }
 .tab.active::after { position: absolute; right: 0; bottom: -1px; left: 0; height: 2px; background: var(--text); content: ""; }
-.search-field { width: min(300px, 45%); margin-bottom: 4px; }
+.search-field { width: min(360px, 48%); margin-bottom: 4px; }
 .search-field input { width: 100%; min-height: 40px; padding: 8px 40px 8px 12px; border: 1px solid #b8b8b8; border-radius: 0; background: #fff; accent-color: var(--text); font-size: 13px; }
 .search-field input:hover { border-color: #888; }
 .search-field input::placeholder { color: var(--muted); }
