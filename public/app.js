@@ -5,6 +5,7 @@
     page: 1,
     query: "",
     searchField: "name",
+    apiVersion: "",
     releases: [],
     pluginProjects: [],
     virions: [],
@@ -53,6 +54,54 @@
 
   function versionOptionLabel(release) {
     return `${release.version || "Version unknown"} (${versionDate(release.submission_date)})`;
+  }
+
+  function compareApiVersions(left, right) {
+    const parse = (value) => {
+      const match = String(value).match(/^(\d+)\.(\d+)\.(\d+)(?:-([0-9A-Za-z.-]+))?$/);
+      return match ? {
+        major: Number(match[1]),
+        minor: Number(match[2]),
+        patch: Number(match[3]),
+        prerelease: match[4] || "",
+      } : null;
+    };
+    const a = parse(left);
+    const b = parse(right);
+    if (!a || !b) return String(left).localeCompare(String(right), undefined, { numeric: true, sensitivity: "base" });
+    for (const part of ["major", "minor", "patch"]) {
+      if (a[part] !== b[part]) return a[part] - b[part];
+    }
+    if (a.prerelease === b.prerelease) return 0;
+    if (!a.prerelease) return 1;
+    if (!b.prerelease) return -1;
+    return a.prerelease.localeCompare(b.prerelease, undefined, { numeric: true, sensitivity: "base" });
+  }
+
+  function populateApiFilter(releases) {
+    const select = $("#api-filter");
+    const versions = new Set();
+    for (const release of releases) {
+      for (const range of release.api || []) {
+        if (range.from) versions.add(String(range.from));
+        if (range.to) versions.add(String(range.to));
+      }
+    }
+    Array.from(versions)
+      .sort((a, b) => compareApiVersions(b, a))
+      .forEach((version) => {
+        const option = element("option", "", `API ${version}`);
+        option.value = version;
+        select.append(option);
+      });
+  }
+
+  function releaseSupportsApi(release, version) {
+    return (release.api || []).some((range) => {
+      const startsBefore = !range.from || compareApiVersions(version, range.from) >= 0;
+      const endsAfter = !range.to || compareApiVersions(version, range.to) <= 0;
+      return startsBefore && endsAfter;
+    });
   }
 
   function cleanText(value) {
@@ -371,7 +420,7 @@
     const query = state.query.trim().toLocaleLowerCase();
     return rows
       .map((item) => ({ item, priority: searchPriority(item, query) }))
-      .filter((entry) => entry.priority !== null)
+      .filter((entry) => entry.priority !== null && (!state.apiVersion || state.kind !== "plugins" || entry.item.releases.some((release) => releaseSupportsApi(release, state.apiVersion))))
       .sort((a, b) => {
         if (a.priority !== b.priority) return a.priority - b.priority;
         return state.kind === "plugins"
@@ -463,6 +512,7 @@
   function setKind(kind) {
     state.kind = kind;
     state.page = 1;
+    $("#api-filter-control").hidden = kind !== "plugins";
     const nameLabel = kind === "plugins" ? "Plugin" : "Virion";
     $("#search-mode-menu").querySelector('[data-search-field="name"]').textContent = nameLabel;
     if (state.searchField === "name") $("#search-mode-current").textContent = nameLabel;
@@ -525,6 +575,7 @@
 
       state.releases = Array.isArray(releases) ? releases : [];
       state.pluginProjects = groupPluginReleases(state.releases);
+      populateApiFilter(state.releases);
       state.virions = Array.isArray(virions) ? virions : [];
       state.pluginDownloads = pluginDownloads;
       state.virionDownloads = virionDownloads;
@@ -581,6 +632,11 @@
   });
   $("#search").addEventListener("input", (event) => {
     state.query = event.target.value;
+    state.page = 1;
+    render();
+  });
+  $("#api-filter").addEventListener("change", (event) => {
+    state.apiVersion = event.target.value;
     state.page = 1;
     render();
   });
