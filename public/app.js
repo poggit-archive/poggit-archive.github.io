@@ -79,7 +79,7 @@
   }
 
   function populateApiFilter(releases) {
-    const select = $("#api-filter");
+    const menu = $("#api-filter-menu");
     const versions = new Set();
     for (const release of releases) {
       for (const range of release.api || []) {
@@ -90,9 +90,13 @@
     Array.from(versions)
       .sort((a, b) => compareApiVersions(b, a))
       .forEach((version) => {
-        const option = element("option", "", `API ${version}`);
-        option.value = version;
-        select.append(option);
+        const option = element("button", "api-filter-option", `API ${version}`);
+        option.type = "button";
+        option.setAttribute("role", "option");
+        option.setAttribute("aria-selected", "false");
+        option.tabIndex = -1;
+        option.dataset.apiVersion = version;
+        menu.append(option);
       });
   }
 
@@ -102,6 +106,50 @@
       const endsAfter = !range.to || compareApiVersions(version, range.to) <= 0;
       return startsBefore && endsAfter;
     });
+  }
+
+  function closeApiFilterMenu(restoreFocus = false) {
+    const control = $("#api-filter-control");
+    control.classList.remove("is-open");
+    $("#api-filter-trigger").setAttribute("aria-expanded", "false");
+    $("#api-filter-menu").hidden = true;
+    if (restoreFocus) $("#api-filter-trigger").focus();
+  }
+
+  function focusApiFilterOption(index) {
+    const options = Array.from($("#api-filter-menu").querySelectorAll("[role='option']"));
+    if (!options.length) return;
+    const target = options[(index + options.length) % options.length];
+    options.forEach((option) => { option.tabIndex = option === target ? 0 : -1; });
+    target.focus();
+    target.scrollIntoView({ block: "nearest" });
+  }
+
+  function openApiFilterMenu(index = null) {
+    const control = $("#api-filter-control");
+    const trigger = $("#api-filter-trigger");
+    const menu = $("#api-filter-menu");
+    const options = Array.from(menu.querySelectorAll("[role='option']"));
+    const selectedIndex = Math.max(0, options.findIndex((option) => option.dataset.apiVersion === state.apiVersion));
+    menu.hidden = false;
+    control.classList.add("is-open");
+    trigger.setAttribute("aria-expanded", "true");
+    focusApiFilterOption(index ?? selectedIndex);
+  }
+
+  function setApiFilter(version) {
+    state.apiVersion = version;
+    state.page = 1;
+    const label = version ? `API ${version}` : "All APIs";
+    $("#api-filter-current").textContent = label;
+    $("#api-filter-trigger").setAttribute("aria-label", `Filter by API version: ${label}`);
+    $("#api-filter-menu").querySelectorAll("[role='option']").forEach((option) => {
+      const selected = option.dataset.apiVersion === version;
+      option.setAttribute("aria-selected", String(selected));
+      option.tabIndex = selected ? 0 : -1;
+    });
+    closeApiFilterMenu(true);
+    render();
   }
 
   function cleanText(value) {
@@ -600,6 +648,9 @@
     if (!(event.target instanceof Node) || !$("#search-mode-control").contains(event.target)) {
       closeSearchModeMenu();
     }
+    if (!(event.target instanceof Node) || !$("#api-filter-control").contains(event.target)) {
+      closeApiFilterMenu();
+    }
     document.querySelectorAll(".version-control.is-open").forEach((control) => {
       if (!control.contains(event.target)) closeVersionControl(control);
     });
@@ -607,6 +658,8 @@
   document.addEventListener("keydown", (event) => {
     const searchControl = $("#search-mode-control");
     const searchMenu = $("#search-mode-menu");
+    const apiControl = $("#api-filter-control");
+    const apiMenu = $("#api-filter-menu");
     if (searchControl.classList.contains("is-open")) {
       const options = Array.from(searchMenu.querySelectorAll("[data-search-field]"));
       const activeIndex = options.indexOf(document.activeElement);
@@ -624,6 +677,27 @@
         event.preventDefault();
         options.at(-1)?.focus();
       }
+    } else if (apiControl.classList.contains("is-open")) {
+      const options = Array.from(apiMenu.querySelectorAll("[role='option']"));
+      const activeIndex = options.indexOf(document.activeElement);
+      if (event.key === "Escape") {
+        event.preventDefault();
+        closeApiFilterMenu(true);
+      } else if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+        event.preventDefault();
+        const offset = event.key === "ArrowDown" ? 1 : -1;
+        focusApiFilterOption(activeIndex + offset);
+      } else if (event.key === "Home") {
+        event.preventDefault();
+        focusApiFilterOption(0);
+      } else if (event.key === "End") {
+        event.preventDefault();
+        focusApiFilterOption(options.length - 1);
+      }
+    } else if (event.target === $("#api-filter-trigger") && (event.key === "ArrowDown" || event.key === "ArrowUp")) {
+      event.preventDefault();
+      const lastOption = $("#api-filter-menu").querySelectorAll("[role='option']").length - 1;
+      openApiFilterMenu(event.key === "ArrowUp" ? lastOption : null);
     } else if (event.key === "Escape") {
       const control = document.querySelector(".version-control.is-open");
       if (!control) return;
@@ -636,10 +710,21 @@
     state.page = 1;
     render();
   });
-  $("#api-filter").addEventListener("change", (event) => {
-    state.apiVersion = event.target.value;
-    state.page = 1;
-    render();
+  $("#api-filter-trigger").addEventListener("click", () => {
+    if ($("#api-filter-control").classList.contains("is-open")) {
+      closeApiFilterMenu();
+    } else {
+      openApiFilterMenu();
+    }
+  });
+  $("#api-filter-menu").addEventListener("click", (event) => {
+    const option = event.target.closest("[data-api-version]");
+    if (option) setApiFilter(option.dataset.apiVersion);
+  });
+  $("#api-filter-control").addEventListener("focusout", (event) => {
+    if (!(event.relatedTarget instanceof Node) || !$("#api-filter-control").contains(event.relatedTarget)) {
+      closeApiFilterMenu();
+    }
   });
   $("#search-mode-trigger").addEventListener("click", () => {
     const control = $("#search-mode-control");

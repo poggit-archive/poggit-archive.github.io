@@ -11,8 +11,8 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
     <link rel="manifest" href="/site.webmanifest">
     <title>Poggit Archive - Plugins &amp; Virions</title>
-    <link rel="stylesheet" href="/styles.css?v=catalog-author-inline-1">
-    <script is:inline src="/app.js?v=catalog-author-inline-1" defer></script>
+    <link rel="stylesheet" href="/styles.css?v=api-filter-custom-1">
+    <script is:inline src="/app.js?v=api-filter-custom-1" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -49,12 +49,16 @@
                 <button class="search-mode-option" type="button" role="option" aria-selected="false" data-search-field="author">Author</button>
               </div>
             </div>
-            <label id="api-filter-control" class="api-filter">
+            <div id="api-filter-control" class="api-filter">
               <span class="sr-only">Filter by API version</span>
-              <select id="api-filter" aria-label="Filter by API version">
-                <option value="">All APIs</option>
-              </select>
-            </label>
+              <button id="api-filter-trigger" class="api-filter-trigger" type="button" aria-haspopup="listbox" aria-expanded="false" aria-controls="api-filter-menu" aria-label="Filter by API version: All APIs">
+                <span id="api-filter-current">All APIs</span>
+                <span class="search-mode-caret" aria-hidden="true"></span>
+              </button>
+              <div id="api-filter-menu" class="api-filter-menu" role="listbox" aria-label="Filter by API version" hidden>
+                <button class="api-filter-option" type="button" role="option" aria-selected="true" data-api-version="">All APIs</button>
+              </div>
+            </div>
           </div>
         </div>
 
