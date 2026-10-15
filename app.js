@@ -5,7 +5,9 @@
     page: 1,
     query: "",
     releases: [],
+    pluginProjects: [],
     virions: [],
+    selectedPluginVersions: new Map(),
     pluginDownloads: {},
     virionDownloads: {},
     sourceDownloads: {},
@@ -113,29 +115,13 @@
     container.append(element("span", "", value));
   }
 
-  function renderRow(item) {
-    const row = element("article", "result-row");
-    const content = element("div", "result-content");
-    const title = item.name || item.project_name || "Unnamed project";
-    content.append(element("h2", "result-title", title));
+  function addPluginMeta(container, item) {
+    addMeta(container, `${number(item.downloads)} downloads`);
+    addMeta(container, item.state_name);
+    addMeta(container, item.license ? `License ${item.license}` : "License unknown");
+  }
 
-    const description = state.kind === "plugins"
-      ? cleanText(item.tagline || item.description || "No description recorded")
-      : cleanText(item.namespace || "Virion");
-    content.append(element("p", "result-description", description));
-
-    const meta = element("p", "result-meta");
-    addMeta(meta, item.version || "Version unknown");
-    if (state.kind === "plugins") {
-      addMeta(meta, `${number(item.downloads)} downloads`);
-      addMeta(meta, item.state_name);
-      addMeta(meta, item.license ? `License ${item.license}` : "License unknown");
-    } else {
-      addMeta(meta, `${number(item.used_by_projects)} projects use this`);
-      if (item.last_updated) addMeta(meta, date(Number(item.last_updated)));
-    }
-    content.append(meta);
-
+  function renderActions(item, title) {
     const actions = element("div", "result-actions");
     const source = sourceArtifact(item);
     if (source) actions.append(link(source.label, source.url, "", true));
@@ -150,21 +136,107 @@
       download.setAttribute("aria-label", `${artifact.label} for ${title} ${item.version || ""}`);
       actions.append(download);
     }
+    return actions;
+  }
+
+  function groupPluginReleases(releases) {
+    const groups = new Map();
+    for (const release of releases) {
+      const fallbackName = String(release.project_name || release.name || "").trim().toLocaleLowerCase();
+      const fallbackRepo = String(release.repo_id || release.repo_name || "").toLocaleLowerCase();
+      const key = release.project_id !== null && release.project_id !== undefined
+        ? `project:${release.project_id}`
+        : `fallback:${fallbackRepo}:${fallbackName}`;
+      if (!groups.has(key)) groups.set(key, { key, releases: [] });
+      groups.get(key).releases.push(release);
+    }
+
+    return Array.from(groups.values(), (project) => {
+      project.releases.sort((a, b) => Number(b.id || 0) - Number(a.id || 0));
+      project.title = project.releases[0].name || project.releases[0].project_name || "Unnamed project";
+      project.totalDownloads = project.releases.reduce((total, release) => total + Number(release.downloads || 0), 0);
+      return project;
+    });
+  }
+
+  function renderVersionControl(project, selected, title, onChange) {
+    const label = element("label", "version-control");
+    label.append(element("span", "version-label", "Version"));
+    const select = document.createElement("select");
+    select.setAttribute("aria-label", `Version for ${title}`);
+    for (const release of project.releases) {
+      const option = document.createElement("option");
+      option.value = String(release.id);
+      option.textContent = release.version || "Version unknown";
+      select.append(option);
+    }
+    select.value = String(selected.id);
+    select.addEventListener("change", () => {
+      const release = project.releases.find((candidate) => String(candidate.id) === select.value);
+      if (release) onChange(release);
+    });
+    label.append(select);
+    return label;
+  }
+
+  function renderRow(entry) {
+    const isPlugin = state.kind === "plugins";
+    const project = isPlugin ? entry : null;
+    const selectedId = project ? state.selectedPluginVersions.get(project.key) : null;
+    const item = project
+      ? project.releases.find((release) => String(release.id) === selectedId) || project.releases[0]
+      : entry;
+    const row = element("article", "result-row");
+    const content = element("div", "result-content");
+    const title = item.name || item.project_name || "Unnamed project";
+    content.append(element("h2", "result-title", title));
+
+    const description = isPlugin
+      ? cleanText(item.tagline || item.description || "No description recorded")
+      : cleanText(item.namespace || "Virion");
+    content.append(element("p", "result-description", description));
+
+    const meta = element("p", "result-meta");
+    let releaseMeta = null;
+    if (isPlugin && project.releases.length > 1) {
+      releaseMeta = element("span", "result-release-meta");
+      addPluginMeta(releaseMeta, item);
+      meta.append(renderVersionControl(project, item, title, (release) => {
+        state.selectedPluginVersions.set(project.key, String(release.id));
+        description.textContent = cleanText(release.tagline || release.description || "No description recorded");
+        releaseMeta.replaceChildren();
+        addPluginMeta(releaseMeta, release);
+        const nextActions = renderActions(release, title);
+        actions.replaceWith(nextActions);
+        actions = nextActions;
+      }));
+      meta.append(releaseMeta);
+    } else if (isPlugin) {
+      addMeta(meta, item.version || "Version unknown");
+      addPluginMeta(meta, item);
+    } else {
+      addMeta(meta, item.version || "Version unknown");
+      addMeta(meta, `${number(item.used_by_projects)} projects use this`);
+      if (item.last_updated) addMeta(meta, date(Number(item.last_updated)));
+    }
+    content.append(meta);
+
+    let actions = renderActions(item, title);
 
     row.append(content, actions);
     return row;
   }
 
   function filteredRows() {
-    const rows = state.kind === "plugins" ? state.releases : state.virions;
+    const rows = state.kind === "plugins" ? state.pluginProjects : state.virions;
     const query = state.query.trim().toLocaleLowerCase();
     const filtered = rows.filter((item) => {
       if (!query) return true;
-      const title = item.name || item.project_name;
+      const title = state.kind === "plugins" ? item.title : item.name || item.project_name;
       return String(title || "").toLocaleLowerCase().includes(query);
     });
     if (state.kind === "plugins") {
-      return filtered.sort((a, b) => Number(b.downloads || 0) - Number(a.downloads || 0));
+      return filtered.sort((a, b) => b.totalDownloads - a.totalDownloads);
     }
     return filtered.sort((a, b) => Number(b.used_by_projects || 0) - Number(a.used_by_projects || 0));
   }
@@ -184,7 +256,7 @@
     }
 
     const end = Math.min(start + PAGE_SIZE, filtered.length);
-    const category = state.kind === "plugins" ? "plugin releases" : "virions";
+    const category = state.kind === "plugins" ? "plugins" : "virions";
     $("#results-count").textContent = filtered.length
       ? `Showing ${number(start + 1)}-${number(end)} of ${number(filtered.length)} ${category}`
       : "0 results";
@@ -234,11 +306,12 @@
       ]);
 
       state.releases = Array.isArray(releases) ? releases : [];
+      state.pluginProjects = groupPluginReleases(state.releases);
       state.virions = Array.isArray(virions) ? virions : [];
       state.pluginDownloads = pluginDownloads;
       state.virionDownloads = virionDownloads;
       state.sourceDownloads = sourceDownloads;
-      $("#plugins-tab-count").textContent = number(summary.counts?.plugin_release_rows);
+      $("#plugins-tab-count").textContent = number(state.pluginProjects.length);
       $("#virions-tab-count").textContent = number(summary.counts?.virion_entries);
       $("#snapshot-label").textContent = `Snapshot ${snapshotDate(summary.captured_at || pointer.captured_at || summary.snapshot_id || pointer.snapshot_id)}`;
       render();
