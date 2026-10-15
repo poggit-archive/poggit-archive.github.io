@@ -84,7 +84,7 @@ main { min-height: calc(100vh - 130px); }
 .result-release-meta { display: contents; }
 .version-control { position: relative; display: inline-flex; align-items: center; gap: 6px; color: #858585; font-size: 11px; }
 .version-control.is-open { z-index: 10; }
-.version-trigger { display: inline-flex; width: 220px; min-width: 0; max-width: min(220px, calc(100vw - 148px)); flex: 0 1 220px; align-items: center; justify-content: space-between; gap: 16px; padding: 3px 7px; border: 1px solid var(--line); border-radius: 0; background: #fff; color: var(--text); cursor: pointer; font: inherit; text-align: left; }
+.version-trigger { display: inline-flex; width: 150px; min-width: 0; max-width: min(150px, calc(100vw - 148px)); flex: 0 1 150px; align-items: center; justify-content: space-between; gap: 16px; padding: 3px 7px; border: 1px solid var(--line); border-radius: 0; background: #fff; color: var(--text); cursor: pointer; font: inherit; text-align: left; }
 .version-trigger:hover { border-color: #888; }
 .version-current { min-width: 0; flex: 1 1 auto; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .version-caret { width: 6px; height: 6px; flex: 0 0 auto; margin-top: -3px; transform: rotate(45deg); border-right: 1px solid currentColor; border-bottom: 1px solid currentColor; }
