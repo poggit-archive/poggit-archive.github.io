@@ -59,6 +59,15 @@
     return String(value || "").replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
   }
 
+  function cleanDescription(value) {
+    const description = cleanText(value)
+      .replace(/[#*0-9]\uFE0F?\u20E3/gu, " ")
+      .replace(/[\p{Extended_Pictographic}\p{Emoji_Modifier}\p{Regional_Indicator}\uFE0F\u200D\u{E0020}-\u{E007F}]/gu, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+    return description || "No description recorded";
+  }
+
   function link(text, href, className, external = false) {
     const anchor = element("a", className, text);
     anchor.href = href;
@@ -276,7 +285,7 @@
     content.append(element("h2", "result-title", title));
 
     const description = isPlugin
-      ? cleanText(item.tagline || item.description || "No description recorded")
+      ? cleanDescription(item.tagline || item.description)
       : cleanText(item.namespace || "Virion");
     content.append(element("p", "result-description", description));
 
@@ -288,7 +297,7 @@
       meta.append(renderVersionControl(project, item, title, (release) => {
         state.selectedPluginVersions.set(project.key, String(release.id));
         updatePluginIcon(icon, release);
-        description.textContent = cleanText(release.tagline || release.description || "No description recorded");
+        description.textContent = cleanDescription(release.tagline || release.description);
         releaseMeta.replaceChildren();
         addPluginMeta(releaseMeta, release, project.totalDownloads);
         const nextActions = renderActions(release, title);
