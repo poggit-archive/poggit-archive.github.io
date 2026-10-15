@@ -54,6 +54,8 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 2px solid 
 
 .site-header, main, .site-footer { width: min(100% - 40px, 960px); margin-inline: auto; }
 .site-header { min-height: 64px; display: flex; align-items: center; border-bottom: 1px solid var(--line); }
+.site-brand { display: flex; min-width: 0; align-items: center; gap: 12px; }
+.site-brand-icon { display: block; width: 40px; height: 40px; flex: 0 0 40px; object-fit: contain; }
 .header-intro h1 { margin: 0; font-size: 17px; font-weight: 600; letter-spacing: -0.04em; line-height: 1.2; }
 .header-intro p { max-width: 680px; margin: 2px 0 0; color: var(--muted); font-size: 11px; line-height: 1.4; }
 
