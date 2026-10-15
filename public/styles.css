@@ -153,10 +153,14 @@ main { min-height: calc(100vh - 130px); }
 .leaderboard-table thead button { padding: 0 0 2px; border: 0; border-bottom: 1px solid transparent; background: transparent; color: inherit; cursor: pointer; font: inherit; text-align: left; }
 .leaderboard-table thead button:hover { border-bottom-color: currentColor; color: var(--text); }
 .leaderboard-table thead th[aria-sort="ascending"] button, .leaderboard-table thead th[aria-sort="descending"] button { border-bottom-color: var(--text); color: var(--text); font-weight: 500; }
+.leaderboard-table thead th[aria-sort="ascending"] button::after { margin-left: 5px; color: var(--muted); content: "↑"; }
+.leaderboard-table thead th[aria-sort="descending"] button::after { margin-left: 5px; color: var(--muted); content: "↓"; }
 .leaderboard-table tbody th { font-weight: 500; }
+.leaderboard-table .leaderboard-rank { width: 48px; color: var(--muted); text-align: left; white-space: nowrap; }
+.leaderboard-table tbody td:first-child { padding-left: 0; }
 .leaderboard-number { color: var(--muted); text-align: right; white-space: nowrap; }
-.leaderboard-table thead th:nth-child(n + 2) { text-align: right; }
-.leaderboard-table thead th:nth-child(n + 2) button { text-align: right; }
+.leaderboard-table thead th:nth-child(n + 3) { text-align: right; }
+.leaderboard-table thead th:nth-child(n + 3) button { text-align: right; }
 .leaderboard-empty { padding: 28px 0 !important; color: var(--muted); text-align: center; }
 
 .site-footer { display: flex; justify-content: space-between; gap: 20px; padding: 18px 0 22px; border-top: 1px solid var(--line); color: var(--muted); font-size: 11px; }
@@ -177,7 +181,7 @@ main { min-height: calc(100vh - 130px); }
   .leaderboard { padding-top: 24px; }
   .leaderboard-heading { align-items: stretch; flex-direction: column; gap: 14px; }
   .leaderboard-search { width: 100%; }
-  .leaderboard-table { min-width: 560px; }
+  .leaderboard-table { min-width: 610px; }
 }
 
 @media (prefers-reduced-motion: no-preference) {

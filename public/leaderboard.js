@@ -63,13 +63,15 @@
   function filteredAuthors() {
     const query = search.value.trim().toLocaleLowerCase();
     return authors
-      .filter((author) => !query || author.author.toLocaleLowerCase().includes(query))
+      .slice()
       .sort((a, b) => {
         const comparison = sortField === "author"
           ? collator.compare(a.author, b.author)
           : a[sortField] - b[sortField];
         return comparison * sortDirection;
-      });
+      })
+      .map((author, index) => ({ ...author, rank: index + 1 }))
+      .filter((author) => !query || author.author.toLocaleLowerCase().includes(query));
   }
 
   function pageTokens(page, totalPages) {
@@ -106,7 +108,7 @@
     if (visible.length === 0) {
       const row = element("tr");
       const cell = element("td", "leaderboard-empty", "No authors match this search");
-      cell.colSpan = 4;
+      cell.colSpan = 5;
       row.append(cell);
       rows.append(row);
     } else {
@@ -115,6 +117,7 @@
         const authorCell = element("th", "leaderboard-author", author.author);
         authorCell.scope = "row";
         row.append(
+          element("td", "leaderboard-rank", number.format(author.rank)),
           authorCell,
           element("td", "leaderboard-number", number.format(author.plugins)),
           element("td", "leaderboard-number", number.format(author.total)),
