@@ -198,7 +198,7 @@ main { min-height: calc(100vh - 130px); }
 .memory-image-frame.is-unavailable::after { position: absolute; inset: 0; display: grid; padding: 8px; place-items: center; color: var(--muted); content: "Icon unavailable"; font-size: 10px; text-align: center; }
 @keyframes memory-shimmer { to { background-position: -220% 0; } }
 .memory-name { overflow: hidden; margin: 6px 0 0; font-size: 12px; font-weight: 500; text-overflow: ellipsis; white-space: nowrap; }
-.memory-details, .memory-date { display: block; overflow: hidden; margin: 1px 0 0; color: var(--muted); font-size: 10px; text-overflow: ellipsis; white-space: nowrap; }
+.memory-author, .memory-details, .memory-date { display: block; overflow: hidden; margin: 1px 0 0; color: var(--muted); font-size: 10px; text-overflow: ellipsis; white-space: nowrap; }
 
 .site-footer { display: flex; justify-content: space-between; gap: 20px; padding: 18px 0 22px; border-top: 1px solid var(--line); color: var(--muted); font-size: 11px; }
 .site-footer nav { display: flex; flex-wrap: wrap; gap: 16px; }

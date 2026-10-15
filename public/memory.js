@@ -50,10 +50,15 @@
     frame.style.setProperty("--memory-icon-y", `${(tile.row / 7) * 100}%`);
     const title = element("h3", "memory-name", name);
     title.title = name;
+    const authorName = String(release.repo_name || "").split("/")[0].trim();
+    const author = authorName ? element("p", "memory-author", `by ${authorName}`) : null;
+    if (author) author.title = authorName;
     const details = element("p", "memory-details", version);
     const submitted = element("time", "memory-date", date.label);
     if (date.value !== Number.MAX_SAFE_INTEGER) submitted.dateTime = new Date(date.value * 1000).toISOString();
-    card.append(frame, title, details, submitted);
+    card.append(frame, title);
+    if (author) card.append(author);
+    card.append(details, submitted);
     grid.append(card);
     return { card, frame, sheet: tile.sheet };
   }
