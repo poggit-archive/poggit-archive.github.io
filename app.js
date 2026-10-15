@@ -160,10 +160,8 @@
     const query = state.query.trim().toLocaleLowerCase();
     const filtered = rows.filter((item) => {
       if (!query) return true;
-      const fields = state.kind === "plugins"
-        ? [item.name, item.project_name, item.version, item.tagline, item.description, item.repo_name, item.license, item.state_name, ...(item.keywords || []), ...(item.producers?.Collaborator || [])]
-        : [item.name, item.owner, item.repo, item.project, item.version, item.namespace, item.source_url];
-      return fields.some((value) => String(value || "").toLocaleLowerCase().includes(query));
+      const title = item.name || item.project_name;
+      return String(title || "").toLocaleLowerCase().includes(query);
     });
     if (state.kind === "plugins") {
       return filtered.sort((a, b) => Number(b.downloads || 0) - Number(a.downloads || 0));
