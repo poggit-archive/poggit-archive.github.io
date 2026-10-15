@@ -154,6 +154,31 @@
     return actions;
   }
 
+  function pluginIconUrl(item) {
+    if (!item.icon_url) return null;
+    try {
+      const url = new URL(String(item.icon_url).trim());
+      return url.protocol === "https:" && ["github.com", "raw.githubusercontent.com"].includes(url.hostname)
+        ? url.href
+        : null;
+    } catch {
+      return null;
+    }
+  }
+
+  function updatePluginIcon(frame, item) {
+    frame.replaceChildren();
+    const url = pluginIconUrl(item);
+    if (!url) return;
+    const image = document.createElement("img");
+    image.src = url;
+    image.alt = "";
+    image.loading = "lazy";
+    image.decoding = "async";
+    image.referrerPolicy = "no-referrer";
+    frame.append(image);
+  }
+
   function groupPluginReleases(releases) {
     const groups = new Map();
     for (const release of releases) {
@@ -256,6 +281,12 @@
       ? project.releases.find((release) => String(release.id) === selectedId) || project.releases[0]
       : entry;
     const row = element("article", "result-row");
+    const icon = isPlugin ? element("span", "result-icon") : null;
+    if (icon) {
+      row.classList.add("has-icon");
+      icon.setAttribute("aria-hidden", "true");
+      updatePluginIcon(icon, item);
+    }
     const content = element("div", "result-content");
     const title = item.name || item.project_name || "Unnamed project";
     content.append(element("h2", "result-title", title));
@@ -272,6 +303,7 @@
       addPluginMeta(releaseMeta, item);
       meta.append(renderVersionControl(project, item, title, (release) => {
         state.selectedPluginVersions.set(project.key, String(release.id));
+        updatePluginIcon(icon, release);
         description.textContent = cleanText(release.tagline || release.description || "No description recorded");
         releaseMeta.replaceChildren();
         addPluginMeta(releaseMeta, release);
@@ -292,6 +324,7 @@
 
     let actions = renderActions(item, title);
 
+    if (icon) row.append(icon);
     row.append(content, actions);
     return row;
   }
