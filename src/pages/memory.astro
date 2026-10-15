@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Historical plugin icons from archived Poggit releases, shown oldest first.">
+    <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Memory - Poggit Archive</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script is:inline src="/memory.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-intro">
+        <h1><a href="/">Poggit Archive - Plugins &amp; Virions</a></h1>
+        <p>A read-only archive of entries listed on Poggit. This independent project preserves available metadata and files.</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="memory-page" aria-labelledby="memory-title">
+        <div class="memory-heading">
+          <h2 id="memory-title">Memory</h2>
+          <p>Plugin icons from every archived version, oldest first</p>
+        </div>
+        <p id="memory-count" class="results-count" aria-live="polite">Loading plugin icons</p>
+        <div id="memory-error" class="error hidden" role="alert"></div>
+        <div id="memory-grid" class="memory-grid"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a href="/">Plugins &amp; Virions</a>
+      <nav aria-label="Archive links">
+        <a href="/leaderboard/">Leaderboard</a>
+        <a href="/data/api/v1/current.json" target="_blank" rel="noreferrer">API index</a>
+        <a href="https://github.com/poggit-archive" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://poggit.pmmp.io/">Poggit</a>
+      </nav>
+    </footer>
+  </body>
+</html>
