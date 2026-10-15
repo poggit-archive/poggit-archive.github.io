@@ -29,10 +29,19 @@
             <button class="tab active" id="tab-plugins" role="tab" aria-selected="true" aria-controls="results" data-kind="plugins">Plugins <span id="plugins-tab-count"></span></button>
             <button class="tab" id="tab-virions" role="tab" aria-selected="false" aria-controls="results" data-kind="virions">Virions <span id="virions-tab-count"></span></button>
           </div>
-          <label class="search-field">
-            <span class="sr-only">Search by name, author or description</span>
-            <input id="search" type="search" placeholder="Search name, author or description" autocomplete="off" aria-label="Search by name, author or description">
-          </label>
+          <div class="search-controls">
+            <label class="search-field">
+              <span class="sr-only">Search releases</span>
+              <input id="search" type="search" placeholder="Search Releases" autocomplete="off" aria-label="Search releases">
+            </label>
+            <label class="search-mode">
+              <span class="sr-only">Search by</span>
+              <select id="search-mode" aria-label="Search by">
+                <option value="name">Plugin</option>
+                <option value="author">Author</option>
+              </select>
+            </label>
+          </div>
         </div>
 
         <p id="results-count" class="results-count" aria-live="polite">Loading catalog</p>

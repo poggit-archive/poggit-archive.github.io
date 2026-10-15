@@ -4,6 +4,7 @@
     kind: "plugins",
     page: 1,
     query: "",
+    searchField: "name",
     releases: [],
     pluginProjects: [],
     virions: [],
@@ -327,25 +328,20 @@
 
     const isPlugin = state.kind === "plugins";
     const releases = isPlugin ? item.releases : [];
-    const names = isPlugin
-      ? [item.title, ...releases.flatMap((release) => [release.name, release.project_name])]
-      : [item.name, item.project_name];
-    if (textMatches(names, query, "exact")) return 0;
-    if (textMatches(names, query, "prefix")) return 1;
-    if (textMatches(names, query)) return 2;
-
     const authors = isPlugin
       ? releases.flatMap((release) => [
         ...Object.values(release.producers || {}).flatMap((names) => Array.isArray(names) ? names : [names]),
         String(release.repo_name || "").split("/")[0],
       ])
       : [item.owner, String(item.source_url || "").split("/")[3]];
-    if (textMatches(authors, query)) return 3;
+    if (state.searchField === "author") return textMatches(authors, query) ? 0 : null;
 
-    const descriptions = isPlugin
-      ? releases.flatMap((release) => [release.tagline, release.description])
-      : [item.tagline, item.description, item.namespace];
-    return textMatches(descriptions, query) ? 4 : null;
+    const names = isPlugin
+      ? [item.title, ...releases.flatMap((release) => [release.name, release.project_name])]
+      : [item.name, item.project_name];
+    if (textMatches(names, query, "exact")) return 0;
+    if (textMatches(names, query, "prefix")) return 1;
+    return textMatches(names, query) ? 2 : null;
   }
 
   function filteredRows() {
@@ -445,6 +441,7 @@
   function setKind(kind) {
     state.kind = kind;
     state.page = 1;
+    $("#search-mode").querySelector('[value="name"]').textContent = kind === "plugins" ? "Plugin" : "Virion";
     document.querySelectorAll(".tab").forEach((tab) => {
       const active = tab.dataset.kind === kind;
       tab.classList.toggle("active", active);
@@ -517,6 +514,11 @@
   });
   $("#search").addEventListener("input", (event) => {
     state.query = event.target.value;
+    state.page = 1;
+    render();
+  });
+  $("#search-mode").addEventListener("change", (event) => {
+    state.searchField = event.target.value;
     state.page = 1;
     render();
   });
