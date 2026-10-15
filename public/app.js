@@ -13,6 +13,7 @@
     pluginDownloads: {},
     virionDownloads: {},
     sourceDownloads: {},
+    loaded: false,
   };
   const $ = (selector) => document.querySelector(selector);
   const results = $("#results");
@@ -536,6 +537,7 @@
   }
 
   function render() {
+    if (!state.loaded) return;
     const filtered = filteredRows();
     const pages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
     state.page = Math.min(state.page, pages);
@@ -631,12 +633,15 @@
       state.sourceDownloads = sourceDownloads;
       $("#plugins-tab-count").textContent = number(state.pluginProjects.length);
       $("#virions-tab-count").textContent = number(summary.counts?.virion_entries);
+      state.loaded = true;
+      results.setAttribute("aria-busy", "false");
       render();
     } catch (error) {
       const notice = $("#error");
       notice.textContent = `Could not load the saved catalog. ${error.message}. Open this site through a local web server because browser security blocks data files opened directly from disk.`.replace(/[\u2013\u2014]/g, "-");
       notice.classList.remove("hidden");
       $("#results-count").textContent = "Catalog unavailable";
+      results.setAttribute("aria-busy", "false");
       results.replaceChildren();
     }
   }

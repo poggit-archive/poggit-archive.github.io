@@ -11,6 +11,7 @@
   const error = document.querySelector("#leaderboard-error");
   const sortHeaders = Array.from(document.querySelectorAll(".leaderboard-table th[data-sort]"));
   let authors = [];
+  let loaded = false;
   let currentPage = 1;
   let sortField = "total";
   let sortDirection = -1;
@@ -95,6 +96,7 @@
   }
 
   function render() {
+    if (!loaded) return;
     const filtered = filteredAuthors();
     const totalPages = Math.ceil(filtered.length / pageSize);
     currentPage = Math.min(Math.max(1, currentPage), Math.max(1, totalPages));
@@ -162,11 +164,14 @@
       if (!releasesResponse.ok) throw new Error(`Release data returned ${releasesResponse.status}`);
       const releases = await releasesResponse.json();
       authors = buildLeaderboard(groupPluginReleases(Array.isArray(releases) ? releases : []));
+      loaded = true;
+      rows.setAttribute("aria-busy", "false");
       render();
     } catch (cause) {
       error.textContent = `Could not load the saved leaderboard. ${cause.message}.`;
       error.classList.remove("hidden");
       count.textContent = "Leaderboard unavailable";
+      rows.setAttribute("aria-busy", "false");
       rows.replaceChildren();
     }
   }

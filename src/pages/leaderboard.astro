@@ -11,8 +11,8 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
     <link rel="manifest" href="/site.webmanifest">
     <title>Leaderboard - Poggit Archive</title>
-    <link rel="stylesheet" href="/styles.css?v=catalog-icons-mono-2">
-    <script is:inline src="/leaderboard.js" defer></script>
+    <link rel="stylesheet" href="/styles.css?v=loading-skeleton-1">
+    <script is:inline src="/leaderboard.js?v=loading-skeleton-1" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -53,7 +53,17 @@
                 <th scope="col" data-sort="average" aria-sort="none"><button type="button">Downloads per plugin</button></th>
               </tr>
             </thead>
-            <tbody id="leaderboard-rows"></tbody>
+            <tbody id="leaderboard-rows" aria-busy="true">
+              {Array.from({ length: 8 }, () => (
+                <tr class="skeleton-table-row" aria-hidden="true">
+                  <td><span class="skeleton-block skeleton-cell skeleton-rank"></span></td>
+                  <td><span class="skeleton-block skeleton-cell skeleton-author"></span></td>
+                  <td><span class="skeleton-block skeleton-cell skeleton-number"></span></td>
+                  <td><span class="skeleton-block skeleton-cell skeleton-total"></span></td>
+                  <td><span class="skeleton-block skeleton-cell skeleton-average"></span></td>
+                </tr>
+              ))}
+            </tbody>
           </table>
         </div>
         <nav class="pagination" aria-label="Leaderboard pages">
