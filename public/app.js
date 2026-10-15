@@ -119,8 +119,8 @@
     container.append(element("span", "", value));
   }
 
-  function addPluginMeta(container, item) {
-    addMeta(container, `${number(item.downloads)} downloads`);
+  function addPluginMeta(container, item, totalDownloads = item.downloads) {
+    addMeta(container, `${number(totalDownloads)} total downloads`);
     addMeta(container, item.license ? `License ${item.license}` : "License unknown");
   }
 
@@ -284,13 +284,13 @@
     let releaseMeta = null;
     if (isPlugin && project.releases.length > 1) {
       releaseMeta = element("span", "result-release-meta");
-      addPluginMeta(releaseMeta, item);
+      addPluginMeta(releaseMeta, item, project.totalDownloads);
       meta.append(renderVersionControl(project, item, title, (release) => {
         state.selectedPluginVersions.set(project.key, String(release.id));
         updatePluginIcon(icon, release);
         description.textContent = cleanText(release.tagline || release.description || "No description recorded");
         releaseMeta.replaceChildren();
-        addPluginMeta(releaseMeta, release);
+        addPluginMeta(releaseMeta, release, project.totalDownloads);
         const nextActions = renderActions(release, title);
         actions.replaceWith(nextActions);
         actions = nextActions;
@@ -298,7 +298,7 @@
       meta.append(releaseMeta);
     } else if (isPlugin) {
       addMeta(meta, item.version || "Version unknown");
-      addPluginMeta(meta, item);
+      addPluginMeta(meta, item, project.totalDownloads);
     } else {
       addMeta(meta, item.version || "Version unknown");
       addMeta(meta, `${number(item.used_by_projects)} projects use this`);
