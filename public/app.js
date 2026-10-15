@@ -363,6 +363,62 @@
       .map((entry) => entry.item);
   }
 
+  function goToPage(page) {
+    state.page = page;
+    render();
+    window.scrollTo({ top: $(".catalog").offsetTop - 24, behavior: "smooth" });
+  }
+
+  function renderPagination(pages) {
+    const pageList = $("#page-list");
+    const pageInput = $("#page-input");
+    pageList.replaceChildren();
+
+    const addButton = (label, page, ariaLabel, current = false) => {
+      const button = element("button", `page-button${current ? " is-current" : ""}`, label);
+      button.type = "button";
+      button.disabled = page < 1 || page > pages || page === state.page;
+      button.setAttribute("aria-label", ariaLabel);
+      if (current) button.setAttribute("aria-current", "page");
+      button.addEventListener("click", () => goToPage(page));
+      pageList.append(button);
+    };
+
+    const addEllipsis = () => pageList.append(element("span", "page-ellipsis", "…"));
+    addButton("«", state.page - 1, "Previous page");
+
+    if (pages <= 7) {
+      for (let page = 1; page <= pages; page += 1) {
+        addButton(String(page), page, `Page ${page}`, page === state.page);
+      }
+    } else if (state.page <= 4) {
+      for (let page = 1; page <= 5; page += 1) {
+        addButton(String(page), page, `Page ${page}`, page === state.page);
+      }
+      addEllipsis();
+      addButton(String(pages), pages, `Page ${pages}`);
+    } else if (state.page >= pages - 3) {
+      addButton("1", 1, "Page 1");
+      addEllipsis();
+      for (let page = pages - 4; page <= pages; page += 1) {
+        addButton(String(page), page, `Page ${page}`, page === state.page);
+      }
+    } else {
+      addButton("1", 1, "Page 1");
+      addEllipsis();
+      for (let page = state.page - 1; page <= state.page + 1; page += 1) {
+        addButton(String(page), page, `Page ${page}`, page === state.page);
+      }
+      addEllipsis();
+      addButton(String(pages), pages, `Page ${pages}`);
+    }
+
+    addButton("»", state.page + 1, "Next page");
+    pageInput.max = String(pages);
+    pageInput.disabled = pages <= 1;
+    pageInput.value = "";
+  }
+
   function render() {
     const filtered = filteredRows();
     const pages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
@@ -382,9 +438,7 @@
     $("#results-count").textContent = filtered.length
       ? `Showing ${number(start + 1)}-${number(end)} of ${number(filtered.length)} ${category}`
       : "0 results";
-    $("#page-label").textContent = `Page ${state.page} of ${pages}`;
-    $("#prev-page").disabled = state.page <= 1;
-    $("#next-page").disabled = state.page >= pages;
+    renderPagination(pages);
     results.setAttribute("aria-labelledby", state.kind === "plugins" ? "tab-plugins" : "tab-virions");
   }
 
@@ -466,15 +520,12 @@
     state.page = 1;
     render();
   });
-  $("#prev-page").addEventListener("click", () => {
-    state.page -= 1;
-    render();
-    window.scrollTo({ top: $(".catalog").offsetTop - 24, behavior: "smooth" });
-  });
-  $("#next-page").addEventListener("click", () => {
-    state.page += 1;
-    render();
-    window.scrollTo({ top: $(".catalog").offsetTop - 24, behavior: "smooth" });
+  $("#page-input").addEventListener("keydown", (event) => {
+    if (event.key !== "Enter") return;
+    const requested = Number(event.currentTarget.value);
+    if (!Number.isInteger(requested)) return;
+    const pages = Math.max(1, Math.ceil(filteredRows().length / PAGE_SIZE));
+    goToPage(Math.min(Math.max(requested, 1), pages));
   });
   init();
 })();

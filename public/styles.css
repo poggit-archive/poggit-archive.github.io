@@ -108,10 +108,16 @@ main { min-height: calc(100vh - 130px); }
 .result-actions a:hover { color: var(--text); text-decoration: underline; text-underline-offset: 3px; }
 .result-actions .download-link { color: var(--text); }
 .empty-state { padding: 44px 0; color: var(--muted); font-size: 13px; }
-.pagination { display: flex; align-items: center; justify-content: center; gap: 16px; padding: 22px 0 4px; color: var(--muted); font-size: 12px; }
-.page-button { padding: 6px 10px; border: 1px solid var(--line); background: #fff; cursor: pointer; font-size: 12px; }
+.pagination { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 6px; padding: 22px 0 4px; color: var(--muted); font-size: 12px; }
+.page-list { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 3px; }
+.page-button { display: inline-flex; width: 30px; height: 30px; align-items: center; justify-content: center; padding: 0 4px; border: 1px solid var(--line); background: #fff; cursor: pointer; font-size: 12px; }
 .page-button:hover:not(:disabled) { border-color: #999; }
 .page-button:disabled { color: #aaa; cursor: default; }
+.page-button.is-current { border-color: var(--text); background: var(--text); color: #fff; }
+.page-ellipsis { display: inline-flex; width: 14px; height: 30px; align-items: center; justify-content: center; color: var(--muted); }
+.page-jump input { width: 64px; height: 30px; padding: 0 6px; border: 1px solid var(--line); border-radius: 0; background: #fff; font-size: 12px; text-align: center; }
+.page-jump input:hover:not(:disabled) { border-color: #999; }
+.page-jump input:disabled { background: var(--soft); color: #aaa; }
 .error { margin-top: 16px; padding: 12px; background: var(--soft); font-size: 13px; }
 .hidden { display: none !important; }
 

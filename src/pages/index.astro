@@ -39,9 +39,11 @@
         <div id="error" class="error hidden" role="alert"></div>
         <div id="results" class="results" role="tabpanel" aria-labelledby="tab-plugins"></div>
         <nav class="pagination" aria-label="Catalog pages">
-          <button id="prev-page" class="page-button" type="button" disabled>Previous</button>
-          <span id="page-label">Page 1</span>
-          <button id="next-page" class="page-button" type="button" disabled>Next</button>
+          <div id="page-list" class="page-list"></div>
+          <label class="page-jump">
+            <span class="sr-only">Go to page</span>
+            <input id="page-input" type="number" min="1" step="1" inputmode="numeric" placeholder="Page" aria-label="Go to page" disabled>
+          </label>
         </nav>
       </section>
     </main>
