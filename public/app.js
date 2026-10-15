@@ -336,15 +336,16 @@
     }
     const content = element("div", "result-content");
     const title = item.name || item.project_name || "Unnamed project";
-    content.append(element("h2", "result-title", title));
-
-    const author = isPlugin ? element("p", "result-author") : null;
+    const titleElement = element("h2", "result-title");
+    titleElement.append(document.createTextNode(title));
+    const author = isPlugin ? element("span", "result-title-author") : null;
     if (author) {
       const name = pluginAuthor(item);
       author.textContent = name ? `by ${name}` : "";
       author.hidden = !name;
-      content.append(author);
+      titleElement.append(author);
     }
+    content.append(titleElement);
 
     const description = isPlugin
       ? cleanDescription(item.tagline || item.description)
