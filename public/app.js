@@ -316,18 +316,54 @@
     return row;
   }
 
+  function textMatches(values, query, mode = "contains") {
+    return values.some((value) => {
+      const text = cleanText(value).toLocaleLowerCase();
+      if (mode === "exact") return text === query;
+      if (mode === "prefix") return text.startsWith(query);
+      return text.includes(query);
+    });
+  }
+
+  function searchPriority(item, query) {
+    if (!query) return 0;
+
+    const isPlugin = state.kind === "plugins";
+    const releases = isPlugin ? item.releases : [];
+    const names = isPlugin
+      ? [item.title, ...releases.flatMap((release) => [release.name, release.project_name])]
+      : [item.name, item.project_name];
+    if (textMatches(names, query, "exact")) return 0;
+    if (textMatches(names, query, "prefix")) return 1;
+    if (textMatches(names, query)) return 2;
+
+    const authors = isPlugin
+      ? releases.flatMap((release) => [
+        ...Object.values(release.producers || {}).flatMap((names) => Array.isArray(names) ? names : [names]),
+        String(release.repo_name || "").split("/")[0],
+      ])
+      : [item.owner, String(item.source_url || "").split("/")[3]];
+    if (textMatches(authors, query)) return 3;
+
+    const descriptions = isPlugin
+      ? releases.flatMap((release) => [release.tagline, release.description])
+      : [item.tagline, item.description, item.namespace];
+    return textMatches(descriptions, query) ? 4 : null;
+  }
+
   function filteredRows() {
     const rows = state.kind === "plugins" ? state.pluginProjects : state.virions;
     const query = state.query.trim().toLocaleLowerCase();
-    const filtered = rows.filter((item) => {
-      if (!query) return true;
-      const title = state.kind === "plugins" ? item.title : item.name || item.project_name;
-      return String(title || "").toLocaleLowerCase().includes(query);
-    });
-    if (state.kind === "plugins") {
-      return filtered.sort((a, b) => b.totalDownloads - a.totalDownloads);
-    }
-    return filtered.sort((a, b) => Number(b.used_by_projects || 0) - Number(a.used_by_projects || 0));
+    return rows
+      .map((item) => ({ item, priority: searchPriority(item, query) }))
+      .filter((entry) => entry.priority !== null)
+      .sort((a, b) => {
+        if (a.priority !== b.priority) return a.priority - b.priority;
+        return state.kind === "plugins"
+          ? b.item.totalDownloads - a.item.totalDownloads
+          : Number(b.item.used_by_projects || 0) - Number(a.item.used_by_projects || 0);
+      })
+      .map((entry) => entry.item);
   }
 
   function render() {
