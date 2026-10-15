@@ -53,8 +53,7 @@ button, input { color: inherit; font: inherit; }
 button:focus-visible, a:focus-visible, input:focus-visible { outline: 2px solid var(--text); outline-offset: 3px; }
 
 .site-header, main, .site-footer { width: min(100% - 40px, 960px); margin-inline: auto; }
-.site-header { min-height: 64px; display: grid; grid-template-columns: 140px minmax(0, 1fr); align-items: center; gap: 20px; border-bottom: 1px solid var(--line); }
-.brand { font-size: 15px; font-weight: 600; letter-spacing: -0.03em; }
+.site-header { min-height: 64px; display: flex; align-items: center; border-bottom: 1px solid var(--line); }
 .header-intro h1 { margin: 0; font-size: 17px; font-weight: 600; letter-spacing: -0.04em; line-height: 1.2; }
 .header-intro p { max-width: 680px; margin: 2px 0 0; color: var(--muted); font-size: 11px; line-height: 1.4; }
 
@@ -124,7 +123,7 @@ main { min-height: calc(100vh - 130px); }
 
 @media (max-width: 620px) {
   .site-header, main, .site-footer { width: min(100% - 32px, 960px); }
-  .site-header { grid-template-columns: 1fr; gap: 8px; padding: 12px 0; }
+  .site-header { padding: 12px 0; }
   .header-intro p { max-width: 100%; }
   .catalog-tools { align-items: stretch; flex-direction: column-reverse; gap: 8px; }
   .search-field { width: 100%; margin-bottom: 0; }
