@@ -54,17 +54,6 @@
     return `${release.version || "Version unknown"} (${versionDate(release.submission_date)}) ${release.state_name || "Status unknown"}`;
   }
 
-  function snapshotDate(value) {
-    const parsed = new Date(value);
-    if (!Number.isFinite(parsed.getTime())) return value || "unknown date";
-    return new Intl.DateTimeFormat(undefined, {
-      year: "numeric",
-      month: "short",
-      day: "numeric",
-      timeZone: "UTC",
-    }).format(parsed);
-  }
-
   function cleanText(value) {
     return String(value || "").replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
   }
@@ -414,7 +403,6 @@
       state.sourceDownloads = sourceDownloads;
       $("#plugins-tab-count").textContent = number(state.pluginProjects.length);
       $("#virions-tab-count").textContent = number(summary.counts?.virion_entries);
-      $("#snapshot-label").textContent = `Snapshot ${snapshotDate(summary.captured_at || pointer.captured_at || summary.snapshot_id || pointer.snapshot_id)}`;
       render();
     } catch (error) {
       const notice = $("#error");
