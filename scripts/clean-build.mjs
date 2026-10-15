@@ -3,7 +3,7 @@ import { resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = await realpath(resolve(fileURLToPath(new URL("..", import.meta.url))));
-for (const relativePath of ["dist", ".astro", ".npm-cache", "node_modules"]) {
+for (const relativePath of ["dist", ".astro", ".npm-cache", ".memory-icon-cache", "node_modules", "public/memory-icons"]) {
   const target = resolve(root, relativePath);
   if (!target.startsWith(`${root}${sep}`)) {
     throw new Error(`Refusing to clean a path outside the project: ${target}`);

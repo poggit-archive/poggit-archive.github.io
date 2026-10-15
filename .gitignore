@@ -4,7 +4,9 @@ node_modules/
 dist/
 .astro/
 /.npm-cache/
+/.memory-icon-cache/
 /public/data/
+/public/memory-icons/
 
 # Large binary mirrors are kept outside Git's normal source tree.
 /archive/

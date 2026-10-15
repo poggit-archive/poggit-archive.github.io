@@ -29,6 +29,13 @@ jobs:
           cache: npm
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
+      - name: Cache normalized plugin icons
+        uses: actions/cache@v4
+        with:
+          path: .memory-icon-cache
+          key: memory-icons-v1-${{ hashFiles('data/api/v1/current.json') }}
+          restore-keys: |
+            memory-icons-v1-
       - name: Install dependencies
         run: npm ci
       - name: Build Astro site

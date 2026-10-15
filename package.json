@@ -7,11 +7,12 @@
   },
   "scripts": {
     "dev": "node scripts/dev-site.mjs",
-    "build": "astro build && node scripts/copy-site-data.mjs dist/data",
+    "build": "astro build && node scripts/copy-site-data.mjs dist/data && node scripts/mirror-memory-icons.mjs dist",
     "preview": "astro preview",
     "clean": "node scripts/clean-build.mjs"
   },
   "devDependencies": {
-    "astro": "7.3.8"
+    "astro": "7.3.8",
+    "sharp": "0.35.5"
   }
 }

@@ -4,27 +4,13 @@
   const error = document.querySelector("#memory-error");
   const number = new Intl.NumberFormat();
   const dateFormatter = new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
-  const uniqueImages = new Map();
-  const queue = [];
-  let activeFetches = 0;
-  const maxFetches = 6;
+  const sheetLoads = new Map();
 
   function element(tag, className, text) {
     const node = document.createElement(tag);
     if (className) node.className = className;
     if (text !== undefined) node.textContent = text;
     return node;
-  }
-
-  function validIconUrl(value) {
-    try {
-      const url = new URL(String(value || "").trim());
-      return url.protocol === "https:" && ["github.com", "raw.githubusercontent.com"].includes(url.hostname)
-        ? url.href
-        : null;
-    } catch {
-      return null;
-    }
   }
 
   function submissionTime(release) {
@@ -40,116 +26,103 @@
       : { value, label: dateFormatter.format(new Date(value * 1000)) };
   }
 
-  function renderCard(release, source) {
+  function validTile(tile) {
+    if (!tile || typeof tile.sheet !== "string" || !Number.isInteger(tile.column) || !Number.isInteger(tile.row)) {
+      return false;
+    }
+    try {
+      const url = new URL(tile.sheet, location.origin);
+      return url.origin === location.origin && url.pathname.startsWith("/memory-icons/") && url.pathname.endsWith(".webp")
+        && tile.column >= 0 && tile.column < 8 && tile.row >= 0 && tile.row < 8;
+    } catch {
+      return false;
+    }
+  }
+
+  function renderCard(release, tile) {
     const name = String(release.name || release.project_name || "Unnamed plugin");
     const version = String(release.version || "Version unknown");
     const date = releaseDate(release);
     const card = element("article", "memory-card");
     const frame = element("div", "memory-image-frame");
-    const image = document.createElement("img");
-    image.alt = `${name} ${version} icon`;
-    image.decoding = "async";
-    frame.append(image);
+    frame.setAttribute("aria-hidden", "true");
+    frame.style.setProperty("--memory-icon-x", `${(tile.column / 7) * 100}%`);
+    frame.style.setProperty("--memory-icon-y", `${(tile.row / 7) * 100}%`);
     const title = element("h3", "memory-name", name);
     title.title = name;
     const details = element("p", "memory-details", version);
     const submitted = element("time", "memory-date", date.label);
     if (date.value !== Number.MAX_SAFE_INTEGER) submitted.dateTime = new Date(date.value * 1000).toISOString();
     card.append(frame, title, details, submitted);
-    card.dataset.iconUrl = source;
-    card.dataset.submissionDate = String(date.value);
-    card.dataset.releaseId = String(release.id || 0);
     grid.append(card);
-    return { card, image, source, date: date.value, id: Number(release.id || 0) };
+    return { card, frame, sheet: tile.sheet };
   }
 
-  function removeDuplicate(entry, fingerprint) {
-    const existing = uniqueImages.get(fingerprint);
-    if (!existing) {
-      uniqueImages.set(fingerprint, entry);
-      return false;
-    }
-
-    const entryIsOlder = entry.date < existing.date || (entry.date === existing.date && entry.id < existing.id);
-    if (entryIsOlder) {
-      existing.card.remove();
-      uniqueImages.set(fingerprint, entry);
-    } else {
-      entry.card.remove();
-    }
-    return true;
-  }
-
-  async function inspect(entry) {
-    try {
-      const response = await fetch(entry.source, { mode: "cors", credentials: "omit", referrerPolicy: "no-referrer" });
-      if (!response.ok) throw new Error(`Image returned ${response.status}`);
-      const imageData = await response.blob();
-      const bytes = await imageData.arrayBuffer();
-      const digest = await crypto.subtle.digest("SHA-256", bytes);
-      const fingerprint = Array.from(new Uint8Array(digest), (byte) => byte.toString(16).padStart(2, "0")).join("");
-      if (removeDuplicate(entry, fingerprint)) return;
-
-      const objectUrl = URL.createObjectURL(imageData);
-      entry.image.addEventListener("load", () => URL.revokeObjectURL(objectUrl), { once: true });
-      entry.image.addEventListener("error", () => {
-        URL.revokeObjectURL(objectUrl);
-        entry.card.remove();
-      }, { once: true });
-      entry.image.src = objectUrl;
-    } catch {
-      entry.image.addEventListener("error", () => entry.card.remove(), { once: true });
-      entry.image.src = entry.source;
-    }
-  }
-
-  function drainQueue() {
-    while (activeFetches < maxFetches && queue.length > 0) {
-      const entry = queue.shift();
-      activeFetches += 1;
-      inspect(entry).finally(() => {
-        activeFetches -= 1;
-        drainQueue();
+  function loadSheet(path) {
+    if (!sheetLoads.has(path)) {
+      const loading = new Promise((resolvePromise) => {
+        const image = new Image();
+        image.decoding = "async";
+        image.onload = () => resolvePromise(true);
+        image.onerror = () => resolvePromise(false);
+        image.src = path;
+        if (image.complete) resolvePromise(image.naturalWidth > 0);
       });
+      sheetLoads.set(path, loading);
     }
+    return sheetLoads.get(path);
   }
 
-  function enqueue(entry) {
-    if (entry.card.dataset.queued === "true") return;
-    entry.card.dataset.queued = "true";
-    queue.push(entry);
-    drainQueue();
+  async function showIcon(entry) {
+    if (!entry) return;
+    entry.frame.classList.add("is-loading");
+    const available = await loadSheet(entry.sheet);
+    if (!entry.card.isConnected) return;
+    entry.frame.classList.remove("is-loading");
+    entry.frame.classList.add(available ? "is-loaded" : "is-unavailable");
+    if (available) entry.frame.style.backgroundImage = `url("${entry.sheet}")`;
   }
 
   async function init() {
     try {
       const pointerUrl = new URL("/data/api/v1/current.json", location.origin);
-      const pointerResponse = await fetch(pointerUrl);
+      const [pointerResponse, manifestResponse] = await Promise.all([
+        fetch(pointerUrl),
+        fetch("/memory-icons/manifest.json"),
+      ]);
       if (!pointerResponse.ok) throw new Error(`Snapshot index returned ${pointerResponse.status}`);
-      const pointer = await pointerResponse.json();
+      if (!manifestResponse.ok) throw new Error(`Icon cache returned ${manifestResponse.status}`);
+
+      const [pointer, manifest] = await Promise.all([pointerResponse.json(), manifestResponse.json()]);
       const releasesUrl = new URL(pointer.files.releases, pointerUrl);
       const releasesResponse = await fetch(releasesUrl);
       if (!releasesResponse.ok) throw new Error(`Release data returned ${releasesResponse.status}`);
       const releases = await releasesResponse.json();
       const sorted = (Array.isArray(releases) ? releases : [])
-        .filter((release) => validIconUrl(release.icon_url))
         .map((release) => ({ release, date: submissionTime(release) }))
         .sort((a, b) => a.date - b.date || Number(a.release.id || 0) - Number(b.release.id || 0));
-      const seenUrls = new Set();
+      const seenTiles = new Set();
       const entries = [];
       const entryByCard = new Map();
+
       for (const { release } of sorted) {
-        const source = validIconUrl(release.icon_url);
-        if (!source || seenUrls.has(source)) continue;
-        seenUrls.add(source);
-        const entry = renderCard(release, source);
+        const tile = manifest.icons?.[String(release.id)];
+        if (!validTile(tile)) continue;
+        const tileKey = `${tile.sheet}:${tile.column}:${tile.row}`;
+        if (seenTiles.has(tileKey)) continue;
+        seenTiles.add(tileKey);
+        const entry = renderCard(release, tile);
         entries.push(entry);
         entryByCard.set(entry.card, entry);
       }
 
-      count.textContent = `${number.format(sorted.length)} plugin releases have icon data. Repeated icon files appear once.`;
+      count.textContent = `${number.format(entries.length)} unique archived icons, oldest first.`;
+      if (manifest.partial) count.textContent += " Local preview only shows part of the archive.";
+      if (manifest.unavailable_sources > 0) {
+        count.textContent += ` ${number.format(manifest.unavailable_sources)} unavailable icon sources were skipped.`;
+      }
       if (entries.length === 0) {
-        count.textContent = "No archived plugin icons found";
+        count.textContent = "No cached plugin icons found";
         return;
       }
 
@@ -157,14 +130,13 @@
         const observer = new IntersectionObserver((observations) => {
           for (const observation of observations) {
             if (!observation.isIntersecting) continue;
-            const entry = entryByCard.get(observation.target);
-            if (entry) enqueue(entry);
+            showIcon(entryByCard.get(observation.target));
             observer.unobserve(observation.target);
           }
-        }, { rootMargin: "320px 0px" });
+        }, { rootMargin: "240px 0px" });
         for (const entry of entries) observer.observe(entry.card);
       } else {
-        entries.forEach(enqueue);
+        entries.forEach(showIcon);
       }
     } catch (cause) {
       error.textContent = `Could not load archived plugin icons. ${cause.message}.`;
