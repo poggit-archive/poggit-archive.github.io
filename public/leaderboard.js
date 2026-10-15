@@ -150,7 +150,7 @@
 
   async function init() {
     try {
-      const pointerUrl = new URL("data/api/v1/current.json", location.href);
+      const pointerUrl = new URL("/data/api/v1/current.json", location.origin);
       const pointerResponse = await fetch(pointerUrl);
       if (!pointerResponse.ok) throw new Error(`Snapshot index returned ${pointerResponse.status}`);
       const pointer = await pointerResponse.json();
@@ -161,7 +161,7 @@
       authors = buildLeaderboard(groupPluginReleases(Array.isArray(releases) ? releases : []));
       render();
     } catch (cause) {
-      error.textContent = `Could not load the saved leaderboard. ${cause.message}. Open this site through a local web server because browser security blocks data files opened directly from disk.`;
+      error.textContent = `Could not load the saved leaderboard. ${cause.message}.`;
       error.classList.remove("hidden");
       count.textContent = "Leaderboard unavailable";
       rows.replaceChildren();
