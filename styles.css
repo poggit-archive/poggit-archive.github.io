@@ -108,6 +108,7 @@ main { min-height: calc(100vh - 130px); }
 .version-option-date, .version-option-state { color: var(--muted); font-size: 11px; white-space: nowrap; }
 .result-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 14px; white-space: nowrap; }
 .result-actions a { color: var(--muted); font-size: 12px; }
+.result-action-unavailable { color: var(--muted); font-size: 12px; }
 .result-actions a:hover { color: var(--text); text-decoration: underline; text-underline-offset: 3px; }
 .result-actions .download-link { color: var(--text); }
 .empty-state { padding: 44px 0; color: var(--muted); font-size: 13px; }

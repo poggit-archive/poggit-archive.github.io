@@ -85,7 +85,7 @@ The API is versioned and immutable by snapshot:
 - `data/snapshots/<snapshot-id>/downloads-virions.json` - virion artifact state and SHA-256
 - `data/snapshots/<snapshot-id>/source-downloads.json` - exact source commits, verified ZIP URLs, and SHA-256
 
-The browser links to a verified GitHub release asset when one is available, otherwise it points to the original Poggit artifact. Source ZIP URLs and full hashes are exposed through the source download manifest.
+The browser links to verified archive release assets for PHAR and source ZIP downloads. It does not link to Poggit pages or fall back to Poggit downloads. When a source ZIP is unavailable, a clearly labeled upstream GitHub repository link may be shown. Entries without an archived PHAR remain listed as metadata and show that the PHAR is not archived.
 
 ## Publishing checklist
 

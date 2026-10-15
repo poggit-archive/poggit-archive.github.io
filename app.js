@@ -107,7 +107,7 @@
       }
     }
     const url = sourceUrl(item);
-    return url ? { url, label: "Source" } : null;
+    return url ? { url, label: "GitHub source" } : null;
   }
 
   function artifactFor(item) {
@@ -121,8 +121,7 @@
     if (localPreview && local && ["downloaded", "already_present"].includes(local.status) && local.storage_path) {
       return { url: new URL(local.storage_path, new URL("./", location.href)).href, label: "Archived PHAR", local: true };
     }
-    const url = state.kind === "plugins" ? item.artifact_url : item.poggit_download_url;
-    return { url, label: "Poggit download", local: false };
+    return null;
   }
 
   function addMeta(container, value) {
@@ -140,16 +139,15 @@
     const actions = element("div", "result-actions");
     const source = sourceArtifact(item);
     if (source) actions.append(link(source.label, source.url, "", true));
-    if (state.kind === "plugins" && item.html_url && /^https:\/\/poggit\.pmmp\.io\//.test(item.html_url)) {
-      actions.append(link("Poggit page", item.html_url, "", true));
-    }
 
     const artifact = artifactFor(item);
-    if (artifact.url && (artifact.local || archiveUrl(artifact.url) || /^https:\/\/poggit\.pmmp\.io\//.test(artifact.url))) {
+    if (artifact?.url) {
       const download = link(artifact.label, artifact.url, artifact.local || archiveUrl(artifact.url) ? "download-link" : "", !artifact.local);
       download.setAttribute("download", "");
       download.setAttribute("aria-label", `${artifact.label} for ${title} ${item.version || ""}`);
       actions.append(download);
+    } else {
+      actions.append(element("span", "result-action-unavailable", "PHAR not archived"));
     }
     return actions;
   }
