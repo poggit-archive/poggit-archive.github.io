@@ -176,6 +176,7 @@
     image.loading = "lazy";
     image.decoding = "async";
     image.referrerPolicy = "no-referrer";
+    image.addEventListener("error", () => image.remove(), { once: true });
     frame.append(image);
   }
 
