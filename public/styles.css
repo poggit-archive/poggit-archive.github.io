@@ -96,7 +96,6 @@ main { min-height: calc(100vh - 130px); }
 .version-menu::-webkit-scrollbar-thumb { background: #c6c6c6; }
 .version-menu::-webkit-scrollbar-thumb:hover { background: #999; }
 .version-menu::-webkit-scrollbar-button { display: none; }
-.version-menu.opens-up { top: auto; bottom: calc(100% + 4px); }
 .version-menu[hidden] { display: none; }
 .version-option { display: grid; width: 100%; grid-template-columns: minmax(70px, 1fr) auto; align-items: center; gap: 12px; padding: 8px; border: 0; border-bottom: 1px solid var(--line); background: #fff; color: var(--text); cursor: pointer; font: inherit; text-align: left; }
 .version-option:last-child { border-bottom: 0; }

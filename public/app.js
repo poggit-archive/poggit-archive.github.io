@@ -193,7 +193,6 @@
     control.classList.remove("is-open");
     trigger.setAttribute("aria-expanded", "false");
     menu.hidden = true;
-    menu.classList.remove("opens-up");
     if (restoreFocus) trigger.focus();
   }
 
@@ -245,8 +244,6 @@
       }
       document.querySelectorAll(".version-control.is-open").forEach((openControl) => closeVersionControl(openControl));
       menu.hidden = false;
-      const below = window.innerHeight - trigger.getBoundingClientRect().bottom;
-      menu.classList.toggle("opens-up", below < Math.min(menu.scrollHeight, 280) + 8);
       control.classList.add("is-open");
       trigger.setAttribute("aria-expanded", "true");
       const active = menu.querySelector('[aria-current="true"]') || menu.querySelector(".version-option");
