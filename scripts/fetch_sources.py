@@ -115,6 +115,7 @@ def fetch_zip(client: PoliteHTTP, url: str, part: Path, max_bytes: int) -> dict:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--snapshot", help="snapshot ID; defaults to current")
+    parser.add_argument("--repo-id", type=int, action="append", default=[], help="limit source commits to one or more Poggit repository IDs")
     parser.add_argument("--offset", type=int, default=0)
     parser.add_argument("--limit", type=int, default=0, help="maximum source commits (0 means all remaining)")
     parser.add_argument("--delay", type=float, default=2.0, help="minimum seconds between requests")
@@ -126,6 +127,9 @@ def main() -> int:
     progress_path = folder / "source-downloads.json"
     progress = json.loads(progress_path.read_text(encoding="utf-8")) if progress_path.exists() else {}
     pending = [job for job in jobs if progress.get(job["key"], {}).get("status") not in {"downloaded", "already_present", "uploaded"}]
+    if args.repo_id:
+        selected_repo_ids = set(args.repo_id)
+        pending = [job for job in pending if job.get("repo_id") in selected_repo_ids]
     pending = pending[max(0, args.offset): max(0, args.offset) + args.limit if args.limit else None]
     if not pending:
         print("No source commits selected.")

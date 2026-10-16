@@ -13459,5 +13459,950 @@
       "AlexPads/ShopUI-FormAPI-Working",
       "pm-pl/ShopUI-FormAPI-Working"
     ]
+  },
+  "204515358@0da9928d034eeddfae454a7c1048086dde622f4c": {
+    "key": "204515358@0da9928d034eeddfae454a7c1048086dde622f4c",
+    "repo_id": 204515358,
+    "repo_name": "note3crafter/StarterKit",
+    "commit": "0da9928d034eeddfae454a7c1048086dde622f4c",
+    "source_url": "https://github.com/note3crafter/StarterKit",
+    "candidates": [
+      "pm-pl/StarterKit"
+    ],
+    "status": "uploaded",
+    "bytes": 19557,
+    "sha256": "2c529083fb54b9a10602cf32ff464020b2ad1caf2bb5786ddf44e7b0cffb8cc0",
+    "final_url": "https://github.com/note3crafter/StarterKit/archive/0da9928d034eeddfae454a7c1048086dde622f4c.zip",
+    "storage_path": null,
+    "provider": "note3crafter/StarterKit",
+    "tried": [
+      "note3crafter/StarterKit"
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0002",
+    "remote_asset_name": "source-204515358-0da9928d034eeddfae454a7c1048086dde622f4c-2c529083fb54.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0002/source-204515358-0da9928d034eeddfae454a7c1048086dde622f4c-2c529083fb54.zip",
+    "remote_sha256": "2c529083fb54b9a10602cf32ff464020b2ad1caf2bb5786ddf44e7b0cffb8cc0",
+    "remote_asset_id": 647491094,
+    "uploaded_at": "2026-10-16T13:53:21Z",
+    "local_deleted": true
+  },
+  "204515358@560aaa2780488e0ebbaf467cfd0c29f38c92af60": {
+    "key": "204515358@560aaa2780488e0ebbaf467cfd0c29f38c92af60",
+    "repo_id": 204515358,
+    "repo_name": "note3crafter/StarterKit",
+    "commit": "560aaa2780488e0ebbaf467cfd0c29f38c92af60",
+    "source_url": "https://github.com/note3crafter/StarterKit",
+    "candidates": [
+      "pm-pl/StarterKit"
+    ],
+    "status": "uploaded",
+    "bytes": 20138,
+    "sha256": "cde0120a65f83431b7c3f1c00b96bf157c47c26b385ac709d1ba40be3a93668a",
+    "final_url": "https://github.com/note3crafter/StarterKit/archive/560aaa2780488e0ebbaf467cfd0c29f38c92af60.zip",
+    "storage_path": null,
+    "provider": "note3crafter/StarterKit",
+    "tried": [
+      "note3crafter/StarterKit"
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0002",
+    "remote_asset_name": "source-204515358-560aaa2780488e0ebbaf467cfd0c29f38c92af60-cde0120a65f8.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0002/source-204515358-560aaa2780488e0ebbaf467cfd0c29f38c92af60-cde0120a65f8.zip",
+    "remote_sha256": "cde0120a65f83431b7c3f1c00b96bf157c47c26b385ac709d1ba40be3a93668a",
+    "remote_asset_id": 647491157,
+    "uploaded_at": "2026-10-16T13:53:22Z",
+    "local_deleted": true
+  },
+  "204515358@58bbe7fe2fa044caa7f318057d839ea8f025fb59": {
+    "key": "204515358@58bbe7fe2fa044caa7f318057d839ea8f025fb59",
+    "repo_id": 204515358,
+    "repo_name": "note3crafter/StarterKit",
+    "commit": "58bbe7fe2fa044caa7f318057d839ea8f025fb59",
+    "source_url": "https://github.com/note3crafter/StarterKit",
+    "candidates": [
+      "pm-pl/StarterKit"
+    ],
+    "status": "uploaded",
+    "bytes": 19449,
+    "sha256": "40ee3934f2ff1d6c1edeb5d4c0c752696b5ed9b7ebabb151c44360e27c03c5a5",
+    "final_url": "https://github.com/note3crafter/StarterKit/archive/58bbe7fe2fa044caa7f318057d839ea8f025fb59.zip",
+    "storage_path": null,
+    "provider": "note3crafter/StarterKit",
+    "tried": [
+      "note3crafter/StarterKit"
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0002",
+    "remote_asset_name": "source-204515358-58bbe7fe2fa044caa7f318057d839ea8f025fb59-40ee3934f2ff.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0002/source-204515358-58bbe7fe2fa044caa7f318057d839ea8f025fb59-40ee3934f2ff.zip",
+    "remote_sha256": "40ee3934f2ff1d6c1edeb5d4c0c752696b5ed9b7ebabb151c44360e27c03c5a5",
+    "remote_asset_id": 647491189,
+    "uploaded_at": "2026-10-16T13:53:23Z",
+    "local_deleted": true
+  },
+  "204515358@74515e1e805079484c010d816615ca283af032b5": {
+    "key": "204515358@74515e1e805079484c010d816615ca283af032b5",
+    "repo_id": 204515358,
+    "repo_name": "note3crafter/StarterKit",
+    "commit": "74515e1e805079484c010d816615ca283af032b5",
+    "source_url": "https://github.com/note3crafter/StarterKit",
+    "candidates": [
+      "pm-pl/StarterKit"
+    ],
+    "status": "uploaded",
+    "bytes": 20170,
+    "sha256": "189c94ae015051d0fea6025dd5090ac6c251ded4812246d7bc4c980d7233e421",
+    "final_url": "https://github.com/note3crafter/StarterKit/archive/74515e1e805079484c010d816615ca283af032b5.zip",
+    "storage_path": null,
+    "provider": "note3crafter/StarterKit",
+    "tried": [
+      "note3crafter/StarterKit"
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0002",
+    "remote_asset_name": "source-204515358-74515e1e805079484c010d816615ca283af032b5-189c94ae0150.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0002/source-204515358-74515e1e805079484c010d816615ca283af032b5-189c94ae0150.zip",
+    "remote_sha256": "189c94ae015051d0fea6025dd5090ac6c251ded4812246d7bc4c980d7233e421",
+    "remote_asset_id": 647491225,
+    "uploaded_at": "2026-10-16T13:53:24Z",
+    "local_deleted": true
+  },
+  "204515358@a2fb18bbff69735485f3aa1095e29c2a154170fd": {
+    "key": "204515358@a2fb18bbff69735485f3aa1095e29c2a154170fd",
+    "repo_id": 204515358,
+    "repo_name": "note3crafter/StarterKit",
+    "commit": "a2fb18bbff69735485f3aa1095e29c2a154170fd",
+    "source_url": "https://github.com/note3crafter/StarterKit",
+    "candidates": [
+      "pm-pl/StarterKit"
+    ],
+    "status": "uploaded",
+    "bytes": 20137,
+    "sha256": "54d73feaf8351f5b9ef4b0c72d87396a2d13eb27b91b29fa1488b774e92307cc",
+    "final_url": "https://github.com/note3crafter/StarterKit/archive/a2fb18bbff69735485f3aa1095e29c2a154170fd.zip",
+    "storage_path": null,
+    "provider": "note3crafter/StarterKit",
+    "tried": [
+      "note3crafter/StarterKit"
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0002",
+    "remote_asset_name": "source-204515358-a2fb18bbff69735485f3aa1095e29c2a154170fd-54d73feaf835.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0002/source-204515358-a2fb18bbff69735485f3aa1095e29c2a154170fd-54d73feaf835.zip",
+    "remote_sha256": "54d73feaf8351f5b9ef4b0c72d87396a2d13eb27b91b29fa1488b774e92307cc",
+    "remote_asset_id": 647491289,
+    "uploaded_at": "2026-10-16T13:53:25Z",
+    "local_deleted": true
+  },
+  "204515358@d972e014b4728b48583b55baf2775f49ad8899c3": {
+    "key": "204515358@d972e014b4728b48583b55baf2775f49ad8899c3",
+    "repo_id": 204515358,
+    "repo_name": "note3crafter/StarterKit",
+    "commit": "d972e014b4728b48583b55baf2775f49ad8899c3",
+    "source_url": "https://github.com/note3crafter/StarterKit",
+    "candidates": [
+      "pm-pl/StarterKit"
+    ],
+    "status": "uploaded",
+    "bytes": 20100,
+    "sha256": "7e651e8132e30264dcac241541f23b551435c60ef87518f269da43a72ee5a1dc",
+    "final_url": "https://github.com/note3crafter/StarterKit/archive/d972e014b4728b48583b55baf2775f49ad8899c3.zip",
+    "storage_path": null,
+    "provider": "note3crafter/StarterKit",
+    "tried": [
+      "note3crafter/StarterKit"
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0002",
+    "remote_asset_name": "source-204515358-d972e014b4728b48583b55baf2775f49ad8899c3-7e651e8132e3.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0002/source-204515358-d972e014b4728b48583b55baf2775f49ad8899c3-7e651e8132e3.zip",
+    "remote_sha256": "7e651e8132e30264dcac241541f23b551435c60ef87518f269da43a72ee5a1dc",
+    "remote_asset_id": 647491853,
+    "uploaded_at": "2026-10-16T13:53:38Z",
+    "local_deleted": true
+  },
+  "82867467@072223cf3f2c4c8129e5af3fde7b93f3f42198be": {
+    "key": "82867467@072223cf3f2c4c8129e5af3fde7b93f3f42198be",
+    "repo_id": 82867467,
+    "repo_name": "poggit-orphanage/EconomyS",
+    "commit": "072223cf3f2c4c8129e5af3fde7b93f3f42198be",
+    "source_url": "https://github.com/poggit-orphanage/EconomyS",
+    "candidates": [
+      "pm-pl/EconomyS"
+    ],
+    "status": "uploaded",
+    "bytes": 217186,
+    "sha256": "9b093a3a6a2bd0769fbc38dd2e8a3da934d6627fd4dab81997ff148a369f7b25",
+    "final_url": "https://github.com/poggit-orphanage/EconomyS/archive/072223cf3f2c4c8129e5af3fde7b93f3f42198be.zip",
+    "storage_path": null,
+    "provider": "poggit-orphanage/EconomyS",
+    "tried": [
+      "poggit-orphanage/EconomyS"
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0006",
+    "remote_asset_name": "source-82867467-072223cf3f2c4c8129e5af3fde7b93f3f42198be-9b093a3a6a2b.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0006/source-82867467-072223cf3f2c4c8129e5af3fde7b93f3f42198be-9b093a3a6a2b.zip",
+    "remote_sha256": "9b093a3a6a2bd0769fbc38dd2e8a3da934d6627fd4dab81997ff148a369f7b25",
+    "remote_asset_id": 647492027,
+    "uploaded_at": "2026-10-16T13:53:42Z",
+    "local_deleted": true
+  },
+  "82867467@1bd4d2857093adc4707ad320d547adac728f3d61": {
+    "key": "82867467@1bd4d2857093adc4707ad320d547adac728f3d61",
+    "repo_id": 82867467,
+    "repo_name": "poggit-orphanage/EconomyS",
+    "commit": "1bd4d2857093adc4707ad320d547adac728f3d61",
+    "source_url": "https://github.com/poggit-orphanage/EconomyS",
+    "candidates": [
+      "pm-pl/EconomyS"
+    ],
+    "status": "uploaded",
+    "bytes": 222603,
+    "sha256": "ff84a22e7b7645cc9522ff4786f5cb951ce492bd13529d6f903b97f958465e11",
+    "final_url": "https://github.com/poggit-orphanage/EconomyS/archive/1bd4d2857093adc4707ad320d547adac728f3d61.zip",
+    "storage_path": null,
+    "provider": "poggit-orphanage/EconomyS",
+    "tried": [
+      "poggit-orphanage/EconomyS"
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0006",
+    "remote_asset_name": "source-82867467-1bd4d2857093adc4707ad320d547adac728f3d61-ff84a22e7b76.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0006/source-82867467-1bd4d2857093adc4707ad320d547adac728f3d61-ff84a22e7b76.zip",
+    "remote_sha256": "ff84a22e7b7645cc9522ff4786f5cb951ce492bd13529d6f903b97f958465e11",
+    "remote_asset_id": 647492087,
+    "uploaded_at": "2026-10-16T13:53:43Z",
+    "local_deleted": true
+  },
+  "82867467@23f36eaf83227964f4d9a379d92a98eb9206b208": {
+    "key": "82867467@23f36eaf83227964f4d9a379d92a98eb9206b208",
+    "repo_id": 82867467,
+    "repo_name": "poggit-orphanage/EconomyS",
+    "commit": "23f36eaf83227964f4d9a379d92a98eb9206b208",
+    "source_url": "https://github.com/poggit-orphanage/EconomyS",
+    "candidates": [
+      "pm-pl/EconomyS"
+    ],
+    "status": "uploaded",
+    "bytes": 190549,
+    "sha256": "5adfbfeb005c42ff4cc81acc265311ef24ea521cf2b87ebb0b7edff87c25cfa8",
+    "final_url": "https://github.com/poggit-orphanage/EconomyS/archive/23f36eaf83227964f4d9a379d92a98eb9206b208.zip",
+    "storage_path": null,
+    "provider": "poggit-orphanage/EconomyS",
+    "tried": [
+      "poggit-orphanage/EconomyS"
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0006",
+    "remote_asset_name": "source-82867467-23f36eaf83227964f4d9a379d92a98eb9206b208-5adfbfeb005c.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0006/source-82867467-23f36eaf83227964f4d9a379d92a98eb9206b208-5adfbfeb005c.zip",
+    "remote_sha256": "5adfbfeb005c42ff4cc81acc265311ef24ea521cf2b87ebb0b7edff87c25cfa8",
+    "remote_asset_id": 647492109,
+    "uploaded_at": "2026-10-16T13:53:44Z",
+    "local_deleted": true
+  },
+  "82867467@24a3bde29ae93c63ff6a5066472d84af1d9512b1": {
+    "key": "82867467@24a3bde29ae93c63ff6a5066472d84af1d9512b1",
+    "repo_id": 82867467,
+    "repo_name": "poggit-orphanage/EconomyS",
+    "commit": "24a3bde29ae93c63ff6a5066472d84af1d9512b1",
+    "source_url": "https://github.com/poggit-orphanage/EconomyS",
+    "candidates": [
+      "pm-pl/EconomyS"
+    ],
+    "status": "uploaded",
+    "bytes": 216915,
+    "sha256": "9fb390979ca6e861e93e766cf54ccb6ac26532376ddf77d742cc275b0653dc29",
+    "final_url": "https://github.com/poggit-orphanage/EconomyS/archive/24a3bde29ae93c63ff6a5066472d84af1d9512b1.zip",
+    "storage_path": null,
+    "provider": "poggit-orphanage/EconomyS",
+    "tried": [
+      "poggit-orphanage/EconomyS"
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0006",
+    "remote_asset_name": "source-82867467-24a3bde29ae93c63ff6a5066472d84af1d9512b1-9fb390979ca6.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0006/source-82867467-24a3bde29ae93c63ff6a5066472d84af1d9512b1-9fb390979ca6.zip",
+    "remote_sha256": "9fb390979ca6e861e93e766cf54ccb6ac26532376ddf77d742cc275b0653dc29",
+    "remote_asset_id": 647492175,
+    "uploaded_at": "2026-10-16T13:53:45Z",
+    "local_deleted": true
+  },
+  "82867467@2e75fbc7ad6f3635b4d2039acd8468e1eba273e7": {
+    "key": "82867467@2e75fbc7ad6f3635b4d2039acd8468e1eba273e7",
+    "repo_id": 82867467,
+    "repo_name": "poggit-orphanage/EconomyS",
+    "commit": "2e75fbc7ad6f3635b4d2039acd8468e1eba273e7",
+    "source_url": "https://github.com/poggit-orphanage/EconomyS",
+    "candidates": [
+      "pm-pl/EconomyS"
+    ],
+    "status": "uploaded",
+    "bytes": 221932,
+    "sha256": "bfc2289133a6703f6d9cb3a52b7eeebb0d4182536b3f779ade019aa248b6cab5",
+    "final_url": "https://github.com/poggit-orphanage/EconomyS/archive/2e75fbc7ad6f3635b4d2039acd8468e1eba273e7.zip",
+    "storage_path": null,
+    "provider": "poggit-orphanage/EconomyS",
+    "tried": [
+      "poggit-orphanage/EconomyS"
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0006",
+    "remote_asset_name": "source-82867467-2e75fbc7ad6f3635b4d2039acd8468e1eba273e7-bfc2289133a6.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0006/source-82867467-2e75fbc7ad6f3635b4d2039acd8468e1eba273e7-bfc2289133a6.zip",
+    "remote_sha256": "bfc2289133a6703f6d9cb3a52b7eeebb0d4182536b3f779ade019aa248b6cab5",
+    "remote_asset_id": 647492656,
+    "uploaded_at": "2026-10-16T13:53:57Z",
+    "local_deleted": true
+  },
+  "82867467@3e3720ea7ef498bc42e39f46d43272917a8e6828": {
+    "key": "82867467@3e3720ea7ef498bc42e39f46d43272917a8e6828",
+    "repo_id": 82867467,
+    "repo_name": "poggit-orphanage/EconomyS",
+    "commit": "3e3720ea7ef498bc42e39f46d43272917a8e6828",
+    "source_url": "https://github.com/poggit-orphanage/EconomyS",
+    "candidates": [
+      "pm-pl/EconomyS"
+    ],
+    "status": "uploaded",
+    "bytes": 222701,
+    "sha256": "f002bf38a615c8f7b6a19c880fef8a85fe2ef82ee9af3f47e88f044c54e74e5b",
+    "final_url": "https://github.com/poggit-orphanage/EconomyS/archive/3e3720ea7ef498bc42e39f46d43272917a8e6828.zip",
+    "storage_path": null,
+    "provider": "poggit-orphanage/EconomyS",
+    "tried": [
+      "poggit-orphanage/EconomyS"
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0006",
+    "remote_asset_name": "source-82867467-3e3720ea7ef498bc42e39f46d43272917a8e6828-f002bf38a615.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0006/source-82867467-3e3720ea7ef498bc42e39f46d43272917a8e6828-f002bf38a615.zip",
+    "remote_sha256": "f002bf38a615c8f7b6a19c880fef8a85fe2ef82ee9af3f47e88f044c54e74e5b",
+    "remote_asset_id": 647492719,
+    "uploaded_at": "2026-10-16T13:53:58Z",
+    "local_deleted": true
+  },
+  "82867467@407b202df3dae776071479843608c5034be3ea60": {
+    "key": "82867467@407b202df3dae776071479843608c5034be3ea60",
+    "repo_id": 82867467,
+    "repo_name": "poggit-orphanage/EconomyS",
+    "commit": "407b202df3dae776071479843608c5034be3ea60",
+    "source_url": "https://github.com/poggit-orphanage/EconomyS",
+    "candidates": [
+      "pm-pl/EconomyS"
+    ],
+    "status": "uploaded",
+    "bytes": 217295,
+    "sha256": "e49db2c47365f2f0830a7ef9c6e3c581275309ce6f5f0af0b46a4c85543e2275",
+    "final_url": "https://github.com/poggit-orphanage/EconomyS/archive/407b202df3dae776071479843608c5034be3ea60.zip",
+    "storage_path": null,
+    "provider": "poggit-orphanage/EconomyS",
+    "tried": [
+      "poggit-orphanage/EconomyS"
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0006",
+    "remote_asset_name": "source-82867467-407b202df3dae776071479843608c5034be3ea60-e49db2c47365.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0006/source-82867467-407b202df3dae776071479843608c5034be3ea60-e49db2c47365.zip",
+    "remote_sha256": "e49db2c47365f2f0830a7ef9c6e3c581275309ce6f5f0af0b46a4c85543e2275",
+    "remote_asset_id": 647492767,
+    "uploaded_at": "2026-10-16T13:53:59Z",
+    "local_deleted": true
+  },
+  "82867467@449b2cbd25c250aff680738ae2654ba11751e347": {
+    "key": "82867467@449b2cbd25c250aff680738ae2654ba11751e347",
+    "repo_id": 82867467,
+    "repo_name": "poggit-orphanage/EconomyS",
+    "commit": "449b2cbd25c250aff680738ae2654ba11751e347",
+    "source_url": "https://github.com/poggit-orphanage/EconomyS",
+    "candidates": [
+      "pm-pl/EconomyS"
+    ],
+    "status": "uploaded",
+    "bytes": 221447,
+    "sha256": "487f0bdbfa8ae55dbf061909b3a6f3cb57b335f72dcdbbe690b416774f08aa2a",
+    "final_url": "https://github.com/poggit-orphanage/EconomyS/archive/449b2cbd25c250aff680738ae2654ba11751e347.zip",
+    "storage_path": null,
+    "provider": "poggit-orphanage/EconomyS",
+    "tried": [
+      "poggit-orphanage/EconomyS"
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0006",
+    "remote_asset_name": "source-82867467-449b2cbd25c250aff680738ae2654ba11751e347-487f0bdbfa8a.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0006/source-82867467-449b2cbd25c250aff680738ae2654ba11751e347-487f0bdbfa8a.zip",
+    "remote_sha256": "487f0bdbfa8ae55dbf061909b3a6f3cb57b335f72dcdbbe690b416774f08aa2a",
+    "remote_asset_id": 647492806,
+    "uploaded_at": "2026-10-16T13:54:01Z",
+    "local_deleted": true
+  },
+  "82867467@57d7333f182d8080e09d62082737130199fc78d1": {
+    "key": "82867467@57d7333f182d8080e09d62082737130199fc78d1",
+    "repo_id": 82867467,
+    "repo_name": "poggit-orphanage/EconomyS",
+    "commit": "57d7333f182d8080e09d62082737130199fc78d1",
+    "source_url": "https://github.com/poggit-orphanage/EconomyS",
+    "candidates": [
+      "pm-pl/EconomyS"
+    ],
+    "status": "uploaded",
+    "bytes": 217443,
+    "sha256": "bdabc3ed87a7e385331b8cea06194b0c0d4320f1504388e578e609118c63fa65",
+    "final_url": "https://github.com/poggit-orphanage/EconomyS/archive/57d7333f182d8080e09d62082737130199fc78d1.zip",
+    "storage_path": null,
+    "provider": "poggit-orphanage/EconomyS",
+    "tried": [
+      "poggit-orphanage/EconomyS"
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0006",
+    "remote_asset_name": "source-82867467-57d7333f182d8080e09d62082737130199fc78d1-bdabc3ed87a7.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0006/source-82867467-57d7333f182d8080e09d62082737130199fc78d1-bdabc3ed87a7.zip",
+    "remote_sha256": "bdabc3ed87a7e385331b8cea06194b0c0d4320f1504388e578e609118c63fa65",
+    "remote_asset_id": 647492891,
+    "uploaded_at": "2026-10-16T13:54:02Z",
+    "local_deleted": true
+  },
+  "82867467@5eb0c2c6b1bb886ebd147f09561e6af30dc280a5": {
+    "key": "82867467@5eb0c2c6b1bb886ebd147f09561e6af30dc280a5",
+    "repo_id": 82867467,
+    "repo_name": "poggit-orphanage/EconomyS",
+    "commit": "5eb0c2c6b1bb886ebd147f09561e6af30dc280a5",
+    "source_url": "https://github.com/poggit-orphanage/EconomyS",
+    "candidates": [
+      "pm-pl/EconomyS"
+    ],
+    "status": "uploaded",
+    "bytes": 212336,
+    "sha256": "da09a5b50cbfd26832b83e9a19b7ed26c93052ec5912df50bbd111f8172657d8",
+    "final_url": "https://github.com/poggit-orphanage/EconomyS/archive/5eb0c2c6b1bb886ebd147f09561e6af30dc280a5.zip",
+    "storage_path": null,
+    "provider": "poggit-orphanage/EconomyS",
+    "tried": [
+      "poggit-orphanage/EconomyS"
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0006",
+    "remote_asset_name": "source-82867467-5eb0c2c6b1bb886ebd147f09561e6af30dc280a5-da09a5b50cbf.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0006/source-82867467-5eb0c2c6b1bb886ebd147f09561e6af30dc280a5-da09a5b50cbf.zip",
+    "remote_sha256": "da09a5b50cbfd26832b83e9a19b7ed26c93052ec5912df50bbd111f8172657d8",
+    "remote_asset_id": 647493371,
+    "uploaded_at": "2026-10-16T13:54:13Z",
+    "local_deleted": true
+  },
+  "82867467@6db24bab0ad9fe25e480eef3d9ba61378cb17cad": {
+    "key": "82867467@6db24bab0ad9fe25e480eef3d9ba61378cb17cad",
+    "repo_id": 82867467,
+    "repo_name": "poggit-orphanage/EconomyS",
+    "commit": "6db24bab0ad9fe25e480eef3d9ba61378cb17cad",
+    "source_url": "https://github.com/poggit-orphanage/EconomyS",
+    "candidates": [
+      "pm-pl/EconomyS"
+    ],
+    "status": "uploaded",
+    "bytes": 221481,
+    "sha256": "247ca4bf33bb692aa069783c87ad6693b363c478c536275003ab4ce34fa222e2",
+    "final_url": "https://github.com/poggit-orphanage/EconomyS/archive/6db24bab0ad9fe25e480eef3d9ba61378cb17cad.zip",
+    "storage_path": null,
+    "provider": "poggit-orphanage/EconomyS",
+    "tried": [
+      "poggit-orphanage/EconomyS"
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0006",
+    "remote_asset_name": "source-82867467-6db24bab0ad9fe25e480eef3d9ba61378cb17cad-247ca4bf33bb.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0006/source-82867467-6db24bab0ad9fe25e480eef3d9ba61378cb17cad-247ca4bf33bb.zip",
+    "remote_sha256": "247ca4bf33bb692aa069783c87ad6693b363c478c536275003ab4ce34fa222e2",
+    "remote_asset_id": 647493414,
+    "uploaded_at": "2026-10-16T13:54:14Z",
+    "local_deleted": true
+  },
+  "82867467@7133b821bfc978c36b6c44a3f8de1fe4597f0377": {
+    "key": "82867467@7133b821bfc978c36b6c44a3f8de1fe4597f0377",
+    "repo_id": 82867467,
+    "repo_name": "poggit-orphanage/EconomyS",
+    "commit": "7133b821bfc978c36b6c44a3f8de1fe4597f0377",
+    "source_url": "https://github.com/poggit-orphanage/EconomyS",
+    "candidates": [
+      "pm-pl/EconomyS"
+    ],
+    "status": "uploaded",
+    "bytes": 217214,
+    "sha256": "adf52668c4c87d5af20df67c489d6e4f222fd923fac92fa06814a8c0bf3c02de",
+    "final_url": "https://github.com/poggit-orphanage/EconomyS/archive/7133b821bfc978c36b6c44a3f8de1fe4597f0377.zip",
+    "storage_path": null,
+    "provider": "poggit-orphanage/EconomyS",
+    "tried": [
+      "poggit-orphanage/EconomyS"
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0006",
+    "remote_asset_name": "source-82867467-7133b821bfc978c36b6c44a3f8de1fe4597f0377-adf52668c4c8.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0006/source-82867467-7133b821bfc978c36b6c44a3f8de1fe4597f0377-adf52668c4c8.zip",
+    "remote_sha256": "adf52668c4c87d5af20df67c489d6e4f222fd923fac92fa06814a8c0bf3c02de",
+    "remote_asset_id": 647493458,
+    "uploaded_at": "2026-10-16T13:54:15Z",
+    "local_deleted": true
+  },
+  "82867467@7550e345817e7cb836d048ec05cb885f2a2bae89": {
+    "key": "82867467@7550e345817e7cb836d048ec05cb885f2a2bae89",
+    "repo_id": 82867467,
+    "repo_name": "poggit-orphanage/EconomyS",
+    "commit": "7550e345817e7cb836d048ec05cb885f2a2bae89",
+    "source_url": "https://github.com/poggit-orphanage/EconomyS",
+    "candidates": [
+      "pm-pl/EconomyS"
+    ],
+    "status": "uploaded",
+    "bytes": 216870,
+    "sha256": "ec4119aacb3bf48599d91502870e78814b6814821102f3b57ab19a2e0e6d2a72",
+    "final_url": "https://github.com/poggit-orphanage/EconomyS/archive/7550e345817e7cb836d048ec05cb885f2a2bae89.zip",
+    "storage_path": null,
+    "provider": "poggit-orphanage/EconomyS",
+    "tried": [
+      "poggit-orphanage/EconomyS"
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0006",
+    "remote_asset_name": "source-82867467-7550e345817e7cb836d048ec05cb885f2a2bae89-ec4119aacb3b.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0006/source-82867467-7550e345817e7cb836d048ec05cb885f2a2bae89-ec4119aacb3b.zip",
+    "remote_sha256": "ec4119aacb3bf48599d91502870e78814b6814821102f3b57ab19a2e0e6d2a72",
+    "remote_asset_id": 647493504,
+    "uploaded_at": "2026-10-16T13:54:16Z",
+    "local_deleted": true
+  },
+  "82867467@8410a02d4b759a6f972b396e3286259e93dc6bc2": {
+    "key": "82867467@8410a02d4b759a6f972b396e3286259e93dc6bc2",
+    "repo_id": 82867467,
+    "repo_name": "poggit-orphanage/EconomyS",
+    "commit": "8410a02d4b759a6f972b396e3286259e93dc6bc2",
+    "source_url": "https://github.com/poggit-orphanage/EconomyS",
+    "candidates": [
+      "pm-pl/EconomyS"
+    ],
+    "status": "uploaded",
+    "bytes": 190548,
+    "sha256": "7bf881c390600c69c423189b74bef991848775770ad668202bd3fc488950e230",
+    "final_url": "https://github.com/poggit-orphanage/EconomyS/archive/8410a02d4b759a6f972b396e3286259e93dc6bc2.zip",
+    "storage_path": null,
+    "provider": "poggit-orphanage/EconomyS",
+    "tried": [
+      "poggit-orphanage/EconomyS"
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0006",
+    "remote_asset_name": "source-82867467-8410a02d4b759a6f972b396e3286259e93dc6bc2-7bf881c39060.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0006/source-82867467-8410a02d4b759a6f972b396e3286259e93dc6bc2-7bf881c39060.zip",
+    "remote_sha256": "7bf881c390600c69c423189b74bef991848775770ad668202bd3fc488950e230",
+    "remote_asset_id": 647493566,
+    "uploaded_at": "2026-10-16T13:54:17Z",
+    "local_deleted": true
+  },
+  "82867467@98333a83f2f4648e07a50b9b0d5780dc02e6a5d6": {
+    "key": "82867467@98333a83f2f4648e07a50b9b0d5780dc02e6a5d6",
+    "repo_id": 82867467,
+    "repo_name": "poggit-orphanage/EconomyS",
+    "commit": "98333a83f2f4648e07a50b9b0d5780dc02e6a5d6",
+    "source_url": "https://github.com/poggit-orphanage/EconomyS",
+    "candidates": [
+      "pm-pl/EconomyS"
+    ],
+    "status": "uploaded",
+    "bytes": 223465,
+    "sha256": "c3a9eff23e69779d3c85571f47fefdf23934c04f676374db26121179e149cd38",
+    "final_url": "https://github.com/poggit-orphanage/EconomyS/archive/98333a83f2f4648e07a50b9b0d5780dc02e6a5d6.zip",
+    "storage_path": null,
+    "provider": "poggit-orphanage/EconomyS",
+    "tried": [
+      "poggit-orphanage/EconomyS"
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0006",
+    "remote_asset_name": "source-82867467-98333a83f2f4648e07a50b9b0d5780dc02e6a5d6-c3a9eff23e69.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0006/source-82867467-98333a83f2f4648e07a50b9b0d5780dc02e6a5d6-c3a9eff23e69.zip",
+    "remote_sha256": "c3a9eff23e69779d3c85571f47fefdf23934c04f676374db26121179e149cd38",
+    "remote_asset_id": 647494131,
+    "uploaded_at": "2026-10-16T13:54:30Z",
+    "local_deleted": true
+  },
+  "82867467@c65d1527a52e807fa3ef169d7bd3a24fed172948": {
+    "key": "82867467@c65d1527a52e807fa3ef169d7bd3a24fed172948",
+    "repo_id": 82867467,
+    "repo_name": "poggit-orphanage/EconomyS",
+    "commit": "c65d1527a52e807fa3ef169d7bd3a24fed172948",
+    "source_url": "https://github.com/poggit-orphanage/EconomyS",
+    "candidates": [
+      "pm-pl/EconomyS"
+    ],
+    "status": "uploaded",
+    "bytes": 190546,
+    "sha256": "2dd7b969c1ad3b29c93c55795d7136ca0205425ddcdc254457f1735df5239189",
+    "final_url": "https://github.com/poggit-orphanage/EconomyS/archive/c65d1527a52e807fa3ef169d7bd3a24fed172948.zip",
+    "storage_path": null,
+    "provider": "poggit-orphanage/EconomyS",
+    "tried": [
+      "poggit-orphanage/EconomyS"
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0006",
+    "remote_asset_name": "source-82867467-c65d1527a52e807fa3ef169d7bd3a24fed172948-2dd7b969c1ad.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0006/source-82867467-c65d1527a52e807fa3ef169d7bd3a24fed172948-2dd7b969c1ad.zip",
+    "remote_sha256": "2dd7b969c1ad3b29c93c55795d7136ca0205425ddcdc254457f1735df5239189",
+    "remote_asset_id": 647494180,
+    "uploaded_at": "2026-10-16T13:54:31Z",
+    "local_deleted": true
+  },
+  "82867467@c9d3ca9ae8fe74c79aeab819b7d0b7cb8a5cc350": {
+    "key": "82867467@c9d3ca9ae8fe74c79aeab819b7d0b7cb8a5cc350",
+    "repo_id": 82867467,
+    "repo_name": "poggit-orphanage/EconomyS",
+    "commit": "c9d3ca9ae8fe74c79aeab819b7d0b7cb8a5cc350",
+    "source_url": "https://github.com/poggit-orphanage/EconomyS",
+    "candidates": [
+      "pm-pl/EconomyS"
+    ],
+    "status": "uploaded",
+    "bytes": 190556,
+    "sha256": "25a7b2f004e07610ea15235ca777bbda83f292dd896315f5aca4ee513ff9fe5e",
+    "final_url": "https://github.com/poggit-orphanage/EconomyS/archive/c9d3ca9ae8fe74c79aeab819b7d0b7cb8a5cc350.zip",
+    "storage_path": null,
+    "provider": "poggit-orphanage/EconomyS",
+    "tried": [
+      "poggit-orphanage/EconomyS"
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0006",
+    "remote_asset_name": "source-82867467-c9d3ca9ae8fe74c79aeab819b7d0b7cb8a5cc350-25a7b2f004e0.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0006/source-82867467-c9d3ca9ae8fe74c79aeab819b7d0b7cb8a5cc350-25a7b2f004e0.zip",
+    "remote_sha256": "25a7b2f004e07610ea15235ca777bbda83f292dd896315f5aca4ee513ff9fe5e",
+    "remote_asset_id": 647494230,
+    "uploaded_at": "2026-10-16T13:54:32Z",
+    "local_deleted": true
+  },
+  "82867467@ca0afab18b95b169f7361d27d6dc56545d2642e2": {
+    "key": "82867467@ca0afab18b95b169f7361d27d6dc56545d2642e2",
+    "repo_id": 82867467,
+    "repo_name": "poggit-orphanage/EconomyS",
+    "commit": "ca0afab18b95b169f7361d27d6dc56545d2642e2",
+    "source_url": "https://github.com/poggit-orphanage/EconomyS",
+    "candidates": [
+      "pm-pl/EconomyS"
+    ],
+    "status": "uploaded",
+    "bytes": 221511,
+    "sha256": "c3e2fcf811104e5fa668e55a9a011c32612d62e8df8b557ea4b3fb2005b5d5ad",
+    "final_url": "https://github.com/poggit-orphanage/EconomyS/archive/ca0afab18b95b169f7361d27d6dc56545d2642e2.zip",
+    "storage_path": null,
+    "provider": "poggit-orphanage/EconomyS",
+    "tried": [
+      "poggit-orphanage/EconomyS"
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0006",
+    "remote_asset_name": "source-82867467-ca0afab18b95b169f7361d27d6dc56545d2642e2-c3e2fcf81110.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0006/source-82867467-ca0afab18b95b169f7361d27d6dc56545d2642e2-c3e2fcf81110.zip",
+    "remote_sha256": "c3e2fcf811104e5fa668e55a9a011c32612d62e8df8b557ea4b3fb2005b5d5ad",
+    "remote_asset_id": 647494282,
+    "uploaded_at": "2026-10-16T13:54:33Z",
+    "local_deleted": true
+  },
+  "82867467@cdba8935af52cde94bcc5d151dce91faddd43b6d": {
+    "key": "82867467@cdba8935af52cde94bcc5d151dce91faddd43b6d",
+    "repo_id": 82867467,
+    "repo_name": "poggit-orphanage/EconomyS",
+    "commit": "cdba8935af52cde94bcc5d151dce91faddd43b6d",
+    "source_url": "https://github.com/poggit-orphanage/EconomyS",
+    "candidates": [
+      "pm-pl/EconomyS"
+    ],
+    "status": "uploaded",
+    "bytes": 222753,
+    "sha256": "ae41aa6f442ebd3d1adf202e84d028e537cc279e5e13ad1df19b2e97a5818106",
+    "final_url": "https://github.com/poggit-orphanage/EconomyS/archive/cdba8935af52cde94bcc5d151dce91faddd43b6d.zip",
+    "storage_path": null,
+    "provider": "poggit-orphanage/EconomyS",
+    "tried": [
+      "poggit-orphanage/EconomyS"
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0006",
+    "remote_asset_name": "source-82867467-cdba8935af52cde94bcc5d151dce91faddd43b6d-ae41aa6f442e.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0006/source-82867467-cdba8935af52cde94bcc5d151dce91faddd43b6d-ae41aa6f442e.zip",
+    "remote_sha256": "ae41aa6f442ebd3d1adf202e84d028e537cc279e5e13ad1df19b2e97a5818106",
+    "remote_asset_id": 647494363,
+    "uploaded_at": "2026-10-16T13:54:35Z",
+    "local_deleted": true
+  },
+  "82867467@dbdf700c987f8da7cdadf43ec3891a42c3c22bfa": {
+    "key": "82867467@dbdf700c987f8da7cdadf43ec3891a42c3c22bfa",
+    "repo_id": 82867467,
+    "repo_name": "poggit-orphanage/EconomyS",
+    "commit": "dbdf700c987f8da7cdadf43ec3891a42c3c22bfa",
+    "source_url": "https://github.com/poggit-orphanage/EconomyS",
+    "candidates": [
+      "pm-pl/EconomyS"
+    ],
+    "status": "uploaded",
+    "bytes": 218970,
+    "sha256": "210b467565b329c5343577e55bc4812022290fb4488c7a586d88353dcf52c68c",
+    "final_url": "https://github.com/poggit-orphanage/EconomyS/archive/dbdf700c987f8da7cdadf43ec3891a42c3c22bfa.zip",
+    "storage_path": null,
+    "provider": "poggit-orphanage/EconomyS",
+    "tried": [
+      "poggit-orphanage/EconomyS"
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0006",
+    "remote_asset_name": "source-82867467-dbdf700c987f8da7cdadf43ec3891a42c3c22bfa-210b467565b3.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0006/source-82867467-dbdf700c987f8da7cdadf43ec3891a42c3c22bfa-210b467565b3.zip",
+    "remote_sha256": "210b467565b329c5343577e55bc4812022290fb4488c7a586d88353dcf52c68c",
+    "remote_asset_id": 647494955,
+    "uploaded_at": "2026-10-16T13:54:46Z",
+    "local_deleted": true
+  },
+  "82867467@ec4c3eff3a5753ed631820ab41fef60d046c6cf3": {
+    "key": "82867467@ec4c3eff3a5753ed631820ab41fef60d046c6cf3",
+    "repo_id": 82867467,
+    "repo_name": "poggit-orphanage/EconomyS",
+    "commit": "ec4c3eff3a5753ed631820ab41fef60d046c6cf3",
+    "source_url": "https://github.com/poggit-orphanage/EconomyS",
+    "candidates": [
+      "pm-pl/EconomyS"
+    ],
+    "status": "uploaded",
+    "bytes": 222685,
+    "sha256": "c23fcc67324edd2ca526aebdbacad523bf3edca88af3f7abbac3a307ee28966d",
+    "final_url": "https://github.com/poggit-orphanage/EconomyS/archive/ec4c3eff3a5753ed631820ab41fef60d046c6cf3.zip",
+    "storage_path": null,
+    "provider": "poggit-orphanage/EconomyS",
+    "tried": [
+      "poggit-orphanage/EconomyS"
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0006",
+    "remote_asset_name": "source-82867467-ec4c3eff3a5753ed631820ab41fef60d046c6cf3-c23fcc67324e.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0006/source-82867467-ec4c3eff3a5753ed631820ab41fef60d046c6cf3-c23fcc67324e.zip",
+    "remote_sha256": "c23fcc67324edd2ca526aebdbacad523bf3edca88af3f7abbac3a307ee28966d",
+    "remote_asset_id": 647495040,
+    "uploaded_at": "2026-10-16T13:54:47Z",
+    "local_deleted": true
+  },
+  "82867467@fdc61a455a01fb46f595728055e46839807cac97": {
+    "key": "82867467@fdc61a455a01fb46f595728055e46839807cac97",
+    "repo_id": 82867467,
+    "repo_name": "poggit-orphanage/EconomyS",
+    "commit": "fdc61a455a01fb46f595728055e46839807cac97",
+    "source_url": "https://github.com/poggit-orphanage/EconomyS",
+    "candidates": [
+      "pm-pl/EconomyS"
+    ],
+    "status": "uploaded",
+    "bytes": 216999,
+    "sha256": "3008120decc0b9313dde53c909fd733306c79772e61f9877d51c271667f5c14a",
+    "final_url": "https://github.com/poggit-orphanage/EconomyS/archive/fdc61a455a01fb46f595728055e46839807cac97.zip",
+    "storage_path": null,
+    "provider": "poggit-orphanage/EconomyS",
+    "tried": [
+      "poggit-orphanage/EconomyS"
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0006",
+    "remote_asset_name": "source-82867467-fdc61a455a01fb46f595728055e46839807cac97-3008120decc0.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0006/source-82867467-fdc61a455a01fb46f595728055e46839807cac97-3008120decc0.zip",
+    "remote_sha256": "3008120decc0b9313dde53c909fd733306c79772e61f9877d51c271667f5c14a",
+    "remote_asset_id": 647495081,
+    "uploaded_at": "2026-10-16T13:54:48Z",
+    "local_deleted": true
+  },
+  "82867467@ffa4841002d8557487ec2eb93a9a09b9cff95fb0": {
+    "key": "82867467@ffa4841002d8557487ec2eb93a9a09b9cff95fb0",
+    "repo_id": 82867467,
+    "repo_name": "poggit-orphanage/EconomyS",
+    "commit": "ffa4841002d8557487ec2eb93a9a09b9cff95fb0",
+    "source_url": "https://github.com/poggit-orphanage/EconomyS",
+    "candidates": [
+      "pm-pl/EconomyS"
+    ],
+    "status": "uploaded",
+    "bytes": 190554,
+    "sha256": "2d65116a0f7cfd00bdd2c6a1432403b1c54b52226ca816f1332224b043d999e5",
+    "final_url": "https://github.com/poggit-orphanage/EconomyS/archive/ffa4841002d8557487ec2eb93a9a09b9cff95fb0.zip",
+    "storage_path": null,
+    "provider": "poggit-orphanage/EconomyS",
+    "tried": [
+      "poggit-orphanage/EconomyS"
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0006",
+    "remote_asset_name": "source-82867467-ffa4841002d8557487ec2eb93a9a09b9cff95fb0-2d65116a0f7c.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0006/source-82867467-ffa4841002d8557487ec2eb93a9a09b9cff95fb0-2d65116a0f7c.zip",
+    "remote_sha256": "2d65116a0f7cfd00bdd2c6a1432403b1c54b52226ca816f1332224b043d999e5",
+    "remote_asset_id": 647495118,
+    "uploaded_at": "2026-10-16T13:54:50Z",
+    "local_deleted": true
+  },
+  "90545218@11ee2ed20e0c1c82cac0bf3059bddfa5f83413da": {
+    "key": "90545218@11ee2ed20e0c1c82cac0bf3059bddfa5f83413da",
+    "repo_id": 90545218,
+    "repo_name": "CzechPMDevs/SmallPlugins",
+    "commit": "11ee2ed20e0c1c82cac0bf3059bddfa5f83413da",
+    "source_url": "https://github.com/CzechPMDevs/SmallPlugins",
+    "candidates": [
+      "pm-pl/SmallPlugins"
+    ],
+    "status": "uploaded",
+    "bytes": 92792,
+    "sha256": "730ef00b154185ac9e9d0e7569f44c18c64aa2baecc53ad4ba914ec8cc828e36",
+    "final_url": "https://github.com/CzechPMDevs/SmallPlugins/archive/11ee2ed20e0c1c82cac0bf3059bddfa5f83413da.zip",
+    "storage_path": null,
+    "provider": "CzechPMDevs/SmallPlugins",
+    "tried": [
+      "CzechPMDevs/SmallPlugins"
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0006",
+    "remote_asset_name": "source-90545218-11ee2ed20e0c1c82cac0bf3059bddfa5f83413da-730ef00b1541.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0006/source-90545218-11ee2ed20e0c1c82cac0bf3059bddfa5f83413da-730ef00b1541.zip",
+    "remote_sha256": "730ef00b154185ac9e9d0e7569f44c18c64aa2baecc53ad4ba914ec8cc828e36",
+    "remote_asset_id": 647495197,
+    "uploaded_at": "2026-10-16T13:54:51Z",
+    "local_deleted": true
+  },
+  "90545218@2220a55767b564e237ccce7841efa78782072059": {
+    "key": "90545218@2220a55767b564e237ccce7841efa78782072059",
+    "repo_id": 90545218,
+    "repo_name": "CzechPMDevs/SmallPlugins",
+    "commit": "2220a55767b564e237ccce7841efa78782072059",
+    "source_url": "https://github.com/CzechPMDevs/SmallPlugins",
+    "candidates": [
+      "pm-pl/SmallPlugins"
+    ],
+    "status": "uploaded",
+    "bytes": 40753,
+    "sha256": "fd5e8781805e2dd122238a975d2ac5fde3e9be899a483775aaf5810d5d616bc7",
+    "final_url": "https://github.com/CzechPMDevs/SmallPlugins/archive/2220a55767b564e237ccce7841efa78782072059.zip",
+    "storage_path": null,
+    "provider": "CzechPMDevs/SmallPlugins",
+    "tried": [
+      "CzechPMDevs/SmallPlugins"
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0006",
+    "remote_asset_name": "source-90545218-2220a55767b564e237ccce7841efa78782072059-fd5e8781805e.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0006/source-90545218-2220a55767b564e237ccce7841efa78782072059-fd5e8781805e.zip",
+    "remote_sha256": "fd5e8781805e2dd122238a975d2ac5fde3e9be899a483775aaf5810d5d616bc7",
+    "remote_asset_id": 647495664,
+    "uploaded_at": "2026-10-16T13:55:02Z",
+    "local_deleted": true
+  },
+  "90545218@5273a4133bc609ad8b84c58e13a4f39c0b0e7f7a": {
+    "key": "90545218@5273a4133bc609ad8b84c58e13a4f39c0b0e7f7a",
+    "repo_id": 90545218,
+    "repo_name": "CzechPMDevs/SmallPlugins",
+    "commit": "5273a4133bc609ad8b84c58e13a4f39c0b0e7f7a",
+    "source_url": "https://github.com/CzechPMDevs/SmallPlugins",
+    "candidates": [
+      "pm-pl/SmallPlugins"
+    ],
+    "status": "uploaded",
+    "bytes": 101376,
+    "sha256": "4c33ea75b7684553d7e428377e1f1e12a786f60c58084b1339d95397fb7b02a9",
+    "final_url": "https://github.com/CzechPMDevs/SmallPlugins/archive/5273a4133bc609ad8b84c58e13a4f39c0b0e7f7a.zip",
+    "storage_path": null,
+    "provider": "CzechPMDevs/SmallPlugins",
+    "tried": [
+      "CzechPMDevs/SmallPlugins"
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0006",
+    "remote_asset_name": "source-90545218-5273a4133bc609ad8b84c58e13a4f39c0b0e7f7a-4c33ea75b768.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0006/source-90545218-5273a4133bc609ad8b84c58e13a4f39c0b0e7f7a-4c33ea75b768.zip",
+    "remote_sha256": "4c33ea75b7684553d7e428377e1f1e12a786f60c58084b1339d95397fb7b02a9",
+    "remote_asset_id": 647495720,
+    "uploaded_at": "2026-10-16T13:55:04Z",
+    "local_deleted": true
+  },
+  "90545218@ccdb90c7fd26f3396ba0aca5a2b06355c646c441": {
+    "key": "90545218@ccdb90c7fd26f3396ba0aca5a2b06355c646c441",
+    "repo_id": 90545218,
+    "repo_name": "CzechPMDevs/SmallPlugins",
+    "commit": "ccdb90c7fd26f3396ba0aca5a2b06355c646c441",
+    "source_url": "https://github.com/CzechPMDevs/SmallPlugins",
+    "candidates": [
+      "pm-pl/SmallPlugins"
+    ],
+    "status": "uploaded",
+    "bytes": 91132,
+    "sha256": "82c3d22cee2671c79a0bf204fbed5a23d124a49e568a5024506b2c2f1eef9189",
+    "final_url": "https://github.com/CzechPMDevs/SmallPlugins/archive/ccdb90c7fd26f3396ba0aca5a2b06355c646c441.zip",
+    "storage_path": null,
+    "provider": "CzechPMDevs/SmallPlugins",
+    "tried": [
+      "CzechPMDevs/SmallPlugins"
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0006",
+    "remote_asset_name": "source-90545218-ccdb90c7fd26f3396ba0aca5a2b06355c646c441-82c3d22cee26.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0006/source-90545218-ccdb90c7fd26f3396ba0aca5a2b06355c646c441-82c3d22cee26.zip",
+    "remote_sha256": "82c3d22cee2671c79a0bf204fbed5a23d124a49e568a5024506b2c2f1eef9189",
+    "remote_asset_id": 647495754,
+    "uploaded_at": "2026-10-16T13:55:05Z",
+    "local_deleted": true
+  },
+  "90545218@deeec2fa346e859a727755add0e371f71d095f4d": {
+    "key": "90545218@deeec2fa346e859a727755add0e371f71d095f4d",
+    "repo_id": 90545218,
+    "repo_name": "CzechPMDevs/SmallPlugins",
+    "commit": "deeec2fa346e859a727755add0e371f71d095f4d",
+    "source_url": "https://github.com/CzechPMDevs/SmallPlugins",
+    "candidates": [
+      "pm-pl/SmallPlugins"
+    ],
+    "status": "uploaded",
+    "bytes": 47653,
+    "sha256": "b129f400f64aa8cd060495e3267682b801be0385c13196b25121d3f7ee12f84d",
+    "final_url": "https://github.com/CzechPMDevs/SmallPlugins/archive/deeec2fa346e859a727755add0e371f71d095f4d.zip",
+    "storage_path": null,
+    "provider": "CzechPMDevs/SmallPlugins",
+    "tried": [
+      "CzechPMDevs/SmallPlugins"
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0006",
+    "remote_asset_name": "source-90545218-deeec2fa346e859a727755add0e371f71d095f4d-b129f400f64a.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0006/source-90545218-deeec2fa346e859a727755add0e371f71d095f4d-b129f400f64a.zip",
+    "remote_sha256": "b129f400f64aa8cd060495e3267682b801be0385c13196b25121d3f7ee12f84d",
+    "remote_asset_id": 647495800,
+    "uploaded_at": "2026-10-16T13:55:06Z",
+    "local_deleted": true
+  },
+  "90545218@e25f51972324b828165454ba3912aa530d8542d2": {
+    "key": "90545218@e25f51972324b828165454ba3912aa530d8542d2",
+    "repo_id": 90545218,
+    "repo_name": "CzechPMDevs/SmallPlugins",
+    "commit": "e25f51972324b828165454ba3912aa530d8542d2",
+    "source_url": "https://github.com/CzechPMDevs/SmallPlugins",
+    "candidates": [
+      "pm-pl/SmallPlugins"
+    ],
+    "status": "uploaded",
+    "bytes": 107424,
+    "sha256": "74e6fee57ada0b9162bb0e07d64ae3b125816e32e8329aed6d64eb00485e0ce9",
+    "final_url": "https://github.com/CzechPMDevs/SmallPlugins/archive/e25f51972324b828165454ba3912aa530d8542d2.zip",
+    "storage_path": null,
+    "provider": "CzechPMDevs/SmallPlugins",
+    "tried": [
+      "CzechPMDevs/SmallPlugins"
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0006",
+    "remote_asset_name": "source-90545218-e25f51972324b828165454ba3912aa530d8542d2-74e6fee57ada.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0006/source-90545218-e25f51972324b828165454ba3912aa530d8542d2-74e6fee57ada.zip",
+    "remote_sha256": "74e6fee57ada0b9162bb0e07d64ae3b125816e32e8329aed6d64eb00485e0ce9",
+    "remote_asset_id": 647495832,
+    "uploaded_at": "2026-10-16T13:55:07Z",
+    "local_deleted": true
   }
 }
