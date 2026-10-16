@@ -210,6 +210,10 @@
     if (localPreview && local && ["downloaded", "already_present"].includes(local.status) && local.storage_path) {
       return { url: new URL(local.storage_path, new URL("./", location.href)).href, label: "Archived PHAR", local: true };
     }
+    const rebuilt = local?.rebuilt_artifact;
+    if (rebuilt?.status === "uploaded" && archiveUrl(rebuilt.remote_url)) {
+      return { url: rebuilt.remote_url, label: "Rebuilt PHAR", local: false, rebuilt };
+    }
     return null;
   }
 
@@ -233,6 +237,17 @@
       const download = link(artifact.label, artifact.url, artifact.local || archiveUrl(artifact.url) ? "download-link" : "", !artifact.local);
       download.setAttribute("download", "");
       download.setAttribute("aria-label", `${artifact.label} for ${title} ${item.version || ""}`);
+      if (artifact.rebuilt) {
+        const provenance = artifact.rebuilt;
+        const source = `${provenance.source_repo || "source"}@${String(provenance.source_commit || "").slice(0, 12)}`;
+        const version = provenance.virion_version ? `virion version ${provenance.virion_version}` : "virion version unknown";
+        const dependencies = Array.isArray(provenance.dependencies) && provenance.dependencies.length > 0
+          ? ` Declared dependencies: ${provenance.dependencies.map((dependency) => `${dependency.src || "virion"} ${dependency.version || ""}`.trim()).join(", ")}.`
+          : "";
+        const details = `Rebuilt with ${provenance.builder || "VirionTools"} ${provenance.builder_version || ""} from ${source}; ${version}; SHA-256 ${provenance.sha256 || "unavailable"}.${dependencies}`;
+        download.title = details;
+        download.setAttribute("aria-label", `${artifact.label} for ${title} ${item.version || ""}; ${details}`);
+      }
       actions.append(download);
     } else {
       actions.append(element("span", "result-action-unavailable", "PHAR not archived"));

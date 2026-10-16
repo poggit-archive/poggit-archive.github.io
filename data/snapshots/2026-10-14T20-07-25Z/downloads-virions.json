@@ -39,7 +39,45 @@
     "output": "virions/jojoe77777-formapi-libformapi-latest/libformapi-latest.phar",
     "status": "failed",
     "error": "HTTP Error 410: Gone",
-    "partial_bytes": 0
+    "partial_bytes": 0,
+    "rebuilt_artifact": {
+      "status": "uploaded",
+      "label": "Rebuilt PHAR",
+      "artifact_kind": "rebuilt_virion_phar",
+      "remote_repo": "poggit-archive/artifacts",
+      "remote_tag": "rebuilt-virions-2026-10-17-0001",
+      "remote_asset_name": "jojoe77777-formapi-libformapi-latest-2.1.1-ad0c9631.phar",
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/jojoe77777-formapi-libformapi-latest-2.1.1-ad0c9631.phar",
+      "remote_sha256": "e9b25cddcb1f5d33e6fd5e175a0fb7a629876a49b0d0a41f54b61e2bac18323d",
+      "remote_asset_id": 648345576,
+      "bytes": 32404,
+      "sha256": "e9b25cddcb1f5d33e6fd5e175a0fb7a629876a49b0d0a41f54b61e2bac18323d",
+      "uploaded_at": "2026-10-16T19:18:19Z",
+      "builder": "VirionTools",
+      "builder_version": "4.0.1",
+      "builder_commit": "d3bcaa5bbe5344996fb06b6192ca37be980dd7eb",
+      "catalog_target_version": "latest",
+      "virion_name": "libFormAPI",
+      "virion_version": "2.1.1",
+      "antigen": "jojoe77777\\FormAPI",
+      "api": [
+        "4.0.0",
+        "5.0.0"
+      ],
+      "source_repo": "jojoe77777/FormAPI",
+      "source_url": "https://github.com/jojoe77777/FormAPI",
+      "source_commit": "ad0c9631b12fc37e8d9c39436d639058046b9dab",
+      "source_ref": "master",
+      "source_commit_url": "https://github.com/jojoe77777/FormAPI/tree/ad0c9631b12fc37e8d9c39436d639058046b9dab",
+      "source_zip_url": "https://github.com/jojoe77777/FormAPI/archive/ad0c9631b12fc37e8d9c39436d639058046b9dab.zip",
+      "license_spdx": "LGPL-3.0",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "dependencies": [],
+      "build_adjustments": [],
+      "provenance_manifest_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/rebuilt-virions-manifest.json"
+    }
   },
   "poggit/libasynql/libasynql@4.2.3": {
     "type": "virion",
@@ -113,7 +151,45 @@
     "output": "virions/dktapps-pm-pl-pmforms-pmforms-latest/pmforms-latest.phar",
     "status": "failed",
     "error": "HTTP Error 410: Gone",
-    "partial_bytes": 0
+    "partial_bytes": 0,
+    "rebuilt_artifact": {
+      "status": "uploaded",
+      "label": "Rebuilt PHAR",
+      "artifact_kind": "rebuilt_virion_phar",
+      "remote_repo": "poggit-archive/artifacts",
+      "remote_tag": "rebuilt-virions-2026-10-17-0001",
+      "remote_asset_name": "dktapps-pm-pl-pmforms-pmforms-latest-2.1.0-70082f43.phar",
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/dktapps-pm-pl-pmforms-pmforms-latest-2.1.0-70082f43.phar",
+      "remote_sha256": "a805c758b3c76dfdac35a1e250636070dbacda40b7b4a5b66d8c24291e36f9ee",
+      "remote_asset_id": 648345523,
+      "bytes": 54211,
+      "sha256": "a805c758b3c76dfdac35a1e250636070dbacda40b7b4a5b66d8c24291e36f9ee",
+      "uploaded_at": "2026-10-16T19:18:19Z",
+      "builder": "VirionTools",
+      "builder_version": "4.0.1",
+      "builder_commit": "d3bcaa5bbe5344996fb06b6192ca37be980dd7eb",
+      "catalog_target_version": "latest",
+      "virion_name": "pmforms",
+      "virion_version": "2.1.0",
+      "antigen": "dktapps\\pmforms",
+      "api": [
+        "4.0.0",
+        "5.0.0"
+      ],
+      "source_repo": "dktapps-pm-pl/pmforms",
+      "source_url": "https://github.com/dktapps-pm-pl/pmforms",
+      "source_commit": "70082f430c722b868dfdfeab7337ba6b944d21dd",
+      "source_ref": "master",
+      "source_commit_url": "https://github.com/dktapps-pm-pl/pmforms/tree/70082f430c722b868dfdfeab7337ba6b944d21dd",
+      "source_zip_url": "https://github.com/dktapps-pm-pl/pmforms/archive/70082f430c722b868dfdfeab7337ba6b944d21dd.zip",
+      "license_spdx": "LGPL-3.0",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "dependencies": [],
+      "build_adjustments": [],
+      "provenance_manifest_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/rebuilt-virions-manifest.json"
+    }
   },
   "muqsit/simplepackethandler/simplepackethandler@0.1.6": {
     "type": "virion",
@@ -411,7 +487,44 @@
     "output": "virions/thebigsmilexd-customui-customui-4.0.0-alpha2/customui-4.0.0-alpha2.phar",
     "status": "failed",
     "error": "HTTP Error 404: Not Found",
-    "partial_bytes": 0
+    "partial_bytes": 0,
+    "rebuilt_artifact": {
+      "status": "uploaded",
+      "label": "Rebuilt PHAR",
+      "artifact_kind": "rebuilt_virion_phar",
+      "remote_repo": "poggit-archive/artifacts",
+      "remote_tag": "rebuilt-virions-2026-10-17-0001",
+      "remote_asset_name": "thebigsmilexd-customui-customui-4.0.0-alpha2-4.0.0-alpha2-53da7913.phar",
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/thebigsmilexd-customui-customui-4.0.0-alpha2-4.0.0-alpha2-53da7913.phar",
+      "remote_sha256": "f980f3f317a38e947ce066a919035ec46a049388b02d69deb37ef2bc0890a8dd",
+      "remote_asset_id": 648345687,
+      "bytes": 79480,
+      "sha256": "f980f3f317a38e947ce066a919035ec46a049388b02d69deb37ef2bc0890a8dd",
+      "uploaded_at": "2026-10-16T19:18:19Z",
+      "builder": "VirionTools",
+      "builder_version": "4.0.1",
+      "builder_commit": "d3bcaa5bbe5344996fb06b6192ca37be980dd7eb",
+      "catalog_target_version": "4.0.0-alpha2",
+      "virion_name": "customui",
+      "virion_version": "4.0.0-alpha2",
+      "antigen": "xenialdan\\customui",
+      "api": [
+        "4.0.0"
+      ],
+      "source_repo": "inxomnyaa/customui",
+      "source_url": "https://github.com/inxomnyaa/customui",
+      "source_commit": "53da7913680fae93edfe971702854b12a7a23eba",
+      "source_ref": "PM4",
+      "source_commit_url": "https://github.com/inxomnyaa/customui/tree/53da7913680fae93edfe971702854b12a7a23eba",
+      "source_zip_url": "https://github.com/inxomnyaa/customui/archive/53da7913680fae93edfe971702854b12a7a23eba.zip",
+      "license_spdx": "GPL-3.0",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "dependencies": [],
+      "build_adjustments": [],
+      "provenance_manifest_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/rebuilt-virions-manifest.json"
+    }
   },
   "acm-pocketmine-mp/libpiggyupdatechecker/libpiggyupdatechecker@2.0.0": {
     "type": "virion",
@@ -453,7 +566,45 @@
     "output": "virions/ifera-scorefactory-scorefactory-latest/scorefactory-latest.phar",
     "status": "failed",
     "error": "HTTP Error 410: Gone",
-    "partial_bytes": 0
+    "partial_bytes": 0,
+    "rebuilt_artifact": {
+      "status": "uploaded",
+      "label": "Rebuilt PHAR",
+      "artifact_kind": "rebuilt_virion_phar",
+      "remote_repo": "poggit-archive/artifacts",
+      "remote_tag": "rebuilt-virions-2026-10-17-0001",
+      "remote_asset_name": "ifera-scorefactory-scorefactory-latest-3.2.0-d50816b9.phar",
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/ifera-scorefactory-scorefactory-latest-3.2.0-d50816b9.phar",
+      "remote_sha256": "003404da4149cb5ef64970b01d45eb04592d85d5cb653730db8b0fbb51551d65",
+      "remote_asset_id": 648345543,
+      "bytes": 122832,
+      "sha256": "003404da4149cb5ef64970b01d45eb04592d85d5cb653730db8b0fbb51551d65",
+      "uploaded_at": "2026-10-16T19:18:19Z",
+      "builder": "VirionTools",
+      "builder_version": "4.0.1",
+      "builder_commit": "d3bcaa5bbe5344996fb06b6192ca37be980dd7eb",
+      "catalog_target_version": "latest",
+      "virion_name": "ScoreFactory",
+      "virion_version": "3.2.0",
+      "antigen": "jackmd\\scorefactory",
+      "api": [
+        "4.0.0",
+        "5.0.0"
+      ],
+      "source_repo": "Ifera/ScoreFactory",
+      "source_url": "https://github.com/Ifera/ScoreFactory",
+      "source_commit": "d50816b99f7b05fbc48079134a643808b8762ed6",
+      "source_ref": "master",
+      "source_commit_url": "https://github.com/Ifera/ScoreFactory/tree/d50816b99f7b05fbc48079134a643808b8762ed6",
+      "source_zip_url": "https://github.com/Ifera/ScoreFactory/archive/d50816b99f7b05fbc48079134a643808b8762ed6.zip",
+      "license_spdx": "GPL-3.0",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "dependencies": [],
+      "build_adjustments": [],
+      "provenance_manifest_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/rebuilt-virions-manifest.json"
+    }
   },
   "cortexpe/discordwebhookapi/discordwebhookapi@latest": {
     "id": "cortexpe/discordwebhookapi/discordwebhookapi@latest",
@@ -463,7 +614,42 @@
     "output": "virions/cortexpe-discordwebhookapi-discordwebhookapi-latest/discordwebhookapi-latest.phar",
     "status": "failed",
     "error": "HTTP Error 410: Gone",
-    "partial_bytes": 0
+    "partial_bytes": 0,
+    "rebuilt_artifact": {
+      "status": "uploaded",
+      "label": "Rebuilt PHAR",
+      "artifact_kind": "rebuilt_virion_phar",
+      "remote_repo": "poggit-archive/artifacts",
+      "remote_tag": "rebuilt-virions-2026-10-17-0001",
+      "remote_asset_name": "cortexpe-discordwebhookapi-discordwebhookapi-latest-1.0.1-49f569fb.phar",
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/cortexpe-discordwebhookapi-discordwebhookapi-latest-1.0.1-49f569fb.phar",
+      "remote_sha256": "402b81e7d75c5eb9b08d4edc75f6b7a23fc87dd25fb9e0f8180467a120833fb9",
+      "remote_asset_id": 648345485,
+      "bytes": 65514,
+      "sha256": "402b81e7d75c5eb9b08d4edc75f6b7a23fc87dd25fb9e0f8180467a120833fb9",
+      "uploaded_at": "2026-10-16T19:18:19Z",
+      "builder": "VirionTools",
+      "builder_version": "4.0.1",
+      "builder_commit": "d3bcaa5bbe5344996fb06b6192ca37be980dd7eb",
+      "catalog_target_version": "latest",
+      "virion_name": "DiscordWebhookAPI",
+      "virion_version": "1.0.1",
+      "antigen": "CortexPE\\DiscordWebhookAPI",
+      "api": "3.0.0",
+      "source_repo": "CortexPE/DiscordWebhookAPI",
+      "source_url": "https://github.com/CortexPE/DiscordWebhookAPI",
+      "source_commit": "49f569fbce17f4a53cbeba49c01e4bf2613fb551",
+      "source_ref": "master",
+      "source_commit_url": "https://github.com/CortexPE/DiscordWebhookAPI/tree/49f569fbce17f4a53cbeba49c01e4bf2613fb551",
+      "source_zip_url": "https://github.com/CortexPE/DiscordWebhookAPI/archive/49f569fbce17f4a53cbeba49c01e4bf2613fb551.zip",
+      "license_spdx": "LGPL-3.0",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "dependencies": [],
+      "build_adjustments": [],
+      "provenance_manifest_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/rebuilt-virions-manifest.json"
+    }
   },
   "latampmdevs/updatenotifier/updatenotifier@3.0.0": {
     "type": "virion",
@@ -601,7 +787,47 @@
     "output": "virions/latampmdevs-commando-commando-latest/commando-latest.phar",
     "status": "failed",
     "error": "HTTP Error 404: Not Found",
-    "partial_bytes": 0
+    "partial_bytes": 0,
+    "rebuilt_artifact": {
+      "status": "uploaded",
+      "label": "Rebuilt PHAR",
+      "artifact_kind": "rebuilt_virion_phar",
+      "remote_repo": "poggit-archive/artifacts",
+      "remote_tag": "rebuilt-virions-2026-10-17-0001",
+      "remote_asset_name": "latampmdevs-commando-commando-latest-3.3.0-62db2be0.phar",
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/latampmdevs-commando-commando-latest-3.3.0-62db2be0.phar",
+      "remote_sha256": "18ff2f990315b8065dc8a217d5f227cdb6a80ac51b020d792332b79dc70fa35f",
+      "remote_asset_id": 648345605,
+      "bytes": 140741,
+      "sha256": "18ff2f990315b8065dc8a217d5f227cdb6a80ac51b020d792332b79dc70fa35f",
+      "uploaded_at": "2026-10-16T19:18:19Z",
+      "builder": "VirionTools",
+      "builder_version": "4.0.1",
+      "builder_commit": "d3bcaa5bbe5344996fb06b6192ca37be980dd7eb",
+      "catalog_target_version": "latest",
+      "virion_name": "Commando",
+      "virion_version": "3.3.0",
+      "antigen": "CortexPE\\Commando",
+      "api": "5.36.0",
+      "source_repo": "LatamPMDevs/Commando",
+      "source_url": "https://github.com/LatamPMDevs/Commando",
+      "source_commit": "62db2be0ef4b5d509ee2832de876fdb4da401b6e",
+      "source_ref": "master",
+      "source_commit_url": "https://github.com/LatamPMDevs/Commando/tree/62db2be0ef4b5d509ee2832de876fdb4da401b6e",
+      "source_zip_url": "https://github.com/LatamPMDevs/Commando/archive/62db2be0ef4b5d509ee2832de876fdb4da401b6e.zip",
+      "license_spdx": "LGPL-3.0",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "dependencies": [
+        {
+          "src": "Muqsit/SimplePacketHandler/SimplePacketHandler",
+          "version": "^0.1.0"
+        }
+      ],
+      "build_adjustments": [],
+      "provenance_manifest_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/rebuilt-virions-manifest.json"
+    }
   },
   "dresnite/easyui/libeasyui@1.1.0": {
     "type": "virion",
@@ -707,7 +933,53 @@
     "output": "virions/nhanaz-libraries-libbedrock-libbedrock-latest/libbedrock-latest.phar",
     "status": "failed",
     "error": "HTTP Error 410: Gone",
-    "partial_bytes": 0
+    "partial_bytes": 0,
+    "rebuilt_artifact": {
+      "status": "uploaded",
+      "label": "Rebuilt PHAR",
+      "artifact_kind": "rebuilt_virion_phar",
+      "remote_repo": "poggit-archive/artifacts",
+      "remote_tag": "rebuilt-virions-2026-10-17-0001",
+      "remote_asset_name": "nhanaz-libraries-libbedrock-libbedrock-latest-2.0.0-08fb92da.phar",
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/nhanaz-libraries-libbedrock-libbedrock-latest-2.0.0-08fb92da.phar",
+      "remote_sha256": "9275ee5345943564c8a6d79d1120c988ae48f2044b813454376c5dfa7fbdbcae",
+      "remote_asset_id": 648345606,
+      "bytes": 1099149,
+      "sha256": "9275ee5345943564c8a6d79d1120c988ae48f2044b813454376c5dfa7fbdbcae",
+      "uploaded_at": "2026-10-16T19:18:19Z",
+      "builder": "VirionTools",
+      "builder_version": "4.0.1",
+      "builder_commit": "d3bcaa5bbe5344996fb06b6192ca37be980dd7eb",
+      "catalog_target_version": "latest",
+      "virion_name": "libBedrock",
+      "virion_version": "2.0.0",
+      "antigen": "NhanAZ\\libBedrock",
+      "api": [
+        "5.47.0"
+      ],
+      "source_repo": "NhanAZ-Libraries/libBedrock",
+      "source_url": "https://github.com/NhanAZ-Libraries/libBedrock",
+      "source_commit": "08fb92da6c5260c2671fbd1d14ba866c0c1330c3",
+      "source_ref": "master",
+      "source_commit_url": "https://github.com/NhanAZ-Libraries/libBedrock/tree/08fb92da6c5260c2671fbd1d14ba866c0c1330c3",
+      "source_zip_url": "https://github.com/NhanAZ-Libraries/libBedrock/archive/08fb92da6c5260c2671fbd1d14ba866c0c1330c3.zip",
+      "license_spdx": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "dependencies": [
+        {
+          "src": "VennDev/LibVapmPMMP/LibVapmPMMP",
+          "version": "^1.8.0"
+        },
+        {
+          "src": "thebigcrafter/Hydrogen/Hydrogen",
+          "version": "^1.0.0"
+        }
+      ],
+      "build_adjustments": [],
+      "provenance_manifest_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/rebuilt-virions-manifest.json"
+    }
   },
   "acm-pocketmine-mp/formsui/formsui@1.1.4": {
     "type": "virion",
@@ -1709,7 +1981,44 @@
     "output": "virions/sylvrs-libmarshal-libmarshal-1.4.3/libmarshal-1.4.3.phar",
     "status": "failed",
     "error": "HTTP Error 404: Not Found",
-    "partial_bytes": 0
+    "partial_bytes": 0,
+    "rebuilt_artifact": {
+      "status": "uploaded",
+      "label": "Rebuilt PHAR",
+      "artifact_kind": "rebuilt_virion_phar",
+      "remote_repo": "poggit-archive/artifacts",
+      "remote_tag": "rebuilt-virions-2026-10-17-0001",
+      "remote_asset_name": "sylvrs-libmarshal-libmarshal-1.4.3-1.4.3-1428c743.phar",
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/sylvrs-libmarshal-libmarshal-1.4.3-1.4.3-1428c743.phar",
+      "remote_sha256": "e626dad85cd1d46b61f99ef9ebf5649b975a22686c2eb7d93c9390adda4dc73c",
+      "remote_asset_id": 648345668,
+      "bytes": 150060,
+      "sha256": "e626dad85cd1d46b61f99ef9ebf5649b975a22686c2eb7d93c9390adda4dc73c",
+      "uploaded_at": "2026-10-16T19:18:19Z",
+      "builder": "VirionTools",
+      "builder_version": "4.0.1",
+      "builder_commit": "d3bcaa5bbe5344996fb06b6192ca37be980dd7eb",
+      "catalog_target_version": "1.4.3",
+      "virion_name": "libMarshal",
+      "virion_version": "1.4.3",
+      "antigen": "libMarshal",
+      "api": [],
+      "source_repo": "sylvrs/libMarshal",
+      "source_url": "https://github.com/sylvrs/libMarshal",
+      "source_commit": "1428c74385e02a33985a99b23484605fa17cd418",
+      "source_ref": "tag 1.4.3",
+      "source_commit_url": "https://github.com/sylvrs/libMarshal/tree/1428c74385e02a33985a99b23484605fa17cd418",
+      "source_zip_url": "https://github.com/sylvrs/libMarshal/archive/1428c74385e02a33985a99b23484605fa17cd418.zip",
+      "license_spdx": "GPL-3.0",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "dependencies": [],
+      "build_adjustments": [
+        "Generated virion.yml in staging from this exact-tag composer.json because upstream provides no virion.yml; api: [] reflects that the package declares no PocketMine API dependency."
+      ],
+      "provenance_manifest_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/rebuilt-virions-manifest.json"
+    }
   },
   "frago9876543210/forms/libforms@latest": {
     "id": "frago9876543210/forms/libforms@latest",
@@ -1719,7 +2028,44 @@
     "output": "virions/frago9876543210-forms-libforms-latest/libforms-latest.phar",
     "status": "failed",
     "error": "HTTP Error 410: Gone",
-    "partial_bytes": 0
+    "partial_bytes": 0,
+    "rebuilt_artifact": {
+      "status": "uploaded",
+      "label": "Rebuilt PHAR",
+      "artifact_kind": "rebuilt_virion_phar",
+      "remote_repo": "poggit-archive/artifacts",
+      "remote_tag": "rebuilt-virions-2026-10-17-0001",
+      "remote_asset_name": "frago9876543210-forms-libforms-latest-1.0.0-c2b22cae.phar",
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/frago9876543210-forms-libforms-latest-1.0.0-c2b22cae.phar",
+      "remote_sha256": "156c84487739a50d96688424d580f6a47b9e93981e01929d0cfd42547984697b",
+      "remote_asset_id": 648345526,
+      "bytes": 73678,
+      "sha256": "156c84487739a50d96688424d580f6a47b9e93981e01929d0cfd42547984697b",
+      "uploaded_at": "2026-10-16T19:18:19Z",
+      "builder": "VirionTools",
+      "builder_version": "4.0.1",
+      "builder_commit": "d3bcaa5bbe5344996fb06b6192ca37be980dd7eb",
+      "catalog_target_version": "latest",
+      "virion_name": "libforms",
+      "virion_version": "1.0.0",
+      "antigen": "forms",
+      "api": [
+        "5.0.0"
+      ],
+      "source_repo": "Frago9876543210/forms",
+      "source_url": "https://github.com/Frago9876543210/forms",
+      "source_commit": "c2b22cae4acca23923a6438ca8d2f1be56f4d142",
+      "source_ref": "master",
+      "source_commit_url": "https://github.com/Frago9876543210/forms/tree/c2b22cae4acca23923a6438ca8d2f1be56f4d142",
+      "source_zip_url": "https://github.com/Frago9876543210/forms/archive/c2b22cae4acca23923a6438ca8d2f1be56f4d142.zip",
+      "license_spdx": "GPL-3.0",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "dependencies": [],
+      "build_adjustments": [],
+      "provenance_manifest_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/rebuilt-virions-manifest.json"
+    }
   },
   "colinhdev/libasyncevent/libasyncevent@3.0.0": {
     "type": "virion",
@@ -1761,7 +2107,42 @@
     "output": "virions/pjz9n-moneyconnector-moneyconnector-latest/moneyconnector-latest.phar",
     "status": "failed",
     "error": "HTTP Error 410: Gone",
-    "partial_bytes": 0
+    "partial_bytes": 0,
+    "rebuilt_artifact": {
+      "status": "uploaded",
+      "label": "Rebuilt PHAR",
+      "artifact_kind": "rebuilt_virion_phar",
+      "remote_repo": "poggit-archive/artifacts",
+      "remote_tag": "rebuilt-virions-2026-10-17-0001",
+      "remote_asset_name": "pjz9n-moneyconnector-moneyconnector-latest-2.3.2-549a2e44.phar",
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/pjz9n-moneyconnector-moneyconnector-latest-2.3.2-549a2e44.phar",
+      "remote_sha256": "1a414632cd5fcc861ebbf7ab74fc27eaff3ef7e8264ae68e27049aff7d665acf",
+      "remote_asset_id": 648345618,
+      "bytes": 71232,
+      "sha256": "1a414632cd5fcc861ebbf7ab74fc27eaff3ef7e8264ae68e27049aff7d665acf",
+      "uploaded_at": "2026-10-16T19:18:19Z",
+      "builder": "VirionTools",
+      "builder_version": "4.0.1",
+      "builder_commit": "d3bcaa5bbe5344996fb06b6192ca37be980dd7eb",
+      "catalog_target_version": "latest",
+      "virion_name": "MoneyConnector",
+      "virion_version": "2.3.2",
+      "antigen": "PJZ9n\\MoneyConnector",
+      "api": "3.0.0",
+      "source_repo": "PJZ9n/MoneyConnector",
+      "source_url": "https://github.com/PJZ9n/MoneyConnector",
+      "source_commit": "549a2e4485644f730990d54248da9ce38f0b95c6",
+      "source_ref": "master",
+      "source_commit_url": "https://github.com/PJZ9n/MoneyConnector/tree/549a2e4485644f730990d54248da9ce38f0b95c6",
+      "source_zip_url": "https://github.com/PJZ9n/MoneyConnector/archive/549a2e4485644f730990d54248da9ce38f0b95c6.zip",
+      "license_spdx": "GPL-3.0",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "dependencies": [],
+      "build_adjustments": [],
+      "provenance_manifest_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/rebuilt-virions-manifest.json"
+    }
   },
   "rxduz/commando/commando@4.0.0": {
     "type": "virion",
@@ -1995,7 +2376,44 @@
     "output": "virions/fuyutsuki-libform-libform-0.4.0/libform-0.4.0.phar",
     "status": "failed",
     "error": "HTTP Error 410: Gone",
-    "partial_bytes": 0
+    "partial_bytes": 0,
+    "rebuilt_artifact": {
+      "status": "uploaded",
+      "label": "Rebuilt PHAR",
+      "artifact_kind": "rebuilt_virion_phar",
+      "remote_repo": "poggit-archive/artifacts",
+      "remote_tag": "rebuilt-virions-2026-10-17-0001",
+      "remote_asset_name": "fuyutsuki-libform-libform-0.4.0-0.4.0-14f72731.phar",
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/fuyutsuki-libform-libform-0.4.0-0.4.0-14f72731.phar",
+      "remote_sha256": "3d7c7bb8e5bb1f5686893f5ca99c5bb477a29f2df02f69f59e21c1245a2e581a",
+      "remote_asset_id": 648345535,
+      "bytes": 65967,
+      "sha256": "3d7c7bb8e5bb1f5686893f5ca99c5bb477a29f2df02f69f59e21c1245a2e581a",
+      "uploaded_at": "2026-10-16T19:18:19Z",
+      "builder": "VirionTools",
+      "builder_version": "4.0.1",
+      "builder_commit": "d3bcaa5bbe5344996fb06b6192ca37be980dd7eb",
+      "catalog_target_version": "0.4.0",
+      "virion_name": "libform",
+      "virion_version": "0.4.0",
+      "antigen": "tokyo\\pmmp\\libform",
+      "api": [],
+      "source_repo": "fuyutsuki/libform",
+      "source_url": "https://github.com/fuyutsuki/libform",
+      "source_commit": "14f7273181f8be77c309206d9bcaa73ff31add72",
+      "source_ref": "master",
+      "source_commit_url": "https://github.com/fuyutsuki/libform/tree/14f7273181f8be77c309206d9bcaa73ff31add72",
+      "source_zip_url": "https://github.com/fuyutsuki/libform/archive/14f7273181f8be77c309206d9bcaa73ff31add72.zip",
+      "license_spdx": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "dependencies": [],
+      "build_adjustments": [
+        "Added api: [] to the staged virion.yml because upstream omits this optional compatibility field."
+      ],
+      "provenance_manifest_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/rebuilt-virions-manifest.json"
+    }
   },
   "nhanaz-libraries/libregrsp/libregrsp@1.0.4": {
     "type": "virion",
@@ -2069,7 +2487,42 @@
     "output": "virions/azvyl-pmserverui-pmserverui-latest/pmserverui-latest.phar",
     "status": "failed",
     "error": "HTTP Error 410: Gone",
-    "partial_bytes": 0
+    "partial_bytes": 0,
+    "rebuilt_artifact": {
+      "status": "uploaded",
+      "label": "Rebuilt PHAR",
+      "artifact_kind": "rebuilt_virion_phar",
+      "remote_repo": "poggit-archive/artifacts",
+      "remote_tag": "rebuilt-virions-2026-10-17-0001",
+      "remote_asset_name": "azvyl-pmserverui-pmserverui-latest-1.0.2-7a230f19.phar",
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/azvyl-pmserverui-pmserverui-latest-1.0.2-7a230f19.phar",
+      "remote_sha256": "caf652ac72b936fc5155431944185a51edd76bd4c5dd6f11fa393141e95bbd97",
+      "remote_asset_id": 648345444,
+      "bytes": 47857,
+      "sha256": "caf652ac72b936fc5155431944185a51edd76bd4c5dd6f11fa393141e95bbd97",
+      "uploaded_at": "2026-10-16T19:18:19Z",
+      "builder": "VirionTools",
+      "builder_version": "4.0.1",
+      "builder_commit": "d3bcaa5bbe5344996fb06b6192ca37be980dd7eb",
+      "catalog_target_version": "latest",
+      "virion_name": "PMServerUI",
+      "virion_version": "1.0.2",
+      "antigen": "DavyCraft648\\PMServerUI",
+      "api": "5.0.0",
+      "source_repo": "Azvyl/PMServerUI",
+      "source_url": "https://github.com/Azvyl/PMServerUI",
+      "source_commit": "7a230f19a6f1c85156ff859489179547f44d72b4",
+      "source_ref": "master",
+      "source_commit_url": "https://github.com/Azvyl/PMServerUI/tree/7a230f19a6f1c85156ff859489179547f44d72b4",
+      "source_zip_url": "https://github.com/Azvyl/PMServerUI/archive/7a230f19a6f1c85156ff859489179547f44d72b4.zip",
+      "license_spdx": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "dependencies": [],
+      "build_adjustments": [],
+      "provenance_manifest_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/rebuilt-virions-manifest.json"
+    }
   },
   "mrecstsy/martianutilities/martianutilities@1.0.3": {
     "type": "virion",
@@ -2431,7 +2884,44 @@
     "output": "virions/bladenetwork-mc-apibossbar-apibossbar-0.1.5/apibossbar-0.1.5.phar",
     "status": "failed",
     "error": "HTTP Error 404: Not Found",
-    "partial_bytes": 0
+    "partial_bytes": 0,
+    "rebuilt_artifact": {
+      "status": "uploaded",
+      "label": "Rebuilt PHAR",
+      "artifact_kind": "rebuilt_virion_phar",
+      "remote_repo": "poggit-archive/artifacts",
+      "remote_tag": "rebuilt-virions-2026-10-17-0001",
+      "remote_asset_name": "bladenetwork-mc-apibossbar-apibossbar-0.1.5-0.1.5-e8a7f528.phar",
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/bladenetwork-mc-apibossbar-apibossbar-0.1.5-0.1.5-e8a7f528.phar",
+      "remote_sha256": "efcd822d9e6d2ec1068b01970d3eeb83f18cd49bdf202f8777f2466a8a9dbc83",
+      "remote_asset_id": 648345489,
+      "bytes": 72984,
+      "sha256": "efcd822d9e6d2ec1068b01970d3eeb83f18cd49bdf202f8777f2466a8a9dbc83",
+      "uploaded_at": "2026-10-16T19:18:19Z",
+      "builder": "VirionTools",
+      "builder_version": "4.0.1",
+      "builder_commit": "d3bcaa5bbe5344996fb06b6192ca37be980dd7eb",
+      "catalog_target_version": "0.1.5",
+      "virion_name": "apibossbar",
+      "virion_version": "0.1.5",
+      "antigen": "xenialdan\\apibossbar",
+      "api": [
+        "4.0.0"
+      ],
+      "source_repo": "BladeNetwork-MC/apibossbar",
+      "source_url": "https://github.com/BladeNetwork-MC/apibossbar",
+      "source_commit": "e8a7f528101ddfd843343928243bbf985d6bc580",
+      "source_ref": "PM4",
+      "source_commit_url": "https://github.com/BladeNetwork-MC/apibossbar/tree/e8a7f528101ddfd843343928243bbf985d6bc580",
+      "source_zip_url": "https://github.com/BladeNetwork-MC/apibossbar/archive/e8a7f528101ddfd843343928243bbf985d6bc580.zip",
+      "license_spdx": "GPL-3.0",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "dependencies": [],
+      "build_adjustments": [],
+      "provenance_manifest_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/rebuilt-virions-manifest.json"
+    }
   },
   "cladevs/formapi-4.0/libformapi@1.4.0": {
     "type": "virion",
@@ -2493,7 +2983,42 @@
     "output": "virions/pjz9n-resourcepacktools-resourcepacktools-latest/resourcepacktools-latest.phar",
     "status": "failed",
     "error": "HTTP Error 410: Gone",
-    "partial_bytes": 0
+    "partial_bytes": 0,
+    "rebuilt_artifact": {
+      "status": "uploaded",
+      "label": "Rebuilt PHAR",
+      "artifact_kind": "rebuilt_virion_phar",
+      "remote_repo": "poggit-archive/artifacts",
+      "remote_tag": "rebuilt-virions-2026-10-17-0001",
+      "remote_asset_name": "pjz9n-resourcepacktools-resourcepacktools-latest-2.2.0-e95bc7f0.phar",
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/pjz9n-resourcepacktools-resourcepacktools-latest-2.2.0-e95bc7f0.phar",
+      "remote_sha256": "f6d392af36c328f4098b0b1365060208a888c80ab1694b1a441f6fd5dd251f21",
+      "remote_asset_id": 648345630,
+      "bytes": 80153,
+      "sha256": "f6d392af36c328f4098b0b1365060208a888c80ab1694b1a441f6fd5dd251f21",
+      "uploaded_at": "2026-10-16T19:18:19Z",
+      "builder": "VirionTools",
+      "builder_version": "4.0.1",
+      "builder_commit": "d3bcaa5bbe5344996fb06b6192ca37be980dd7eb",
+      "catalog_target_version": "latest",
+      "virion_name": "ResourcePackTools",
+      "virion_version": "2.2.0",
+      "antigen": "pjz9n\\resourcepacktools",
+      "api": "3.0.0",
+      "source_repo": "PJZ9n/ResourcePackTools",
+      "source_url": "https://github.com/PJZ9n/ResourcePackTools",
+      "source_commit": "e95bc7f03ab3d9db7ca081645f465d00f2e90a55",
+      "source_ref": "master",
+      "source_commit_url": "https://github.com/PJZ9n/ResourcePackTools/tree/e95bc7f03ab3d9db7ca081645f465d00f2e90a55",
+      "source_zip_url": "https://github.com/PJZ9n/ResourcePackTools/archive/e95bc7f03ab3d9db7ca081645f465d00f2e90a55.zip",
+      "license_spdx": "GPL-3.0",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "dependencies": [],
+      "build_adjustments": [],
+      "provenance_manifest_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/rebuilt-virions-manifest.json"
+    }
   },
   "ldspe/enchantmentglow/enchantmentglow@1.0.0": {
     "type": "virion",
@@ -2791,7 +3316,42 @@
     "output": "virions/aid-learning-invmenu-invmenu-4.7.4/invmenu-4.7.4.phar",
     "status": "failed",
     "error": "HTTP Error 404: Not Found",
-    "partial_bytes": 0
+    "partial_bytes": 0,
+    "rebuilt_artifact": {
+      "status": "uploaded",
+      "label": "Rebuilt PHAR",
+      "artifact_kind": "rebuilt_virion_phar",
+      "remote_repo": "poggit-archive/artifacts",
+      "remote_tag": "rebuilt-virions-2026-10-17-0001",
+      "remote_asset_name": "aid-learning-invmenu-invmenu-4.7.4-4.7.4-7d7e1a69.phar",
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/aid-learning-invmenu-invmenu-4.7.4-4.7.4-7d7e1a69.phar",
+      "remote_sha256": "232d4c1b88483241eae93db1e24c5bfe34562115e56bbe4e424a064473dc087f",
+      "remote_asset_id": 648345432,
+      "bytes": 128908,
+      "sha256": "232d4c1b88483241eae93db1e24c5bfe34562115e56bbe4e424a064473dc087f",
+      "uploaded_at": "2026-10-16T19:18:19Z",
+      "builder": "VirionTools",
+      "builder_version": "4.0.1",
+      "builder_commit": "d3bcaa5bbe5344996fb06b6192ca37be980dd7eb",
+      "catalog_target_version": "4.7.4",
+      "virion_name": "InvMenu",
+      "virion_version": "4.7.4",
+      "antigen": "muqsit\\invmenu",
+      "api": "5.0.0",
+      "source_repo": "AID-LEARNING/InvMenu",
+      "source_url": "https://github.com/AID-LEARNING/InvMenu",
+      "source_commit": "7d7e1a69b8f310449bf4dd39679b0474e2e90971",
+      "source_ref": "pm5",
+      "source_commit_url": "https://github.com/AID-LEARNING/InvMenu/tree/7d7e1a69b8f310449bf4dd39679b0474e2e90971",
+      "source_zip_url": "https://github.com/AID-LEARNING/InvMenu/archive/7d7e1a69b8f310449bf4dd39679b0474e2e90971.zip",
+      "license_spdx": "GPL-3.0",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "dependencies": [],
+      "build_adjustments": [],
+      "provenance_manifest_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/rebuilt-virions-manifest.json"
+    }
   },
   "newlandpe/libasynchttp/libasynchttp@0.1.0": {
     "type": "virion",
@@ -2865,7 +3425,42 @@
     "output": "virions/jinodkdevteam-formapi-libformapi-latest/libformapi-latest.phar",
     "status": "failed",
     "error": "HTTP Error 410: Gone",
-    "partial_bytes": 0
+    "partial_bytes": 0,
+    "rebuilt_artifact": {
+      "status": "uploaded",
+      "label": "Rebuilt PHAR",
+      "artifact_kind": "rebuilt_virion_phar",
+      "remote_repo": "poggit-archive/artifacts",
+      "remote_tag": "rebuilt-virions-2026-10-17-0001",
+      "remote_asset_name": "jinodkdevteam-formapi-libformapi-latest-1.4.0-alpha-b47f7afe.phar",
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/jinodkdevteam-formapi-libformapi-latest-1.4.0-alpha-b47f7afe.phar",
+      "remote_sha256": "ca21e3751ac74c83c6499dbc60b8b8015ea5119a81a8fdfe17560e8ac35d4872",
+      "remote_asset_id": 648345553,
+      "bytes": 29841,
+      "sha256": "ca21e3751ac74c83c6499dbc60b8b8015ea5119a81a8fdfe17560e8ac35d4872",
+      "uploaded_at": "2026-10-16T19:18:19Z",
+      "builder": "VirionTools",
+      "builder_version": "4.0.1",
+      "builder_commit": "d3bcaa5bbe5344996fb06b6192ca37be980dd7eb",
+      "catalog_target_version": "latest",
+      "virion_name": "libFormAPI",
+      "virion_version": "1.4.0-alpha",
+      "antigen": "jojoe77777\\FormAPI",
+      "api": "4.0.0",
+      "source_repo": "JinodkDevTeam/FormAPI",
+      "source_url": "https://github.com/JinodkDevTeam/FormAPI",
+      "source_commit": "b47f7afe95b7ee56608a56250f13ad81a0ed0178",
+      "source_ref": "master",
+      "source_commit_url": "https://github.com/JinodkDevTeam/FormAPI/tree/b47f7afe95b7ee56608a56250f13ad81a0ed0178",
+      "source_zip_url": "https://github.com/JinodkDevTeam/FormAPI/archive/b47f7afe95b7ee56608a56250f13ad81a0ed0178.zip",
+      "license_spdx": "LGPL-3.0",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "dependencies": [],
+      "build_adjustments": [],
+      "provenance_manifest_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/rebuilt-virions-manifest.json"
+    }
   },
   "thebigsmilexd/libblockstate/libblockstate@0.1.2": {
     "type": "virion",
@@ -2939,7 +3534,42 @@
     "output": "virions/pjz9n-pm-pl-libi18n-libi18n-latest/libi18n-latest.phar",
     "status": "failed",
     "error": "HTTP Error 410: Gone",
-    "partial_bytes": 0
+    "partial_bytes": 0,
+    "rebuilt_artifact": {
+      "status": "uploaded",
+      "label": "Rebuilt PHAR",
+      "artifact_kind": "rebuilt_virion_phar",
+      "remote_repo": "poggit-archive/artifacts",
+      "remote_tag": "rebuilt-virions-2026-10-17-0001",
+      "remote_asset_name": "pjz9n-pm-pl-libi18n-libi18n-latest-1.0.3-2e9663a2.phar",
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/pjz9n-pm-pl-libi18n-libi18n-latest-1.0.3-2e9663a2.phar",
+      "remote_sha256": "af82d3f7ea4f882fda2bdfab7568fdb2f992e0b2a8f7052679ed3fc45dace6cd",
+      "remote_asset_id": 648345617,
+      "bytes": 66646,
+      "sha256": "af82d3f7ea4f882fda2bdfab7568fdb2f992e0b2a8f7052679ed3fc45dace6cd",
+      "uploaded_at": "2026-10-16T19:18:19Z",
+      "builder": "VirionTools",
+      "builder_version": "4.0.1",
+      "builder_commit": "d3bcaa5bbe5344996fb06b6192ca37be980dd7eb",
+      "catalog_target_version": "latest",
+      "virion_name": "libi18n",
+      "virion_version": "1.0.3",
+      "antigen": "pjz9n\\libi18n",
+      "api": "4.0.0",
+      "source_repo": "pjz9n-pm-pl/libi18n",
+      "source_url": "https://github.com/pjz9n-pm-pl/libi18n",
+      "source_commit": "2e9663a2a6b10883340023786570f928b6163afa",
+      "source_ref": "master",
+      "source_commit_url": "https://github.com/pjz9n-pm-pl/libi18n/tree/2e9663a2a6b10883340023786570f928b6163afa",
+      "source_zip_url": "https://github.com/pjz9n-pm-pl/libi18n/archive/2e9663a2a6b10883340023786570f928b6163afa.zip",
+      "license_spdx": "GPL-3.0",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "dependencies": [],
+      "build_adjustments": [],
+      "provenance_manifest_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/rebuilt-virions-manifest.json"
+    }
   },
   "presentkim-pm/png-converter/png-converter@1.1.0": {
     "type": "virion",
@@ -3013,7 +3643,48 @@
     "output": "virions/swift-strider-remark-remark-latest/remark-latest.phar",
     "status": "failed",
     "error": "HTTP Error 410: Gone",
-    "partial_bytes": 0
+    "partial_bytes": 0,
+    "rebuilt_artifact": {
+      "status": "uploaded",
+      "label": "Rebuilt PHAR",
+      "artifact_kind": "rebuilt_virion_phar",
+      "remote_repo": "poggit-archive/artifacts",
+      "remote_tag": "rebuilt-virions-2026-10-17-0001",
+      "remote_asset_name": "swift-strider-remark-remark-latest-1.2.2-fef59d25.phar",
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/swift-strider-remark-remark-latest-1.2.2-fef59d25.phar",
+      "remote_sha256": "172c7c117788db88075f113af396cae55e57f35889621a73c54d0871c655b31f",
+      "remote_asset_id": 648345658,
+      "bytes": 626320,
+      "sha256": "172c7c117788db88075f113af396cae55e57f35889621a73c54d0871c655b31f",
+      "uploaded_at": "2026-10-16T19:18:19Z",
+      "builder": "VirionTools",
+      "builder_version": "4.0.1",
+      "builder_commit": "d3bcaa5bbe5344996fb06b6192ca37be980dd7eb",
+      "catalog_target_version": "latest",
+      "virion_name": "Remark",
+      "virion_version": "1.2.2",
+      "antigen": "DiamondStrider1\\Remark",
+      "api": "4.0.0",
+      "source_repo": "Swift-Strider/Remark",
+      "source_url": "https://github.com/Swift-Strider/Remark",
+      "source_commit": "fef59d259d67e2a5e10860226e9c9fd54db0283c",
+      "source_ref": "main",
+      "source_commit_url": "https://github.com/Swift-Strider/Remark/tree/fef59d259d67e2a5e10860226e9c9fd54db0283c",
+      "source_zip_url": "https://github.com/Swift-Strider/Remark/archive/fef59d259d67e2a5e10860226e9c9fd54db0283c.zip",
+      "license_spdx": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "dependencies": [
+        {
+          "src": "sof3/await-generator/await-generator",
+          "version": "^3.3.0",
+          "epitope": ".random"
+        }
+      ],
+      "build_adjustments": [],
+      "provenance_manifest_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/rebuilt-virions-manifest.json"
+    }
   },
   "david-pm-pl/libeco/libeconomy@2.0.0": {
     "type": "virion",
@@ -3055,7 +3726,42 @@
     "output": "virions/presentkim-arrayutils-arrayutils-4.1.1/arrayutils-4.1.1.phar",
     "status": "failed",
     "error": "HTTP Error 410: Gone",
-    "partial_bytes": 0
+    "partial_bytes": 0,
+    "rebuilt_artifact": {
+      "status": "uploaded",
+      "label": "Rebuilt PHAR",
+      "artifact_kind": "rebuilt_virion_phar",
+      "remote_repo": "poggit-archive/artifacts",
+      "remote_tag": "rebuilt-virions-2026-10-17-0001",
+      "remote_asset_name": "presentkim-arrayutils-arrayutils-4.1.1-4.1.1-0f88072d.phar",
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/presentkim-arrayutils-arrayutils-4.1.1-4.1.1-0f88072d.phar",
+      "remote_sha256": "0a486632aa1ba9cf298bf23d7b1ba32155719e9cd55c080427f9f5b0bafb61e6",
+      "remote_asset_id": 648345646,
+      "bytes": 92777,
+      "sha256": "0a486632aa1ba9cf298bf23d7b1ba32155719e9cd55c080427f9f5b0bafb61e6",
+      "uploaded_at": "2026-10-16T19:18:19Z",
+      "builder": "VirionTools",
+      "builder_version": "4.0.1",
+      "builder_commit": "d3bcaa5bbe5344996fb06b6192ca37be980dd7eb",
+      "catalog_target_version": "4.1.1",
+      "virion_name": "arrayutils",
+      "virion_version": "4.1.1",
+      "antigen": "kim\\present\\lib\\arrayutils",
+      "api": "3.0.0",
+      "source_repo": "PresentKim/arrayutils",
+      "source_url": "https://github.com/PresentKim/arrayutils",
+      "source_commit": "0f88072d28868dc27d40b2cd82d9fc1a50710650",
+      "source_ref": "commit",
+      "source_commit_url": "https://github.com/PresentKim/arrayutils/tree/0f88072d28868dc27d40b2cd82d9fc1a50710650",
+      "source_zip_url": "https://github.com/PresentKim/arrayutils/archive/0f88072d28868dc27d40b2cd82d9fc1a50710650.zip",
+      "license_spdx": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "dependencies": [],
+      "build_adjustments": [],
+      "provenance_manifest_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/rebuilt-virions-manifest.json"
+    }
   },
   "pjz9n-pm-pl/pmforms-addon/pmforms-addon@2.0.0": {
     "type": "virion",
@@ -3481,7 +4187,44 @@
     "output": "virions/farmero14-moneysystem-moneysystem-latest/moneysystem-latest.phar",
     "status": "failed",
     "error": "HTTP Error 410: Gone",
-    "partial_bytes": 0
+    "partial_bytes": 0,
+    "rebuilt_artifact": {
+      "status": "uploaded",
+      "label": "Rebuilt PHAR",
+      "artifact_kind": "rebuilt_virion_phar",
+      "remote_repo": "poggit-archive/artifacts",
+      "remote_tag": "rebuilt-virions-2026-10-17-0001",
+      "remote_asset_name": "farmero14-moneysystem-moneysystem-latest-1.0.0-b6424fca.phar",
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/farmero14-moneysystem-moneysystem-latest-1.0.0-b6424fca.phar",
+      "remote_sha256": "2433f0b4349d4d965c3552f9b60bfb80f09093e807b086f4422646035e13463a",
+      "remote_asset_id": 648345527,
+      "bytes": 65048,
+      "sha256": "2433f0b4349d4d965c3552f9b60bfb80f09093e807b086f4422646035e13463a",
+      "uploaded_at": "2026-10-16T19:18:19Z",
+      "builder": "VirionTools",
+      "builder_version": "4.0.1",
+      "builder_commit": "d3bcaa5bbe5344996fb06b6192ca37be980dd7eb",
+      "catalog_target_version": "latest",
+      "virion_name": "MoneySystem",
+      "virion_version": "1.0.0",
+      "antigen": "Farmero\\moneysystem",
+      "api": [
+        "5.0.0"
+      ],
+      "source_repo": "Farmero14/MoneySystem",
+      "source_url": "https://github.com/Farmero14/MoneySystem",
+      "source_commit": "b6424fcaa7d5680b2f34eb722efee1041c387d2e",
+      "source_ref": "main",
+      "source_commit_url": "https://github.com/Farmero14/MoneySystem/tree/b6424fcaa7d5680b2f34eb722efee1041c387d2e",
+      "source_zip_url": "https://github.com/Farmero14/MoneySystem/archive/b6424fcaa7d5680b2f34eb722efee1041c387d2e.zip",
+      "license_spdx": "GPL-3.0",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "dependencies": [],
+      "build_adjustments": [],
+      "provenance_manifest_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/rebuilt-virions-manifest.json"
+    }
   },
   "presentkim-pm/item-serialize-utils/item-serialize-utils@3.1.0": {
     "type": "virion",
@@ -3651,7 +4394,42 @@
     "output": "virions/dctxgamesgb-scoreboardsdx-scoreboards-1.0.0/scoreboards-1.0.0.phar",
     "status": "failed",
     "error": "HTTP Error 410: Gone",
-    "partial_bytes": 0
+    "partial_bytes": 0,
+    "rebuilt_artifact": {
+      "status": "uploaded",
+      "label": "Rebuilt PHAR",
+      "artifact_kind": "rebuilt_virion_phar",
+      "remote_repo": "poggit-archive/artifacts",
+      "remote_tag": "rebuilt-virions-2026-10-17-0001",
+      "remote_asset_name": "dctxgamesgb-scoreboardsdx-scoreboards-1.0.0-1.0.0-b50ba2d0.phar",
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/dctxgamesgb-scoreboardsdx-scoreboards-1.0.0-1.0.0-b50ba2d0.phar",
+      "remote_sha256": "6bdef268fb6a16c6e8ed1b75dd824ad4cc4cdd576a14fa589db716b5dfafee39",
+      "remote_asset_id": 648345492,
+      "bytes": 164256,
+      "sha256": "6bdef268fb6a16c6e8ed1b75dd824ad4cc4cdd576a14fa589db716b5dfafee39",
+      "uploaded_at": "2026-10-16T19:18:19Z",
+      "builder": "VirionTools",
+      "builder_version": "4.0.1",
+      "builder_commit": "d3bcaa5bbe5344996fb06b6192ca37be980dd7eb",
+      "catalog_target_version": "1.0.0",
+      "virion_name": "Scoreboards",
+      "virion_version": "1.0.0",
+      "antigen": "Scoreboards",
+      "api": "4.0.0",
+      "source_repo": "DctxStudio/ScoreboardsDX",
+      "source_url": "https://github.com/DctxStudio/ScoreboardsDX",
+      "source_commit": "b50ba2d0e1136468ffb9fd6d54fd72d1fad65439",
+      "source_ref": "Virion",
+      "source_commit_url": "https://github.com/DctxStudio/ScoreboardsDX/tree/b50ba2d0e1136468ffb9fd6d54fd72d1fad65439",
+      "source_zip_url": "https://github.com/DctxStudio/ScoreboardsDX/archive/b50ba2d0e1136468ffb9fd6d54fd72d1fad65439.zip",
+      "license_spdx": "Apache-2.0",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "dependencies": [],
+      "build_adjustments": [],
+      "provenance_manifest_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/rebuilt-virions-manifest.json"
+    }
   },
   "matcracker/formlib/formlib@1.3.1": {
     "type": "virion",
@@ -3863,7 +4641,49 @@
     "output": "virions/aid-learning-libasynql-libasynql-4.2.3/libasynql-4.2.3.phar",
     "status": "failed",
     "error": "HTTP Error 404: Not Found",
-    "partial_bytes": 0
+    "partial_bytes": 0,
+    "rebuilt_artifact": {
+      "status": "uploaded",
+      "label": "Rebuilt PHAR",
+      "artifact_kind": "rebuilt_virion_phar",
+      "remote_repo": "poggit-archive/artifacts",
+      "remote_tag": "rebuilt-virions-2026-10-17-0001",
+      "remote_asset_name": "aid-learning-libasynql-libasynql-4.2.3-4.2.3-0c60c2cd.phar",
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/aid-learning-libasynql-libasynql-4.2.3-4.2.3-0c60c2cd.phar",
+      "remote_sha256": "f0338f78d36d2cc86a76b42549277d137a2d5fe925fc0d23693004b00dae15e5",
+      "remote_asset_id": 648345433,
+      "bytes": 167437,
+      "sha256": "f0338f78d36d2cc86a76b42549277d137a2d5fe925fc0d23693004b00dae15e5",
+      "uploaded_at": "2026-10-16T19:18:19Z",
+      "builder": "VirionTools",
+      "builder_version": "4.0.1",
+      "builder_commit": "d3bcaa5bbe5344996fb06b6192ca37be980dd7eb",
+      "catalog_target_version": "4.2.3",
+      "virion_name": "libasynql",
+      "virion_version": "4.2.3",
+      "antigen": "poggit\\libasynql",
+      "api": [
+        "5.0.0"
+      ],
+      "source_repo": "AID-LEARNING/libasynql",
+      "source_url": "https://github.com/AID-LEARNING/libasynql",
+      "source_commit": "0c60c2cd8f6429db24e0ab86e7454c2cef218a78",
+      "source_ref": "support-timings",
+      "source_commit_url": "https://github.com/AID-LEARNING/libasynql/tree/0c60c2cd8f6429db24e0ab86e7454c2cef218a78",
+      "source_zip_url": "https://github.com/AID-LEARNING/libasynql/archive/0c60c2cd8f6429db24e0ab86e7454c2cef218a78.zip",
+      "license_spdx": "Apache-2.0",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "dependencies": [
+        {
+          "src": "SOF3/await-generator/await-generator",
+          "version": "^3.0.0"
+        }
+      ],
+      "build_adjustments": [],
+      "provenance_manifest_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/rebuilt-virions-manifest.json"
+    }
   },
   "aid-learning/libmongodm/libmongodm@0.0.1": {
     "type": "virion",
@@ -3937,7 +4757,42 @@
     "output": "virions/adeynes-asyncio-asyncio-latest/asyncio-latest.phar",
     "status": "failed",
     "error": "HTTP Error 410: Gone",
-    "partial_bytes": 0
+    "partial_bytes": 0,
+    "rebuilt_artifact": {
+      "status": "uploaded",
+      "label": "Rebuilt PHAR",
+      "artifact_kind": "rebuilt_virion_phar",
+      "remote_repo": "poggit-archive/artifacts",
+      "remote_tag": "rebuilt-virions-2026-10-17-0001",
+      "remote_asset_name": "adeynes-asyncio-asyncio-latest-0.2.0-8ed5582e.phar",
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/adeynes-asyncio-asyncio-latest-0.2.0-8ed5582e.phar",
+      "remote_sha256": "739b1cfee02653f78d06aceb2cc7df66ab99334e48fb52416a8da57b7d144e63",
+      "remote_asset_id": 648345447,
+      "bytes": 57810,
+      "sha256": "739b1cfee02653f78d06aceb2cc7df66ab99334e48fb52416a8da57b7d144e63",
+      "uploaded_at": "2026-10-16T19:18:19Z",
+      "builder": "VirionTools",
+      "builder_version": "4.0.1",
+      "builder_commit": "d3bcaa5bbe5344996fb06b6192ca37be980dd7eb",
+      "catalog_target_version": "latest",
+      "virion_name": "asyncio",
+      "virion_version": "0.2.0",
+      "antigen": "adeynes\\asyncio",
+      "api": "3.0.0",
+      "source_repo": "adeynes/asyncio",
+      "source_url": "https://github.com/adeynes/asyncio",
+      "source_commit": "8ed5582e8c3e5285c6c63fc0dde00180b4ef20bc",
+      "source_ref": "master",
+      "source_commit_url": "https://github.com/adeynes/asyncio/tree/8ed5582e8c3e5285c6c63fc0dde00180b4ef20bc",
+      "source_zip_url": "https://github.com/adeynes/asyncio/archive/8ed5582e8c3e5285c6c63fc0dde00180b4ef20bc.zip",
+      "license_spdx": "GPL-3.0",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "dependencies": [],
+      "build_adjustments": [],
+      "provenance_manifest_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/rebuilt-virions-manifest.json"
+    }
   },
   "thebigsmilexd/skinapi/skinapi@0.3.0": {
     "type": "virion",
@@ -5981,7 +6836,42 @@
     "output": "virions/swift-strider-sounds-sounds-latest/sounds-latest.phar",
     "status": "failed",
     "error": "HTTP Error 410: Gone",
-    "partial_bytes": 0
+    "partial_bytes": 0,
+    "rebuilt_artifact": {
+      "status": "uploaded",
+      "label": "Rebuilt PHAR",
+      "artifact_kind": "rebuilt_virion_phar",
+      "remote_repo": "poggit-archive/artifacts",
+      "remote_tag": "rebuilt-virions-2026-10-17-0001",
+      "remote_asset_name": "swift-strider-sounds-sounds-latest-1.2.2-b467b4b1.phar",
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/swift-strider-sounds-sounds-latest-1.2.2-b467b4b1.phar",
+      "remote_sha256": "e7507b06f97ddd07bd0b2bd131a7b9a76e49d2c3335dfaeaed4f4fed59a6fb9e",
+      "remote_asset_id": 648345664,
+      "bytes": 212988,
+      "sha256": "e7507b06f97ddd07bd0b2bd131a7b9a76e49d2c3335dfaeaed4f4fed59a6fb9e",
+      "uploaded_at": "2026-10-16T19:18:19Z",
+      "builder": "VirionTools",
+      "builder_version": "4.0.1",
+      "builder_commit": "d3bcaa5bbe5344996fb06b6192ca37be980dd7eb",
+      "catalog_target_version": "latest",
+      "virion_name": "Sounds",
+      "virion_version": "1.2.2",
+      "antigen": "DiamondStrider1\\Sounds",
+      "api": "4.0.0",
+      "source_repo": "Swift-Strider/Sounds",
+      "source_url": "https://github.com/Swift-Strider/Sounds",
+      "source_commit": "b467b4b1f8e70ba71da64a9fad467db6538eb845",
+      "source_ref": "main",
+      "source_commit_url": "https://github.com/Swift-Strider/Sounds/tree/b467b4b1f8e70ba71da64a9fad467db6538eb845",
+      "source_zip_url": "https://github.com/Swift-Strider/Sounds/archive/b467b4b1f8e70ba71da64a9fad467db6538eb845.zip",
+      "license_spdx": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "dependencies": [],
+      "build_adjustments": [],
+      "provenance_manifest_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/rebuilt-virions-manifest.json"
+    }
   },
   "nglam2911-pm-pl/libasyneco/libasyneco@0.1": {
     "type": "virion",
@@ -6087,7 +6977,42 @@
     "output": "virions/aid-learning-libhackblockanditemregistry-libhackblockanditemregistry-latest/libhackblockanditemregistry-latest.phar",
     "status": "failed",
     "error": "HTTP Error 410: Gone",
-    "partial_bytes": 0
+    "partial_bytes": 0,
+    "rebuilt_artifact": {
+      "status": "uploaded",
+      "label": "Rebuilt PHAR",
+      "artifact_kind": "rebuilt_virion_phar",
+      "remote_repo": "poggit-archive/artifacts",
+      "remote_tag": "rebuilt-virions-2026-10-17-0001",
+      "remote_asset_name": "aid-learning-libhackblockanditemregistry-libhackblockanditemregistry-latest-1.0.1-1fa4c077.phar",
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/aid-learning-libhackblockanditemregistry-libhackblockanditemregistry-latest-1.0.1-1fa4c077.phar",
+      "remote_sha256": "5d7828c48cb730373641262a1449cc666827c2fa37fb296c076d8fe050e49fc7",
+      "remote_asset_id": 648345440,
+      "bytes": 20308,
+      "sha256": "5d7828c48cb730373641262a1449cc666827c2fa37fb296c076d8fe050e49fc7",
+      "uploaded_at": "2026-10-16T19:18:19Z",
+      "builder": "VirionTools",
+      "builder_version": "4.0.1",
+      "builder_commit": "d3bcaa5bbe5344996fb06b6192ca37be980dd7eb",
+      "catalog_target_version": "latest",
+      "virion_name": "LibHackBlockAndItemRegistry",
+      "virion_version": "1.0.1",
+      "antigen": "SenseiTarzan\\HackBlockAndItemRegistry",
+      "api": "5.0.0",
+      "source_repo": "AID-LEARNING/LibHackBlockAndItemRegistry",
+      "source_url": "https://github.com/AID-LEARNING/LibHackBlockAndItemRegistry",
+      "source_commit": "1fa4c0775300b3c868668587dd61d718f1536980",
+      "source_ref": "master",
+      "source_commit_url": "https://github.com/AID-LEARNING/LibHackBlockAndItemRegistry/tree/1fa4c0775300b3c868668587dd61d718f1536980",
+      "source_zip_url": "https://github.com/AID-LEARNING/LibHackBlockAndItemRegistry/archive/1fa4c0775300b3c868668587dd61d718f1536980.zip",
+      "license_spdx": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "dependencies": [],
+      "build_adjustments": [],
+      "provenance_manifest_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/rebuilt-virions-manifest.json"
+    }
   },
   "taylordevs/meet-bard/meet-bard@1.0.1": {
     "id": "taylordevs/meet-bard/meet-bard@1.0.1",
@@ -6097,7 +7022,42 @@
     "output": "virions/taylordevs-meet-bard-meet-bard-1.0.1/meet-bard-1.0.1.phar",
     "status": "failed",
     "error": "HTTP Error 404: Not Found",
-    "partial_bytes": 0
+    "partial_bytes": 0,
+    "rebuilt_artifact": {
+      "status": "uploaded",
+      "label": "Rebuilt PHAR",
+      "artifact_kind": "rebuilt_virion_phar",
+      "remote_repo": "poggit-archive/artifacts",
+      "remote_tag": "rebuilt-virions-2026-10-17-0001",
+      "remote_asset_name": "taylordevs-meet-bard-meet-bard-1.0.1-1.0.1-2799bbb5.phar",
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/taylordevs-meet-bard-meet-bard-1.0.1-1.0.1-2799bbb5.phar",
+      "remote_sha256": "d3cf677cd29f0ab5a2ef1114cc8b08381c717bc0bc8dbeda4136cbc458bd13e9",
+      "remote_asset_id": 648345669,
+      "bytes": 331447,
+      "sha256": "d3cf677cd29f0ab5a2ef1114cc8b08381c717bc0bc8dbeda4136cbc458bd13e9",
+      "uploaded_at": "2026-10-16T19:18:19Z",
+      "builder": "VirionTools",
+      "builder_version": "4.0.1",
+      "builder_commit": "d3bcaa5bbe5344996fb06b6192ca37be980dd7eb",
+      "catalog_target_version": "1.0.1",
+      "virion_name": "MeetBard",
+      "virion_version": "1.0.1",
+      "antigen": "TaylorR\\MeetBard",
+      "api": "5.0.0",
+      "source_repo": "0xliam627/Meet-Bard",
+      "source_url": "https://github.com/0xliam627/Meet-Bard",
+      "source_commit": "2799bbb5ed10993cfa359bc52467978a6f8650d6",
+      "source_ref": "pm5",
+      "source_commit_url": "https://github.com/0xliam627/Meet-Bard/tree/2799bbb5ed10993cfa359bc52467978a6f8650d6",
+      "source_zip_url": "https://github.com/0xliam627/Meet-Bard/archive/2799bbb5ed10993cfa359bc52467978a6f8650d6.zip",
+      "license_spdx": "GPL-3.0",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "dependencies": [],
+      "build_adjustments": [],
+      "provenance_manifest_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/rebuilt-virions-manifest.json"
+    }
   },
   "refteams/libnpcdialogue/libnpcdialogue@1.0.0": {
     "id": "refteams/libnpcdialogue/libnpcdialogue@1.0.0",
@@ -6107,7 +7067,42 @@
     "output": "virions/refteams-libnpcdialogue-libnpcdialogue-1.0.0/libnpcdialogue-1.0.0.phar",
     "status": "failed",
     "error": "HTTP Error 404: Not Found",
-    "partial_bytes": 0
+    "partial_bytes": 0,
+    "rebuilt_artifact": {
+      "status": "uploaded",
+      "label": "Rebuilt PHAR",
+      "artifact_kind": "rebuilt_virion_phar",
+      "remote_repo": "poggit-archive/artifacts",
+      "remote_tag": "rebuilt-virions-2026-10-17-0001",
+      "remote_asset_name": "refteams-libnpcdialogue-libnpcdialogue-1.0.0-1.0.0-e19b6328.phar",
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/refteams-libnpcdialogue-libnpcdialogue-1.0.0-1.0.0-e19b6328.phar",
+      "remote_sha256": "6e1c613c1c37fcec8cac7209be8a57d66dd7db3380c9689ad3381ff4a38f2a0b",
+      "remote_asset_id": 648345647,
+      "bytes": 82627,
+      "sha256": "6e1c613c1c37fcec8cac7209be8a57d66dd7db3380c9689ad3381ff4a38f2a0b",
+      "uploaded_at": "2026-10-16T19:18:19Z",
+      "builder": "VirionTools",
+      "builder_version": "4.0.1",
+      "builder_commit": "d3bcaa5bbe5344996fb06b6192ca37be980dd7eb",
+      "catalog_target_version": "1.0.0",
+      "virion_name": "libNpcDialogue",
+      "virion_version": "1.0.0",
+      "antigen": "ref\\libNpcDialogue",
+      "api": "5.0.0",
+      "source_repo": "refteams/libNpcDialogue",
+      "source_url": "https://github.com/refteams/libNpcDialogue",
+      "source_commit": "e19b6328ad181372b3402357bc400562fe519f7a",
+      "source_ref": "pm5/main",
+      "source_commit_url": "https://github.com/refteams/libNpcDialogue/tree/e19b6328ad181372b3402357bc400562fe519f7a",
+      "source_zip_url": "https://github.com/refteams/libNpcDialogue/archive/e19b6328ad181372b3402357bc400562fe519f7a.zip",
+      "license_spdx": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "dependencies": [],
+      "build_adjustments": [],
+      "provenance_manifest_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/rebuilt-virions-manifest.json"
+    }
   },
   "daisukedaisuketeam/flowy/standard@0.1.0": {
     "type": "virion",
@@ -6191,7 +7186,42 @@
     "output": "virions/kenzeve-commando-commando-2.1.1/commando-2.1.1.phar",
     "status": "failed",
     "error": "HTTP Error 404: Not Found",
-    "partial_bytes": 0
+    "partial_bytes": 0,
+    "rebuilt_artifact": {
+      "status": "uploaded",
+      "label": "Rebuilt PHAR",
+      "artifact_kind": "rebuilt_virion_phar",
+      "remote_repo": "poggit-archive/artifacts",
+      "remote_tag": "rebuilt-virions-2026-10-17-0001",
+      "remote_asset_name": "kenzeve-commando-commando-2.1.1-2.1.1-b23f665b.phar",
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/kenzeve-commando-commando-2.1.1-2.1.1-b23f665b.phar",
+      "remote_sha256": "41e06097b4c20787ea80151b384ce79c9a72217e28d9d9b228b832ae20bada4d",
+      "remote_asset_id": 648345592,
+      "bytes": 139124,
+      "sha256": "41e06097b4c20787ea80151b384ce79c9a72217e28d9d9b228b832ae20bada4d",
+      "uploaded_at": "2026-10-16T19:18:19Z",
+      "builder": "VirionTools",
+      "builder_version": "4.0.1",
+      "builder_commit": "d3bcaa5bbe5344996fb06b6192ca37be980dd7eb",
+      "catalog_target_version": "2.1.1",
+      "virion_name": "Commando",
+      "virion_version": "2.1.1",
+      "antigen": "CortexPE\\Commando",
+      "api": "3.0.0",
+      "source_repo": "kenzeve/Commando",
+      "source_url": "https://github.com/kenzeve/Commando",
+      "source_commit": "b23f665bcabcd715deac7d1aeefa8a359cd76dd6",
+      "source_ref": "old",
+      "source_commit_url": "https://github.com/kenzeve/Commando/tree/b23f665bcabcd715deac7d1aeefa8a359cd76dd6",
+      "source_zip_url": "https://github.com/kenzeve/Commando/archive/b23f665bcabcd715deac7d1aeefa8a359cd76dd6.zip",
+      "license_spdx": "LGPL-3.0",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "dependencies": [],
+      "build_adjustments": [],
+      "provenance_manifest_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/rebuilt-virions-manifest.json"
+    }
   },
   "sof3/pmforms/pmforms@2.1.0": {
     "type": "virion",
@@ -6435,7 +7465,44 @@
     "output": "virions/dapigguy-libasynql-libasynql-3.3.1/libasynql-3.3.1.phar",
     "status": "failed",
     "error": "HTTP Error 404: Not Found",
-    "partial_bytes": 0
+    "partial_bytes": 0,
+    "rebuilt_artifact": {
+      "status": "uploaded",
+      "label": "Rebuilt PHAR",
+      "artifact_kind": "rebuilt_virion_phar",
+      "remote_repo": "poggit-archive/artifacts",
+      "remote_tag": "rebuilt-virions-2026-10-17-0001",
+      "remote_asset_name": "dapigguy-libasynql-libasynql-3.3.1-3.3.1-29d398ba.phar",
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/dapigguy-libasynql-libasynql-3.3.1-3.3.1-29d398ba.phar",
+      "remote_sha256": "3872234f26a034faf039fe8b85e473b9ef5765d31ed768845ad3bb013f285a33",
+      "remote_asset_id": 648345490,
+      "bytes": 129585,
+      "sha256": "3872234f26a034faf039fe8b85e473b9ef5765d31ed768845ad3bb013f285a33",
+      "uploaded_at": "2026-10-16T19:18:19Z",
+      "builder": "VirionTools",
+      "builder_version": "4.0.1",
+      "builder_commit": "d3bcaa5bbe5344996fb06b6192ca37be980dd7eb",
+      "catalog_target_version": "3.3.1",
+      "virion_name": "libasynql",
+      "virion_version": "3.3.1",
+      "antigen": "poggit\\libasynql",
+      "api": [
+        "3.0.0"
+      ],
+      "source_repo": "DaPigGuy/libasynql",
+      "source_url": "https://github.com/DaPigGuy/libasynql",
+      "source_commit": "29d398bac20ec079140188dc82280725ae0d68e9",
+      "source_ref": "master",
+      "source_commit_url": "https://github.com/DaPigGuy/libasynql/tree/29d398bac20ec079140188dc82280725ae0d68e9",
+      "source_zip_url": "https://github.com/DaPigGuy/libasynql/archive/29d398bac20ec079140188dc82280725ae0d68e9.zip",
+      "license_spdx": "Apache-2.0",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "dependencies": [],
+      "build_adjustments": [],
+      "provenance_manifest_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/rebuilt-virions-manifest.json"
+    }
   },
   "edwinyoo44/libipgeolocation/libipgeolocation@1.0.2": {
     "type": "virion",
@@ -6689,7 +7756,42 @@
     "output": "virions/pjz9n-pm-pl-pmforms-pmforms-1.0.0/pmforms-1.0.0.phar",
     "status": "failed",
     "error": "HTTP Error 404: Not Found",
-    "partial_bytes": 0
+    "partial_bytes": 0,
+    "rebuilt_artifact": {
+      "status": "uploaded",
+      "label": "Rebuilt PHAR",
+      "artifact_kind": "rebuilt_virion_phar",
+      "remote_repo": "poggit-archive/artifacts",
+      "remote_tag": "rebuilt-virions-2026-10-17-0001",
+      "remote_asset_name": "pjz9n-pm-pl-pmforms-pmforms-1.0.0-1.0.0-eab8ac0a.phar",
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/pjz9n-pm-pl-pmforms-pmforms-1.0.0-1.0.0-eab8ac0a.phar",
+      "remote_sha256": "747d0cdb4074f25b3a1096d450640f3f5516e277e8691c07c9922cae2ab5dabc",
+      "remote_asset_id": 648345626,
+      "bytes": 53498,
+      "sha256": "747d0cdb4074f25b3a1096d450640f3f5516e277e8691c07c9922cae2ab5dabc",
+      "uploaded_at": "2026-10-16T19:18:19Z",
+      "builder": "VirionTools",
+      "builder_version": "4.0.1",
+      "builder_commit": "d3bcaa5bbe5344996fb06b6192ca37be980dd7eb",
+      "catalog_target_version": "1.0.0",
+      "virion_name": "pmforms",
+      "virion_version": "1.0.0",
+      "antigen": "dktapps\\pmforms",
+      "api": "3.4.0",
+      "source_repo": "pjz9n-pm-pl/pmforms",
+      "source_url": "https://github.com/pjz9n-pm-pl/pmforms",
+      "source_commit": "eab8ac0adec2e2b094d141a9b711200183bbf268",
+      "source_ref": "master",
+      "source_commit_url": "https://github.com/pjz9n-pm-pl/pmforms/tree/eab8ac0adec2e2b094d141a9b711200183bbf268",
+      "source_zip_url": "https://github.com/pjz9n-pm-pl/pmforms/archive/eab8ac0adec2e2b094d141a9b711200183bbf268.zip",
+      "license_spdx": "LGPL-3.0",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "dependencies": [],
+      "build_adjustments": [],
+      "provenance_manifest_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/rebuilt-virions-manifest.json"
+    }
   },
   "muqsit/asynciterator/asynciterator@1.1.4": {
     "type": "virion",
@@ -6731,7 +7833,44 @@
     "output": "virions/xsuperr-libasynql-libasynql-3.3.2/libasynql-3.3.2.phar",
     "status": "failed",
     "error": "HTTP Error 404: Not Found",
-    "partial_bytes": 0
+    "partial_bytes": 0,
+    "rebuilt_artifact": {
+      "status": "uploaded",
+      "label": "Rebuilt PHAR",
+      "artifact_kind": "rebuilt_virion_phar",
+      "remote_repo": "poggit-archive/artifacts",
+      "remote_tag": "rebuilt-virions-2026-10-17-0001",
+      "remote_asset_name": "xsuperr-libasynql-libasynql-3.3.2-3.3.2-993458c8.phar",
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/xsuperr-libasynql-libasynql-3.3.2-3.3.2-993458c8.phar",
+      "remote_sha256": "fe667a174b8b163f376e649c9095ce78961f9ed4be8e09f028a9009ac5fcd880",
+      "remote_asset_id": 648345703,
+      "bytes": 129622,
+      "sha256": "fe667a174b8b163f376e649c9095ce78961f9ed4be8e09f028a9009ac5fcd880",
+      "uploaded_at": "2026-10-16T19:18:19Z",
+      "builder": "VirionTools",
+      "builder_version": "4.0.1",
+      "builder_commit": "d3bcaa5bbe5344996fb06b6192ca37be980dd7eb",
+      "catalog_target_version": "3.3.2",
+      "virion_name": "libasynql",
+      "virion_version": "3.3.2",
+      "antigen": "poggit\\libasynql",
+      "api": [
+        "3.0.0"
+      ],
+      "source_repo": "xSuperr/libasynql",
+      "source_url": "https://github.com/xSuperr/libasynql",
+      "source_commit": "993458c8ef14ba180421b6cefe50371ec69455b0",
+      "source_ref": "master",
+      "source_commit_url": "https://github.com/xSuperr/libasynql/tree/993458c8ef14ba180421b6cefe50371ec69455b0",
+      "source_zip_url": "https://github.com/xSuperr/libasynql/archive/993458c8ef14ba180421b6cefe50371ec69455b0.zip",
+      "license_spdx": "Apache-2.0",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "dependencies": [],
+      "build_adjustments": [],
+      "provenance_manifest_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/rebuilt-virions-manifest.json"
+    }
   },
   "radondev/libinterpolation/libinterpolation@0.1.0": {
     "id": "radondev/libinterpolation/libinterpolation@0.1.0",
@@ -6751,7 +7890,42 @@
     "output": "virions/denielworld-eztiles-libeztiles-latest/libeztiles-latest.phar",
     "status": "failed",
     "error": "HTTP Error 410: Gone",
-    "partial_bytes": 0
+    "partial_bytes": 0,
+    "rebuilt_artifact": {
+      "status": "uploaded",
+      "label": "Rebuilt PHAR",
+      "artifact_kind": "rebuilt_virion_phar",
+      "remote_repo": "poggit-archive/artifacts",
+      "remote_tag": "rebuilt-virions-2026-10-17-0001",
+      "remote_asset_name": "denielworld-eztiles-libeztiles-latest-0.1.0-d4db777b.phar",
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/denielworld-eztiles-libeztiles-latest-0.1.0-d4db777b.phar",
+      "remote_sha256": "d60a766d30db2af5433f3e6687d1d1c76d7f469b46ce621d2bd04e59c369fc95",
+      "remote_asset_id": 648345504,
+      "bytes": 76352,
+      "sha256": "d60a766d30db2af5433f3e6687d1d1c76d7f469b46ce621d2bd04e59c369fc95",
+      "uploaded_at": "2026-10-16T19:18:19Z",
+      "builder": "VirionTools",
+      "builder_version": "4.0.1",
+      "builder_commit": "d3bcaa5bbe5344996fb06b6192ca37be980dd7eb",
+      "catalog_target_version": "latest",
+      "virion_name": "libEzTiles",
+      "virion_version": "0.1.0",
+      "antigen": "DenielWorld\\EzTiles",
+      "api": "3.0.0",
+      "source_repo": "DenielWorld/EzTiles",
+      "source_url": "https://github.com/DenielWorld/EzTiles",
+      "source_commit": "d4db777beb6b6ccb7ec25355c218cb6e6cf5e690",
+      "source_ref": "master",
+      "source_commit_url": "https://github.com/DenielWorld/EzTiles/tree/d4db777beb6b6ccb7ec25355c218cb6e6cf5e690",
+      "source_zip_url": "https://github.com/DenielWorld/EzTiles/archive/d4db777beb6b6ccb7ec25355c218cb6e6cf5e690.zip",
+      "license_spdx": "GPL-3.0",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "dependencies": [],
+      "build_adjustments": [],
+      "provenance_manifest_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/rebuilt-virions-manifest.json"
+    }
   },
   "ctmcentral/libdockerhandler/libdockerhandler@0.0.1": {
     "type": "virion",
@@ -6793,7 +7967,44 @@
     "output": "virions/jviguy-dcord-dcord-latest/dcord-latest.phar",
     "status": "failed",
     "error": "HTTP Error 410: Gone",
-    "partial_bytes": 0
+    "partial_bytes": 0,
+    "rebuilt_artifact": {
+      "status": "uploaded",
+      "label": "Rebuilt PHAR",
+      "artifact_kind": "rebuilt_virion_phar",
+      "remote_repo": "poggit-archive/artifacts",
+      "remote_tag": "rebuilt-virions-2026-10-17-0001",
+      "remote_asset_name": "jviguy-dcord-dcord-latest-0.0.1-3fef1bce.phar",
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/jviguy-dcord-dcord-latest-0.0.1-3fef1bce.phar",
+      "remote_sha256": "d019147a6b2a4e67d8930dd27701aaa1c20af54578f88167dec0da0d749b011d",
+      "remote_asset_id": 648345567,
+      "bytes": 39020,
+      "sha256": "d019147a6b2a4e67d8930dd27701aaa1c20af54578f88167dec0da0d749b011d",
+      "uploaded_at": "2026-10-16T19:18:19Z",
+      "builder": "VirionTools",
+      "builder_version": "4.0.1",
+      "builder_commit": "d3bcaa5bbe5344996fb06b6192ca37be980dd7eb",
+      "catalog_target_version": "latest",
+      "virion_name": "DCord",
+      "virion_version": "0.0.1",
+      "antigen": "JviguyGames\\DCord",
+      "api": [
+        "3.0.0"
+      ],
+      "source_repo": "Jviguy/DCord",
+      "source_url": "https://github.com/Jviguy/DCord",
+      "source_commit": "3fef1bce215a721cd194256c4fa1373a3de2224f",
+      "source_ref": "master",
+      "source_commit_url": "https://github.com/Jviguy/DCord/tree/3fef1bce215a721cd194256c4fa1373a3de2224f",
+      "source_zip_url": "https://github.com/Jviguy/DCord/archive/3fef1bce215a721cd194256c4fa1373a3de2224f.zip",
+      "license_spdx": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "dependencies": [],
+      "build_adjustments": [],
+      "provenance_manifest_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/rebuilt-virions-manifest.json"
+    }
   },
   "fuyutsuki/accessorstrait/accessors-trait@1.0.0": {
     "type": "virion",
@@ -7109,7 +8320,42 @@
     "output": "virions/sof3-formapi-formapi-latest/formapi-latest.phar",
     "status": "failed",
     "error": "HTTP Error 410: Gone",
-    "partial_bytes": 0
+    "partial_bytes": 0,
+    "rebuilt_artifact": {
+      "status": "uploaded",
+      "label": "Rebuilt PHAR",
+      "artifact_kind": "rebuilt_virion_phar",
+      "remote_repo": "poggit-archive/artifacts",
+      "remote_tag": "rebuilt-virions-2026-10-17-0001",
+      "remote_asset_name": "sof3-formapi-formapi-latest-2.1.0-7bfd2edd.phar",
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/sof3-formapi-formapi-latest-2.1.0-7bfd2edd.phar",
+      "remote_sha256": "6a455c0f1e6c31526040b64be8f4ebaa40fb67225f2628be882974d4c77bafd6",
+      "remote_asset_id": 648345651,
+      "bytes": 31588,
+      "sha256": "6a455c0f1e6c31526040b64be8f4ebaa40fb67225f2628be882974d4c77bafd6",
+      "uploaded_at": "2026-10-16T19:18:19Z",
+      "builder": "VirionTools",
+      "builder_version": "4.0.1",
+      "builder_commit": "d3bcaa5bbe5344996fb06b6192ca37be980dd7eb",
+      "catalog_target_version": "latest",
+      "virion_name": "libFormAPI",
+      "virion_version": "2.1.0",
+      "antigen": "jojoe77777\\FormAPI",
+      "api": "4.0.0",
+      "source_repo": "SOF3/FormAPI",
+      "source_url": "https://github.com/SOF3/FormAPI",
+      "source_commit": "7bfd2edd1330c874ecd5f3bd6a829d58c20ba2a1",
+      "source_ref": "master",
+      "source_commit_url": "https://github.com/SOF3/FormAPI/tree/7bfd2edd1330c874ecd5f3bd6a829d58c20ba2a1",
+      "source_zip_url": "https://github.com/SOF3/FormAPI/archive/7bfd2edd1330c874ecd5f3bd6a829d58c20ba2a1.zip",
+      "license_spdx": "LGPL-3.0",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "dependencies": [],
+      "build_adjustments": [],
+      "provenance_manifest_url": "https://github.com/poggit-archive/artifacts/releases/download/rebuilt-virions-2026-10-17-0001/rebuilt-virions-manifest.json"
+    }
   },
   "sof3/pschemlib/pschemlib@0.0.0": {
     "type": "virion",

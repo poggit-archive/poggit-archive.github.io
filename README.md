@@ -7,7 +7,7 @@ An independent, non-commercial preservation catalog for PocketMine-MP plugin and
 - Plugin metadata comes from Poggit's public `releases.json` API. Each row is one approved plugin version; the endpoint does not expose rejected/private submissions.
 - The virion feed is Poggit's visible ranked `/v?top=300` page. It is a top-300 popularity view, not a complete export of every virion or historical virion version.
 - `repo_id`, `repo_name`, and `build_commit` are retained to identify the source revision used for each release. A pm-pl match is only a candidate until the commit is checked.
-- Original `.phar` files are downloaded unchanged and get a SHA-256 digest. A rebuilt PHAR is a separate artifact and must never be labeled as Poggit's original.
+- Original `.phar` files are downloaded unchanged and get a SHA-256 digest. Rebuilt virion PHARs are separate artifacts, shown as “Rebuilt PHAR,” and must never be labeled as Poggit's originals. Their source commit, virion version, builder, dependencies, and SHA-256 are recorded under `rebuilt_artifact` in the download data.
 - Verified PHAR and source ZIP files are stored as GitHub release assets in `poggit-archive/artifacts`. The publisher deletes each local copy only after GitHub reports the matching digest and byte size.
 - Items with a missing or ambiguous license remain marked for review before public redistribution. Keep author, source, Poggit page, and license attribution with every archived item.
 
@@ -101,7 +101,7 @@ The API is versioned and immutable by snapshot:
 - `data/snapshots/<snapshot-id>/downloads-virions.json` - virion artifact state and SHA-256
 - `data/snapshots/<snapshot-id>/source-downloads.json` - exact source commits, verified ZIP URLs, and SHA-256
 
-The browser links to verified archive release assets for PHAR and source ZIP downloads. It does not link to Poggit pages or fall back to Poggit downloads. When a source ZIP is unavailable, a clearly labeled upstream GitHub repository link may be shown. Entries without an archived PHAR remain listed as metadata and show that the PHAR is not archived.
+The browser links to verified archive release assets for original PHARs and source ZIPs. Rebuilt virion PHARs have a separate “Rebuilt PHAR” link with their source commit and build details in the link description. The browser does not fall back to Poggit downloads. When a source ZIP is unavailable, a clearly labeled upstream GitHub repository link may be shown. Entries without an original or rebuilt PHAR remain listed as metadata and show that the PHAR is not archived.
 
 ## Publishing checklist
 
