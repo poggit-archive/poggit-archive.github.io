@@ -181,16 +181,6 @@
     return anchor;
   }
 
-  function sourceUrl(item) {
-    if (state.kind === "plugins") {
-      if (!item.repo_name || !/^[\w.-]+\/[\w.-]+$/.test(item.repo_name)) return null;
-      return `https://github.com/${item.repo_name}`;
-    }
-    return item.source_url && /^https:\/\/github\.com\/[\w.-]+\/[\w.-]+$/.test(item.source_url)
-      ? item.source_url
-      : null;
-  }
-
   function archiveUrl(value) {
     try {
       const url = new URL(value);
@@ -201,15 +191,12 @@
   }
 
   function sourceArtifact(item) {
-    if (state.kind === "plugins" && item.repo_id && item.build_commit) {
-      const key = `${item.repo_id}@${String(item.build_commit).toLowerCase()}`;
-      const archived = state.sourceDownloads[key];
-      if (archived?.status === "uploaded" && archiveUrl(archived.remote_url)) {
-        return { url: archived.remote_url, label: "Archived source" };
-      }
-    }
-    const url = sourceUrl(item);
-    return url ? { url, label: "GitHub source" } : null;
+    if (state.kind !== "plugins" || !item.repo_id || !item.build_commit) return null;
+    const key = `${item.repo_id}@${String(item.build_commit).toLowerCase()}`;
+    const archived = state.sourceDownloads[key];
+    return archived?.status === "uploaded" && archiveUrl(archived.remote_url)
+      ? { url: archived.remote_url, label: "Archived source" }
+      : null;
   }
 
   function artifactFor(item) {
