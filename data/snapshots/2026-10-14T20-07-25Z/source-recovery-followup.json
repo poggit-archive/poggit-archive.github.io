@@ -1,0 +1,972 @@
+{
+  "schema_version": 1,
+  "snapshot_id": "2026-10-14T20-07-25Z",
+  "baseline_commit": "d4e5985c4156ea38006dd5ebea2e03c65a948d63",
+  "checked_at": "2026-10-18T18:45:37.524632+00:00",
+  "summary": {
+    "additional_exact_source_zips_from_software_heritage": 19,
+    "additional_plugins_with_exact_source": 9,
+    "phars_recovered_locally": 46,
+    "recovered_php_files": 303,
+    "recovered_distribution_files": 443,
+    "additional_source_from_phar_zips_published": 23,
+    "new_remote_assets_independently_verified": 46,
+    "official_archive_phars_matching": 46,
+    "release_source_coverage": {
+      "archived_source": 4998,
+      "source_from_phar": 23,
+      "no_public_source_zip": 0
+    },
+    "plugins_without_any_exact_archived_source": 19,
+    "plugins_without_any_public_source_zip": 0,
+    "additional_no_license_exact_source_zips_published": 4,
+    "no_license_exact_source_zips_published": 4
+  },
+  "license_display": {
+    "rule": "Empty or missing license information displays No License. Original upstream license metadata is preserved.",
+    "empty_custom_license_releases": [
+      2256,
+      2212,
+      2168
+    ]
+  },
+  "software_heritage": {
+    "revision_lookups": 42,
+    "found": 19,
+    "not_found": 23,
+    "verification": "Every Vault directory was reconstructed into Git blob and tree objects. Its computed root tree ID matches the exact stored revision. ZIP file contents were then compared with the verified tree.",
+    "records": [
+      {
+        "key": "155077145@2643f22ffe577a4e47f0b4095d89e0bd0932b0af",
+        "repo": "korado531m7/ImageConverter",
+        "commit": "2643f22ffe577a4e47f0b4095d89e0bd0932b0af",
+        "tree_sha": "e28bcbb38e5e13fea86c4a727b5b1e1d3a3989aa",
+        "revision_url": "https://archive.softwareheritage.org/api/1/revision/2643f22ffe577a4e47f0b4095d89e0bd0932b0af/",
+        "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-155077145-2643f22ffe577a4e47f0b4095d89e0bd0932b0af-30b9f04555da.zip",
+        "sha256": "30b9f04555da68127154060d89375399cbccb64aa2ddcd98afa91e895709630a",
+        "bytes": 1144843
+      },
+      {
+        "key": "155077145@319beebd5779d94ffdf5b253a4f751583b29007b",
+        "repo": "korado531m7/ImageConverter",
+        "commit": "319beebd5779d94ffdf5b253a4f751583b29007b",
+        "tree_sha": "340a7b5b0390c562313345b186c3f7cf5e2d1a30",
+        "revision_url": "https://archive.softwareheritage.org/api/1/revision/319beebd5779d94ffdf5b253a4f751583b29007b/",
+        "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-155077145-319beebd5779d94ffdf5b253a4f751583b29007b-81c41f73dcec.zip",
+        "sha256": "81c41f73dcec3c224c97b3fa2ec4ba82b7b551f3b47bcab560f5ac2ba95087cd",
+        "bytes": 1134280
+      },
+      {
+        "key": "155077145@d02e39d72a96cf3d8a033adf6c0ecd486b959a11",
+        "repo": "korado531m7/ImageConverter",
+        "commit": "d02e39d72a96cf3d8a033adf6c0ecd486b959a11",
+        "tree_sha": "06aeb9c198fb4002083d94549167e7ae5745fa1e",
+        "revision_url": "https://archive.softwareheritage.org/api/1/revision/d02e39d72a96cf3d8a033adf6c0ecd486b959a11/",
+        "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-155077145-d02e39d72a96cf3d8a033adf6c0ecd486b959a11-e32b7bd6177f.zip",
+        "sha256": "e32b7bd6177f2365f6c696eb5e193813c08841655b1852bd863e220ea329edf8",
+        "bytes": 1125112
+      },
+      {
+        "key": "155077145@daf675303aa3616db22e2253897e48dfdd5f38d4",
+        "repo": "korado531m7/ImageConverter",
+        "commit": "daf675303aa3616db22e2253897e48dfdd5f38d4",
+        "tree_sha": "36c63c2513762092f569175cd3ce5263d056addc",
+        "revision_url": "https://archive.softwareheritage.org/api/1/revision/daf675303aa3616db22e2253897e48dfdd5f38d4/",
+        "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-155077145-daf675303aa3616db22e2253897e48dfdd5f38d4-7e0b052ae44d.zip",
+        "sha256": "7e0b052ae44d29e97059bedd5fc5bb4b0db432c8916723b68840fa46828d2e1a",
+        "bytes": 1144081
+      },
+      {
+        "key": "324139500@ea3e4cb06734a669e561df91e8ba7e13581dc39c",
+        "repo": "OguzhanUmutlu/FriendSystem",
+        "commit": "ea3e4cb06734a669e561df91e8ba7e13581dc39c",
+        "tree_sha": "c04cfbf562a7d9b05ed439cdf8d71777e17de285",
+        "revision_url": "https://archive.softwareheritage.org/api/1/revision/ea3e4cb06734a669e561df91e8ba7e13581dc39c/",
+        "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-324139500-ea3e4cb06734a669e561df91e8ba7e13581dc39c-46b0b219f274.zip",
+        "sha256": "46b0b219f2744aa9800781287939509ae1e92282d3aa584f7d19dec2fecf49b1",
+        "bytes": 15943
+      },
+      {
+        "key": "353997984@06c8bf3f019f4b76ed04b3ecacf05f45223995a2",
+        "repo": "lovetwice1012/MyWarp-en",
+        "commit": "06c8bf3f019f4b76ed04b3ecacf05f45223995a2",
+        "tree_sha": "3ed5b39d61138b0b60462b0c32890f9eadbe5f56",
+        "revision_url": "https://archive.softwareheritage.org/api/1/revision/06c8bf3f019f4b76ed04b3ecacf05f45223995a2/",
+        "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-353997984-06c8bf3f019f4b76ed04b3ecacf05f45223995a2-75db73ed1b8d.zip",
+        "sha256": "75db73ed1b8d8172028d3cf1f13d93995a5fee0e8e7151925ba99714d9947a33",
+        "bytes": 229232
+      },
+      {
+        "key": "365617377@fe710a89cca3ce42253b87a2008b52cd3ae5cc40",
+        "repo": "OguzhanUmutlu/Manhunt",
+        "commit": "fe710a89cca3ce42253b87a2008b52cd3ae5cc40",
+        "tree_sha": "03cb8ee19de30640f08000bc0f1073dc0394aabd",
+        "revision_url": "https://archive.softwareheritage.org/api/1/revision/fe710a89cca3ce42253b87a2008b52cd3ae5cc40/",
+        "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-365617377-fe710a89cca3ce42253b87a2008b52cd3ae5cc40-84d5c46742c1.zip",
+        "sha256": "84d5c46742c17ff2053495c3cc30fa514666f28c981412b8ca60ae975633eb7e",
+        "bytes": 6343
+      },
+      {
+        "key": "367859690@fd13cf11ab7c3aeb25148ace97af237b6b7d4b37",
+        "repo": "OguzhanUmutlu/MoneyUI",
+        "commit": "fd13cf11ab7c3aeb25148ace97af237b6b7d4b37",
+        "tree_sha": "a85f22f71677ab7213c0320d8b8f18413834c851",
+        "revision_url": "https://archive.softwareheritage.org/api/1/revision/fd13cf11ab7c3aeb25148ace97af237b6b7d4b37/",
+        "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-367859690-fd13cf11ab7c3aeb25148ace97af237b6b7d4b37-3390c6f81dc4.zip",
+        "sha256": "3390c6f81dc41741b6a2e46f320ac84b948d1c931fcd0df3c5072b1219e1f7a1",
+        "bytes": 63176
+      },
+      {
+        "key": "371428943@deadcc53d0efbdabec4d1e52c7cfce1e204027d6",
+        "repo": "VazziDE/SlimeBoost",
+        "commit": "deadcc53d0efbdabec4d1e52c7cfce1e204027d6",
+        "tree_sha": "3155a40ebac8ff60954cd270b83527e00ab14fcf",
+        "revision_url": "https://archive.softwareheritage.org/api/1/revision/deadcc53d0efbdabec4d1e52c7cfce1e204027d6/",
+        "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-371428943-deadcc53d0efbdabec4d1e52c7cfce1e204027d6-c2f2275000ec.zip",
+        "sha256": "c2f2275000ecbe84476d917ea4b274e85994ff426b37bb5069fc4057e6d809b1",
+        "bytes": 21582
+      },
+      {
+        "key": "388852433@b420d48214ff9003171d25c27d10283ce55cdf4e",
+        "repo": "OguzhanUmutlu/AntiAuraBot",
+        "commit": "b420d48214ff9003171d25c27d10283ce55cdf4e",
+        "tree_sha": "f76717ffeee7f98fd2f1518163cc297809d61967",
+        "revision_url": "https://archive.softwareheritage.org/api/1/revision/b420d48214ff9003171d25c27d10283ce55cdf4e/",
+        "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-388852433-b420d48214ff9003171d25c27d10283ce55cdf4e-05f14cd29d43.zip",
+        "sha256": "05f14cd29d4317bf9d850e67c5f2fd9e9ba4ed86ecc24a117cfe4b381e6a44ae",
+        "bytes": 7792
+      },
+      {
+        "key": "393148858@a76297de22528d2c529b796ca3447081bad42852",
+        "repo": "VazziDE/Godmode",
+        "commit": "a76297de22528d2c529b796ca3447081bad42852",
+        "tree_sha": "8aba30a9762b75917027cd6e8980e8f8ec649ed6",
+        "revision_url": "https://archive.softwareheritage.org/api/1/revision/a76297de22528d2c529b796ca3447081bad42852/",
+        "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-393148858-a76297de22528d2c529b796ca3447081bad42852-230d00f80ef1.zip",
+        "sha256": "230d00f80ef15ab9eb56f6667ade317053f0cce1815a4dfddfaeb617f1204857",
+        "bytes": 68373
+      },
+      {
+        "key": "393600263@a9600c46fb719733bb547008de053572aa144f5e",
+        "repo": "OguzhanUmutlu/SignToDiscord",
+        "commit": "a9600c46fb719733bb547008de053572aa144f5e",
+        "tree_sha": "4bb0b2687227069213a1192872026e626059a1a5",
+        "revision_url": "https://archive.softwareheritage.org/api/1/revision/a9600c46fb719733bb547008de053572aa144f5e/",
+        "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-393600263-a9600c46fb719733bb547008de053572aa144f5e-40d11880d05d.zip",
+        "sha256": "40d11880d05da77ded225f22fc350bb861ae02c583d5b6e56cd3bab78782ec1c",
+        "bytes": 7401
+      },
+      {
+        "key": "324139500@324527fd661a77f7718352461063d55c2d9168ec",
+        "repo": "OguzhanUmutlu/FriendSystem",
+        "commit": "324527fd661a77f7718352461063d55c2d9168ec",
+        "tree_sha": "11edab75c0cff9c1c91d59e3289e25d7e812877f",
+        "revision_url": "https://archive.softwareheritage.org/api/1/revision/324527fd661a77f7718352461063d55c2d9168ec/",
+        "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-324139500-324527fd661a77f7718352461063d55c2d9168ec-70653542a2ee.zip",
+        "sha256": "70653542a2ee22cca19aedddd7b3767b8be3deabd6ddcf453dfc801cbdf500aa",
+        "bytes": 21930
+      },
+      {
+        "key": "324139500@3705298aee8c54e45602019fd8e8a3a3a3432d74",
+        "repo": "OguzhanUmutlu/FriendSystem",
+        "commit": "3705298aee8c54e45602019fd8e8a3a3a3432d74",
+        "tree_sha": "69af2b96f58ddac735d03a7c9394e559a763e3b7",
+        "revision_url": "https://archive.softwareheritage.org/api/1/revision/3705298aee8c54e45602019fd8e8a3a3a3432d74/",
+        "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-324139500-3705298aee8c54e45602019fd8e8a3a3a3432d74-91eed0c1af7e.zip",
+        "sha256": "91eed0c1af7ea3635de721c8b841789ebc5e1593f56391cc6aaec93c003583ff",
+        "bytes": 15774
+      },
+      {
+        "key": "324139500@d222345af316dad19daccc1795f9ea654d10de7e",
+        "repo": "OguzhanUmutlu/FriendSystem",
+        "commit": "d222345af316dad19daccc1795f9ea654d10de7e",
+        "tree_sha": "25c396cef6bba26936012293b4e7e6f2219c69b0",
+        "revision_url": "https://archive.softwareheritage.org/api/1/revision/d222345af316dad19daccc1795f9ea654d10de7e/",
+        "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-324139500-d222345af316dad19daccc1795f9ea654d10de7e-33f0d8101bf0.zip",
+        "sha256": "33f0d8101bf037db419308346a8be39af8b85fb02c80ac08c8203dfb399d745d",
+        "bytes": 15771
+      },
+      {
+        "key": "353997984@ab90b52a76c7ff0bcd8d5139eb5677101504b4bf",
+        "repo": "lovetwice1012/MyWarp-en",
+        "commit": "ab90b52a76c7ff0bcd8d5139eb5677101504b4bf",
+        "tree_sha": "dd7bd0fe59669f2da313217b808dd8caec09a1b8",
+        "revision_url": "https://archive.softwareheritage.org/api/1/revision/ab90b52a76c7ff0bcd8d5139eb5677101504b4bf/",
+        "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-353997984-ab90b52a76c7ff0bcd8d5139eb5677101504b4bf-1a0885d83445.zip",
+        "sha256": "1a0885d83445c1fafc2a23ff59b51a64d2d7fef765ee20453b6ae348f20fcc78",
+        "bytes": 228708
+      },
+      {
+        "key": "365617377@2c33cff9bcb40266ba2f328e36b73d21b015f91c",
+        "repo": "OguzhanUmutlu/Manhunt",
+        "commit": "2c33cff9bcb40266ba2f328e36b73d21b015f91c",
+        "tree_sha": "03f6b39c04ee43edfffc165cb4ad57b263c59516",
+        "revision_url": "https://archive.softwareheritage.org/api/1/revision/2c33cff9bcb40266ba2f328e36b73d21b015f91c/",
+        "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-365617377-2c33cff9bcb40266ba2f328e36b73d21b015f91c-40058c3a0e97.zip",
+        "sha256": "40058c3a0e97f6f76acf1909847cebb523678900618663c48adeb0d3e1c94917",
+        "bytes": 6321
+      },
+      {
+        "key": "365617377@d7631898814fbe3e82acee0d74040b2f15a24e67",
+        "repo": "OguzhanUmutlu/Manhunt",
+        "commit": "d7631898814fbe3e82acee0d74040b2f15a24e67",
+        "tree_sha": "9a09db50a1b13992c7f760f722ed8c40cf6dc75a",
+        "revision_url": "https://archive.softwareheritage.org/api/1/revision/d7631898814fbe3e82acee0d74040b2f15a24e67/",
+        "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-365617377-d7631898814fbe3e82acee0d74040b2f15a24e67-2135155b5ac2.zip",
+        "sha256": "2135155b5ac2317ec33e68e2869252b33df7cf322f9c2714f37cc834b233b84b",
+        "bytes": 6322
+      },
+      {
+        "key": "371428943@f139dd874f121eedf8421958b0d3f192e7dadb6b",
+        "repo": "VazziDE/SlimeBoost",
+        "commit": "f139dd874f121eedf8421958b0d3f192e7dadb6b",
+        "tree_sha": "8dc4da9469c10e7c2f4e0efa12a6d2719eb54e1c",
+        "revision_url": "https://archive.softwareheritage.org/api/1/revision/f139dd874f121eedf8421958b0d3f192e7dadb6b/",
+        "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-371428943-f139dd874f121eedf8421958b0d3f192e7dadb6b-28682475f3c9.zip",
+        "sha256": "28682475f3c912dc56545970f88d87e06a6b9bfeb518b73bcd51bff08bad205e",
+        "bytes": 21292
+      }
+    ]
+  },
+  "public_code_and_detached_repository_search": {
+    "author_queries": 10,
+    "public_code_file_matches": 239,
+    "candidate_repositories_checked": 11,
+    "repositories_with_fork_flag_false": 11,
+    "exact_commit_checks": 74,
+    "additional_exact_commits_found": 0,
+    "note": "These include independent source copies and server backup repositories. A false fork flag alone does not prove a repository was formerly a GitHub fork.",
+    "repositories": [
+      {
+        "id": 385453203,
+        "full_name": "Cesar-D56/ProyectoEstadias",
+        "fork": false,
+        "private": false,
+        "archived": false
+      },
+      {
+        "id": 464909958,
+        "full_name": "Endermanbugzjfc/BuyKeepInventory",
+        "fork": false,
+        "private": false,
+        "archived": false
+      },
+      {
+        "id": 389493464,
+        "full_name": "MadeAja/BlockHunt",
+        "fork": false,
+        "private": false,
+        "archived": false
+      },
+      {
+        "id": 1010418281,
+        "full_name": "MrEcstsy/BattleSense",
+        "fork": false,
+        "private": false,
+        "archived": false
+      },
+      {
+        "id": 444104807,
+        "full_name": "NhanAZ-Cores/CTVL",
+        "fork": false,
+        "private": false,
+        "archived": false
+      },
+      {
+        "id": 442667190,
+        "full_name": "NhanAZ-Cores/CaptionBE",
+        "fork": false,
+        "private": false,
+        "archived": false
+      },
+      {
+        "id": 380500495,
+        "full_name": "RyZerBE/RyZerCore",
+        "fork": false,
+        "private": false,
+        "archived": false
+      },
+      {
+        "id": 22934922,
+        "full_name": "TRCIMPLAN/trcimplan.github.io",
+        "fork": false,
+        "private": false,
+        "archived": false
+      },
+      {
+        "id": 399983773,
+        "full_name": "WolvesFortress/libInterpolation",
+        "fork": false,
+        "private": false,
+        "archived": false
+      },
+      {
+        "id": 387842425,
+        "full_name": "itsnawabcode/Bosses",
+        "fork": false,
+        "private": false,
+        "archived": false
+      },
+      {
+        "id": 268071698,
+        "full_name": "lovetwice1012/dailymission",
+        "fork": false,
+        "private": false,
+        "archived": false
+      }
+    ]
+  },
+  "official_poggit_archive": {
+    "repository": "poggit/release-archive",
+    "commit": "102194b0b1022180fc774318f39cd2a10ee4bb27",
+    "phars_checked": 46,
+    "matching_phar_git_blobs": 46,
+    "usefulness": "Independent original PHAR and release metadata backup, including descriptions, changelogs and any preserved license text. No full source-repository tree is present in the inspected release directories.",
+    "empty_bettervoting_license_versions": [
+      "1.0.0",
+      "1.0.1",
+      "1.0.2"
+    ]
+  },
+  "external_services": [
+    {
+      "service": "Software Heritage",
+      "url": "https://archive.softwareheritage.org/",
+      "result": "19 exact revisions recovered; 23 queried revisions returned 404. The root web page had been blocked, but direct revision API requests succeeded."
+    },
+    {
+      "service": "Internet Archive Wayback Machine",
+      "url": "https://archive.org/help/wayback_api.php",
+      "result": "Availability requests returned HTTP 429. Provider paused; no conclusion about whether captures exist."
+    },
+    {
+      "service": "GH Archive",
+      "url": "https://www.gharchive.org/",
+      "result": "Documents public GitHub event history, useful for tracing fork names; code contents are not supplied by the event data. No historical BigQuery query was executed in this investigation."
+    },
+    {
+      "service": "Common Crawl",
+      "url": "https://commoncrawl.org/get-started",
+      "result": "Potential source of captured pages and URLs; not exhaustively searched and not treated as a complete Git repository archive."
+    }
+  ],
+  "remaining_limits": [
+    "23 build commits have not been located as complete Git source trees in the providers checked. Their original PHAR distribution files are published under the distinct Source from PHAR label.",
+    "A PHAR distribution may lack repository-only files, Git history and build configuration, and may include build-time changes or bundled dependencies.",
+    "No claim is made that all historical versions, hidden/rejected submissions or virions outside the captured ranked feed have been preserved."
+  ],
+  "publication": {
+    "artifact_repository": "poggit-archive/artifacts",
+    "new_source_artifacts_uploaded": 46,
+    "local_bundle": "archive/recovery/source-from-phar-46.zip",
+    "website_delivery": "The GitHub Pages workflow deploys the catalog when changes are pushed to main."
+  },
+  "phar_recovery_records": [
+    {
+      "release_id": 7227,
+      "name": "AntiAuraBot",
+      "version": "1.0.1",
+      "status": "recovered_local",
+      "license_display": "mit",
+      "file_count": 7,
+      "php_files": 4,
+      "sha256": "c216ae0313d2fd044d6c1f846a92b2e80739c2c820be2ff87a1cb6659cd23e55",
+      "bytes": 6687,
+      "remote_url": null
+    },
+    {
+      "release_id": 2108,
+      "name": "AntiEnchantmentAbuse",
+      "version": "1.1.0",
+      "status": "uploaded",
+      "license_display": "gpl-3.0",
+      "file_count": 5,
+      "php_files": 2,
+      "sha256": "e8a75896307f9794f8b3a5b2cbc973a76b8d6afa3aa825446f9e0dc391cc7d78",
+      "bytes": 3662,
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0001/recovered-source-2108-antienchantmentabuse-1.1.0-e8a75896307f.zip"
+    },
+    {
+      "release_id": 7245,
+      "name": "AutoSmelt",
+      "version": "1.0.0",
+      "status": "uploaded",
+      "license_display": "mit",
+      "file_count": 4,
+      "php_files": 2,
+      "sha256": "5a76872957c16f062068b235e5731e8ee276e4045ab768584aee026e09271fda",
+      "bytes": 2587,
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0001/recovered-source-7245-autosmelt-1.0.0-5a76872957c1.zip"
+    },
+    {
+      "release_id": 2256,
+      "name": "BetterVoting",
+      "version": "1.0.2",
+      "status": "recovered_local",
+      "license_display": "No License",
+      "file_count": 6,
+      "php_files": 3,
+      "sha256": "1a3a1538b8bae94ad68c03f6065f5b5c5f7920092671909c0cfcc1980af8c5d0",
+      "bytes": 6537,
+      "remote_url": null
+    },
+    {
+      "release_id": 2212,
+      "name": "BetterVoting",
+      "version": "1.0.1",
+      "status": "recovered_local",
+      "license_display": "No License",
+      "file_count": 6,
+      "php_files": 3,
+      "sha256": "f883cb9692ffdc0a67ad59a3063789f348b9658cfefe6c1c298ec8292c72c515",
+      "bytes": 6456,
+      "remote_url": null
+    },
+    {
+      "release_id": 2168,
+      "name": "BetterVoting",
+      "version": "1.0.0",
+      "status": "recovered_local",
+      "license_display": "No License",
+      "file_count": 5,
+      "php_files": 2,
+      "sha256": "07cd24e038cb8bb69ed4a3f3c184fe713c8240ca5740108e1659606ecb7a0f88",
+      "bytes": 5174,
+      "remote_url": null
+    },
+    {
+      "release_id": 6910,
+      "name": "BoostBlock",
+      "version": "1.0.0",
+      "status": "uploaded",
+      "license_display": "mit",
+      "file_count": 6,
+      "php_files": 3,
+      "sha256": "ed97550ff116dd4db50418b2adf0922b761952fd68a9d568163e4583946bd387",
+      "bytes": 5080,
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0001/recovered-source-6910-boostblock-1.0.0-ed97550ff116.zip"
+    },
+    {
+      "release_id": 7292,
+      "name": "ChatLevel",
+      "version": "1.0.0",
+      "status": "uploaded",
+      "license_display": "mit",
+      "file_count": 7,
+      "php_files": 5,
+      "sha256": "1f184610d1b13cbf7f0a4d416230da747a89ac1f85f2a63e47705fe70c65bd1e",
+      "bytes": 4600,
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0001/recovered-source-7292-chatlevel-1.0.0-1f184610d1b1.zip"
+    },
+    {
+      "release_id": 415,
+      "name": "ChatToDiscord",
+      "version": "1.1.1",
+      "status": "recovered_local",
+      "license_display": "No License",
+      "file_count": 4,
+      "php_files": 2,
+      "sha256": "e8b6f66685b552cbf87de7a55e1ac59fde7130039c5a8f81aabd424534192033",
+      "bytes": 3703,
+      "remote_url": null
+    },
+    {
+      "release_id": 6785,
+      "name": "ChorusPlant",
+      "version": "1.0.0",
+      "status": "uploaded",
+      "license_display": "mit",
+      "file_count": 5,
+      "php_files": 3,
+      "sha256": "735db3aced7c7aa91807217a53b8e194225841833d1032506e2f272c93080b09",
+      "bytes": 3941,
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0002/recovered-source-6785-chorusplant-1.0.0-735db3aced7c.zip"
+    },
+    {
+      "release_id": 2007,
+      "name": "ClearPlayer",
+      "version": "1.0.0",
+      "status": "uploaded",
+      "license_display": "gpl-3.0",
+      "file_count": 6,
+      "php_files": 3,
+      "sha256": "7d493694b1c276801a68f6980b1b863bc5a00be205f760ac525a26400121db17",
+      "bytes": 4759,
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0002/recovered-source-2007-clearplayer-1.0.0-7d493694b1c2.zip"
+    },
+    {
+      "release_id": 6227,
+      "name": "CoinsSystem",
+      "version": "1.2.0",
+      "status": "uploaded",
+      "license_display": "gpl-3.0",
+      "file_count": 8,
+      "php_files": 5,
+      "sha256": "5a7cdaf6278ca7413bdb9ffd1dc73ec184908b6e682e46731ce37d28feac6926",
+      "bytes": 5468,
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0002/recovered-source-6227-coinssystem-1.2.0-5a7cdaf6278c.zip"
+    },
+    {
+      "release_id": 6966,
+      "name": "CommandEditor",
+      "version": "1.0.2",
+      "status": "uploaded",
+      "license_display": "mit",
+      "file_count": 3,
+      "php_files": 1,
+      "sha256": "c44e33312f07b22ec6d36a88f1d026574f61b9edb49086ddaae0135b84179889",
+      "bytes": 3994,
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0002/recovered-source-6966-commandeditor-1.0.2-c44e33312f07.zip"
+    },
+    {
+      "release_id": 6634,
+      "name": "CommandEditor",
+      "version": "1.0.1",
+      "status": "uploaded",
+      "license_display": "mit",
+      "file_count": 3,
+      "php_files": 1,
+      "sha256": "285e92436ccfd4b2b1a34c8d043e13d01cc7167473edd016ef24a67adc8ae009",
+      "bytes": 3756,
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0002/recovered-source-6634-commandeditor-1.0.1-285e92436ccf.zip"
+    },
+    {
+      "release_id": 6304,
+      "name": "Friends",
+      "version": "1.0.7",
+      "status": "recovered_local",
+      "license_display": "mit",
+      "file_count": 13,
+      "php_files": 7,
+      "sha256": "5ffaafdec4a1420e0f0a7515d47f71f97fd63e6d4ba432fa1b5eb9a5a5f94bd1",
+      "bytes": 12312,
+      "remote_url": null
+    },
+    {
+      "release_id": 6086,
+      "name": "Friends",
+      "version": "1.0.6",
+      "status": "recovered_local",
+      "license_display": "mit",
+      "file_count": 13,
+      "php_files": 7,
+      "sha256": "dab9f7139be6201ff3db5ee2b4220357f86b5ba697ab030d2cbbcbdd6611e5b7",
+      "bytes": 12231,
+      "remote_url": null
+    },
+    {
+      "release_id": 6068,
+      "name": "Friends",
+      "version": "1.0.5",
+      "status": "recovered_local",
+      "license_display": "mit",
+      "file_count": 13,
+      "php_files": 7,
+      "sha256": "dc247182e0814e58092e1d3c3369366cfd5b5a2e555a2d620301137432745986",
+      "bytes": 12231,
+      "remote_url": null
+    },
+    {
+      "release_id": 5745,
+      "name": "Friends",
+      "version": "1.0.0",
+      "status": "recovered_local",
+      "license_display": "mit",
+      "file_count": 7,
+      "php_files": 2,
+      "sha256": "0f1fbf81365f9ccaa3fed60c354372e0bd1092bd6e4797b38778269d4ae88908",
+      "bytes": 5890,
+      "remote_url": null
+    },
+    {
+      "release_id": 7265,
+      "name": "Godmode",
+      "version": "1.0.0",
+      "status": "recovered_local",
+      "license_display": "gpl-3.0",
+      "file_count": 6,
+      "php_files": 3,
+      "sha256": "b163fdb2373e8c21f8bf41ff08f2b83d87bf0815c8df3ebcf1f70ce50c4fc12c",
+      "bytes": 4135,
+      "remote_url": null
+    },
+    {
+      "release_id": 11715,
+      "name": "HiveCorruptor",
+      "version": "1.0.0",
+      "status": "uploaded",
+      "license_display": "MIT",
+      "file_count": 4,
+      "php_files": 1,
+      "sha256": "54825ffb3bdb167522a00a53bc3a081fc6c3d30cfeafe323939935d70476a14e",
+      "bytes": 3008,
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0003/recovered-source-11715-hivecorruptor-1.0.0-54825ffb3bdb.zip"
+    },
+    {
+      "release_id": 2715,
+      "name": "ImageConverter",
+      "version": "2.3.0",
+      "status": "recovered_local",
+      "license_display": "gpl-3.0",
+      "file_count": 19,
+      "php_files": 17,
+      "sha256": "90814b7743b27a874c64633678141092a07f3972f4c8081bf1148643655a900e",
+      "bytes": 19035,
+      "remote_url": null
+    },
+    {
+      "release_id": 2669,
+      "name": "ImageConverter",
+      "version": "2.2.0",
+      "status": "recovered_local",
+      "license_display": "gpl-3.0",
+      "file_count": 19,
+      "php_files": 17,
+      "sha256": "3f1d2f99f979494001d10f40219c94e78f26ed306cd35e2f4358a477f2abf8d6",
+      "bytes": 18271,
+      "remote_url": null
+    },
+    {
+      "release_id": 2028,
+      "name": "ImageConverter",
+      "version": "1.1.0",
+      "status": "recovered_local",
+      "license_display": "gpl-3.0",
+      "file_count": 8,
+      "php_files": 6,
+      "sha256": "dd26d4c101af7db6ada4ed7a1e97c9d38b80b0880a9df4a3ef20670daf98f74d",
+      "bytes": 8691,
+      "remote_url": null
+    },
+    {
+      "release_id": 1974,
+      "name": "ImageConverter",
+      "version": "1.0.0",
+      "status": "recovered_local",
+      "license_display": "gpl-3.0",
+      "file_count": 7,
+      "php_files": 5,
+      "sha256": "b7d9c615c3b888182a55c43ebe42dc2aa4122f5d51244072f421cfd02674cb7d",
+      "bytes": 7768,
+      "remote_url": null
+    },
+    {
+      "release_id": 5083,
+      "name": "KeepInv",
+      "version": "1.0.0",
+      "status": "uploaded",
+      "license_display": "gpl-3.0",
+      "file_count": 4,
+      "php_files": 1,
+      "sha256": "5a1cc56cff31fb333a3ab9671d13ea6290a717b05260f30a0d1010a1e1a04e8f",
+      "bytes": 2728,
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0003/recovered-source-5083-keepinv-1.0.0-5a1cc56cff31.zip"
+    },
+    {
+      "release_id": 12614,
+      "name": "LuckyPouches",
+      "version": "1.0.1",
+      "status": "uploaded",
+      "license_display": "Apache-2.0",
+      "file_count": 16,
+      "php_files": 11,
+      "sha256": "19b88d156071c41e84cedf815e6fe9e9770f91c0b583457ffb3986183732210f",
+      "bytes": 20280,
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0003/recovered-source-12614-luckypouches-1.0.1-19b88d156071.zip"
+    },
+    {
+      "release_id": 12579,
+      "name": "LuckyPouches",
+      "version": "1.0.0",
+      "status": "uploaded",
+      "license_display": "Apache-2.0",
+      "file_count": 16,
+      "php_files": 11,
+      "sha256": "8eabb771cdf25884553cfb6a9713c0d6be9935436073f17c922c9bb4eee21dc1",
+      "bytes": 20248,
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0003/recovered-source-12579-luckypouches-1.0.0-8eabb771cdf2.zip"
+    },
+    {
+      "release_id": 7052,
+      "name": "Manhunt",
+      "version": "1.0.2",
+      "status": "recovered_local",
+      "license_display": "mit",
+      "file_count": 4,
+      "php_files": 2,
+      "sha256": "9625069124f9f7916d41d5bf343d0353c4c2265dc1fc52126231dd2203d225ca",
+      "bytes": 5139,
+      "remote_url": null
+    },
+    {
+      "release_id": 6628,
+      "name": "Manhunt",
+      "version": "1.0.1",
+      "status": "recovered_local",
+      "license_display": "mit",
+      "file_count": 4,
+      "php_files": 2,
+      "sha256": "4c6a0cfec03145041c74395681efd07e53f37e8c13f9eaf45e7e7855b0a172bb",
+      "bytes": 5118,
+      "remote_url": null
+    },
+    {
+      "release_id": 6609,
+      "name": "Manhunt",
+      "version": "1.0.0",
+      "status": "recovered_local",
+      "license_display": "mit",
+      "file_count": 4,
+      "php_files": 2,
+      "sha256": "5b121cdd19bd11d0f85c112dedf71f0ccb99b3aa26643e57c0c20caebf2b3f6b",
+      "bytes": 5116,
+      "remote_url": null
+    },
+    {
+      "release_id": 6645,
+      "name": "MoneyUI",
+      "version": "1.0.0",
+      "status": "recovered_local",
+      "license_display": "mit",
+      "file_count": 23,
+      "php_files": 18,
+      "sha256": "1077df084c8d45051ef743636a17f92c5a76c7012bed4948fd681d9773fcad5d",
+      "bytes": 25222,
+      "remote_url": null
+    },
+    {
+      "release_id": 6419,
+      "name": "MyWarp",
+      "version": "1.1.0",
+      "status": "recovered_local",
+      "license_display": "mit",
+      "file_count": 11,
+      "php_files": 9,
+      "sha256": "0aadac6fe6caaab72ac0cdb8707fb6067915936ae19fdb428a1dc593f7db01a1",
+      "bytes": 8512,
+      "remote_url": null
+    },
+    {
+      "release_id": 6346,
+      "name": "MyWarp",
+      "version": "1.0.0",
+      "status": "recovered_local",
+      "license_display": "mit",
+      "file_count": 11,
+      "php_files": 9,
+      "sha256": "71eec5fd6d6862928bf49c8ab2a0e1eded91126548e8adca63efa329ee5ee785",
+      "bytes": 7984,
+      "remote_url": null
+    },
+    {
+      "release_id": 6384,
+      "name": "OneBlockAFK",
+      "version": "1.0.0",
+      "status": "uploaded",
+      "license_display": "mit",
+      "file_count": 11,
+      "php_files": 7,
+      "sha256": "d4a528915c124fda097dc1d0f1196c03f9aa4bcb06ed5f1d4b0265f06474e69f",
+      "bytes": 8061,
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0004/recovered-source-6384-oneblockafk-1.0.0-d4a528915c12.zip"
+    },
+    {
+      "release_id": 12022,
+      "name": "OnePlayerSleep",
+      "version": "1.0.0",
+      "status": "uploaded",
+      "license_display": "GPL-3.0",
+      "file_count": 7,
+      "php_files": 3,
+      "sha256": "0f2e542989bee93682fcb0247decc17dcee6a49d138e475078fafacc500c6e85",
+      "bytes": 16324,
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0004/recovered-source-12022-oneplayersleep-1.0.0-0f2e542989be.zip"
+    },
+    {
+      "release_id": 5822,
+      "name": "PlotRating",
+      "version": "1.1",
+      "status": "uploaded",
+      "license_display": "mit",
+      "file_count": 4,
+      "php_files": 1,
+      "sha256": "ed2f6553cf0609ff9d09c2a0d55a841b58b10b0fc600241eed64ef5f7fc6bcc8",
+      "bytes": 3759,
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0004/recovered-source-5822-plotrating-1.1-ed2f6553cf06.zip"
+    },
+    {
+      "release_id": 5994,
+      "name": "RandomDrops",
+      "version": "1.0.1",
+      "status": "uploaded",
+      "license_display": "mit",
+      "file_count": 4,
+      "php_files": 1,
+      "sha256": "143dde66fe3267764db4decec39a6ca5bd7b3411bf98aa4738f83b68d038e679",
+      "bytes": 3179,
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0004/recovered-source-5994-randomdrops-1.0.1-143dde66fe32.zip"
+    },
+    {
+      "release_id": 5959,
+      "name": "RandomDrops",
+      "version": "1.0.0",
+      "status": "uploaded",
+      "license_display": "mit",
+      "file_count": 4,
+      "php_files": 1,
+      "sha256": "9c1151e2bc124cd1c183599702e49e5f69b1ed8097eade7d37696014db6ace69",
+      "bytes": 3159,
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0004/recovered-source-5959-randomdrops-1.0.0-9c1151e2bc12.zip"
+    },
+    {
+      "release_id": 6549,
+      "name": "RobotVerification",
+      "version": "1.0.0",
+      "status": "uploaded",
+      "license_display": "mit",
+      "file_count": 24,
+      "php_files": 21,
+      "sha256": "f6556f87a05049fce021a99c1d9288279f5c49ff3a200ec35708d98924e0ac56",
+      "bytes": 27695,
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0005/recovered-source-6549-robotverification-1.0.0-f6556f87a050.zip"
+    },
+    {
+      "release_id": 7309,
+      "name": "SignToDiscord",
+      "version": "1.0.1",
+      "status": "recovered_local",
+      "license_display": "mit",
+      "file_count": 6,
+      "php_files": 3,
+      "sha256": "a02ee94e3567eadaf2e2bca96fafd472832d411f750c596fab90073e58ddf889",
+      "bytes": 4021,
+      "remote_url": null
+    },
+    {
+      "release_id": 3740,
+      "name": "PlayerSkinStealer",
+      "version": "1.0.0",
+      "status": "uploaded",
+      "license_display": "unlicense",
+      "file_count": 3,
+      "php_files": 1,
+      "sha256": "35316f07c3ecfa621bf3d151a25482b4f665bfbb612b8f6fc2f73ecab7b89e29",
+      "bytes": 2154,
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0005/recovered-source-3740-playerskinstealer-1.0.0-35316f07c3ec.zip"
+    },
+    {
+      "release_id": 6728,
+      "name": "SlimeBoost",
+      "version": "1.1.0",
+      "status": "recovered_local",
+      "license_display": "gpl-2.0",
+      "file_count": 6,
+      "php_files": 3,
+      "sha256": "a0bc6eb079fee43bcd3ea48aa18425ec89114069f294d5c209d3b6821de1bfd3",
+      "bytes": 3957,
+      "remote_url": null
+    },
+    {
+      "release_id": 6707,
+      "name": "SlimeBoost",
+      "version": "1.0.0",
+      "status": "recovered_local",
+      "license_display": "gpl-2.0",
+      "file_count": 6,
+      "php_files": 3,
+      "sha256": "cfeeb55354a7fdc390157f448f22fb08b2858ebc5c0add7f8ac9a6ae4d196359",
+      "bytes": 3725,
+      "remote_url": null
+    },
+    {
+      "release_id": 6478,
+      "name": "StopLag",
+      "version": "1.0.0",
+      "status": "uploaded",
+      "license_display": "mit",
+      "file_count": 3,
+      "php_files": 1,
+      "sha256": "bdfd6ead745be2fb98fb12ec011288dc92fb0b65f73142bd5c931d0ca6233765",
+      "bytes": 2736,
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0005/recovered-source-6478-stoplag-1.0.0-bdfd6ead745b.zip"
+    },
+    {
+      "release_id": 7093,
+      "name": "WorkersDemo",
+      "version": "1.0.1",
+      "status": "uploaded",
+      "license_display": "mit",
+      "file_count": 44,
+      "php_files": 41,
+      "sha256": "f0650a034c9f49103b4af535b0b25ff6143bea616ad1a4e626e8da5c44a2922a",
+      "bytes": 55316,
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0006/recovered-source-7093-workersdemo-1.0.1-f0650a034c9f.zip"
+    },
+    {
+      "release_id": 7053,
+      "name": "WorkersDemo",
+      "version": "1.0.0",
+      "status": "uploaded",
+      "license_display": "mit",
+      "file_count": 44,
+      "php_files": 41,
+      "sha256": "eb83569c0caa01d6960a5fc37b8c56012e9cd2f9798e56b6da7dc7e9fd84ad2d",
+      "bytes": 55313,
+      "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0006/recovered-source-7053-workersdemo-1.0.0-eb83569c0caa.zip"
+    }
+  ],
+  "no_license_resolution": {
+    "status": "Recorded as No License and exact source snapshots published, with upstream license metadata preserved.",
+    "records": [
+      {
+        "key": "161699081@22b78db120f28e4be727145dc0f3bf93f3bb1305",
+        "repo": "TwistedAsylumMC/BetterVoting",
+        "commit": "22b78db120f28e4be727145dc0f3bf93f3bb1305",
+        "license_display": "No License",
+        "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-161699081-22b78db120f28e4be727145dc0f3bf93f3bb1305-4e7df3364618.zip",
+        "sha256": "4e7df33646188e9076a25784858b058a526223b1210523f708dedc73b3500454",
+        "bytes": 9184
+      },
+      {
+        "key": "161699081@89780106cf1b2fc188b8cb96ba1d36ac080e12ef",
+        "repo": "TwistedAsylumMC/BetterVoting",
+        "commit": "89780106cf1b2fc188b8cb96ba1d36ac080e12ef",
+        "license_display": "No License",
+        "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-161699081-89780106cf1b2fc188b8cb96ba1d36ac080e12ef-8c93d085355d.zip",
+        "sha256": "8c93d085355d438582e4a1c9427f5bb7a7195d314d0ecfc9a39b5c9d2262c509",
+        "bytes": 7538
+      },
+      {
+        "key": "161699081@963d55ac39cdc4e81e6fff55a68999d28853a917",
+        "repo": "TwistedAsylumMC/BetterVoting",
+        "commit": "963d55ac39cdc4e81e6fff55a68999d28853a917",
+        "license_display": "No License",
+        "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-161699081-963d55ac39cdc4e81e6fff55a68999d28853a917-6d62cc7481a9.zip",
+        "sha256": "6d62cc7481a96b1fd08b262f8dccafd7f37ac74f0acf247edbdb70e181d2ded8",
+        "bytes": 9099
+      },
+      {
+        "key": "87964338@4bc4fa65c5cd2a9c3b57e6a19c0636ebab36150f",
+        "repo": "eDroiid/ChatToDiscord",
+        "commit": "4bc4fa65c5cd2a9c3b57e6a19c0636ebab36150f",
+        "license_display": "No License",
+        "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0006/source-87964338-4bc4fa65c5cd2a9c3b57e6a19c0636ebab36150f-3292501c9b7d.zip",
+        "sha256": "3292501c9b7d82f52bcfa50233ba8fc0e5675addf931e1b92a7d4123f0b39031",
+        "bytes": 58353
+      }
+    ]
+  },
+  "validation": {
+    "python_syntax": "passed",
+    "php_reader_syntax": "passed",
+    "browser_javascript_syntax": "passed",
+    "astro_static_build": "passed",
+    "original_phar_stub_not_executed_test": "passed",
+    "deterministic_recovered_zip_test": "passed",
+    "modified_git_blob_rejection_test": "passed",
+    "frontend_source_priority_and_label_tests": "passed",
+    "local_browser_no_license_display": "ChatToDiscord displays No License and a verified Archived source link.",
+    "local_browser_phar_recovery_display": "AntiEnchantmentAbuse displays Source from PHAR with a verified archive URL and scope tooltip.",
+    "new_remote_asset_metadata_checks": 46
+  }
+}

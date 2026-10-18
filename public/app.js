@@ -13,6 +13,7 @@
     pluginDownloads: {},
     virionDownloads: {},
     sourceDownloads: {},
+    recoveredSources: {},
     loaded: false,
   };
   const $ = (selector) => document.querySelector(selector);
@@ -194,8 +195,13 @@
     if (state.kind !== "plugins" || !item.repo_id || !item.build_commit) return null;
     const key = `${item.repo_id}@${String(item.build_commit).toLowerCase()}`;
     const archived = state.sourceDownloads[key];
-    return archived?.status === "uploaded" && archiveUrl(archived.remote_url)
-      ? { url: archived.remote_url, label: "Archived source" }
+    if (archived?.status === "uploaded" && archiveUrl(archived.remote_url)) {
+      return { url: archived.remote_url, label: "Archived source" };
+    }
+    const recovered = state.recoveredSources[String(item.id)];
+    return recovered?.status === "uploaded" && recovered.method === "unphar"
+      && recovered.complete_git_snapshot === false && archiveUrl(recovered.remote_url)
+      ? { url: recovered.remote_url, label: "Source from PHAR", details: "Files recovered from the original PHAR. Repository files excluded during the build may be missing." }
       : null;
   }
 
@@ -224,13 +230,24 @@
 
   function addPluginMeta(container, item, totalDownloads = item.downloads) {
     addMeta(container, `${number(totalDownloads)} total downloads`);
-    addMeta(container, item.license ? `License ${item.license}` : "License unknown");
+    const license = String(item.license || "").trim();
+    const source = state.sourceDownloads[`${item.repo_id}@${String(item.build_commit || "").toLowerCase()}`];
+    addMeta(container, !license || ["none", "unknown"].includes(license.toLowerCase()) || source?.license_display === "No License"
+      ? "No License"
+      : `License ${license}`);
   }
 
   function renderActions(item, title) {
     const actions = element("div", "result-actions");
     const source = sourceArtifact(item);
-    if (source) actions.append(link(source.label, source.url, "", true));
+    if (source) {
+      const sourceLink = link(source.label, source.url, "", true);
+      if (source.details) {
+        sourceLink.title = source.details;
+        sourceLink.setAttribute("aria-label", `${source.label} for ${title}. ${source.details}`);
+      }
+      actions.append(sourceLink);
+    }
 
     const artifact = artifactFor(item);
     if (artifact?.url) {
@@ -617,13 +634,14 @@
       const pointerUrl = new URL("data/api/v1/current.json", location.href);
       const pointer = await getJson(pointerUrl);
       const base = (relative) => new URL(relative, pointerUrl).href;
-      const [summary, releases, virions, pluginDownloads, virionDownloads, sourceDownloads] = await Promise.all([
+      const [summary, releases, virions, pluginDownloads, virionDownloads, sourceDownloads, recoveredSources] = await Promise.all([
         getJson(base(pointer.files.summary)),
         getJson(base(pointer.files.releases)),
         getJson(base(pointer.files.virions)),
         optionalJson(base(pointer.files.downloads_plugins)),
         optionalJson(base(pointer.files.downloads_virions)),
         optionalJson(base(pointer.files.source_downloads)),
+        pointer.files.recovered_sources ? optionalJson(base(pointer.files.recovered_sources)) : Promise.resolve({}),
       ]);
 
       state.releases = Array.isArray(releases) ? releases : [];
@@ -633,6 +651,7 @@
       state.pluginDownloads = pluginDownloads;
       state.virionDownloads = virionDownloads;
       state.sourceDownloads = sourceDownloads;
+      state.recoveredSources = recoveredSources;
       $("#plugins-tab-count").textContent = number(state.pluginProjects.length);
       $("#virions-tab-count").textContent = number(summary.counts?.virion_entries);
       state.loaded = true;

@@ -1,0 +1,284 @@
+{
+  "155077145@2643f22ffe577a4e47f0b4095d89e0bd0932b0af": {
+    "status": 200,
+    "revision": {
+      "id": "2643f22ffe577a4e47f0b4095d89e0bd0932b0af",
+      "directory": "e28bcbb38e5e13fea86c4a727b5b1e1d3a3989aa",
+      "synthetic": false
+    },
+    "revision_url": "https://archive.softwareheritage.org/api/1/revision/2643f22ffe577a4e47f0b4095d89e0bd0932b0af/",
+    "checked_at": "2026-10-18T18:26:20.544151+00:00"
+  },
+  "155077145@319beebd5779d94ffdf5b253a4f751583b29007b": {
+    "status": 200,
+    "revision": {
+      "id": "319beebd5779d94ffdf5b253a4f751583b29007b",
+      "directory": "340a7b5b0390c562313345b186c3f7cf5e2d1a30",
+      "synthetic": false
+    },
+    "revision_url": "https://archive.softwareheritage.org/api/1/revision/319beebd5779d94ffdf5b253a4f751583b29007b/",
+    "checked_at": "2026-10-18T18:26:21.975486+00:00"
+  },
+  "155077145@d02e39d72a96cf3d8a033adf6c0ecd486b959a11": {
+    "status": 200,
+    "revision": {
+      "id": "d02e39d72a96cf3d8a033adf6c0ecd486b959a11",
+      "directory": "06aeb9c198fb4002083d94549167e7ae5745fa1e",
+      "synthetic": false
+    },
+    "revision_url": "https://archive.softwareheritage.org/api/1/revision/d02e39d72a96cf3d8a033adf6c0ecd486b959a11/",
+    "checked_at": "2026-10-18T18:26:23.641601+00:00"
+  },
+  "155077145@daf675303aa3616db22e2253897e48dfdd5f38d4": {
+    "status": 200,
+    "revision": {
+      "id": "daf675303aa3616db22e2253897e48dfdd5f38d4",
+      "directory": "36c63c2513762092f569175cd3ce5263d056addc",
+      "synthetic": false
+    },
+    "revision_url": "https://archive.softwareheritage.org/api/1/revision/daf675303aa3616db22e2253897e48dfdd5f38d4/",
+    "checked_at": "2026-10-18T18:26:25.270413+00:00"
+  },
+  "156429117@8ace0fbb43c62fc3edebd373a6a4f83d3260dc57": {
+    "status": 404,
+    "checked_at": "2026-10-18T18:26:26.866866+00:00"
+  },
+  "159055237@0ddd06b08aeaaf026b4b5b0e73eec864df43dac1": {
+    "status": 404,
+    "checked_at": "2026-10-18T18:26:28.308349+00:00"
+  },
+  "236559413@72ed88b0804ac9a750fe12415763889a3de0f2cd": {
+    "status": 404,
+    "checked_at": "2026-10-18T18:26:29.712136+00:00"
+  },
+  "281672094@1c78109b7a84d808590d2ee29a26548260c324f6": {
+    "status": 404,
+    "checked_at": "2026-10-18T18:26:31.070759+00:00"
+  },
+  "286040861@ca4648c1b4f7dc4ea8f65b9a11bac97694f633ce": {
+    "status": 404,
+    "checked_at": "2026-10-18T18:26:32.428244+00:00"
+  },
+  "324139500@ea3e4cb06734a669e561df91e8ba7e13581dc39c": {
+    "status": 200,
+    "revision": {
+      "id": "ea3e4cb06734a669e561df91e8ba7e13581dc39c",
+      "directory": "c04cfbf562a7d9b05ed439cdf8d71777e17de285",
+      "synthetic": false
+    },
+    "revision_url": "https://archive.softwareheritage.org/api/1/revision/ea3e4cb06734a669e561df91e8ba7e13581dc39c/",
+    "checked_at": "2026-10-18T18:26:33.791566+00:00"
+  },
+  "338787935@7b171d7bc7d0fbad5c8ea859605fe27f703e6540": {
+    "status": 404,
+    "checked_at": "2026-10-18T18:26:35.131028+00:00"
+  },
+  "348382793@683c4767b58e0695d9a802ec14da6c66801dd86d": {
+    "status": 404,
+    "checked_at": "2026-10-18T18:26:36.495027+00:00"
+  },
+  "352938321@15d52ef0c4a28d65a1ba35c0db8db1c70dc820df": {
+    "status": 404,
+    "checked_at": "2026-10-18T18:26:37.812776+00:00"
+  },
+  "353997984@06c8bf3f019f4b76ed04b3ecacf05f45223995a2": {
+    "status": 200,
+    "revision": {
+      "id": "06c8bf3f019f4b76ed04b3ecacf05f45223995a2",
+      "directory": "3ed5b39d61138b0b60462b0c32890f9eadbe5f56",
+      "synthetic": false
+    },
+    "revision_url": "https://archive.softwareheritage.org/api/1/revision/06c8bf3f019f4b76ed04b3ecacf05f45223995a2/",
+    "checked_at": "2026-10-18T18:26:39.211223+00:00"
+  },
+  "359181719@34ef3147e744204ec1d0f331772f01315f8a030f": {
+    "status": 404,
+    "checked_at": "2026-10-18T18:26:40.546883+00:00"
+  },
+  "362245623@4d3affcde359b0c9c83405401db51de2858fa37d": {
+    "status": 404,
+    "checked_at": "2026-10-18T18:26:41.923525+00:00"
+  },
+  "363367009@981b79da61242130bf5a28336348956b7a03a9b4": {
+    "status": 404,
+    "checked_at": "2026-10-18T18:26:43.243849+00:00"
+  },
+  "365617377@fe710a89cca3ce42253b87a2008b52cd3ae5cc40": {
+    "status": 200,
+    "revision": {
+      "id": "fe710a89cca3ce42253b87a2008b52cd3ae5cc40",
+      "directory": "03cb8ee19de30640f08000bc0f1073dc0394aabd",
+      "synthetic": false
+    },
+    "revision_url": "https://archive.softwareheritage.org/api/1/revision/fe710a89cca3ce42253b87a2008b52cd3ae5cc40/",
+    "checked_at": "2026-10-18T18:26:44.562074+00:00"
+  },
+  "367859690@fd13cf11ab7c3aeb25148ace97af237b6b7d4b37": {
+    "status": 200,
+    "revision": {
+      "id": "fd13cf11ab7c3aeb25148ace97af237b6b7d4b37",
+      "directory": "a85f22f71677ab7213c0320d8b8f18413834c851",
+      "synthetic": false
+    },
+    "revision_url": "https://archive.softwareheritage.org/api/1/revision/fd13cf11ab7c3aeb25148ace97af237b6b7d4b37/",
+    "checked_at": "2026-10-18T18:26:45.924099+00:00"
+  },
+  "371428943@deadcc53d0efbdabec4d1e52c7cfce1e204027d6": {
+    "status": 200,
+    "revision": {
+      "id": "deadcc53d0efbdabec4d1e52c7cfce1e204027d6",
+      "directory": "3155a40ebac8ff60954cd270b83527e00ab14fcf",
+      "synthetic": false
+    },
+    "revision_url": "https://archive.softwareheritage.org/api/1/revision/deadcc53d0efbdabec4d1e52c7cfce1e204027d6/",
+    "checked_at": "2026-10-18T18:26:47.295012+00:00"
+  },
+  "374229089@66dde3b3c614b393f47afddafa8958d38dd33406": {
+    "status": 404,
+    "checked_at": "2026-10-18T18:26:48.683167+00:00"
+  },
+  "374426961@62f8acd9b941c39d00b3e7e0042f1fea7eb02abe": {
+    "status": 404,
+    "checked_at": "2026-10-18T18:26:50.128056+00:00"
+  },
+  "386053822@2b5a5920bcb549a4cc7ad5af05a2bdc5af2c006b": {
+    "status": 404,
+    "checked_at": "2026-10-18T18:26:51.517646+00:00"
+  },
+  "388852433@b420d48214ff9003171d25c27d10283ce55cdf4e": {
+    "status": 200,
+    "revision": {
+      "id": "b420d48214ff9003171d25c27d10283ce55cdf4e",
+      "directory": "f76717ffeee7f98fd2f1518163cc297809d61967",
+      "synthetic": false
+    },
+    "revision_url": "https://archive.softwareheritage.org/api/1/revision/b420d48214ff9003171d25c27d10283ce55cdf4e/",
+    "checked_at": "2026-10-18T18:26:52.850418+00:00"
+  },
+  "392603892@db8ca5fb378bec537356c7e72302cdeea98dca81": {
+    "status": 404,
+    "checked_at": "2026-10-18T18:26:54.188887+00:00"
+  },
+  "393148858@a76297de22528d2c529b796ca3447081bad42852": {
+    "status": 200,
+    "revision": {
+      "id": "a76297de22528d2c529b796ca3447081bad42852",
+      "directory": "8aba30a9762b75917027cd6e8980e8f8ec649ed6",
+      "synthetic": false
+    },
+    "revision_url": "https://archive.softwareheritage.org/api/1/revision/a76297de22528d2c529b796ca3447081bad42852/",
+    "checked_at": "2026-10-18T18:26:55.540709+00:00"
+  },
+  "393590536@73b862edb693221e860c099ed12eef3719f51a6d": {
+    "status": 404,
+    "checked_at": "2026-10-18T18:26:56.881083+00:00"
+  },
+  "393600263@a9600c46fb719733bb547008de053572aa144f5e": {
+    "status": 200,
+    "revision": {
+      "id": "a9600c46fb719733bb547008de053572aa144f5e",
+      "directory": "4bb0b2687227069213a1192872026e626059a1a5",
+      "synthetic": false
+    },
+    "revision_url": "https://archive.softwareheritage.org/api/1/revision/a9600c46fb719733bb547008de053572aa144f5e/",
+    "checked_at": "2026-10-18T18:26:58.255655+00:00"
+  },
+  "655102572@433b4e79c3952de3cdee9aacda84bb1e3f753285": {
+    "status": 404,
+    "checked_at": "2026-10-18T18:26:59.634484+00:00"
+  },
+  "665770430@e95aa47ae7a75cc9a319c1deda48a223adf46e9d": {
+    "status": 404,
+    "checked_at": "2026-10-18T18:27:00.958252+00:00"
+  },
+  "714585564@14188f882c881d2f77e337afc8ed71db7be38667": {
+    "status": 404,
+    "checked_at": "2026-10-18T18:27:02.321724+00:00"
+  },
+  "324139500@324527fd661a77f7718352461063d55c2d9168ec": {
+    "status": 200,
+    "revision": {
+      "id": "324527fd661a77f7718352461063d55c2d9168ec",
+      "directory": "11edab75c0cff9c1c91d59e3289e25d7e812877f",
+      "synthetic": false
+    },
+    "revision_url": "https://archive.softwareheritage.org/api/1/revision/324527fd661a77f7718352461063d55c2d9168ec/",
+    "checked_at": "2026-10-18T18:27:03.713707+00:00"
+  },
+  "324139500@3705298aee8c54e45602019fd8e8a3a3a3432d74": {
+    "status": 200,
+    "revision": {
+      "id": "3705298aee8c54e45602019fd8e8a3a3a3432d74",
+      "directory": "69af2b96f58ddac735d03a7c9394e559a763e3b7",
+      "synthetic": false
+    },
+    "revision_url": "https://archive.softwareheritage.org/api/1/revision/3705298aee8c54e45602019fd8e8a3a3a3432d74/",
+    "checked_at": "2026-10-18T18:27:05.085100+00:00"
+  },
+  "324139500@d222345af316dad19daccc1795f9ea654d10de7e": {
+    "status": 200,
+    "revision": {
+      "id": "d222345af316dad19daccc1795f9ea654d10de7e",
+      "directory": "25c396cef6bba26936012293b4e7e6f2219c69b0",
+      "synthetic": false
+    },
+    "revision_url": "https://archive.softwareheritage.org/api/1/revision/d222345af316dad19daccc1795f9ea654d10de7e/",
+    "checked_at": "2026-10-18T18:27:06.483282+00:00"
+  },
+  "338787935@7a130d30acc3f35253b61ff1d17ade7544d700ce": {
+    "status": 404,
+    "checked_at": "2026-10-18T18:27:07.817729+00:00"
+  },
+  "353997984@ab90b52a76c7ff0bcd8d5139eb5677101504b4bf": {
+    "status": 200,
+    "revision": {
+      "id": "ab90b52a76c7ff0bcd8d5139eb5677101504b4bf",
+      "directory": "dd7bd0fe59669f2da313217b808dd8caec09a1b8",
+      "synthetic": false
+    },
+    "revision_url": "https://archive.softwareheritage.org/api/1/revision/ab90b52a76c7ff0bcd8d5139eb5677101504b4bf/",
+    "checked_at": "2026-10-18T18:27:09.147901+00:00"
+  },
+  "363367009@60a1af1748b495649a19560f06903e389dc29425": {
+    "status": 404,
+    "checked_at": "2026-10-18T18:27:10.533045+00:00"
+  },
+  "365617377@2c33cff9bcb40266ba2f328e36b73d21b015f91c": {
+    "status": 200,
+    "revision": {
+      "id": "2c33cff9bcb40266ba2f328e36b73d21b015f91c",
+      "directory": "03f6b39c04ee43edfffc165cb4ad57b263c59516",
+      "synthetic": false
+    },
+    "revision_url": "https://archive.softwareheritage.org/api/1/revision/2c33cff9bcb40266ba2f328e36b73d21b015f91c/",
+    "checked_at": "2026-10-18T18:27:11.894982+00:00"
+  },
+  "365617377@d7631898814fbe3e82acee0d74040b2f15a24e67": {
+    "status": 200,
+    "revision": {
+      "id": "d7631898814fbe3e82acee0d74040b2f15a24e67",
+      "directory": "9a09db50a1b13992c7f760f722ed8c40cf6dc75a",
+      "synthetic": false
+    },
+    "revision_url": "https://archive.softwareheritage.org/api/1/revision/d7631898814fbe3e82acee0d74040b2f15a24e67/",
+    "checked_at": "2026-10-18T18:27:13.252066+00:00"
+  },
+  "371428943@f139dd874f121eedf8421958b0d3f192e7dadb6b": {
+    "status": 200,
+    "revision": {
+      "id": "f139dd874f121eedf8421958b0d3f192e7dadb6b",
+      "directory": "8dc4da9469c10e7c2f4e0efa12a6d2719eb54e1c",
+      "synthetic": false
+    },
+    "revision_url": "https://archive.softwareheritage.org/api/1/revision/f139dd874f121eedf8421958b0d3f192e7dadb6b/",
+    "checked_at": "2026-10-18T18:27:14.619553+00:00"
+  },
+  "386053822@63aabbcbd60e160890b737e17d488e9bbc47778d": {
+    "status": 404,
+    "checked_at": "2026-10-18T18:27:15.986199+00:00"
+  },
+  "714585564@78a3981c05ff803109e3dd86767d56ac47255531": {
+    "status": 404,
+    "checked_at": "2026-10-18T18:27:17.332736+00:00"
+  }
+}

@@ -13579,12 +13579,37 @@
     "commit": "2643f22ffe577a4e47f0b4095d89e0bd0932b0af",
     "source_url": "https://github.com/korado531m7/ImageConverter",
     "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "status": "uploaded",
     "tried": [
       "korado531m7/ImageConverter"
-    ]
+    ],
+    "provider": "Software Heritage",
+    "bytes": 1144843,
+    "sha256": "30b9f04555da68127154060d89375399cbccb64aa2ddcd98afa91e895709630a",
+    "storage_path": null,
+    "final_url": "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:e28bcbb38e5e13fea86c4a727b5b1e1d3a3989aa/raw/",
+    "recovery": {
+      "method": "software_heritage_verified_tree",
+      "verified_commit": "2643f22ffe577a4e47f0b4095d89e0bd0932b0af",
+      "tree_sha": "e28bcbb38e5e13fea86c4a727b5b1e1d3a3989aa",
+      "swh_revision": "swh:1:rev:2643f22ffe577a4e47f0b4095d89e0bd0932b0af",
+      "swh_directory": "swh:1:dir:e28bcbb38e5e13fea86c4a727b5b1e1d3a3989aa",
+      "revision_url": "https://archive.softwareheritage.org/api/1/revision/2643f22ffe577a4e47f0b4095d89e0bd0932b0af/",
+      "vault_url": "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:e28bcbb38e5e13fea86c4a727b5b1e1d3a3989aa/raw/",
+      "git_tree_verified": true,
+      "git_blobs_verified": true,
+      "file_count": 23,
+      "container": "Deterministic ZIP reconstructed from a Software Heritage Vault tree; Git file bytes and modes verified.",
+      "license_files": []
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-155077145-2643f22ffe577a4e47f0b4095d89e0bd0932b0af-30b9f04555da.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-155077145-2643f22ffe577a4e47f0b4095d89e0bd0932b0af-30b9f04555da.zip",
+    "remote_sha256": "30b9f04555da68127154060d89375399cbccb64aa2ddcd98afa91e895709630a",
+    "remote_asset_id": 654179832,
+    "uploaded_at": "2026-10-18T18:34:00Z",
+    "local_deleted": false
   },
   "155077145@319beebd5779d94ffdf5b253a4f751583b29007b": {
     "key": "155077145@319beebd5779d94ffdf5b253a4f751583b29007b",
@@ -13593,12 +13618,37 @@
     "commit": "319beebd5779d94ffdf5b253a4f751583b29007b",
     "source_url": "https://github.com/korado531m7/ImageConverter",
     "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "status": "uploaded",
     "tried": [
       "korado531m7/ImageConverter"
-    ]
+    ],
+    "provider": "Software Heritage",
+    "bytes": 1134280,
+    "sha256": "81c41f73dcec3c224c97b3fa2ec4ba82b7b551f3b47bcab560f5ac2ba95087cd",
+    "storage_path": null,
+    "final_url": "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:340a7b5b0390c562313345b186c3f7cf5e2d1a30/raw/",
+    "recovery": {
+      "method": "software_heritage_verified_tree",
+      "verified_commit": "319beebd5779d94ffdf5b253a4f751583b29007b",
+      "tree_sha": "340a7b5b0390c562313345b186c3f7cf5e2d1a30",
+      "swh_revision": "swh:1:rev:319beebd5779d94ffdf5b253a4f751583b29007b",
+      "swh_directory": "swh:1:dir:340a7b5b0390c562313345b186c3f7cf5e2d1a30",
+      "revision_url": "https://archive.softwareheritage.org/api/1/revision/319beebd5779d94ffdf5b253a4f751583b29007b/",
+      "vault_url": "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:340a7b5b0390c562313345b186c3f7cf5e2d1a30/raw/",
+      "git_tree_verified": true,
+      "git_blobs_verified": true,
+      "file_count": 12,
+      "container": "Deterministic ZIP reconstructed from a Software Heritage Vault tree; Git file bytes and modes verified.",
+      "license_files": []
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-155077145-319beebd5779d94ffdf5b253a4f751583b29007b-81c41f73dcec.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-155077145-319beebd5779d94ffdf5b253a4f751583b29007b-81c41f73dcec.zip",
+    "remote_sha256": "81c41f73dcec3c224c97b3fa2ec4ba82b7b551f3b47bcab560f5ac2ba95087cd",
+    "remote_asset_id": 654179883,
+    "uploaded_at": "2026-10-18T18:34:02Z",
+    "local_deleted": false
   },
   "155077145@d02e39d72a96cf3d8a033adf6c0ecd486b959a11": {
     "key": "155077145@d02e39d72a96cf3d8a033adf6c0ecd486b959a11",
@@ -13607,12 +13657,37 @@
     "commit": "d02e39d72a96cf3d8a033adf6c0ecd486b959a11",
     "source_url": "https://github.com/korado531m7/ImageConverter",
     "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "status": "uploaded",
     "tried": [
       "korado531m7/ImageConverter"
-    ]
+    ],
+    "provider": "Software Heritage",
+    "bytes": 1125112,
+    "sha256": "e32b7bd6177f2365f6c696eb5e193813c08841655b1852bd863e220ea329edf8",
+    "storage_path": null,
+    "final_url": "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:06aeb9c198fb4002083d94549167e7ae5745fa1e/raw/",
+    "recovery": {
+      "method": "software_heritage_verified_tree",
+      "verified_commit": "d02e39d72a96cf3d8a033adf6c0ecd486b959a11",
+      "tree_sha": "06aeb9c198fb4002083d94549167e7ae5745fa1e",
+      "swh_revision": "swh:1:rev:d02e39d72a96cf3d8a033adf6c0ecd486b959a11",
+      "swh_directory": "swh:1:dir:06aeb9c198fb4002083d94549167e7ae5745fa1e",
+      "revision_url": "https://archive.softwareheritage.org/api/1/revision/d02e39d72a96cf3d8a033adf6c0ecd486b959a11/",
+      "vault_url": "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:06aeb9c198fb4002083d94549167e7ae5745fa1e/raw/",
+      "git_tree_verified": true,
+      "git_blobs_verified": true,
+      "file_count": 10,
+      "container": "Deterministic ZIP reconstructed from a Software Heritage Vault tree; Git file bytes and modes verified.",
+      "license_files": []
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-155077145-d02e39d72a96cf3d8a033adf6c0ecd486b959a11-e32b7bd6177f.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-155077145-d02e39d72a96cf3d8a033adf6c0ecd486b959a11-e32b7bd6177f.zip",
+    "remote_sha256": "e32b7bd6177f2365f6c696eb5e193813c08841655b1852bd863e220ea329edf8",
+    "remote_asset_id": 654179942,
+    "uploaded_at": "2026-10-18T18:34:03Z",
+    "local_deleted": false
   },
   "155077145@daf675303aa3616db22e2253897e48dfdd5f38d4": {
     "key": "155077145@daf675303aa3616db22e2253897e48dfdd5f38d4",
@@ -13621,12 +13696,37 @@
     "commit": "daf675303aa3616db22e2253897e48dfdd5f38d4",
     "source_url": "https://github.com/korado531m7/ImageConverter",
     "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "status": "uploaded",
     "tried": [
       "korado531m7/ImageConverter"
-    ]
+    ],
+    "provider": "Software Heritage",
+    "bytes": 1144081,
+    "sha256": "7e0b052ae44d29e97059bedd5fc5bb4b0db432c8916723b68840fa46828d2e1a",
+    "storage_path": null,
+    "final_url": "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:36c63c2513762092f569175cd3ce5263d056addc/raw/",
+    "recovery": {
+      "method": "software_heritage_verified_tree",
+      "verified_commit": "daf675303aa3616db22e2253897e48dfdd5f38d4",
+      "tree_sha": "36c63c2513762092f569175cd3ce5263d056addc",
+      "swh_revision": "swh:1:rev:daf675303aa3616db22e2253897e48dfdd5f38d4",
+      "swh_directory": "swh:1:dir:36c63c2513762092f569175cd3ce5263d056addc",
+      "revision_url": "https://archive.softwareheritage.org/api/1/revision/daf675303aa3616db22e2253897e48dfdd5f38d4/",
+      "vault_url": "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:36c63c2513762092f569175cd3ce5263d056addc/raw/",
+      "git_tree_verified": true,
+      "git_blobs_verified": true,
+      "file_count": 23,
+      "container": "Deterministic ZIP reconstructed from a Software Heritage Vault tree; Git file bytes and modes verified.",
+      "license_files": []
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-155077145-daf675303aa3616db22e2253897e48dfdd5f38d4-7e0b052ae44d.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-155077145-daf675303aa3616db22e2253897e48dfdd5f38d4-7e0b052ae44d.zip",
+    "remote_sha256": "7e0b052ae44d29e97059bedd5fc5bb4b0db432c8916723b68840fa46828d2e1a",
+    "remote_asset_id": 654180004,
+    "uploaded_at": "2026-10-18T18:34:04Z",
+    "local_deleted": false
   },
   "155371768@032739233bbe9d2c59c6f71f34b2e140101f4b32": {
     "key": "155371768@032739233bbe9d2c59c6f71f34b2e140101f4b32",
@@ -17713,11 +17813,11 @@
     "candidates": [
       "BayAlper10/BetterVoting"
     ],
-    "status": "license_review_required",
+    "status": "uploaded",
     "bytes": 9184,
     "sha256": "4e7df33646188e9076a25784858b058a526223b1210523f708dedc73b3500454",
     "final_url": "https://github.com/BayAlper10/BetterVoting/archive/22b78db120f28e4be727145dc0f3bf93f3bb1305.zip",
-    "storage_path": "archive/sources/161699081/22b78db120f28e4be727145dc0f3bf93f3bb1305.zip",
+    "storage_path": null,
     "provider": "BayAlper10/BetterVoting",
     "tried": [
       "TwistedAsylumMC/BetterVoting",
@@ -17746,7 +17846,17 @@
       },
       "checked_at": "2026-10-18T18:09:55.878284+00:00"
     },
-    "license_review_reason": "The release declares a custom or missing license; this commit contains no license document establishing redistribution permission."
+    "license_display": "No License",
+    "license_status": "none",
+    "license_note": "The source has no license document; original Poggit custom/none metadata is retained. Normalized to No License for the catalog.",
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-161699081-22b78db120f28e4be727145dc0f3bf93f3bb1305-4e7df3364618.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-161699081-22b78db120f28e4be727145dc0f3bf93f3bb1305-4e7df3364618.zip",
+    "remote_sha256": "4e7df33646188e9076a25784858b058a526223b1210523f708dedc73b3500454",
+    "remote_asset_id": 654202417,
+    "uploaded_at": "2026-10-18T18:43:46Z",
+    "local_deleted": false
   },
   "161699081@4d8226a88407a0ea703c81509c24f08529de37fa": {
     "key": "161699081@4d8226a88407a0ea703c81509c24f08529de37fa",
@@ -17863,11 +17973,11 @@
     "candidates": [
       "BayAlper10/BetterVoting"
     ],
-    "status": "license_review_required",
+    "status": "uploaded",
     "bytes": 7538,
     "sha256": "8c93d085355d438582e4a1c9427f5bb7a7195d314d0ecfc9a39b5c9d2262c509",
     "final_url": "https://github.com/BayAlper10/BetterVoting/archive/89780106cf1b2fc188b8cb96ba1d36ac080e12ef.zip",
-    "storage_path": "archive/sources/161699081/89780106cf1b2fc188b8cb96ba1d36ac080e12ef.zip",
+    "storage_path": null,
     "provider": "BayAlper10/BetterVoting",
     "tried": [
       "TwistedAsylumMC/BetterVoting",
@@ -17896,7 +18006,17 @@
       },
       "checked_at": "2026-10-18T18:09:55.880835+00:00"
     },
-    "license_review_reason": "The release declares a custom or missing license; this commit contains no license document establishing redistribution permission."
+    "license_display": "No License",
+    "license_status": "none",
+    "license_note": "The source has no license document; original Poggit custom/none metadata is retained. Normalized to No License for the catalog.",
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-161699081-89780106cf1b2fc188b8cb96ba1d36ac080e12ef-8c93d085355d.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-161699081-89780106cf1b2fc188b8cb96ba1d36ac080e12ef-8c93d085355d.zip",
+    "remote_sha256": "8c93d085355d438582e4a1c9427f5bb7a7195d314d0ecfc9a39b5c9d2262c509",
+    "remote_asset_id": 654202440,
+    "uploaded_at": "2026-10-18T18:43:47Z",
+    "local_deleted": false
   },
   "161699081@963d55ac39cdc4e81e6fff55a68999d28853a917": {
     "key": "161699081@963d55ac39cdc4e81e6fff55a68999d28853a917",
@@ -17907,11 +18027,11 @@
     "candidates": [
       "BayAlper10/BetterVoting"
     ],
-    "status": "license_review_required",
+    "status": "uploaded",
     "bytes": 9099,
     "sha256": "6d62cc7481a96b1fd08b262f8dccafd7f37ac74f0acf247edbdb70e181d2ded8",
     "final_url": "https://github.com/BayAlper10/BetterVoting/archive/963d55ac39cdc4e81e6fff55a68999d28853a917.zip",
-    "storage_path": "archive/sources/161699081/963d55ac39cdc4e81e6fff55a68999d28853a917.zip",
+    "storage_path": null,
     "provider": "BayAlper10/BetterVoting",
     "tried": [
       "TwistedAsylumMC/BetterVoting",
@@ -17940,7 +18060,17 @@
       },
       "checked_at": "2026-10-18T18:09:55.881575+00:00"
     },
-    "license_review_reason": "The release declares a custom or missing license; this commit contains no license document establishing redistribution permission."
+    "license_display": "No License",
+    "license_status": "none",
+    "license_note": "The source has no license document; original Poggit custom/none metadata is retained. Normalized to No License for the catalog.",
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-161699081-963d55ac39cdc4e81e6fff55a68999d28853a917-6d62cc7481a9.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-161699081-963d55ac39cdc4e81e6fff55a68999d28853a917-6d62cc7481a9.zip",
+    "remote_sha256": "6d62cc7481a96b1fd08b262f8dccafd7f37ac74f0acf247edbdb70e181d2ded8",
+    "remote_asset_id": 654202476,
+    "uploaded_at": "2026-10-18T18:43:48Z",
+    "local_deleted": false
   },
   "161699081@b3f2b97026a2c57f8d979873a9657963f9c00a84": {
     "key": "161699081@b3f2b97026a2c57f8d979873a9657963f9c00a84",
@@ -45058,12 +45188,39 @@
     "commit": "ea3e4cb06734a669e561df91e8ba7e13581dc39c",
     "source_url": "https://github.com/OguzhanUmutlu/FriendSystem",
     "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "status": "uploaded",
     "tried": [
       "OguzhanUmutlu/FriendSystem"
-    ]
+    ],
+    "provider": "Software Heritage",
+    "bytes": 15943,
+    "sha256": "46b0b219f2744aa9800781287939509ae1e92282d3aa584f7d19dec2fecf49b1",
+    "storage_path": null,
+    "final_url": "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:c04cfbf562a7d9b05ed439cdf8d71777e17de285/raw/",
+    "recovery": {
+      "method": "software_heritage_verified_tree",
+      "verified_commit": "ea3e4cb06734a669e561df91e8ba7e13581dc39c",
+      "tree_sha": "c04cfbf562a7d9b05ed439cdf8d71777e17de285",
+      "swh_revision": "swh:1:rev:ea3e4cb06734a669e561df91e8ba7e13581dc39c",
+      "swh_directory": "swh:1:dir:c04cfbf562a7d9b05ed439cdf8d71777e17de285",
+      "revision_url": "https://archive.softwareheritage.org/api/1/revision/ea3e4cb06734a669e561df91e8ba7e13581dc39c/",
+      "vault_url": "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:c04cfbf562a7d9b05ed439cdf8d71777e17de285/raw/",
+      "git_tree_verified": true,
+      "git_blobs_verified": true,
+      "file_count": 10,
+      "container": "Deterministic ZIP reconstructed from a Software Heritage Vault tree; Git file bytes and modes verified.",
+      "license_files": [
+        "LICENSE"
+      ]
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-324139500-ea3e4cb06734a669e561df91e8ba7e13581dc39c-46b0b219f274.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-324139500-ea3e4cb06734a669e561df91e8ba7e13581dc39c-46b0b219f274.zip",
+    "remote_sha256": "46b0b219f2744aa9800781287939509ae1e92282d3aa584f7d19dec2fecf49b1",
+    "remote_asset_id": 654180391,
+    "uploaded_at": "2026-10-18T18:34:21Z",
+    "local_deleted": false
   },
   "324686905@806b4198006b971b3136623cfcabe193cd15e755": {
     "key": "324686905@806b4198006b971b3136623cfcabe193cd15e755",
@@ -46813,12 +46970,39 @@
     "commit": "06c8bf3f019f4b76ed04b3ecacf05f45223995a2",
     "source_url": "https://github.com/lovetwice1012/MyWarp-en",
     "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "status": "uploaded",
     "tried": [
       "lovetwice1012/MyWarp-en"
-    ]
+    ],
+    "provider": "Software Heritage",
+    "bytes": 229232,
+    "sha256": "75db73ed1b8d8172028d3cf1f13d93995a5fee0e8e7151925ba99714d9947a33",
+    "storage_path": null,
+    "final_url": "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:3ed5b39d61138b0b60462b0c32890f9eadbe5f56/raw/",
+    "recovery": {
+      "method": "software_heritage_verified_tree",
+      "verified_commit": "06c8bf3f019f4b76ed04b3ecacf05f45223995a2",
+      "tree_sha": "3ed5b39d61138b0b60462b0c32890f9eadbe5f56",
+      "swh_revision": "swh:1:rev:06c8bf3f019f4b76ed04b3ecacf05f45223995a2",
+      "swh_directory": "swh:1:dir:3ed5b39d61138b0b60462b0c32890f9eadbe5f56",
+      "revision_url": "https://archive.softwareheritage.org/api/1/revision/06c8bf3f019f4b76ed04b3ecacf05f45223995a2/",
+      "vault_url": "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:3ed5b39d61138b0b60462b0c32890f9eadbe5f56/raw/",
+      "git_tree_verified": true,
+      "git_blobs_verified": true,
+      "file_count": 16,
+      "container": "Deterministic ZIP reconstructed from a Software Heritage Vault tree; Git file bytes and modes verified.",
+      "license_files": [
+        "LICENSE"
+      ]
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-353997984-06c8bf3f019f4b76ed04b3ecacf05f45223995a2-75db73ed1b8d.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-353997984-06c8bf3f019f4b76ed04b3ecacf05f45223995a2-75db73ed1b8d.zip",
+    "remote_sha256": "75db73ed1b8d8172028d3cf1f13d93995a5fee0e8e7151925ba99714d9947a33",
+    "remote_asset_id": 654180414,
+    "uploaded_at": "2026-10-18T18:34:22Z",
+    "local_deleted": false
   },
   "354955427@5fa10498e4af6785277a4a77125fdc65b9e17c06": {
     "key": "354955427@5fa10498e4af6785277a4a77125fdc65b9e17c06",
@@ -47550,12 +47734,39 @@
     "commit": "fe710a89cca3ce42253b87a2008b52cd3ae5cc40",
     "source_url": "https://github.com/OguzhanUmutlu/Manhunt",
     "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "status": "uploaded",
     "tried": [
       "OguzhanUmutlu/Manhunt"
-    ]
+    ],
+    "provider": "Software Heritage",
+    "bytes": 6343,
+    "sha256": "84d5c46742c17ff2053495c3cc30fa514666f28c981412b8ca60ae975633eb7e",
+    "storage_path": null,
+    "final_url": "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:03cb8ee19de30640f08000bc0f1073dc0394aabd/raw/",
+    "recovery": {
+      "method": "software_heritage_verified_tree",
+      "verified_commit": "fe710a89cca3ce42253b87a2008b52cd3ae5cc40",
+      "tree_sha": "03cb8ee19de30640f08000bc0f1073dc0394aabd",
+      "swh_revision": "swh:1:rev:fe710a89cca3ce42253b87a2008b52cd3ae5cc40",
+      "swh_directory": "swh:1:dir:03cb8ee19de30640f08000bc0f1073dc0394aabd",
+      "revision_url": "https://archive.softwareheritage.org/api/1/revision/fe710a89cca3ce42253b87a2008b52cd3ae5cc40/",
+      "vault_url": "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:03cb8ee19de30640f08000bc0f1073dc0394aabd/raw/",
+      "git_tree_verified": true,
+      "git_blobs_verified": true,
+      "file_count": 7,
+      "container": "Deterministic ZIP reconstructed from a Software Heritage Vault tree; Git file bytes and modes verified.",
+      "license_files": [
+        "LICENSE"
+      ]
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-365617377-fe710a89cca3ce42253b87a2008b52cd3ae5cc40-84d5c46742c1.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-365617377-fe710a89cca3ce42253b87a2008b52cd3ae5cc40-84d5c46742c1.zip",
+    "remote_sha256": "84d5c46742c17ff2053495c3cc30fa514666f28c981412b8ca60ae975633eb7e",
+    "remote_asset_id": 654180564,
+    "uploaded_at": "2026-10-18T18:34:26Z",
+    "local_deleted": false
   },
   "366160241@84a83c5b531c9c2c6603b66b20d8d27ca4c2c1f1": {
     "key": "366160241@84a83c5b531c9c2c6603b66b20d8d27ca4c2c1f1",
@@ -47618,12 +47829,39 @@
     "commit": "fd13cf11ab7c3aeb25148ace97af237b6b7d4b37",
     "source_url": "https://github.com/OguzhanUmutlu/MoneyUI",
     "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "status": "uploaded",
     "tried": [
       "OguzhanUmutlu/MoneyUI"
-    ]
+    ],
+    "provider": "Software Heritage",
+    "bytes": 63176,
+    "sha256": "3390c6f81dc41741b6a2e46f320ac84b948d1c931fcd0df3c5072b1219e1f7a1",
+    "storage_path": null,
+    "final_url": "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:a85f22f71677ab7213c0320d8b8f18413834c851/raw/",
+    "recovery": {
+      "method": "software_heritage_verified_tree",
+      "verified_commit": "fd13cf11ab7c3aeb25148ace97af237b6b7d4b37",
+      "tree_sha": "a85f22f71677ab7213c0320d8b8f18413834c851",
+      "swh_revision": "swh:1:rev:fd13cf11ab7c3aeb25148ace97af237b6b7d4b37",
+      "swh_directory": "swh:1:dir:a85f22f71677ab7213c0320d8b8f18413834c851",
+      "revision_url": "https://archive.softwareheritage.org/api/1/revision/fd13cf11ab7c3aeb25148ace97af237b6b7d4b37/",
+      "vault_url": "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:a85f22f71677ab7213c0320d8b8f18413834c851/raw/",
+      "git_tree_verified": true,
+      "git_blobs_verified": true,
+      "file_count": 9,
+      "container": "Deterministic ZIP reconstructed from a Software Heritage Vault tree; Git file bytes and modes verified.",
+      "license_files": [
+        "LICENSE"
+      ]
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-367859690-fd13cf11ab7c3aeb25148ace97af237b6b7d4b37-3390c6f81dc4.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-367859690-fd13cf11ab7c3aeb25148ace97af237b6b7d4b37-3390c6f81dc4.zip",
+    "remote_sha256": "3390c6f81dc41741b6a2e46f320ac84b948d1c931fcd0df3c5072b1219e1f7a1",
+    "remote_asset_id": 654180588,
+    "uploaded_at": "2026-10-18T18:34:27Z",
+    "local_deleted": false
   },
   "367891093@1f3b83c5fbe218de76b1c3dc18804239f633ffb4": {
     "key": "367891093@1f3b83c5fbe218de76b1c3dc18804239f633ffb4",
@@ -47711,12 +47949,39 @@
     "commit": "deadcc53d0efbdabec4d1e52c7cfce1e204027d6",
     "source_url": "https://github.com/VazziDE/SlimeBoost",
     "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "status": "uploaded",
     "tried": [
       "VazziDE/SlimeBoost"
-    ]
+    ],
+    "provider": "Software Heritage",
+    "bytes": 21582,
+    "sha256": "c2f2275000ecbe84476d917ea4b274e85994ff426b37bb5069fc4057e6d809b1",
+    "storage_path": null,
+    "final_url": "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:3155a40ebac8ff60954cd270b83527e00ab14fcf/raw/",
+    "recovery": {
+      "method": "software_heritage_verified_tree",
+      "verified_commit": "deadcc53d0efbdabec4d1e52c7cfce1e204027d6",
+      "tree_sha": "3155a40ebac8ff60954cd270b83527e00ab14fcf",
+      "swh_revision": "swh:1:rev:deadcc53d0efbdabec4d1e52c7cfce1e204027d6",
+      "swh_directory": "swh:1:dir:3155a40ebac8ff60954cd270b83527e00ab14fcf",
+      "revision_url": "https://archive.softwareheritage.org/api/1/revision/deadcc53d0efbdabec4d1e52c7cfce1e204027d6/",
+      "vault_url": "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:3155a40ebac8ff60954cd270b83527e00ab14fcf/raw/",
+      "git_tree_verified": true,
+      "git_blobs_verified": true,
+      "file_count": 9,
+      "container": "Deterministic ZIP reconstructed from a Software Heritage Vault tree; Git file bytes and modes verified.",
+      "license_files": [
+        "LICENSE"
+      ]
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-371428943-deadcc53d0efbdabec4d1e52c7cfce1e204027d6-c2f2275000ec.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-371428943-deadcc53d0efbdabec4d1e52c7cfce1e204027d6-c2f2275000ec.zip",
+    "remote_sha256": "c2f2275000ecbe84476d917ea4b274e85994ff426b37bb5069fc4057e6d809b1",
+    "remote_asset_id": 654180649,
+    "uploaded_at": "2026-10-18T18:34:28Z",
+    "local_deleted": false
   },
   "372367234@3b1e617e5ac173cd496e819aef4c515959bda546": {
     "key": "372367234@3b1e617e5ac173cd496e819aef4c515959bda546",
@@ -49131,12 +49396,39 @@
     "commit": "b420d48214ff9003171d25c27d10283ce55cdf4e",
     "source_url": "https://github.com/OguzhanUmutlu/AntiAuraBot",
     "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "status": "uploaded",
     "tried": [
       "OguzhanUmutlu/AntiAuraBot"
-    ]
+    ],
+    "provider": "Software Heritage",
+    "bytes": 7792,
+    "sha256": "05f14cd29d4317bf9d850e67c5f2fd9e9ba4ed86ecc24a117cfe4b381e6a44ae",
+    "storage_path": null,
+    "final_url": "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:f76717ffeee7f98fd2f1518163cc297809d61967/raw/",
+    "recovery": {
+      "method": "software_heritage_verified_tree",
+      "verified_commit": "b420d48214ff9003171d25c27d10283ce55cdf4e",
+      "tree_sha": "f76717ffeee7f98fd2f1518163cc297809d61967",
+      "swh_revision": "swh:1:rev:b420d48214ff9003171d25c27d10283ce55cdf4e",
+      "swh_directory": "swh:1:dir:f76717ffeee7f98fd2f1518163cc297809d61967",
+      "revision_url": "https://archive.softwareheritage.org/api/1/revision/b420d48214ff9003171d25c27d10283ce55cdf4e/",
+      "vault_url": "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:f76717ffeee7f98fd2f1518163cc297809d61967/raw/",
+      "git_tree_verified": true,
+      "git_blobs_verified": true,
+      "file_count": 10,
+      "container": "Deterministic ZIP reconstructed from a Software Heritage Vault tree; Git file bytes and modes verified.",
+      "license_files": [
+        "LICENSE"
+      ]
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-388852433-b420d48214ff9003171d25c27d10283ce55cdf4e-05f14cd29d43.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-388852433-b420d48214ff9003171d25c27d10283ce55cdf4e-05f14cd29d43.zip",
+    "remote_sha256": "05f14cd29d4317bf9d850e67c5f2fd9e9ba4ed86ecc24a117cfe4b381e6a44ae",
+    "remote_asset_id": 654180688,
+    "uploaded_at": "2026-10-18T18:34:30Z",
+    "local_deleted": false
   },
   "389090989@aa251aad13b49a6ed01706eaef61b3931b51a4a6": {
     "key": "389090989@aa251aad13b49a6ed01706eaef61b3931b51a4a6",
@@ -49503,12 +49795,39 @@
     "commit": "a76297de22528d2c529b796ca3447081bad42852",
     "source_url": "https://github.com/VazziDE/Godmode",
     "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "status": "uploaded",
     "tried": [
       "VazziDE/Godmode"
-    ]
+    ],
+    "provider": "Software Heritage",
+    "bytes": 68373,
+    "sha256": "230d00f80ef15ab9eb56f6667ade317053f0cce1815a4dfddfaeb617f1204857",
+    "storage_path": null,
+    "final_url": "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:8aba30a9762b75917027cd6e8980e8f8ec649ed6/raw/",
+    "recovery": {
+      "method": "software_heritage_verified_tree",
+      "verified_commit": "a76297de22528d2c529b796ca3447081bad42852",
+      "tree_sha": "8aba30a9762b75917027cd6e8980e8f8ec649ed6",
+      "swh_revision": "swh:1:rev:a76297de22528d2c529b796ca3447081bad42852",
+      "swh_directory": "swh:1:dir:8aba30a9762b75917027cd6e8980e8f8ec649ed6",
+      "revision_url": "https://archive.softwareheritage.org/api/1/revision/a76297de22528d2c529b796ca3447081bad42852/",
+      "vault_url": "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:8aba30a9762b75917027cd6e8980e8f8ec649ed6/raw/",
+      "git_tree_verified": true,
+      "git_blobs_verified": true,
+      "file_count": 9,
+      "container": "Deterministic ZIP reconstructed from a Software Heritage Vault tree; Git file bytes and modes verified.",
+      "license_files": [
+        "LICENSE"
+      ]
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-393148858-a76297de22528d2c529b796ca3447081bad42852-230d00f80ef1.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-393148858-a76297de22528d2c529b796ca3447081bad42852-230d00f80ef1.zip",
+    "remote_sha256": "230d00f80ef15ab9eb56f6667ade317053f0cce1815a4dfddfaeb617f1204857",
+    "remote_asset_id": 654180712,
+    "uploaded_at": "2026-10-18T18:34:30Z",
+    "local_deleted": false
   },
   "393250439@121faba421be05fa379dfaecda1c4474db6e04d6": {
     "key": "393250439@121faba421be05fa379dfaecda1c4474db6e04d6",
@@ -49661,12 +49980,39 @@
     "commit": "a9600c46fb719733bb547008de053572aa144f5e",
     "source_url": "https://github.com/OguzhanUmutlu/SignToDiscord",
     "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "status": "uploaded",
     "tried": [
       "OguzhanUmutlu/SignToDiscord"
-    ]
+    ],
+    "provider": "Software Heritage",
+    "bytes": 7401,
+    "sha256": "40d11880d05da77ded225f22fc350bb861ae02c583d5b6e56cd3bab78782ec1c",
+    "storage_path": null,
+    "final_url": "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:4bb0b2687227069213a1192872026e626059a1a5/raw/",
+    "recovery": {
+      "method": "software_heritage_verified_tree",
+      "verified_commit": "a9600c46fb719733bb547008de053572aa144f5e",
+      "tree_sha": "4bb0b2687227069213a1192872026e626059a1a5",
+      "swh_revision": "swh:1:rev:a9600c46fb719733bb547008de053572aa144f5e",
+      "swh_directory": "swh:1:dir:4bb0b2687227069213a1192872026e626059a1a5",
+      "revision_url": "https://archive.softwareheritage.org/api/1/revision/a9600c46fb719733bb547008de053572aa144f5e/",
+      "vault_url": "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:4bb0b2687227069213a1192872026e626059a1a5/raw/",
+      "git_tree_verified": true,
+      "git_blobs_verified": true,
+      "file_count": 9,
+      "container": "Deterministic ZIP reconstructed from a Software Heritage Vault tree; Git file bytes and modes verified.",
+      "license_files": [
+        "LICENSE"
+      ]
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-393600263-a9600c46fb719733bb547008de053572aa144f5e-40d11880d05d.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-393600263-a9600c46fb719733bb547008de053572aa144f5e-40d11880d05d.zip",
+    "remote_sha256": "40d11880d05da77ded225f22fc350bb861ae02c583d5b6e56cd3bab78782ec1c",
+    "remote_asset_id": 654180727,
+    "uploaded_at": "2026-10-18T18:34:31Z",
+    "local_deleted": false
   },
   "393824673@f427fcc393932b035bf64f434dc6be2e4b2101ac": {
     "key": "393824673@f427fcc393932b035bf64f434dc6be2e4b2101ac",
@@ -68039,11 +68385,11 @@
     "candidates": [
       "BradyJenkins/ChatToDiscord"
     ],
-    "status": "license_review_required",
+    "status": "uploaded",
     "bytes": 58353,
     "sha256": "3292501c9b7d82f52bcfa50233ba8fc0e5675addf931e1b92a7d4123f0b39031",
     "final_url": "https://github.com/BradyJenkins/ChatToDiscord/archive/4bc4fa65c5cd2a9c3b57e6a19c0636ebab36150f.zip",
-    "storage_path": "archive/sources/87964338/4bc4fa65c5cd2a9c3b57e6a19c0636ebab36150f.zip",
+    "storage_path": null,
     "provider": "BradyJenkins/ChatToDiscord",
     "tried": [
       "eDroiid/ChatToDiscord",
@@ -68072,7 +68418,17 @@
       },
       "checked_at": "2026-10-18T18:09:55.918186+00:00"
     },
-    "license_review_reason": "The release declares a custom or missing license; this commit contains no license document establishing redistribution permission."
+    "license_display": "No License",
+    "license_status": "none",
+    "license_note": "The source has no license document; original Poggit custom/none metadata is retained. Normalized to No License for the catalog.",
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0006",
+    "remote_asset_name": "source-87964338-4bc4fa65c5cd2a9c3b57e6a19c0636ebab36150f-3292501c9b7d.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0006/source-87964338-4bc4fa65c5cd2a9c3b57e6a19c0636ebab36150f-3292501c9b7d.zip",
+    "remote_sha256": "3292501c9b7d82f52bcfa50233ba8fc0e5675addf931e1b92a7d4123f0b39031",
+    "remote_asset_id": 654202729,
+    "uploaded_at": "2026-10-18T18:43:55Z",
+    "local_deleted": false
   },
   "884022370@203fcce2a75e2a9b061c9a236c5f3c837c542255": {
     "key": "884022370@203fcce2a75e2a9b061c9a236c5f3c837c542255",
@@ -77254,12 +77610,39 @@
     "commit": "324527fd661a77f7718352461063d55c2d9168ec",
     "source_url": "https://github.com/OguzhanUmutlu/FriendSystem",
     "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "status": "uploaded",
     "tried": [
       "OguzhanUmutlu/FriendSystem"
-    ]
+    ],
+    "provider": "Software Heritage",
+    "bytes": 21930,
+    "sha256": "70653542a2ee22cca19aedddd7b3767b8be3deabd6ddcf453dfc801cbdf500aa",
+    "storage_path": null,
+    "final_url": "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:11edab75c0cff9c1c91d59e3289e25d7e812877f/raw/",
+    "recovery": {
+      "method": "software_heritage_verified_tree",
+      "verified_commit": "324527fd661a77f7718352461063d55c2d9168ec",
+      "tree_sha": "11edab75c0cff9c1c91d59e3289e25d7e812877f",
+      "swh_revision": "swh:1:rev:324527fd661a77f7718352461063d55c2d9168ec",
+      "swh_directory": "swh:1:dir:11edab75c0cff9c1c91d59e3289e25d7e812877f",
+      "revision_url": "https://archive.softwareheritage.org/api/1/revision/324527fd661a77f7718352461063d55c2d9168ec/",
+      "vault_url": "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:11edab75c0cff9c1c91d59e3289e25d7e812877f/raw/",
+      "git_tree_verified": true,
+      "git_blobs_verified": true,
+      "file_count": 10,
+      "container": "Deterministic ZIP reconstructed from a Software Heritage Vault tree; Git file bytes and modes verified.",
+      "license_files": [
+        "LICENSE"
+      ]
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-324139500-324527fd661a77f7718352461063d55c2d9168ec-70653542a2ee.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-324139500-324527fd661a77f7718352461063d55c2d9168ec-70653542a2ee.zip",
+    "remote_sha256": "70653542a2ee22cca19aedddd7b3767b8be3deabd6ddcf453dfc801cbdf500aa",
+    "remote_asset_id": 654180338,
+    "uploaded_at": "2026-10-18T18:34:18Z",
+    "local_deleted": false
   },
   "324139500@3705298aee8c54e45602019fd8e8a3a3a3432d74": {
     "key": "324139500@3705298aee8c54e45602019fd8e8a3a3a3432d74",
@@ -77268,12 +77651,39 @@
     "commit": "3705298aee8c54e45602019fd8e8a3a3a3432d74",
     "source_url": "https://github.com/OguzhanUmutlu/FriendSystem",
     "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "status": "uploaded",
     "tried": [
       "OguzhanUmutlu/FriendSystem"
-    ]
+    ],
+    "provider": "Software Heritage",
+    "bytes": 15774,
+    "sha256": "91eed0c1af7ea3635de721c8b841789ebc5e1593f56391cc6aaec93c003583ff",
+    "storage_path": null,
+    "final_url": "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:69af2b96f58ddac735d03a7c9394e559a763e3b7/raw/",
+    "recovery": {
+      "method": "software_heritage_verified_tree",
+      "verified_commit": "3705298aee8c54e45602019fd8e8a3a3a3432d74",
+      "tree_sha": "69af2b96f58ddac735d03a7c9394e559a763e3b7",
+      "swh_revision": "swh:1:rev:3705298aee8c54e45602019fd8e8a3a3a3432d74",
+      "swh_directory": "swh:1:dir:69af2b96f58ddac735d03a7c9394e559a763e3b7",
+      "revision_url": "https://archive.softwareheritage.org/api/1/revision/3705298aee8c54e45602019fd8e8a3a3a3432d74/",
+      "vault_url": "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:69af2b96f58ddac735d03a7c9394e559a763e3b7/raw/",
+      "git_tree_verified": true,
+      "git_blobs_verified": true,
+      "file_count": 10,
+      "container": "Deterministic ZIP reconstructed from a Software Heritage Vault tree; Git file bytes and modes verified.",
+      "license_files": [
+        "LICENSE"
+      ]
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-324139500-3705298aee8c54e45602019fd8e8a3a3a3432d74-91eed0c1af7e.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-324139500-3705298aee8c54e45602019fd8e8a3a3a3432d74-91eed0c1af7e.zip",
+    "remote_sha256": "91eed0c1af7ea3635de721c8b841789ebc5e1593f56391cc6aaec93c003583ff",
+    "remote_asset_id": 654180351,
+    "uploaded_at": "2026-10-18T18:34:19Z",
+    "local_deleted": false
   },
   "324139500@d222345af316dad19daccc1795f9ea654d10de7e": {
     "key": "324139500@d222345af316dad19daccc1795f9ea654d10de7e",
@@ -77282,12 +77692,39 @@
     "commit": "d222345af316dad19daccc1795f9ea654d10de7e",
     "source_url": "https://github.com/OguzhanUmutlu/FriendSystem",
     "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "status": "uploaded",
     "tried": [
       "OguzhanUmutlu/FriendSystem"
-    ]
+    ],
+    "provider": "Software Heritage",
+    "bytes": 15771,
+    "sha256": "33f0d8101bf037db419308346a8be39af8b85fb02c80ac08c8203dfb399d745d",
+    "storage_path": null,
+    "final_url": "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:25c396cef6bba26936012293b4e7e6f2219c69b0/raw/",
+    "recovery": {
+      "method": "software_heritage_verified_tree",
+      "verified_commit": "d222345af316dad19daccc1795f9ea654d10de7e",
+      "tree_sha": "25c396cef6bba26936012293b4e7e6f2219c69b0",
+      "swh_revision": "swh:1:rev:d222345af316dad19daccc1795f9ea654d10de7e",
+      "swh_directory": "swh:1:dir:25c396cef6bba26936012293b4e7e6f2219c69b0",
+      "revision_url": "https://archive.softwareheritage.org/api/1/revision/d222345af316dad19daccc1795f9ea654d10de7e/",
+      "vault_url": "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:25c396cef6bba26936012293b4e7e6f2219c69b0/raw/",
+      "git_tree_verified": true,
+      "git_blobs_verified": true,
+      "file_count": 10,
+      "container": "Deterministic ZIP reconstructed from a Software Heritage Vault tree; Git file bytes and modes verified.",
+      "license_files": [
+        "LICENSE"
+      ]
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-324139500-d222345af316dad19daccc1795f9ea654d10de7e-33f0d8101bf0.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-324139500-d222345af316dad19daccc1795f9ea654d10de7e-33f0d8101bf0.zip",
+    "remote_sha256": "33f0d8101bf037db419308346a8be39af8b85fb02c80ac08c8203dfb399d745d",
+    "remote_asset_id": 654180365,
+    "uploaded_at": "2026-10-18T18:34:20Z",
+    "local_deleted": false
   },
   "324686905@1b48235759aa83ddc918b95a7e901b89eb4d70fd": {
     "key": "324686905@1b48235759aa83ddc918b95a7e901b89eb4d70fd",
@@ -81559,12 +81996,39 @@
     "commit": "ab90b52a76c7ff0bcd8d5139eb5677101504b4bf",
     "source_url": "https://github.com/lovetwice1012/MyWarp-en",
     "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "status": "uploaded",
     "tried": [
       "lovetwice1012/MyWarp-en"
-    ]
+    ],
+    "provider": "Software Heritage",
+    "bytes": 228708,
+    "sha256": "1a0885d83445c1fafc2a23ff59b51a64d2d7fef765ee20453b6ae348f20fcc78",
+    "storage_path": null,
+    "final_url": "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:dd7bd0fe59669f2da313217b808dd8caec09a1b8/raw/",
+    "recovery": {
+      "method": "software_heritage_verified_tree",
+      "verified_commit": "ab90b52a76c7ff0bcd8d5139eb5677101504b4bf",
+      "tree_sha": "dd7bd0fe59669f2da313217b808dd8caec09a1b8",
+      "swh_revision": "swh:1:rev:ab90b52a76c7ff0bcd8d5139eb5677101504b4bf",
+      "swh_directory": "swh:1:dir:dd7bd0fe59669f2da313217b808dd8caec09a1b8",
+      "revision_url": "https://archive.softwareheritage.org/api/1/revision/ab90b52a76c7ff0bcd8d5139eb5677101504b4bf/",
+      "vault_url": "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:dd7bd0fe59669f2da313217b808dd8caec09a1b8/raw/",
+      "git_tree_verified": true,
+      "git_blobs_verified": true,
+      "file_count": 16,
+      "container": "Deterministic ZIP reconstructed from a Software Heritage Vault tree; Git file bytes and modes verified.",
+      "license_files": [
+        "LICENSE"
+      ]
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-353997984-ab90b52a76c7ff0bcd8d5139eb5677101504b4bf-1a0885d83445.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-353997984-ab90b52a76c7ff0bcd8d5139eb5677101504b4bf-1a0885d83445.zip",
+    "remote_sha256": "1a0885d83445c1fafc2a23ff59b51a64d2d7fef765ee20453b6ae348f20fcc78",
+    "remote_asset_id": 654180485,
+    "uploaded_at": "2026-10-18T18:34:23Z",
+    "local_deleted": false
   },
   "354955427@cd31543fcf9ebc69bc05970bb6bc30c43f25c464": {
     "key": "354955427@cd31543fcf9ebc69bc05970bb6bc30c43f25c464",
@@ -85698,12 +86162,39 @@
     "commit": "2c33cff9bcb40266ba2f328e36b73d21b015f91c",
     "source_url": "https://github.com/OguzhanUmutlu/Manhunt",
     "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "status": "uploaded",
     "tried": [
       "OguzhanUmutlu/Manhunt"
-    ]
+    ],
+    "provider": "Software Heritage",
+    "bytes": 6321,
+    "sha256": "40058c3a0e97f6f76acf1909847cebb523678900618663c48adeb0d3e1c94917",
+    "storage_path": null,
+    "final_url": "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:03f6b39c04ee43edfffc165cb4ad57b263c59516/raw/",
+    "recovery": {
+      "method": "software_heritage_verified_tree",
+      "verified_commit": "2c33cff9bcb40266ba2f328e36b73d21b015f91c",
+      "tree_sha": "03f6b39c04ee43edfffc165cb4ad57b263c59516",
+      "swh_revision": "swh:1:rev:2c33cff9bcb40266ba2f328e36b73d21b015f91c",
+      "swh_directory": "swh:1:dir:03f6b39c04ee43edfffc165cb4ad57b263c59516",
+      "revision_url": "https://archive.softwareheritage.org/api/1/revision/2c33cff9bcb40266ba2f328e36b73d21b015f91c/",
+      "vault_url": "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:03f6b39c04ee43edfffc165cb4ad57b263c59516/raw/",
+      "git_tree_verified": true,
+      "git_blobs_verified": true,
+      "file_count": 7,
+      "container": "Deterministic ZIP reconstructed from a Software Heritage Vault tree; Git file bytes and modes verified.",
+      "license_files": [
+        "LICENSE"
+      ]
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-365617377-2c33cff9bcb40266ba2f328e36b73d21b015f91c-40058c3a0e97.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-365617377-2c33cff9bcb40266ba2f328e36b73d21b015f91c-40058c3a0e97.zip",
+    "remote_sha256": "40058c3a0e97f6f76acf1909847cebb523678900618663c48adeb0d3e1c94917",
+    "remote_asset_id": 654180513,
+    "uploaded_at": "2026-10-18T18:34:24Z",
+    "local_deleted": false
   },
   "365617377@d7631898814fbe3e82acee0d74040b2f15a24e67": {
     "key": "365617377@d7631898814fbe3e82acee0d74040b2f15a24e67",
@@ -85712,12 +86203,39 @@
     "commit": "d7631898814fbe3e82acee0d74040b2f15a24e67",
     "source_url": "https://github.com/OguzhanUmutlu/Manhunt",
     "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "status": "uploaded",
     "tried": [
       "OguzhanUmutlu/Manhunt"
-    ]
+    ],
+    "provider": "Software Heritage",
+    "bytes": 6322,
+    "sha256": "2135155b5ac2317ec33e68e2869252b33df7cf322f9c2714f37cc834b233b84b",
+    "storage_path": null,
+    "final_url": "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:9a09db50a1b13992c7f760f722ed8c40cf6dc75a/raw/",
+    "recovery": {
+      "method": "software_heritage_verified_tree",
+      "verified_commit": "d7631898814fbe3e82acee0d74040b2f15a24e67",
+      "tree_sha": "9a09db50a1b13992c7f760f722ed8c40cf6dc75a",
+      "swh_revision": "swh:1:rev:d7631898814fbe3e82acee0d74040b2f15a24e67",
+      "swh_directory": "swh:1:dir:9a09db50a1b13992c7f760f722ed8c40cf6dc75a",
+      "revision_url": "https://archive.softwareheritage.org/api/1/revision/d7631898814fbe3e82acee0d74040b2f15a24e67/",
+      "vault_url": "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:9a09db50a1b13992c7f760f722ed8c40cf6dc75a/raw/",
+      "git_tree_verified": true,
+      "git_blobs_verified": true,
+      "file_count": 7,
+      "container": "Deterministic ZIP reconstructed from a Software Heritage Vault tree; Git file bytes and modes verified.",
+      "license_files": [
+        "LICENSE"
+      ]
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-365617377-d7631898814fbe3e82acee0d74040b2f15a24e67-2135155b5ac2.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-365617377-d7631898814fbe3e82acee0d74040b2f15a24e67-2135155b5ac2.zip",
+    "remote_sha256": "2135155b5ac2317ec33e68e2869252b33df7cf322f9c2714f37cc834b233b84b",
+    "remote_asset_id": 654180540,
+    "uploaded_at": "2026-10-18T18:34:25Z",
+    "local_deleted": false
   },
   "366160241@1bde02b82ca44da342ad7e7d564d1cd045771946": {
     "key": "366160241@1bde02b82ca44da342ad7e7d564d1cd045771946",
@@ -87018,12 +87536,39 @@
     "commit": "f139dd874f121eedf8421958b0d3f192e7dadb6b",
     "source_url": "https://github.com/VazziDE/SlimeBoost",
     "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "status": "uploaded",
     "tried": [
       "VazziDE/SlimeBoost"
-    ]
+    ],
+    "provider": "Software Heritage",
+    "bytes": 21292,
+    "sha256": "28682475f3c912dc56545970f88d87e06a6b9bfeb518b73bcd51bff08bad205e",
+    "storage_path": null,
+    "final_url": "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:8dc4da9469c10e7c2f4e0efa12a6d2719eb54e1c/raw/",
+    "recovery": {
+      "method": "software_heritage_verified_tree",
+      "verified_commit": "f139dd874f121eedf8421958b0d3f192e7dadb6b",
+      "tree_sha": "8dc4da9469c10e7c2f4e0efa12a6d2719eb54e1c",
+      "swh_revision": "swh:1:rev:f139dd874f121eedf8421958b0d3f192e7dadb6b",
+      "swh_directory": "swh:1:dir:8dc4da9469c10e7c2f4e0efa12a6d2719eb54e1c",
+      "revision_url": "https://archive.softwareheritage.org/api/1/revision/f139dd874f121eedf8421958b0d3f192e7dadb6b/",
+      "vault_url": "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:8dc4da9469c10e7c2f4e0efa12a6d2719eb54e1c/raw/",
+      "git_tree_verified": true,
+      "git_blobs_verified": true,
+      "file_count": 9,
+      "container": "Deterministic ZIP reconstructed from a Software Heritage Vault tree; Git file bytes and modes verified.",
+      "license_files": [
+        "LICENSE"
+      ]
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-371428943-f139dd874f121eedf8421958b0d3f192e7dadb6b-28682475f3c9.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-371428943-f139dd874f121eedf8421958b0d3f192e7dadb6b-28682475f3c9.zip",
+    "remote_sha256": "28682475f3c912dc56545970f88d87e06a6b9bfeb518b73bcd51bff08bad205e",
+    "remote_asset_id": 654180675,
+    "uploaded_at": "2026-10-18T18:34:29Z",
+    "local_deleted": false
   },
   "372802983@2d64ed9dcf9d8503d06846adda989e56c2887114": {
     "key": "372802983@2d64ed9dcf9d8503d06846adda989e56c2887114",

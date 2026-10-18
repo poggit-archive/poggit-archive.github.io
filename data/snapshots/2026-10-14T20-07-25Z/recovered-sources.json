@@ -1,0 +1,2658 @@
+{
+  "7227": {
+    "status": "recovered_local",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "name": "AntiAuraBot",
+    "version": "1.0.1",
+    "release_id": 7227,
+    "original_repo": "OguzhanUmutlu/AntiAuraBot",
+    "build_commit_from_release_metadata": "b420d48214ff9003171d25c27d10283ce55cdf4e",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0001/plugin-7227-107586-antiaurabot-1.0.1-d59b1894d273.phar",
+    "original_phar_sha256": "d59b1894d273c76609233afed37d80a17d1a1c6aa6a839f390edad93a210e2e6",
+    "sha256": "c216ae0313d2fd044d6c1f846a92b2e80739c2c820be2ff87a1cb6659cd23e55",
+    "bytes": 6687,
+    "file_count": 7,
+    "php_files": 4,
+    "declared_license": "mit",
+    "license_display": "mit",
+    "storage_path": "archive/recovered-sources/7227/antiaurabot-1.0.1-source-from-phar.zip"
+  },
+  "2108": {
+    "id": 2108,
+    "name": "AntiEnchantmentAbuse",
+    "version": "1.1.0",
+    "html_url": "https://poggit.pmmp.io/p/AntiEnchantmentAbuse/1.1.0",
+    "tagline": "Ban enchantments over a certain level",
+    "artifact_url": "https://poggit.pmmp.io/r/46643",
+    "downloads": 6068,
+    "score": 5,
+    "repo_id": 159055237,
+    "repo_name": "radondev/AntiEnchantmentAbuse",
+    "project_id": 4295,
+    "project_name": "AntiEnchantmentAbuse",
+    "build_id": 52784,
+    "build_number": 4,
+    "build_commit": "0ddd06b08aeaaf026b4b5b0e73eec864df43dac1",
+    "description_url": "https://poggit.pmmp.io/r/46642",
+    "icon_url": null,
+    "changelog_url": "https://poggit.pmmp.io/r/0",
+    "license": "gpl-3.0",
+    "license_url": null,
+    "is_obsolete": false,
+    "is_pre_release": false,
+    "is_outdated": true,
+    "is_official": false,
+    "is_abandoned": false,
+    "submission_date": 1543420782,
+    "state": 5,
+    "last_state_change_date": 1543602300,
+    "categories": [
+      {
+        "major": true,
+        "category_name": "Anti-Griefing Tools"
+      },
+      {
+        "major": false,
+        "category_name": "Miscellaneous"
+      },
+      {
+        "major": false,
+        "category_name": "Mechanics"
+      }
+    ],
+    "keywords": [
+      "Anti",
+      "enchantments",
+      "remove"
+    ],
+    "api": [
+      {
+        "from": "3.0.0",
+        "to": "3.25.6"
+      }
+    ],
+    "deps": [],
+    "producers": {
+      "Collaborator": [
+        "radondev"
+      ]
+    },
+    "state_name": "Approved",
+    "virions": [],
+    "status": "uploaded",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "release_id": 2108,
+    "original_repo": "radondev/AntiEnchantmentAbuse",
+    "build_commit_from_release_metadata": "0ddd06b08aeaaf026b4b5b0e73eec864df43dac1",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0001/plugin-2108-52784-antienchantmentabuse-1.1.0-e216c35332f6.phar",
+    "original_phar_sha256": "e216c35332f6ccf6b7640e908221914b712539ff42b010e12b5849bc679c44fa",
+    "sha256": "e8a75896307f9794f8b3a5b2cbc973a76b8d6afa3aa825446f9e0dc391cc7d78",
+    "bytes": 3662,
+    "file_count": 5,
+    "php_files": 2,
+    "declared_license": "gpl-3.0",
+    "license_display": "gpl-3.0",
+    "storage_path": null,
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "recovered-sources-2026-10-14-0001",
+    "remote_asset_name": "recovered-source-2108-antienchantmentabuse-1.1.0-e8a75896307f.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0001/recovered-source-2108-antienchantmentabuse-1.1.0-e8a75896307f.zip",
+    "remote_sha256": "e8a75896307f9794f8b3a5b2cbc973a76b8d6afa3aa825446f9e0dc391cc7d78",
+    "remote_asset_id": 654184417,
+    "uploaded_at": "2026-10-18T18:36:19Z",
+    "local_deleted": false
+  },
+  "7245": {
+    "id": 7245,
+    "name": "AutoSmelt",
+    "version": "1.0.0",
+    "html_url": "https://poggit.pmmp.io/p/AutoSmelt/1.0.0",
+    "tagline": "A plugin that makes ore drops ingots.",
+    "artifact_url": "https://poggit.pmmp.io/r/135191",
+    "downloads": 3106,
+    "score": null,
+    "repo_id": 392603892,
+    "repo_name": "OguzhanUmutlu/AutoSmelt",
+    "project_id": 9423,
+    "project_name": "AutoSmelt",
+    "build_id": 107811,
+    "build_number": 4,
+    "build_commit": "db8ca5fb378bec537356c7e72302cdeea98dca81",
+    "description_url": "https://poggit.pmmp.io/r/135190",
+    "icon_url": "https://raw.githubusercontent.com/OguzhanUmutlu/AutoSmelt/db8ca5fb378bec537356c7e72302cdeea98dca81/icon.png",
+    "changelog_url": "https://poggit.pmmp.io/r/0",
+    "license": "mit",
+    "license_url": null,
+    "is_obsolete": false,
+    "is_pre_release": false,
+    "is_outdated": true,
+    "is_official": false,
+    "is_abandoned": false,
+    "submission_date": 1628068656,
+    "state": 5,
+    "last_state_change_date": 1628121663,
+    "categories": [
+      {
+        "major": true,
+        "category_name": "Miscellaneous"
+      },
+      {
+        "major": false,
+        "category_name": "Mechanics"
+      },
+      {
+        "major": false,
+        "category_name": "Informational"
+      },
+      {
+        "major": false,
+        "category_name": "General"
+      }
+    ],
+    "keywords": [
+      "auto",
+      "smelt",
+      "ore",
+      "ingot",
+      "iron",
+      "gold",
+      "furnace"
+    ],
+    "api": [
+      {
+        "from": "3.0.0",
+        "to": "3.25.6"
+      }
+    ],
+    "deps": [],
+    "producers": {
+      "Collaborator": [
+        "OguzhanUmutlu"
+      ]
+    },
+    "state_name": "Approved",
+    "virions": [],
+    "status": "uploaded",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "release_id": 7245,
+    "original_repo": "OguzhanUmutlu/AutoSmelt",
+    "build_commit_from_release_metadata": "db8ca5fb378bec537356c7e72302cdeea98dca81",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0001/plugin-7245-107811-autosmelt-1.0.0-e628a1f0ec48.phar",
+    "original_phar_sha256": "e628a1f0ec483da326dd3749fdfd42f1d0fd3064ff2bdb8dc3b7ce97aa831221",
+    "sha256": "5a76872957c16f062068b235e5731e8ee276e4045ab768584aee026e09271fda",
+    "bytes": 2587,
+    "file_count": 4,
+    "php_files": 2,
+    "declared_license": "mit",
+    "license_display": "mit",
+    "storage_path": null,
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "recovered-sources-2026-10-14-0001",
+    "remote_asset_name": "recovered-source-7245-autosmelt-1.0.0-5a76872957c1.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0001/recovered-source-7245-autosmelt-1.0.0-5a76872957c1.zip",
+    "remote_sha256": "5a76872957c16f062068b235e5731e8ee276e4045ab768584aee026e09271fda",
+    "remote_asset_id": 654184462,
+    "uploaded_at": "2026-10-18T18:36:20Z",
+    "local_deleted": false
+  },
+  "2256": {
+    "status": "recovered_local",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "name": "BetterVoting",
+    "version": "1.0.2",
+    "release_id": 2256,
+    "original_repo": "TwistedAsylumMC/BetterVoting",
+    "build_commit_from_release_metadata": "22b78db120f28e4be727145dc0f3bf93f3bb1305",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0001/plugin-2256-53928-bettervoting-1.0.2-02f5d979dc21.phar",
+    "original_phar_sha256": "02f5d979dc219e75c8a385ce9da8e71c157a4971da838f133aa353a4269adde1",
+    "sha256": "1a3a1538b8bae94ad68c03f6065f5b5c5f7920092671909c0cfcc1980af8c5d0",
+    "bytes": 6537,
+    "file_count": 6,
+    "php_files": 3,
+    "declared_license": "custom",
+    "license_display": "No License",
+    "storage_path": "archive/recovered-sources/2256/bettervoting-1.0.2-source-from-phar.zip"
+  },
+  "2212": {
+    "status": "recovered_local",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "name": "BetterVoting",
+    "version": "1.0.1",
+    "release_id": 2212,
+    "original_repo": "TwistedAsylumMC/BetterVoting",
+    "build_commit_from_release_metadata": "963d55ac39cdc4e81e6fff55a68999d28853a917",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0001/plugin-2212-53545-bettervoting-1.0.1-02faf7fca314.phar",
+    "original_phar_sha256": "02faf7fca31474e250178130a06a9da2ce83212110b95136e432d2358abf1a13",
+    "sha256": "f883cb9692ffdc0a67ad59a3063789f348b9658cfefe6c1c298ec8292c72c515",
+    "bytes": 6456,
+    "file_count": 6,
+    "php_files": 3,
+    "declared_license": "custom",
+    "license_display": "No License",
+    "storage_path": "archive/recovered-sources/2212/bettervoting-1.0.1-source-from-phar.zip"
+  },
+  "2168": {
+    "status": "recovered_local",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "name": "BetterVoting",
+    "version": "1.0.0",
+    "release_id": 2168,
+    "original_repo": "TwistedAsylumMC/BetterVoting",
+    "build_commit_from_release_metadata": "89780106cf1b2fc188b8cb96ba1d36ac080e12ef",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0001/plugin-2168-53316-bettervoting-1.0.0-ff242b0a6da4.phar",
+    "original_phar_sha256": "ff242b0a6da4959c8b276e150edcd12d41bd072310ec14685dced6fbe857f853",
+    "sha256": "07cd24e038cb8bb69ed4a3f3c184fe713c8240ca5740108e1659606ecb7a0f88",
+    "bytes": 5174,
+    "file_count": 5,
+    "php_files": 2,
+    "declared_license": "custom",
+    "license_display": "No License",
+    "storage_path": "archive/recovered-sources/2168/bettervoting-1.0.0-source-from-phar.zip"
+  },
+  "6910": {
+    "id": 6910,
+    "name": "BoostBlock",
+    "version": "1.0.0",
+    "html_url": "https://poggit.pmmp.io/p/BoostBlock/1.0.0",
+    "tagline": "Boosts players to where they are looking.",
+    "artifact_url": "https://poggit.pmmp.io/r/130095",
+    "downloads": 1077,
+    "score": 4,
+    "repo_id": 374426961,
+    "repo_name": "OguzhanUmutlu/BoostBlock",
+    "project_id": 9093,
+    "project_name": "BoostBlock",
+    "build_id": 104313,
+    "build_number": 8,
+    "build_commit": "62f8acd9b941c39d00b3e7e0042f1fea7eb02abe",
+    "description_url": "https://poggit.pmmp.io/r/130094",
+    "icon_url": "https://raw.githubusercontent.com/OguzhanUmutlu/BoostBlock/62f8acd9b941c39d00b3e7e0042f1fea7eb02abe/icon.png",
+    "changelog_url": "https://poggit.pmmp.io/r/0",
+    "license": "mit",
+    "license_url": null,
+    "is_obsolete": false,
+    "is_pre_release": false,
+    "is_outdated": true,
+    "is_official": false,
+    "is_abandoned": false,
+    "submission_date": 1624540612,
+    "state": 5,
+    "last_state_change_date": 1624659594,
+    "categories": [
+      {
+        "major": true,
+        "category_name": "Mechanics"
+      },
+      {
+        "major": false,
+        "category_name": "API plugins"
+      },
+      {
+        "major": false,
+        "category_name": "Miscellaneous"
+      },
+      {
+        "major": false,
+        "category_name": "Developer Tools"
+      },
+      {
+        "major": false,
+        "category_name": "Fun"
+      },
+      {
+        "major": false,
+        "category_name": "General"
+      }
+    ],
+    "keywords": [
+      "block",
+      "boost",
+      "jump",
+      "slime",
+      "tp"
+    ],
+    "api": [
+      {
+        "from": "3.0.0",
+        "to": "3.25.6"
+      }
+    ],
+    "deps": [],
+    "producers": {
+      "Collaborator": [
+        "OguzhanUmutlu"
+      ]
+    },
+    "state_name": "Approved",
+    "virions": [],
+    "status": "uploaded",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "release_id": 6910,
+    "original_repo": "OguzhanUmutlu/BoostBlock",
+    "build_commit_from_release_metadata": "62f8acd9b941c39d00b3e7e0042f1fea7eb02abe",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0001/plugin-6910-104313-boostblock-1.0.0-e98da53de70e.phar",
+    "original_phar_sha256": "e98da53de70e3e747a91e4c66d6d032fa4848dea74f8f2d994a1b9e0185f2d01",
+    "sha256": "ed97550ff116dd4db50418b2adf0922b761952fd68a9d568163e4583946bd387",
+    "bytes": 5080,
+    "file_count": 6,
+    "php_files": 3,
+    "declared_license": "mit",
+    "license_display": "mit",
+    "storage_path": null,
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "recovered-sources-2026-10-14-0001",
+    "remote_asset_name": "recovered-source-6910-boostblock-1.0.0-ed97550ff116.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0001/recovered-source-6910-boostblock-1.0.0-ed97550ff116.zip",
+    "remote_sha256": "ed97550ff116dd4db50418b2adf0922b761952fd68a9d568163e4583946bd387",
+    "remote_asset_id": 654184491,
+    "uploaded_at": "2026-10-18T18:36:21Z",
+    "local_deleted": false
+  },
+  "7292": {
+    "id": 7292,
+    "name": "ChatLevel",
+    "version": "1.0.0",
+    "html_url": "https://poggit.pmmp.io/p/ChatLevel/1.0.0",
+    "tagline": "A plugin that creates a level system linked to chatting for PocketMine-MP!",
+    "artifact_url": "https://poggit.pmmp.io/r/135966",
+    "downloads": 1209,
+    "score": 4,
+    "repo_id": 393590536,
+    "repo_name": "OguzhanUmutlu/ChatLevel",
+    "project_id": 9458,
+    "project_name": "ChatLevel",
+    "build_id": 108247,
+    "build_number": 3,
+    "build_commit": "73b862edb693221e860c099ed12eef3719f51a6d",
+    "description_url": "https://poggit.pmmp.io/r/135965",
+    "icon_url": "https://raw.githubusercontent.com/OguzhanUmutlu/ChatLevel/73b862edb693221e860c099ed12eef3719f51a6d/icon.png",
+    "changelog_url": "https://poggit.pmmp.io/r/0",
+    "license": "mit",
+    "license_url": null,
+    "is_obsolete": false,
+    "is_pre_release": false,
+    "is_outdated": true,
+    "is_official": false,
+    "is_abandoned": false,
+    "submission_date": 1628317613,
+    "state": 5,
+    "last_state_change_date": 1628436226,
+    "categories": [
+      {
+        "major": true,
+        "category_name": "Chat-Related"
+      },
+      {
+        "major": false,
+        "category_name": "API plugins"
+      },
+      {
+        "major": false,
+        "category_name": "Miscellaneous"
+      },
+      {
+        "major": false,
+        "category_name": "Informational"
+      },
+      {
+        "major": false,
+        "category_name": "General"
+      }
+    ],
+    "keywords": [
+      "chat",
+      "level",
+      "up",
+      "xp",
+      "experience"
+    ],
+    "api": [
+      {
+        "from": "3.0.0",
+        "to": "3.25.6"
+      }
+    ],
+    "deps": [],
+    "producers": {
+      "Collaborator": [
+        "OguzhanUmutlu"
+      ]
+    },
+    "state_name": "Approved",
+    "virions": [],
+    "status": "uploaded",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "release_id": 7292,
+    "original_repo": "OguzhanUmutlu/ChatLevel",
+    "build_commit_from_release_metadata": "73b862edb693221e860c099ed12eef3719f51a6d",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0001/plugin-7292-108247-chatlevel-1.0.0-99c2f027ce8c.phar",
+    "original_phar_sha256": "99c2f027ce8ceb6132df7b891d4c4ba89d9e945b075b29562e82614d54750575",
+    "sha256": "1f184610d1b13cbf7f0a4d416230da747a89ac1f85f2a63e47705fe70c65bd1e",
+    "bytes": 4600,
+    "file_count": 7,
+    "php_files": 5,
+    "declared_license": "mit",
+    "license_display": "mit",
+    "storage_path": null,
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "recovered-sources-2026-10-14-0001",
+    "remote_asset_name": "recovered-source-7292-chatlevel-1.0.0-1f184610d1b1.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0001/recovered-source-7292-chatlevel-1.0.0-1f184610d1b1.zip",
+    "remote_sha256": "1f184610d1b13cbf7f0a4d416230da747a89ac1f85f2a63e47705fe70c65bd1e",
+    "remote_asset_id": 654184528,
+    "uploaded_at": "2026-10-18T18:36:22Z",
+    "local_deleted": false
+  },
+  "415": {
+    "status": "recovered_local",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "name": "ChatToDiscord",
+    "version": "1.1.1",
+    "release_id": 415,
+    "original_repo": "eDroiid/ChatToDiscord",
+    "build_commit_from_release_metadata": "4bc4fa65c5cd2a9c3b57e6a19c0636ebab36150f",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0002/plugin-415-25290-chattodiscord-1.1.1-78b3ceff566d.phar",
+    "original_phar_sha256": "78b3ceff566d0f127051b5a051694a41201ca8fb6257f38add8f245740d76079",
+    "sha256": "e8b6f66685b552cbf87de7a55e1ac59fde7130039c5a8f81aabd424534192033",
+    "bytes": 3703,
+    "file_count": 4,
+    "php_files": 2,
+    "declared_license": "none",
+    "license_display": "No License",
+    "storage_path": "archive/recovered-sources/415/chattodiscord-1.1.1-source-from-phar.zip"
+  },
+  "6785": {
+    "id": 6785,
+    "name": "ChorusPlant",
+    "version": "1.0.0",
+    "html_url": "https://poggit.pmmp.io/p/ChorusPlant/1.0.0",
+    "tagline": "Working ChorusPlant in pocketmine",
+    "artifact_url": "https://poggit.pmmp.io/r/127938",
+    "downloads": 1163,
+    "score": null,
+    "repo_id": 374229089,
+    "repo_name": "OguzhanUmutlu/ChorusPlant",
+    "project_id": 9091,
+    "project_name": "ChorusPlant",
+    "build_id": 103602,
+    "build_number": 1,
+    "build_commit": "66dde3b3c614b393f47afddafa8958d38dd33406",
+    "description_url": "https://poggit.pmmp.io/r/127937",
+    "icon_url": "https://raw.githubusercontent.com/OguzhanUmutlu/ChorusPlant/66dde3b3c614b393f47afddafa8958d38dd33406/icon.png",
+    "changelog_url": "https://poggit.pmmp.io/r/0",
+    "license": "mit",
+    "license_url": null,
+    "is_obsolete": false,
+    "is_pre_release": true,
+    "is_outdated": true,
+    "is_official": false,
+    "is_abandoned": false,
+    "submission_date": 1622963540,
+    "state": 5,
+    "last_state_change_date": 1623373653,
+    "categories": [
+      {
+        "major": true,
+        "category_name": "Mechanics"
+      },
+      {
+        "major": false,
+        "category_name": "Miscellaneous"
+      },
+      {
+        "major": false,
+        "category_name": "Educational"
+      },
+      {
+        "major": false,
+        "category_name": "General"
+      }
+    ],
+    "keywords": [
+      "chorsu",
+      "chorus",
+      "chrs",
+      "corus",
+      "corhus"
+    ],
+    "api": [
+      {
+        "from": "3.0.0",
+        "to": "3.25.6"
+      }
+    ],
+    "deps": [],
+    "producers": {
+      "Collaborator": [
+        "OguzhanUmutlu"
+      ]
+    },
+    "state_name": "Approved",
+    "virions": [],
+    "status": "uploaded",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "release_id": 6785,
+    "original_repo": "OguzhanUmutlu/ChorusPlant",
+    "build_commit_from_release_metadata": "66dde3b3c614b393f47afddafa8958d38dd33406",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0002/plugin-6785-103602-chorusplant-1.0.0-8ad8b4ab6deb.phar",
+    "original_phar_sha256": "8ad8b4ab6deb1bf11e884482d409f39492355416b226b300988f9519e0bf37d2",
+    "sha256": "735db3aced7c7aa91807217a53b8e194225841833d1032506e2f272c93080b09",
+    "bytes": 3941,
+    "file_count": 5,
+    "php_files": 3,
+    "declared_license": "mit",
+    "license_display": "mit",
+    "storage_path": null,
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "recovered-sources-2026-10-14-0002",
+    "remote_asset_name": "recovered-source-6785-chorusplant-1.0.0-735db3aced7c.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0002/recovered-source-6785-chorusplant-1.0.0-735db3aced7c.zip",
+    "remote_sha256": "735db3aced7c7aa91807217a53b8e194225841833d1032506e2f272c93080b09",
+    "remote_asset_id": 654184680,
+    "uploaded_at": "2026-10-18T18:36:25Z",
+    "local_deleted": false
+  },
+  "2007": {
+    "id": 2007,
+    "name": "ClearPlayer",
+    "version": "1.0.0",
+    "html_url": "https://poggit.pmmp.io/p/ClearPlayer/1.0.0",
+    "tagline": "Clear a players armor and inventory",
+    "artifact_url": "https://poggit.pmmp.io/r/45266",
+    "downloads": 9967,
+    "score": 5,
+    "repo_id": 156429117,
+    "repo_name": "radondev/ClearPlayer",
+    "project_id": 4173,
+    "project_name": "ClearPlayer",
+    "build_id": 51960,
+    "build_number": 11,
+    "build_commit": "8ace0fbb43c62fc3edebd373a6a4f83d3260dc57",
+    "description_url": "https://poggit.pmmp.io/r/45268",
+    "icon_url": null,
+    "changelog_url": "https://poggit.pmmp.io/r/0",
+    "license": "gpl-3.0",
+    "license_url": null,
+    "is_obsolete": false,
+    "is_pre_release": false,
+    "is_outdated": true,
+    "is_official": false,
+    "is_abandoned": false,
+    "submission_date": 1541950808,
+    "state": 5,
+    "last_state_change_date": 1541959513,
+    "categories": [
+      {
+        "major": true,
+        "category_name": "Admin Tools"
+      },
+      {
+        "major": false,
+        "category_name": "Anti-Griefing Tools"
+      }
+    ],
+    "keywords": [
+      "Clear",
+      "Remove",
+      "Item",
+      "Armor",
+      "Inventory",
+      "Inv"
+    ],
+    "api": [
+      {
+        "from": "3.0.0",
+        "to": "3.25.6"
+      }
+    ],
+    "deps": [],
+    "producers": {
+      "Collaborator": [
+        "radondev"
+      ]
+    },
+    "state_name": "Approved",
+    "virions": [],
+    "status": "uploaded",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "release_id": 2007,
+    "original_repo": "radondev/ClearPlayer",
+    "build_commit_from_release_metadata": "8ace0fbb43c62fc3edebd373a6a4f83d3260dc57",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0002/plugin-2007-51960-clearplayer-1.0.0-0dc23fcb03b6.phar",
+    "original_phar_sha256": "0dc23fcb03b63ba8c9e79800d205dc632a486ee911efea8d64bd3ba36ec01f12",
+    "sha256": "7d493694b1c276801a68f6980b1b863bc5a00be205f760ac525a26400121db17",
+    "bytes": 4759,
+    "file_count": 6,
+    "php_files": 3,
+    "declared_license": "gpl-3.0",
+    "license_display": "gpl-3.0",
+    "storage_path": null,
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "recovered-sources-2026-10-14-0002",
+    "remote_asset_name": "recovered-source-2007-clearplayer-1.0.0-7d493694b1c2.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0002/recovered-source-2007-clearplayer-1.0.0-7d493694b1c2.zip",
+    "remote_sha256": "7d493694b1c276801a68f6980b1b863bc5a00be205f760ac525a26400121db17",
+    "remote_asset_id": 654184715,
+    "uploaded_at": "2026-10-18T18:36:26Z",
+    "local_deleted": false
+  },
+  "6227": {
+    "id": 6227,
+    "name": "CoinsSystem",
+    "version": "1.2.0",
+    "html_url": "https://poggit.pmmp.io/p/CoinsSystem/1.2.0",
+    "tagline": "CoinsSystem Plugin for PocketMine-MP Server Software.",
+    "artifact_url": "https://poggit.pmmp.io/r/119561",
+    "downloads": 2504,
+    "score": 3,
+    "repo_id": 348382793,
+    "repo_name": "VazziDE/CoinsSystem",
+    "project_id": 8695,
+    "project_name": "CoinsSystem",
+    "build_id": 98940,
+    "build_number": 13,
+    "build_commit": "683c4767b58e0695d9a802ec14da6c66801dd86d",
+    "description_url": "https://poggit.pmmp.io/r/119563",
+    "icon_url": "https://raw.githubusercontent.com/VazziDE/CoinsSystem/683c4767b58e0695d9a802ec14da6c66801dd86d/icon.png",
+    "changelog_url": "https://poggit.pmmp.io/r/0",
+    "license": "gpl-3.0",
+    "license_url": null,
+    "is_obsolete": false,
+    "is_pre_release": false,
+    "is_outdated": true,
+    "is_official": false,
+    "is_abandoned": false,
+    "submission_date": 1616702553,
+    "state": 5,
+    "last_state_change_date": 1616724881,
+    "categories": [
+      {
+        "major": true,
+        "category_name": "General"
+      },
+      {
+        "major": false,
+        "category_name": "API plugins"
+      },
+      {
+        "major": false,
+        "category_name": "Minigame"
+      },
+      {
+        "major": false,
+        "category_name": "Economy"
+      }
+    ],
+    "keywords": [
+      "coins",
+      "coinsapi",
+      "coinssysten",
+      "economy"
+    ],
+    "api": [
+      {
+        "from": "3.18.0",
+        "to": "3.25.6"
+      }
+    ],
+    "deps": [],
+    "producers": {
+      "Collaborator": [
+        "VazziDE"
+      ]
+    },
+    "state_name": "Approved",
+    "virions": [],
+    "status": "uploaded",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "release_id": 6227,
+    "original_repo": "VazziDE/CoinsSystem",
+    "build_commit_from_release_metadata": "683c4767b58e0695d9a802ec14da6c66801dd86d",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0002/plugin-6227-98940-coinssystem-1.2.0-43a9005770df.phar",
+    "original_phar_sha256": "43a9005770df5ed03a273429ec30cb3a9ce2616b824fb8cfe2dea5f23140093e",
+    "sha256": "5a7cdaf6278ca7413bdb9ffd1dc73ec184908b6e682e46731ce37d28feac6926",
+    "bytes": 5468,
+    "file_count": 8,
+    "php_files": 5,
+    "declared_license": "gpl-3.0",
+    "license_display": "gpl-3.0",
+    "storage_path": null,
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "recovered-sources-2026-10-14-0002",
+    "remote_asset_name": "recovered-source-6227-coinssystem-1.2.0-5a7cdaf6278c.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0002/recovered-source-6227-coinssystem-1.2.0-5a7cdaf6278c.zip",
+    "remote_sha256": "5a7cdaf6278ca7413bdb9ffd1dc73ec184908b6e682e46731ce37d28feac6926",
+    "remote_asset_id": 654184749,
+    "uploaded_at": "2026-10-18T18:36:26Z",
+    "local_deleted": false
+  },
+  "6966": {
+    "id": 6966,
+    "name": "CommandEditor",
+    "version": "1.0.2",
+    "html_url": "https://poggit.pmmp.io/p/CommandEditor/1.0.2",
+    "tagline": "This plugin lets you manage commands.",
+    "artifact_url": "https://poggit.pmmp.io/r/131034",
+    "downloads": 5243,
+    "score": 4,
+    "repo_id": 363367009,
+    "repo_name": "OguzhanUmutlu/CommandEditor",
+    "project_id": 8930,
+    "project_name": "CommandEditor",
+    "build_id": 105446,
+    "build_number": 14,
+    "build_commit": "981b79da61242130bf5a28336348956b7a03a9b4",
+    "description_url": "https://poggit.pmmp.io/r/131031",
+    "icon_url": "https://raw.githubusercontent.com/OguzhanUmutlu/CommandEditor/981b79da61242130bf5a28336348956b7a03a9b4/icon.png",
+    "changelog_url": "https://poggit.pmmp.io/r/131033",
+    "license": "mit",
+    "license_url": null,
+    "is_obsolete": false,
+    "is_pre_release": false,
+    "is_outdated": true,
+    "is_official": false,
+    "is_abandoned": false,
+    "submission_date": 1625508760,
+    "state": 5,
+    "last_state_change_date": 1626020855,
+    "categories": [
+      {
+        "major": true,
+        "category_name": "Admin Tools"
+      },
+      {
+        "major": false,
+        "category_name": "Miscellaneous"
+      },
+      {
+        "major": false,
+        "category_name": "Developer Tools"
+      },
+      {
+        "major": false,
+        "category_name": "Informational"
+      },
+      {
+        "major": false,
+        "category_name": "General"
+      }
+    ],
+    "keywords": [
+      "comand",
+      "command",
+      "edit",
+      "editor",
+      "edt",
+      "edtor"
+    ],
+    "api": [
+      {
+        "from": "3.0.0",
+        "to": "3.25.6"
+      }
+    ],
+    "deps": [],
+    "producers": {
+      "Collaborator": [
+        "OguzhanUmutlu"
+      ]
+    },
+    "state_name": "Approved",
+    "virions": [],
+    "status": "uploaded",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "release_id": 6966,
+    "original_repo": "OguzhanUmutlu/CommandEditor",
+    "build_commit_from_release_metadata": "981b79da61242130bf5a28336348956b7a03a9b4",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0002/plugin-6966-105446-commandeditor-1.0.2-8b050844f197.phar",
+    "original_phar_sha256": "8b050844f1973a3c0886e440f286aec409d0fd88434e8c4f1fb458eb8acf2843",
+    "sha256": "c44e33312f07b22ec6d36a88f1d026574f61b9edb49086ddaae0135b84179889",
+    "bytes": 3994,
+    "file_count": 3,
+    "php_files": 1,
+    "declared_license": "mit",
+    "license_display": "mit",
+    "storage_path": null,
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "recovered-sources-2026-10-14-0002",
+    "remote_asset_name": "recovered-source-6966-commandeditor-1.0.2-c44e33312f07.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0002/recovered-source-6966-commandeditor-1.0.2-c44e33312f07.zip",
+    "remote_sha256": "c44e33312f07b22ec6d36a88f1d026574f61b9edb49086ddaae0135b84179889",
+    "remote_asset_id": 654184788,
+    "uploaded_at": "2026-10-18T18:36:27Z",
+    "local_deleted": false
+  },
+  "6634": {
+    "id": 6634,
+    "name": "CommandEditor",
+    "version": "1.0.1",
+    "html_url": "https://poggit.pmmp.io/p/CommandEditor/1.0.1",
+    "tagline": "This plugin lets you manage commands.",
+    "artifact_url": "https://poggit.pmmp.io/r/125569",
+    "downloads": 1357,
+    "score": 4,
+    "repo_id": 363367009,
+    "repo_name": "OguzhanUmutlu/CommandEditor",
+    "project_id": 8930,
+    "project_name": "CommandEditor",
+    "build_id": 102234,
+    "build_number": 5,
+    "build_commit": "60a1af1748b495649a19560f06903e389dc29425",
+    "description_url": "https://poggit.pmmp.io/r/125568",
+    "icon_url": "https://raw.githubusercontent.com/OguzhanUmutlu/CommandEditor/60a1af1748b495649a19560f06903e389dc29425/icon.png",
+    "changelog_url": "https://poggit.pmmp.io/r/0",
+    "license": "mit",
+    "license_url": null,
+    "is_obsolete": true,
+    "is_pre_release": false,
+    "is_outdated": true,
+    "is_official": false,
+    "is_abandoned": false,
+    "submission_date": 1621022630,
+    "state": 5,
+    "last_state_change_date": 1621076114,
+    "categories": [
+      {
+        "major": true,
+        "category_name": "Admin Tools"
+      },
+      {
+        "major": false,
+        "category_name": "Miscellaneous"
+      },
+      {
+        "major": false,
+        "category_name": "Developer Tools"
+      },
+      {
+        "major": false,
+        "category_name": "Informational"
+      },
+      {
+        "major": false,
+        "category_name": "General"
+      }
+    ],
+    "keywords": [
+      "comand",
+      "command",
+      "edit",
+      "editor",
+      "edt",
+      "edtor"
+    ],
+    "api": [
+      {
+        "from": "3.0.0",
+        "to": "3.25.6"
+      }
+    ],
+    "deps": [],
+    "producers": {
+      "Collaborator": [
+        "OguzhanUmutlu"
+      ]
+    },
+    "state_name": "Approved",
+    "virions": [],
+    "status": "uploaded",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "release_id": 6634,
+    "original_repo": "OguzhanUmutlu/CommandEditor",
+    "build_commit_from_release_metadata": "60a1af1748b495649a19560f06903e389dc29425",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0002/plugin-6634-102234-commandeditor-1.0.1-52317a43aafd.phar",
+    "original_phar_sha256": "52317a43aafd8953e58bf9190af861a930858e0de9927ed3eac22edd4e6e661e",
+    "sha256": "285e92436ccfd4b2b1a34c8d043e13d01cc7167473edd016ef24a67adc8ae009",
+    "bytes": 3756,
+    "file_count": 3,
+    "php_files": 1,
+    "declared_license": "mit",
+    "license_display": "mit",
+    "storage_path": null,
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "recovered-sources-2026-10-14-0002",
+    "remote_asset_name": "recovered-source-6634-commandeditor-1.0.1-285e92436ccf.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0002/recovered-source-6634-commandeditor-1.0.1-285e92436ccf.zip",
+    "remote_sha256": "285e92436ccfd4b2b1a34c8d043e13d01cc7167473edd016ef24a67adc8ae009",
+    "remote_asset_id": 654184822,
+    "uploaded_at": "2026-10-18T18:36:28Z",
+    "local_deleted": false
+  },
+  "6304": {
+    "status": "recovered_local",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "name": "Friends",
+    "version": "1.0.7",
+    "release_id": 6304,
+    "original_repo": "OguzhanUmutlu/FriendSystem",
+    "build_commit_from_release_metadata": "ea3e4cb06734a669e561df91e8ba7e13581dc39c",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0002/plugin-6304-99388-friends-1.0.7-103c2faf9e74.phar",
+    "original_phar_sha256": "103c2faf9e74ce5d127a5ca593e7670aca1229d6e30df1c3577c0ac4603bce63",
+    "sha256": "5ffaafdec4a1420e0f0a7515d47f71f97fd63e6d4ba432fa1b5eb9a5a5f94bd1",
+    "bytes": 12312,
+    "file_count": 13,
+    "php_files": 7,
+    "declared_license": "mit",
+    "license_display": "mit",
+    "storage_path": "archive/recovered-sources/6304/friends-1.0.7-source-from-phar.zip"
+  },
+  "6086": {
+    "status": "recovered_local",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "name": "Friends",
+    "version": "1.0.6",
+    "release_id": 6086,
+    "original_repo": "OguzhanUmutlu/FriendSystem",
+    "build_commit_from_release_metadata": "d222345af316dad19daccc1795f9ea654d10de7e",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0002/plugin-6086-97736-friends-1.0.6-4bd4a7462a22.phar",
+    "original_phar_sha256": "4bd4a7462a22656c745a9d5d81575c484d106fafb6614bd393daaf728b14256f",
+    "sha256": "dab9f7139be6201ff3db5ee2b4220357f86b5ba697ab030d2cbbcbdd6611e5b7",
+    "bytes": 12231,
+    "file_count": 13,
+    "php_files": 7,
+    "declared_license": "mit",
+    "license_display": "mit",
+    "storage_path": "archive/recovered-sources/6086/friends-1.0.6-source-from-phar.zip"
+  },
+  "6068": {
+    "status": "recovered_local",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "name": "Friends",
+    "version": "1.0.5",
+    "release_id": 6068,
+    "original_repo": "OguzhanUmutlu/FriendSystem",
+    "build_commit_from_release_metadata": "3705298aee8c54e45602019fd8e8a3a3a3432d74",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0002/plugin-6068-97521-friends-1.0.5-91d1bea760ca.phar",
+    "original_phar_sha256": "91d1bea760ca540dfef79e5107e998ad08106c6c0832af799af94bf144d58676",
+    "sha256": "dc247182e0814e58092e1d3c3369366cfd5b5a2e555a2d620301137432745986",
+    "bytes": 12231,
+    "file_count": 13,
+    "php_files": 7,
+    "declared_license": "mit",
+    "license_display": "mit",
+    "storage_path": "archive/recovered-sources/6068/friends-1.0.5-source-from-phar.zip"
+  },
+  "5745": {
+    "status": "recovered_local",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "name": "Friends",
+    "version": "1.0.0",
+    "release_id": 5745,
+    "original_repo": "OguzhanUmutlu/FriendSystem",
+    "build_commit_from_release_metadata": "324527fd661a77f7718352461063d55c2d9168ec",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0002/plugin-5745-94004-friends-1.0.0-f2fdf2656c87.phar",
+    "original_phar_sha256": "f2fdf2656c87887a67bae45ac258bd1f542ded346ba0d07f04054d92888ee210",
+    "sha256": "0f1fbf81365f9ccaa3fed60c354372e0bd1092bd6e4797b38778269d4ae88908",
+    "bytes": 5890,
+    "file_count": 7,
+    "php_files": 2,
+    "declared_license": "mit",
+    "license_display": "mit",
+    "storage_path": "archive/recovered-sources/5745/friends-1.0.0-source-from-phar.zip"
+  },
+  "7265": {
+    "status": "recovered_local",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "name": "Godmode",
+    "version": "1.0.0",
+    "release_id": 7265,
+    "original_repo": "VazziDE/Godmode",
+    "build_commit_from_release_metadata": "a76297de22528d2c529b796ca3447081bad42852",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0003/plugin-7265-108011-godmode-1.0.0-f8d3af0f439b.phar",
+    "original_phar_sha256": "f8d3af0f439b1703b539ed9bd218d4c10dc43c659ddee86a117579bf4b8227fc",
+    "sha256": "b163fdb2373e8c21f8bf41ff08f2b83d87bf0815c8df3ebcf1f70ce50c4fc12c",
+    "bytes": 4135,
+    "file_count": 6,
+    "php_files": 3,
+    "declared_license": "gpl-3.0",
+    "license_display": "gpl-3.0",
+    "storage_path": "archive/recovered-sources/7265/godmode-1.0.0-source-from-phar.zip"
+  },
+  "11715": {
+    "id": 11715,
+    "name": "HiveCorruptor",
+    "version": "1.0.0",
+    "html_url": "https://poggit.pmmp.io/p/HiveCorruptor/1.0.0",
+    "tagline": "A plugin that stops your players from joining the Hive.",
+    "artifact_url": "https://poggit.pmmp.io/r/212656",
+    "downloads": 517,
+    "score": 4,
+    "repo_id": 655102572,
+    "repo_name": "JustTalDevelops/HiveCorruptor",
+    "project_id": 12656,
+    "project_name": "HiveCorruptor",
+    "build_id": 157464,
+    "build_number": 5,
+    "build_commit": "433b4e79c3952de3cdee9aacda84bb1e3f753285",
+    "description_url": "https://poggit.pmmp.io/r/213179",
+    "icon_url": "https://raw.githubusercontent.com/JustTalDevelops/TheBeeServerCorruptor/433b4e79c3952de3cdee9aacda84bb1e3f753285/hive.png",
+    "changelog_url": "https://poggit.pmmp.io/r/0",
+    "license": "MIT",
+    "license_url": null,
+    "is_obsolete": false,
+    "is_pre_release": false,
+    "is_outdated": false,
+    "is_official": false,
+    "is_abandoned": false,
+    "submission_date": 1687113593,
+    "state": 5,
+    "last_state_change_date": 1687113642,
+    "categories": [
+      {
+        "major": true,
+        "category_name": "General"
+      },
+      {
+        "major": false,
+        "category_name": "Miscellaneous"
+      },
+      {
+        "major": false,
+        "category_name": "Educational"
+      },
+      {
+        "major": false,
+        "category_name": "Developer Tools"
+      },
+      {
+        "major": false,
+        "category_name": "Fun"
+      },
+      {
+        "major": false,
+        "category_name": "Mechanics"
+      },
+      {
+        "major": false,
+        "category_name": "Informational"
+      },
+      {
+        "major": false,
+        "category_name": "Admin Tools"
+      }
+    ],
+    "keywords": [],
+    "api": [
+      {
+        "from": "5.0.0",
+        "to": "5.36.0"
+      }
+    ],
+    "deps": [],
+    "producers": {
+      "Collaborator": [
+        "JustTalDevelops"
+      ]
+    },
+    "state_name": "Approved",
+    "virions": [],
+    "status": "uploaded",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "release_id": 11715,
+    "original_repo": "JustTalDevelops/HiveCorruptor",
+    "build_commit_from_release_metadata": "433b4e79c3952de3cdee9aacda84bb1e3f753285",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0003/plugin-11715-157464-hivecorruptor-1.0.0-4e35937be7bb.phar",
+    "original_phar_sha256": "4e35937be7bb78113e782251324ffaeacd05bffb7c2f2f7a36a7368a7159efc9",
+    "sha256": "54825ffb3bdb167522a00a53bc3a081fc6c3d30cfeafe323939935d70476a14e",
+    "bytes": 3008,
+    "file_count": 4,
+    "php_files": 1,
+    "declared_license": "MIT",
+    "license_display": "MIT",
+    "storage_path": null,
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "recovered-sources-2026-10-14-0003",
+    "remote_asset_name": "recovered-source-11715-hivecorruptor-1.0.0-54825ffb3bdb.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0003/recovered-source-11715-hivecorruptor-1.0.0-54825ffb3bdb.zip",
+    "remote_sha256": "54825ffb3bdb167522a00a53bc3a081fc6c3d30cfeafe323939935d70476a14e",
+    "remote_asset_id": 654184972,
+    "uploaded_at": "2026-10-18T18:36:32Z",
+    "local_deleted": false
+  },
+  "2715": {
+    "status": "recovered_local",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "name": "ImageConverter",
+    "version": "2.3.0",
+    "release_id": 2715,
+    "original_repo": "korado531m7/ImageConverter",
+    "build_commit_from_release_metadata": "2643f22ffe577a4e47f0b4095d89e0bd0932b0af",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0003/plugin-2715-58012-imageconverter-2.3.0-ff350631a39a.phar",
+    "original_phar_sha256": "ff350631a39a64710a92d32748857fb2d5197fae0a502bbee65d39b6691b30f2",
+    "sha256": "90814b7743b27a874c64633678141092a07f3972f4c8081bf1148643655a900e",
+    "bytes": 19035,
+    "file_count": 19,
+    "php_files": 17,
+    "declared_license": "gpl-3.0",
+    "license_display": "gpl-3.0",
+    "storage_path": "archive/recovered-sources/2715/imageconverter-2.3.0-source-from-phar.zip"
+  },
+  "2669": {
+    "status": "recovered_local",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "name": "ImageConverter",
+    "version": "2.2.0",
+    "release_id": 2669,
+    "original_repo": "korado531m7/ImageConverter",
+    "build_commit_from_release_metadata": "daf675303aa3616db22e2253897e48dfdd5f38d4",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0003/plugin-2669-57578-imageconverter-2.2.0-3c746c987663.phar",
+    "original_phar_sha256": "3c746c9876637c13d38263ea5072640f84e7bd7e2d6300ba1236a7652689b03e",
+    "sha256": "3f1d2f99f979494001d10f40219c94e78f26ed306cd35e2f4358a477f2abf8d6",
+    "bytes": 18271,
+    "file_count": 19,
+    "php_files": 17,
+    "declared_license": "gpl-3.0",
+    "license_display": "gpl-3.0",
+    "storage_path": "archive/recovered-sources/2669/imageconverter-2.2.0-source-from-phar.zip"
+  },
+  "2028": {
+    "status": "recovered_local",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "name": "ImageConverter",
+    "version": "1.1.0",
+    "release_id": 2028,
+    "original_repo": "korado531m7/ImageConverter",
+    "build_commit_from_release_metadata": "319beebd5779d94ffdf5b253a4f751583b29007b",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0003/plugin-2028-52288-imageconverter-1.1.0-daeeed3680f2.phar",
+    "original_phar_sha256": "daeeed3680f2c4cdf3e97a67115780d43751860e3c609a6b214af2c9b7ac84e3",
+    "sha256": "dd26d4c101af7db6ada4ed7a1e97c9d38b80b0880a9df4a3ef20670daf98f74d",
+    "bytes": 8691,
+    "file_count": 8,
+    "php_files": 6,
+    "declared_license": "gpl-3.0",
+    "license_display": "gpl-3.0",
+    "storage_path": "archive/recovered-sources/2028/imageconverter-1.1.0-source-from-phar.zip"
+  },
+  "1974": {
+    "status": "recovered_local",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "name": "ImageConverter",
+    "version": "1.0.0",
+    "release_id": 1974,
+    "original_repo": "korado531m7/ImageConverter",
+    "build_commit_from_release_metadata": "d02e39d72a96cf3d8a033adf6c0ecd486b959a11",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0003/plugin-1974-51221-imageconverter-1.0.0-db71dcc12b5d.phar",
+    "original_phar_sha256": "db71dcc12b5ddb086537b685b1686189f6105ac6199df0b533903ef4a4e597fb",
+    "sha256": "b7d9c615c3b888182a55c43ebe42dc2aa4122f5d51244072f421cfd02674cb7d",
+    "bytes": 7768,
+    "file_count": 7,
+    "php_files": 5,
+    "declared_license": "gpl-3.0",
+    "license_display": "gpl-3.0",
+    "storage_path": "archive/recovered-sources/1974/imageconverter-1.0.0-source-from-phar.zip"
+  },
+  "5083": {
+    "id": 5083,
+    "name": "KeepInv",
+    "version": "1.0.0",
+    "html_url": "https://poggit.pmmp.io/p/KeepInv/1.0.0",
+    "tagline": "Choose if your players get to keep their inventory when they die",
+    "artifact_url": "https://poggit.pmmp.io/r/99398",
+    "downloads": 909,
+    "score": 5,
+    "repo_id": 286040861,
+    "repo_name": "AstraMCPE/KeepInventory",
+    "project_id": 7582,
+    "project_name": "KeepInventory",
+    "build_id": 85874,
+    "build_number": 3,
+    "build_commit": "ca4648c1b4f7dc4ea8f65b9a11bac97694f633ce",
+    "description_url": "https://poggit.pmmp.io/r/99397",
+    "icon_url": null,
+    "changelog_url": "https://poggit.pmmp.io/r/0",
+    "license": "gpl-3.0",
+    "license_url": null,
+    "is_obsolete": false,
+    "is_pre_release": false,
+    "is_outdated": true,
+    "is_official": false,
+    "is_abandoned": false,
+    "submission_date": 1596892704,
+    "state": 5,
+    "last_state_change_date": 1596996956,
+    "categories": [
+      {
+        "major": true,
+        "category_name": "General"
+      },
+      {
+        "major": false,
+        "category_name": "Fun"
+      }
+    ],
+    "keywords": [],
+    "api": [
+      {
+        "from": "3.0.0",
+        "to": "3.25.6"
+      }
+    ],
+    "deps": [],
+    "producers": {
+      "Collaborator": [
+        "TWRRR"
+      ]
+    },
+    "state_name": "Approved",
+    "virions": [],
+    "status": "uploaded",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "release_id": 5083,
+    "original_repo": "AstraMCPE/KeepInventory",
+    "build_commit_from_release_metadata": "ca4648c1b4f7dc4ea8f65b9a11bac97694f633ce",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0003/plugin-5083-85874-keepinv-1.0.0-ecd996bd20f8.phar",
+    "original_phar_sha256": "ecd996bd20f8e02e5cb6b37704e97d0e0604d9416eb2c05505ee2aa9584853db",
+    "sha256": "5a1cc56cff31fb333a3ab9671d13ea6290a717b05260f30a0d1010a1e1a04e8f",
+    "bytes": 2728,
+    "file_count": 4,
+    "php_files": 1,
+    "declared_license": "gpl-3.0",
+    "license_display": "gpl-3.0",
+    "storage_path": null,
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "recovered-sources-2026-10-14-0003",
+    "remote_asset_name": "recovered-source-5083-keepinv-1.0.0-5a1cc56cff31.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0003/recovered-source-5083-keepinv-1.0.0-5a1cc56cff31.zip",
+    "remote_sha256": "5a1cc56cff31fb333a3ab9671d13ea6290a717b05260f30a0d1010a1e1a04e8f",
+    "remote_asset_id": 654185036,
+    "uploaded_at": "2026-10-18T18:36:32Z",
+    "local_deleted": false
+  },
+  "12614": {
+    "id": 12614,
+    "name": "LuckyPouches",
+    "version": "1.0.1",
+    "html_url": "https://poggit.pmmp.io/p/LuckyPouches/1.0.1",
+    "tagline": "Reward your players in a unique way in your Pocketmine-MP server!",
+    "artifact_url": "https://poggit.pmmp.io/r/229218",
+    "downloads": 220,
+    "score": 5,
+    "repo_id": 714585564,
+    "repo_name": "ecstsylove/LuckyPouches",
+    "project_id": 13327,
+    "project_name": "LuckyPouches",
+    "build_id": 168043,
+    "build_number": 18,
+    "build_commit": "14188f882c881d2f77e337afc8ed71db7be38667",
+    "description_url": "https://poggit.pmmp.io/r/229220",
+    "icon_url": "https://raw.githubusercontent.com/iLVOEWOCK/LuckyPouches/14188f882c881d2f77e337afc8ed71db7be38667/icon.png",
+    "changelog_url": "https://poggit.pmmp.io/r/229222",
+    "license": "Apache-2.0",
+    "license_url": null,
+    "is_obsolete": false,
+    "is_pre_release": false,
+    "is_outdated": false,
+    "is_official": false,
+    "is_abandoned": false,
+    "submission_date": 1701317649,
+    "state": 5,
+    "last_state_change_date": 1701367397,
+    "categories": [
+      {
+        "major": true,
+        "category_name": "General"
+      },
+      {
+        "major": false,
+        "category_name": "Miscellaneous"
+      },
+      {
+        "major": false,
+        "category_name": "Developer Tools"
+      },
+      {
+        "major": false,
+        "category_name": "Fun"
+      },
+      {
+        "major": false,
+        "category_name": "Economy"
+      }
+    ],
+    "keywords": [
+      "lucky",
+      "luckypouch",
+      "luckypouches",
+      "pouch",
+      "pouches"
+    ],
+    "api": [
+      {
+        "from": "5.0.0",
+        "to": "5.36.0"
+      }
+    ],
+    "deps": [
+      {
+        "name": "BedrockEconomy",
+        "version": "2.1.2",
+        "depRelId": 11970,
+        "isHard": true
+      }
+    ],
+    "producers": {
+      "Collaborator": [
+        "iLVOEWOCK"
+      ]
+    },
+    "state_name": "Approved",
+    "virions": [],
+    "status": "uploaded",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "release_id": 12614,
+    "original_repo": "ecstsylove/LuckyPouches",
+    "build_commit_from_release_metadata": "14188f882c881d2f77e337afc8ed71db7be38667",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0003/plugin-12614-168043-luckypouches-1.0.1-2643c62ba42a.phar",
+    "original_phar_sha256": "2643c62ba42ad9b5d181af5a33f4b27bffc170ea77e2a08568a704c80d91c3a5",
+    "sha256": "19b88d156071c41e84cedf815e6fe9e9770f91c0b583457ffb3986183732210f",
+    "bytes": 20280,
+    "file_count": 16,
+    "php_files": 11,
+    "declared_license": "Apache-2.0",
+    "license_display": "Apache-2.0",
+    "storage_path": null,
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "recovered-sources-2026-10-14-0003",
+    "remote_asset_name": "recovered-source-12614-luckypouches-1.0.1-19b88d156071.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0003/recovered-source-12614-luckypouches-1.0.1-19b88d156071.zip",
+    "remote_sha256": "19b88d156071c41e84cedf815e6fe9e9770f91c0b583457ffb3986183732210f",
+    "remote_asset_id": 654185122,
+    "uploaded_at": "2026-10-18T18:36:33Z",
+    "local_deleted": false
+  },
+  "12579": {
+    "id": 12579,
+    "name": "LuckyPouches",
+    "version": "1.0.0",
+    "html_url": "https://poggit.pmmp.io/p/LuckyPouches/1.0.0",
+    "tagline": "Reward your players in a unique way in your Pocketmine-MP server!",
+    "artifact_url": "https://poggit.pmmp.io/r/228516",
+    "downloads": 26,
+    "score": null,
+    "repo_id": 714585564,
+    "repo_name": "ecstsylove/LuckyPouches",
+    "project_id": 13327,
+    "project_name": "LuckyPouches",
+    "build_id": 168041,
+    "build_number": 16,
+    "build_commit": "78a3981c05ff803109e3dd86767d56ac47255531",
+    "description_url": "https://poggit.pmmp.io/r/228519",
+    "icon_url": "https://raw.githubusercontent.com/iLVOEWOCK/LuckyPouches/78a3981c05ff803109e3dd86767d56ac47255531/icon.png",
+    "changelog_url": "https://poggit.pmmp.io/r/0",
+    "license": "Apache-2.0",
+    "license_url": null,
+    "is_obsolete": true,
+    "is_pre_release": false,
+    "is_outdated": false,
+    "is_official": false,
+    "is_abandoned": false,
+    "submission_date": 1699771251,
+    "state": 5,
+    "last_state_change_date": 1701294678,
+    "categories": [
+      {
+        "major": true,
+        "category_name": "General"
+      },
+      {
+        "major": false,
+        "category_name": "Miscellaneous"
+      },
+      {
+        "major": false,
+        "category_name": "Developer Tools"
+      },
+      {
+        "major": false,
+        "category_name": "Fun"
+      },
+      {
+        "major": false,
+        "category_name": "Economy"
+      }
+    ],
+    "keywords": [
+      "lucky",
+      "luckypouch",
+      "luckypouches",
+      "pouch",
+      "pouches"
+    ],
+    "api": [
+      {
+        "from": "5.0.0",
+        "to": "5.36.0"
+      }
+    ],
+    "deps": [
+      {
+        "name": "BedrockEconomy",
+        "version": "2.1.2",
+        "depRelId": 11970,
+        "isHard": true
+      }
+    ],
+    "producers": {
+      "Collaborator": [
+        "iLVOEWOCK"
+      ]
+    },
+    "state_name": "Approved",
+    "virions": [],
+    "status": "uploaded",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "release_id": 12579,
+    "original_repo": "ecstsylove/LuckyPouches",
+    "build_commit_from_release_metadata": "78a3981c05ff803109e3dd86767d56ac47255531",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0003/plugin-12579-168041-luckypouches-1.0.0-036f9b429a0d.phar",
+    "original_phar_sha256": "036f9b429a0dd2d614f511690e43878684a370265ad95299b181843aec757150",
+    "sha256": "8eabb771cdf25884553cfb6a9713c0d6be9935436073f17c922c9bb4eee21dc1",
+    "bytes": 20248,
+    "file_count": 16,
+    "php_files": 11,
+    "declared_license": "Apache-2.0",
+    "license_display": "Apache-2.0",
+    "storage_path": null,
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "recovered-sources-2026-10-14-0003",
+    "remote_asset_name": "recovered-source-12579-luckypouches-1.0.0-8eabb771cdf2.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0003/recovered-source-12579-luckypouches-1.0.0-8eabb771cdf2.zip",
+    "remote_sha256": "8eabb771cdf25884553cfb6a9713c0d6be9935436073f17c922c9bb4eee21dc1",
+    "remote_asset_id": 654185145,
+    "uploaded_at": "2026-10-18T18:36:34Z",
+    "local_deleted": false
+  },
+  "7052": {
+    "status": "recovered_local",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "name": "Manhunt",
+    "version": "1.0.2",
+    "release_id": 7052,
+    "original_repo": "OguzhanUmutlu/Manhunt",
+    "build_commit_from_release_metadata": "fe710a89cca3ce42253b87a2008b52cd3ae5cc40",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0003/plugin-7052-106128-manhunt-1.0.2-606415155eaf.phar",
+    "original_phar_sha256": "606415155eaf2c1c1267b577c531aad150cc310d30d6e10f14cb95bd48e0de3e",
+    "sha256": "9625069124f9f7916d41d5bf343d0353c4c2265dc1fc52126231dd2203d225ca",
+    "bytes": 5139,
+    "file_count": 4,
+    "php_files": 2,
+    "declared_license": "mit",
+    "license_display": "mit",
+    "storage_path": "archive/recovered-sources/7052/manhunt-1.0.2-source-from-phar.zip"
+  },
+  "6628": {
+    "status": "recovered_local",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "name": "Manhunt",
+    "version": "1.0.1",
+    "release_id": 6628,
+    "original_repo": "OguzhanUmutlu/Manhunt",
+    "build_commit_from_release_metadata": "d7631898814fbe3e82acee0d74040b2f15a24e67",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0003/plugin-6628-102182-manhunt-1.0.1-83783a7ed9dd.phar",
+    "original_phar_sha256": "83783a7ed9ddc303f9db02ea71c7468f5dc1b97b2d5b75452d7b1311b9ba4981",
+    "sha256": "4c6a0cfec03145041c74395681efd07e53f37e8c13f9eaf45e7e7855b0a172bb",
+    "bytes": 5118,
+    "file_count": 4,
+    "php_files": 2,
+    "declared_license": "mit",
+    "license_display": "mit",
+    "storage_path": "archive/recovered-sources/6628/manhunt-1.0.1-source-from-phar.zip"
+  },
+  "6609": {
+    "status": "recovered_local",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "name": "Manhunt",
+    "version": "1.0.0",
+    "release_id": 6609,
+    "original_repo": "OguzhanUmutlu/Manhunt",
+    "build_commit_from_release_metadata": "2c33cff9bcb40266ba2f328e36b73d21b015f91c",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0003/plugin-6609-102049-manhunt-1.0.0-b0a067995eb8.phar",
+    "original_phar_sha256": "b0a067995eb85bfb498e73e70753507cd1e359ce9c5c3d6bb538da962236511f",
+    "sha256": "5b121cdd19bd11d0f85c112dedf71f0ccb99b3aa26643e57c0c20caebf2b3f6b",
+    "bytes": 5116,
+    "file_count": 4,
+    "php_files": 2,
+    "declared_license": "mit",
+    "license_display": "mit",
+    "storage_path": "archive/recovered-sources/6609/manhunt-1.0.0-source-from-phar.zip"
+  },
+  "6645": {
+    "status": "recovered_local",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "name": "MoneyUI",
+    "version": "1.0.0",
+    "release_id": 6645,
+    "original_repo": "OguzhanUmutlu/MoneyUI",
+    "build_commit_from_release_metadata": "fd13cf11ab7c3aeb25148ace97af237b6b7d4b37",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0003/plugin-6645-102295-moneyui-1.0.0-2fc71ed73b02.phar",
+    "original_phar_sha256": "2fc71ed73b02b2ec9e5a3836aa26dc269eb171e25dd35efc32749918a4528fe8",
+    "sha256": "1077df084c8d45051ef743636a17f92c5a76c7012bed4948fd681d9773fcad5d",
+    "bytes": 25222,
+    "file_count": 23,
+    "php_files": 18,
+    "declared_license": "mit",
+    "license_display": "mit",
+    "storage_path": "archive/recovered-sources/6645/moneyui-1.0.0-source-from-phar.zip"
+  },
+  "6419": {
+    "status": "recovered_local",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "name": "MyWarp",
+    "version": "1.1.0",
+    "release_id": 6419,
+    "original_repo": "lovetwice1012/MyWarp-en",
+    "build_commit_from_release_metadata": "06c8bf3f019f4b76ed04b3ecacf05f45223995a2",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0004/plugin-6419-100238-mywarp-1.1.0-d7996675fef9.phar",
+    "original_phar_sha256": "d7996675fef90b0177b3bc706c97d431d35b3775a753aff303f097131f2a76f5",
+    "sha256": "0aadac6fe6caaab72ac0cdb8707fb6067915936ae19fdb428a1dc593f7db01a1",
+    "bytes": 8512,
+    "file_count": 11,
+    "php_files": 9,
+    "declared_license": "mit",
+    "license_display": "mit",
+    "storage_path": "archive/recovered-sources/6419/mywarp-1.1.0-source-from-phar.zip"
+  },
+  "6346": {
+    "status": "recovered_local",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "name": "MyWarp",
+    "version": "1.0.0",
+    "release_id": 6346,
+    "original_repo": "lovetwice1012/MyWarp-en",
+    "build_commit_from_release_metadata": "ab90b52a76c7ff0bcd8d5139eb5677101504b4bf",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0004/plugin-6346-99661-mywarp-1.0.0-71eb53505737.phar",
+    "original_phar_sha256": "71eb53505737ecddee6db146cd582a7af9855ca5b3aacac6f3c91152c12ec0cb",
+    "sha256": "71eec5fd6d6862928bf49c8ab2a0e1eded91126548e8adca63efa329ee5ee785",
+    "bytes": 7984,
+    "file_count": 11,
+    "php_files": 9,
+    "declared_license": "mit",
+    "license_display": "mit",
+    "storage_path": "archive/recovered-sources/6346/mywarp-1.0.0-source-from-phar.zip"
+  },
+  "6384": {
+    "id": 6384,
+    "name": "OneBlockAFK",
+    "version": "1.0.0",
+    "html_url": "https://poggit.pmmp.io/p/OneBlockAFK/1.0.0",
+    "tagline": "OneBlockAFK plugin for PocketMine-MP",
+    "artifact_url": "https://poggit.pmmp.io/r/121715",
+    "downloads": 958,
+    "score": 4,
+    "repo_id": 352938321,
+    "repo_name": "OguzhanUmutlu/OneBlockAFK",
+    "project_id": 8769,
+    "project_name": "OneBlockAFK",
+    "build_id": 100015,
+    "build_number": 5,
+    "build_commit": "15d52ef0c4a28d65a1ba35c0db8db1c70dc820df",
+    "description_url": "https://poggit.pmmp.io/r/121714",
+    "icon_url": "https://raw.githubusercontent.com/OguzhanUmutlu/OneBlockAFK/15d52ef0c4a28d65a1ba35c0db8db1c70dc820df/icon.png",
+    "changelog_url": "https://poggit.pmmp.io/r/0",
+    "license": "mit",
+    "license_url": null,
+    "is_obsolete": false,
+    "is_pre_release": false,
+    "is_outdated": true,
+    "is_official": false,
+    "is_abandoned": false,
+    "submission_date": 1617861537,
+    "state": 5,
+    "last_state_change_date": 1618075538,
+    "categories": [
+      {
+        "major": true,
+        "category_name": "Miscellaneous"
+      },
+      {
+        "major": false,
+        "category_name": "Mechanics"
+      },
+      {
+        "major": false,
+        "category_name": "General"
+      }
+    ],
+    "keywords": [
+      "afk",
+      "anti",
+      "antiafk",
+      "block",
+      "blockafk",
+      "oguzhanumutlu",
+      "one",
+      "oneblock"
+    ],
+    "api": [
+      {
+        "from": "3.0.0",
+        "to": "3.25.6"
+      }
+    ],
+    "deps": [],
+    "producers": {
+      "Collaborator": [
+        "OguzhanUmutlu"
+      ]
+    },
+    "state_name": "Approved",
+    "virions": [
+      {
+        "name": "libFormAPI",
+        "project_id": 4250,
+        "repo_id": 99399158,
+        "repo_name": "jojoe77777/FormAPI",
+        "repo_path": "",
+        "build_commit": "b34e519dd0fa6777a46583b1addf851ceaa2c723",
+        "build_id": 87202
+      }
+    ],
+    "status": "uploaded",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "release_id": 6384,
+    "original_repo": "OguzhanUmutlu/OneBlockAFK",
+    "build_commit_from_release_metadata": "15d52ef0c4a28d65a1ba35c0db8db1c70dc820df",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0004/plugin-6384-100015-oneblockafk-1.0.0-2b3dbe535b7a.phar",
+    "original_phar_sha256": "2b3dbe535b7a6bfd58d728682a611f2544d7554a464be70a90ac119cd15c74d2",
+    "sha256": "d4a528915c124fda097dc1d0f1196c03f9aa4bcb06ed5f1d4b0265f06474e69f",
+    "bytes": 8061,
+    "file_count": 11,
+    "php_files": 7,
+    "declared_license": "mit",
+    "license_display": "mit",
+    "storage_path": null,
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "recovered-sources-2026-10-14-0004",
+    "remote_asset_name": "recovered-source-6384-oneblockafk-1.0.0-d4a528915c12.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0004/recovered-source-6384-oneblockafk-1.0.0-d4a528915c12.zip",
+    "remote_sha256": "d4a528915c124fda097dc1d0f1196c03f9aa4bcb06ed5f1d4b0265f06474e69f",
+    "remote_asset_id": 654185277,
+    "uploaded_at": "2026-10-18T18:36:37Z",
+    "local_deleted": false
+  },
+  "12022": {
+    "id": 12022,
+    "name": "OnePlayerSleep",
+    "version": "1.0.0",
+    "html_url": "https://poggit.pmmp.io/p/OnePlayerSleep/1.0.0",
+    "tagline": "Only one player needs to sleep to skip the night!",
+    "artifact_url": "https://poggit.pmmp.io/r/217511",
+    "downloads": 2502,
+    "score": null,
+    "repo_id": 665770430,
+    "repo_name": "ecstsylove/OnePlayerSleep",
+    "project_id": 12776,
+    "project_name": "OnePlayerSleep",
+    "build_id": 160339,
+    "build_number": 10,
+    "build_commit": "e95aa47ae7a75cc9a319c1deda48a223adf46e9d",
+    "description_url": "https://poggit.pmmp.io/r/217516",
+    "icon_url": "https://raw.githubusercontent.com/iLVOEWOCK/OnePlayerSleep/e95aa47ae7a75cc9a319c1deda48a223adf46e9d/icon.png",
+    "changelog_url": "https://poggit.pmmp.io/r/0",
+    "license": "GPL-3.0",
+    "license_url": null,
+    "is_obsolete": false,
+    "is_pre_release": false,
+    "is_outdated": false,
+    "is_official": false,
+    "is_abandoned": false,
+    "submission_date": 1690006100,
+    "state": 5,
+    "last_state_change_date": 1690827279,
+    "categories": [
+      {
+        "major": true,
+        "category_name": "General"
+      }
+    ],
+    "keywords": [
+      "pmmp",
+      "pmmp-plugin",
+      "pocketmine",
+      "pocketmine-api",
+      "pocketmine-mp",
+      "pocketmine-plugin",
+      "pocketmine-plugins"
+    ],
+    "api": [
+      {
+        "from": "5.0.0",
+        "to": "5.36.0"
+      }
+    ],
+    "deps": [],
+    "producers": {
+      "Collaborator": [
+        "iLVOEWOCK"
+      ]
+    },
+    "state_name": "Approved",
+    "virions": [],
+    "status": "uploaded",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "release_id": 12022,
+    "original_repo": "ecstsylove/OnePlayerSleep",
+    "build_commit_from_release_metadata": "e95aa47ae7a75cc9a319c1deda48a223adf46e9d",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0004/plugin-12022-160339-oneplayersleep-1.0.0-4050601e3b18.phar",
+    "original_phar_sha256": "4050601e3b1849f7bb1fb7d78fb390f692243173c31b87244c42b18bb1cff4b4",
+    "sha256": "0f2e542989bee93682fcb0247decc17dcee6a49d138e475078fafacc500c6e85",
+    "bytes": 16324,
+    "file_count": 7,
+    "php_files": 3,
+    "declared_license": "GPL-3.0",
+    "license_display": "GPL-3.0",
+    "storage_path": null,
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "recovered-sources-2026-10-14-0004",
+    "remote_asset_name": "recovered-source-12022-oneplayersleep-1.0.0-0f2e542989be.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0004/recovered-source-12022-oneplayersleep-1.0.0-0f2e542989be.zip",
+    "remote_sha256": "0f2e542989bee93682fcb0247decc17dcee6a49d138e475078fafacc500c6e85",
+    "remote_asset_id": 654185335,
+    "uploaded_at": "2026-10-18T18:36:38Z",
+    "local_deleted": false
+  },
+  "5822": {
+    "id": 5822,
+    "name": "PlotRating",
+    "version": "1.1",
+    "html_url": "https://poggit.pmmp.io/p/PlotRating/1.1",
+    "tagline": "Create Rating Sings for Citybuild",
+    "artifact_url": "https://poggit.pmmp.io/r/112993",
+    "downloads": 722,
+    "score": 4,
+    "repo_id": 281672094,
+    "repo_name": "skillDev5235/PlotRating",
+    "project_id": 7469,
+    "project_name": "PlotRating",
+    "build_id": 94942,
+    "build_number": 26,
+    "build_commit": "1c78109b7a84d808590d2ee29a26548260c324f6",
+    "description_url": "https://poggit.pmmp.io/r/112992",
+    "icon_url": null,
+    "changelog_url": "https://poggit.pmmp.io/r/0",
+    "license": "mit",
+    "license_url": null,
+    "is_obsolete": false,
+    "is_pre_release": false,
+    "is_outdated": true,
+    "is_official": false,
+    "is_abandoned": false,
+    "submission_date": 1610435895,
+    "state": 5,
+    "last_state_change_date": 1610470876,
+    "categories": [
+      {
+        "major": true,
+        "category_name": "Admin Tools"
+      },
+      {
+        "major": false,
+        "category_name": "Fun"
+      },
+      {
+        "major": false,
+        "category_name": "Informational"
+      },
+      {
+        "major": false,
+        "category_name": "General"
+      }
+    ],
+    "keywords": [
+      "citybuild",
+      "myplot",
+      "plot",
+      "rating"
+    ],
+    "api": [
+      {
+        "from": "3.0.0",
+        "to": "3.25.6"
+      }
+    ],
+    "deps": [],
+    "producers": {
+      "Collaborator": [
+        "skillDev5235"
+      ]
+    },
+    "state_name": "Approved",
+    "virions": [],
+    "status": "uploaded",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "release_id": 5822,
+    "original_repo": "skillDev5235/PlotRating",
+    "build_commit_from_release_metadata": "1c78109b7a84d808590d2ee29a26548260c324f6",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0004/plugin-5822-94942-plotrating-1.1-89db658cd4c0.phar",
+    "original_phar_sha256": "89db658cd4c0efe64895eb9f512d59a576952220f67cabbd7d6accbafdee6617",
+    "sha256": "ed2f6553cf0609ff9d09c2a0d55a841b58b10b0fc600241eed64ef5f7fc6bcc8",
+    "bytes": 3759,
+    "file_count": 4,
+    "php_files": 1,
+    "declared_license": "mit",
+    "license_display": "mit",
+    "storage_path": null,
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "recovered-sources-2026-10-14-0004",
+    "remote_asset_name": "recovered-source-5822-plotrating-1.1-ed2f6553cf06.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0004/recovered-source-5822-plotrating-1.1-ed2f6553cf06.zip",
+    "remote_sha256": "ed2f6553cf0609ff9d09c2a0d55a841b58b10b0fc600241eed64ef5f7fc6bcc8",
+    "remote_asset_id": 654185379,
+    "uploaded_at": "2026-10-18T18:36:39Z",
+    "local_deleted": false
+  },
+  "5994": {
+    "id": 5994,
+    "name": "RandomDrops",
+    "version": "1.0.1",
+    "html_url": "https://poggit.pmmp.io/p/RandomDrops/1.0.1",
+    "tagline": "Lets you change drops in your server!",
+    "artifact_url": "https://poggit.pmmp.io/r/115988",
+    "downloads": 1256,
+    "score": 4,
+    "repo_id": 338787935,
+    "repo_name": "OguzhanUmutlu/RandomDrops",
+    "project_id": 8546,
+    "project_name": "RandomDrops",
+    "build_id": 96715,
+    "build_number": 14,
+    "build_commit": "7b171d7bc7d0fbad5c8ea859605fe27f703e6540",
+    "description_url": "https://poggit.pmmp.io/r/115985",
+    "icon_url": null,
+    "changelog_url": "https://poggit.pmmp.io/r/115987",
+    "license": "mit",
+    "license_url": null,
+    "is_obsolete": false,
+    "is_pre_release": false,
+    "is_outdated": true,
+    "is_official": false,
+    "is_abandoned": false,
+    "submission_date": 1613920111,
+    "state": 5,
+    "last_state_change_date": 1614009652,
+    "categories": [
+      {
+        "major": true,
+        "category_name": "Fun"
+      },
+      {
+        "major": false,
+        "category_name": "General"
+      }
+    ],
+    "keywords": [
+      "drop",
+      "drops",
+      "item",
+      "random"
+    ],
+    "api": [
+      {
+        "from": "3.0.0",
+        "to": "3.25.6"
+      }
+    ],
+    "deps": [],
+    "producers": {
+      "Collaborator": [
+        "OguzhanUmutlu"
+      ]
+    },
+    "state_name": "Approved",
+    "virions": [],
+    "status": "uploaded",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "release_id": 5994,
+    "original_repo": "OguzhanUmutlu/RandomDrops",
+    "build_commit_from_release_metadata": "7b171d7bc7d0fbad5c8ea859605fe27f703e6540",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0004/plugin-5994-96715-randomdrops-1.0.1-3dcb3a648dcd.phar",
+    "original_phar_sha256": "3dcb3a648dcd513b8713026e18ee625acbe97f47f432dab94a5a06b6248e1e73",
+    "sha256": "143dde66fe3267764db4decec39a6ca5bd7b3411bf98aa4738f83b68d038e679",
+    "bytes": 3179,
+    "file_count": 4,
+    "php_files": 1,
+    "declared_license": "mit",
+    "license_display": "mit",
+    "storage_path": null,
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "recovered-sources-2026-10-14-0004",
+    "remote_asset_name": "recovered-source-5994-randomdrops-1.0.1-143dde66fe32.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0004/recovered-source-5994-randomdrops-1.0.1-143dde66fe32.zip",
+    "remote_sha256": "143dde66fe3267764db4decec39a6ca5bd7b3411bf98aa4738f83b68d038e679",
+    "remote_asset_id": 654185409,
+    "uploaded_at": "2026-10-18T18:36:41Z",
+    "local_deleted": false
+  },
+  "5959": {
+    "id": 5959,
+    "name": "RandomDrops",
+    "version": "1.0.0",
+    "html_url": "https://poggit.pmmp.io/p/RandomDrops/1.0.0",
+    "tagline": "Lets you change drops in your server!",
+    "artifact_url": "https://poggit.pmmp.io/r/115593",
+    "downloads": 110,
+    "score": 4,
+    "repo_id": 338787935,
+    "repo_name": "OguzhanUmutlu/RandomDrops",
+    "project_id": 8546,
+    "project_name": "RandomDrops",
+    "build_id": 96604,
+    "build_number": 8,
+    "build_commit": "7a130d30acc3f35253b61ff1d17ade7544d700ce",
+    "description_url": "https://poggit.pmmp.io/r/115592",
+    "icon_url": null,
+    "changelog_url": "https://poggit.pmmp.io/r/0",
+    "license": "mit",
+    "license_url": null,
+    "is_obsolete": true,
+    "is_pre_release": false,
+    "is_outdated": true,
+    "is_official": false,
+    "is_abandoned": false,
+    "submission_date": 1613332417,
+    "state": 5,
+    "last_state_change_date": 1613409147,
+    "categories": [
+      {
+        "major": true,
+        "category_name": "Fun"
+      },
+      {
+        "major": false,
+        "category_name": "General"
+      }
+    ],
+    "keywords": [
+      "drop",
+      "drops",
+      "item",
+      "random"
+    ],
+    "api": [
+      {
+        "from": "3.0.0",
+        "to": "3.25.6"
+      }
+    ],
+    "deps": [],
+    "producers": {
+      "Collaborator": [
+        "OguzhanUmutlu"
+      ]
+    },
+    "state_name": "Approved",
+    "virions": [],
+    "status": "uploaded",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "release_id": 5959,
+    "original_repo": "OguzhanUmutlu/RandomDrops",
+    "build_commit_from_release_metadata": "7a130d30acc3f35253b61ff1d17ade7544d700ce",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0004/plugin-5959-96604-randomdrops-1.0.0-f0a0304811d0.phar",
+    "original_phar_sha256": "f0a0304811d0d7bcafd4e20b8ad74275fc18eef371ecea5efd8b69268fc80818",
+    "sha256": "9c1151e2bc124cd1c183599702e49e5f69b1ed8097eade7d37696014db6ace69",
+    "bytes": 3159,
+    "file_count": 4,
+    "php_files": 1,
+    "declared_license": "mit",
+    "license_display": "mit",
+    "storage_path": null,
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "recovered-sources-2026-10-14-0004",
+    "remote_asset_name": "recovered-source-5959-randomdrops-1.0.0-9c1151e2bc12.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0004/recovered-source-5959-randomdrops-1.0.0-9c1151e2bc12.zip",
+    "remote_sha256": "9c1151e2bc124cd1c183599702e49e5f69b1ed8097eade7d37696014db6ace69",
+    "remote_asset_id": 654185460,
+    "uploaded_at": "2026-10-18T18:36:42Z",
+    "local_deleted": false
+  },
+  "6549": {
+    "id": 6549,
+    "name": "RobotVerification",
+    "version": "1.0.0",
+    "html_url": "https://poggit.pmmp.io/p/RobotVerification/1.0.0",
+    "tagline": "Checks players if they are robot when they join",
+    "artifact_url": "https://poggit.pmmp.io/r/124202",
+    "downloads": 2158,
+    "score": 3,
+    "repo_id": 362245623,
+    "repo_name": "OguzhanUmutlu/RobotVerification",
+    "project_id": 8918,
+    "project_name": "RobotVerification",
+    "build_id": 101417,
+    "build_number": 1,
+    "build_commit": "4d3affcde359b0c9c83405401db51de2858fa37d",
+    "description_url": "https://poggit.pmmp.io/r/124201",
+    "icon_url": "https://raw.githubusercontent.com/OguzhanUmutlu/RobotVerification/4d3affcde359b0c9c83405401db51de2858fa37d/icon.png",
+    "changelog_url": "https://poggit.pmmp.io/r/0",
+    "license": "mit",
+    "license_url": null,
+    "is_obsolete": false,
+    "is_pre_release": false,
+    "is_outdated": true,
+    "is_official": false,
+    "is_abandoned": false,
+    "submission_date": 1619556560,
+    "state": 5,
+    "last_state_change_date": 1620668033,
+    "categories": [
+      {
+        "major": true,
+        "category_name": "Anti-Griefing Tools"
+      },
+      {
+        "major": false,
+        "category_name": "Miscellaneous"
+      },
+      {
+        "major": false,
+        "category_name": "Mechanics"
+      },
+      {
+        "major": false,
+        "category_name": "Informational"
+      },
+      {
+        "major": false,
+        "category_name": "General"
+      }
+    ],
+    "keywords": [],
+    "api": [
+      {
+        "from": "3.0.0",
+        "to": "3.25.6"
+      }
+    ],
+    "deps": [],
+    "producers": {
+      "Collaborator": [
+        "OguzhanUmutlu"
+      ]
+    },
+    "state_name": "Approved",
+    "virions": [
+      {
+        "name": "InvMenu",
+        "project_id": 1882,
+        "repo_id": 119814237,
+        "repo_name": "Muqsit/InvMenu",
+        "repo_path": "",
+        "build_commit": "68790d2d220c9b1ac27154552d2e012a76c843ed",
+        "build_id": 93958
+      }
+    ],
+    "status": "uploaded",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "release_id": 6549,
+    "original_repo": "OguzhanUmutlu/RobotVerification",
+    "build_commit_from_release_metadata": "4d3affcde359b0c9c83405401db51de2858fa37d",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0005/plugin-6549-101417-robotverification-1.0.0-26ddb72560b2.phar",
+    "original_phar_sha256": "26ddb72560b22b09ae25f0c68a4f018ebfc7ac375d826660f330773a889bb0a8",
+    "sha256": "f6556f87a05049fce021a99c1d9288279f5c49ff3a200ec35708d98924e0ac56",
+    "bytes": 27695,
+    "file_count": 24,
+    "php_files": 21,
+    "declared_license": "mit",
+    "license_display": "mit",
+    "storage_path": null,
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "recovered-sources-2026-10-14-0005",
+    "remote_asset_name": "recovered-source-6549-robotverification-1.0.0-f6556f87a050.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0005/recovered-source-6549-robotverification-1.0.0-f6556f87a050.zip",
+    "remote_sha256": "f6556f87a05049fce021a99c1d9288279f5c49ff3a200ec35708d98924e0ac56",
+    "remote_asset_id": 654185593,
+    "uploaded_at": "2026-10-18T18:36:45Z",
+    "local_deleted": false
+  },
+  "7309": {
+    "status": "recovered_local",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "name": "SignToDiscord",
+    "version": "1.0.1",
+    "release_id": 7309,
+    "original_repo": "OguzhanUmutlu/SignToDiscord",
+    "build_commit_from_release_metadata": "a9600c46fb719733bb547008de053572aa144f5e",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0005/plugin-7309-108395-signtodiscord-1.0.1-ed801f7bd983.phar",
+    "original_phar_sha256": "ed801f7bd983612d04fd4766cf4544425223d0a3bb23cc49c4bd848e7d277139",
+    "sha256": "a02ee94e3567eadaf2e2bca96fafd472832d411f750c596fab90073e58ddf889",
+    "bytes": 4021,
+    "file_count": 6,
+    "php_files": 3,
+    "declared_license": "mit",
+    "license_display": "mit",
+    "storage_path": "archive/recovered-sources/7309/signtodiscord-1.0.1-source-from-phar.zip"
+  },
+  "3740": {
+    "id": 3740,
+    "name": "PlayerSkinStealer",
+    "version": "1.0.0",
+    "html_url": "https://poggit.pmmp.io/p/PlayerSkinStealer/1.0.0",
+    "tagline": "you want that player's skin ? now you can try it!",
+    "artifact_url": "https://poggit.pmmp.io/r/74318",
+    "downloads": 6366,
+    "score": 4,
+    "repo_id": 236559413,
+    "repo_name": "mote166/SkinStealer",
+    "project_id": 6178,
+    "project_name": "SkinStealer",
+    "build_id": 70023,
+    "build_number": 2,
+    "build_commit": "72ed88b0804ac9a750fe12415763889a3de0f2cd",
+    "description_url": "https://poggit.pmmp.io/r/74317",
+    "icon_url": null,
+    "changelog_url": "https://poggit.pmmp.io/r/0",
+    "license": "unlicense",
+    "license_url": null,
+    "is_obsolete": false,
+    "is_pre_release": false,
+    "is_outdated": true,
+    "is_official": false,
+    "is_abandoned": false,
+    "submission_date": 1580169482,
+    "state": 5,
+    "last_state_change_date": 1580286153,
+    "categories": [
+      {
+        "major": true,
+        "category_name": "Fun"
+      },
+      {
+        "major": false,
+        "category_name": "Miscellaneous"
+      },
+      {
+        "major": false,
+        "category_name": "Admin Tools"
+      }
+    ],
+    "keywords": [
+      "skin",
+      "skinsteal",
+      "skinstealer"
+    ],
+    "api": [
+      {
+        "from": "3.0.0",
+        "to": "3.25.6"
+      }
+    ],
+    "deps": [],
+    "producers": {
+      "Collaborator": [
+        "mote166"
+      ]
+    },
+    "state_name": "Approved",
+    "virions": [],
+    "status": "uploaded",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "release_id": 3740,
+    "original_repo": "mote166/SkinStealer",
+    "build_commit_from_release_metadata": "72ed88b0804ac9a750fe12415763889a3de0f2cd",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0005/plugin-3740-70023-playerskinstealer-1.0.0-353f64e697a3.phar",
+    "original_phar_sha256": "353f64e697a3e632acfe2688f613d78e0b4186e649b8d66f58ccc0fcc3a6fa5f",
+    "sha256": "35316f07c3ecfa621bf3d151a25482b4f665bfbb612b8f6fc2f73ecab7b89e29",
+    "bytes": 2154,
+    "file_count": 3,
+    "php_files": 1,
+    "declared_license": "unlicense",
+    "license_display": "unlicense",
+    "storage_path": null,
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "recovered-sources-2026-10-14-0005",
+    "remote_asset_name": "recovered-source-3740-playerskinstealer-1.0.0-35316f07c3ec.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0005/recovered-source-3740-playerskinstealer-1.0.0-35316f07c3ec.zip",
+    "remote_sha256": "35316f07c3ecfa621bf3d151a25482b4f665bfbb612b8f6fc2f73ecab7b89e29",
+    "remote_asset_id": 654185658,
+    "uploaded_at": "2026-10-18T18:36:46Z",
+    "local_deleted": false
+  },
+  "6728": {
+    "status": "recovered_local",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "name": "SlimeBoost",
+    "version": "1.1.0",
+    "release_id": 6728,
+    "original_repo": "VazziDE/SlimeBoost",
+    "build_commit_from_release_metadata": "deadcc53d0efbdabec4d1e52c7cfce1e204027d6",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0005/plugin-6728-103204-slimeboost-1.1.0-985f6729b236.phar",
+    "original_phar_sha256": "985f6729b2367035a2719fc67e5c9374dbb1fe60851f4efb57fc95d5c94f959d",
+    "sha256": "a0bc6eb079fee43bcd3ea48aa18425ec89114069f294d5c209d3b6821de1bfd3",
+    "bytes": 3957,
+    "file_count": 6,
+    "php_files": 3,
+    "declared_license": "gpl-2.0",
+    "license_display": "gpl-2.0",
+    "storage_path": "archive/recovered-sources/6728/slimeboost-1.1.0-source-from-phar.zip"
+  },
+  "6707": {
+    "status": "recovered_local",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "name": "SlimeBoost",
+    "version": "1.0.0",
+    "release_id": 6707,
+    "original_repo": "VazziDE/SlimeBoost",
+    "build_commit_from_release_metadata": "f139dd874f121eedf8421958b0d3f192e7dadb6b",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0005/plugin-6707-102998-slimeboost-1.0.0-dc050fe99766.phar",
+    "original_phar_sha256": "dc050fe99766e001b93bc1a83d01a7b68f2f8a6777101e14cdedfa577f820471",
+    "sha256": "cfeeb55354a7fdc390157f448f22fb08b2858ebc5c0add7f8ac9a6ae4d196359",
+    "bytes": 3725,
+    "file_count": 6,
+    "php_files": 3,
+    "declared_license": "gpl-2.0",
+    "license_display": "gpl-2.0",
+    "storage_path": "archive/recovered-sources/6707/slimeboost-1.0.0-source-from-phar.zip"
+  },
+  "6478": {
+    "id": 6478,
+    "name": "StopLag",
+    "version": "1.0.0",
+    "html_url": "https://poggit.pmmp.io/p/StopLag/1.0.0",
+    "tagline": "Stops all laggy things in world(s) that you specified.",
+    "artifact_url": "https://poggit.pmmp.io/r/123029",
+    "downloads": 4042,
+    "score": 2,
+    "repo_id": 359181719,
+    "repo_name": "OguzhanUmutlu/StopLag",
+    "project_id": 8873,
+    "project_name": "StopLag",
+    "build_id": 100714,
+    "build_number": 1,
+    "build_commit": "34ef3147e744204ec1d0f331772f01315f8a030f",
+    "description_url": "https://poggit.pmmp.io/r/123028",
+    "icon_url": "https://raw.githubusercontent.com/OguzhanUmutlu/StopLag/34ef3147e744204ec1d0f331772f01315f8a030f/icon.png",
+    "changelog_url": "https://poggit.pmmp.io/r/0",
+    "license": "mit",
+    "license_url": null,
+    "is_obsolete": false,
+    "is_pre_release": false,
+    "is_outdated": true,
+    "is_official": false,
+    "is_abandoned": false,
+    "submission_date": 1618761469,
+    "state": 5,
+    "last_state_change_date": 1618842838,
+    "categories": [
+      {
+        "major": true,
+        "category_name": "Admin Tools"
+      },
+      {
+        "major": false,
+        "category_name": "Miscellaneous"
+      },
+      {
+        "major": false,
+        "category_name": "Mechanics"
+      },
+      {
+        "major": false,
+        "category_name": "Anti-Griefing Tools"
+      },
+      {
+        "major": false,
+        "category_name": "General"
+      }
+    ],
+    "keywords": [
+      "lag",
+      "anti",
+      "antilag",
+      "stop",
+      "stoplag",
+      "fps",
+      "tps",
+      "ps"
+    ],
+    "api": [
+      {
+        "from": "3.0.0",
+        "to": "3.25.6"
+      }
+    ],
+    "deps": [],
+    "producers": {
+      "Collaborator": [
+        "OguzhanUmutlu"
+      ]
+    },
+    "state_name": "Approved",
+    "virions": [],
+    "status": "uploaded",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "release_id": 6478,
+    "original_repo": "OguzhanUmutlu/StopLag",
+    "build_commit_from_release_metadata": "34ef3147e744204ec1d0f331772f01315f8a030f",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0005/plugin-6478-100714-stoplag-1.0.0-736d7acbd1c2.phar",
+    "original_phar_sha256": "736d7acbd1c25102efb738c3d7e773314508430a8fd1002bf617a62ac284d93e",
+    "sha256": "bdfd6ead745be2fb98fb12ec011288dc92fb0b65f73142bd5c931d0ca6233765",
+    "bytes": 2736,
+    "file_count": 3,
+    "php_files": 1,
+    "declared_license": "mit",
+    "license_display": "mit",
+    "storage_path": null,
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "recovered-sources-2026-10-14-0005",
+    "remote_asset_name": "recovered-source-6478-stoplag-1.0.0-bdfd6ead745b.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0005/recovered-source-6478-stoplag-1.0.0-bdfd6ead745b.zip",
+    "remote_sha256": "bdfd6ead745be2fb98fb12ec011288dc92fb0b65f73142bd5c931d0ca6233765",
+    "remote_asset_id": 654185737,
+    "uploaded_at": "2026-10-18T18:36:47Z",
+    "local_deleted": false
+  },
+  "7093": {
+    "id": 7093,
+    "name": "WorkersDemo",
+    "version": "1.0.1",
+    "html_url": "https://poggit.pmmp.io/p/WorkersDemo/1.0.1",
+    "tagline": "A plugin that adds worker entities to minecraft.",
+    "artifact_url": "https://poggit.pmmp.io/r/132891",
+    "downloads": 1517,
+    "score": 4,
+    "repo_id": 386053822,
+    "repo_name": "OguzhanUmutlu/WorkersDemo",
+    "project_id": 9265,
+    "project_name": "WorkersDemo",
+    "build_id": 106438,
+    "build_number": 11,
+    "build_commit": "2b5a5920bcb549a4cc7ad5af05a2bdc5af2c006b",
+    "description_url": "https://poggit.pmmp.io/r/132888",
+    "icon_url": "https://raw.githubusercontent.com/OguzhanUmutlu/WorkersDemo/2b5a5920bcb549a4cc7ad5af05a2bdc5af2c006b/icon.png",
+    "changelog_url": "https://poggit.pmmp.io/r/132890",
+    "license": "mit",
+    "license_url": null,
+    "is_obsolete": false,
+    "is_pre_release": false,
+    "is_outdated": true,
+    "is_official": false,
+    "is_abandoned": false,
+    "submission_date": 1626763444,
+    "state": 5,
+    "last_state_change_date": 1626878773,
+    "categories": [
+      {
+        "major": true,
+        "category_name": "Mechanics"
+      },
+      {
+        "major": false,
+        "category_name": "API plugins"
+      },
+      {
+        "major": false,
+        "category_name": "Miscellaneous"
+      },
+      {
+        "major": false,
+        "category_name": "Informational"
+      },
+      {
+        "major": false,
+        "category_name": "General"
+      }
+    ],
+    "keywords": [
+      "wor",
+      "worke"
+    ],
+    "api": [
+      {
+        "from": "3.0.0",
+        "to": "3.25.6"
+      }
+    ],
+    "deps": [],
+    "producers": {
+      "Collaborator": [
+        "OguzhanUmutlu"
+      ]
+    },
+    "state_name": "Approved",
+    "virions": [
+      {
+        "name": "pmforms",
+        "project_id": 4369,
+        "repo_id": 160079716,
+        "repo_name": "dktapps-pm-pl/pmforms",
+        "repo_path": "",
+        "build_commit": "eab8ac0adec2e2b094d141a9b711200183bbf268",
+        "build_id": 86018
+      },
+      {
+        "name": "InvMenu",
+        "project_id": 1882,
+        "repo_id": 119814237,
+        "repo_name": "Muqsit/InvMenu",
+        "repo_path": "",
+        "build_commit": "a3b121f31e2816639174da8f1c10a0a0e58643b5",
+        "build_id": 105482
+      }
+    ],
+    "status": "uploaded",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "release_id": 7093,
+    "original_repo": "OguzhanUmutlu/WorkersDemo",
+    "build_commit_from_release_metadata": "2b5a5920bcb549a4cc7ad5af05a2bdc5af2c006b",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0006/plugin-7093-106438-workersdemo-1.0.1-4219c34c1244.phar",
+    "original_phar_sha256": "4219c34c1244ad82f4251d7baaaa3d3aede914cf8f6ee95af37656a9504df7fe",
+    "sha256": "f0650a034c9f49103b4af535b0b25ff6143bea616ad1a4e626e8da5c44a2922a",
+    "bytes": 55316,
+    "file_count": 44,
+    "php_files": 41,
+    "declared_license": "mit",
+    "license_display": "mit",
+    "storage_path": null,
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "recovered-sources-2026-10-14-0006",
+    "remote_asset_name": "recovered-source-7093-workersdemo-1.0.1-f0650a034c9f.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0006/recovered-source-7093-workersdemo-1.0.1-f0650a034c9f.zip",
+    "remote_sha256": "f0650a034c9f49103b4af535b0b25ff6143bea616ad1a4e626e8da5c44a2922a",
+    "remote_asset_id": 654185847,
+    "uploaded_at": "2026-10-18T18:36:50Z",
+    "local_deleted": false
+  },
+  "7053": {
+    "id": 7053,
+    "name": "WorkersDemo",
+    "version": "1.0.0",
+    "html_url": "https://poggit.pmmp.io/p/WorkersDemo/1.0.0",
+    "tagline": "A plugin that adds worker entities to minecraft.",
+    "artifact_url": "https://poggit.pmmp.io/r/132267",
+    "downloads": 96,
+    "score": 4,
+    "repo_id": 386053822,
+    "repo_name": "OguzhanUmutlu/WorkersDemo",
+    "project_id": 9265,
+    "project_name": "WorkersDemo",
+    "build_id": 106134,
+    "build_number": 10,
+    "build_commit": "63aabbcbd60e160890b737e17d488e9bbc47778d",
+    "description_url": "https://poggit.pmmp.io/r/132266",
+    "icon_url": "https://raw.githubusercontent.com/OguzhanUmutlu/WorkersDemo/63aabbcbd60e160890b737e17d488e9bbc47778d/icon.png",
+    "changelog_url": "https://poggit.pmmp.io/r/0",
+    "license": "mit",
+    "license_url": null,
+    "is_obsolete": true,
+    "is_pre_release": false,
+    "is_outdated": true,
+    "is_official": false,
+    "is_abandoned": false,
+    "submission_date": 1626443130,
+    "state": 5,
+    "last_state_change_date": 1626716802,
+    "categories": [
+      {
+        "major": true,
+        "category_name": "Mechanics"
+      },
+      {
+        "major": false,
+        "category_name": "API plugins"
+      },
+      {
+        "major": false,
+        "category_name": "Miscellaneous"
+      },
+      {
+        "major": false,
+        "category_name": "Informational"
+      },
+      {
+        "major": false,
+        "category_name": "General"
+      }
+    ],
+    "keywords": [
+      "wor",
+      "worke"
+    ],
+    "api": [
+      {
+        "from": "3.0.0",
+        "to": "3.25.6"
+      }
+    ],
+    "deps": [],
+    "producers": {
+      "Collaborator": [
+        "OguzhanUmutlu"
+      ]
+    },
+    "state_name": "Approved",
+    "virions": [
+      {
+        "name": "pmforms",
+        "project_id": 4369,
+        "repo_id": 160079716,
+        "repo_name": "dktapps-pm-pl/pmforms",
+        "repo_path": "",
+        "build_commit": "eab8ac0adec2e2b094d141a9b711200183bbf268",
+        "build_id": 86018
+      },
+      {
+        "name": "InvMenu",
+        "project_id": 1882,
+        "repo_id": 119814237,
+        "repo_name": "Muqsit/InvMenu",
+        "repo_path": "",
+        "build_commit": "a3b121f31e2816639174da8f1c10a0a0e58643b5",
+        "build_id": 105482
+      }
+    ],
+    "status": "uploaded",
+    "method": "unphar",
+    "label": "Source from PHAR",
+    "release_id": 7053,
+    "original_repo": "OguzhanUmutlu/WorkersDemo",
+    "build_commit_from_release_metadata": "63aabbcbd60e160890b737e17d488e9bbc47778d",
+    "complete_git_snapshot": false,
+    "original_phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0006/plugin-7053-106134-workersdemo-1.0.0-0a4807bf1fc4.phar",
+    "original_phar_sha256": "0a4807bf1fc42b8c5e4afad70904d0ac64d39dfa3864f07df1511039782c5ce2",
+    "sha256": "eb83569c0caa01d6960a5fc37b8c56012e9cd2f9798e56b6da7dc7e9fd84ad2d",
+    "bytes": 55313,
+    "file_count": 44,
+    "php_files": 41,
+    "declared_license": "mit",
+    "license_display": "mit",
+    "storage_path": null,
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "recovered-sources-2026-10-14-0006",
+    "remote_asset_name": "recovered-source-7053-workersdemo-1.0.0-eb83569c0caa.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/recovered-sources-2026-10-14-0006/recovered-source-7053-workersdemo-1.0.0-eb83569c0caa.zip",
+    "remote_sha256": "eb83569c0caa01d6960a5fc37b8c56012e9cd2f9798e56b6da7dc7e9fd84ad2d",
+    "remote_asset_id": 654186140,
+    "uploaded_at": "2026-10-18T18:36:51Z",
+    "local_deleted": false
+  }
+}

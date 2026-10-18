@@ -9,7 +9,7 @@ An independent, non-commercial preservation catalog for PocketMine-MP plugin and
 - `repo_id`, `repo_name`, and `build_commit` are retained to identify the source revision used for each release. A pm-pl match is only a candidate until the commit is checked.
 - Original `.phar` files are downloaded unchanged and get a SHA-256 digest. Rebuilt virion PHARs are separate artifacts, shown as “Rebuilt PHAR,” and must never be labeled as Poggit's originals. Their source commit, virion version, builder, dependencies, and SHA-256 are recorded under `rebuilt_artifact` in the download data.
 - Verified PHAR and source ZIP files are stored as GitHub release assets in `poggit-archive/artifacts`. The publisher deletes each local copy only after GitHub reports the matching digest and byte size.
-- Items with a missing or ambiguous license remain marked for review before public redistribution. Keep author, source, Poggit page, and license attribution with every archived item.
+- Empty or missing license documents are recorded as **No License** while preserving upstream metadata and author/source attribution. This label records the absence of a license document; it does not assign a license. Nonempty custom license terms remain recorded for review.
 
 ## Poggit request and build limits
 
@@ -71,9 +71,33 @@ If both the original repository and its `pm-pl` candidates lack a build commit, 
 python .\scripts\fetch_sources.py --candidates-file .\data\snapshots\2026-10-14T20-07-25Z\source-recovery-candidates.json
 ```
 
-The downloader checks each new ZIP's commit directory, expanded size, and CRC integrity. Review the release's declared license and the source's license notices before publishing. Records marked `license_review_required` stay local and are skipped by the downloader, publisher, and remote reconciliation. After resolving the license, restore `status: "downloaded"` to make the file eligible for publication.
+The downloader checks each new ZIP's commit directory, expanded size, and CRC integrity. Preserve the release's declared license and the source's license notices. Empty or missing license documents display **No License**. Records explicitly marked `license_review_required` for unresolved custom terms stay local and are skipped by the downloader, publisher, and remote reconciliation. After resolving the record, restore `status: "downloaded"` to make the file eligible for publication.
 
 Use `publish_artifacts.py --kind sources --key-file <keys.txt> --keep-local` to publish a reviewed batch. The key file contains one exact source key per line; selecting a batch preserves the existing release shards. `source-recovery.json` records the investigation, recovered commits, and unresolved items for this snapshot.
+
+### Recover exact source from Software Heritage
+
+Software Heritage can retain a Git revision after its GitHub repository and forks become unavailable. `software-heritage-revisions.json` records the results of looking up the missing build commits through its revision API. Request and download directory bundles with:
+
+```powershell
+python .\scripts\recover_swh_sources.py --revision-file .\data\snapshots\2026-10-14T20-07-25Z\software-heritage-revisions.json --phase request
+python .\scripts\recover_swh_sources.py --revision-file .\data\snapshots\2026-10-14T20-07-25Z\software-heritage-revisions.json --phase recover
+```
+
+Vault bundles may take time to prepare; rerun the recovery phase after cooking finishes. The recovery tool rebuilds each Git blob and tree hash from the downloaded files and file modes, and requires the root tree ID to match the recorded revision. It creates a deterministic ZIP while preserving the Git file bytes. The ZIP container is reconstructed; its provenance is recorded in `source-downloads.json`. Publish these exact source snapshots with `--kind sources`.
+
+### Recover distribution source from PHARs
+
+When an exact Git source snapshot is unavailable, recover the files distributed in the verified original PHAR:
+
+```powershell
+python .\scripts\recover_phar_sources.py
+python .\scripts\publish_artifacts.py --kind recovered-sources --key-file <release-ids.txt> --keep-local
+```
+
+This requires PHP 8 or later with Phar support. The tool reads archive entries without executing the plugin or its stub and without deserializing PHAR metadata. It verifies the original PHAR SHA-256 and size, creates a deterministic ZIP, and reopens it to compare every packaged file byte for byte. Each ZIP contains `distribution/`, `RECOVERY.json` with per-file hashes and attribution, and a short explanation of its scope. Results are recorded by release ID in `recovered-sources.json`.
+
+The catalog prefers exact archived source and otherwise displays a separate **Source from PHAR** link. These distribution trees may omit repository files or contain bundled libraries and build-time changes. Empty or missing license information displays **No License**; original license metadata remains available in the data. `source-recovery-followup.json` records the additional investigation and distinguishes exact Git source from recovered PHAR contents.
 
 ## Astro site and JSON API
 
@@ -117,4 +141,4 @@ The browser links to verified archive release assets for original PHARs and sour
 
 ## Publishing checklist
 
-Keep author, source, Poggit page, and license metadata with every item. A missing license remains unverified and must not be described as permission to redistribute. Avoid branding that could make this independent archive look official.
+Keep author, source, Poggit page, and license metadata with every item. Record missing license documents as **No License**, preserve any upstream license field, and retain nonempty custom license terms for review. Avoid branding that could make this independent archive look official.
