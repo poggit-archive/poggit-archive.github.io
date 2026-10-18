@@ -244,6 +244,7 @@
   }
 
   function addPluginMeta(container, item, totalDownloads = item.downloads) {
+    addMeta(container, `${number(item.downloads)} downloads for this version`);
     addMeta(container, `${number(totalDownloads)} total downloads`);
     const license = String(item.license || "").trim();
     const source = state.sourceDownloads[`${item.repo_id}@${String(item.build_commit || "").toLowerCase()}`];
