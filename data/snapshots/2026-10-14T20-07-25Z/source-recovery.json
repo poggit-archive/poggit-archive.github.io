@@ -1,0 +1,3182 @@
+{
+  "schema_version": 1,
+  "snapshot_id": "2026-10-14T20-07-25Z",
+  "checked_at": "2026-10-18T18:14:17.400488+00:00",
+  "summary": {
+    "initial_plugins_without_any_archived_source": 54,
+    "initial_release_rows_without_archived_source": 115,
+    "exact_commits_found": 73,
+    "source_zips_published_and_remotely_verified": 69,
+    "plugins_with_new_archived_source": 25,
+    "fully_recovered_plugins": 24,
+    "partially_recovered_plugins": 1,
+    "license_review_required_commits": 4,
+    "commits_not_found_in_checked_backups": 42,
+    "remaining_plugins_without_any_archived_source": 29,
+    "remaining_release_rows_without_archived_source": 46,
+    "public_backup_commit_checks": 503,
+    "global_commit_searches": 42,
+    "current_pm_pl_public_repositories_checked": 1185
+  },
+  "findings": [
+    "All 54 original repositories returned HTTP 404 through both their stored GitHub name and repository ID. This does not distinguish deleted repositories from inaccessible private repositories.",
+    "The original source importer tried upstream and pm-pl basename candidates only; exact commits for 26 plugins survive in other public forks.",
+    "A current inventory of 1185 public pm-pl repositories still yielded only the two previously tried basename candidates, which lack the recorded build commits.",
+    "GitHub name searches, additional searches without the PHP language filter, selected alias searches, and exact-commit API checks found 73 matching source commits. Global SHA searches returned zero matches for the other 42 commits; this is not proof that no other copy exists.",
+    "Poggit resource URLs now redirect to https://github.com/poggit/release-archive. The inspected plugin directories contain PHARs and release metadata, not complete source-repository ZIPs.",
+    "BetterVoting 1.0.0, 1.0.1 and 1.0.2 declare a custom license, have no source license file, and have empty LICENSE.txt files in the official Poggit release archive. ChatToDiscord 1.1.1 declares no license and has no source license file. These four exact ZIPs remain local for review."
+  ],
+  "recovery_method": "Download an unchanged GitHub source ZIP from a public backup at the exact recorded build commit; verify GitHub commit SHA/tree, ZIP commit root, ZIP CRC, local SHA-256 and byte size, then verify the uploaded GitHub release asset independently.",
+  "alternative_for_unresolved_plugins": {
+    "method": "Recover distribution source files from original archived PHARs",
+    "verified_example": {
+      "source_url": "https://raw.githubusercontent.com/poggit/release-archive/102194b0b1022180fc774318f39cd2a10ee4bb27/OguzhanUmutlu/Friends/1.0.7/Friends_1.0.7.phar",
+      "official_archive_commit": "102194b0b1022180fc774318f39cd2a10ee4bb27",
+      "sha256": "103c2faf9e74ce5d127a5ca593e7670aca1229d6e30df1c3577c0ac4603bce63",
+      "bytes": 10392,
+      "php_files": 7,
+      "note": "Read-only PHAR inspection; plugin code and stub were not executed. Distribution contents do not establish a full Git source snapshot."
+    },
+    "limitation": "PHAR contents may omit repository files, build configuration and original dependencies, or include build-time transformations. Label any resulting ZIP as recovered from PHAR; do not treat it as a full source snapshot at the Git commit."
+  },
+  "publication": {
+    "artifact_repository": "poggit-archive/artifacts",
+    "local_catalog_updated": true,
+    "local_source_zips_retained": true,
+    "website_deployment": "The GitHub Pages workflow deploys this catalog when changes are pushed to main."
+  },
+  "plugins": [
+    {
+      "name": "AdminTroll",
+      "project_id": 4891,
+      "repo_id": 180187701,
+      "original_repository": "Swourire/AdminTroll-a-plugin-PocketMine-MP-",
+      "original_repository_check": {
+        "original": "Swourire/AdminTroll-a-plugin-PocketMine-MP-",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:56:52.837659+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "fully_recovered",
+      "releases_with_archived_source": 3,
+      "release_count": 3,
+      "checked_backups": [
+        "Raziqshah/AdminTroll-a-plugin-PocketMine-MP-"
+      ],
+      "releases": [
+        {
+          "release_id": 4209,
+          "version": "1.2.0",
+          "commit": "c6eb583c3922b99693729823b29d1fc804614174",
+          "key": "180187701@c6eb583c3922b99693729823b29d1fc804614174",
+          "status": "uploaded",
+          "declared_license": "apache-2.0",
+          "provider": "Raziqshah/AdminTroll-a-plugin-PocketMine-MP-",
+          "commit_url": "https://github.com/Raziqshah/AdminTroll-a-plugin-PocketMine-MP-/commit/c6eb583c3922b99693729823b29d1fc804614174",
+          "tree_sha": "5aa44450e9c71eac4cdd9aa49fd634e1f9ecf20f",
+          "sha256": "e6a09a5c12e4b43385bdd3876318f73b52de44f8314fcef1a7687e918da34168",
+          "bytes": 115275,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-180187701-c6eb583c3922b99693729823b29d1fc804614174-e6a09a5c12e4.zip",
+          "remote_asset_id": 654134968,
+          "remote_verified_at": "2026-10-18T18:13:35.076378+00:00"
+        },
+        {
+          "release_id": 2754,
+          "version": "1.1.0",
+          "commit": "e48fb02ac771bd39b94912b0c96763ddd876c4aa",
+          "key": "180187701@e48fb02ac771bd39b94912b0c96763ddd876c4aa",
+          "status": "uploaded",
+          "declared_license": "apache-2.0",
+          "provider": "Raziqshah/AdminTroll-a-plugin-PocketMine-MP-",
+          "commit_url": "https://github.com/Raziqshah/AdminTroll-a-plugin-PocketMine-MP-/commit/e48fb02ac771bd39b94912b0c96763ddd876c4aa",
+          "tree_sha": "538db7cb5f793f519544c023ab4e379874203328",
+          "sha256": "400cae76bce6a4c68591a0bad84c24e1eb76ac739f77eb3c96091c106611846f",
+          "bytes": 100007,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-180187701-e48fb02ac771bd39b94912b0c96763ddd876c4aa-400cae76bce6.zip",
+          "remote_asset_id": 654135000,
+          "remote_verified_at": "2026-10-18T18:13:35.647519+00:00"
+        },
+        {
+          "release_id": 2737,
+          "version": "1.0.0",
+          "commit": "a2b17d9b7b4d904aa4f26c7d689c6ec2758150cf",
+          "key": "180187701@a2b17d9b7b4d904aa4f26c7d689c6ec2758150cf",
+          "status": "uploaded",
+          "declared_license": "apache-2.0",
+          "provider": "Raziqshah/AdminTroll-a-plugin-PocketMine-MP-",
+          "commit_url": "https://github.com/Raziqshah/AdminTroll-a-plugin-PocketMine-MP-/commit/a2b17d9b7b4d904aa4f26c7d689c6ec2758150cf",
+          "tree_sha": "ebaca9df63edd15e268cd8951d2524d5df07dad3",
+          "sha256": "c24ce03ec484549bc2d5e4916629f22bf8c67f7433b460977a9219a8aca1aef5",
+          "bytes": 99544,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-180187701-a2b17d9b7b4d904aa4f26c7d689c6ec2758150cf-c24ce03ec484.zip",
+          "remote_asset_id": 654134922,
+          "remote_verified_at": "2026-10-18T18:13:34.468224+00:00"
+        }
+      ]
+    },
+    {
+      "name": "AntiAuraBot",
+      "project_id": 9341,
+      "repo_id": 388852433,
+      "original_repository": "OguzhanUmutlu/AntiAuraBot",
+      "original_repository_check": {
+        "original": "OguzhanUmutlu/AntiAuraBot",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:57:26.601760+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "exact_commit_not_found",
+      "releases_with_archived_source": 0,
+      "release_count": 1,
+      "checked_backups": [],
+      "releases": [
+        {
+          "release_id": 7227,
+          "version": "1.0.1",
+          "commit": "b420d48214ff9003171d25c27d10283ce55cdf4e",
+          "key": "388852433@b420d48214ff9003171d25c27d10283ce55cdf4e",
+          "status": "http_error",
+          "declared_license": "mit",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 0,
+          "global_commit_search_matches": 0
+        }
+      ]
+    },
+    {
+      "name": "AntiEnchantmentAbuse",
+      "project_id": 4295,
+      "repo_id": 159055237,
+      "original_repository": "radondev/AntiEnchantmentAbuse",
+      "original_repository_check": {
+        "original": "radondev/AntiEnchantmentAbuse",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:56:49.729405+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "exact_commit_not_found",
+      "releases_with_archived_source": 0,
+      "release_count": 1,
+      "checked_backups": [],
+      "releases": [
+        {
+          "release_id": 2108,
+          "version": "1.1.0",
+          "commit": "0ddd06b08aeaaf026b4b5b0e73eec864df43dac1",
+          "key": "159055237@0ddd06b08aeaaf026b4b5b0e73eec864df43dac1",
+          "status": "http_error",
+          "declared_license": "gpl-3.0",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 0,
+          "global_commit_search_matches": 0
+        }
+      ]
+    },
+    {
+      "name": "AutoClearLagg",
+      "project_id": 1854,
+      "repo_id": 119153558,
+      "original_repository": "TwistedAsylumMC/AutoClearLagg",
+      "original_repository_check": {
+        "original": "TwistedAsylumMC/AutoClearLagg",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:56:44.262412+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "fully_recovered",
+      "releases_with_archived_source": 2,
+      "release_count": 2,
+      "checked_backups": [
+        "DiarDev/AutoClearLagg",
+        "Shelly7w7/AutoClearLagg"
+      ],
+      "releases": [
+        {
+          "release_id": 4423,
+          "version": "3.1.0",
+          "commit": "1db862e3fbe225b73c378be4a5bff91b5084b0d4",
+          "key": "119153558@1db862e3fbe225b73c378be4a5bff91b5084b0d4",
+          "status": "uploaded",
+          "declared_license": "gpl-3.0",
+          "provider": "Shelly7w7/AutoClearLagg",
+          "commit_url": "https://github.com/Shelly7w7/AutoClearLagg/commit/1db862e3fbe225b73c378be4a5bff91b5084b0d4",
+          "tree_sha": "e7edb41e288d02b2a5901c1516038e2d288de440",
+          "sha256": "cf524f71f97fde5a7ebc672014f91dca04b0cc4844c153c828557f0f707f9195",
+          "bytes": 17179,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-119153558-1db862e3fbe225b73c378be4a5bff91b5084b0d4-cf524f71f97f.zip",
+          "remote_asset_id": 654133969,
+          "remote_verified_at": "2026-10-18T18:13:15.880685+00:00"
+        },
+        {
+          "release_id": 4182,
+          "version": "3.0.1",
+          "commit": "a093956450befbe0971e1776db041935a0d7a1a0",
+          "key": "119153558@a093956450befbe0971e1776db041935a0d7a1a0",
+          "status": "uploaded",
+          "declared_license": "gpl-3.0",
+          "provider": "Shelly7w7/AutoClearLagg",
+          "commit_url": "https://github.com/Shelly7w7/AutoClearLagg/commit/a093956450befbe0971e1776db041935a0d7a1a0",
+          "tree_sha": "9e2abdf9c6ac6a41d71ea657de3fe251f747fb83",
+          "sha256": "be7b55ccced470dad521b0a8067cd39230b73cfc0d152b4c79818de3373111cd",
+          "bytes": 17161,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-119153558-a093956450befbe0971e1776db041935a0d7a1a0-be7b55ccced4.zip",
+          "remote_asset_id": 654134015,
+          "remote_verified_at": "2026-10-18T18:13:16.503776+00:00"
+        }
+      ]
+    },
+    {
+      "name": "AutoSmelt",
+      "project_id": 9423,
+      "repo_id": 392603892,
+      "original_repository": "OguzhanUmutlu/AutoSmelt",
+      "original_repository_check": {
+        "original": "OguzhanUmutlu/AutoSmelt",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:57:29.131455+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "exact_commit_not_found",
+      "releases_with_archived_source": 0,
+      "release_count": 1,
+      "checked_backups": [
+        "Ad5001/AutoSmelt",
+        "BlackWebPE/AutoSmelt",
+        "ChiefArtz/AutoSmelt",
+        "DymekGMZ/AutoSmelt",
+        "JackCasto/AutoSmelt",
+        "Taylor-pm-pl/AutoSmeltOre",
+        "XackiGiFF/AutoSmeltOre",
+        "achedon12/AutoSmelter",
+        "byLeander/AutoSmelter",
+        "iZeaoGamer/AutoSmelt",
+        "pm-pl/AutoSmeltOre"
+      ],
+      "releases": [
+        {
+          "release_id": 7245,
+          "version": "1.0.0",
+          "commit": "db8ca5fb378bec537356c7e72302cdeea98dca81",
+          "key": "392603892@db8ca5fb378bec537356c7e72302cdeea98dca81",
+          "status": "http_error",
+          "declared_license": "mit",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 11,
+          "global_commit_search_matches": 0
+        }
+      ]
+    },
+    {
+      "name": "BetterVoting",
+      "project_id": 4388,
+      "repo_id": 161699081,
+      "original_repository": "TwistedAsylumMC/BetterVoting",
+      "original_repository_check": {
+        "original": "TwistedAsylumMC/BetterVoting",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:56:51.795782+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "partially_recovered",
+      "releases_with_archived_source": 8,
+      "release_count": 11,
+      "checked_backups": [
+        "BayAlper10/BetterVoting"
+      ],
+      "releases": [
+        {
+          "release_id": 5033,
+          "version": "2.0.2",
+          "commit": "0b7bd8b0679ffc993e11c35d3cfa09ae78c6a626",
+          "key": "161699081@0b7bd8b0679ffc993e11c35d3cfa09ae78c6a626",
+          "status": "uploaded",
+          "declared_license": "mit",
+          "provider": "BayAlper10/BetterVoting",
+          "commit_url": "https://github.com/BayAlper10/BetterVoting/commit/0b7bd8b0679ffc993e11c35d3cfa09ae78c6a626",
+          "tree_sha": "7c4b6130de4b947c561f24cbd042428a1658b944",
+          "sha256": "5cc727ee958dec5f11b005ae7e259d38ff557161b9ff87cc1dc9d0180a364fe5",
+          "bytes": 23152,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-161699081-0b7bd8b0679ffc993e11c35d3cfa09ae78c6a626-5cc727ee958d.zip",
+          "remote_asset_id": 654134674,
+          "remote_verified_at": "2026-10-18T18:13:29.277921+00:00"
+        },
+        {
+          "release_id": 5015,
+          "version": "2.0.1",
+          "commit": "78334520c28e21dc41078e57c1e541cd4dcd1464",
+          "key": "161699081@78334520c28e21dc41078e57c1e541cd4dcd1464",
+          "status": "uploaded",
+          "declared_license": "mit",
+          "provider": "BayAlper10/BetterVoting",
+          "commit_url": "https://github.com/BayAlper10/BetterVoting/commit/78334520c28e21dc41078e57c1e541cd4dcd1464",
+          "tree_sha": "f40db1921578b727b8bba432085f4df38340e38b",
+          "sha256": "eb9bfeb80875305f188ae16ab40cb1cd5a99baf78cf25f9da66640c5bf51ebb3",
+          "bytes": 23138,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-161699081-78334520c28e21dc41078e57c1e541cd4dcd1464-eb9bfeb80875.zip",
+          "remote_asset_id": 654134732,
+          "remote_verified_at": "2026-10-18T18:13:30.866231+00:00"
+        },
+        {
+          "release_id": 4008,
+          "version": "2.0.0",
+          "commit": "b3f2b97026a2c57f8d979873a9657963f9c00a84",
+          "key": "161699081@b3f2b97026a2c57f8d979873a9657963f9c00a84",
+          "status": "uploaded",
+          "declared_license": "mit",
+          "provider": "BayAlper10/BetterVoting",
+          "commit_url": "https://github.com/BayAlper10/BetterVoting/commit/b3f2b97026a2c57f8d979873a9657963f9c00a84",
+          "tree_sha": "871cb22796e081c1b29a0154a83b8b859c1a1a3d",
+          "sha256": "9c0be3684a0708719dea0176df80298c19c746d1e25afc8d74ad2d6d26598488",
+          "bytes": 23153,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-161699081-b3f2b97026a2c57f8d979873a9657963f9c00a84-9c0be3684a07.zip",
+          "remote_asset_id": 654134761,
+          "remote_verified_at": "2026-10-18T18:13:31.464370+00:00"
+        },
+        {
+          "release_id": 3800,
+          "version": "1.7",
+          "commit": "c4c1b7e03383e37c69bab0285e0f3b8319a8885c",
+          "key": "161699081@c4c1b7e03383e37c69bab0285e0f3b8319a8885c",
+          "status": "uploaded",
+          "declared_license": "mit",
+          "provider": "BayAlper10/BetterVoting",
+          "commit_url": "https://github.com/BayAlper10/BetterVoting/commit/c4c1b7e03383e37c69bab0285e0f3b8319a8885c",
+          "tree_sha": "ea0d236127c6290445cfd5b8cd7d776995a20c4d",
+          "sha256": "2105d0b9d0aa7a0589d204e4fbd5b07903ae3d02f43a9fecaab8217efbf5501c",
+          "bytes": 10133,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-161699081-c4c1b7e03383e37c69bab0285e0f3b8319a8885c-2105d0b9d0aa.zip",
+          "remote_asset_id": 654134796,
+          "remote_verified_at": "2026-10-18T18:13:32.644998+00:00"
+        },
+        {
+          "release_id": 3567,
+          "version": "1.6",
+          "commit": "4d8226a88407a0ea703c81509c24f08529de37fa",
+          "key": "161699081@4d8226a88407a0ea703c81509c24f08529de37fa",
+          "status": "uploaded",
+          "declared_license": "mit",
+          "provider": "BayAlper10/BetterVoting",
+          "commit_url": "https://github.com/BayAlper10/BetterVoting/commit/4d8226a88407a0ea703c81509c24f08529de37fa",
+          "tree_sha": "e4db1ffb9644206d2de8282edef61dfdbb7d99db",
+          "sha256": "73b32a9851b7c270eb0ed17b15e34454e71c6fb58dcf8a21f1a0eb9f808bde59",
+          "bytes": 10143,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-161699081-4d8226a88407a0ea703c81509c24f08529de37fa-73b32a9851b7.zip",
+          "remote_asset_id": 654134710,
+          "remote_verified_at": "2026-10-18T18:13:30.288584+00:00"
+        },
+        {
+          "release_id": 2784,
+          "version": "1.5.0",
+          "commit": "c2e1d484c088bc95ece990276b76e8d847ddc57f",
+          "key": "161699081@c2e1d484c088bc95ece990276b76e8d847ddc57f",
+          "status": "uploaded",
+          "declared_license": "mit",
+          "provider": "BayAlper10/BetterVoting",
+          "commit_url": "https://github.com/BayAlper10/BetterVoting/commit/c2e1d484c088bc95ece990276b76e8d847ddc57f",
+          "tree_sha": "42bec792734c299225106424febdfd21f76b25d6",
+          "sha256": "f600e1b00a74b69ef5be07bf9ed627fa141a2278e59862655a9ca9144c5cbd95",
+          "bytes": 10166,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-161699081-c2e1d484c088bc95ece990276b76e8d847ddc57f-f600e1b00a74.zip",
+          "remote_asset_id": 654134782,
+          "remote_verified_at": "2026-10-18T18:13:32.024761+00:00"
+        },
+        {
+          "release_id": 2762,
+          "version": "1.4.0",
+          "commit": "c9f6807eee917d0ee2cfd6a77a259da9cff953d1",
+          "key": "161699081@c9f6807eee917d0ee2cfd6a77a259da9cff953d1",
+          "status": "uploaded",
+          "declared_license": "mit",
+          "provider": "BayAlper10/BetterVoting",
+          "commit_url": "https://github.com/BayAlper10/BetterVoting/commit/c9f6807eee917d0ee2cfd6a77a259da9cff953d1",
+          "tree_sha": "82ebde9e3b8a31897ec4cb588cf7379d16a39fb7",
+          "sha256": "ab6c9ef210b284679a48006bb96db227c0e4b0518dc39ad59676d49e0245f6f0",
+          "bytes": 10172,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-161699081-c9f6807eee917d0ee2cfd6a77a259da9cff953d1-ab6c9ef210b2.zip",
+          "remote_asset_id": 654134830,
+          "remote_verified_at": "2026-10-18T18:13:33.234369+00:00"
+        },
+        {
+          "release_id": 2455,
+          "version": "1.3.0",
+          "commit": "d058143c25721e249c490f06ad7298e3c94c7849",
+          "key": "161699081@d058143c25721e249c490f06ad7298e3c94c7849",
+          "status": "uploaded",
+          "declared_license": "mit",
+          "provider": "BayAlper10/BetterVoting",
+          "commit_url": "https://github.com/BayAlper10/BetterVoting/commit/d058143c25721e249c490f06ad7298e3c94c7849",
+          "tree_sha": "c8f970152d47422e3550cd7b18456c8d330dadbe",
+          "sha256": "2dc77d58abacf353424bf2dfdda276d00f3be6edcc5c784b0ccee1a7c83bfb9c",
+          "bytes": 10127,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-161699081-d058143c25721e249c490f06ad7298e3c94c7849-2dc77d58abac.zip",
+          "remote_asset_id": 654134866,
+          "remote_verified_at": "2026-10-18T18:13:33.829353+00:00"
+        },
+        {
+          "release_id": 2256,
+          "version": "1.0.2",
+          "commit": "22b78db120f28e4be727145dc0f3bf93f3bb1305",
+          "key": "161699081@22b78db120f28e4be727145dc0f3bf93f3bb1305",
+          "status": "license_review_required",
+          "declared_license": "custom",
+          "provider": "BayAlper10/BetterVoting",
+          "commit_url": "https://github.com/BayAlper10/BetterVoting/commit/22b78db120f28e4be727145dc0f3bf93f3bb1305",
+          "tree_sha": "72db4ff4a0df684185acdfd5879979065de7ef7e",
+          "sha256": "4e7df33646188e9076a25784858b058a526223b1210523f708dedc73b3500454",
+          "bytes": 9184,
+          "reason": "The release declares a custom or missing license; this commit contains no license document establishing redistribution permission."
+        },
+        {
+          "release_id": 2212,
+          "version": "1.0.1",
+          "commit": "963d55ac39cdc4e81e6fff55a68999d28853a917",
+          "key": "161699081@963d55ac39cdc4e81e6fff55a68999d28853a917",
+          "status": "license_review_required",
+          "declared_license": "custom",
+          "provider": "BayAlper10/BetterVoting",
+          "commit_url": "https://github.com/BayAlper10/BetterVoting/commit/963d55ac39cdc4e81e6fff55a68999d28853a917",
+          "tree_sha": "455f3588b72c8376a7d429143c1c3d5d5d1fd252",
+          "sha256": "6d62cc7481a96b1fd08b262f8dccafd7f37ac74f0acf247edbdb70e181d2ded8",
+          "bytes": 9099,
+          "reason": "The release declares a custom or missing license; this commit contains no license document establishing redistribution permission."
+        },
+        {
+          "release_id": 2168,
+          "version": "1.0.0",
+          "commit": "89780106cf1b2fc188b8cb96ba1d36ac080e12ef",
+          "key": "161699081@89780106cf1b2fc188b8cb96ba1d36ac080e12ef",
+          "status": "license_review_required",
+          "declared_license": "custom",
+          "provider": "BayAlper10/BetterVoting",
+          "commit_url": "https://github.com/BayAlper10/BetterVoting/commit/89780106cf1b2fc188b8cb96ba1d36ac080e12ef",
+          "tree_sha": "37b0cec0d5d21dae78a4d55a29f2495c123b4032",
+          "sha256": "8c93d085355d438582e4a1c9427f5bb7a7195d314d0ecfc9a39b5c9d2262c509",
+          "bytes": 7538,
+          "reason": "The release declares a custom or missing license; this commit contains no license document establishing redistribution permission."
+        }
+      ]
+    },
+    {
+      "name": "BlockCMD",
+      "project_id": 1955,
+      "repo_id": 117761022,
+      "original_repository": "kenygamer/BlockCMD",
+      "original_repository_check": {
+        "original": "kenygamer/BlockCMD",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:56:42.778488+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "fully_recovered",
+      "releases_with_archived_source": 1,
+      "release_count": 1,
+      "checked_backups": [
+        "iZeaoGamer/BlockCMD"
+      ],
+      "releases": [
+        {
+          "release_id": 1058,
+          "version": "1.0.0-beta",
+          "commit": "f968f9d7b89fd953e7b7798bad6ce74ff6df42f6",
+          "key": "117761022@f968f9d7b89fd953e7b7798bad6ce74ff6df42f6",
+          "status": "uploaded",
+          "declared_license": "gpl-3.0",
+          "provider": "iZeaoGamer/BlockCMD",
+          "commit_url": "https://github.com/iZeaoGamer/BlockCMD/commit/f968f9d7b89fd953e7b7798bad6ce74ff6df42f6",
+          "tree_sha": "e5af9d4a6a99af7a6726a76877ae240e52c87f38",
+          "sha256": "2d1ca646ab3417216c4a3f919f4cded197daf2a33a49c62ed31bb2aea0779c09",
+          "bytes": 17544,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-117761022-f968f9d7b89fd953e7b7798bad6ce74ff6df42f6-2d1ca646ab34.zip",
+          "remote_asset_id": 654133879,
+          "remote_verified_at": "2026-10-18T18:13:15.307907+00:00"
+        }
+      ]
+    },
+    {
+      "name": "BlockHunt",
+      "project_id": 9292,
+      "repo_id": 387246953,
+      "original_repository": "OguzhanUmutlu/BlockHunt",
+      "original_repository_check": {
+        "original": "OguzhanUmutlu/BlockHunt",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:57:24.441854+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "fully_recovered",
+      "releases_with_archived_source": 4,
+      "release_count": 4,
+      "checked_backups": [
+        "BuildLike/BlockHunt",
+        "EpicArtz08999/BlockHunt",
+        "Lordvmc/BlockHunt",
+        "MadeAja/BlockHunt",
+        "PMVirus/Blockhunt",
+        "SkyDNA/BlockHunt",
+        "fpm-pl/BlockHunt",
+        "hoangphucthhpth/BlockHunt",
+        "iDirtniverse/BlockHunt",
+        "jdot-r/BlockHunt",
+        "mondan19/BlockHunt",
+        "thelucyclub/BlockHunt"
+      ],
+      "releases": [
+        {
+          "release_id": 7186,
+          "version": "1.0.3",
+          "commit": "46cd7d7d828954e409b8abe73705fa4386b8a5f9",
+          "key": "387246953@46cd7d7d828954e409b8abe73705fa4386b8a5f9",
+          "status": "uploaded",
+          "declared_license": "mit",
+          "provider": "MadeAja/BlockHunt",
+          "commit_url": "https://github.com/MadeAja/BlockHunt/commit/46cd7d7d828954e409b8abe73705fa4386b8a5f9",
+          "tree_sha": "6aa6fddef27cccd018d62ee5310404bf39017dd3",
+          "sha256": "2826a15348dcc0cef33dc8dadd59e13c54017e9998ad36e367139a5b2390fbf6",
+          "bytes": 99174,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-387246953-46cd7d7d828954e409b8abe73705fa4386b8a5f9-2826a15348dc.zip",
+          "remote_asset_id": 654137048,
+          "remote_verified_at": "2026-10-18T18:13:49.433457+00:00"
+        },
+        {
+          "release_id": 7129,
+          "version": "1.0.2",
+          "commit": "8a17054ab61667b2c9c082c8d47155df06958bf4",
+          "key": "387246953@8a17054ab61667b2c9c082c8d47155df06958bf4",
+          "status": "uploaded",
+          "declared_license": "mit",
+          "provider": "MadeAja/BlockHunt",
+          "commit_url": "https://github.com/MadeAja/BlockHunt/commit/8a17054ab61667b2c9c082c8d47155df06958bf4",
+          "tree_sha": "8171e50a2dd9904189179d99772ee783ed2b1868",
+          "sha256": "b0f540a341e716ac2994f059ecd50f16238346deee4b004ec33835a4fda07bf8",
+          "bytes": 99164,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-387246953-8a17054ab61667b2c9c082c8d47155df06958bf4-b0f540a341e7.zip",
+          "remote_asset_id": 654137118,
+          "remote_verified_at": "2026-10-18T18:13:59.171122+00:00"
+        },
+        {
+          "release_id": 7117,
+          "version": "1.0.1",
+          "commit": "76459dddd7cced7a0d074fd57370a9c93f9b76f1",
+          "key": "387246953@76459dddd7cced7a0d074fd57370a9c93f9b76f1",
+          "status": "uploaded",
+          "declared_license": "mit",
+          "provider": "MadeAja/BlockHunt",
+          "commit_url": "https://github.com/MadeAja/BlockHunt/commit/76459dddd7cced7a0d074fd57370a9c93f9b76f1",
+          "tree_sha": "151e85f5c1ae85549275089cfd57714b6f660766",
+          "sha256": "227c328ab97e165b9cc55a2fec7888f70bde8ca7ac97ee97a558c98ae13c27db",
+          "bytes": 95826,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-387246953-76459dddd7cced7a0d074fd57370a9c93f9b76f1-227c328ab97e.zip",
+          "remote_asset_id": 654137074,
+          "remote_verified_at": "2026-10-18T18:13:58.574326+00:00"
+        },
+        {
+          "release_id": 7078,
+          "version": "1.0.0",
+          "commit": "44baf5cd7a9bb1bb6b9ac3c91dc2e7cf5b985b1b",
+          "key": "387246953@44baf5cd7a9bb1bb6b9ac3c91dc2e7cf5b985b1b",
+          "status": "uploaded",
+          "declared_license": "mit",
+          "provider": "MadeAja/BlockHunt",
+          "commit_url": "https://github.com/MadeAja/BlockHunt/commit/44baf5cd7a9bb1bb6b9ac3c91dc2e7cf5b985b1b",
+          "tree_sha": "75fdfa5a206e2dd3bde2311a6d4b0302e26f96ee",
+          "sha256": "96005f4dfbe0f0017c97d6d50fc7b4a38fb57b96e74a448776aa1d37f63825c9",
+          "bytes": 95654,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-387246953-44baf5cd7a9bb1bb6b9ac3c91dc2e7cf5b985b1b-96005f4dfbe0.zip",
+          "remote_asset_id": 654137020,
+          "remote_verified_at": "2026-10-18T18:13:57.972743+00:00"
+        }
+      ]
+    },
+    {
+      "name": "BoostBlock",
+      "project_id": 9093,
+      "repo_id": 374426961,
+      "original_repository": "OguzhanUmutlu/BoostBlock",
+      "original_repository_check": {
+        "original": "OguzhanUmutlu/BoostBlock",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:57:19.114752+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "exact_commit_not_found",
+      "releases_with_archived_source": 0,
+      "release_count": 1,
+      "checked_backups": [
+        "AhmedAbdeen11/BoostBlockStrikeStrategy",
+        "TypedArrow/boostblock",
+        "jessiebroke/boostblocks"
+      ],
+      "releases": [
+        {
+          "release_id": 6910,
+          "version": "1.0.0",
+          "commit": "62f8acd9b941c39d00b3e7e0042f1fea7eb02abe",
+          "key": "374426961@62f8acd9b941c39d00b3e7e0042f1fea7eb02abe",
+          "status": "http_error",
+          "declared_license": "mit",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 3,
+          "global_commit_search_matches": 0
+        }
+      ]
+    },
+    {
+      "name": "BuyKeepInv",
+      "project_id": 8503,
+      "repo_id": 336217269,
+      "original_repository": "OguzhanUmutlu/BuyKeepInventory",
+      "original_repository_check": {
+        "original": "OguzhanUmutlu/BuyKeepInventory",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:57:01.605462+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "fully_recovered",
+      "releases_with_archived_source": 2,
+      "release_count": 2,
+      "checked_backups": [
+        "Endermanbugzjfc/BuyKeepInventory"
+      ],
+      "releases": [
+        {
+          "release_id": 6263,
+          "version": "1.0.1",
+          "commit": "a7d7a0114336c0b4dd71b4449160e98b09e32ed4",
+          "key": "336217269@a7d7a0114336c0b4dd71b4449160e98b09e32ed4",
+          "status": "uploaded",
+          "declared_license": "mit",
+          "provider": "Endermanbugzjfc/BuyKeepInventory",
+          "commit_url": "https://github.com/Endermanbugzjfc/BuyKeepInventory/commit/a7d7a0114336c0b4dd71b4449160e98b09e32ed4",
+          "tree_sha": "7eaac54c960f046bff0cf944bd5e6df45a36dde9",
+          "sha256": "7e7cdcdba7442b47682539d53c4e2efa7cf627affd4e7e05a065b6f495ae285f",
+          "bytes": 12535,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-336217269-a7d7a0114336c0b4dd71b4449160e98b09e32ed4-7e7cdcdba744.zip",
+          "remote_asset_id": 654136387,
+          "remote_verified_at": "2026-10-18T18:13:43.578883+00:00"
+        },
+        {
+          "release_id": 5962,
+          "version": "1.0.0",
+          "commit": "959e5bd9ce9862fc3cf3adf3c055f04af9f2d80b",
+          "key": "336217269@959e5bd9ce9862fc3cf3adf3c055f04af9f2d80b",
+          "status": "uploaded",
+          "declared_license": "mit",
+          "provider": "Endermanbugzjfc/BuyKeepInventory",
+          "commit_url": "https://github.com/Endermanbugzjfc/BuyKeepInventory/commit/959e5bd9ce9862fc3cf3adf3c055f04af9f2d80b",
+          "tree_sha": "55b9513a0de98fc4190db8c2bbc137e943b5d1f3",
+          "sha256": "abdb9a5fbd189479c10ddb9d6ec80ac7aeff23d18fb1f730f54b5367d4291838",
+          "bytes": 9212,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-336217269-959e5bd9ce9862fc3cf3adf3c055f04af9f2d80b-abdb9a5fbd18.zip",
+          "remote_asset_id": 654136327,
+          "remote_verified_at": "2026-10-18T18:13:52.514926+00:00"
+        }
+      ]
+    },
+    {
+      "name": "ChatLevel",
+      "project_id": 9458,
+      "repo_id": 393590536,
+      "original_repository": "OguzhanUmutlu/ChatLevel",
+      "original_repository_check": {
+        "original": "OguzhanUmutlu/ChatLevel",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:57:32.696190+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "exact_commit_not_found",
+      "releases_with_archived_source": 0,
+      "release_count": 1,
+      "checked_backups": [
+        "JurassicSPb/ChatLevelUp_11_10",
+        "Wheelcube/chatlevel-docs",
+        "Wheelcube/chatlevel-n8n-node",
+        "alden-project/ChatLevels",
+        "juanps-lang/chatlevel-styles"
+      ],
+      "releases": [
+        {
+          "release_id": 7292,
+          "version": "1.0.0",
+          "commit": "73b862edb693221e860c099ed12eef3719f51a6d",
+          "key": "393590536@73b862edb693221e860c099ed12eef3719f51a6d",
+          "status": "http_error",
+          "declared_license": "mit",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 5,
+          "global_commit_search_matches": 0
+        }
+      ]
+    },
+    {
+      "name": "ChatToDiscord",
+      "project_id": 370,
+      "repo_id": 87964338,
+      "original_repository": "eDroiid/ChatToDiscord",
+      "original_repository_check": {
+        "original": "eDroiid/ChatToDiscord",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:57:39.321562+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "license_review_required",
+      "releases_with_archived_source": 0,
+      "release_count": 1,
+      "checked_backups": [
+        "BradyJenkins/ChatToDiscord",
+        "RandomNonDev/ChatToDiscord",
+        "RevandDev/ChatToDiscord",
+        "axllrav/ChatToDiscord"
+      ],
+      "releases": [
+        {
+          "release_id": 415,
+          "version": "1.1.1",
+          "commit": "4bc4fa65c5cd2a9c3b57e6a19c0636ebab36150f",
+          "key": "87964338@4bc4fa65c5cd2a9c3b57e6a19c0636ebab36150f",
+          "status": "license_review_required",
+          "declared_license": "none",
+          "provider": "BradyJenkins/ChatToDiscord",
+          "commit_url": "https://github.com/BradyJenkins/ChatToDiscord/commit/4bc4fa65c5cd2a9c3b57e6a19c0636ebab36150f",
+          "tree_sha": "e9eac440f03ab648625a64b4bb36cd80bfda1260",
+          "sha256": "3292501c9b7d82f52bcfa50233ba8fc0e5675addf931e1b92a7d4123f0b39031",
+          "bytes": 58353,
+          "reason": "The release declares a custom or missing license; this commit contains no license document establishing redistribution permission."
+        }
+      ]
+    },
+    {
+      "name": "ChorusPlant",
+      "project_id": 9091,
+      "repo_id": 374229089,
+      "original_repository": "OguzhanUmutlu/ChorusPlant",
+      "original_repository_check": {
+        "original": "OguzhanUmutlu/ChorusPlant",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:57:18.068093+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "exact_commit_not_found",
+      "releases_with_archived_source": 0,
+      "release_count": 1,
+      "checked_backups": [],
+      "releases": [
+        {
+          "release_id": 6785,
+          "version": "1.0.0",
+          "commit": "66dde3b3c614b393f47afddafa8958d38dd33406",
+          "key": "374229089@66dde3b3c614b393f47afddafa8958d38dd33406",
+          "status": "http_error",
+          "declared_license": "mit",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 0,
+          "global_commit_search_matches": 0
+        }
+      ]
+    },
+    {
+      "name": "ChunkBorders",
+      "project_id": 7205,
+      "repo_id": 272527428,
+      "original_repository": "TwistedAsylumMC/ChunkBorders",
+      "original_repository_check": {
+        "original": "TwistedAsylumMC/ChunkBorders",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:56:55.978918+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "fully_recovered",
+      "releases_with_archived_source": 1,
+      "release_count": 1,
+      "checked_backups": [
+        "PoggitTestPlugins/ChunkBorders",
+        "fadijalal07/ChunkBorders",
+        "pm-pl/ChunkBorders",
+        "wizxrdx-pm-pl/ChunkBorders"
+      ],
+      "releases": [
+        {
+          "release_id": 4697,
+          "version": "1.0.0",
+          "commit": "36ab07d274e70f81e552fd5ca53559e8c940c1b2",
+          "key": "272527428@36ab07d274e70f81e552fd5ca53559e8c940c1b2",
+          "status": "uploaded",
+          "declared_license": "gpl-3.0",
+          "provider": "wizxrdx-pm-pl/ChunkBorders",
+          "commit_url": "https://github.com/wizxrdx-pm-pl/ChunkBorders/commit/36ab07d274e70f81e552fd5ca53559e8c940c1b2",
+          "tree_sha": "5dacb5d1d859d462830125bf9135ad9c1cef0e23",
+          "sha256": "1f14a1bababe2c56ab0cb7f3ea08db2b082ffe5a65abf299dc8c8e675460be6d",
+          "bytes": 18813,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0002/source-272527428-36ab07d274e70f81e552fd5ca53559e8c940c1b2-1f14a1bababe.zip",
+          "remote_asset_id": 654135648,
+          "remote_verified_at": "2026-10-18T18:13:39.557663+00:00"
+        }
+      ]
+    },
+    {
+      "name": "ClearPlayer",
+      "project_id": 4173,
+      "repo_id": 156429117,
+      "original_repository": "radondev/ClearPlayer",
+      "original_repository_check": {
+        "original": "radondev/ClearPlayer",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:56:47.689918+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "exact_commit_not_found",
+      "releases_with_archived_source": 0,
+      "release_count": 1,
+      "checked_backups": [
+        "Artsakhskiyy/ClearPlayerInv"
+      ],
+      "releases": [
+        {
+          "release_id": 2007,
+          "version": "1.0.0",
+          "commit": "8ace0fbb43c62fc3edebd373a6a4f83d3260dc57",
+          "key": "156429117@8ace0fbb43c62fc3edebd373a6a4f83d3260dc57",
+          "status": "http_error",
+          "declared_license": "gpl-3.0",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 1,
+          "global_commit_search_matches": 0
+        }
+      ]
+    },
+    {
+      "name": "CoinsSystem",
+      "project_id": 8695,
+      "repo_id": 348382793,
+      "original_repository": "VazziDE/CoinsSystem",
+      "original_repository_check": {
+        "original": "VazziDE/CoinsSystem",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:57:03.723567+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "exact_commit_not_found",
+      "releases_with_archived_source": 0,
+      "release_count": 1,
+      "checked_backups": [
+        "NxtCloudYT/CoinsSystem",
+        "Pocketmine-PHP/CoinsSystem",
+        "jsnfjsfjbwiea/CoinsSystem",
+        "mehrbod1gamer/CoinsSystem"
+      ],
+      "releases": [
+        {
+          "release_id": 6227,
+          "version": "1.2.0",
+          "commit": "683c4767b58e0695d9a802ec14da6c66801dd86d",
+          "key": "348382793@683c4767b58e0695d9a802ec14da6c66801dd86d",
+          "status": "http_error",
+          "declared_license": "gpl-3.0",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 4,
+          "global_commit_search_matches": 0
+        }
+      ]
+    },
+    {
+      "name": "ColorParticle",
+      "project_id": 9078,
+      "repo_id": 373558219,
+      "original_repository": "VazziDE/ColorParticle",
+      "original_repository_check": {
+        "original": "VazziDE/ColorParticle",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:57:17.033880+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "fully_recovered",
+      "releases_with_archived_source": 1,
+      "release_count": 1,
+      "checked_backups": [
+        "angga7togk/ColorParticle"
+      ],
+      "releases": [
+        {
+          "release_id": 6766,
+          "version": "1.2.1",
+          "commit": "67bb831075b6710181bed4b748e6873ecdfb7b47",
+          "key": "373558219@67bb831075b6710181bed4b748e6873ecdfb7b47",
+          "status": "uploaded",
+          "declared_license": "gpl-2.0",
+          "provider": "angga7togk/ColorParticle",
+          "commit_url": "https://github.com/angga7togk/ColorParticle/commit/67bb831075b6710181bed4b748e6873ecdfb7b47",
+          "tree_sha": "abfb2e8cb249dd6ba413bb7dd257c984f1983f2a",
+          "sha256": "91527c9d80f4908670c42bcefd50d67a44534dfd58faa955eebb963b4b378463",
+          "bytes": 40153,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-373558219-67bb831075b6710181bed4b748e6873ecdfb7b47-91527c9d80f4.zip",
+          "remote_asset_id": 654136867,
+          "remote_verified_at": "2026-10-18T18:13:46.511467+00:00"
+        }
+      ]
+    },
+    {
+      "name": "CommandEditor",
+      "project_id": 8930,
+      "repo_id": 363367009,
+      "original_repository": "OguzhanUmutlu/CommandEditor",
+      "original_repository_check": {
+        "original": "OguzhanUmutlu/CommandEditor",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:57:12.799655+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "exact_commit_not_found",
+      "releases_with_archived_source": 0,
+      "release_count": 2,
+      "checked_backups": [
+        "DaniDJunior/CommandEditor",
+        "ali-commits/zsh-commandEditor",
+        "arajkumarxactly/CommandEditor",
+        "k-omochi/CommandEditor",
+        "kjelili/commandeditor",
+        "neriya-friss/commandEditorPostgress",
+        "neruneru127/CommandEditor",
+        "zy13027/1_CommandEditorFronzenFixed_V21_RnD"
+      ],
+      "releases": [
+        {
+          "release_id": 6966,
+          "version": "1.0.2",
+          "commit": "981b79da61242130bf5a28336348956b7a03a9b4",
+          "key": "363367009@981b79da61242130bf5a28336348956b7a03a9b4",
+          "status": "http_error",
+          "declared_license": "mit",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 8,
+          "global_commit_search_matches": 0
+        },
+        {
+          "release_id": 6634,
+          "version": "1.0.1",
+          "commit": "60a1af1748b495649a19560f06903e389dc29425",
+          "key": "363367009@60a1af1748b495649a19560f06903e389dc29425",
+          "status": "http_error",
+          "declared_license": "mit",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 8,
+          "global_commit_search_matches": 0
+        }
+      ]
+    },
+    {
+      "name": "ComplexCrates",
+      "project_id": 8882,
+      "repo_id": 359755294,
+      "original_repository": "OguzhanUmutlu/ComplexCrates",
+      "original_repository_check": {
+        "original": "OguzhanUmutlu/ComplexCrates",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:57:10.594218+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "fully_recovered",
+      "releases_with_archived_source": 3,
+      "release_count": 3,
+      "checked_backups": [
+        "itsnawabcode/ComplexCrates"
+      ],
+      "releases": [
+        {
+          "release_id": 6588,
+          "version": "1.0.2",
+          "commit": "04b50c49898bb74bf2b64cc9a817e29ce98004ac",
+          "key": "359755294@04b50c49898bb74bf2b64cc9a817e29ce98004ac",
+          "status": "uploaded",
+          "declared_license": "mit",
+          "provider": "itsnawabcode/ComplexCrates",
+          "commit_url": "https://github.com/itsnawabcode/ComplexCrates/commit/04b50c49898bb74bf2b64cc9a817e29ce98004ac",
+          "tree_sha": "0fe7dc120b3058553a2e38304e546fc84f68fe6c",
+          "sha256": "ba16506e5d3fb2489d442616c4a4b29d2c7d87f66cb6457749423ac9f57d259e",
+          "bytes": 26066,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-359755294-04b50c49898bb74bf2b64cc9a817e29ce98004ac-ba16506e5d3f.zip",
+          "remote_asset_id": 654136797,
+          "remote_verified_at": "2026-10-18T18:13:45.922583+00:00"
+        },
+        {
+          "release_id": 6546,
+          "version": "1.0.1",
+          "commit": "0153b708edf389140b60e9f386fdff4519c4db43",
+          "key": "359755294@0153b708edf389140b60e9f386fdff4519c4db43",
+          "status": "uploaded",
+          "declared_license": "mit",
+          "provider": "itsnawabcode/ComplexCrates",
+          "commit_url": "https://github.com/itsnawabcode/ComplexCrates/commit/0153b708edf389140b60e9f386fdff4519c4db43",
+          "tree_sha": "1a047ecffb26ba1ee30897d7ff5b97d796e3524b",
+          "sha256": "b48d14b47b0b3e2f0728dd38ff2e68f9518a2f13889cf33591dd8b753cfc8002",
+          "bytes": 24428,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-359755294-0153b708edf389140b60e9f386fdff4519c4db43-b48d14b47b0b.zip",
+          "remote_asset_id": 654136762,
+          "remote_verified_at": "2026-10-18T18:13:56.204977+00:00"
+        },
+        {
+          "release_id": 6528,
+          "version": "1.0.0-dev",
+          "commit": "8aea6fb17159f27660bc8f95ce52afdcd622b2ac",
+          "key": "359755294@8aea6fb17159f27660bc8f95ce52afdcd622b2ac",
+          "status": "uploaded",
+          "declared_license": "mit",
+          "provider": "itsnawabcode/ComplexCrates",
+          "commit_url": "https://github.com/itsnawabcode/ComplexCrates/commit/8aea6fb17159f27660bc8f95ce52afdcd622b2ac",
+          "tree_sha": "2be081b96f569c0ba8e55dc21c96da403f9ad0d1",
+          "sha256": "b96f7b59fdb8bb2eee98d6dd011adb80dfe0df7a2d905b38f129f76e435fe2c0",
+          "bytes": 22921,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-359755294-8aea6fb17159f27660bc8f95ce52afdcd622b2ac-b96f7b59fdb8.zip",
+          "remote_asset_id": 654136839,
+          "remote_verified_at": "2026-10-18T18:13:56.780314+00:00"
+        }
+      ]
+    },
+    {
+      "name": "ComplexPets",
+      "project_id": 9393,
+      "repo_id": 391434734,
+      "original_repository": "OguzhanUmutlu/ComplexPets",
+      "original_repository_check": {
+        "original": "OguzhanUmutlu/ComplexPets",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:57:28.038178+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "fully_recovered",
+      "releases_with_archived_source": 1,
+      "release_count": 1,
+      "checked_backups": [
+        "MadeAja/ComplexPets"
+      ],
+      "releases": [
+        {
+          "release_id": 7224,
+          "version": "1.0.0",
+          "commit": "650ba06c5d705c9c457b276e54ad15b10e80c6b1",
+          "key": "391434734@650ba06c5d705c9c457b276e54ad15b10e80c6b1",
+          "status": "uploaded",
+          "declared_license": "mit",
+          "provider": "MadeAja/ComplexPets",
+          "commit_url": "https://github.com/MadeAja/ComplexPets/commit/650ba06c5d705c9c457b276e54ad15b10e80c6b1",
+          "tree_sha": "5e53fd533b7fff2e7210fedd3bff0dac13445595",
+          "sha256": "e89a487df404777a7a872d18fc5952ff6a0d6f3ccdc49cf9b5edee4a88ac0c45",
+          "bytes": 67593,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-391434734-650ba06c5d705c9c457b276e54ad15b10e80c6b1-e89a487df404.zip",
+          "remote_asset_id": 654137181,
+          "remote_verified_at": "2026-10-18T18:13:50.698241+00:00"
+        }
+      ]
+    },
+    {
+      "name": "DynamicFT",
+      "project_id": 8820,
+      "repo_id": 353303094,
+      "original_repository": "OguzhanUmutlu/DynamicFT",
+      "original_repository_check": {
+        "original": "OguzhanUmutlu/DynamicFT",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:57:07.402695+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "fully_recovered",
+      "releases_with_archived_source": 3,
+      "release_count": 3,
+      "checked_backups": [
+        "physiciancoder/DynamicFT"
+      ],
+      "releases": [
+        {
+          "release_id": 7226,
+          "version": "1.0.6",
+          "commit": "5559ac5034f8dddca857161db0b5d044a818c06d",
+          "key": "353303094@5559ac5034f8dddca857161db0b5d044a818c06d",
+          "status": "uploaded",
+          "declared_license": "mit",
+          "provider": "physiciancoder/DynamicFT",
+          "commit_url": "https://github.com/physiciancoder/DynamicFT/commit/5559ac5034f8dddca857161db0b5d044a818c06d",
+          "tree_sha": "3d9f35839352368f0b49c9b1028bae32753d3528",
+          "sha256": "e1a759618ba3ac89eec6ccd8218cceb214575da42d24cbe8e1cd160381dbc68e",
+          "bytes": 21836,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-353303094-5559ac5034f8dddca857161db0b5d044a818c06d-e1a759618ba3.zip",
+          "remote_asset_id": 654136605,
+          "remote_verified_at": "2026-10-18T18:13:45.343124+00:00"
+        },
+        {
+          "release_id": 6610,
+          "version": "1.0.5-dev2",
+          "commit": "c2d82b772ae7cfa9b4736f5ece1971d848a1a30a",
+          "key": "353303094@c2d82b772ae7cfa9b4736f5ece1971d848a1a30a",
+          "status": "uploaded",
+          "declared_license": "mit",
+          "provider": "physiciancoder/DynamicFT",
+          "commit_url": "https://github.com/physiciancoder/DynamicFT/commit/c2d82b772ae7cfa9b4736f5ece1971d848a1a30a",
+          "tree_sha": "0fd93c85c6f12727baa4ac0ad17ef6a31f3303eb",
+          "sha256": "592bd22c85c2801ff29dd2dbe60e095c92641f5f24e1dd7d5ffe442bba76177b",
+          "bytes": 21841,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-353303094-c2d82b772ae7cfa9b4736f5ece1971d848a1a30a-592bd22c85c2.zip",
+          "remote_asset_id": 654136699,
+          "remote_verified_at": "2026-10-18T18:13:55.590697+00:00"
+        },
+        {
+          "release_id": 6455,
+          "version": "1.0.2",
+          "commit": "86078ad6e37c8bf66c6e1302edbc2407b3346639",
+          "key": "353303094@86078ad6e37c8bf66c6e1302edbc2407b3346639",
+          "status": "uploaded",
+          "declared_license": "mit",
+          "provider": "physiciancoder/DynamicFT",
+          "commit_url": "https://github.com/physiciancoder/DynamicFT/commit/86078ad6e37c8bf66c6e1302edbc2407b3346639",
+          "tree_sha": "bd83dfc32903716cafd71c7ff7caf54b38612298",
+          "sha256": "181e32aebce4dc3954d4fbdbec0631e3e81f3be26fcec5cc46153e32c41f12ef",
+          "bytes": 26184,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-353303094-86078ad6e37c8bf66c6e1302edbc2407b3346639-181e32aebce4.zip",
+          "remote_asset_id": 654136657,
+          "remote_verified_at": "2026-10-18T18:13:54.980524+00:00"
+        }
+      ]
+    },
+    {
+      "name": "Friends",
+      "project_id": 8251,
+      "repo_id": 324139500,
+      "original_repository": "OguzhanUmutlu/FriendSystem",
+      "original_repository_check": {
+        "original": "OguzhanUmutlu/FriendSystem",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:57:00.562070+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "exact_commit_not_found",
+      "releases_with_archived_source": 0,
+      "release_count": 4,
+      "checked_backups": [
+        "105062270/friendSystem",
+        "BenyaminSaatlou/Friendsystem",
+        "EnchyID/FriendSystem",
+        "Fear-Team/FriendSystem",
+        "MrchllAnuu/FriendSystem",
+        "PubuduWickramathunge/FriendSystem",
+        "SKyTestBucket38/FriendSystemPE",
+        "SandhyR/FriendSystem",
+        "TiesGamesNL/FriendSystemPE",
+        "TruongHoangViet/FriendSystem",
+        "abrartoha/friendsystem",
+        "asifahmad143/friendSystem",
+        "connornee17/friendsystem_website",
+        "emirhanE/FriendSYSTEM",
+        "jdot-r/FriendSystemPE",
+        "silpa97/friendsystem",
+        "supercrafter333/FriendSystem",
+        "xpilow/FriendSystemPE"
+      ],
+      "releases": [
+        {
+          "release_id": 6304,
+          "version": "1.0.7",
+          "commit": "ea3e4cb06734a669e561df91e8ba7e13581dc39c",
+          "key": "324139500@ea3e4cb06734a669e561df91e8ba7e13581dc39c",
+          "status": "http_error",
+          "declared_license": "mit",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 18,
+          "global_commit_search_matches": 0
+        },
+        {
+          "release_id": 6086,
+          "version": "1.0.6",
+          "commit": "d222345af316dad19daccc1795f9ea654d10de7e",
+          "key": "324139500@d222345af316dad19daccc1795f9ea654d10de7e",
+          "status": "http_error",
+          "declared_license": "mit",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 18,
+          "global_commit_search_matches": 0
+        },
+        {
+          "release_id": 6068,
+          "version": "1.0.5",
+          "commit": "3705298aee8c54e45602019fd8e8a3a3a3432d74",
+          "key": "324139500@3705298aee8c54e45602019fd8e8a3a3a3432d74",
+          "status": "http_error",
+          "declared_license": "mit",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 18,
+          "global_commit_search_matches": 0
+        },
+        {
+          "release_id": 5745,
+          "version": "1.0.0",
+          "commit": "324527fd661a77f7718352461063d55c2d9168ec",
+          "key": "324139500@324527fd661a77f7718352461063d55c2d9168ec",
+          "status": "http_error",
+          "declared_license": "mit",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 18,
+          "global_commit_search_matches": 0
+        }
+      ]
+    },
+    {
+      "name": "FunctionPacks",
+      "project_id": 9232,
+      "repo_id": 384383208,
+      "original_repository": "OguzhanUmutlu/FunctionPacks",
+      "original_repository_check": {
+        "original": "OguzhanUmutlu/FunctionPacks",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:57:21.243900+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "fully_recovered",
+      "releases_with_archived_source": 1,
+      "release_count": 1,
+      "checked_backups": [
+        "CrozeStudios/FunctionPacks"
+      ],
+      "releases": [
+        {
+          "release_id": 7130,
+          "version": "1.0.1",
+          "commit": "04ebab0c454b99a51bafec9ac161f2b756bc5ed9",
+          "key": "384383208@04ebab0c454b99a51bafec9ac161f2b756bc5ed9",
+          "status": "uploaded",
+          "declared_license": "mit",
+          "provider": "CrozeStudios/FunctionPacks",
+          "commit_url": "https://github.com/CrozeStudios/FunctionPacks/commit/04ebab0c454b99a51bafec9ac161f2b756bc5ed9",
+          "tree_sha": "c408a0293736423203c94e2b0897aabce868b9b8",
+          "sha256": "50171394cadb8051f2ef63532d993fda0f9ad841790c05c6ae3cb48c831db12d",
+          "bytes": 10692,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-384383208-04ebab0c454b99a51bafec9ac161f2b756bc5ed9-50171394cadb.zip",
+          "remote_asset_id": 654136934,
+          "remote_verified_at": "2026-10-18T18:13:47.683792+00:00"
+        }
+      ]
+    },
+    {
+      "name": "GiveawayPlugin",
+      "project_id": 9136,
+      "repo_id": 377404666,
+      "original_repository": "EmangGek/GiveawayPlugin",
+      "original_repository_check": {
+        "original": "EmangGek/GiveawayPlugin",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:57:20.173658+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "fully_recovered",
+      "releases_with_archived_source": 1,
+      "release_count": 1,
+      "checked_backups": [
+        "InvalidNoah/GiveawayPlugin"
+      ],
+      "releases": [
+        {
+          "release_id": 6848,
+          "version": "1.0",
+          "commit": "8e38fed8e05afda126d111a6ff019120e4cacee2",
+          "key": "377404666@8e38fed8e05afda126d111a6ff019120e4cacee2",
+          "status": "uploaded",
+          "declared_license": "apache-2.0",
+          "provider": "InvalidNoah/GiveawayPlugin",
+          "commit_url": "https://github.com/InvalidNoah/GiveawayPlugin/commit/8e38fed8e05afda126d111a6ff019120e4cacee2",
+          "tree_sha": "4cf2c9f8dbc64537ea9cf5dbd6b1dbe3437b1cdc",
+          "sha256": "7e46092b2b3cb88a9c13f42d8c9781957e9cada045e568113d04d938ce484831",
+          "bytes": 9892,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-377404666-8e38fed8e05afda126d111a6ff019120e4cacee2-7e46092b2b3c.zip",
+          "remote_asset_id": 654136907,
+          "remote_verified_at": "2026-10-18T18:13:47.082535+00:00"
+        }
+      ]
+    },
+    {
+      "name": "Godmode",
+      "project_id": 9433,
+      "repo_id": 393148858,
+      "original_repository": "VazziDE/Godmode",
+      "original_repository_check": {
+        "original": "VazziDE/Godmode",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:57:30.588408+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "exact_commit_not_found",
+      "releases_with_archived_source": 0,
+      "release_count": 1,
+      "checked_backups": [
+        "BurritoMan46/GodMode",
+        "Godmode-n1tr0/otchet_Pr-33",
+        "Hudrolax/elastix_godmode",
+        "ImNotDev/GodMode",
+        "InspectorGadget/GodMode",
+        "JohnSwordPt/godmode",
+        "LukeDarling/GodMode",
+        "Mooncoder/GodMode",
+        "PocketMineItalianDevs/GodMode",
+        "TheRealDeveloper/Godmode",
+        "UB1AFU/GodMode",
+        "VonHirsch/GodMode",
+        "jalexiscv/wp-godmode",
+        "johnpoz/ai-godmode",
+        "linuxboytoo/pm-plugin-godmode",
+        "skyss0fly/GodmodePM4",
+        "wolf5/godmode",
+        "xShamir/GodMode"
+      ],
+      "releases": [
+        {
+          "release_id": 7265,
+          "version": "1.0.0",
+          "commit": "a76297de22528d2c529b796ca3447081bad42852",
+          "key": "393148858@a76297de22528d2c529b796ca3447081bad42852",
+          "status": "http_error",
+          "declared_license": "gpl-3.0",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 18,
+          "global_commit_search_matches": 0
+        }
+      ]
+    },
+    {
+      "name": "HiveCorruptor",
+      "project_id": 12656,
+      "repo_id": 655102572,
+      "original_repository": "JustTalDevelops/HiveCorruptor",
+      "original_repository_check": {
+        "original": "JustTalDevelops/HiveCorruptor",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:57:36.224705+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "exact_commit_not_found",
+      "releases_with_archived_source": 0,
+      "release_count": 1,
+      "checked_backups": [],
+      "releases": [
+        {
+          "release_id": 11715,
+          "version": "1.0.0",
+          "commit": "433b4e79c3952de3cdee9aacda84bb1e3f753285",
+          "key": "655102572@433b4e79c3952de3cdee9aacda84bb1e3f753285",
+          "status": "http_error",
+          "declared_license": "MIT",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 0,
+          "global_commit_search_matches": 0
+        }
+      ]
+    },
+    {
+      "name": "ImageConverter",
+      "project_id": 4123,
+      "repo_id": 155077145,
+      "original_repository": "korado531m7/ImageConverter",
+      "original_repository_check": {
+        "original": "korado531m7/ImageConverter",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:56:46.725521+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "exact_commit_not_found",
+      "releases_with_archived_source": 0,
+      "release_count": 4,
+      "checked_backups": [
+        "AlexanderLohmeyer/imageconverter",
+        "Amitminer/ImageConverter",
+        "Arcadnick/imageConverter",
+        "IgorOtr/ImageConverter",
+        "Pijushgupta/ImageConverter",
+        "Usmanshoukat001/multipleImageconverter",
+        "Yash-Lekinwala/Imageconverter",
+        "Yohnzz/ImageConverter",
+        "amteich/kirby-imageconverter",
+        "anujsahujuly2002-dev/imageConverterWebp",
+        "arungnair/imageconverter",
+        "baijingqi/imageconverter",
+        "bugsfind900/Imageconverter",
+        "chiragFullstack/imageConverter",
+        "damocolos/imageConvertersAngkring",
+        "fenvarien/imageconverter",
+        "happydude/imageconverter",
+        "igoiglesias/ImageConverter",
+        "itwork73/imageconverterwebp",
+        "jeishanul/ImageConverter",
+        "linuxsyr/imageconverter",
+        "major-mayer/imageconverter",
+        "onadrog/ImageConverterBundle",
+        "rapis94/imageconverter",
+        "sauvabelin/imageconverter",
+        "sfili81/imageConverter",
+        "shakeel2717/imageConverter",
+        "shaw04rahul/imageconverter",
+        "vincenz1991/wp-imageconverter"
+      ],
+      "releases": [
+        {
+          "release_id": 2715,
+          "version": "2.3.0",
+          "commit": "2643f22ffe577a4e47f0b4095d89e0bd0932b0af",
+          "key": "155077145@2643f22ffe577a4e47f0b4095d89e0bd0932b0af",
+          "status": "http_error",
+          "declared_license": "gpl-3.0",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 29,
+          "global_commit_search_matches": 0
+        },
+        {
+          "release_id": 2669,
+          "version": "2.2.0",
+          "commit": "daf675303aa3616db22e2253897e48dfdd5f38d4",
+          "key": "155077145@daf675303aa3616db22e2253897e48dfdd5f38d4",
+          "status": "http_error",
+          "declared_license": "gpl-3.0",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 29,
+          "global_commit_search_matches": 0
+        },
+        {
+          "release_id": 2028,
+          "version": "1.1.0",
+          "commit": "319beebd5779d94ffdf5b253a4f751583b29007b",
+          "key": "155077145@319beebd5779d94ffdf5b253a4f751583b29007b",
+          "status": "http_error",
+          "declared_license": "gpl-3.0",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 29,
+          "global_commit_search_matches": 0
+        },
+        {
+          "release_id": 1974,
+          "version": "1.0.0",
+          "commit": "d02e39d72a96cf3d8a033adf6c0ecd486b959a11",
+          "key": "155077145@d02e39d72a96cf3d8a033adf6c0ecd486b959a11",
+          "status": "http_error",
+          "declared_license": "gpl-3.0",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 29,
+          "global_commit_search_matches": 0
+        }
+      ]
+    },
+    {
+      "name": "ItemSpawners",
+      "project_id": 9275,
+      "repo_id": 386563608,
+      "original_repository": "OguzhanUmutlu/ItemSpawners",
+      "original_repository_check": {
+        "original": "OguzhanUmutlu/ItemSpawners",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:57:23.381190+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "fully_recovered",
+      "releases_with_archived_source": 2,
+      "release_count": 2,
+      "checked_backups": [
+        "MadeAja/ItemSpawners"
+      ],
+      "releases": [
+        {
+          "release_id": 7149,
+          "version": "1.0.1",
+          "commit": "9eca0fa9d2af816c4d3007ab68741642099fdaba",
+          "key": "386563608@9eca0fa9d2af816c4d3007ab68741642099fdaba",
+          "status": "uploaded",
+          "declared_license": "mit",
+          "provider": "MadeAja/ItemSpawners",
+          "commit_url": "https://github.com/MadeAja/ItemSpawners/commit/9eca0fa9d2af816c4d3007ab68741642099fdaba",
+          "tree_sha": "77ef6f1775c6e912bc12ae1400644f8309bed300",
+          "sha256": "3c2d497b18b1e6c48277c75ec965ab4dac49967328dc02065efa1745661b257c",
+          "bytes": 94890,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-386563608-9eca0fa9d2af816c4d3007ab68741642099fdaba-3c2d497b18b1.zip",
+          "remote_asset_id": 654136994,
+          "remote_verified_at": "2026-10-18T18:13:48.850253+00:00"
+        },
+        {
+          "release_id": 7054,
+          "version": "1.0.0",
+          "commit": "3a0937b8673296d41868bc164b764f24711ffad9",
+          "key": "386563608@3a0937b8673296d41868bc164b764f24711ffad9",
+          "status": "uploaded",
+          "declared_license": "mit",
+          "provider": "MadeAja/ItemSpawners",
+          "commit_url": "https://github.com/MadeAja/ItemSpawners/commit/3a0937b8673296d41868bc164b764f24711ffad9",
+          "tree_sha": "507fff75e9d1e31a49be9b761a993647570dcb66",
+          "sha256": "8372c2e9e49c921bd335a54a2bd23569a34ed6813a7aeb34be4a96c7a1ad6754",
+          "bytes": 94230,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-386563608-3a0937b8673296d41868bc164b764f24711ffad9-8372c2e9e49c.zip",
+          "remote_asset_id": 654136962,
+          "remote_verified_at": "2026-10-18T18:13:57.364400+00:00"
+        }
+      ]
+    },
+    {
+      "name": "KeepInv",
+      "project_id": 7582,
+      "repo_id": 286040861,
+      "original_repository": "AstraMCPE/KeepInventory",
+      "original_repository_check": {
+        "original": "AstraMCPE/KeepInventory",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:56:59.528082+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "exact_commit_not_found",
+      "releases_with_archived_source": 0,
+      "release_count": 1,
+      "checked_backups": [
+        "0pGam3rMC/PiZYDS-KeepInventory",
+        "Alderander/KeepInventory",
+        "Alderander/PiZYDS-KeepInventory",
+        "Aurora-MC/KeepInventory",
+        "BeeAZ-pm-pl/KeepInventory",
+        "KeepKill/PiZYDS-KeepInventory",
+        "KietTran0308/KeepInventory",
+        "NhanAZ-Plugins/KeepInventory",
+        "PillarsZhang/PiZYDS-KeepInventory",
+        "VeiledKernel/KeepInventory",
+        "itoytoy/PiZYDS-KeepInventory",
+        "komugi-mcbe/KeepInventory",
+        "pm-pl/KeepInventory",
+        "samuelctn/KeepInventory-SC",
+        "vickym1010/KeepInventoryMCPE",
+        "vickymaulana/KeepInventory-SC",
+        "vickymaulana/KeepInventory2"
+      ],
+      "releases": [
+        {
+          "release_id": 5083,
+          "version": "1.0.0",
+          "commit": "ca4648c1b4f7dc4ea8f65b9a11bac97694f633ce",
+          "key": "286040861@ca4648c1b4f7dc4ea8f65b9a11bac97694f633ce",
+          "status": "http_error",
+          "declared_license": "gpl-3.0",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 17,
+          "global_commit_search_matches": 0
+        }
+      ]
+    },
+    {
+      "name": "LuckyPouches",
+      "project_id": 13327,
+      "repo_id": 714585564,
+      "original_repository": "ecstsylove/LuckyPouches",
+      "original_repository_check": {
+        "original": "ecstsylove/LuckyPouches",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:57:38.208597+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "exact_commit_not_found",
+      "releases_with_archived_source": 0,
+      "release_count": 2,
+      "checked_backups": [
+        "NikV2/LuckyPouchesAPI"
+      ],
+      "releases": [
+        {
+          "release_id": 12614,
+          "version": "1.0.1",
+          "commit": "14188f882c881d2f77e337afc8ed71db7be38667",
+          "key": "714585564@14188f882c881d2f77e337afc8ed71db7be38667",
+          "status": "http_error",
+          "declared_license": "Apache-2.0",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 1,
+          "global_commit_search_matches": 0
+        },
+        {
+          "release_id": 12579,
+          "version": "1.0.0",
+          "commit": "78a3981c05ff803109e3dd86767d56ac47255531",
+          "key": "714585564@78a3981c05ff803109e3dd86767d56ac47255531",
+          "status": "http_error",
+          "declared_license": "Apache-2.0",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 1,
+          "global_commit_search_matches": 0
+        }
+      ]
+    },
+    {
+      "name": "Manhunt",
+      "project_id": 8963,
+      "repo_id": 365617377,
+      "original_repository": "OguzhanUmutlu/Manhunt",
+      "original_repository_check": {
+        "original": "OguzhanUmutlu/Manhunt",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:57:13.871098+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "exact_commit_not_found",
+      "releases_with_archived_source": 0,
+      "release_count": 3,
+      "checked_backups": [
+        "Lordbruposei666/manhunt-toolkit-otimizado",
+        "OGibbard/Manhunt",
+        "Sor3nt/Manhunt2-glg",
+        "Sor3nt/manhunt-toolkit",
+        "Sor3nt/manhunt-toolkit-ide",
+        "castaner103/manhunt-toolkit",
+        "deadguy718/manhunt-toolkit",
+        "ermaccer/manhunt-toolkit",
+        "manhunt-d/FMBbCodeBundle",
+        "manhunt-d/thetvdb2"
+      ],
+      "releases": [
+        {
+          "release_id": 7052,
+          "version": "1.0.2",
+          "commit": "fe710a89cca3ce42253b87a2008b52cd3ae5cc40",
+          "key": "365617377@fe710a89cca3ce42253b87a2008b52cd3ae5cc40",
+          "status": "http_error",
+          "declared_license": "mit",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 10,
+          "global_commit_search_matches": 0
+        },
+        {
+          "release_id": 6628,
+          "version": "1.0.1",
+          "commit": "d7631898814fbe3e82acee0d74040b2f15a24e67",
+          "key": "365617377@d7631898814fbe3e82acee0d74040b2f15a24e67",
+          "status": "http_error",
+          "declared_license": "mit",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 10,
+          "global_commit_search_matches": 0
+        },
+        {
+          "release_id": 6609,
+          "version": "1.0.0",
+          "commit": "2c33cff9bcb40266ba2f328e36b73d21b015f91c",
+          "key": "365617377@2c33cff9bcb40266ba2f328e36b73d21b015f91c",
+          "status": "http_error",
+          "declared_license": "mit",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 10,
+          "global_commit_search_matches": 0
+        }
+      ]
+    },
+    {
+      "name": "MoneyUI",
+      "project_id": 8985,
+      "repo_id": 367859690,
+      "original_repository": "OguzhanUmutlu/MoneyUI",
+      "original_repository_check": {
+        "original": "OguzhanUmutlu/MoneyUI",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:57:14.904072+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "exact_commit_not_found",
+      "releases_with_archived_source": 0,
+      "release_count": 1,
+      "checked_backups": [
+        "FoxyInABoxy/MoneyUI",
+        "deadbushmc/MoneyUI"
+      ],
+      "releases": [
+        {
+          "release_id": 6645,
+          "version": "1.0.0",
+          "commit": "fd13cf11ab7c3aeb25148ace97af237b6b7d4b37",
+          "key": "367859690@fd13cf11ab7c3aeb25148ace97af237b6b7d4b37",
+          "status": "http_error",
+          "declared_license": "mit",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 2,
+          "global_commit_search_matches": 0
+        }
+      ]
+    },
+    {
+      "name": "MultiEconomy",
+      "project_id": 4270,
+      "repo_id": 158875803,
+      "original_repository": "TwistedAsylumMC/MultiEconomy",
+      "original_repository_check": {
+        "original": "TwistedAsylumMC/MultiEconomy",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:56:48.723322+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "fully_recovered",
+      "releases_with_archived_source": 2,
+      "release_count": 2,
+      "checked_backups": [
+        "esh123cookie/MultiEconomy"
+      ],
+      "releases": [
+        {
+          "release_id": 3510,
+          "version": "2.0.0",
+          "commit": "9323e94e58141277dea6cd6dc66b2297b8f316fd",
+          "key": "158875803@9323e94e58141277dea6cd6dc66b2297b8f316fd",
+          "status": "uploaded",
+          "declared_license": "gpl-3.0",
+          "provider": "esh123cookie/MultiEconomy",
+          "commit_url": "https://github.com/esh123cookie/MultiEconomy/commit/9323e94e58141277dea6cd6dc66b2297b8f316fd",
+          "tree_sha": "1f7a49a945d6b11d670473fb9ef22a3c8c1f954d",
+          "sha256": "5f1808884799535258d16068f5176b17eb86c82b647b100e067dc933f0bce306",
+          "bytes": 30362,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-158875803-9323e94e58141277dea6cd6dc66b2297b8f316fd-5f1808884799.zip",
+          "remote_asset_id": 654134085,
+          "remote_verified_at": "2026-10-18T18:13:17.780211+00:00"
+        },
+        {
+          "release_id": 2393,
+          "version": "1.1.0",
+          "commit": "d33762760d13aa1065f54c27bbc50244270a1d18",
+          "key": "158875803@d33762760d13aa1065f54c27bbc50244270a1d18",
+          "status": "uploaded",
+          "declared_license": "unlicense",
+          "provider": "esh123cookie/MultiEconomy",
+          "commit_url": "https://github.com/esh123cookie/MultiEconomy/commit/d33762760d13aa1065f54c27bbc50244270a1d18",
+          "tree_sha": "83a2e168d2ad910bb29c87994db655fc7adb056e",
+          "sha256": "7b6daf690709f438f6ab3434ca230387e431765d6ad1cc2ad9c15ac4691dd2e9",
+          "bytes": 16222,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-158875803-d33762760d13aa1065f54c27bbc50244270a1d18-7b6daf690709.zip",
+          "remote_asset_id": 654134108,
+          "remote_verified_at": "2026-10-18T18:13:18.357423+00:00"
+        }
+      ]
+    },
+    {
+      "name": "MyWarp",
+      "project_id": 8793,
+      "repo_id": 353997984,
+      "original_repository": "lovetwice1012/MyWarp-en",
+      "original_repository_check": {
+        "original": "lovetwice1012/MyWarp-en",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:57:08.424946+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "exact_commit_not_found",
+      "releases_with_archived_source": 0,
+      "release_count": 2,
+      "checked_backups": [
+        "SpaceServerDev/MyWarp",
+        "komugi-mcbe/MyWarp",
+        "mmprofessx/MyWarp"
+      ],
+      "releases": [
+        {
+          "release_id": 6419,
+          "version": "1.1.0",
+          "commit": "06c8bf3f019f4b76ed04b3ecacf05f45223995a2",
+          "key": "353997984@06c8bf3f019f4b76ed04b3ecacf05f45223995a2",
+          "status": "http_error",
+          "declared_license": "mit",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 3,
+          "global_commit_search_matches": 0
+        },
+        {
+          "release_id": 6346,
+          "version": "1.0.0",
+          "commit": "ab90b52a76c7ff0bcd8d5139eb5677101504b4bf",
+          "key": "353997984@ab90b52a76c7ff0bcd8d5139eb5677101504b4bf",
+          "status": "http_error",
+          "declared_license": "mit",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 3,
+          "global_commit_search_matches": 0
+        }
+      ]
+    },
+    {
+      "name": "NoVPN",
+      "project_id": 6335,
+      "repo_id": 241331727,
+      "original_repository": "Cosmoverse/NoVPN",
+      "original_repository_check": {
+        "original": "Cosmoverse/NoVPN",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:56:54.911505+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "fully_recovered",
+      "releases_with_archived_source": 3,
+      "release_count": 3,
+      "checked_backups": [
+        "iZeaoGamer/NoVPN"
+      ],
+      "releases": [
+        {
+          "release_id": 4254,
+          "version": "0.1.4",
+          "commit": "d021ecf19797eaf17eefc7cb3affbfdaabe2967d",
+          "key": "241331727@d021ecf19797eaf17eefc7cb3affbfdaabe2967d",
+          "status": "uploaded",
+          "declared_license": "lgpl-3.0",
+          "provider": "iZeaoGamer/NoVPN",
+          "commit_url": "https://github.com/iZeaoGamer/NoVPN/commit/d021ecf19797eaf17eefc7cb3affbfdaabe2967d",
+          "tree_sha": "666dbef312731772aa79df6667bdb70bc040751d",
+          "sha256": "7da0ae7083de15a9bd997da16ca15dff94828b3730e6135d75eef768ed10bb26",
+          "bytes": 8288,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0002/source-241331727-d021ecf19797eaf17eefc7cb3affbfdaabe2967d-7da0ae7083de.zip",
+          "remote_asset_id": 654135610,
+          "remote_verified_at": "2026-10-18T18:13:38.982000+00:00"
+        },
+        {
+          "release_id": 3844,
+          "version": "0.1.3",
+          "commit": "2e76a11cd258c61949241b7cd3d0bff04f4466fa",
+          "key": "241331727@2e76a11cd258c61949241b7cd3d0bff04f4466fa",
+          "status": "uploaded",
+          "declared_license": "lgpl-3.0",
+          "provider": "iZeaoGamer/NoVPN",
+          "commit_url": "https://github.com/iZeaoGamer/NoVPN/commit/2e76a11cd258c61949241b7cd3d0bff04f4466fa",
+          "tree_sha": "463450c100c83fa5dd7e5d15f5ea4df711e5019a",
+          "sha256": "462fa5870f1759a03301ffd6dcd48ba5dbbf3cc107d11b2dcfe0586cf1923d35",
+          "bytes": 8286,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0002/source-241331727-2e76a11cd258c61949241b7cd3d0bff04f4466fa-462fa5870f17.zip",
+          "remote_asset_id": 654135535,
+          "remote_verified_at": "2026-10-18T18:13:37.787406+00:00"
+        },
+        {
+          "release_id": 3835,
+          "version": "0.0.1",
+          "commit": "5d768d916a31d6e400653a3548b78d61511af26d",
+          "key": "241331727@5d768d916a31d6e400653a3548b78d61511af26d",
+          "status": "uploaded",
+          "declared_license": "lgpl-3.0",
+          "provider": "iZeaoGamer/NoVPN",
+          "commit_url": "https://github.com/iZeaoGamer/NoVPN/commit/5d768d916a31d6e400653a3548b78d61511af26d",
+          "tree_sha": "ed9bf8791ac15c6634774eb7d5b978f0dd8f0a75",
+          "sha256": "041474a2140f3b62ec5aae2614f2d4762822e04d59c258c563715b275dda2523",
+          "bytes": 8255,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0002/source-241331727-5d768d916a31d6e400653a3548b78d61511af26d-041474a2140f.zip",
+          "remote_asset_id": 654135582,
+          "remote_verified_at": "2026-10-18T18:13:38.420578+00:00"
+        }
+      ]
+    },
+    {
+      "name": "OneBlockAFK",
+      "project_id": 8769,
+      "repo_id": 352938321,
+      "original_repository": "OguzhanUmutlu/OneBlockAFK",
+      "original_repository_check": {
+        "original": "OguzhanUmutlu/OneBlockAFK",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:57:04.851485+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "exact_commit_not_found",
+      "releases_with_archived_source": 0,
+      "release_count": 1,
+      "checked_backups": [
+        "Oneblockafkgard/Oneblockafkgard"
+      ],
+      "releases": [
+        {
+          "release_id": 6384,
+          "version": "1.0.0",
+          "commit": "15d52ef0c4a28d65a1ba35c0db8db1c70dc820df",
+          "key": "352938321@15d52ef0c4a28d65a1ba35c0db8db1c70dc820df",
+          "status": "http_error",
+          "declared_license": "mit",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 1,
+          "global_commit_search_matches": 0
+        }
+      ]
+    },
+    {
+      "name": "OnePlayerSleep",
+      "project_id": 12776,
+      "repo_id": 665770430,
+      "original_repository": "ecstsylove/OnePlayerSleep",
+      "original_repository_check": {
+        "original": "ecstsylove/OnePlayerSleep",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:57:37.210774+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "exact_commit_not_found",
+      "releases_with_archived_source": 0,
+      "release_count": 1,
+      "checked_backups": [
+        "Hai1126/OnePlayerSleep",
+        "HorlandoSR/OnePlayerSleep",
+        "VeoZaxOfficial/OnePlayerSleep"
+      ],
+      "releases": [
+        {
+          "release_id": 12022,
+          "version": "1.0.0",
+          "commit": "e95aa47ae7a75cc9a319c1deda48a223adf46e9d",
+          "key": "665770430@e95aa47ae7a75cc9a319c1deda48a223adf46e9d",
+          "status": "http_error",
+          "declared_license": "GPL-3.0",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 3,
+          "global_commit_search_matches": 0
+        }
+      ]
+    },
+    {
+      "name": "PlayerBan",
+      "project_id": 8993,
+      "repo_id": 352942843,
+      "original_repository": "Tobias-2006/PlayerBan",
+      "original_repository_check": {
+        "original": "Tobias-2006/PlayerBan",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:57:05.945904+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "fully_recovered",
+      "releases_with_archived_source": 4,
+      "release_count": 4,
+      "checked_backups": [
+        "supercrafter333/PlayerBan"
+      ],
+      "releases": [
+        {
+          "release_id": 7071,
+          "version": "1.2.1",
+          "commit": "2a7ff1b5bf35489d0a010b906453d28ed795b567",
+          "key": "352942843@2a7ff1b5bf35489d0a010b906453d28ed795b567",
+          "status": "uploaded",
+          "declared_license": "gpl-3.0",
+          "provider": "supercrafter333/PlayerBan",
+          "commit_url": "https://github.com/supercrafter333/PlayerBan/commit/2a7ff1b5bf35489d0a010b906453d28ed795b567",
+          "tree_sha": "9cd63b64bf372be0bde7aa1057d4731d8c42b7f4",
+          "sha256": "07dc68b9e9c235ec6beb7ebb7a8bd40ca8aec34b67322061b104b53ca1503b8a",
+          "bytes": 65009,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-352942843-2a7ff1b5bf35489d0a010b906453d28ed795b567-07dc68b9e9c2.zip",
+          "remote_asset_id": 654136458,
+          "remote_verified_at": "2026-10-18T18:13:44.646090+00:00"
+        },
+        {
+          "release_id": 6770,
+          "version": "1.2.0",
+          "commit": "574be8790e76a4e4c01044332c75abc5b563ebde",
+          "key": "352942843@574be8790e76a4e4c01044332c75abc5b563ebde",
+          "status": "uploaded",
+          "declared_license": "gpl-3.0",
+          "provider": "supercrafter333/PlayerBan",
+          "commit_url": "https://github.com/supercrafter333/PlayerBan/commit/574be8790e76a4e4c01044332c75abc5b563ebde",
+          "tree_sha": "eaa3771ad57070ebaad8968a154800070ebf9998",
+          "sha256": "8f7f5292b7ea242dd9f0f1134d1d8ef107b3669891cb634eb7bb4ef2194a033d",
+          "bytes": 64851,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-352942843-574be8790e76a4e4c01044332c75abc5b563ebde-8f7f5292b7ea.zip",
+          "remote_asset_id": 654136502,
+          "remote_verified_at": "2026-10-18T18:13:53.871460+00:00"
+        },
+        {
+          "release_id": 6722,
+          "version": "1.1.0",
+          "commit": "dd378782b8d1b9ccd90c147d09220f4e3c3e29f1",
+          "key": "352942843@dd378782b8d1b9ccd90c147d09220f4e3c3e29f1",
+          "status": "uploaded",
+          "declared_license": "gpl-3.0",
+          "provider": "supercrafter333/PlayerBan",
+          "commit_url": "https://github.com/supercrafter333/PlayerBan/commit/dd378782b8d1b9ccd90c147d09220f4e3c3e29f1",
+          "tree_sha": "e94908e944452a79fa968e7659c7783ed0568e52",
+          "sha256": "d80ef788a9629a84f80394751c2a348df210d7ab76cc45749c7cfef006e498a9",
+          "bytes": 58477,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-352942843-dd378782b8d1b9ccd90c147d09220f4e3c3e29f1-d80ef788a962.zip",
+          "remote_asset_id": 654136549,
+          "remote_verified_at": "2026-10-18T18:13:54.433050+00:00"
+        },
+        {
+          "release_id": 6683,
+          "version": "1.0.0",
+          "commit": "15bce4f023b2e08444e91aaf324435b0a89c8b56",
+          "key": "352942843@15bce4f023b2e08444e91aaf324435b0a89c8b56",
+          "status": "uploaded",
+          "declared_license": "gpl-3.0",
+          "provider": "supercrafter333/PlayerBan",
+          "commit_url": "https://github.com/supercrafter333/PlayerBan/commit/15bce4f023b2e08444e91aaf324435b0a89c8b56",
+          "tree_sha": "6804aca97f4f92949943e2f82b7885c887201dea",
+          "sha256": "e0dea789b3ee8fd406808a167caaf9cfd31c1b81766505c8865216c7bb42ff23",
+          "bytes": 43793,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-352942843-15bce4f023b2e08444e91aaf324435b0a89c8b56-e0dea789b3ee.zip",
+          "remote_asset_id": 654136429,
+          "remote_verified_at": "2026-10-18T18:13:53.120473+00:00"
+        }
+      ]
+    },
+    {
+      "name": "PlayerSkinStealer",
+      "project_id": 6178,
+      "repo_id": 236559413,
+      "original_repository": "mote166/SkinStealer",
+      "original_repository_check": {
+        "original": "mote166/SkinStealer",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:56:53.833837+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "exact_commit_not_found",
+      "releases_with_archived_source": 0,
+      "release_count": 1,
+      "checked_backups": [
+        "508903/SkinStealer",
+        "BroM1rSky/SkinStealer",
+        "Danding1314/SkinStealer",
+        "Hai1126/SkinStealer",
+        "ItsMwamOffi/SkinStealer",
+        "jdot-r/SkinStealer",
+        "lucasssss777/SkinStealer",
+        "xxAROX/SkinStealer"
+      ],
+      "releases": [
+        {
+          "release_id": 3740,
+          "version": "1.0.0",
+          "commit": "72ed88b0804ac9a750fe12415763889a3de0f2cd",
+          "key": "236559413@72ed88b0804ac9a750fe12415763889a3de0f2cd",
+          "status": "http_error",
+          "declared_license": "unlicense",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 8,
+          "global_commit_search_matches": 0
+        }
+      ]
+    },
+    {
+      "name": "PlotRating",
+      "project_id": 7469,
+      "repo_id": 281672094,
+      "original_repository": "skillDev5235/PlotRating",
+      "original_repository_check": {
+        "original": "skillDev5235/PlotRating",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:56:58.499657+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "exact_commit_not_found",
+      "releases_with_archived_source": 0,
+      "release_count": 1,
+      "checked_backups": [
+        "Anti-Meta/PlotRating",
+        "ambmt/PlotRating"
+      ],
+      "releases": [
+        {
+          "release_id": 5822,
+          "version": "1.1",
+          "commit": "1c78109b7a84d808590d2ee29a26548260c324f6",
+          "key": "281672094@1c78109b7a84d808590d2ee29a26548260c324f6",
+          "status": "http_error",
+          "declared_license": "mit",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 2,
+          "global_commit_search_matches": 0
+        }
+      ]
+    },
+    {
+      "name": "PoopCraft",
+      "project_id": 9499,
+      "repo_id": 395514155,
+      "original_repository": "sn3akrr/PoopCraft",
+      "original_repository_check": {
+        "original": "sn3akrr/PoopCraft",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:57:34.784552+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "fully_recovered",
+      "releases_with_archived_source": 2,
+      "release_count": 2,
+      "checked_backups": [
+        "MadeAja/PoopCraft"
+      ],
+      "releases": [
+        {
+          "release_id": 7369,
+          "version": "1.1.1-ALPHA",
+          "commit": "a479844c126f4786b063ad4afb51ab1577c2eb43",
+          "key": "395514155@a479844c126f4786b063ad4afb51ab1577c2eb43",
+          "status": "uploaded",
+          "declared_license": "gpl-3.0",
+          "provider": "MadeAja/PoopCraft",
+          "commit_url": "https://github.com/MadeAja/PoopCraft/commit/a479844c126f4786b063ad4afb51ab1577c2eb43",
+          "tree_sha": "507bcc441ff8aeadc005a15f632c7b463c9d168c",
+          "sha256": "abc2abdd7dc669a311eeb1815f80d6f87fb3a21f656645549808bc6b425227c1",
+          "bytes": 88494,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-395514155-a479844c126f4786b063ad4afb51ab1577c2eb43-abc2abdd7dc6.zip",
+          "remote_asset_id": 654137402,
+          "remote_verified_at": "2026-10-18T18:13:51.934157+00:00"
+        },
+        {
+          "release_id": 7368,
+          "version": "1.1.0-ALPHA",
+          "commit": "c9a4f14099e1b53d1372a9bc27c420d2e29791c0",
+          "key": "395514155@c9a4f14099e1b53d1372a9bc27c420d2e29791c0",
+          "status": "uploaded",
+          "declared_license": "gpl-3.0",
+          "provider": "MadeAja/PoopCraft",
+          "commit_url": "https://github.com/MadeAja/PoopCraft/commit/c9a4f14099e1b53d1372a9bc27c420d2e29791c0",
+          "tree_sha": "38b52d6f67f4993209bf39c24cf6f50caebeff1c",
+          "sha256": "56366b0db950bfcda8549a73d4f75da4108845e729b7a8f8f686a919dc0b0d0a",
+          "bytes": 88496,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-395514155-c9a4f14099e1b53d1372a9bc27c420d2e29791c0-56366b0db950.zip",
+          "remote_asset_id": 654137440,
+          "remote_verified_at": "2026-10-18T18:14:00.931189+00:00"
+        }
+      ]
+    },
+    {
+      "name": "RandomDrops",
+      "project_id": 8546,
+      "repo_id": 338787935,
+      "original_repository": "OguzhanUmutlu/RandomDrops",
+      "original_repository_check": {
+        "original": "OguzhanUmutlu/RandomDrops",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:57:02.650553+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "exact_commit_not_found",
+      "releases_with_archived_source": 0,
+      "release_count": 2,
+      "checked_backups": [
+        "AB-70/RandomDrops",
+        "Dart2112/RandomDrops",
+        "DiplomeMC/RandomDrops",
+        "Edwiix98/RandomDrops",
+        "Funboyy/RandomDrops",
+        "Guilleag01/randomDropsMinecraftDatapack",
+        "Hsad1644/RandomDrops",
+        "IHeartCheese/RandomDrops",
+        "LiteralSoofa/RandomDrops",
+        "Little1Yuan/RandomDrops",
+        "LizzyFleckenstein03/randomdrops",
+        "Malythist/RandomDrops-Minecraft",
+        "NotAlexNoyle/RandomDrops-OG",
+        "OOF2510/RandomDrops",
+        "RedBoardDev/RandomDrops",
+        "SuperoidM/randomdropsmc",
+        "Symphony007/RandomDrops_MC",
+        "Truvis/RandomDrops",
+        "WMikaaa/RandomDrops",
+        "binarycode101110/RandomDrops",
+        "fredrikj31/Spigot-RandomDrops",
+        "georgestinis/RandomDrops",
+        "haittorrs/RandomDrops",
+        "justmangoou/RandomDrops",
+        "randomDrops/pihole-unbound",
+        "ripproxy/RandomDrops",
+        "scarlet1nbythehill/RandomDrops-OG",
+        "yiliyavas/RandomDrops"
+      ],
+      "releases": [
+        {
+          "release_id": 5994,
+          "version": "1.0.1",
+          "commit": "7b171d7bc7d0fbad5c8ea859605fe27f703e6540",
+          "key": "338787935@7b171d7bc7d0fbad5c8ea859605fe27f703e6540",
+          "status": "http_error",
+          "declared_license": "mit",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 28,
+          "global_commit_search_matches": 0
+        },
+        {
+          "release_id": 5959,
+          "version": "1.0.0",
+          "commit": "7a130d30acc3f35253b61ff1d17ade7544d700ce",
+          "key": "338787935@7a130d30acc3f35253b61ff1d17ade7544d700ce",
+          "status": "http_error",
+          "declared_license": "mit",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 28,
+          "global_commit_search_matches": 0
+        }
+      ]
+    },
+    {
+      "name": "ReplaySystem",
+      "project_id": 2215,
+      "repo_id": 124568531,
+      "original_repository": "McpeBooster/ReplaySystem-McpeBooster",
+      "original_repository_check": {
+        "original": "McpeBooster/ReplaySystem-McpeBooster",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:56:45.720771+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "fully_recovered",
+      "releases_with_archived_source": 1,
+      "release_count": 1,
+      "checked_backups": [
+        "Hyroxing-Development/ReplaySystem-McpeBooster"
+      ],
+      "releases": [
+        {
+          "release_id": 1234,
+          "version": "1.2.0",
+          "commit": "ba7ce59caa18765a77de6fab44c4480daca727e6",
+          "key": "124568531@ba7ce59caa18765a77de6fab44c4480daca727e6",
+          "status": "uploaded",
+          "declared_license": "apache-2.0",
+          "provider": "Hyroxing-Development/ReplaySystem-McpeBooster",
+          "commit_url": "https://github.com/Hyroxing-Development/ReplaySystem-McpeBooster/commit/ba7ce59caa18765a77de6fab44c4480daca727e6",
+          "tree_sha": "272b3e41222ec162bfbcdfa36b7351d664aba090",
+          "sha256": "0829585554f79cbf03ed14eb78484a795f201339fb0caec3f8581f0454e4bc69",
+          "bytes": 115147,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-124568531-ba7ce59caa18765a77de6fab44c4480daca727e6-0829585554f7.zip",
+          "remote_asset_id": 654134054,
+          "remote_verified_at": "2026-10-18T18:13:17.174928+00:00"
+        }
+      ]
+    },
+    {
+      "name": "RobotVerification",
+      "project_id": 8918,
+      "repo_id": 362245623,
+      "original_repository": "OguzhanUmutlu/RobotVerification",
+      "original_repository_check": {
+        "original": "OguzhanUmutlu/RobotVerification",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:57:11.690460+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "exact_commit_not_found",
+      "releases_with_archived_source": 0,
+      "release_count": 1,
+      "checked_backups": [
+        "anonymousdev0101/robotverification",
+        "talo90015/Android-Google-RobotVerification"
+      ],
+      "releases": [
+        {
+          "release_id": 6549,
+          "version": "1.0.0",
+          "commit": "4d3affcde359b0c9c83405401db51de2858fa37d",
+          "key": "362245623@4d3affcde359b0c9c83405401db51de2858fa37d",
+          "status": "http_error",
+          "declared_license": "mit",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 2,
+          "global_commit_search_matches": 0
+        }
+      ]
+    },
+    {
+      "name": "SignToDiscord",
+      "project_id": 9459,
+      "repo_id": 393600263,
+      "original_repository": "OguzhanUmutlu/SignToDiscord",
+      "original_repository_check": {
+        "original": "OguzhanUmutlu/SignToDiscord",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:57:33.737211+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "exact_commit_not_found",
+      "releases_with_archived_source": 0,
+      "release_count": 1,
+      "checked_backups": [],
+      "releases": [
+        {
+          "release_id": 7309,
+          "version": "1.0.1",
+          "commit": "a9600c46fb719733bb547008de053572aa144f5e",
+          "key": "393600263@a9600c46fb719733bb547008de053572aa144f5e",
+          "status": "http_error",
+          "declared_license": "mit",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 0,
+          "global_commit_search_matches": 0
+        }
+      ]
+    },
+    {
+      "name": "SlimeBoost",
+      "project_id": 9038,
+      "repo_id": 371428943,
+      "original_repository": "VazziDE/SlimeBoost",
+      "original_repository_check": {
+        "original": "VazziDE/SlimeBoost",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:57:15.975558+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "exact_commit_not_found",
+      "releases_with_archived_source": 0,
+      "release_count": 2,
+      "checked_backups": [],
+      "releases": [
+        {
+          "release_id": 6728,
+          "version": "1.1.0",
+          "commit": "deadcc53d0efbdabec4d1e52c7cfce1e204027d6",
+          "key": "371428943@deadcc53d0efbdabec4d1e52c7cfce1e204027d6",
+          "status": "http_error",
+          "declared_license": "gpl-2.0",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 0,
+          "global_commit_search_matches": 0
+        },
+        {
+          "release_id": 6707,
+          "version": "1.0.0",
+          "commit": "f139dd874f121eedf8421958b0d3f192e7dadb6b",
+          "key": "371428943@f139dd874f121eedf8421958b0d3f192e7dadb6b",
+          "status": "http_error",
+          "declared_license": "gpl-2.0",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 0,
+          "global_commit_search_matches": 0
+        }
+      ]
+    },
+    {
+      "name": "StairSeat",
+      "project_id": 4348,
+      "repo_id": 160235581,
+      "original_repository": "korado531m7/StairSeat",
+      "original_repository_check": {
+        "original": "korado531m7/StairSeat",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:56:50.777047+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "fully_recovered",
+      "releases_with_archived_source": 16,
+      "release_count": 16,
+      "checked_backups": [
+        "Teunboeke/StairSeat"
+      ],
+      "releases": [
+        {
+          "release_id": 6827,
+          "version": "1.5.10",
+          "commit": "79d1f17d45505bafca9221e4506de53bbf9d27cd",
+          "key": "160235581@79d1f17d45505bafca9221e4506de53bbf9d27cd",
+          "status": "uploaded",
+          "declared_license": "gpl-3.0",
+          "provider": "Teunboeke/StairSeat",
+          "commit_url": "https://github.com/Teunboeke/StairSeat/commit/79d1f17d45505bafca9221e4506de53bbf9d27cd",
+          "tree_sha": "b84949e7781412710cb866bc39f898974a84e75e",
+          "sha256": "e8efa46099450bba68d0543d73ef62f6e4e7de672a4e283349424d6cc7011a90",
+          "bytes": 118499,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-160235581-79d1f17d45505bafca9221e4506de53bbf9d27cd-e8efa4609945.zip",
+          "remote_asset_id": 654134396,
+          "remote_verified_at": "2026-10-18T18:13:25.174208+00:00"
+        },
+        {
+          "release_id": 6396,
+          "version": "1.5.9",
+          "commit": "a3066ba629deb71f5079083797ffe8fed6fae6e2",
+          "key": "160235581@a3066ba629deb71f5079083797ffe8fed6fae6e2",
+          "status": "uploaded",
+          "declared_license": "gpl-3.0",
+          "provider": "Teunboeke/StairSeat",
+          "commit_url": "https://github.com/Teunboeke/StairSeat/commit/a3066ba629deb71f5079083797ffe8fed6fae6e2",
+          "tree_sha": "d39df2943cb3a868fd266e48637a21062ddca6bf",
+          "sha256": "9ae3ba5050e6ed9a6840bd8371dae1fcaa2963b2e18f50f6bd285f31e888e20e",
+          "bytes": 118488,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-160235581-a3066ba629deb71f5079083797ffe8fed6fae6e2-9ae3ba5050e6.zip",
+          "remote_asset_id": 654134468,
+          "remote_verified_at": "2026-10-18T18:13:26.308159+00:00"
+        },
+        {
+          "release_id": 6171,
+          "version": "1.5.8",
+          "commit": "37245c5e75cef9377ab6f61429ffc1388f22217b",
+          "key": "160235581@37245c5e75cef9377ab6f61429ffc1388f22217b",
+          "status": "uploaded",
+          "declared_license": "gpl-3.0",
+          "provider": "Teunboeke/StairSeat",
+          "commit_url": "https://github.com/Teunboeke/StairSeat/commit/37245c5e75cef9377ab6f61429ffc1388f22217b",
+          "tree_sha": "b76c30c45e0c4ea50858092b4630203aa441e255",
+          "sha256": "114721ffc9f99c41b8b11570c228b64d7ace36d0e4cd6198b413b5ae5be8e2eb",
+          "bytes": 118488,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-160235581-37245c5e75cef9377ab6f61429ffc1388f22217b-114721ffc9f9.zip",
+          "remote_asset_id": 654134248,
+          "remote_verified_at": "2026-10-18T18:13:21.283598+00:00"
+        },
+        {
+          "release_id": 5787,
+          "version": "1.5.7",
+          "commit": "c7cdf70d3517b5852b3267f3dce39e59b9e6394b",
+          "key": "160235581@c7cdf70d3517b5852b3267f3dce39e59b9e6394b",
+          "status": "uploaded",
+          "declared_license": "gpl-3.0",
+          "provider": "Teunboeke/StairSeat",
+          "commit_url": "https://github.com/Teunboeke/StairSeat/commit/c7cdf70d3517b5852b3267f3dce39e59b9e6394b",
+          "tree_sha": "b27c8d88c9cc43e223f9eed39c63ef5f603e927f",
+          "sha256": "81bf7e8646bfa29fd3fa79919ba7fb881c3befe89076a0219e90f9a8fa439d54",
+          "bytes": 118488,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-160235581-c7cdf70d3517b5852b3267f3dce39e59b9e6394b-81bf7e8646bf.zip",
+          "remote_asset_id": 654134608,
+          "remote_verified_at": "2026-10-18T18:13:28.094025+00:00"
+        },
+        {
+          "release_id": 5595,
+          "version": "1.5.6",
+          "commit": "77e500df4e63154ad39d2c5ed477ac8f4f78999a",
+          "key": "160235581@77e500df4e63154ad39d2c5ed477ac8f4f78999a",
+          "status": "uploaded",
+          "declared_license": "gpl-3.0",
+          "provider": "Teunboeke/StairSeat",
+          "commit_url": "https://github.com/Teunboeke/StairSeat/commit/77e500df4e63154ad39d2c5ed477ac8f4f78999a",
+          "tree_sha": "395586aa30c95c1974dab8271039098f0c85013a",
+          "sha256": "4e2830313a8e7364ff0b1d4084ffc73447cec67b08a53ba0c6b47fbf137deec0",
+          "bytes": 118488,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-160235581-77e500df4e63154ad39d2c5ed477ac8f4f78999a-4e2830313a8e.zip",
+          "remote_asset_id": 654134343,
+          "remote_verified_at": "2026-10-18T18:13:24.113397+00:00"
+        },
+        {
+          "release_id": 5121,
+          "version": "1.5.5",
+          "commit": "fe52d897dc8192fa8de27c179f5699844e372af5",
+          "key": "160235581@fe52d897dc8192fa8de27c179f5699844e372af5",
+          "status": "uploaded",
+          "declared_license": "gpl-3.0",
+          "provider": "Teunboeke/StairSeat",
+          "commit_url": "https://github.com/Teunboeke/StairSeat/commit/fe52d897dc8192fa8de27c179f5699844e372af5",
+          "tree_sha": "1dc9f6704cb7c5165f650d5c6cee2d1fee0f4c4f",
+          "sha256": "4b7f2741cc9c9f3e54e4cea72fb19e68785998ebdecdd2b4933dfd94aba1da93",
+          "bytes": 118487,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-160235581-fe52d897dc8192fa8de27c179f5699844e372af5-4b7f2741cc9c.zip",
+          "remote_asset_id": 654134649,
+          "remote_verified_at": "2026-10-18T18:13:28.673728+00:00"
+        },
+        {
+          "release_id": 5046,
+          "version": "1.5.4",
+          "commit": "c6cc45d0bb15a29730b3df243d54c17c97a87d8b",
+          "key": "160235581@c6cc45d0bb15a29730b3df243d54c17c97a87d8b",
+          "status": "uploaded",
+          "declared_license": "gpl-3.0",
+          "provider": "Teunboeke/StairSeat",
+          "commit_url": "https://github.com/Teunboeke/StairSeat/commit/c6cc45d0bb15a29730b3df243d54c17c97a87d8b",
+          "tree_sha": "9f198dc302e292a4435fdcc022faaf20ed865f1d",
+          "sha256": "37ce782400fd4d834f8ff2c70df96dc53f54a63b6f87bf07c1ed370e497d66c0",
+          "bytes": 118405,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-160235581-c6cc45d0bb15a29730b3df243d54c17c97a87d8b-37ce782400fd.zip",
+          "remote_asset_id": 654134562,
+          "remote_verified_at": "2026-10-18T18:13:27.473166+00:00"
+        },
+        {
+          "release_id": 5037,
+          "version": "1.5.3",
+          "commit": "2e0a64de081e6f65f40f5920db04464f90dbc49c",
+          "key": "160235581@2e0a64de081e6f65f40f5920db04464f90dbc49c",
+          "status": "uploaded",
+          "declared_license": "gpl-3.0",
+          "provider": "Teunboeke/StairSeat",
+          "commit_url": "https://github.com/Teunboeke/StairSeat/commit/2e0a64de081e6f65f40f5920db04464f90dbc49c",
+          "tree_sha": "abce2c555f8ef204616608e2698e7de6adb78ce4",
+          "sha256": "6cc9ca67d905e407df9171d3d9169b1d47a207a53acc1b0937b2d4dc4b8eb109",
+          "bytes": 118384,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-160235581-2e0a64de081e6f65f40f5920db04464f90dbc49c-6cc9ca67d905.zip",
+          "remote_asset_id": 654134189,
+          "remote_verified_at": "2026-10-18T18:13:20.062946+00:00"
+        },
+        {
+          "release_id": 4791,
+          "version": "1.5.2",
+          "commit": "2e3cb6e7598b67181e7b05caa3d175333fb0533b",
+          "key": "160235581@2e3cb6e7598b67181e7b05caa3d175333fb0533b",
+          "status": "uploaded",
+          "declared_license": "gpl-3.0",
+          "provider": "Teunboeke/StairSeat",
+          "commit_url": "https://github.com/Teunboeke/StairSeat/commit/2e3cb6e7598b67181e7b05caa3d175333fb0533b",
+          "tree_sha": "af29defd36bb77b17c490f61498a19c00d422c57",
+          "sha256": "c1f26080d6778c44de61cf7808254413675e8636fdfa75402be0e04139e0f7fe",
+          "bytes": 117918,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-160235581-2e3cb6e7598b67181e7b05caa3d175333fb0533b-c1f26080d677.zip",
+          "remote_asset_id": 654134214,
+          "remote_verified_at": "2026-10-18T18:13:20.675509+00:00"
+        },
+        {
+          "release_id": 4642,
+          "version": "1.4.2",
+          "commit": "58141f1eebfad5273954e098dbe98e47a679dd27",
+          "key": "160235581@58141f1eebfad5273954e098dbe98e47a679dd27",
+          "status": "uploaded",
+          "declared_license": "gpl-3.0",
+          "provider": "Teunboeke/StairSeat",
+          "commit_url": "https://github.com/Teunboeke/StairSeat/commit/58141f1eebfad5273954e098dbe98e47a679dd27",
+          "tree_sha": "a86e9ee4788ec85d4f7fb94805f2f3c013156aac",
+          "sha256": "168854aa287b202418ad8689b6b4026e4e57d10f53d3795518ffa6f5c11ef9d0",
+          "bytes": 114041,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-160235581-58141f1eebfad5273954e098dbe98e47a679dd27-168854aa287b.zip",
+          "remote_asset_id": 654134262,
+          "remote_verified_at": "2026-10-18T18:13:22.304653+00:00"
+        },
+        {
+          "release_id": 3172,
+          "version": "1.4.0",
+          "commit": "72c4ea8a472e674d6914d4c5849242341f858ca6",
+          "key": "160235581@72c4ea8a472e674d6914d4c5849242341f858ca6",
+          "status": "uploaded",
+          "declared_license": "gpl-3.0",
+          "provider": "Teunboeke/StairSeat",
+          "commit_url": "https://github.com/Teunboeke/StairSeat/commit/72c4ea8a472e674d6914d4c5849242341f858ca6",
+          "tree_sha": "34a1bdb9f578e271f81245d090a6025a9c03eaa3",
+          "sha256": "0157d9cbf051ba1465cc0bc7151fd6dbf8337b82950e9c805cb6c21c1cd8937f",
+          "bytes": 113997,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-160235581-72c4ea8a472e674d6914d4c5849242341f858ca6-0157d9cbf051.zip",
+          "remote_asset_id": 654134279,
+          "remote_verified_at": "2026-10-18T18:13:22.893419+00:00"
+        },
+        {
+          "release_id": 2433,
+          "version": "1.3.0",
+          "commit": "1d8f0f985b9df28c365727807e8821b64210b90d",
+          "key": "160235581@1d8f0f985b9df28c365727807e8821b64210b90d",
+          "status": "uploaded",
+          "declared_license": "gpl-3.0",
+          "provider": "Teunboeke/StairSeat",
+          "commit_url": "https://github.com/Teunboeke/StairSeat/commit/1d8f0f985b9df28c365727807e8821b64210b90d",
+          "tree_sha": "be53eaf4b1c0dc347c1677826411ee4b9e0b5803",
+          "sha256": "c747e3e758507d752033424c57b661e0df03dcadab34ed4c0240df9dc7c7edd9",
+          "bytes": 113740,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-160235581-1d8f0f985b9df28c365727807e8821b64210b90d-c747e3e75850.zip",
+          "remote_asset_id": 654134137,
+          "remote_verified_at": "2026-10-18T18:13:18.919276+00:00"
+        },
+        {
+          "release_id": 2367,
+          "version": "1.2.3",
+          "commit": "c3e4a4ec463dab83ac6d64e8454c99a97569ed39",
+          "key": "160235581@c3e4a4ec463dab83ac6d64e8454c99a97569ed39",
+          "status": "uploaded",
+          "declared_license": "gpl-3.0",
+          "provider": "Teunboeke/StairSeat",
+          "commit_url": "https://github.com/Teunboeke/StairSeat/commit/c3e4a4ec463dab83ac6d64e8454c99a97569ed39",
+          "tree_sha": "1bffade1aa70c89380af5240165dc68eeedfbf0a",
+          "sha256": "62fc59ded37380f686be8f355ee875c19cfc08c2c0e9772d73ba02474c37063f",
+          "bytes": 112687,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-160235581-c3e4a4ec463dab83ac6d64e8454c99a97569ed39-62fc59ded373.zip",
+          "remote_asset_id": 654134519,
+          "remote_verified_at": "2026-10-18T18:13:26.875501+00:00"
+        },
+        {
+          "release_id": 2195,
+          "version": "1.2.0",
+          "commit": "762481081cd3524890477b24b48472f5a82d5dfd",
+          "key": "160235581@762481081cd3524890477b24b48472f5a82d5dfd",
+          "status": "uploaded",
+          "declared_license": "gpl-3.0",
+          "provider": "Teunboeke/StairSeat",
+          "commit_url": "https://github.com/Teunboeke/StairSeat/commit/762481081cd3524890477b24b48472f5a82d5dfd",
+          "tree_sha": "1bd2b55cd9b732be6dab06874a1e5492748481cb",
+          "sha256": "f9fcdd4119250509ac39d6a5d293567237335d88e077797173375f0d5ebd272c",
+          "bytes": 5271,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-160235581-762481081cd3524890477b24b48472f5a82d5dfd-f9fcdd411925.zip",
+          "remote_asset_id": 654134310,
+          "remote_verified_at": "2026-10-18T18:13:23.514538+00:00"
+        },
+        {
+          "release_id": 2191,
+          "version": "1.1.0",
+          "commit": "7d9a9911d1e10b65d7764b39c5f44ea71e908151",
+          "key": "160235581@7d9a9911d1e10b65d7764b39c5f44ea71e908151",
+          "status": "uploaded",
+          "declared_license": "gpl-3.0",
+          "provider": "Teunboeke/StairSeat",
+          "commit_url": "https://github.com/Teunboeke/StairSeat/commit/7d9a9911d1e10b65d7764b39c5f44ea71e908151",
+          "tree_sha": "d6703b83533d7899a895b899d460afad1b9ec865",
+          "sha256": "3a5e4eddbf22263dacc09b3277232fb6c764caa12cf6bb5f98a3b9d6e841acca",
+          "bytes": 3312,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-160235581-7d9a9911d1e10b65d7764b39c5f44ea71e908151-3a5e4eddbf22.zip",
+          "remote_asset_id": 654134423,
+          "remote_verified_at": "2026-10-18T18:13:25.733511+00:00"
+        },
+        {
+          "release_id": 2167,
+          "version": "1.0.0",
+          "commit": "2763b42c0d5c8b3b39bd1ab0d6ace5d3726c1988",
+          "key": "160235581@2763b42c0d5c8b3b39bd1ab0d6ace5d3726c1988",
+          "status": "uploaded",
+          "declared_license": "gpl-3.0",
+          "provider": "Teunboeke/StairSeat",
+          "commit_url": "https://github.com/Teunboeke/StairSeat/commit/2763b42c0d5c8b3b39bd1ab0d6ace5d3726c1988",
+          "tree_sha": "169e174e875ebd9481a3869a0f9d2b192dccbe6c",
+          "sha256": "26df1b0c54ecaf3a56e8f42a79e167a8dba0bd737b34f2c607301b165d3cbd92",
+          "bytes": 3128,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-160235581-2763b42c0d5c8b3b39bd1ab0d6ace5d3726c1988-26df1b0c54ec.zip",
+          "remote_asset_id": 654134155,
+          "remote_verified_at": "2026-10-18T18:13:19.500337+00:00"
+        }
+      ]
+    },
+    {
+      "name": "StairSeatDown",
+      "project_id": 1765,
+      "repo_id": 117350643,
+      "original_repository": "gamesukimanIRS/StairSeatDown",
+      "original_repository_check": {
+        "original": "gamesukimanIRS/StairSeatDown",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:56:40.570071+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "fully_recovered",
+      "releases_with_archived_source": 1,
+      "release_count": 1,
+      "checked_backups": [
+        "notacoderr/StairSeatDown"
+      ],
+      "releases": [
+        {
+          "release_id": 1005,
+          "version": "1.0.0",
+          "commit": "0a86fc67dc0376389951d387796eafdfbaa56a11",
+          "key": "117350643@0a86fc67dc0376389951d387796eafdfbaa56a11",
+          "status": "uploaded",
+          "declared_license": "lgpl-2.1",
+          "provider": "notacoderr/StairSeatDown",
+          "commit_url": "https://github.com/notacoderr/StairSeatDown/commit/0a86fc67dc0376389951d387796eafdfbaa56a11",
+          "tree_sha": "ac1d6cab0e4901ab8b909d081f17589eeee2f7d2",
+          "sha256": "f504fda6f9ff0c2bcea3b28a4dc093b5a9579afbb46f2be333a0e9e0929716a1",
+          "bytes": 13719,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-117350643-0a86fc67dc0376389951d387796eafdfbaa56a11-f504fda6f9ff.zip",
+          "remote_asset_id": 654133740,
+          "remote_verified_at": "2026-10-18T18:13:14.131647+00:00"
+        }
+      ]
+    },
+    {
+      "name": "StopLag",
+      "project_id": 8873,
+      "repo_id": 359181719,
+      "original_repository": "OguzhanUmutlu/StopLag",
+      "original_repository_check": {
+        "original": "OguzhanUmutlu/StopLag",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:57:09.515085+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "exact_commit_not_found",
+      "releases_with_archived_source": 0,
+      "release_count": 1,
+      "checked_backups": [
+        "Mystery-Cloud/stoplag",
+        "TrollsterCooleg/AlwaysStoplag"
+      ],
+      "releases": [
+        {
+          "release_id": 6478,
+          "version": "1.0.0",
+          "commit": "34ef3147e744204ec1d0f331772f01315f8a030f",
+          "key": "359181719@34ef3147e744204ec1d0f331772f01315f8a030f",
+          "status": "http_error",
+          "declared_license": "mit",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 2,
+          "global_commit_search_matches": 0
+        }
+      ]
+    },
+    {
+      "name": "TacoKbModifier",
+      "project_id": 7452,
+      "repo_id": 280926873,
+      "original_repository": "TWRRR/TacoKbModifier",
+      "original_repository_check": {
+        "original": "TWRRR/TacoKbModifier",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:56:57.377282+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "fully_recovered",
+      "releases_with_archived_source": 2,
+      "release_count": 2,
+      "checked_backups": [
+        "CssChase/TacoKbModifier"
+      ],
+      "releases": [
+        {
+          "release_id": 5090,
+          "version": "1.0.1",
+          "commit": "15cccbe37f564e520cb6027e6edd0c49ff723bab",
+          "key": "280926873@15cccbe37f564e520cb6027e6edd0c49ff723bab",
+          "status": "uploaded",
+          "declared_license": "apache-2.0",
+          "provider": "CssChase/TacoKbModifier",
+          "commit_url": "https://github.com/CssChase/TacoKbModifier/commit/15cccbe37f564e520cb6027e6edd0c49ff723bab",
+          "tree_sha": "9d462584d216875a5a9a33282cb1ce2a9515632f",
+          "sha256": "480e4f6bf22aae1bc7cad8c03a6125e95e189c11c736ac7fc5da893ef366ce2a",
+          "bytes": 7575,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0002/source-280926873-15cccbe37f564e520cb6027e6edd0c49ff723bab-480e4f6bf22a.zip",
+          "remote_asset_id": 654135676,
+          "remote_verified_at": "2026-10-18T18:13:40.208432+00:00"
+        },
+        {
+          "release_id": 5050,
+          "version": "1.0.0",
+          "commit": "e0c558e0c4f053deb2ced6fd20e1a65b334c039e",
+          "key": "280926873@e0c558e0c4f053deb2ced6fd20e1a65b334c039e",
+          "status": "uploaded",
+          "declared_license": "apache-2.0",
+          "provider": "CssChase/TacoKbModifier",
+          "commit_url": "https://github.com/CssChase/TacoKbModifier/commit/e0c558e0c4f053deb2ced6fd20e1a65b334c039e",
+          "tree_sha": "111b635253096402049d0ac5adb6b5c7b7d0607f",
+          "sha256": "6837bee1745aa30d1b491514f52368404088d7eb26eaecddfc9297a15eded782",
+          "bytes": 7369,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0002/source-280926873-e0c558e0c4f053deb2ced6fd20e1a65b334c039e-6837bee1745a.zip",
+          "remote_asset_id": 654135725,
+          "remote_verified_at": "2026-10-18T18:13:40.839337+00:00"
+        }
+      ]
+    },
+    {
+      "name": "TheFloorIsLava",
+      "project_id": 9335,
+      "repo_id": 388541918,
+      "original_repository": "OguzhanUmutlu/TheFloorIsLava",
+      "original_repository_check": {
+        "original": "OguzhanUmutlu/TheFloorIsLava",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:57:25.527210+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "fully_recovered",
+      "releases_with_archived_source": 1,
+      "release_count": 1,
+      "checked_backups": [
+        "MadeAja/TheFloorIsLava",
+        "david-arcus/thefloorislava"
+      ],
+      "releases": [
+        {
+          "release_id": 7147,
+          "version": "1.0.0",
+          "commit": "32ce888af735b89290d502c9ffeab9c601e82232",
+          "key": "388541918@32ce888af735b89290d502c9ffeab9c601e82232",
+          "status": "uploaded",
+          "declared_license": "mit",
+          "provider": "MadeAja/TheFloorIsLava",
+          "commit_url": "https://github.com/MadeAja/TheFloorIsLava/commit/32ce888af735b89290d502c9ffeab9c601e82232",
+          "tree_sha": "9b9ce2111c5b0da18aa160534549cf16c48f4cc6",
+          "sha256": "5f22840cc3d0bfd83b9a17d1bfff9c41c7accfccf7ac2a014cc7a275c5efe362",
+          "bytes": 14210,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-388541918-32ce888af735b89290d502c9ffeab9c601e82232-5f22840cc3d0.zip",
+          "remote_asset_id": 654137149,
+          "remote_verified_at": "2026-10-18T18:13:50.071549+00:00"
+        }
+      ]
+    },
+    {
+      "name": "TreeCapitator",
+      "project_id": 9450,
+      "repo_id": 393369378,
+      "original_repository": "OguzhanUmutlu/TreeCapitator",
+      "original_repository_check": {
+        "original": "OguzhanUmutlu/TreeCapitator",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:57:31.618598+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "fully_recovered",
+      "releases_with_archived_source": 3,
+      "release_count": 3,
+      "checked_backups": [
+        "MadeAja/TreeCapitator"
+      ],
+      "releases": [
+        {
+          "release_id": 7291,
+          "version": "1.0.8",
+          "commit": "86b532093038f9172259da2ec2426364c75b8a8c",
+          "key": "393369378@86b532093038f9172259da2ec2426364c75b8a8c",
+          "status": "uploaded",
+          "declared_license": "mit",
+          "provider": "MadeAja/TreeCapitator",
+          "commit_url": "https://github.com/MadeAja/TreeCapitator/commit/86b532093038f9172259da2ec2426364c75b8a8c",
+          "tree_sha": "1a9e195651f366ed95dd1b9e67d443c0374bf185",
+          "sha256": "7ffa5bf2d71453d4e89579db2bcedc90a4518998a0807156dbab415da43471a5",
+          "bytes": 2355672,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-393369378-86b532093038f9172259da2ec2426364c75b8a8c-7ffa5bf2d714.zip",
+          "remote_asset_id": 654137353,
+          "remote_verified_at": "2026-10-18T18:13:51.308396+00:00"
+        },
+        {
+          "release_id": 7283,
+          "version": "1.0.7",
+          "commit": "39a372076ef4ac5e661dee9654dae531e0e1367b",
+          "key": "393369378@39a372076ef4ac5e661dee9654dae531e0e1367b",
+          "status": "uploaded",
+          "declared_license": "mit",
+          "provider": "MadeAja/TreeCapitator",
+          "commit_url": "https://github.com/MadeAja/TreeCapitator/commit/39a372076ef4ac5e661dee9654dae531e0e1367b",
+          "tree_sha": "d8f1a01fbf79168696f91f0d389c457f5c202e70",
+          "sha256": "abb1711bf5674e11d29257221d536b6fcb8c70b00753c42a959b94e3f58413b0",
+          "bytes": 123098,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-393369378-39a372076ef4ac5e661dee9654dae531e0e1367b-abb1711bf567.zip",
+          "remote_asset_id": 654137230,
+          "remote_verified_at": "2026-10-18T18:13:59.750650+00:00"
+        },
+        {
+          "release_id": 7278,
+          "version": "1.0.0",
+          "commit": "73392ea4a47acdc187560fb9e5ae128e5a2776ba",
+          "key": "393369378@73392ea4a47acdc187560fb9e5ae128e5a2776ba",
+          "status": "uploaded",
+          "declared_license": "mit",
+          "provider": "MadeAja/TreeCapitator",
+          "commit_url": "https://github.com/MadeAja/TreeCapitator/commit/73392ea4a47acdc187560fb9e5ae128e5a2776ba",
+          "tree_sha": "a33bfb44a35b70f6a2a149f252cfe88904434c94",
+          "sha256": "38a744d782341832fac1140b8442e7d16e4deace430df62bcb26d243782ba34d",
+          "bytes": 121646,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-393369378-73392ea4a47acdc187560fb9e5ae128e5a2776ba-38a744d78234.zip",
+          "remote_asset_id": 654137266,
+          "remote_verified_at": "2026-10-18T18:14:00.356102+00:00"
+        }
+      ]
+    },
+    {
+      "name": "VirtualChest",
+      "project_id": 1827,
+      "repo_id": 117444104,
+      "original_repository": "Blugin/VirtualChest-PMMP",
+      "original_repository_check": {
+        "original": "Blugin/VirtualChest-PMMP",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:56:41.679490+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "fully_recovered",
+      "releases_with_archived_source": 1,
+      "release_count": 1,
+      "checked_backups": [
+        "QuiltedTuba2798/VirtualChest-PMMP"
+      ],
+      "releases": [
+        {
+          "release_id": 1016,
+          "version": "1.1.6",
+          "commit": "9530c585f648a2e02f57cc86a6692c5514812b52",
+          "key": "117444104@9530c585f648a2e02f57cc86a6692c5514812b52",
+          "status": "uploaded",
+          "declared_license": "agpl-3.0",
+          "provider": "QuiltedTuba2798/VirtualChest-PMMP",
+          "commit_url": "https://github.com/QuiltedTuba2798/VirtualChest-PMMP/commit/9530c585f648a2e02f57cc86a6692c5514812b52",
+          "tree_sha": "4c154d5b7842e5995b9ca51138bb2785bbf713b0",
+          "sha256": "903068d2ca3e13e135014f5eeb2a946675d0e5b34fe11ac8e001f37e9f65bf1d",
+          "bytes": 66083,
+          "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-117444104-9530c585f648a2e02f57cc86a6692c5514812b52-903068d2ca3e.zip",
+          "remote_asset_id": 654133836,
+          "remote_verified_at": "2026-10-18T18:13:14.717130+00:00"
+        }
+      ]
+    },
+    {
+      "name": "WorkersDemo",
+      "project_id": 9265,
+      "repo_id": 386053822,
+      "original_repository": "OguzhanUmutlu/WorkersDemo",
+      "original_repository_check": {
+        "original": "OguzhanUmutlu/WorkersDemo",
+        "by_id": {
+          "status": 404
+        },
+        "by_name": {
+          "status": 404
+        },
+        "checked_at": "2026-10-18T17:57:22.338941+00:00"
+      },
+      "initial_error": "HTTP 404 downloading exact source ZIP; no working pm-pl backup for this commit.",
+      "status": "exact_commit_not_found",
+      "releases_with_archived_source": 0,
+      "release_count": 2,
+      "checked_backups": [],
+      "releases": [
+        {
+          "release_id": 7093,
+          "version": "1.0.1",
+          "commit": "2b5a5920bcb549a4cc7ad5af05a2bdc5af2c006b",
+          "key": "386053822@2b5a5920bcb549a4cc7ad5af05a2bdc5af2c006b",
+          "status": "http_error",
+          "declared_license": "mit",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 0,
+          "global_commit_search_matches": 0
+        },
+        {
+          "release_id": 7053,
+          "version": "1.0.0",
+          "commit": "63aabbcbd60e160890b737e17d488e9bbc47778d",
+          "key": "386053822@63aabbcbd60e160890b737e17d488e9bbc47778d",
+          "status": "http_error",
+          "declared_license": "mit",
+          "reason": "Exact build commit was not found in the checked public backups or GitHub commit search.",
+          "checked_backup_count": 0,
+          "global_commit_search_matches": 0
+        }
+      ]
+    }
+  ]
+}

@@ -212,6 +212,8 @@ def reconcile(token: str, kind: str, snapshot_id: str, rows: list[tuple[str, dic
     repaired = 0
     for index, (key, catalog_row) in enumerate(rows):
         state = states.get(key, {})
+        if state.get("status") == "license_review_required":
+            continue
         if state.get("status") == "uploaded" and state.get("remote_url"):
             continue
         digest = state.get("sha256")
@@ -266,6 +268,7 @@ def main() -> int:
     parser.add_argument("--snapshot", help="snapshot id, defaults to the current snapshot")
     parser.add_argument("--kind", choices=("plugins", "virions", "sources"), required=True)
     parser.add_argument("--limit", type=int, default=0, help="maximum new uploads, 0 means all available")
+    parser.add_argument("--key-file", type=Path, help="publish only catalog keys listed one per line")
     parser.add_argument("--keep-local", action="store_true", help="verify remote assets but keep local files")
     parser.add_argument("--reconcile", action="store_true", help="restore manifest links for existing remote assets")
     args = parser.parse_args()
@@ -279,6 +282,17 @@ def main() -> int:
         parser.error(f"snapshot does not exist: {snapshot_id}")
     manifest_path, rows, extension = manifest_setup(snapshot_dir, args.kind)
     states = read_json(manifest_path) if manifest_path.exists() else {}
+    selected_keys = None
+    if args.key_file:
+        selected_keys = {
+            line.strip() for line in args.key_file.read_text(encoding="utf-8").splitlines()
+            if line.strip() and not line.lstrip().startswith("#")
+        }
+        unknown_keys = selected_keys - {key for key, _ in rows}
+        if unknown_keys:
+            parser.error(f"Keys are not in the snapshot: {', '.join(sorted(unknown_keys))}")
+        if args.reconcile:
+            parser.error("--key-file cannot be combined with --reconcile")
     token = get_token()
     if args.reconcile:
         reconcile(token, args.kind, snapshot_id, rows, manifest_path, states, extension, args.keep_local)
@@ -288,7 +302,12 @@ def main() -> int:
     unavailable = 0
 
     for index, (key, catalog_row) in enumerate(rows):
+        if selected_keys is not None and key not in selected_keys:
+            continue
         state = states.get(key, {})
+        if state.get("status") == "license_review_required":
+            unavailable += 1
+            continue
         if state.get("status") == "uploaded" and state.get("remote_url"):
             if not args.keep_local and state.get("storage_path"):
                 local = (ROOT / Path(state["storage_path"])).resolve()

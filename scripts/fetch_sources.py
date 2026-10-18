@@ -11,6 +11,7 @@ import re
 import subprocess
 import sys
 import time
+import zipfile
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlparse
 
@@ -60,6 +61,40 @@ def checksum(path: Path) -> str:
     return digest.hexdigest()
 
 
+def add_recovery_candidates(jobs: list[dict], path: Path) -> None:
+    """Add public backup repositories per exact source key without altering pm-pl mappings."""
+    candidates = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(candidates, dict):
+        raise ValueError("Recovery candidates must be an object mapping source keys to repository lists")
+    by_key = {job["key"]: job for job in jobs}
+    for key, names in candidates.items():
+        if key not in by_key:
+            raise ValueError(f"Recovery candidate key is not in the snapshot: {key}")
+        if not isinstance(names, list) or any(
+            not isinstance(name, str) or not re.fullmatch(r"[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+", name)
+            for name in names
+        ):
+            raise ValueError(f"Recovery candidates must be GitHub owner/repository names: {key}")
+        job = by_key[key]
+        for name in names:
+            if name != job["repo_name"] and name not in job["candidates"]:
+                job["candidates"].append(name)
+
+
+def validate_zip(path: Path, commit: str, max_bytes: int) -> None:
+    """Check integrity and GitHub's full-commit archive root without extracting files."""
+    with zipfile.ZipFile(path) as archive:
+        entries = archive.infolist()
+        roots = {entry.filename.split("/", 1)[0] for entry in entries}
+        root_commit = next(iter(roots)).rsplit("-", 1)[-1].lower() if len(roots) == 1 else ""
+        if not re.fullmatch(r"[0-9a-f]{40}|[0-9a-f]{64}", root_commit) or not root_commit.startswith(commit.lower()):
+            raise ValueError("Source ZIP root does not match the requested build commit")
+        if sum(entry.file_size for entry in entries) > max_bytes * 10:
+            raise ValueError("Source ZIP expanded size exceeds the verification limit")
+        if archive.testzip() is not None:
+            raise ValueError("Source ZIP failed its CRC integrity check")
+
+
 def safe_archive_url(repo: str, commit: str) -> str | None:
     if not re.fullmatch(r"[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+", repo):
         return None
@@ -102,6 +137,12 @@ def fetch_zip(client: PoliteHTTP, url: str, part: Path, max_bytes: int) -> dict:
         if signature[:2] != b"PK":
             part.unlink(missing_ok=True)
             return {"status": "not_zip", "bytes": written}
+        commit = parsed.path.rsplit("/", 1)[-1].removesuffix(".zip")
+        try:
+            validate_zip(part, commit, max_bytes)
+        except (ValueError, zipfile.BadZipFile, RuntimeError) as exc:
+            part.unlink(missing_ok=True)
+            return {"status": "invalid_zip", "error": str(exc)[:300]}
         return {"status": "downloaded", "bytes": written, "sha256": checksum(part), "final_url": url}
     except HTTPError as exc:
         part.unlink(missing_ok=True)
@@ -117,6 +158,7 @@ def main() -> int:
     parser.add_argument("--snapshot", help="snapshot ID; defaults to current")
     parser.add_argument("--repo-id", type=int, action="append", default=[], help="limit source commits to one or more Poggit repository IDs")
     parser.add_argument("--key-file", help="process only source keys listed one per line")
+    parser.add_argument("--candidates-file", type=Path, help="JSON mapping source keys to additional public GitHub backup repositories")
     parser.add_argument("--offset", type=int, default=0)
     parser.add_argument("--limit", type=int, default=0, help="maximum source commits (0 means all remaining)")
     parser.add_argument("--delay", type=float, default=2.0, help="minimum seconds between requests")
@@ -125,12 +167,14 @@ def main() -> int:
     args = parser.parse_args()
     folder, source_map = current_snapshot(args.snapshot)
     jobs = make_jobs(source_map)
+    if args.candidates_file:
+        add_recovery_candidates(jobs, args.candidates_file)
     progress_path = folder / "source-downloads.json"
     progress = json.loads(progress_path.read_text(encoding="utf-8")) if progress_path.exists() else {}
     def needs_download(job: dict) -> bool:
         state = progress.get(job["key"], {})
         status = state.get("status")
-        if status == "uploaded":
+        if status in {"uploaded", "license_review_required"}:
             return False
         if status in {"downloaded", "already_present"}:
             storage_path = state.get("storage_path")

@@ -61,7 +61,19 @@ Download exact source snapshots in small batches:
 python .\scripts\fetch_sources.py --limit 10
 ```
 
-For each recorded build commit, this tries the original GitHub repository first and then its `pm-pl` basename candidate if the original cannot serve that commit. ZIP files are stored under `archive/sources/<repo-id>/<commit>.zip`, are not extracted, and get a SHA-256 entry in `source-downloads.json`. The default size ceiling is 25 MiB per ZIP. Large/all-history imports can take hours and consume substantial disk; use `--repo-id`, `--offset`, `--limit`, `--delay`, and `--max-mib` deliberately. This captures source at Poggit build commits, not the full Git commit history.
+For each recorded build commit, this tries the original GitHub repository first and then its `pm-pl` basename candidate if the original cannot serve that commit. ZIP files are stored under `archive/sources/<repo-id>/<commit>.zip`, are not extracted, and get a SHA-256 entry in `source-downloads.json`. The default size ceiling is 100 MiB per ZIP. Large/all-history imports can take hours and consume substantial disk; use `--repo-id`, `--offset`, `--limit`, `--delay`, and `--max-mib` deliberately. This captures source at Poggit build commits, not the full Git commit history.
+
+### Recover source from other public backups
+
+If both the original repository and its `pm-pl` candidates lack a build commit, check other public forks. `source-recovery-candidates.json` maps exact `repo-id@commit` keys to backup repository names. Confirm that GitHub can serve the recorded commit from each backup before adding it. A matching plugin name or version alone is insufficient.
+
+```powershell
+python .\scripts\fetch_sources.py --candidates-file .\data\snapshots\2026-10-14T20-07-25Z\source-recovery-candidates.json
+```
+
+The downloader checks each new ZIP's commit directory, expanded size, and CRC integrity. Review the release's declared license and the source's license notices before publishing. Records marked `license_review_required` stay local and are skipped by the downloader, publisher, and remote reconciliation. After resolving the license, restore `status: "downloaded"` to make the file eligible for publication.
+
+Use `publish_artifacts.py --kind sources --key-file <keys.txt> --keep-local` to publish a reviewed batch. The key file contains one exact source key per line; selecting a batch preserves the existing release shards. `source-recovery.json` records the investigation, recovered commits, and unresolved items for this snapshot.
 
 ## Astro site and JSON API
 

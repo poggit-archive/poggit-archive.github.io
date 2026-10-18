@@ -6653,13 +6653,52 @@
     "repo_name": "gamesukimanIRS/StairSeatDown",
     "commit": "0a86fc67dc0376389951d387796eafdfbaa56a11",
     "source_url": "https://github.com/gamesukimanIRS/StairSeatDown",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "notacoderr/StairSeatDown"
+    ],
+    "status": "uploaded",
+    "bytes": 13719,
+    "sha256": "f504fda6f9ff0c2bcea3b28a4dc093b5a9579afbb46f2be333a0e9e0929716a1",
+    "final_url": "https://github.com/notacoderr/StairSeatDown/archive/0a86fc67dc0376389951d387796eafdfbaa56a11.zip",
+    "storage_path": null,
+    "provider": "notacoderr/StairSeatDown",
     "tried": [
-      "gamesukimanIRS/StairSeatDown"
-    ]
+      "gamesukimanIRS/StairSeatDown",
+      "notacoderr/StairSeatDown"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "0a86fc67dc0376389951d387796eafdfbaa56a11",
+      "tree_sha": "ac1d6cab0e4901ab8b909d081f17589eeee2f7d2",
+      "commit_url": "https://github.com/notacoderr/StairSeatDown/commit/0a86fc67dc0376389951d387796eafdfbaa56a11",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 1,
+      "license_evidence": {
+        "declared_licenses": [
+          "lgpl-2.1"
+        ],
+        "release_ids": [
+          1005
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/StairSeatDown/1.0.0"
+        ],
+        "license_files_in_zip": [
+          "StairSeatDown-0a86fc67dc0376389951d387796eafdfbaa56a11/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.853116+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-117350643-0a86fc67dc0376389951d387796eafdfbaa56a11-f504fda6f9ff.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-117350643-0a86fc67dc0376389951d387796eafdfbaa56a11-f504fda6f9ff.zip",
+    "remote_sha256": "f504fda6f9ff0c2bcea3b28a4dc093b5a9579afbb46f2be333a0e9e0929716a1",
+    "remote_asset_id": 654133740,
+    "uploaded_at": "2026-10-18T18:10:36Z",
+    "local_deleted": false
   },
   "117444104@9530c585f648a2e02f57cc86a6692c5514812b52": {
     "key": "117444104@9530c585f648a2e02f57cc86a6692c5514812b52",
@@ -6667,13 +6706,52 @@
     "repo_name": "Blugin/VirtualChest-PMMP",
     "commit": "9530c585f648a2e02f57cc86a6692c5514812b52",
     "source_url": "https://github.com/Blugin/VirtualChest-PMMP",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "QuiltedTuba2798/VirtualChest-PMMP"
+    ],
+    "status": "uploaded",
+    "bytes": 66083,
+    "sha256": "903068d2ca3e13e135014f5eeb2a946675d0e5b34fe11ac8e001f37e9f65bf1d",
+    "final_url": "https://github.com/QuiltedTuba2798/VirtualChest-PMMP/archive/9530c585f648a2e02f57cc86a6692c5514812b52.zip",
+    "storage_path": null,
+    "provider": "QuiltedTuba2798/VirtualChest-PMMP",
     "tried": [
-      "Blugin/VirtualChest-PMMP"
-    ]
+      "Blugin/VirtualChest-PMMP",
+      "QuiltedTuba2798/VirtualChest-PMMP"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "9530c585f648a2e02f57cc86a6692c5514812b52",
+      "tree_sha": "4c154d5b7842e5995b9ca51138bb2785bbf713b0",
+      "commit_url": "https://github.com/QuiltedTuba2798/VirtualChest-PMMP/commit/9530c585f648a2e02f57cc86a6692c5514812b52",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 13,
+      "license_evidence": {
+        "declared_licenses": [
+          "agpl-3.0"
+        ],
+        "release_ids": [
+          1016
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/VirtualChest/1.1.6"
+        ],
+        "license_files_in_zip": [
+          "VirtualChest-PMMP-9530c585f648a2e02f57cc86a6692c5514812b52/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.855035+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-117444104-9530c585f648a2e02f57cc86a6692c5514812b52-903068d2ca3e.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-117444104-9530c585f648a2e02f57cc86a6692c5514812b52-903068d2ca3e.zip",
+    "remote_sha256": "903068d2ca3e13e135014f5eeb2a946675d0e5b34fe11ac8e001f37e9f65bf1d",
+    "remote_asset_id": 654133836,
+    "uploaded_at": "2026-10-18T18:10:37Z",
+    "local_deleted": false
   },
   "117761022@f968f9d7b89fd953e7b7798bad6ce74ff6df42f6": {
     "key": "117761022@f968f9d7b89fd953e7b7798bad6ce74ff6df42f6",
@@ -6681,13 +6759,52 @@
     "repo_name": "kenygamer/BlockCMD",
     "commit": "f968f9d7b89fd953e7b7798bad6ce74ff6df42f6",
     "source_url": "https://github.com/kenygamer/BlockCMD",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "iZeaoGamer/BlockCMD"
+    ],
+    "status": "uploaded",
+    "bytes": 17544,
+    "sha256": "2d1ca646ab3417216c4a3f919f4cded197daf2a33a49c62ed31bb2aea0779c09",
+    "final_url": "https://github.com/iZeaoGamer/BlockCMD/archive/f968f9d7b89fd953e7b7798bad6ce74ff6df42f6.zip",
+    "storage_path": null,
+    "provider": "iZeaoGamer/BlockCMD",
     "tried": [
-      "kenygamer/BlockCMD"
-    ]
+      "kenygamer/BlockCMD",
+      "iZeaoGamer/BlockCMD"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "f968f9d7b89fd953e7b7798bad6ce74ff6df42f6",
+      "tree_sha": "e5af9d4a6a99af7a6726a76877ae240e52c87f38",
+      "commit_url": "https://github.com/iZeaoGamer/BlockCMD/commit/f968f9d7b89fd953e7b7798bad6ce74ff6df42f6",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 1,
+      "license_evidence": {
+        "declared_licenses": [
+          "gpl-3.0"
+        ],
+        "release_ids": [
+          1058
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/BlockCMD/1.0.0-beta"
+        ],
+        "license_files_in_zip": [
+          "BlockCMD-f968f9d7b89fd953e7b7798bad6ce74ff6df42f6/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.855799+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-117761022-f968f9d7b89fd953e7b7798bad6ce74ff6df42f6-2d1ca646ab34.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-117761022-f968f9d7b89fd953e7b7798bad6ce74ff6df42f6-2d1ca646ab34.zip",
+    "remote_sha256": "2d1ca646ab3417216c4a3f919f4cded197daf2a33a49c62ed31bb2aea0779c09",
+    "remote_asset_id": 654133879,
+    "uploaded_at": "2026-10-18T18:10:38Z",
+    "local_deleted": false
   },
   "117766134@cc738a5844dcb0e396470b3a9b47c83c4b955646": {
     "key": "117766134@cc738a5844dcb0e396470b3a9b47c83c4b955646",
@@ -7816,13 +7933,52 @@
     "repo_name": "TwistedAsylumMC/AutoClearLagg",
     "commit": "1db862e3fbe225b73c378be4a5bff91b5084b0d4",
     "source_url": "https://github.com/TwistedAsylumMC/AutoClearLagg",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "Shelly7w7/AutoClearLagg"
+    ],
+    "status": "uploaded",
+    "bytes": 17179,
+    "sha256": "cf524f71f97fde5a7ebc672014f91dca04b0cc4844c153c828557f0f707f9195",
+    "final_url": "https://github.com/Shelly7w7/AutoClearLagg/archive/1db862e3fbe225b73c378be4a5bff91b5084b0d4.zip",
+    "storage_path": null,
+    "provider": "Shelly7w7/AutoClearLagg",
     "tried": [
-      "TwistedAsylumMC/AutoClearLagg"
-    ]
+      "TwistedAsylumMC/AutoClearLagg",
+      "Shelly7w7/AutoClearLagg"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "1db862e3fbe225b73c378be4a5bff91b5084b0d4",
+      "tree_sha": "e7edb41e288d02b2a5901c1516038e2d288de440",
+      "commit_url": "https://github.com/Shelly7w7/AutoClearLagg/commit/1db862e3fbe225b73c378be4a5bff91b5084b0d4",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 1,
+      "license_evidence": {
+        "declared_licenses": [
+          "gpl-3.0"
+        ],
+        "release_ids": [
+          4423
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/AutoClearLagg/3.1.0"
+        ],
+        "license_files_in_zip": [
+          "AutoClearLagg-1db862e3fbe225b73c378be4a5bff91b5084b0d4/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.856559+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-119153558-1db862e3fbe225b73c378be4a5bff91b5084b0d4-cf524f71f97f.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-119153558-1db862e3fbe225b73c378be4a5bff91b5084b0d4-cf524f71f97f.zip",
+    "remote_sha256": "cf524f71f97fde5a7ebc672014f91dca04b0cc4844c153c828557f0f707f9195",
+    "remote_asset_id": 654133969,
+    "uploaded_at": "2026-10-18T18:10:40Z",
+    "local_deleted": false
   },
   "119153558@a093956450befbe0971e1776db041935a0d7a1a0": {
     "key": "119153558@a093956450befbe0971e1776db041935a0d7a1a0",
@@ -7830,13 +7986,52 @@
     "repo_name": "TwistedAsylumMC/AutoClearLagg",
     "commit": "a093956450befbe0971e1776db041935a0d7a1a0",
     "source_url": "https://github.com/TwistedAsylumMC/AutoClearLagg",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "Shelly7w7/AutoClearLagg"
+    ],
+    "status": "uploaded",
+    "bytes": 17161,
+    "sha256": "be7b55ccced470dad521b0a8067cd39230b73cfc0d152b4c79818de3373111cd",
+    "final_url": "https://github.com/Shelly7w7/AutoClearLagg/archive/a093956450befbe0971e1776db041935a0d7a1a0.zip",
+    "storage_path": null,
+    "provider": "Shelly7w7/AutoClearLagg",
     "tried": [
-      "TwistedAsylumMC/AutoClearLagg"
-    ]
+      "TwistedAsylumMC/AutoClearLagg",
+      "Shelly7w7/AutoClearLagg"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "a093956450befbe0971e1776db041935a0d7a1a0",
+      "tree_sha": "9e2abdf9c6ac6a41d71ea657de3fe251f747fb83",
+      "commit_url": "https://github.com/Shelly7w7/AutoClearLagg/commit/a093956450befbe0971e1776db041935a0d7a1a0",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 1,
+      "license_evidence": {
+        "declared_licenses": [
+          "gpl-3.0"
+        ],
+        "release_ids": [
+          4182
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/AutoClearLagg/3.0.1"
+        ],
+        "license_files_in_zip": [
+          "AutoClearLagg-a093956450befbe0971e1776db041935a0d7a1a0/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.857304+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-119153558-a093956450befbe0971e1776db041935a0d7a1a0-be7b55ccced4.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-119153558-a093956450befbe0971e1776db041935a0d7a1a0-be7b55ccced4.zip",
+    "remote_sha256": "be7b55ccced470dad521b0a8067cd39230b73cfc0d152b4c79818de3373111cd",
+    "remote_asset_id": 654134015,
+    "uploaded_at": "2026-10-18T18:10:41Z",
+    "local_deleted": false
   },
   "1197405270@fdcb24e888a28bae100c883ce712979da5de9170": {
     "key": "1197405270@fdcb24e888a28bae100c883ce712979da5de9170",
@@ -8083,13 +8278,50 @@
     "repo_name": "McpeBooster/ReplaySystem-McpeBooster",
     "commit": "ba7ce59caa18765a77de6fab44c4480daca727e6",
     "source_url": "https://github.com/McpeBooster/ReplaySystem-McpeBooster",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "Hyroxing-Development/ReplaySystem-McpeBooster"
+    ],
+    "status": "uploaded",
+    "bytes": 115147,
+    "sha256": "0829585554f79cbf03ed14eb78484a795f201339fb0caec3f8581f0454e4bc69",
+    "final_url": "https://github.com/Hyroxing-Development/ReplaySystem-McpeBooster/archive/ba7ce59caa18765a77de6fab44c4480daca727e6.zip",
+    "storage_path": null,
+    "provider": "Hyroxing-Development/ReplaySystem-McpeBooster",
     "tried": [
-      "McpeBooster/ReplaySystem-McpeBooster"
-    ]
+      "McpeBooster/ReplaySystem-McpeBooster",
+      "Hyroxing-Development/ReplaySystem-McpeBooster"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "ba7ce59caa18765a77de6fab44c4480daca727e6",
+      "tree_sha": "272b3e41222ec162bfbcdfa36b7351d664aba090",
+      "commit_url": "https://github.com/Hyroxing-Development/ReplaySystem-McpeBooster/commit/ba7ce59caa18765a77de6fab44c4480daca727e6",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 12,
+      "license_evidence": {
+        "declared_licenses": [
+          "apache-2.0"
+        ],
+        "release_ids": [
+          1234
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/ReplaySystem/1.2.0"
+        ],
+        "license_files_in_zip": []
+      },
+      "checked_at": "2026-10-18T18:09:55.859137+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-124568531-ba7ce59caa18765a77de6fab44c4480daca727e6-0829585554f7.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-124568531-ba7ce59caa18765a77de6fab44c4480daca727e6-0829585554f7.zip",
+    "remote_sha256": "0829585554f79cbf03ed14eb78484a795f201339fb0caec3f8581f0454e4bc69",
+    "remote_asset_id": 654134054,
+    "uploaded_at": "2026-10-18T18:10:42Z",
+    "local_deleted": false
   },
   "1246901144@90c552bf8436d716c2f42de085b0eb6529245739": {
     "key": "1246901144@90c552bf8436d716c2f42de085b0eb6529245739",
@@ -16067,13 +16299,52 @@
     "repo_name": "TwistedAsylumMC/MultiEconomy",
     "commit": "9323e94e58141277dea6cd6dc66b2297b8f316fd",
     "source_url": "https://github.com/TwistedAsylumMC/MultiEconomy",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "esh123cookie/MultiEconomy"
+    ],
+    "status": "uploaded",
+    "bytes": 30362,
+    "sha256": "5f1808884799535258d16068f5176b17eb86c82b647b100e067dc933f0bce306",
+    "final_url": "https://github.com/esh123cookie/MultiEconomy/archive/9323e94e58141277dea6cd6dc66b2297b8f316fd.zip",
+    "storage_path": null,
+    "provider": "esh123cookie/MultiEconomy",
     "tried": [
-      "TwistedAsylumMC/MultiEconomy"
-    ]
+      "TwistedAsylumMC/MultiEconomy",
+      "esh123cookie/MultiEconomy"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "9323e94e58141277dea6cd6dc66b2297b8f316fd",
+      "tree_sha": "1f7a49a945d6b11d670473fb9ef22a3c8c1f954d",
+      "commit_url": "https://github.com/esh123cookie/MultiEconomy/commit/9323e94e58141277dea6cd6dc66b2297b8f316fd",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 9,
+      "license_evidence": {
+        "declared_licenses": [
+          "gpl-3.0"
+        ],
+        "release_ids": [
+          3510
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/MultiEconomy/2.0.0"
+        ],
+        "license_files_in_zip": [
+          "MultiEconomy-9323e94e58141277dea6cd6dc66b2297b8f316fd/LICENCE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.860289+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-158875803-9323e94e58141277dea6cd6dc66b2297b8f316fd-5f1808884799.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-158875803-9323e94e58141277dea6cd6dc66b2297b8f316fd-5f1808884799.zip",
+    "remote_sha256": "5f1808884799535258d16068f5176b17eb86c82b647b100e067dc933f0bce306",
+    "remote_asset_id": 654134085,
+    "uploaded_at": "2026-10-18T18:10:43Z",
+    "local_deleted": false
   },
   "158875803@d33762760d13aa1065f54c27bbc50244270a1d18": {
     "key": "158875803@d33762760d13aa1065f54c27bbc50244270a1d18",
@@ -16081,13 +16352,50 @@
     "repo_name": "TwistedAsylumMC/MultiEconomy",
     "commit": "d33762760d13aa1065f54c27bbc50244270a1d18",
     "source_url": "https://github.com/TwistedAsylumMC/MultiEconomy",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "esh123cookie/MultiEconomy"
+    ],
+    "status": "uploaded",
+    "bytes": 16222,
+    "sha256": "7b6daf690709f438f6ab3434ca230387e431765d6ad1cc2ad9c15ac4691dd2e9",
+    "final_url": "https://github.com/esh123cookie/MultiEconomy/archive/d33762760d13aa1065f54c27bbc50244270a1d18.zip",
+    "storage_path": null,
+    "provider": "esh123cookie/MultiEconomy",
     "tried": [
-      "TwistedAsylumMC/MultiEconomy"
-    ]
+      "TwistedAsylumMC/MultiEconomy",
+      "esh123cookie/MultiEconomy"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "d33762760d13aa1065f54c27bbc50244270a1d18",
+      "tree_sha": "83a2e168d2ad910bb29c87994db655fc7adb056e",
+      "commit_url": "https://github.com/esh123cookie/MultiEconomy/commit/d33762760d13aa1065f54c27bbc50244270a1d18",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 10,
+      "license_evidence": {
+        "declared_licenses": [
+          "unlicense"
+        ],
+        "release_ids": [
+          2393
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/MultiEconomy/1.1.0"
+        ],
+        "license_files_in_zip": []
+      },
+      "checked_at": "2026-10-18T18:09:55.861315+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-158875803-d33762760d13aa1065f54c27bbc50244270a1d18-7b6daf690709.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-158875803-d33762760d13aa1065f54c27bbc50244270a1d18-7b6daf690709.zip",
+    "remote_sha256": "7b6daf690709f438f6ab3434ca230387e431765d6ad1cc2ad9c15ac4691dd2e9",
+    "remote_asset_id": 654134108,
+    "uploaded_at": "2026-10-18T18:10:44Z",
+    "local_deleted": false
   },
   "159018211@b13c02e2f8a10f5e360322effe3117cdf87bcd32": {
     "key": "159018211@b13c02e2f8a10f5e360322effe3117cdf87bcd32",
@@ -16400,13 +16708,50 @@
     "repo_name": "korado531m7/StairSeat",
     "commit": "1d8f0f985b9df28c365727807e8821b64210b90d",
     "source_url": "https://github.com/korado531m7/StairSeat",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "Teunboeke/StairSeat"
+    ],
+    "status": "uploaded",
+    "bytes": 113740,
+    "sha256": "c747e3e758507d752033424c57b661e0df03dcadab34ed4c0240df9dc7c7edd9",
+    "final_url": "https://github.com/Teunboeke/StairSeat/archive/1d8f0f985b9df28c365727807e8821b64210b90d.zip",
+    "storage_path": null,
+    "provider": "Teunboeke/StairSeat",
     "tried": [
-      "korado531m7/StairSeat"
-    ]
+      "korado531m7/StairSeat",
+      "Teunboeke/StairSeat"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "1d8f0f985b9df28c365727807e8821b64210b90d",
+      "tree_sha": "be53eaf4b1c0dc347c1677826411ee4b9e0b5803",
+      "commit_url": "https://github.com/Teunboeke/StairSeat/commit/1d8f0f985b9df28c365727807e8821b64210b90d",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 3,
+      "license_evidence": {
+        "declared_licenses": [
+          "gpl-3.0"
+        ],
+        "release_ids": [
+          2433
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/StairSeat/1.3.0"
+        ],
+        "license_files_in_zip": []
+      },
+      "checked_at": "2026-10-18T18:09:55.862305+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-160235581-1d8f0f985b9df28c365727807e8821b64210b90d-c747e3e75850.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-160235581-1d8f0f985b9df28c365727807e8821b64210b90d-c747e3e75850.zip",
+    "remote_sha256": "c747e3e758507d752033424c57b661e0df03dcadab34ed4c0240df9dc7c7edd9",
+    "remote_asset_id": 654134137,
+    "uploaded_at": "2026-10-18T18:10:44Z",
+    "local_deleted": false
   },
   "160235581@2763b42c0d5c8b3b39bd1ab0d6ace5d3726c1988": {
     "key": "160235581@2763b42c0d5c8b3b39bd1ab0d6ace5d3726c1988",
@@ -16414,13 +16759,50 @@
     "repo_name": "korado531m7/StairSeat",
     "commit": "2763b42c0d5c8b3b39bd1ab0d6ace5d3726c1988",
     "source_url": "https://github.com/korado531m7/StairSeat",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "Teunboeke/StairSeat"
+    ],
+    "status": "uploaded",
+    "bytes": 3128,
+    "sha256": "26df1b0c54ecaf3a56e8f42a79e167a8dba0bd737b34f2c607301b165d3cbd92",
+    "final_url": "https://github.com/Teunboeke/StairSeat/archive/2763b42c0d5c8b3b39bd1ab0d6ace5d3726c1988.zip",
+    "storage_path": null,
+    "provider": "Teunboeke/StairSeat",
     "tried": [
-      "korado531m7/StairSeat"
-    ]
+      "korado531m7/StairSeat",
+      "Teunboeke/StairSeat"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "2763b42c0d5c8b3b39bd1ab0d6ace5d3726c1988",
+      "tree_sha": "169e174e875ebd9481a3869a0f9d2b192dccbe6c",
+      "commit_url": "https://github.com/Teunboeke/StairSeat/commit/2763b42c0d5c8b3b39bd1ab0d6ace5d3726c1988",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 1,
+      "license_evidence": {
+        "declared_licenses": [
+          "gpl-3.0"
+        ],
+        "release_ids": [
+          2167
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/StairSeat/1.0.0"
+        ],
+        "license_files_in_zip": []
+      },
+      "checked_at": "2026-10-18T18:09:55.862864+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-160235581-2763b42c0d5c8b3b39bd1ab0d6ace5d3726c1988-26df1b0c54ec.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-160235581-2763b42c0d5c8b3b39bd1ab0d6ace5d3726c1988-26df1b0c54ec.zip",
+    "remote_sha256": "26df1b0c54ecaf3a56e8f42a79e167a8dba0bd737b34f2c607301b165d3cbd92",
+    "remote_asset_id": 654134155,
+    "uploaded_at": "2026-10-18T18:10:45Z",
+    "local_deleted": false
   },
   "160235581@2e0a64de081e6f65f40f5920db04464f90dbc49c": {
     "key": "160235581@2e0a64de081e6f65f40f5920db04464f90dbc49c",
@@ -16428,13 +16810,50 @@
     "repo_name": "korado531m7/StairSeat",
     "commit": "2e0a64de081e6f65f40f5920db04464f90dbc49c",
     "source_url": "https://github.com/korado531m7/StairSeat",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "Teunboeke/StairSeat"
+    ],
+    "status": "uploaded",
+    "bytes": 118384,
+    "sha256": "6cc9ca67d905e407df9171d3d9169b1d47a207a53acc1b0937b2d4dc4b8eb109",
+    "final_url": "https://github.com/Teunboeke/StairSeat/archive/2e0a64de081e6f65f40f5920db04464f90dbc49c.zip",
+    "storage_path": null,
+    "provider": "Teunboeke/StairSeat",
     "tried": [
-      "korado531m7/StairSeat"
-    ]
+      "korado531m7/StairSeat",
+      "Teunboeke/StairSeat"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "2e0a64de081e6f65f40f5920db04464f90dbc49c",
+      "tree_sha": "abce2c555f8ef204616608e2698e7de6adb78ce4",
+      "commit_url": "https://github.com/Teunboeke/StairSeat/commit/2e0a64de081e6f65f40f5920db04464f90dbc49c",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 4,
+      "license_evidence": {
+        "declared_licenses": [
+          "gpl-3.0"
+        ],
+        "release_ids": [
+          5037
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/StairSeat/1.5.3"
+        ],
+        "license_files_in_zip": []
+      },
+      "checked_at": "2026-10-18T18:09:55.863911+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-160235581-2e0a64de081e6f65f40f5920db04464f90dbc49c-6cc9ca67d905.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-160235581-2e0a64de081e6f65f40f5920db04464f90dbc49c-6cc9ca67d905.zip",
+    "remote_sha256": "6cc9ca67d905e407df9171d3d9169b1d47a207a53acc1b0937b2d4dc4b8eb109",
+    "remote_asset_id": 654134189,
+    "uploaded_at": "2026-10-18T18:10:46Z",
+    "local_deleted": false
   },
   "160235581@2e3cb6e7598b67181e7b05caa3d175333fb0533b": {
     "key": "160235581@2e3cb6e7598b67181e7b05caa3d175333fb0533b",
@@ -16442,13 +16861,50 @@
     "repo_name": "korado531m7/StairSeat",
     "commit": "2e3cb6e7598b67181e7b05caa3d175333fb0533b",
     "source_url": "https://github.com/korado531m7/StairSeat",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "Teunboeke/StairSeat"
+    ],
+    "status": "uploaded",
+    "bytes": 117918,
+    "sha256": "c1f26080d6778c44de61cf7808254413675e8636fdfa75402be0e04139e0f7fe",
+    "final_url": "https://github.com/Teunboeke/StairSeat/archive/2e3cb6e7598b67181e7b05caa3d175333fb0533b.zip",
+    "storage_path": null,
+    "provider": "Teunboeke/StairSeat",
     "tried": [
-      "korado531m7/StairSeat"
-    ]
+      "korado531m7/StairSeat",
+      "Teunboeke/StairSeat"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "2e3cb6e7598b67181e7b05caa3d175333fb0533b",
+      "tree_sha": "af29defd36bb77b17c490f61498a19c00d422c57",
+      "commit_url": "https://github.com/Teunboeke/StairSeat/commit/2e3cb6e7598b67181e7b05caa3d175333fb0533b",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 4,
+      "license_evidence": {
+        "declared_licenses": [
+          "gpl-3.0"
+        ],
+        "release_ids": [
+          4791
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/StairSeat/1.5.2"
+        ],
+        "license_files_in_zip": []
+      },
+      "checked_at": "2026-10-18T18:09:55.864957+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-160235581-2e3cb6e7598b67181e7b05caa3d175333fb0533b-c1f26080d677.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-160235581-2e3cb6e7598b67181e7b05caa3d175333fb0533b-c1f26080d677.zip",
+    "remote_sha256": "c1f26080d6778c44de61cf7808254413675e8636fdfa75402be0e04139e0f7fe",
+    "remote_asset_id": 654134214,
+    "uploaded_at": "2026-10-18T18:10:47Z",
+    "local_deleted": false
   },
   "160235581@37245c5e75cef9377ab6f61429ffc1388f22217b": {
     "key": "160235581@37245c5e75cef9377ab6f61429ffc1388f22217b",
@@ -16456,13 +16912,50 @@
     "repo_name": "korado531m7/StairSeat",
     "commit": "37245c5e75cef9377ab6f61429ffc1388f22217b",
     "source_url": "https://github.com/korado531m7/StairSeat",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "Teunboeke/StairSeat"
+    ],
+    "status": "uploaded",
+    "bytes": 118488,
+    "sha256": "114721ffc9f99c41b8b11570c228b64d7ace36d0e4cd6198b413b5ae5be8e2eb",
+    "final_url": "https://github.com/Teunboeke/StairSeat/archive/37245c5e75cef9377ab6f61429ffc1388f22217b.zip",
+    "storage_path": null,
+    "provider": "Teunboeke/StairSeat",
     "tried": [
-      "korado531m7/StairSeat"
-    ]
+      "korado531m7/StairSeat",
+      "Teunboeke/StairSeat"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "37245c5e75cef9377ab6f61429ffc1388f22217b",
+      "tree_sha": "b76c30c45e0c4ea50858092b4630203aa441e255",
+      "commit_url": "https://github.com/Teunboeke/StairSeat/commit/37245c5e75cef9377ab6f61429ffc1388f22217b",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 4,
+      "license_evidence": {
+        "declared_licenses": [
+          "gpl-3.0"
+        ],
+        "release_ids": [
+          6171
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/StairSeat/1.5.8"
+        ],
+        "license_files_in_zip": []
+      },
+      "checked_at": "2026-10-18T18:09:55.865962+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-160235581-37245c5e75cef9377ab6f61429ffc1388f22217b-114721ffc9f9.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-160235581-37245c5e75cef9377ab6f61429ffc1388f22217b-114721ffc9f9.zip",
+    "remote_sha256": "114721ffc9f99c41b8b11570c228b64d7ace36d0e4cd6198b413b5ae5be8e2eb",
+    "remote_asset_id": 654134248,
+    "uploaded_at": "2026-10-18T18:10:48Z",
+    "local_deleted": false
   },
   "160235581@58141f1eebfad5273954e098dbe98e47a679dd27": {
     "key": "160235581@58141f1eebfad5273954e098dbe98e47a679dd27",
@@ -16470,13 +16963,50 @@
     "repo_name": "korado531m7/StairSeat",
     "commit": "58141f1eebfad5273954e098dbe98e47a679dd27",
     "source_url": "https://github.com/korado531m7/StairSeat",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "Teunboeke/StairSeat"
+    ],
+    "status": "uploaded",
+    "bytes": 114041,
+    "sha256": "168854aa287b202418ad8689b6b4026e4e57d10f53d3795518ffa6f5c11ef9d0",
+    "final_url": "https://github.com/Teunboeke/StairSeat/archive/58141f1eebfad5273954e098dbe98e47a679dd27.zip",
+    "storage_path": null,
+    "provider": "Teunboeke/StairSeat",
     "tried": [
-      "korado531m7/StairSeat"
-    ]
+      "korado531m7/StairSeat",
+      "Teunboeke/StairSeat"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "58141f1eebfad5273954e098dbe98e47a679dd27",
+      "tree_sha": "a86e9ee4788ec85d4f7fb94805f2f3c013156aac",
+      "commit_url": "https://github.com/Teunboeke/StairSeat/commit/58141f1eebfad5273954e098dbe98e47a679dd27",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 3,
+      "license_evidence": {
+        "declared_licenses": [
+          "gpl-3.0"
+        ],
+        "release_ids": [
+          4642
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/StairSeat/1.4.2"
+        ],
+        "license_files_in_zip": []
+      },
+      "checked_at": "2026-10-18T18:09:55.866947+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-160235581-58141f1eebfad5273954e098dbe98e47a679dd27-168854aa287b.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-160235581-58141f1eebfad5273954e098dbe98e47a679dd27-168854aa287b.zip",
+    "remote_sha256": "168854aa287b202418ad8689b6b4026e4e57d10f53d3795518ffa6f5c11ef9d0",
+    "remote_asset_id": 654134262,
+    "uploaded_at": "2026-10-18T18:10:49Z",
+    "local_deleted": false
   },
   "160235581@72c4ea8a472e674d6914d4c5849242341f858ca6": {
     "key": "160235581@72c4ea8a472e674d6914d4c5849242341f858ca6",
@@ -16484,13 +17014,50 @@
     "repo_name": "korado531m7/StairSeat",
     "commit": "72c4ea8a472e674d6914d4c5849242341f858ca6",
     "source_url": "https://github.com/korado531m7/StairSeat",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "Teunboeke/StairSeat"
+    ],
+    "status": "uploaded",
+    "bytes": 113997,
+    "sha256": "0157d9cbf051ba1465cc0bc7151fd6dbf8337b82950e9c805cb6c21c1cd8937f",
+    "final_url": "https://github.com/Teunboeke/StairSeat/archive/72c4ea8a472e674d6914d4c5849242341f858ca6.zip",
+    "storage_path": null,
+    "provider": "Teunboeke/StairSeat",
     "tried": [
-      "korado531m7/StairSeat"
-    ]
+      "korado531m7/StairSeat",
+      "Teunboeke/StairSeat"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "72c4ea8a472e674d6914d4c5849242341f858ca6",
+      "tree_sha": "34a1bdb9f578e271f81245d090a6025a9c03eaa3",
+      "commit_url": "https://github.com/Teunboeke/StairSeat/commit/72c4ea8a472e674d6914d4c5849242341f858ca6",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 3,
+      "license_evidence": {
+        "declared_licenses": [
+          "gpl-3.0"
+        ],
+        "release_ids": [
+          3172
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/StairSeat/1.4.0"
+        ],
+        "license_files_in_zip": []
+      },
+      "checked_at": "2026-10-18T18:09:55.867935+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-160235581-72c4ea8a472e674d6914d4c5849242341f858ca6-0157d9cbf051.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-160235581-72c4ea8a472e674d6914d4c5849242341f858ca6-0157d9cbf051.zip",
+    "remote_sha256": "0157d9cbf051ba1465cc0bc7151fd6dbf8337b82950e9c805cb6c21c1cd8937f",
+    "remote_asset_id": 654134279,
+    "uploaded_at": "2026-10-18T18:10:50Z",
+    "local_deleted": false
   },
   "160235581@762481081cd3524890477b24b48472f5a82d5dfd": {
     "key": "160235581@762481081cd3524890477b24b48472f5a82d5dfd",
@@ -16498,13 +17065,50 @@
     "repo_name": "korado531m7/StairSeat",
     "commit": "762481081cd3524890477b24b48472f5a82d5dfd",
     "source_url": "https://github.com/korado531m7/StairSeat",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "Teunboeke/StairSeat"
+    ],
+    "status": "uploaded",
+    "bytes": 5271,
+    "sha256": "f9fcdd4119250509ac39d6a5d293567237335d88e077797173375f0d5ebd272c",
+    "final_url": "https://github.com/Teunboeke/StairSeat/archive/762481081cd3524890477b24b48472f5a82d5dfd.zip",
+    "storage_path": null,
+    "provider": "Teunboeke/StairSeat",
     "tried": [
-      "korado531m7/StairSeat"
-    ]
+      "korado531m7/StairSeat",
+      "Teunboeke/StairSeat"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "762481081cd3524890477b24b48472f5a82d5dfd",
+      "tree_sha": "1bd2b55cd9b732be6dab06874a1e5492748481cb",
+      "commit_url": "https://github.com/Teunboeke/StairSeat/commit/762481081cd3524890477b24b48472f5a82d5dfd",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 2,
+      "license_evidence": {
+        "declared_licenses": [
+          "gpl-3.0"
+        ],
+        "release_ids": [
+          2195
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/StairSeat/1.2.0"
+        ],
+        "license_files_in_zip": []
+      },
+      "checked_at": "2026-10-18T18:09:55.868638+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-160235581-762481081cd3524890477b24b48472f5a82d5dfd-f9fcdd411925.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-160235581-762481081cd3524890477b24b48472f5a82d5dfd-f9fcdd411925.zip",
+    "remote_sha256": "f9fcdd4119250509ac39d6a5d293567237335d88e077797173375f0d5ebd272c",
+    "remote_asset_id": 654134310,
+    "uploaded_at": "2026-10-18T18:10:51Z",
+    "local_deleted": false
   },
   "160235581@77e500df4e63154ad39d2c5ed477ac8f4f78999a": {
     "key": "160235581@77e500df4e63154ad39d2c5ed477ac8f4f78999a",
@@ -16512,13 +17116,50 @@
     "repo_name": "korado531m7/StairSeat",
     "commit": "77e500df4e63154ad39d2c5ed477ac8f4f78999a",
     "source_url": "https://github.com/korado531m7/StairSeat",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "Teunboeke/StairSeat"
+    ],
+    "status": "uploaded",
+    "bytes": 118488,
+    "sha256": "4e2830313a8e7364ff0b1d4084ffc73447cec67b08a53ba0c6b47fbf137deec0",
+    "final_url": "https://github.com/Teunboeke/StairSeat/archive/77e500df4e63154ad39d2c5ed477ac8f4f78999a.zip",
+    "storage_path": null,
+    "provider": "Teunboeke/StairSeat",
     "tried": [
-      "korado531m7/StairSeat"
-    ]
+      "korado531m7/StairSeat",
+      "Teunboeke/StairSeat"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "77e500df4e63154ad39d2c5ed477ac8f4f78999a",
+      "tree_sha": "395586aa30c95c1974dab8271039098f0c85013a",
+      "commit_url": "https://github.com/Teunboeke/StairSeat/commit/77e500df4e63154ad39d2c5ed477ac8f4f78999a",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 4,
+      "license_evidence": {
+        "declared_licenses": [
+          "gpl-3.0"
+        ],
+        "release_ids": [
+          5595
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/StairSeat/1.5.6"
+        ],
+        "license_files_in_zip": []
+      },
+      "checked_at": "2026-10-18T18:09:55.869678+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-160235581-77e500df4e63154ad39d2c5ed477ac8f4f78999a-4e2830313a8e.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-160235581-77e500df4e63154ad39d2c5ed477ac8f4f78999a-4e2830313a8e.zip",
+    "remote_sha256": "4e2830313a8e7364ff0b1d4084ffc73447cec67b08a53ba0c6b47fbf137deec0",
+    "remote_asset_id": 654134343,
+    "uploaded_at": "2026-10-18T18:10:53Z",
+    "local_deleted": false
   },
   "160235581@79d1f17d45505bafca9221e4506de53bbf9d27cd": {
     "key": "160235581@79d1f17d45505bafca9221e4506de53bbf9d27cd",
@@ -16526,13 +17167,50 @@
     "repo_name": "korado531m7/StairSeat",
     "commit": "79d1f17d45505bafca9221e4506de53bbf9d27cd",
     "source_url": "https://github.com/korado531m7/StairSeat",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "Teunboeke/StairSeat"
+    ],
+    "status": "uploaded",
+    "bytes": 118499,
+    "sha256": "e8efa46099450bba68d0543d73ef62f6e4e7de672a4e283349424d6cc7011a90",
+    "final_url": "https://github.com/Teunboeke/StairSeat/archive/79d1f17d45505bafca9221e4506de53bbf9d27cd.zip",
+    "storage_path": null,
+    "provider": "Teunboeke/StairSeat",
     "tried": [
-      "korado531m7/StairSeat"
-    ]
+      "korado531m7/StairSeat",
+      "Teunboeke/StairSeat"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "79d1f17d45505bafca9221e4506de53bbf9d27cd",
+      "tree_sha": "b84949e7781412710cb866bc39f898974a84e75e",
+      "commit_url": "https://github.com/Teunboeke/StairSeat/commit/79d1f17d45505bafca9221e4506de53bbf9d27cd",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 4,
+      "license_evidence": {
+        "declared_licenses": [
+          "gpl-3.0"
+        ],
+        "release_ids": [
+          6827
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/StairSeat/1.5.10"
+        ],
+        "license_files_in_zip": []
+      },
+      "checked_at": "2026-10-18T18:09:55.870692+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-160235581-79d1f17d45505bafca9221e4506de53bbf9d27cd-e8efa4609945.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-160235581-79d1f17d45505bafca9221e4506de53bbf9d27cd-e8efa4609945.zip",
+    "remote_sha256": "e8efa46099450bba68d0543d73ef62f6e4e7de672a4e283349424d6cc7011a90",
+    "remote_asset_id": 654134396,
+    "uploaded_at": "2026-10-18T18:10:53Z",
+    "local_deleted": false
   },
   "160235581@7d9a9911d1e10b65d7764b39c5f44ea71e908151": {
     "key": "160235581@7d9a9911d1e10b65d7764b39c5f44ea71e908151",
@@ -16540,13 +17218,50 @@
     "repo_name": "korado531m7/StairSeat",
     "commit": "7d9a9911d1e10b65d7764b39c5f44ea71e908151",
     "source_url": "https://github.com/korado531m7/StairSeat",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "Teunboeke/StairSeat"
+    ],
+    "status": "uploaded",
+    "bytes": 3312,
+    "sha256": "3a5e4eddbf22263dacc09b3277232fb6c764caa12cf6bb5f98a3b9d6e841acca",
+    "final_url": "https://github.com/Teunboeke/StairSeat/archive/7d9a9911d1e10b65d7764b39c5f44ea71e908151.zip",
+    "storage_path": null,
+    "provider": "Teunboeke/StairSeat",
     "tried": [
-      "korado531m7/StairSeat"
-    ]
+      "korado531m7/StairSeat",
+      "Teunboeke/StairSeat"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "7d9a9911d1e10b65d7764b39c5f44ea71e908151",
+      "tree_sha": "d6703b83533d7899a895b899d460afad1b9ec865",
+      "commit_url": "https://github.com/Teunboeke/StairSeat/commit/7d9a9911d1e10b65d7764b39c5f44ea71e908151",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 1,
+      "license_evidence": {
+        "declared_licenses": [
+          "gpl-3.0"
+        ],
+        "release_ids": [
+          2191
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/StairSeat/1.1.0"
+        ],
+        "license_files_in_zip": []
+      },
+      "checked_at": "2026-10-18T18:09:55.871296+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-160235581-7d9a9911d1e10b65d7764b39c5f44ea71e908151-3a5e4eddbf22.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-160235581-7d9a9911d1e10b65d7764b39c5f44ea71e908151-3a5e4eddbf22.zip",
+    "remote_sha256": "3a5e4eddbf22263dacc09b3277232fb6c764caa12cf6bb5f98a3b9d6e841acca",
+    "remote_asset_id": 654134423,
+    "uploaded_at": "2026-10-18T18:10:54Z",
+    "local_deleted": false
   },
   "160235581@a3066ba629deb71f5079083797ffe8fed6fae6e2": {
     "key": "160235581@a3066ba629deb71f5079083797ffe8fed6fae6e2",
@@ -16554,13 +17269,50 @@
     "repo_name": "korado531m7/StairSeat",
     "commit": "a3066ba629deb71f5079083797ffe8fed6fae6e2",
     "source_url": "https://github.com/korado531m7/StairSeat",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "Teunboeke/StairSeat"
+    ],
+    "status": "uploaded",
+    "bytes": 118488,
+    "sha256": "9ae3ba5050e6ed9a6840bd8371dae1fcaa2963b2e18f50f6bd285f31e888e20e",
+    "final_url": "https://github.com/Teunboeke/StairSeat/archive/a3066ba629deb71f5079083797ffe8fed6fae6e2.zip",
+    "storage_path": null,
+    "provider": "Teunboeke/StairSeat",
     "tried": [
-      "korado531m7/StairSeat"
-    ]
+      "korado531m7/StairSeat",
+      "Teunboeke/StairSeat"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "a3066ba629deb71f5079083797ffe8fed6fae6e2",
+      "tree_sha": "d39df2943cb3a868fd266e48637a21062ddca6bf",
+      "commit_url": "https://github.com/Teunboeke/StairSeat/commit/a3066ba629deb71f5079083797ffe8fed6fae6e2",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 4,
+      "license_evidence": {
+        "declared_licenses": [
+          "gpl-3.0"
+        ],
+        "release_ids": [
+          6396
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/StairSeat/1.5.9"
+        ],
+        "license_files_in_zip": []
+      },
+      "checked_at": "2026-10-18T18:09:55.872314+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-160235581-a3066ba629deb71f5079083797ffe8fed6fae6e2-9ae3ba5050e6.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-160235581-a3066ba629deb71f5079083797ffe8fed6fae6e2-9ae3ba5050e6.zip",
+    "remote_sha256": "9ae3ba5050e6ed9a6840bd8371dae1fcaa2963b2e18f50f6bd285f31e888e20e",
+    "remote_asset_id": 654134468,
+    "uploaded_at": "2026-10-18T18:10:55Z",
+    "local_deleted": false
   },
   "160235581@c3e4a4ec463dab83ac6d64e8454c99a97569ed39": {
     "key": "160235581@c3e4a4ec463dab83ac6d64e8454c99a97569ed39",
@@ -16568,13 +17320,50 @@
     "repo_name": "korado531m7/StairSeat",
     "commit": "c3e4a4ec463dab83ac6d64e8454c99a97569ed39",
     "source_url": "https://github.com/korado531m7/StairSeat",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "Teunboeke/StairSeat"
+    ],
+    "status": "uploaded",
+    "bytes": 112687,
+    "sha256": "62fc59ded37380f686be8f355ee875c19cfc08c2c0e9772d73ba02474c37063f",
+    "final_url": "https://github.com/Teunboeke/StairSeat/archive/c3e4a4ec463dab83ac6d64e8454c99a97569ed39.zip",
+    "storage_path": null,
+    "provider": "Teunboeke/StairSeat",
     "tried": [
-      "korado531m7/StairSeat"
-    ]
+      "korado531m7/StairSeat",
+      "Teunboeke/StairSeat"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "c3e4a4ec463dab83ac6d64e8454c99a97569ed39",
+      "tree_sha": "1bffade1aa70c89380af5240165dc68eeedfbf0a",
+      "commit_url": "https://github.com/Teunboeke/StairSeat/commit/c3e4a4ec463dab83ac6d64e8454c99a97569ed39",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 2,
+      "license_evidence": {
+        "declared_licenses": [
+          "gpl-3.0"
+        ],
+        "release_ids": [
+          2367
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/StairSeat/1.2.3"
+        ],
+        "license_files_in_zip": []
+      },
+      "checked_at": "2026-10-18T18:09:55.873269+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-160235581-c3e4a4ec463dab83ac6d64e8454c99a97569ed39-62fc59ded373.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-160235581-c3e4a4ec463dab83ac6d64e8454c99a97569ed39-62fc59ded373.zip",
+    "remote_sha256": "62fc59ded37380f686be8f355ee875c19cfc08c2c0e9772d73ba02474c37063f",
+    "remote_asset_id": 654134519,
+    "uploaded_at": "2026-10-18T18:10:56Z",
+    "local_deleted": false
   },
   "160235581@c6cc45d0bb15a29730b3df243d54c17c97a87d8b": {
     "key": "160235581@c6cc45d0bb15a29730b3df243d54c17c97a87d8b",
@@ -16582,13 +17371,50 @@
     "repo_name": "korado531m7/StairSeat",
     "commit": "c6cc45d0bb15a29730b3df243d54c17c97a87d8b",
     "source_url": "https://github.com/korado531m7/StairSeat",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "Teunboeke/StairSeat"
+    ],
+    "status": "uploaded",
+    "bytes": 118405,
+    "sha256": "37ce782400fd4d834f8ff2c70df96dc53f54a63b6f87bf07c1ed370e497d66c0",
+    "final_url": "https://github.com/Teunboeke/StairSeat/archive/c6cc45d0bb15a29730b3df243d54c17c97a87d8b.zip",
+    "storage_path": null,
+    "provider": "Teunboeke/StairSeat",
     "tried": [
-      "korado531m7/StairSeat"
-    ]
+      "korado531m7/StairSeat",
+      "Teunboeke/StairSeat"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "c6cc45d0bb15a29730b3df243d54c17c97a87d8b",
+      "tree_sha": "9f198dc302e292a4435fdcc022faaf20ed865f1d",
+      "commit_url": "https://github.com/Teunboeke/StairSeat/commit/c6cc45d0bb15a29730b3df243d54c17c97a87d8b",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 4,
+      "license_evidence": {
+        "declared_licenses": [
+          "gpl-3.0"
+        ],
+        "release_ids": [
+          5046
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/StairSeat/1.5.4"
+        ],
+        "license_files_in_zip": []
+      },
+      "checked_at": "2026-10-18T18:09:55.874369+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-160235581-c6cc45d0bb15a29730b3df243d54c17c97a87d8b-37ce782400fd.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-160235581-c6cc45d0bb15a29730b3df243d54c17c97a87d8b-37ce782400fd.zip",
+    "remote_sha256": "37ce782400fd4d834f8ff2c70df96dc53f54a63b6f87bf07c1ed370e497d66c0",
+    "remote_asset_id": 654134562,
+    "uploaded_at": "2026-10-18T18:10:57Z",
+    "local_deleted": false
   },
   "160235581@c7cdf70d3517b5852b3267f3dce39e59b9e6394b": {
     "key": "160235581@c7cdf70d3517b5852b3267f3dce39e59b9e6394b",
@@ -16596,13 +17422,50 @@
     "repo_name": "korado531m7/StairSeat",
     "commit": "c7cdf70d3517b5852b3267f3dce39e59b9e6394b",
     "source_url": "https://github.com/korado531m7/StairSeat",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "Teunboeke/StairSeat"
+    ],
+    "status": "uploaded",
+    "bytes": 118488,
+    "sha256": "81bf7e8646bfa29fd3fa79919ba7fb881c3befe89076a0219e90f9a8fa439d54",
+    "final_url": "https://github.com/Teunboeke/StairSeat/archive/c7cdf70d3517b5852b3267f3dce39e59b9e6394b.zip",
+    "storage_path": null,
+    "provider": "Teunboeke/StairSeat",
     "tried": [
-      "korado531m7/StairSeat"
-    ]
+      "korado531m7/StairSeat",
+      "Teunboeke/StairSeat"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "c7cdf70d3517b5852b3267f3dce39e59b9e6394b",
+      "tree_sha": "b27c8d88c9cc43e223f9eed39c63ef5f603e927f",
+      "commit_url": "https://github.com/Teunboeke/StairSeat/commit/c7cdf70d3517b5852b3267f3dce39e59b9e6394b",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 4,
+      "license_evidence": {
+        "declared_licenses": [
+          "gpl-3.0"
+        ],
+        "release_ids": [
+          5787
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/StairSeat/1.5.7"
+        ],
+        "license_files_in_zip": []
+      },
+      "checked_at": "2026-10-18T18:09:55.875384+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-160235581-c7cdf70d3517b5852b3267f3dce39e59b9e6394b-81bf7e8646bf.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-160235581-c7cdf70d3517b5852b3267f3dce39e59b9e6394b-81bf7e8646bf.zip",
+    "remote_sha256": "81bf7e8646bfa29fd3fa79919ba7fb881c3befe89076a0219e90f9a8fa439d54",
+    "remote_asset_id": 654134608,
+    "uploaded_at": "2026-10-18T18:10:58Z",
+    "local_deleted": false
   },
   "160235581@fe52d897dc8192fa8de27c179f5699844e372af5": {
     "key": "160235581@fe52d897dc8192fa8de27c179f5699844e372af5",
@@ -16610,13 +17473,50 @@
     "repo_name": "korado531m7/StairSeat",
     "commit": "fe52d897dc8192fa8de27c179f5699844e372af5",
     "source_url": "https://github.com/korado531m7/StairSeat",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "Teunboeke/StairSeat"
+    ],
+    "status": "uploaded",
+    "bytes": 118487,
+    "sha256": "4b7f2741cc9c9f3e54e4cea72fb19e68785998ebdecdd2b4933dfd94aba1da93",
+    "final_url": "https://github.com/Teunboeke/StairSeat/archive/fe52d897dc8192fa8de27c179f5699844e372af5.zip",
+    "storage_path": null,
+    "provider": "Teunboeke/StairSeat",
     "tried": [
-      "korado531m7/StairSeat"
-    ]
+      "korado531m7/StairSeat",
+      "Teunboeke/StairSeat"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "fe52d897dc8192fa8de27c179f5699844e372af5",
+      "tree_sha": "1dc9f6704cb7c5165f650d5c6cee2d1fee0f4c4f",
+      "commit_url": "https://github.com/Teunboeke/StairSeat/commit/fe52d897dc8192fa8de27c179f5699844e372af5",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 4,
+      "license_evidence": {
+        "declared_licenses": [
+          "gpl-3.0"
+        ],
+        "release_ids": [
+          5121
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/StairSeat/1.5.5"
+        ],
+        "license_files_in_zip": []
+      },
+      "checked_at": "2026-10-18T18:09:55.876393+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-160235581-fe52d897dc8192fa8de27c179f5699844e372af5-4b7f2741cc9c.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-160235581-fe52d897dc8192fa8de27c179f5699844e372af5-4b7f2741cc9c.zip",
+    "remote_sha256": "4b7f2741cc9c9f3e54e4cea72fb19e68785998ebdecdd2b4933dfd94aba1da93",
+    "remote_asset_id": 654134649,
+    "uploaded_at": "2026-10-18T18:10:59Z",
+    "local_deleted": false
   },
   "160778834@bfaec4f0b41c6f12f8a6224086ec9480ae8eeeb8": {
     "key": "160778834@bfaec4f0b41c6f12f8a6224086ec9480ae8eeeb8",
@@ -16757,13 +17657,52 @@
     "repo_name": "TwistedAsylumMC/BetterVoting",
     "commit": "0b7bd8b0679ffc993e11c35d3cfa09ae78c6a626",
     "source_url": "https://github.com/TwistedAsylumMC/BetterVoting",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "BayAlper10/BetterVoting"
+    ],
+    "status": "uploaded",
+    "bytes": 23152,
+    "sha256": "5cc727ee958dec5f11b005ae7e259d38ff557161b9ff87cc1dc9d0180a364fe5",
+    "final_url": "https://github.com/BayAlper10/BetterVoting/archive/0b7bd8b0679ffc993e11c35d3cfa09ae78c6a626.zip",
+    "storage_path": null,
+    "provider": "BayAlper10/BetterVoting",
     "tried": [
-      "TwistedAsylumMC/BetterVoting"
-    ]
+      "TwistedAsylumMC/BetterVoting",
+      "BayAlper10/BetterVoting"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "0b7bd8b0679ffc993e11c35d3cfa09ae78c6a626",
+      "tree_sha": "7c4b6130de4b947c561f24cbd042428a1658b944",
+      "commit_url": "https://github.com/BayAlper10/BetterVoting/commit/0b7bd8b0679ffc993e11c35d3cfa09ae78c6a626",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 6,
+      "license_evidence": {
+        "declared_licenses": [
+          "mit"
+        ],
+        "release_ids": [
+          5033
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/BetterVoting/2.0.2"
+        ],
+        "license_files_in_zip": [
+          "BetterVoting-0b7bd8b0679ffc993e11c35d3cfa09ae78c6a626/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.877539+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-161699081-0b7bd8b0679ffc993e11c35d3cfa09ae78c6a626-5cc727ee958d.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-161699081-0b7bd8b0679ffc993e11c35d3cfa09ae78c6a626-5cc727ee958d.zip",
+    "remote_sha256": "5cc727ee958dec5f11b005ae7e259d38ff557161b9ff87cc1dc9d0180a364fe5",
+    "remote_asset_id": 654134674,
+    "uploaded_at": "2026-10-18T18:11:00Z",
+    "local_deleted": false
   },
   "161699081@22b78db120f28e4be727145dc0f3bf93f3bb1305": {
     "key": "161699081@22b78db120f28e4be727145dc0f3bf93f3bb1305",
@@ -16771,13 +17710,43 @@
     "repo_name": "TwistedAsylumMC/BetterVoting",
     "commit": "22b78db120f28e4be727145dc0f3bf93f3bb1305",
     "source_url": "https://github.com/TwistedAsylumMC/BetterVoting",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "BayAlper10/BetterVoting"
+    ],
+    "status": "license_review_required",
+    "bytes": 9184,
+    "sha256": "4e7df33646188e9076a25784858b058a526223b1210523f708dedc73b3500454",
+    "final_url": "https://github.com/BayAlper10/BetterVoting/archive/22b78db120f28e4be727145dc0f3bf93f3bb1305.zip",
+    "storage_path": "archive/sources/161699081/22b78db120f28e4be727145dc0f3bf93f3bb1305.zip",
+    "provider": "BayAlper10/BetterVoting",
     "tried": [
-      "TwistedAsylumMC/BetterVoting"
-    ]
+      "TwistedAsylumMC/BetterVoting",
+      "BayAlper10/BetterVoting"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "22b78db120f28e4be727145dc0f3bf93f3bb1305",
+      "tree_sha": "72db4ff4a0df684185acdfd5879979065de7ef7e",
+      "commit_url": "https://github.com/BayAlper10/BetterVoting/commit/22b78db120f28e4be727145dc0f3bf93f3bb1305",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 3,
+      "license_evidence": {
+        "declared_licenses": [
+          "custom"
+        ],
+        "release_ids": [
+          2256
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/BetterVoting/1.0.2"
+        ],
+        "license_files_in_zip": []
+      },
+      "checked_at": "2026-10-18T18:09:55.878284+00:00"
+    },
+    "license_review_reason": "The release declares a custom or missing license; this commit contains no license document establishing redistribution permission."
   },
   "161699081@4d8226a88407a0ea703c81509c24f08529de37fa": {
     "key": "161699081@4d8226a88407a0ea703c81509c24f08529de37fa",
@@ -16785,13 +17754,52 @@
     "repo_name": "TwistedAsylumMC/BetterVoting",
     "commit": "4d8226a88407a0ea703c81509c24f08529de37fa",
     "source_url": "https://github.com/TwistedAsylumMC/BetterVoting",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "BayAlper10/BetterVoting"
+    ],
+    "status": "uploaded",
+    "bytes": 10143,
+    "sha256": "73b32a9851b7c270eb0ed17b15e34454e71c6fb58dcf8a21f1a0eb9f808bde59",
+    "final_url": "https://github.com/BayAlper10/BetterVoting/archive/4d8226a88407a0ea703c81509c24f08529de37fa.zip",
+    "storage_path": null,
+    "provider": "BayAlper10/BetterVoting",
     "tried": [
-      "TwistedAsylumMC/BetterVoting"
-    ]
+      "TwistedAsylumMC/BetterVoting",
+      "BayAlper10/BetterVoting"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "4d8226a88407a0ea703c81509c24f08529de37fa",
+      "tree_sha": "e4db1ffb9644206d2de8282edef61dfdbb7d99db",
+      "commit_url": "https://github.com/BayAlper10/BetterVoting/commit/4d8226a88407a0ea703c81509c24f08529de37fa",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 3,
+      "license_evidence": {
+        "declared_licenses": [
+          "mit"
+        ],
+        "release_ids": [
+          3567
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/BetterVoting/1.6"
+        ],
+        "license_files_in_zip": [
+          "BetterVoting-4d8226a88407a0ea703c81509c24f08529de37fa/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.879073+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-161699081-4d8226a88407a0ea703c81509c24f08529de37fa-73b32a9851b7.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-161699081-4d8226a88407a0ea703c81509c24f08529de37fa-73b32a9851b7.zip",
+    "remote_sha256": "73b32a9851b7c270eb0ed17b15e34454e71c6fb58dcf8a21f1a0eb9f808bde59",
+    "remote_asset_id": 654134710,
+    "uploaded_at": "2026-10-18T18:11:01Z",
+    "local_deleted": false
   },
   "161699081@78334520c28e21dc41078e57c1e541cd4dcd1464": {
     "key": "161699081@78334520c28e21dc41078e57c1e541cd4dcd1464",
@@ -16799,13 +17807,52 @@
     "repo_name": "TwistedAsylumMC/BetterVoting",
     "commit": "78334520c28e21dc41078e57c1e541cd4dcd1464",
     "source_url": "https://github.com/TwistedAsylumMC/BetterVoting",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "BayAlper10/BetterVoting"
+    ],
+    "status": "uploaded",
+    "bytes": 23138,
+    "sha256": "eb9bfeb80875305f188ae16ab40cb1cd5a99baf78cf25f9da66640c5bf51ebb3",
+    "final_url": "https://github.com/BayAlper10/BetterVoting/archive/78334520c28e21dc41078e57c1e541cd4dcd1464.zip",
+    "storage_path": null,
+    "provider": "BayAlper10/BetterVoting",
     "tried": [
-      "TwistedAsylumMC/BetterVoting"
-    ]
+      "TwistedAsylumMC/BetterVoting",
+      "BayAlper10/BetterVoting"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "78334520c28e21dc41078e57c1e541cd4dcd1464",
+      "tree_sha": "f40db1921578b727b8bba432085f4df38340e38b",
+      "commit_url": "https://github.com/BayAlper10/BetterVoting/commit/78334520c28e21dc41078e57c1e541cd4dcd1464",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 6,
+      "license_evidence": {
+        "declared_licenses": [
+          "mit"
+        ],
+        "release_ids": [
+          5015
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/BetterVoting/2.0.1"
+        ],
+        "license_files_in_zip": [
+          "BetterVoting-78334520c28e21dc41078e57c1e541cd4dcd1464/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.880148+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-161699081-78334520c28e21dc41078e57c1e541cd4dcd1464-eb9bfeb80875.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-161699081-78334520c28e21dc41078e57c1e541cd4dcd1464-eb9bfeb80875.zip",
+    "remote_sha256": "eb9bfeb80875305f188ae16ab40cb1cd5a99baf78cf25f9da66640c5bf51ebb3",
+    "remote_asset_id": 654134732,
+    "uploaded_at": "2026-10-18T18:11:02Z",
+    "local_deleted": false
   },
   "161699081@89780106cf1b2fc188b8cb96ba1d36ac080e12ef": {
     "key": "161699081@89780106cf1b2fc188b8cb96ba1d36ac080e12ef",
@@ -16813,13 +17860,43 @@
     "repo_name": "TwistedAsylumMC/BetterVoting",
     "commit": "89780106cf1b2fc188b8cb96ba1d36ac080e12ef",
     "source_url": "https://github.com/TwistedAsylumMC/BetterVoting",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "BayAlper10/BetterVoting"
+    ],
+    "status": "license_review_required",
+    "bytes": 7538,
+    "sha256": "8c93d085355d438582e4a1c9427f5bb7a7195d314d0ecfc9a39b5c9d2262c509",
+    "final_url": "https://github.com/BayAlper10/BetterVoting/archive/89780106cf1b2fc188b8cb96ba1d36ac080e12ef.zip",
+    "storage_path": "archive/sources/161699081/89780106cf1b2fc188b8cb96ba1d36ac080e12ef.zip",
+    "provider": "BayAlper10/BetterVoting",
     "tried": [
-      "TwistedAsylumMC/BetterVoting"
-    ]
+      "TwistedAsylumMC/BetterVoting",
+      "BayAlper10/BetterVoting"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "89780106cf1b2fc188b8cb96ba1d36ac080e12ef",
+      "tree_sha": "37b0cec0d5d21dae78a4d55a29f2495c123b4032",
+      "commit_url": "https://github.com/BayAlper10/BetterVoting/commit/89780106cf1b2fc188b8cb96ba1d36ac080e12ef",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 2,
+      "license_evidence": {
+        "declared_licenses": [
+          "custom"
+        ],
+        "release_ids": [
+          2168
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/BetterVoting/1.0.0"
+        ],
+        "license_files_in_zip": []
+      },
+      "checked_at": "2026-10-18T18:09:55.880835+00:00"
+    },
+    "license_review_reason": "The release declares a custom or missing license; this commit contains no license document establishing redistribution permission."
   },
   "161699081@963d55ac39cdc4e81e6fff55a68999d28853a917": {
     "key": "161699081@963d55ac39cdc4e81e6fff55a68999d28853a917",
@@ -16827,13 +17904,43 @@
     "repo_name": "TwistedAsylumMC/BetterVoting",
     "commit": "963d55ac39cdc4e81e6fff55a68999d28853a917",
     "source_url": "https://github.com/TwistedAsylumMC/BetterVoting",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "BayAlper10/BetterVoting"
+    ],
+    "status": "license_review_required",
+    "bytes": 9099,
+    "sha256": "6d62cc7481a96b1fd08b262f8dccafd7f37ac74f0acf247edbdb70e181d2ded8",
+    "final_url": "https://github.com/BayAlper10/BetterVoting/archive/963d55ac39cdc4e81e6fff55a68999d28853a917.zip",
+    "storage_path": "archive/sources/161699081/963d55ac39cdc4e81e6fff55a68999d28853a917.zip",
+    "provider": "BayAlper10/BetterVoting",
     "tried": [
-      "TwistedAsylumMC/BetterVoting"
-    ]
+      "TwistedAsylumMC/BetterVoting",
+      "BayAlper10/BetterVoting"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "963d55ac39cdc4e81e6fff55a68999d28853a917",
+      "tree_sha": "455f3588b72c8376a7d429143c1c3d5d5d1fd252",
+      "commit_url": "https://github.com/BayAlper10/BetterVoting/commit/963d55ac39cdc4e81e6fff55a68999d28853a917",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 3,
+      "license_evidence": {
+        "declared_licenses": [
+          "custom"
+        ],
+        "release_ids": [
+          2212
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/BetterVoting/1.0.1"
+        ],
+        "license_files_in_zip": []
+      },
+      "checked_at": "2026-10-18T18:09:55.881575+00:00"
+    },
+    "license_review_reason": "The release declares a custom or missing license; this commit contains no license document establishing redistribution permission."
   },
   "161699081@b3f2b97026a2c57f8d979873a9657963f9c00a84": {
     "key": "161699081@b3f2b97026a2c57f8d979873a9657963f9c00a84",
@@ -16841,13 +17948,52 @@
     "repo_name": "TwistedAsylumMC/BetterVoting",
     "commit": "b3f2b97026a2c57f8d979873a9657963f9c00a84",
     "source_url": "https://github.com/TwistedAsylumMC/BetterVoting",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "BayAlper10/BetterVoting"
+    ],
+    "status": "uploaded",
+    "bytes": 23153,
+    "sha256": "9c0be3684a0708719dea0176df80298c19c746d1e25afc8d74ad2d6d26598488",
+    "final_url": "https://github.com/BayAlper10/BetterVoting/archive/b3f2b97026a2c57f8d979873a9657963f9c00a84.zip",
+    "storage_path": null,
+    "provider": "BayAlper10/BetterVoting",
     "tried": [
-      "TwistedAsylumMC/BetterVoting"
-    ]
+      "TwistedAsylumMC/BetterVoting",
+      "BayAlper10/BetterVoting"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "b3f2b97026a2c57f8d979873a9657963f9c00a84",
+      "tree_sha": "871cb22796e081c1b29a0154a83b8b859c1a1a3d",
+      "commit_url": "https://github.com/BayAlper10/BetterVoting/commit/b3f2b97026a2c57f8d979873a9657963f9c00a84",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 6,
+      "license_evidence": {
+        "declared_licenses": [
+          "mit"
+        ],
+        "release_ids": [
+          4008
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/BetterVoting/2.0.0"
+        ],
+        "license_files_in_zip": [
+          "BetterVoting-b3f2b97026a2c57f8d979873a9657963f9c00a84/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.882590+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-161699081-b3f2b97026a2c57f8d979873a9657963f9c00a84-9c0be3684a07.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-161699081-b3f2b97026a2c57f8d979873a9657963f9c00a84-9c0be3684a07.zip",
+    "remote_sha256": "9c0be3684a0708719dea0176df80298c19c746d1e25afc8d74ad2d6d26598488",
+    "remote_asset_id": 654134761,
+    "uploaded_at": "2026-10-18T18:11:03Z",
+    "local_deleted": false
   },
   "161699081@c2e1d484c088bc95ece990276b76e8d847ddc57f": {
     "key": "161699081@c2e1d484c088bc95ece990276b76e8d847ddc57f",
@@ -16855,13 +18001,52 @@
     "repo_name": "TwistedAsylumMC/BetterVoting",
     "commit": "c2e1d484c088bc95ece990276b76e8d847ddc57f",
     "source_url": "https://github.com/TwistedAsylumMC/BetterVoting",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "BayAlper10/BetterVoting"
+    ],
+    "status": "uploaded",
+    "bytes": 10166,
+    "sha256": "f600e1b00a74b69ef5be07bf9ed627fa141a2278e59862655a9ca9144c5cbd95",
+    "final_url": "https://github.com/BayAlper10/BetterVoting/archive/c2e1d484c088bc95ece990276b76e8d847ddc57f.zip",
+    "storage_path": null,
+    "provider": "BayAlper10/BetterVoting",
     "tried": [
-      "TwistedAsylumMC/BetterVoting"
-    ]
+      "TwistedAsylumMC/BetterVoting",
+      "BayAlper10/BetterVoting"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "c2e1d484c088bc95ece990276b76e8d847ddc57f",
+      "tree_sha": "42bec792734c299225106424febdfd21f76b25d6",
+      "commit_url": "https://github.com/BayAlper10/BetterVoting/commit/c2e1d484c088bc95ece990276b76e8d847ddc57f",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 3,
+      "license_evidence": {
+        "declared_licenses": [
+          "mit"
+        ],
+        "release_ids": [
+          2784
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/BetterVoting/1.5.0"
+        ],
+        "license_files_in_zip": [
+          "BetterVoting-c2e1d484c088bc95ece990276b76e8d847ddc57f/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.883373+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-161699081-c2e1d484c088bc95ece990276b76e8d847ddc57f-f600e1b00a74.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-161699081-c2e1d484c088bc95ece990276b76e8d847ddc57f-f600e1b00a74.zip",
+    "remote_sha256": "f600e1b00a74b69ef5be07bf9ed627fa141a2278e59862655a9ca9144c5cbd95",
+    "remote_asset_id": 654134782,
+    "uploaded_at": "2026-10-18T18:11:04Z",
+    "local_deleted": false
   },
   "161699081@c4c1b7e03383e37c69bab0285e0f3b8319a8885c": {
     "key": "161699081@c4c1b7e03383e37c69bab0285e0f3b8319a8885c",
@@ -16869,13 +18054,52 @@
     "repo_name": "TwistedAsylumMC/BetterVoting",
     "commit": "c4c1b7e03383e37c69bab0285e0f3b8319a8885c",
     "source_url": "https://github.com/TwistedAsylumMC/BetterVoting",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "BayAlper10/BetterVoting"
+    ],
+    "status": "uploaded",
+    "bytes": 10133,
+    "sha256": "2105d0b9d0aa7a0589d204e4fbd5b07903ae3d02f43a9fecaab8217efbf5501c",
+    "final_url": "https://github.com/BayAlper10/BetterVoting/archive/c4c1b7e03383e37c69bab0285e0f3b8319a8885c.zip",
+    "storage_path": null,
+    "provider": "BayAlper10/BetterVoting",
     "tried": [
-      "TwistedAsylumMC/BetterVoting"
-    ]
+      "TwistedAsylumMC/BetterVoting",
+      "BayAlper10/BetterVoting"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "c4c1b7e03383e37c69bab0285e0f3b8319a8885c",
+      "tree_sha": "ea0d236127c6290445cfd5b8cd7d776995a20c4d",
+      "commit_url": "https://github.com/BayAlper10/BetterVoting/commit/c4c1b7e03383e37c69bab0285e0f3b8319a8885c",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 3,
+      "license_evidence": {
+        "declared_licenses": [
+          "mit"
+        ],
+        "release_ids": [
+          3800
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/BetterVoting/1.7"
+        ],
+        "license_files_in_zip": [
+          "BetterVoting-c4c1b7e03383e37c69bab0285e0f3b8319a8885c/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.884169+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-161699081-c4c1b7e03383e37c69bab0285e0f3b8319a8885c-2105d0b9d0aa.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-161699081-c4c1b7e03383e37c69bab0285e0f3b8319a8885c-2105d0b9d0aa.zip",
+    "remote_sha256": "2105d0b9d0aa7a0589d204e4fbd5b07903ae3d02f43a9fecaab8217efbf5501c",
+    "remote_asset_id": 654134796,
+    "uploaded_at": "2026-10-18T18:11:05Z",
+    "local_deleted": false
   },
   "161699081@c9f6807eee917d0ee2cfd6a77a259da9cff953d1": {
     "key": "161699081@c9f6807eee917d0ee2cfd6a77a259da9cff953d1",
@@ -16883,13 +18107,52 @@
     "repo_name": "TwistedAsylumMC/BetterVoting",
     "commit": "c9f6807eee917d0ee2cfd6a77a259da9cff953d1",
     "source_url": "https://github.com/TwistedAsylumMC/BetterVoting",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "BayAlper10/BetterVoting"
+    ],
+    "status": "uploaded",
+    "bytes": 10172,
+    "sha256": "ab6c9ef210b284679a48006bb96db227c0e4b0518dc39ad59676d49e0245f6f0",
+    "final_url": "https://github.com/BayAlper10/BetterVoting/archive/c9f6807eee917d0ee2cfd6a77a259da9cff953d1.zip",
+    "storage_path": null,
+    "provider": "BayAlper10/BetterVoting",
     "tried": [
-      "TwistedAsylumMC/BetterVoting"
-    ]
+      "TwistedAsylumMC/BetterVoting",
+      "BayAlper10/BetterVoting"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "c9f6807eee917d0ee2cfd6a77a259da9cff953d1",
+      "tree_sha": "82ebde9e3b8a31897ec4cb588cf7379d16a39fb7",
+      "commit_url": "https://github.com/BayAlper10/BetterVoting/commit/c9f6807eee917d0ee2cfd6a77a259da9cff953d1",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 3,
+      "license_evidence": {
+        "declared_licenses": [
+          "mit"
+        ],
+        "release_ids": [
+          2762
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/BetterVoting/1.4.0"
+        ],
+        "license_files_in_zip": [
+          "BetterVoting-c9f6807eee917d0ee2cfd6a77a259da9cff953d1/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.884978+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-161699081-c9f6807eee917d0ee2cfd6a77a259da9cff953d1-ab6c9ef210b2.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-161699081-c9f6807eee917d0ee2cfd6a77a259da9cff953d1-ab6c9ef210b2.zip",
+    "remote_sha256": "ab6c9ef210b284679a48006bb96db227c0e4b0518dc39ad59676d49e0245f6f0",
+    "remote_asset_id": 654134830,
+    "uploaded_at": "2026-10-18T18:11:06Z",
+    "local_deleted": false
   },
   "161699081@d058143c25721e249c490f06ad7298e3c94c7849": {
     "key": "161699081@d058143c25721e249c490f06ad7298e3c94c7849",
@@ -16897,13 +18160,52 @@
     "repo_name": "TwistedAsylumMC/BetterVoting",
     "commit": "d058143c25721e249c490f06ad7298e3c94c7849",
     "source_url": "https://github.com/TwistedAsylumMC/BetterVoting",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "BayAlper10/BetterVoting"
+    ],
+    "status": "uploaded",
+    "bytes": 10127,
+    "sha256": "2dc77d58abacf353424bf2dfdda276d00f3be6edcc5c784b0ccee1a7c83bfb9c",
+    "final_url": "https://github.com/BayAlper10/BetterVoting/archive/d058143c25721e249c490f06ad7298e3c94c7849.zip",
+    "storage_path": null,
+    "provider": "BayAlper10/BetterVoting",
     "tried": [
-      "TwistedAsylumMC/BetterVoting"
-    ]
+      "TwistedAsylumMC/BetterVoting",
+      "BayAlper10/BetterVoting"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "d058143c25721e249c490f06ad7298e3c94c7849",
+      "tree_sha": "c8f970152d47422e3550cd7b18456c8d330dadbe",
+      "commit_url": "https://github.com/BayAlper10/BetterVoting/commit/d058143c25721e249c490f06ad7298e3c94c7849",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 3,
+      "license_evidence": {
+        "declared_licenses": [
+          "mit"
+        ],
+        "release_ids": [
+          2455
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/BetterVoting/1.3.0"
+        ],
+        "license_files_in_zip": [
+          "BetterVoting-d058143c25721e249c490f06ad7298e3c94c7849/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.885805+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-161699081-d058143c25721e249c490f06ad7298e3c94c7849-2dc77d58abac.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-161699081-d058143c25721e249c490f06ad7298e3c94c7849-2dc77d58abac.zip",
+    "remote_sha256": "2dc77d58abacf353424bf2dfdda276d00f3be6edcc5c784b0ccee1a7c83bfb9c",
+    "remote_asset_id": 654134866,
+    "uploaded_at": "2026-10-18T18:11:06Z",
+    "local_deleted": false
   },
   "162493867@66c05a3951ee2b31364c95fdf537fabbd03bc6c2": {
     "key": "162493867@66c05a3951ee2b31364c95fdf537fabbd03bc6c2",
@@ -20636,13 +21938,52 @@
     "repo_name": "Swourire/AdminTroll-a-plugin-PocketMine-MP-",
     "commit": "a2b17d9b7b4d904aa4f26c7d689c6ec2758150cf",
     "source_url": "https://github.com/Swourire/AdminTroll-a-plugin-PocketMine-MP-",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "Raziqshah/AdminTroll-a-plugin-PocketMine-MP-"
+    ],
+    "status": "uploaded",
+    "bytes": 99544,
+    "sha256": "c24ce03ec484549bc2d5e4916629f22bf8c67f7433b460977a9219a8aca1aef5",
+    "final_url": "https://github.com/Raziqshah/AdminTroll-a-plugin-PocketMine-MP-/archive/a2b17d9b7b4d904aa4f26c7d689c6ec2758150cf.zip",
+    "storage_path": null,
+    "provider": "Raziqshah/AdminTroll-a-plugin-PocketMine-MP-",
     "tried": [
-      "Swourire/AdminTroll-a-plugin-PocketMine-MP-"
-    ]
+      "Swourire/AdminTroll-a-plugin-PocketMine-MP-",
+      "Raziqshah/AdminTroll-a-plugin-PocketMine-MP-"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "a2b17d9b7b4d904aa4f26c7d689c6ec2758150cf",
+      "tree_sha": "ebaca9df63edd15e268cd8951d2524d5df07dad3",
+      "commit_url": "https://github.com/Raziqshah/AdminTroll-a-plugin-PocketMine-MP-/commit/a2b17d9b7b4d904aa4f26c7d689c6ec2758150cf",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 5,
+      "license_evidence": {
+        "declared_licenses": [
+          "apache-2.0"
+        ],
+        "release_ids": [
+          2737
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/AdminTroll/1.0.0"
+        ],
+        "license_files_in_zip": [
+          "AdminTroll-a-plugin-PocketMine-MP--a2b17d9b7b4d904aa4f26c7d689c6ec2758150cf/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.887054+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-180187701-a2b17d9b7b4d904aa4f26c7d689c6ec2758150cf-c24ce03ec484.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-180187701-a2b17d9b7b4d904aa4f26c7d689c6ec2758150cf-c24ce03ec484.zip",
+    "remote_sha256": "c24ce03ec484549bc2d5e4916629f22bf8c67f7433b460977a9219a8aca1aef5",
+    "remote_asset_id": 654134922,
+    "uploaded_at": "2026-10-18T18:11:07Z",
+    "local_deleted": false
   },
   "180187701@c6eb583c3922b99693729823b29d1fc804614174": {
     "key": "180187701@c6eb583c3922b99693729823b29d1fc804614174",
@@ -20650,13 +21991,52 @@
     "repo_name": "Swourire/AdminTroll-a-plugin-PocketMine-MP-",
     "commit": "c6eb583c3922b99693729823b29d1fc804614174",
     "source_url": "https://github.com/Swourire/AdminTroll-a-plugin-PocketMine-MP-",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "Raziqshah/AdminTroll-a-plugin-PocketMine-MP-"
+    ],
+    "status": "uploaded",
+    "bytes": 115275,
+    "sha256": "e6a09a5c12e4b43385bdd3876318f73b52de44f8314fcef1a7687e918da34168",
+    "final_url": "https://github.com/Raziqshah/AdminTroll-a-plugin-PocketMine-MP-/archive/c6eb583c3922b99693729823b29d1fc804614174.zip",
+    "storage_path": null,
+    "provider": "Raziqshah/AdminTroll-a-plugin-PocketMine-MP-",
     "tried": [
-      "Swourire/AdminTroll-a-plugin-PocketMine-MP-"
-    ]
+      "Swourire/AdminTroll-a-plugin-PocketMine-MP-",
+      "Raziqshah/AdminTroll-a-plugin-PocketMine-MP-"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "c6eb583c3922b99693729823b29d1fc804614174",
+      "tree_sha": "5aa44450e9c71eac4cdd9aa49fd634e1f9ecf20f",
+      "commit_url": "https://github.com/Raziqshah/AdminTroll-a-plugin-PocketMine-MP-/commit/c6eb583c3922b99693729823b29d1fc804614174",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 18,
+      "license_evidence": {
+        "declared_licenses": [
+          "apache-2.0"
+        ],
+        "release_ids": [
+          4209
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/AdminTroll/1.2.0"
+        ],
+        "license_files_in_zip": [
+          "AdminTroll-a-plugin-PocketMine-MP--c6eb583c3922b99693729823b29d1fc804614174/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.888869+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-180187701-c6eb583c3922b99693729823b29d1fc804614174-e6a09a5c12e4.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-180187701-c6eb583c3922b99693729823b29d1fc804614174-e6a09a5c12e4.zip",
+    "remote_sha256": "e6a09a5c12e4b43385bdd3876318f73b52de44f8314fcef1a7687e918da34168",
+    "remote_asset_id": 654134968,
+    "uploaded_at": "2026-10-18T18:11:08Z",
+    "local_deleted": false
   },
   "180187701@e48fb02ac771bd39b94912b0c96763ddd876c4aa": {
     "key": "180187701@e48fb02ac771bd39b94912b0c96763ddd876c4aa",
@@ -20664,13 +22044,52 @@
     "repo_name": "Swourire/AdminTroll-a-plugin-PocketMine-MP-",
     "commit": "e48fb02ac771bd39b94912b0c96763ddd876c4aa",
     "source_url": "https://github.com/Swourire/AdminTroll-a-plugin-PocketMine-MP-",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "Raziqshah/AdminTroll-a-plugin-PocketMine-MP-"
+    ],
+    "status": "uploaded",
+    "bytes": 100007,
+    "sha256": "400cae76bce6a4c68591a0bad84c24e1eb76ac739f77eb3c96091c106611846f",
+    "final_url": "https://github.com/Raziqshah/AdminTroll-a-plugin-PocketMine-MP-/archive/e48fb02ac771bd39b94912b0c96763ddd876c4aa.zip",
+    "storage_path": null,
+    "provider": "Raziqshah/AdminTroll-a-plugin-PocketMine-MP-",
     "tried": [
-      "Swourire/AdminTroll-a-plugin-PocketMine-MP-"
-    ]
+      "Swourire/AdminTroll-a-plugin-PocketMine-MP-",
+      "Raziqshah/AdminTroll-a-plugin-PocketMine-MP-"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "e48fb02ac771bd39b94912b0c96763ddd876c4aa",
+      "tree_sha": "538db7cb5f793f519544c023ab4e379874203328",
+      "commit_url": "https://github.com/Raziqshah/AdminTroll-a-plugin-PocketMine-MP-/commit/e48fb02ac771bd39b94912b0c96763ddd876c4aa",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 5,
+      "license_evidence": {
+        "declared_licenses": [
+          "apache-2.0"
+        ],
+        "release_ids": [
+          2754
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/AdminTroll/1.1.0"
+        ],
+        "license_files_in_zip": [
+          "AdminTroll-a-plugin-PocketMine-MP--e48fb02ac771bd39b94912b0c96763ddd876c4aa/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.889991+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0001",
+    "remote_asset_name": "source-180187701-e48fb02ac771bd39b94912b0c96763ddd876c4aa-400cae76bce6.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0001/source-180187701-e48fb02ac771bd39b94912b0c96763ddd876c4aa-400cae76bce6.zip",
+    "remote_sha256": "400cae76bce6a4c68591a0bad84c24e1eb76ac739f77eb3c96091c106611846f",
+    "remote_asset_id": 654135000,
+    "uploaded_at": "2026-10-18T18:11:09Z",
+    "local_deleted": false
   },
   "180354619@795f456d4c61563c198e2a1a882daa7b841c0ffa": {
     "key": "180354619@795f456d4c61563c198e2a1a882daa7b841c0ffa",
@@ -31937,13 +33356,52 @@
     "repo_name": "Cosmoverse/NoVPN",
     "commit": "2e76a11cd258c61949241b7cd3d0bff04f4466fa",
     "source_url": "https://github.com/Cosmoverse/NoVPN",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "iZeaoGamer/NoVPN"
+    ],
+    "status": "uploaded",
+    "bytes": 8286,
+    "sha256": "462fa5870f1759a03301ffd6dcd48ba5dbbf3cc107d11b2dcfe0586cf1923d35",
+    "final_url": "https://github.com/iZeaoGamer/NoVPN/archive/2e76a11cd258c61949241b7cd3d0bff04f4466fa.zip",
+    "storage_path": null,
+    "provider": "iZeaoGamer/NoVPN",
     "tried": [
-      "Cosmoverse/NoVPN"
-    ]
+      "Cosmoverse/NoVPN",
+      "iZeaoGamer/NoVPN"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "2e76a11cd258c61949241b7cd3d0bff04f4466fa",
+      "tree_sha": "463450c100c83fa5dd7e5d15f5ea4df711e5019a",
+      "commit_url": "https://github.com/iZeaoGamer/NoVPN/commit/2e76a11cd258c61949241b7cd3d0bff04f4466fa",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 3,
+      "license_evidence": {
+        "declared_licenses": [
+          "lgpl-3.0"
+        ],
+        "release_ids": [
+          3844
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/NoVPN/0.1.3"
+        ],
+        "license_files_in_zip": [
+          "NoVPN-2e76a11cd258c61949241b7cd3d0bff04f4466fa/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.890754+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0002",
+    "remote_asset_name": "source-241331727-2e76a11cd258c61949241b7cd3d0bff04f4466fa-462fa5870f17.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0002/source-241331727-2e76a11cd258c61949241b7cd3d0bff04f4466fa-462fa5870f17.zip",
+    "remote_sha256": "462fa5870f1759a03301ffd6dcd48ba5dbbf3cc107d11b2dcfe0586cf1923d35",
+    "remote_asset_id": 654135535,
+    "uploaded_at": "2026-10-18T18:11:22Z",
+    "local_deleted": false
   },
   "241331727@5d768d916a31d6e400653a3548b78d61511af26d": {
     "key": "241331727@5d768d916a31d6e400653a3548b78d61511af26d",
@@ -31951,13 +33409,52 @@
     "repo_name": "Cosmoverse/NoVPN",
     "commit": "5d768d916a31d6e400653a3548b78d61511af26d",
     "source_url": "https://github.com/Cosmoverse/NoVPN",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "iZeaoGamer/NoVPN"
+    ],
+    "status": "uploaded",
+    "bytes": 8255,
+    "sha256": "041474a2140f3b62ec5aae2614f2d4762822e04d59c258c563715b275dda2523",
+    "final_url": "https://github.com/iZeaoGamer/NoVPN/archive/5d768d916a31d6e400653a3548b78d61511af26d.zip",
+    "storage_path": null,
+    "provider": "iZeaoGamer/NoVPN",
     "tried": [
-      "Cosmoverse/NoVPN"
-    ]
+      "Cosmoverse/NoVPN",
+      "iZeaoGamer/NoVPN"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "5d768d916a31d6e400653a3548b78d61511af26d",
+      "tree_sha": "ed9bf8791ac15c6634774eb7d5b978f0dd8f0a75",
+      "commit_url": "https://github.com/iZeaoGamer/NoVPN/commit/5d768d916a31d6e400653a3548b78d61511af26d",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 3,
+      "license_evidence": {
+        "declared_licenses": [
+          "lgpl-3.0"
+        ],
+        "release_ids": [
+          3835
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/NoVPN/0.0.1"
+        ],
+        "license_files_in_zip": [
+          "NoVPN-5d768d916a31d6e400653a3548b78d61511af26d/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.891502+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0002",
+    "remote_asset_name": "source-241331727-5d768d916a31d6e400653a3548b78d61511af26d-041474a2140f.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0002/source-241331727-5d768d916a31d6e400653a3548b78d61511af26d-041474a2140f.zip",
+    "remote_sha256": "041474a2140f3b62ec5aae2614f2d4762822e04d59c258c563715b275dda2523",
+    "remote_asset_id": 654135582,
+    "uploaded_at": "2026-10-18T18:11:22Z",
+    "local_deleted": false
   },
   "241331727@d021ecf19797eaf17eefc7cb3affbfdaabe2967d": {
     "key": "241331727@d021ecf19797eaf17eefc7cb3affbfdaabe2967d",
@@ -31965,13 +33462,52 @@
     "repo_name": "Cosmoverse/NoVPN",
     "commit": "d021ecf19797eaf17eefc7cb3affbfdaabe2967d",
     "source_url": "https://github.com/Cosmoverse/NoVPN",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "iZeaoGamer/NoVPN"
+    ],
+    "status": "uploaded",
+    "bytes": 8288,
+    "sha256": "7da0ae7083de15a9bd997da16ca15dff94828b3730e6135d75eef768ed10bb26",
+    "final_url": "https://github.com/iZeaoGamer/NoVPN/archive/d021ecf19797eaf17eefc7cb3affbfdaabe2967d.zip",
+    "storage_path": null,
+    "provider": "iZeaoGamer/NoVPN",
     "tried": [
-      "Cosmoverse/NoVPN"
-    ]
+      "Cosmoverse/NoVPN",
+      "iZeaoGamer/NoVPN"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "d021ecf19797eaf17eefc7cb3affbfdaabe2967d",
+      "tree_sha": "666dbef312731772aa79df6667bdb70bc040751d",
+      "commit_url": "https://github.com/iZeaoGamer/NoVPN/commit/d021ecf19797eaf17eefc7cb3affbfdaabe2967d",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 3,
+      "license_evidence": {
+        "declared_licenses": [
+          "lgpl-3.0"
+        ],
+        "release_ids": [
+          4254
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/NoVPN/0.1.4"
+        ],
+        "license_files_in_zip": [
+          "NoVPN-d021ecf19797eaf17eefc7cb3affbfdaabe2967d/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.892257+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0002",
+    "remote_asset_name": "source-241331727-d021ecf19797eaf17eefc7cb3affbfdaabe2967d-7da0ae7083de.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0002/source-241331727-d021ecf19797eaf17eefc7cb3affbfdaabe2967d-7da0ae7083de.zip",
+    "remote_sha256": "7da0ae7083de15a9bd997da16ca15dff94828b3730e6135d75eef768ed10bb26",
+    "remote_asset_id": 654135610,
+    "uploaded_at": "2026-10-18T18:11:23Z",
+    "local_deleted": false
   },
   "241685499@6eb43defd856603d7ffb78f7506969a9f9923c86": {
     "key": "241685499@6eb43defd856603d7ffb78f7506969a9f9923c86",
@@ -38760,15 +40296,53 @@
     "commit": "36ab07d274e70f81e552fd5ca53559e8c940c1b2",
     "source_url": "https://github.com/TwistedAsylumMC/ChunkBorders",
     "candidates": [
-      "pm-pl/ChunkBorders"
+      "pm-pl/ChunkBorders",
+      "wizxrdx-pm-pl/ChunkBorders"
     ],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "status": "uploaded",
+    "bytes": 18813,
+    "sha256": "1f14a1bababe2c56ab0cb7f3ea08db2b082ffe5a65abf299dc8c8e675460be6d",
+    "final_url": "https://github.com/wizxrdx-pm-pl/ChunkBorders/archive/36ab07d274e70f81e552fd5ca53559e8c940c1b2.zip",
+    "storage_path": null,
+    "provider": "wizxrdx-pm-pl/ChunkBorders",
     "tried": [
       "TwistedAsylumMC/ChunkBorders",
-      "pm-pl/ChunkBorders"
-    ]
+      "pm-pl/ChunkBorders",
+      "wizxrdx-pm-pl/ChunkBorders"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "36ab07d274e70f81e552fd5ca53559e8c940c1b2",
+      "tree_sha": "5dacb5d1d859d462830125bf9135ad9c1cef0e23",
+      "commit_url": "https://github.com/wizxrdx-pm-pl/ChunkBorders/commit/36ab07d274e70f81e552fd5ca53559e8c940c1b2",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 3,
+      "license_evidence": {
+        "declared_licenses": [
+          "gpl-3.0"
+        ],
+        "release_ids": [
+          4697
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/ChunkBorders/1.0.0"
+        ],
+        "license_files_in_zip": [
+          "ChunkBorders-36ab07d274e70f81e552fd5ca53559e8c940c1b2/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.893075+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0002",
+    "remote_asset_name": "source-272527428-36ab07d274e70f81e552fd5ca53559e8c940c1b2-1f14a1bababe.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0002/source-272527428-36ab07d274e70f81e552fd5ca53559e8c940c1b2-1f14a1bababe.zip",
+    "remote_sha256": "1f14a1bababe2c56ab0cb7f3ea08db2b082ffe5a65abf299dc8c8e675460be6d",
+    "remote_asset_id": 654135648,
+    "uploaded_at": "2026-10-18T18:11:24Z",
+    "local_deleted": false
   },
   "272750274@56357acb32ca5e567a39da45a01f2a6d3c431076": {
     "key": "272750274@56357acb32ca5e567a39da45a01f2a6d3c431076",
@@ -40582,13 +42156,52 @@
     "repo_name": "TWRRR/TacoKbModifier",
     "commit": "15cccbe37f564e520cb6027e6edd0c49ff723bab",
     "source_url": "https://github.com/TWRRR/TacoKbModifier",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "CssChase/TacoKbModifier"
+    ],
+    "status": "uploaded",
+    "bytes": 7575,
+    "sha256": "480e4f6bf22aae1bc7cad8c03a6125e95e189c11c736ac7fc5da893ef366ce2a",
+    "final_url": "https://github.com/CssChase/TacoKbModifier/archive/15cccbe37f564e520cb6027e6edd0c49ff723bab.zip",
+    "storage_path": null,
+    "provider": "CssChase/TacoKbModifier",
     "tried": [
-      "TWRRR/TacoKbModifier"
-    ]
+      "TWRRR/TacoKbModifier",
+      "CssChase/TacoKbModifier"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "15cccbe37f564e520cb6027e6edd0c49ff723bab",
+      "tree_sha": "9d462584d216875a5a9a33282cb1ce2a9515632f",
+      "commit_url": "https://github.com/CssChase/TacoKbModifier/commit/15cccbe37f564e520cb6027e6edd0c49ff723bab",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 1,
+      "license_evidence": {
+        "declared_licenses": [
+          "apache-2.0"
+        ],
+        "release_ids": [
+          5090
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/TacoKbModifier/1.0.1"
+        ],
+        "license_files_in_zip": [
+          "TacoKbModifier-15cccbe37f564e520cb6027e6edd0c49ff723bab/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.893738+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0002",
+    "remote_asset_name": "source-280926873-15cccbe37f564e520cb6027e6edd0c49ff723bab-480e4f6bf22a.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0002/source-280926873-15cccbe37f564e520cb6027e6edd0c49ff723bab-480e4f6bf22a.zip",
+    "remote_sha256": "480e4f6bf22aae1bc7cad8c03a6125e95e189c11c736ac7fc5da893ef366ce2a",
+    "remote_asset_id": 654135676,
+    "uploaded_at": "2026-10-18T18:11:25Z",
+    "local_deleted": false
   },
   "280926873@e0c558e0c4f053deb2ced6fd20e1a65b334c039e": {
     "key": "280926873@e0c558e0c4f053deb2ced6fd20e1a65b334c039e",
@@ -40596,13 +42209,52 @@
     "repo_name": "TWRRR/TacoKbModifier",
     "commit": "e0c558e0c4f053deb2ced6fd20e1a65b334c039e",
     "source_url": "https://github.com/TWRRR/TacoKbModifier",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "CssChase/TacoKbModifier"
+    ],
+    "status": "uploaded",
+    "bytes": 7369,
+    "sha256": "6837bee1745aa30d1b491514f52368404088d7eb26eaecddfc9297a15eded782",
+    "final_url": "https://github.com/CssChase/TacoKbModifier/archive/e0c558e0c4f053deb2ced6fd20e1a65b334c039e.zip",
+    "storage_path": null,
+    "provider": "CssChase/TacoKbModifier",
     "tried": [
-      "TWRRR/TacoKbModifier"
-    ]
+      "TWRRR/TacoKbModifier",
+      "CssChase/TacoKbModifier"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "e0c558e0c4f053deb2ced6fd20e1a65b334c039e",
+      "tree_sha": "111b635253096402049d0ac5adb6b5c7b7d0607f",
+      "commit_url": "https://github.com/CssChase/TacoKbModifier/commit/e0c558e0c4f053deb2ced6fd20e1a65b334c039e",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 1,
+      "license_evidence": {
+        "declared_licenses": [
+          "apache-2.0"
+        ],
+        "release_ids": [
+          5050
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/TacoKbModifier/1.0.0"
+        ],
+        "license_files_in_zip": [
+          "TacoKbModifier-e0c558e0c4f053deb2ced6fd20e1a65b334c039e/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.894388+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0002",
+    "remote_asset_name": "source-280926873-e0c558e0c4f053deb2ced6fd20e1a65b334c039e-6837bee1745a.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0002/source-280926873-e0c558e0c4f053deb2ced6fd20e1a65b334c039e-6837bee1745a.zip",
+    "remote_sha256": "6837bee1745aa30d1b491514f52368404088d7eb26eaecddfc9297a15eded782",
+    "remote_asset_id": 654135725,
+    "uploaded_at": "2026-10-18T18:11:26Z",
+    "local_deleted": false
   },
   "281672094@1c78109b7a84d808590d2ee29a26548260c324f6": {
     "key": "281672094@1c78109b7a84d808590d2ee29a26548260c324f6",
@@ -43879,13 +45531,52 @@
     "repo_name": "OguzhanUmutlu/BuyKeepInventory",
     "commit": "a7d7a0114336c0b4dd71b4449160e98b09e32ed4",
     "source_url": "https://github.com/OguzhanUmutlu/BuyKeepInventory",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "Endermanbugzjfc/BuyKeepInventory"
+    ],
+    "status": "uploaded",
+    "bytes": 12535,
+    "sha256": "7e7cdcdba7442b47682539d53c4e2efa7cf627affd4e7e05a065b6f495ae285f",
+    "final_url": "https://github.com/Endermanbugzjfc/BuyKeepInventory/archive/a7d7a0114336c0b4dd71b4449160e98b09e32ed4.zip",
+    "storage_path": null,
+    "provider": "Endermanbugzjfc/BuyKeepInventory",
     "tried": [
-      "OguzhanUmutlu/BuyKeepInventory"
-    ]
+      "OguzhanUmutlu/BuyKeepInventory",
+      "Endermanbugzjfc/BuyKeepInventory"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "a7d7a0114336c0b4dd71b4449160e98b09e32ed4",
+      "tree_sha": "7eaac54c960f046bff0cf944bd5e6df45a36dde9",
+      "commit_url": "https://github.com/Endermanbugzjfc/BuyKeepInventory/commit/a7d7a0114336c0b4dd71b4449160e98b09e32ed4",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 6,
+      "license_evidence": {
+        "declared_licenses": [
+          "mit"
+        ],
+        "release_ids": [
+          6263
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/BuyKeepInv/1.0.1"
+        ],
+        "license_files_in_zip": [
+          "BuyKeepInventory-a7d7a0114336c0b4dd71b4449160e98b09e32ed4/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.895326+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-336217269-a7d7a0114336c0b4dd71b4449160e98b09e32ed4-7e7cdcdba744.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-336217269-a7d7a0114336c0b4dd71b4449160e98b09e32ed4-7e7cdcdba744.zip",
+    "remote_sha256": "7e7cdcdba7442b47682539d53c4e2efa7cf627affd4e7e05a065b6f495ae285f",
+    "remote_asset_id": 654136387,
+    "uploaded_at": "2026-10-18T18:11:39Z",
+    "local_deleted": false
   },
   "336244446@ff3f8253d977f4a4ff555ab13ffcb0d9ea36dce6": {
     "key": "336244446@ff3f8253d977f4a4ff555ab13ffcb0d9ea36dce6",
@@ -44936,13 +46627,52 @@
     "repo_name": "Tobias-2006/PlayerBan",
     "commit": "2a7ff1b5bf35489d0a010b906453d28ed795b567",
     "source_url": "https://github.com/Tobias-2006/PlayerBan",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "supercrafter333/PlayerBan"
+    ],
+    "status": "uploaded",
+    "bytes": 65009,
+    "sha256": "07dc68b9e9c235ec6beb7ebb7a8bd40ca8aec34b67322061b104b53ca1503b8a",
+    "final_url": "https://github.com/supercrafter333/PlayerBan/archive/2a7ff1b5bf35489d0a010b906453d28ed795b567.zip",
+    "storage_path": null,
+    "provider": "supercrafter333/PlayerBan",
     "tried": [
-      "Tobias-2006/PlayerBan"
-    ]
+      "Tobias-2006/PlayerBan",
+      "supercrafter333/PlayerBan"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "2a7ff1b5bf35489d0a010b906453d28ed795b567",
+      "tree_sha": "9cd63b64bf372be0bde7aa1057d4731d8c42b7f4",
+      "commit_url": "https://github.com/supercrafter333/PlayerBan/commit/2a7ff1b5bf35489d0a010b906453d28ed795b567",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 39,
+      "license_evidence": {
+        "declared_licenses": [
+          "gpl-3.0"
+        ],
+        "release_ids": [
+          7071
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/PlayerBan/1.2.1"
+        ],
+        "license_files_in_zip": [
+          "PlayerBan-2a7ff1b5bf35489d0a010b906453d28ed795b567/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.897550+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-352942843-2a7ff1b5bf35489d0a010b906453d28ed795b567-07dc68b9e9c2.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-352942843-2a7ff1b5bf35489d0a010b906453d28ed795b567-07dc68b9e9c2.zip",
+    "remote_sha256": "07dc68b9e9c235ec6beb7ebb7a8bd40ca8aec34b67322061b104b53ca1503b8a",
+    "remote_asset_id": 654136458,
+    "uploaded_at": "2026-10-18T18:11:41Z",
+    "local_deleted": false
   },
   "352982510@5c922246a636a119af481b59a7818e0b41ec2498": {
     "key": "352982510@5c922246a636a119af481b59a7818e0b41ec2498",
@@ -45029,13 +46759,52 @@
     "repo_name": "OguzhanUmutlu/DynamicFT",
     "commit": "5559ac5034f8dddca857161db0b5d044a818c06d",
     "source_url": "https://github.com/OguzhanUmutlu/DynamicFT",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "physiciancoder/DynamicFT"
+    ],
+    "status": "uploaded",
+    "bytes": 21836,
+    "sha256": "e1a759618ba3ac89eec6ccd8218cceb214575da42d24cbe8e1cd160381dbc68e",
+    "final_url": "https://github.com/physiciancoder/DynamicFT/archive/5559ac5034f8dddca857161db0b5d044a818c06d.zip",
+    "storage_path": null,
+    "provider": "physiciancoder/DynamicFT",
     "tried": [
-      "OguzhanUmutlu/DynamicFT"
-    ]
+      "OguzhanUmutlu/DynamicFT",
+      "physiciancoder/DynamicFT"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "5559ac5034f8dddca857161db0b5d044a818c06d",
+      "tree_sha": "3d9f35839352368f0b49c9b1028bae32753d3528",
+      "commit_url": "https://github.com/physiciancoder/DynamicFT/commit/5559ac5034f8dddca857161db0b5d044a818c06d",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 2,
+      "license_evidence": {
+        "declared_licenses": [
+          "mit"
+        ],
+        "release_ids": [
+          7226
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/DynamicFT/1.0.6"
+        ],
+        "license_files_in_zip": [
+          "DynamicFT-5559ac5034f8dddca857161db0b5d044a818c06d/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.898299+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-353303094-5559ac5034f8dddca857161db0b5d044a818c06d-e1a759618ba3.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-353303094-5559ac5034f8dddca857161db0b5d044a818c06d-e1a759618ba3.zip",
+    "remote_sha256": "e1a759618ba3ac89eec6ccd8218cceb214575da42d24cbe8e1cd160381dbc68e",
+    "remote_asset_id": 654136605,
+    "uploaded_at": "2026-10-18T18:11:44Z",
+    "local_deleted": false
   },
   "353997984@06c8bf3f019f4b76ed04b3ecacf05f45223995a2": {
     "key": "353997984@06c8bf3f019f4b76ed04b3ecacf05f45223995a2",
@@ -45281,13 +47050,52 @@
     "repo_name": "OguzhanUmutlu/ComplexCrates",
     "commit": "04b50c49898bb74bf2b64cc9a817e29ce98004ac",
     "source_url": "https://github.com/OguzhanUmutlu/ComplexCrates",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "itsnawabcode/ComplexCrates"
+    ],
+    "status": "uploaded",
+    "bytes": 26066,
+    "sha256": "ba16506e5d3fb2489d442616c4a4b29d2c7d87f66cb6457749423ac9f57d259e",
+    "final_url": "https://github.com/itsnawabcode/ComplexCrates/archive/04b50c49898bb74bf2b64cc9a817e29ce98004ac.zip",
+    "storage_path": null,
+    "provider": "itsnawabcode/ComplexCrates",
     "tried": [
-      "OguzhanUmutlu/ComplexCrates"
-    ]
+      "OguzhanUmutlu/ComplexCrates",
+      "itsnawabcode/ComplexCrates"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "04b50c49898bb74bf2b64cc9a817e29ce98004ac",
+      "tree_sha": "0fe7dc120b3058553a2e38304e546fc84f68fe6c",
+      "commit_url": "https://github.com/itsnawabcode/ComplexCrates/commit/04b50c49898bb74bf2b64cc9a817e29ce98004ac",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 8,
+      "license_evidence": {
+        "declared_licenses": [
+          "mit"
+        ],
+        "release_ids": [
+          6588
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/ComplexCrates/1.0.2"
+        ],
+        "license_files_in_zip": [
+          "ComplexCrates-04b50c49898bb74bf2b64cc9a817e29ce98004ac/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.899450+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-359755294-04b50c49898bb74bf2b64cc9a817e29ce98004ac-ba16506e5d3f.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-359755294-04b50c49898bb74bf2b64cc9a817e29ce98004ac-ba16506e5d3f.zip",
+    "remote_sha256": "ba16506e5d3fb2489d442616c4a4b29d2c7d87f66cb6457749423ac9f57d259e",
+    "remote_asset_id": 654136797,
+    "uploaded_at": "2026-10-18T18:11:48Z",
+    "local_deleted": false
   },
   "360179653@06b98213c4acf8174c2b5a9d2e3d0bfc685eed74": {
     "key": "360179653@06b98213c4acf8174c2b5a9d2e3d0bfc685eed74",
@@ -46070,13 +47878,52 @@
     "repo_name": "VazziDE/ColorParticle",
     "commit": "67bb831075b6710181bed4b748e6873ecdfb7b47",
     "source_url": "https://github.com/VazziDE/ColorParticle",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "angga7togk/ColorParticle"
+    ],
+    "status": "uploaded",
+    "bytes": 40153,
+    "sha256": "91527c9d80f4908670c42bcefd50d67a44534dfd58faa955eebb963b4b378463",
+    "final_url": "https://github.com/angga7togk/ColorParticle/archive/67bb831075b6710181bed4b748e6873ecdfb7b47.zip",
+    "storage_path": null,
+    "provider": "angga7togk/ColorParticle",
     "tried": [
-      "VazziDE/ColorParticle"
-    ]
+      "VazziDE/ColorParticle",
+      "angga7togk/ColorParticle"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "67bb831075b6710181bed4b748e6873ecdfb7b47",
+      "tree_sha": "abfb2e8cb249dd6ba413bb7dd257c984f1983f2a",
+      "commit_url": "https://github.com/angga7togk/ColorParticle/commit/67bb831075b6710181bed4b748e6873ecdfb7b47",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 4,
+      "license_evidence": {
+        "declared_licenses": [
+          "gpl-2.0"
+        ],
+        "release_ids": [
+          6766
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/ColorParticle/1.2.1"
+        ],
+        "license_files_in_zip": [
+          "ColorParticle-67bb831075b6710181bed4b748e6873ecdfb7b47/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.900312+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-373558219-67bb831075b6710181bed4b748e6873ecdfb7b47-91527c9d80f4.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-373558219-67bb831075b6710181bed4b748e6873ecdfb7b47-91527c9d80f4.zip",
+    "remote_sha256": "91527c9d80f4908670c42bcefd50d67a44534dfd58faa955eebb963b4b378463",
+    "remote_asset_id": 654136867,
+    "uploaded_at": "2026-10-18T18:11:50Z",
+    "local_deleted": false
   },
   "373926575@9546ef263ec157690945c791a649e08e0b88d948": {
     "key": "373926575@9546ef263ec157690945c791a649e08e0b88d948",
@@ -46372,13 +48219,52 @@
     "repo_name": "EmangGek/GiveawayPlugin",
     "commit": "8e38fed8e05afda126d111a6ff019120e4cacee2",
     "source_url": "https://github.com/EmangGek/GiveawayPlugin",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "InvalidNoah/GiveawayPlugin"
+    ],
+    "status": "uploaded",
+    "bytes": 9892,
+    "sha256": "7e46092b2b3cb88a9c13f42d8c9781957e9cada045e568113d04d938ce484831",
+    "final_url": "https://github.com/InvalidNoah/GiveawayPlugin/archive/8e38fed8e05afda126d111a6ff019120e4cacee2.zip",
+    "storage_path": null,
+    "provider": "InvalidNoah/GiveawayPlugin",
     "tried": [
-      "EmangGek/GiveawayPlugin"
-    ]
+      "EmangGek/GiveawayPlugin",
+      "InvalidNoah/GiveawayPlugin"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "8e38fed8e05afda126d111a6ff019120e4cacee2",
+      "tree_sha": "4cf2c9f8dbc64537ea9cf5dbd6b1dbe3437b1cdc",
+      "commit_url": "https://github.com/InvalidNoah/GiveawayPlugin/commit/8e38fed8e05afda126d111a6ff019120e4cacee2",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 2,
+      "license_evidence": {
+        "declared_licenses": [
+          "apache-2.0"
+        ],
+        "release_ids": [
+          6848
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/GiveawayPlugin/1.0"
+        ],
+        "license_files_in_zip": [
+          "GiveawayPlugin-8e38fed8e05afda126d111a6ff019120e4cacee2/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.901039+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-377404666-8e38fed8e05afda126d111a6ff019120e4cacee2-7e46092b2b3c.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-377404666-8e38fed8e05afda126d111a6ff019120e4cacee2-7e46092b2b3c.zip",
+    "remote_sha256": "7e46092b2b3cb88a9c13f42d8c9781957e9cada045e568113d04d938ce484831",
+    "remote_asset_id": 654136907,
+    "uploaded_at": "2026-10-18T18:11:51Z",
+    "local_deleted": false
   },
   "377469346@19fbe1033ce5111a108f0a4fd037b7d7be785cda": {
     "key": "377469346@19fbe1033ce5111a108f0a4fd037b7d7be785cda",
@@ -46785,13 +48671,52 @@
     "repo_name": "OguzhanUmutlu/FunctionPacks",
     "commit": "04ebab0c454b99a51bafec9ac161f2b756bc5ed9",
     "source_url": "https://github.com/OguzhanUmutlu/FunctionPacks",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "CrozeStudios/FunctionPacks"
+    ],
+    "status": "uploaded",
+    "bytes": 10692,
+    "sha256": "50171394cadb8051f2ef63532d993fda0f9ad841790c05c6ae3cb48c831db12d",
+    "final_url": "https://github.com/CrozeStudios/FunctionPacks/archive/04ebab0c454b99a51bafec9ac161f2b756bc5ed9.zip",
+    "storage_path": null,
+    "provider": "CrozeStudios/FunctionPacks",
     "tried": [
-      "OguzhanUmutlu/FunctionPacks"
-    ]
+      "OguzhanUmutlu/FunctionPacks",
+      "CrozeStudios/FunctionPacks"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "04ebab0c454b99a51bafec9ac161f2b756bc5ed9",
+      "tree_sha": "c408a0293736423203c94e2b0897aabce868b9b8",
+      "commit_url": "https://github.com/CrozeStudios/FunctionPacks/commit/04ebab0c454b99a51bafec9ac161f2b756bc5ed9",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 1,
+      "license_evidence": {
+        "declared_licenses": [
+          "mit"
+        ],
+        "release_ids": [
+          7130
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/FunctionPacks/1.0.1"
+        ],
+        "license_files_in_zip": [
+          "FunctionPacks-04ebab0c454b99a51bafec9ac161f2b756bc5ed9/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.901720+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-384383208-04ebab0c454b99a51bafec9ac161f2b756bc5ed9-50171394cadb.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-384383208-04ebab0c454b99a51bafec9ac161f2b756bc5ed9-50171394cadb.zip",
+    "remote_sha256": "50171394cadb8051f2ef63532d993fda0f9ad841790c05c6ae3cb48c831db12d",
+    "remote_asset_id": 654136934,
+    "uploaded_at": "2026-10-18T18:11:51Z",
+    "local_deleted": false
   },
   "385033127@34333320ccfaddc8b588a79a38ef58c565071ea6": {
     "key": "385033127@34333320ccfaddc8b588a79a38ef58c565071ea6",
@@ -46890,13 +48815,52 @@
     "repo_name": "OguzhanUmutlu/ItemSpawners",
     "commit": "9eca0fa9d2af816c4d3007ab68741642099fdaba",
     "source_url": "https://github.com/OguzhanUmutlu/ItemSpawners",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "MadeAja/ItemSpawners"
+    ],
+    "status": "uploaded",
+    "bytes": 94890,
+    "sha256": "3c2d497b18b1e6c48277c75ec965ab4dac49967328dc02065efa1745661b257c",
+    "final_url": "https://github.com/MadeAja/ItemSpawners/archive/9eca0fa9d2af816c4d3007ab68741642099fdaba.zip",
+    "storage_path": null,
+    "provider": "MadeAja/ItemSpawners",
     "tried": [
-      "OguzhanUmutlu/ItemSpawners"
-    ]
+      "OguzhanUmutlu/ItemSpawners",
+      "MadeAja/ItemSpawners"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "9eca0fa9d2af816c4d3007ab68741642099fdaba",
+      "tree_sha": "77ef6f1775c6e912bc12ae1400644f8309bed300",
+      "commit_url": "https://github.com/MadeAja/ItemSpawners/commit/9eca0fa9d2af816c4d3007ab68741642099fdaba",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 24,
+      "license_evidence": {
+        "declared_licenses": [
+          "mit"
+        ],
+        "release_ids": [
+          7149
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/ItemSpawners/1.0.1"
+        ],
+        "license_files_in_zip": [
+          "ItemSpawners-9eca0fa9d2af816c4d3007ab68741642099fdaba/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.903486+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-386563608-9eca0fa9d2af816c4d3007ab68741642099fdaba-3c2d497b18b1.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-386563608-9eca0fa9d2af816c4d3007ab68741642099fdaba-3c2d497b18b1.zip",
+    "remote_sha256": "3c2d497b18b1e6c48277c75ec965ab4dac49967328dc02065efa1745661b257c",
+    "remote_asset_id": 654136994,
+    "uploaded_at": "2026-10-18T18:11:53Z",
+    "local_deleted": false
   },
   "387078086@b6beca48c1697ce262db4ae54b0665681830dfd3": {
     "key": "387078086@b6beca48c1697ce262db4ae54b0665681830dfd3",
@@ -46931,13 +48895,52 @@
     "repo_name": "OguzhanUmutlu/BlockHunt",
     "commit": "46cd7d7d828954e409b8abe73705fa4386b8a5f9",
     "source_url": "https://github.com/OguzhanUmutlu/BlockHunt",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "MadeAja/BlockHunt"
+    ],
+    "status": "uploaded",
+    "bytes": 99174,
+    "sha256": "2826a15348dcc0cef33dc8dadd59e13c54017e9998ad36e367139a5b2390fbf6",
+    "final_url": "https://github.com/MadeAja/BlockHunt/archive/46cd7d7d828954e409b8abe73705fa4386b8a5f9.zip",
+    "storage_path": null,
+    "provider": "MadeAja/BlockHunt",
     "tried": [
-      "OguzhanUmutlu/BlockHunt"
-    ]
+      "OguzhanUmutlu/BlockHunt",
+      "MadeAja/BlockHunt"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "46cd7d7d828954e409b8abe73705fa4386b8a5f9",
+      "tree_sha": "6aa6fddef27cccd018d62ee5310404bf39017dd3",
+      "commit_url": "https://github.com/MadeAja/BlockHunt/commit/46cd7d7d828954e409b8abe73705fa4386b8a5f9",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 12,
+      "license_evidence": {
+        "declared_licenses": [
+          "mit"
+        ],
+        "release_ids": [
+          7186
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/BlockHunt/1.0.3"
+        ],
+        "license_files_in_zip": [
+          "BlockHunt-46cd7d7d828954e409b8abe73705fa4386b8a5f9/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.904817+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-387246953-46cd7d7d828954e409b8abe73705fa4386b8a5f9-2826a15348dc.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-387246953-46cd7d7d828954e409b8abe73705fa4386b8a5f9-2826a15348dc.zip",
+    "remote_sha256": "2826a15348dcc0cef33dc8dadd59e13c54017e9998ad36e367139a5b2390fbf6",
+    "remote_asset_id": 654137048,
+    "uploaded_at": "2026-10-18T18:11:55Z",
+    "local_deleted": false
   },
   "387475007@22447b463c9febcf8fd1fcae2a68a630c513fdd0": {
     "key": "387475007@22447b463c9febcf8fd1fcae2a68a630c513fdd0",
@@ -47074,13 +49077,52 @@
     "repo_name": "OguzhanUmutlu/TheFloorIsLava",
     "commit": "32ce888af735b89290d502c9ffeab9c601e82232",
     "source_url": "https://github.com/OguzhanUmutlu/TheFloorIsLava",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "MadeAja/TheFloorIsLava"
+    ],
+    "status": "uploaded",
+    "bytes": 14210,
+    "sha256": "5f22840cc3d0bfd83b9a17d1bfff9c41c7accfccf7ac2a014cc7a275c5efe362",
+    "final_url": "https://github.com/MadeAja/TheFloorIsLava/archive/32ce888af735b89290d502c9ffeab9c601e82232.zip",
+    "storage_path": null,
+    "provider": "MadeAja/TheFloorIsLava",
     "tried": [
-      "OguzhanUmutlu/TheFloorIsLava"
-    ]
+      "OguzhanUmutlu/TheFloorIsLava",
+      "MadeAja/TheFloorIsLava"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "32ce888af735b89290d502c9ffeab9c601e82232",
+      "tree_sha": "9b9ce2111c5b0da18aa160534549cf16c48f4cc6",
+      "commit_url": "https://github.com/MadeAja/TheFloorIsLava/commit/32ce888af735b89290d502c9ffeab9c601e82232",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 3,
+      "license_evidence": {
+        "declared_licenses": [
+          "mit"
+        ],
+        "release_ids": [
+          7147
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/TheFloorIsLava/1.0.0"
+        ],
+        "license_files_in_zip": [
+          "TheFloorIsLava-32ce888af735b89290d502c9ffeab9c601e82232/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.905524+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-388541918-32ce888af735b89290d502c9ffeab9c601e82232-5f22840cc3d0.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-388541918-32ce888af735b89290d502c9ffeab9c601e82232-5f22840cc3d0.zip",
+    "remote_sha256": "5f22840cc3d0bfd83b9a17d1bfff9c41c7accfccf7ac2a014cc7a275c5efe362",
+    "remote_asset_id": 654137149,
+    "uploaded_at": "2026-10-18T18:11:58Z",
+    "local_deleted": false
   },
   "388852433@b420d48214ff9003171d25c27d10283ce55cdf4e": {
     "key": "388852433@b420d48214ff9003171d25c27d10283ce55cdf4e",
@@ -47312,13 +49354,52 @@
     "repo_name": "OguzhanUmutlu/ComplexPets",
     "commit": "650ba06c5d705c9c457b276e54ad15b10e80c6b1",
     "source_url": "https://github.com/OguzhanUmutlu/ComplexPets",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "MadeAja/ComplexPets"
+    ],
+    "status": "uploaded",
+    "bytes": 67593,
+    "sha256": "e89a487df404777a7a872d18fc5952ff6a0d6f3ccdc49cf9b5edee4a88ac0c45",
+    "final_url": "https://github.com/MadeAja/ComplexPets/archive/650ba06c5d705c9c457b276e54ad15b10e80c6b1.zip",
+    "storage_path": null,
+    "provider": "MadeAja/ComplexPets",
     "tried": [
-      "OguzhanUmutlu/ComplexPets"
-    ]
+      "OguzhanUmutlu/ComplexPets",
+      "MadeAja/ComplexPets"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "650ba06c5d705c9c457b276e54ad15b10e80c6b1",
+      "tree_sha": "5e53fd533b7fff2e7210fedd3bff0dac13445595",
+      "commit_url": "https://github.com/MadeAja/ComplexPets/commit/650ba06c5d705c9c457b276e54ad15b10e80c6b1",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 19,
+      "license_evidence": {
+        "declared_licenses": [
+          "mit"
+        ],
+        "release_ids": [
+          7224
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/ComplexPets/1.0.0"
+        ],
+        "license_files_in_zip": [
+          "ComplexPets-650ba06c5d705c9c457b276e54ad15b10e80c6b1/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.906947+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-391434734-650ba06c5d705c9c457b276e54ad15b10e80c6b1-e89a487df404.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-391434734-650ba06c5d705c9c457b276e54ad15b10e80c6b1-e89a487df404.zip",
+    "remote_sha256": "e89a487df404777a7a872d18fc5952ff6a0d6f3ccdc49cf9b5edee4a88ac0c45",
+    "remote_asset_id": 654137181,
+    "uploaded_at": "2026-10-18T18:11:59Z",
+    "local_deleted": false
   },
   "391676122@ed376ff7760ee9ef342783dea205c5c916db9c8c": {
     "key": "391676122@ed376ff7760ee9ef342783dea205c5c916db9c8c",
@@ -47485,13 +49566,52 @@
     "repo_name": "OguzhanUmutlu/TreeCapitator",
     "commit": "86b532093038f9172259da2ec2426364c75b8a8c",
     "source_url": "https://github.com/OguzhanUmutlu/TreeCapitator",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "MadeAja/TreeCapitator"
+    ],
+    "status": "uploaded",
+    "bytes": 2355672,
+    "sha256": "7ffa5bf2d71453d4e89579db2bcedc90a4518998a0807156dbab415da43471a5",
+    "final_url": "https://github.com/MadeAja/TreeCapitator/archive/86b532093038f9172259da2ec2426364c75b8a8c.zip",
+    "storage_path": null,
+    "provider": "MadeAja/TreeCapitator",
     "tried": [
-      "OguzhanUmutlu/TreeCapitator"
-    ]
+      "OguzhanUmutlu/TreeCapitator",
+      "MadeAja/TreeCapitator"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "86b532093038f9172259da2ec2426364c75b8a8c",
+      "tree_sha": "1a9e195651f366ed95dd1b9e67d443c0374bf185",
+      "commit_url": "https://github.com/MadeAja/TreeCapitator/commit/86b532093038f9172259da2ec2426364c75b8a8c",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 3,
+      "license_evidence": {
+        "declared_licenses": [
+          "mit"
+        ],
+        "release_ids": [
+          7291
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/TreeCapitator/1.0.8"
+        ],
+        "license_files_in_zip": [
+          "TreeCapitator-86b532093038f9172259da2ec2426364c75b8a8c/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.916075+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-393369378-86b532093038f9172259da2ec2426364c75b8a8c-7ffa5bf2d714.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-393369378-86b532093038f9172259da2ec2426364c75b8a8c-7ffa5bf2d714.zip",
+    "remote_sha256": "7ffa5bf2d71453d4e89579db2bcedc90a4518998a0807156dbab415da43471a5",
+    "remote_asset_id": 654137353,
+    "uploaded_at": "2026-10-18T18:12:03Z",
+    "local_deleted": false
   },
   "393590536@73b862edb693221e860c099ed12eef3719f51a6d": {
     "key": "393590536@73b862edb693221e860c099ed12eef3719f51a6d",
@@ -47712,13 +49832,52 @@
     "repo_name": "sn3akrr/PoopCraft",
     "commit": "a479844c126f4786b063ad4afb51ab1577c2eb43",
     "source_url": "https://github.com/sn3akrr/PoopCraft",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "MadeAja/PoopCraft"
+    ],
+    "status": "uploaded",
+    "bytes": 88494,
+    "sha256": "abc2abdd7dc669a311eeb1815f80d6f87fb3a21f656645549808bc6b425227c1",
+    "final_url": "https://github.com/MadeAja/PoopCraft/archive/a479844c126f4786b063ad4afb51ab1577c2eb43.zip",
+    "storage_path": null,
+    "provider": "MadeAja/PoopCraft",
     "tried": [
-      "sn3akrr/PoopCraft"
-    ]
+      "sn3akrr/PoopCraft",
+      "MadeAja/PoopCraft"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "a479844c126f4786b063ad4afb51ab1577c2eb43",
+      "tree_sha": "507bcc441ff8aeadc005a15f632c7b463c9d168c",
+      "commit_url": "https://github.com/MadeAja/PoopCraft/commit/a479844c126f4786b063ad4afb51ab1577c2eb43",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 5,
+      "license_evidence": {
+        "declared_licenses": [
+          "gpl-3.0"
+        ],
+        "release_ids": [
+          7369
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/PoopCraft/1.1.1-ALPHA"
+        ],
+        "license_files_in_zip": [
+          "PoopCraft-a479844c126f4786b063ad4afb51ab1577c2eb43/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.917401+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-395514155-a479844c126f4786b063ad4afb51ab1577c2eb43-abc2abdd7dc6.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-395514155-a479844c126f4786b063ad4afb51ab1577c2eb43-abc2abdd7dc6.zip",
+    "remote_sha256": "abc2abdd7dc669a311eeb1815f80d6f87fb3a21f656645549808bc6b425227c1",
+    "remote_asset_id": 654137402,
+    "uploaded_at": "2026-10-18T18:12:04Z",
+    "local_deleted": false
   },
   "396222908@95ba329ac1a21856b53cf293a31a59a286549d87": {
     "key": "396222908@95ba329ac1a21856b53cf293a31a59a286549d87",
@@ -65877,13 +68036,43 @@
     "repo_name": "eDroiid/ChatToDiscord",
     "commit": "4bc4fa65c5cd2a9c3b57e6a19c0636ebab36150f",
     "source_url": "https://github.com/eDroiid/ChatToDiscord",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "BradyJenkins/ChatToDiscord"
+    ],
+    "status": "license_review_required",
+    "bytes": 58353,
+    "sha256": "3292501c9b7d82f52bcfa50233ba8fc0e5675addf931e1b92a7d4123f0b39031",
+    "final_url": "https://github.com/BradyJenkins/ChatToDiscord/archive/4bc4fa65c5cd2a9c3b57e6a19c0636ebab36150f.zip",
+    "storage_path": "archive/sources/87964338/4bc4fa65c5cd2a9c3b57e6a19c0636ebab36150f.zip",
+    "provider": "BradyJenkins/ChatToDiscord",
     "tried": [
-      "eDroiid/ChatToDiscord"
-    ]
+      "eDroiid/ChatToDiscord",
+      "BradyJenkins/ChatToDiscord"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "4bc4fa65c5cd2a9c3b57e6a19c0636ebab36150f",
+      "tree_sha": "e9eac440f03ab648625a64b4bb36cd80bfda1260",
+      "commit_url": "https://github.com/BradyJenkins/ChatToDiscord/commit/4bc4fa65c5cd2a9c3b57e6a19c0636ebab36150f",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 2,
+      "license_evidence": {
+        "declared_licenses": [
+          "none"
+        ],
+        "release_ids": [
+          415
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/ChatToDiscord/1.1.1"
+        ],
+        "license_files_in_zip": []
+      },
+      "checked_at": "2026-10-18T18:09:55.918186+00:00"
+    },
+    "license_review_reason": "The release declares a custom or missing license; this commit contains no license document establishing redistribution permission."
   },
   "884022370@203fcce2a75e2a9b061c9a236c5f3c837c542255": {
     "key": "884022370@203fcce2a75e2a9b061c9a236c5f3c837c542255",
@@ -75667,13 +77856,52 @@
     "repo_name": "OguzhanUmutlu/BuyKeepInventory",
     "commit": "959e5bd9ce9862fc3cf3adf3c055f04af9f2d80b",
     "source_url": "https://github.com/OguzhanUmutlu/BuyKeepInventory",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "Endermanbugzjfc/BuyKeepInventory"
+    ],
+    "status": "uploaded",
+    "bytes": 9212,
+    "sha256": "abdb9a5fbd189479c10ddb9d6ec80ac7aeff23d18fb1f730f54b5367d4291838",
+    "final_url": "https://github.com/Endermanbugzjfc/BuyKeepInventory/archive/959e5bd9ce9862fc3cf3adf3c055f04af9f2d80b.zip",
+    "storage_path": null,
+    "provider": "Endermanbugzjfc/BuyKeepInventory",
     "tried": [
-      "OguzhanUmutlu/BuyKeepInventory"
-    ]
+      "OguzhanUmutlu/BuyKeepInventory",
+      "Endermanbugzjfc/BuyKeepInventory"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "959e5bd9ce9862fc3cf3adf3c055f04af9f2d80b",
+      "tree_sha": "55b9513a0de98fc4190db8c2bbc137e943b5d1f3",
+      "commit_url": "https://github.com/Endermanbugzjfc/BuyKeepInventory/commit/959e5bd9ce9862fc3cf3adf3c055f04af9f2d80b",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 3,
+      "license_evidence": {
+        "declared_licenses": [
+          "mit"
+        ],
+        "release_ids": [
+          5962
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/BuyKeepInv/1.0.0"
+        ],
+        "license_files_in_zip": [
+          "BuyKeepInventory-959e5bd9ce9862fc3cf3adf3c055f04af9f2d80b/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.919450+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-336217269-959e5bd9ce9862fc3cf3adf3c055f04af9f2d80b-abdb9a5fbd18.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-336217269-959e5bd9ce9862fc3cf3adf3c055f04af9f2d80b-abdb9a5fbd18.zip",
+    "remote_sha256": "abdb9a5fbd189479c10ddb9d6ec80ac7aeff23d18fb1f730f54b5367d4291838",
+    "remote_asset_id": 654136327,
+    "uploaded_at": "2026-10-18T18:11:38Z",
+    "local_deleted": false
   },
   "336244446@acac23aef1701600b7a5e3f191c44c806a6f5419": {
     "key": "336244446@acac23aef1701600b7a5e3f191c44c806a6f5419",
@@ -78911,13 +81139,52 @@
     "repo_name": "Tobias-2006/PlayerBan",
     "commit": "15bce4f023b2e08444e91aaf324435b0a89c8b56",
     "source_url": "https://github.com/Tobias-2006/PlayerBan",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "supercrafter333/PlayerBan"
+    ],
+    "status": "uploaded",
+    "bytes": 43793,
+    "sha256": "e0dea789b3ee8fd406808a167caaf9cfd31c1b81766505c8865216c7bb42ff23",
+    "final_url": "https://github.com/supercrafter333/PlayerBan/archive/15bce4f023b2e08444e91aaf324435b0a89c8b56.zip",
+    "storage_path": null,
+    "provider": "supercrafter333/PlayerBan",
     "tried": [
-      "Tobias-2006/PlayerBan"
-    ]
+      "Tobias-2006/PlayerBan",
+      "supercrafter333/PlayerBan"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "15bce4f023b2e08444e91aaf324435b0a89c8b56",
+      "tree_sha": "6804aca97f4f92949943e2f82b7885c887201dea",
+      "commit_url": "https://github.com/supercrafter333/PlayerBan/commit/15bce4f023b2e08444e91aaf324435b0a89c8b56",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 24,
+      "license_evidence": {
+        "declared_licenses": [
+          "gpl-3.0"
+        ],
+        "release_ids": [
+          6683
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/PlayerBan/1.0.0"
+        ],
+        "license_files_in_zip": [
+          "PlayerBan-15bce4f023b2e08444e91aaf324435b0a89c8b56/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.921211+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-352942843-15bce4f023b2e08444e91aaf324435b0a89c8b56-e0dea789b3ee.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-352942843-15bce4f023b2e08444e91aaf324435b0a89c8b56-e0dea789b3ee.zip",
+    "remote_sha256": "e0dea789b3ee8fd406808a167caaf9cfd31c1b81766505c8865216c7bb42ff23",
+    "remote_asset_id": 654136429,
+    "uploaded_at": "2026-10-18T18:11:40Z",
+    "local_deleted": false
   },
   "352942843@574be8790e76a4e4c01044332c75abc5b563ebde": {
     "key": "352942843@574be8790e76a4e4c01044332c75abc5b563ebde",
@@ -78925,13 +81192,52 @@
     "repo_name": "Tobias-2006/PlayerBan",
     "commit": "574be8790e76a4e4c01044332c75abc5b563ebde",
     "source_url": "https://github.com/Tobias-2006/PlayerBan",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "supercrafter333/PlayerBan"
+    ],
+    "status": "uploaded",
+    "bytes": 64851,
+    "sha256": "8f7f5292b7ea242dd9f0f1134d1d8ef107b3669891cb634eb7bb4ef2194a033d",
+    "final_url": "https://github.com/supercrafter333/PlayerBan/archive/574be8790e76a4e4c01044332c75abc5b563ebde.zip",
+    "storage_path": null,
+    "provider": "supercrafter333/PlayerBan",
     "tried": [
-      "Tobias-2006/PlayerBan"
-    ]
+      "Tobias-2006/PlayerBan",
+      "supercrafter333/PlayerBan"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "574be8790e76a4e4c01044332c75abc5b563ebde",
+      "tree_sha": "eaa3771ad57070ebaad8968a154800070ebf9998",
+      "commit_url": "https://github.com/supercrafter333/PlayerBan/commit/574be8790e76a4e4c01044332c75abc5b563ebde",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 39,
+      "license_evidence": {
+        "declared_licenses": [
+          "gpl-3.0"
+        ],
+        "release_ids": [
+          6770
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/PlayerBan/1.2.0"
+        ],
+        "license_files_in_zip": [
+          "PlayerBan-574be8790e76a4e4c01044332c75abc5b563ebde/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.923509+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-352942843-574be8790e76a4e4c01044332c75abc5b563ebde-8f7f5292b7ea.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-352942843-574be8790e76a4e4c01044332c75abc5b563ebde-8f7f5292b7ea.zip",
+    "remote_sha256": "8f7f5292b7ea242dd9f0f1134d1d8ef107b3669891cb634eb7bb4ef2194a033d",
+    "remote_asset_id": 654136502,
+    "uploaded_at": "2026-10-18T18:11:42Z",
+    "local_deleted": false
   },
   "352942843@dd378782b8d1b9ccd90c147d09220f4e3c3e29f1": {
     "key": "352942843@dd378782b8d1b9ccd90c147d09220f4e3c3e29f1",
@@ -78939,13 +81245,52 @@
     "repo_name": "Tobias-2006/PlayerBan",
     "commit": "dd378782b8d1b9ccd90c147d09220f4e3c3e29f1",
     "source_url": "https://github.com/Tobias-2006/PlayerBan",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "supercrafter333/PlayerBan"
+    ],
+    "status": "uploaded",
+    "bytes": 58477,
+    "sha256": "d80ef788a9629a84f80394751c2a348df210d7ab76cc45749c7cfef006e498a9",
+    "final_url": "https://github.com/supercrafter333/PlayerBan/archive/dd378782b8d1b9ccd90c147d09220f4e3c3e29f1.zip",
+    "storage_path": null,
+    "provider": "supercrafter333/PlayerBan",
     "tried": [
-      "Tobias-2006/PlayerBan"
-    ]
+      "Tobias-2006/PlayerBan",
+      "supercrafter333/PlayerBan"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "dd378782b8d1b9ccd90c147d09220f4e3c3e29f1",
+      "tree_sha": "e94908e944452a79fa968e7659c7783ed0568e52",
+      "commit_url": "https://github.com/supercrafter333/PlayerBan/commit/dd378782b8d1b9ccd90c147d09220f4e3c3e29f1",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 32,
+      "license_evidence": {
+        "declared_licenses": [
+          "gpl-3.0"
+        ],
+        "release_ids": [
+          6722
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/PlayerBan/1.1.0"
+        ],
+        "license_files_in_zip": [
+          "PlayerBan-dd378782b8d1b9ccd90c147d09220f4e3c3e29f1/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.925516+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-352942843-dd378782b8d1b9ccd90c147d09220f4e3c3e29f1-d80ef788a962.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-352942843-dd378782b8d1b9ccd90c147d09220f4e3c3e29f1-d80ef788a962.zip",
+    "remote_sha256": "d80ef788a9629a84f80394751c2a348df210d7ab76cc45749c7cfef006e498a9",
+    "remote_asset_id": 654136549,
+    "uploaded_at": "2026-10-18T18:11:43Z",
+    "local_deleted": false
   },
   "352982510@dc6803b8201adaf9aa3d0b6827e1ae78a59937f4": {
     "key": "352982510@dc6803b8201adaf9aa3d0b6827e1ae78a59937f4",
@@ -79107,13 +81452,52 @@
     "repo_name": "OguzhanUmutlu/DynamicFT",
     "commit": "86078ad6e37c8bf66c6e1302edbc2407b3346639",
     "source_url": "https://github.com/OguzhanUmutlu/DynamicFT",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "physiciancoder/DynamicFT"
+    ],
+    "status": "uploaded",
+    "bytes": 26184,
+    "sha256": "181e32aebce4dc3954d4fbdbec0631e3e81f3be26fcec5cc46153e32c41f12ef",
+    "final_url": "https://github.com/physiciancoder/DynamicFT/archive/86078ad6e37c8bf66c6e1302edbc2407b3346639.zip",
+    "storage_path": null,
+    "provider": "physiciancoder/DynamicFT",
     "tried": [
-      "OguzhanUmutlu/DynamicFT"
-    ]
+      "OguzhanUmutlu/DynamicFT",
+      "physiciancoder/DynamicFT"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "86078ad6e37c8bf66c6e1302edbc2407b3346639",
+      "tree_sha": "bd83dfc32903716cafd71c7ff7caf54b38612298",
+      "commit_url": "https://github.com/physiciancoder/DynamicFT/commit/86078ad6e37c8bf66c6e1302edbc2407b3346639",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 4,
+      "license_evidence": {
+        "declared_licenses": [
+          "mit"
+        ],
+        "release_ids": [
+          6455
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/DynamicFT/1.0.2"
+        ],
+        "license_files_in_zip": [
+          "DynamicFT-86078ad6e37c8bf66c6e1302edbc2407b3346639/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.926365+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-353303094-86078ad6e37c8bf66c6e1302edbc2407b3346639-181e32aebce4.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-353303094-86078ad6e37c8bf66c6e1302edbc2407b3346639-181e32aebce4.zip",
+    "remote_sha256": "181e32aebce4dc3954d4fbdbec0631e3e81f3be26fcec5cc46153e32c41f12ef",
+    "remote_asset_id": 654136657,
+    "uploaded_at": "2026-10-18T18:11:45Z",
+    "local_deleted": false
   },
   "353303094@c2d82b772ae7cfa9b4736f5ece1971d848a1a30a": {
     "key": "353303094@c2d82b772ae7cfa9b4736f5ece1971d848a1a30a",
@@ -79121,13 +81505,52 @@
     "repo_name": "OguzhanUmutlu/DynamicFT",
     "commit": "c2d82b772ae7cfa9b4736f5ece1971d848a1a30a",
     "source_url": "https://github.com/OguzhanUmutlu/DynamicFT",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "physiciancoder/DynamicFT"
+    ],
+    "status": "uploaded",
+    "bytes": 21841,
+    "sha256": "592bd22c85c2801ff29dd2dbe60e095c92641f5f24e1dd7d5ffe442bba76177b",
+    "final_url": "https://github.com/physiciancoder/DynamicFT/archive/c2d82b772ae7cfa9b4736f5ece1971d848a1a30a.zip",
+    "storage_path": null,
+    "provider": "physiciancoder/DynamicFT",
     "tried": [
-      "OguzhanUmutlu/DynamicFT"
-    ]
+      "OguzhanUmutlu/DynamicFT",
+      "physiciancoder/DynamicFT"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "c2d82b772ae7cfa9b4736f5ece1971d848a1a30a",
+      "tree_sha": "0fd93c85c6f12727baa4ac0ad17ef6a31f3303eb",
+      "commit_url": "https://github.com/physiciancoder/DynamicFT/commit/c2d82b772ae7cfa9b4736f5ece1971d848a1a30a",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 2,
+      "license_evidence": {
+        "declared_licenses": [
+          "mit"
+        ],
+        "release_ids": [
+          6610
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/DynamicFT/1.0.5-dev2"
+        ],
+        "license_files_in_zip": [
+          "DynamicFT-c2d82b772ae7cfa9b4736f5ece1971d848a1a30a/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.927091+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-353303094-c2d82b772ae7cfa9b4736f5ece1971d848a1a30a-592bd22c85c2.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-353303094-c2d82b772ae7cfa9b4736f5ece1971d848a1a30a-592bd22c85c2.zip",
+    "remote_sha256": "592bd22c85c2801ff29dd2dbe60e095c92641f5f24e1dd7d5ffe442bba76177b",
+    "remote_asset_id": 654136699,
+    "uploaded_at": "2026-10-18T18:11:46Z",
+    "local_deleted": false
   },
   "353997984@ab90b52a76c7ff0bcd8d5139eb5677101504b4bf": {
     "key": "353997984@ab90b52a76c7ff0bcd8d5139eb5677101504b4bf",
@@ -80352,13 +82775,52 @@
     "repo_name": "OguzhanUmutlu/ComplexCrates",
     "commit": "0153b708edf389140b60e9f386fdff4519c4db43",
     "source_url": "https://github.com/OguzhanUmutlu/ComplexCrates",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "itsnawabcode/ComplexCrates"
+    ],
+    "status": "uploaded",
+    "bytes": 24428,
+    "sha256": "b48d14b47b0b3e2f0728dd38ff2e68f9518a2f13889cf33591dd8b753cfc8002",
+    "final_url": "https://github.com/itsnawabcode/ComplexCrates/archive/0153b708edf389140b60e9f386fdff4519c4db43.zip",
+    "storage_path": null,
+    "provider": "itsnawabcode/ComplexCrates",
     "tried": [
-      "OguzhanUmutlu/ComplexCrates"
-    ]
+      "OguzhanUmutlu/ComplexCrates",
+      "itsnawabcode/ComplexCrates"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "0153b708edf389140b60e9f386fdff4519c4db43",
+      "tree_sha": "1a047ecffb26ba1ee30897d7ff5b97d796e3524b",
+      "commit_url": "https://github.com/itsnawabcode/ComplexCrates/commit/0153b708edf389140b60e9f386fdff4519c4db43",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 8,
+      "license_evidence": {
+        "declared_licenses": [
+          "mit"
+        ],
+        "release_ids": [
+          6546
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/ComplexCrates/1.0.1"
+        ],
+        "license_files_in_zip": [
+          "ComplexCrates-0153b708edf389140b60e9f386fdff4519c4db43/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.928253+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-359755294-0153b708edf389140b60e9f386fdff4519c4db43-b48d14b47b0b.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-359755294-0153b708edf389140b60e9f386fdff4519c4db43-b48d14b47b0b.zip",
+    "remote_sha256": "b48d14b47b0b3e2f0728dd38ff2e68f9518a2f13889cf33591dd8b753cfc8002",
+    "remote_asset_id": 654136762,
+    "uploaded_at": "2026-10-18T18:11:47Z",
+    "local_deleted": false
   },
   "359755294@8aea6fb17159f27660bc8f95ce52afdcd622b2ac": {
     "key": "359755294@8aea6fb17159f27660bc8f95ce52afdcd622b2ac",
@@ -80366,13 +82828,52 @@
     "repo_name": "OguzhanUmutlu/ComplexCrates",
     "commit": "8aea6fb17159f27660bc8f95ce52afdcd622b2ac",
     "source_url": "https://github.com/OguzhanUmutlu/ComplexCrates",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "itsnawabcode/ComplexCrates"
+    ],
+    "status": "uploaded",
+    "bytes": 22921,
+    "sha256": "b96f7b59fdb8bb2eee98d6dd011adb80dfe0df7a2d905b38f129f76e435fe2c0",
+    "final_url": "https://github.com/itsnawabcode/ComplexCrates/archive/8aea6fb17159f27660bc8f95ce52afdcd622b2ac.zip",
+    "storage_path": null,
+    "provider": "itsnawabcode/ComplexCrates",
     "tried": [
-      "OguzhanUmutlu/ComplexCrates"
-    ]
+      "OguzhanUmutlu/ComplexCrates",
+      "itsnawabcode/ComplexCrates"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "8aea6fb17159f27660bc8f95ce52afdcd622b2ac",
+      "tree_sha": "2be081b96f569c0ba8e55dc21c96da403f9ad0d1",
+      "commit_url": "https://github.com/itsnawabcode/ComplexCrates/commit/8aea6fb17159f27660bc8f95ce52afdcd622b2ac",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 8,
+      "license_evidence": {
+        "declared_licenses": [
+          "mit"
+        ],
+        "release_ids": [
+          6528
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/ComplexCrates/1.0.0-dev"
+        ],
+        "license_files_in_zip": [
+          "ComplexCrates-8aea6fb17159f27660bc8f95ce52afdcd622b2ac/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.929341+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-359755294-8aea6fb17159f27660bc8f95ce52afdcd622b2ac-b96f7b59fdb8.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-359755294-8aea6fb17159f27660bc8f95ce52afdcd622b2ac-b96f7b59fdb8.zip",
+    "remote_sha256": "b96f7b59fdb8bb2eee98d6dd011adb80dfe0df7a2d905b38f129f76e435fe2c0",
+    "remote_asset_id": 654136839,
+    "uploaded_at": "2026-10-18T18:11:49Z",
+    "local_deleted": false
   },
   "360362869@70dd9998d7cf67f7a10961705e841ff887cbc6f4": {
     "key": "360362869@70dd9998d7cf67f7a10961705e841ff887cbc6f4",
@@ -86888,13 +89389,52 @@
     "repo_name": "OguzhanUmutlu/ItemSpawners",
     "commit": "3a0937b8673296d41868bc164b764f24711ffad9",
     "source_url": "https://github.com/OguzhanUmutlu/ItemSpawners",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "MadeAja/ItemSpawners"
+    ],
+    "status": "uploaded",
+    "bytes": 94230,
+    "sha256": "8372c2e9e49c921bd335a54a2bd23569a34ed6813a7aeb34be4a96c7a1ad6754",
+    "final_url": "https://github.com/MadeAja/ItemSpawners/archive/3a0937b8673296d41868bc164b764f24711ffad9.zip",
+    "storage_path": null,
+    "provider": "MadeAja/ItemSpawners",
     "tried": [
-      "OguzhanUmutlu/ItemSpawners"
-    ]
+      "OguzhanUmutlu/ItemSpawners",
+      "MadeAja/ItemSpawners"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "3a0937b8673296d41868bc164b764f24711ffad9",
+      "tree_sha": "507fff75e9d1e31a49be9b761a993647570dcb66",
+      "commit_url": "https://github.com/MadeAja/ItemSpawners/commit/3a0937b8673296d41868bc164b764f24711ffad9",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 24,
+      "license_evidence": {
+        "declared_licenses": [
+          "mit"
+        ],
+        "release_ids": [
+          7054
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/ItemSpawners/1.0.0"
+        ],
+        "license_files_in_zip": [
+          "ItemSpawners-3a0937b8673296d41868bc164b764f24711ffad9/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.931150+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-386563608-3a0937b8673296d41868bc164b764f24711ffad9-8372c2e9e49c.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-386563608-3a0937b8673296d41868bc164b764f24711ffad9-8372c2e9e49c.zip",
+    "remote_sha256": "8372c2e9e49c921bd335a54a2bd23569a34ed6813a7aeb34be4a96c7a1ad6754",
+    "remote_asset_id": 654136962,
+    "uploaded_at": "2026-10-18T18:11:52Z",
+    "local_deleted": false
   },
   "387078086@eb6b28e2704850f05da468fe41cf755410e39eb1": {
     "key": "387078086@eb6b28e2704850f05da468fe41cf755410e39eb1",
@@ -86929,13 +89469,52 @@
     "repo_name": "OguzhanUmutlu/BlockHunt",
     "commit": "44baf5cd7a9bb1bb6b9ac3c91dc2e7cf5b985b1b",
     "source_url": "https://github.com/OguzhanUmutlu/BlockHunt",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "MadeAja/BlockHunt"
+    ],
+    "status": "uploaded",
+    "bytes": 95654,
+    "sha256": "96005f4dfbe0f0017c97d6d50fc7b4a38fb57b96e74a448776aa1d37f63825c9",
+    "final_url": "https://github.com/MadeAja/BlockHunt/archive/44baf5cd7a9bb1bb6b9ac3c91dc2e7cf5b985b1b.zip",
+    "storage_path": null,
+    "provider": "MadeAja/BlockHunt",
     "tried": [
-      "OguzhanUmutlu/BlockHunt"
-    ]
+      "OguzhanUmutlu/BlockHunt",
+      "MadeAja/BlockHunt"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "44baf5cd7a9bb1bb6b9ac3c91dc2e7cf5b985b1b",
+      "tree_sha": "75fdfa5a206e2dd3bde2311a6d4b0302e26f96ee",
+      "commit_url": "https://github.com/MadeAja/BlockHunt/commit/44baf5cd7a9bb1bb6b9ac3c91dc2e7cf5b985b1b",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 10,
+      "license_evidence": {
+        "declared_licenses": [
+          "mit"
+        ],
+        "release_ids": [
+          7078
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/BlockHunt/1.0.0"
+        ],
+        "license_files_in_zip": [
+          "BlockHunt-44baf5cd7a9bb1bb6b9ac3c91dc2e7cf5b985b1b/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.932431+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-387246953-44baf5cd7a9bb1bb6b9ac3c91dc2e7cf5b985b1b-96005f4dfbe0.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-387246953-44baf5cd7a9bb1bb6b9ac3c91dc2e7cf5b985b1b-96005f4dfbe0.zip",
+    "remote_sha256": "96005f4dfbe0f0017c97d6d50fc7b4a38fb57b96e74a448776aa1d37f63825c9",
+    "remote_asset_id": 654137020,
+    "uploaded_at": "2026-10-18T18:11:54Z",
+    "local_deleted": false
   },
   "387246953@76459dddd7cced7a0d074fd57370a9c93f9b76f1": {
     "key": "387246953@76459dddd7cced7a0d074fd57370a9c93f9b76f1",
@@ -86943,13 +89522,52 @@
     "repo_name": "OguzhanUmutlu/BlockHunt",
     "commit": "76459dddd7cced7a0d074fd57370a9c93f9b76f1",
     "source_url": "https://github.com/OguzhanUmutlu/BlockHunt",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "MadeAja/BlockHunt"
+    ],
+    "status": "uploaded",
+    "bytes": 95826,
+    "sha256": "227c328ab97e165b9cc55a2fec7888f70bde8ca7ac97ee97a558c98ae13c27db",
+    "final_url": "https://github.com/MadeAja/BlockHunt/archive/76459dddd7cced7a0d074fd57370a9c93f9b76f1.zip",
+    "storage_path": null,
+    "provider": "MadeAja/BlockHunt",
     "tried": [
-      "OguzhanUmutlu/BlockHunt"
-    ]
+      "OguzhanUmutlu/BlockHunt",
+      "MadeAja/BlockHunt"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "76459dddd7cced7a0d074fd57370a9c93f9b76f1",
+      "tree_sha": "151e85f5c1ae85549275089cfd57714b6f660766",
+      "commit_url": "https://github.com/MadeAja/BlockHunt/commit/76459dddd7cced7a0d074fd57370a9c93f9b76f1",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 10,
+      "license_evidence": {
+        "declared_licenses": [
+          "mit"
+        ],
+        "release_ids": [
+          7117
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/BlockHunt/1.0.1"
+        ],
+        "license_files_in_zip": [
+          "BlockHunt-76459dddd7cced7a0d074fd57370a9c93f9b76f1/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.933699+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-387246953-76459dddd7cced7a0d074fd57370a9c93f9b76f1-227c328ab97e.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-387246953-76459dddd7cced7a0d074fd57370a9c93f9b76f1-227c328ab97e.zip",
+    "remote_sha256": "227c328ab97e165b9cc55a2fec7888f70bde8ca7ac97ee97a558c98ae13c27db",
+    "remote_asset_id": 654137074,
+    "uploaded_at": "2026-10-18T18:11:56Z",
+    "local_deleted": false
   },
   "387246953@8a17054ab61667b2c9c082c8d47155df06958bf4": {
     "key": "387246953@8a17054ab61667b2c9c082c8d47155df06958bf4",
@@ -86957,13 +89575,52 @@
     "repo_name": "OguzhanUmutlu/BlockHunt",
     "commit": "8a17054ab61667b2c9c082c8d47155df06958bf4",
     "source_url": "https://github.com/OguzhanUmutlu/BlockHunt",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "MadeAja/BlockHunt"
+    ],
+    "status": "uploaded",
+    "bytes": 99164,
+    "sha256": "b0f540a341e716ac2994f059ecd50f16238346deee4b004ec33835a4fda07bf8",
+    "final_url": "https://github.com/MadeAja/BlockHunt/archive/8a17054ab61667b2c9c082c8d47155df06958bf4.zip",
+    "storage_path": null,
+    "provider": "MadeAja/BlockHunt",
     "tried": [
-      "OguzhanUmutlu/BlockHunt"
-    ]
+      "OguzhanUmutlu/BlockHunt",
+      "MadeAja/BlockHunt"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "8a17054ab61667b2c9c082c8d47155df06958bf4",
+      "tree_sha": "8171e50a2dd9904189179d99772ee783ed2b1868",
+      "commit_url": "https://github.com/MadeAja/BlockHunt/commit/8a17054ab61667b2c9c082c8d47155df06958bf4",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 12,
+      "license_evidence": {
+        "declared_licenses": [
+          "mit"
+        ],
+        "release_ids": [
+          7129
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/BlockHunt/1.0.2"
+        ],
+        "license_files_in_zip": [
+          "BlockHunt-8a17054ab61667b2c9c082c8d47155df06958bf4/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.935106+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-387246953-8a17054ab61667b2c9c082c8d47155df06958bf4-b0f540a341e7.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-387246953-8a17054ab61667b2c9c082c8d47155df06958bf4-b0f540a341e7.zip",
+    "remote_sha256": "b0f540a341e716ac2994f059ecd50f16238346deee4b004ec33835a4fda07bf8",
+    "remote_asset_id": 654137118,
+    "uploaded_at": "2026-10-18T18:11:57Z",
+    "local_deleted": false
   },
   "387475007@21b4540a9192ed00553e760186115e55a24fdd42": {
     "key": "387475007@21b4540a9192ed00553e760186115e55a24fdd42",
@@ -88071,13 +90728,52 @@
     "repo_name": "OguzhanUmutlu/TreeCapitator",
     "commit": "39a372076ef4ac5e661dee9654dae531e0e1367b",
     "source_url": "https://github.com/OguzhanUmutlu/TreeCapitator",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "MadeAja/TreeCapitator"
+    ],
+    "status": "uploaded",
+    "bytes": 123098,
+    "sha256": "abb1711bf5674e11d29257221d536b6fcb8c70b00753c42a959b94e3f58413b0",
+    "final_url": "https://github.com/MadeAja/TreeCapitator/archive/39a372076ef4ac5e661dee9654dae531e0e1367b.zip",
+    "storage_path": null,
+    "provider": "MadeAja/TreeCapitator",
     "tried": [
-      "OguzhanUmutlu/TreeCapitator"
-    ]
+      "OguzhanUmutlu/TreeCapitator",
+      "MadeAja/TreeCapitator"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "39a372076ef4ac5e661dee9654dae531e0e1367b",
+      "tree_sha": "d8f1a01fbf79168696f91f0d389c457f5c202e70",
+      "commit_url": "https://github.com/MadeAja/TreeCapitator/commit/39a372076ef4ac5e661dee9654dae531e0e1367b",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 3,
+      "license_evidence": {
+        "declared_licenses": [
+          "mit"
+        ],
+        "release_ids": [
+          7283
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/TreeCapitator/1.0.7"
+        ],
+        "license_files_in_zip": [
+          "TreeCapitator-39a372076ef4ac5e661dee9654dae531e0e1367b/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.936265+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-393369378-39a372076ef4ac5e661dee9654dae531e0e1367b-abb1711bf567.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-393369378-39a372076ef4ac5e661dee9654dae531e0e1367b-abb1711bf567.zip",
+    "remote_sha256": "abb1711bf5674e11d29257221d536b6fcb8c70b00753c42a959b94e3f58413b0",
+    "remote_asset_id": 654137230,
+    "uploaded_at": "2026-10-18T18:12:00Z",
+    "local_deleted": false
   },
   "393369378@73392ea4a47acdc187560fb9e5ae128e5a2776ba": {
     "key": "393369378@73392ea4a47acdc187560fb9e5ae128e5a2776ba",
@@ -88085,13 +90781,52 @@
     "repo_name": "OguzhanUmutlu/TreeCapitator",
     "commit": "73392ea4a47acdc187560fb9e5ae128e5a2776ba",
     "source_url": "https://github.com/OguzhanUmutlu/TreeCapitator",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "MadeAja/TreeCapitator"
+    ],
+    "status": "uploaded",
+    "bytes": 121646,
+    "sha256": "38a744d782341832fac1140b8442e7d16e4deace430df62bcb26d243782ba34d",
+    "final_url": "https://github.com/MadeAja/TreeCapitator/archive/73392ea4a47acdc187560fb9e5ae128e5a2776ba.zip",
+    "storage_path": null,
+    "provider": "MadeAja/TreeCapitator",
     "tried": [
-      "OguzhanUmutlu/TreeCapitator"
-    ]
+      "OguzhanUmutlu/TreeCapitator",
+      "MadeAja/TreeCapitator"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "73392ea4a47acdc187560fb9e5ae128e5a2776ba",
+      "tree_sha": "a33bfb44a35b70f6a2a149f252cfe88904434c94",
+      "commit_url": "https://github.com/MadeAja/TreeCapitator/commit/73392ea4a47acdc187560fb9e5ae128e5a2776ba",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 2,
+      "license_evidence": {
+        "declared_licenses": [
+          "mit"
+        ],
+        "release_ids": [
+          7278
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/TreeCapitator/1.0.0"
+        ],
+        "license_files_in_zip": [
+          "TreeCapitator-73392ea4a47acdc187560fb9e5ae128e5a2776ba/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.937412+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-393369378-73392ea4a47acdc187560fb9e5ae128e5a2776ba-38a744d78234.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-393369378-73392ea4a47acdc187560fb9e5ae128e5a2776ba-38a744d78234.zip",
+    "remote_sha256": "38a744d782341832fac1140b8442e7d16e4deace430df62bcb26d243782ba34d",
+    "remote_asset_id": 654137266,
+    "uploaded_at": "2026-10-18T18:12:02Z",
+    "local_deleted": false
   },
   "393591231@854940b670ae2d5279c8a55af58f67d85510f159": {
     "key": "393591231@854940b670ae2d5279c8a55af58f67d85510f159",
@@ -88818,13 +91553,52 @@
     "repo_name": "sn3akrr/PoopCraft",
     "commit": "c9a4f14099e1b53d1372a9bc27c420d2e29791c0",
     "source_url": "https://github.com/sn3akrr/PoopCraft",
-    "candidates": [],
-    "status": "http_error",
-    "code": 404,
-    "error": "Not Found",
+    "candidates": [
+      "MadeAja/PoopCraft"
+    ],
+    "status": "uploaded",
+    "bytes": 88496,
+    "sha256": "56366b0db950bfcda8549a73d4f75da4108845e729b7a8f8f686a919dc0b0d0a",
+    "final_url": "https://github.com/MadeAja/PoopCraft/archive/c9a4f14099e1b53d1372a9bc27c420d2e29791c0.zip",
+    "storage_path": null,
+    "provider": "MadeAja/PoopCraft",
     "tried": [
-      "sn3akrr/PoopCraft"
-    ]
+      "sn3akrr/PoopCraft",
+      "MadeAja/PoopCraft"
+    ],
+    "recovery": {
+      "method": "exact_commit_from_public_backup",
+      "original_repository_http_status": 404,
+      "verified_commit": "c9a4f14099e1b53d1372a9bc27c420d2e29791c0",
+      "tree_sha": "38b52d6f67f4993209bf39c24cf6f50caebeff1c",
+      "commit_url": "https://github.com/MadeAja/PoopCraft/commit/c9a4f14099e1b53d1372a9bc27c420d2e29791c0",
+      "zip_crc_verified": true,
+      "zip_commit_root_verified": true,
+      "php_files": 5,
+      "license_evidence": {
+        "declared_licenses": [
+          "gpl-3.0"
+        ],
+        "release_ids": [
+          7368
+        ],
+        "release_urls": [
+          "https://poggit.pmmp.io/p/PoopCraft/1.1.0-ALPHA"
+        ],
+        "license_files_in_zip": [
+          "PoopCraft-c9a4f14099e1b53d1372a9bc27c420d2e29791c0/LICENSE"
+        ]
+      },
+      "checked_at": "2026-10-18T18:09:55.938552+00:00"
+    },
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "sources-2026-10-14-0003",
+    "remote_asset_name": "source-395514155-c9a4f14099e1b53d1372a9bc27c420d2e29791c0-56366b0db950.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/sources-2026-10-14-0003/source-395514155-c9a4f14099e1b53d1372a9bc27c420d2e29791c0-56366b0db950.zip",
+    "remote_sha256": "56366b0db950bfcda8549a73d4f75da4108845e729b7a8f8f686a919dc0b0d0a",
+    "remote_asset_id": 654137440,
+    "uploaded_at": "2026-10-18T18:12:06Z",
+    "local_deleted": false
   },
   "396222908@146162ba2855d832177d5802f758e81dd33dcb78": {
     "key": "396222908@146162ba2855d832177d5802f758e81dd33dcb78",
