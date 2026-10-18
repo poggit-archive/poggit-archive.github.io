@@ -2328,7 +2328,15 @@
     "source_repo": "vosaka-php/vosaka",
     "source_commit": null,
     "source_scope": "unresolved",
-    "evidence": "No matching source manifest/revision recovered; see virion-recovery-audit.json"
+    "evidence": "Source still unavailable after development PHAR, Wayback and Software Heritage follow-up; known historical SHAs and class-name evidence are recorded separately in virion-development-recovery.json. No candidate SHA is promoted to verified build source.",
+    "recovery_audit": "virion-development-recovery.json",
+    "historical_revision_candidates": [
+      {
+        "sha": "aa5df4a7dc61c1c249504e9daad13ee985806f12",
+        "evidence": "Packagist 1.9.0 metadata",
+        "software_heritage_status": 404
+      }
+    ]
   },
   "zetnex/map/map@1.0.1": {
     "id": "zetnex/map/map@1.0.1",
@@ -2337,7 +2345,9 @@
     "source_repo": "ZetNex/Map",
     "source_commit": null,
     "source_scope": "unresolved",
-    "evidence": "No matching source manifest/revision recovered; see virion-recovery-audit.json"
+    "evidence": "Source still unavailable after development PHAR, Wayback and Software Heritage follow-up; known historical SHAs and class-name evidence are recorded separately in virion-development-recovery.json. No candidate SHA is promoted to verified build source.",
+    "recovery_audit": "virion-development-recovery.json",
+    "historical_revision_candidates": []
   },
   "jasson44/telegrambotapi/telegrambotapi@1.0.0": {
     "id": "jasson44/telegrambotapi/telegrambotapi@1.0.0",
@@ -2346,7 +2356,40 @@
     "source_repo": "Jasson44/TelegramBotAPI",
     "source_commit": null,
     "source_scope": "unresolved",
-    "evidence": "No matching source manifest/revision recovered; see virion-recovery-audit.json"
+    "evidence": "Source still unavailable after development PHAR, Wayback and Software Heritage follow-up; known historical SHAs and class-name evidence are recorded separately in virion-development-recovery.json. No candidate SHA is promoted to verified build source.",
+    "recovery_audit": "virion-development-recovery.json",
+    "historical_revision_candidates": [
+      {
+        "sha": "eb1f5bac188acd9f55e79a89a77943c7f5d83aec",
+        "evidence": "Public GH Archive PushEvent; does not identify the original Poggit build",
+        "software_heritage_status": 404
+      },
+      {
+        "sha": "01ca9ba9efa30300158cd3f00dc8bc4a09eb1b9f",
+        "evidence": "Public GH Archive PushEvent; does not identify the original Poggit build",
+        "software_heritage_status": 404
+      },
+      {
+        "sha": "bac3d6eaf02bd894588599cc31cde787bbd3c45e",
+        "evidence": "Public GH Archive PushEvent; does not identify the original Poggit build",
+        "software_heritage_status": 404
+      },
+      {
+        "sha": "d850d0eb72381b7ef512236dab1db6a1e388cc04",
+        "evidence": "Public GH Archive PushEvent; does not identify the original Poggit build",
+        "software_heritage_status": 404
+      },
+      {
+        "sha": "4821c92ffdf30a8073274d869ea1e5d50386c890",
+        "evidence": "Public GH Archive PushEvent; does not identify the original Poggit build",
+        "software_heritage_status": 404
+      },
+      {
+        "sha": "9d6128dcd034042b1cee29cc4622015cc9a49656",
+        "evidence": "Public GH Archive PushEvent; does not identify the original Poggit build",
+        "software_heritage_status": 404
+      }
+    ]
   },
   "tobias-2006/commandarguments/commandarguments@latest": {
     "id": "tobias-2006/commandarguments/commandarguments@latest",
@@ -2355,7 +2398,9 @@
     "source_repo": "Tobias-2006/CommandArguments",
     "source_commit": null,
     "source_scope": "unresolved",
-    "evidence": "No matching source manifest/revision recovered; see virion-recovery-audit.json"
+    "evidence": "Source still unavailable after development PHAR, Wayback and Software Heritage follow-up; known historical SHAs and class-name evidence are recorded separately in virion-development-recovery.json. No candidate SHA is promoted to verified build source.",
+    "recovery_audit": "virion-development-recovery.json",
+    "historical_revision_candidates": []
   },
   "kenzeve/replaylib/replaylib@1.0.0": {
     "id": "kenzeve/replaylib/replaylib@1.0.0",
@@ -2364,7 +2409,9 @@
     "source_repo": "kenzeve/ReplayLib",
     "source_commit": null,
     "source_scope": "unresolved",
-    "evidence": "No matching source manifest/revision recovered; see virion-recovery-audit.json"
+    "evidence": "Source still unavailable after development PHAR, Wayback and Software Heritage follow-up; known historical SHAs and class-name evidence are recorded separately in virion-development-recovery.json. No candidate SHA is promoted to verified build source.",
+    "recovery_audit": "virion-development-recovery.json",
+    "historical_revision_candidates": []
   },
   "stephen-mc-pl/pmforms-pm4/pmforms@1.0.1": {
     "id": "stephen-mc-pl/pmforms-pm4/pmforms@1.0.1",
@@ -2411,6 +2458,29 @@
     "source_repo": "InkoHX/Krul",
     "source_commit": null,
     "source_scope": "unresolved",
-    "evidence": "No matching source manifest/revision recovered; see virion-recovery-audit.json"
+    "evidence": "Source still unavailable after development PHAR, Wayback and Software Heritage follow-up; known historical SHAs and class-name evidence are recorded separately in virion-development-recovery.json. No candidate SHA is promoted to verified build source.",
+    "recovery_audit": "virion-development-recovery.json",
+    "historical_revision_candidates": [
+      {
+        "sha": "c348e5e9f467f9d3a3959ab9dca3663375cd6419",
+        "evidence": "Public GH Archive PushEvent; does not identify the original Poggit build",
+        "software_heritage_status": 404
+      },
+      {
+        "sha": "129a1fb6cd03311f99797398a428aa6d4ec3a00c",
+        "evidence": "Public GH Archive PushEvent; does not identify the original Poggit build",
+        "software_heritage_status": 404
+      },
+      {
+        "sha": "bb258bb8b980936d22a811f8343896556d8f483d",
+        "evidence": "Public GH Archive PushEvent; does not identify the original Poggit build",
+        "software_heritage_status": 404
+      },
+      {
+        "sha": "f3ce854526eef6b0a9a318eca5f768e62f91cbbe",
+        "evidence": "Public GH Archive PushEvent; does not identify the original Poggit build",
+        "software_heritage_status": 404
+      }
+    ]
   }
 }

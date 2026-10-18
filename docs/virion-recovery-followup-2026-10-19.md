@@ -2,6 +2,8 @@
 
 This investigation continues the [ten unresolved entries](virion-recovery-2026-10-19.md) from the initial batch. Four more entries now have separately archived source ZIPs and rebuilt PHARs. Coverage is **259/265 entries**, comprising 213 original PHARs and 46 reconstructions. The six unresolved entries remain visible in the catalog.
 
+The subsequent [development-build and historical-archive investigation](virion-development-recovery-2026-10-19.md) checks 14 additional plugin binaries outside the approved release catalog, preserves 79 historical class names and tests 11 known Git revisions. It recovered no additional source; four exact-SHA Wayback URLs remain unverified after a rate-limit response.
+
 The [machine-readable follow-up](../data/snapshots/2026-10-14T20-07-25Z/virion-recovery-followup.json) records the complete plugin PHAR scan, historical events, numeric repository identities, recovered commits and remaining gaps. The [artifact verification](../data/snapshots/2026-10-14T20-07-25Z/virion-artifact-verification.json) covers all 518 linked source ZIP and PHAR assets.
 
 ## Recovered from historical commits

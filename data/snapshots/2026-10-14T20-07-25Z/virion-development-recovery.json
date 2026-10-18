@@ -1,0 +1,2475 @@
+{
+  "schema_version": 1,
+  "snapshot_id": "2026-10-14T20-07-25Z",
+  "checked_at": "2026-10-18T20:52:52.991071+00:00",
+  "previous_audit": "virion-recovery-followup.json",
+  "outcome": "No additional source or PHAR recovered for the six unresolved catalog entries. Historical metadata recovered; some Wayback SHA URLs remain unverified after HTTP 429.",
+  "coverage": {
+    "catalog_entries": 265,
+    "uploaded_source_zips": 259,
+    "original_phars": 213,
+    "rebuilt_phars": 46,
+    "missing_source_and_phar": 6,
+    "new_recoveries": 0
+  },
+  "summary": {
+    "software_heritage_unique_revisions": 11,
+    "software_heritage_404": 11,
+    "new_historical_shas": 6,
+    "wayback_sha_queries": 30,
+    "wayback_sha_queries_without_capture": 29,
+    "wayback_rate_limited_queries": 1,
+    "pending_wayback_sha_urls": 4,
+    "class_index_matching_classes": 79,
+    "external_phar_occurrences": 18,
+    "external_unique_phars": 16,
+    "external_plugin_phar_occurrences": 16,
+    "external_unique_plugin_phars": 15,
+    "external_development_phar_paths": [
+      "MrLeMoNPM/ObsidianX@1c0a681771743d4ecd7bcb182fdcee842d965967!ObsidianX-1c0a681771743d4ecd7bcb182fdcee842d965967/ObsidianX_Library.zip!ObsidianX/plugins/VanillaMinecarts_dev-2.phar",
+      "MrLeMoNPM/ObsidianX@1c0a681771743d4ecd7bcb182fdcee842d965967!ObsidianX-1c0a681771743d4ecd7bcb182fdcee842d965967/ObsidianX_Library.zip!ObsidianX/plugins/AZVanillaMobs_dev-18.phar",
+      "MrLeMoNPM/ObsidianX@1c0a681771743d4ecd7bcb182fdcee842d965967!ObsidianX-1c0a681771743d4ecd7bcb182fdcee842d965967/ObsidianX_Library.zip!ObsidianX/plugins/PersonaSkin_dev-22.phar"
+    ],
+    "external_unique_plugin_phars_outside_catalog": 14,
+    "development_phars_outside_catalog": [
+      "MrLeMoNPM/ObsidianX@1c0a681771743d4ecd7bcb182fdcee842d965967!ObsidianX-1c0a681771743d4ecd7bcb182fdcee842d965967/ObsidianX_Library.zip!ObsidianX/plugins/VanillaMinecarts_dev-2.phar",
+      "MrLeMoNPM/ObsidianX@1c0a681771743d4ecd7bcb182fdcee842d965967!ObsidianX-1c0a681771743d4ecd7bcb182fdcee842d965967/ObsidianX_Library.zip!ObsidianX/plugins/AZVanillaMobs_dev-18.phar",
+      "MrLeMoNPM/ObsidianX@1c0a681771743d4ecd7bcb182fdcee842d965967!ObsidianX-1c0a681771743d4ecd7bcb182fdcee842d965967/ObsidianX_Library.zip!ObsidianX/plugins/PersonaSkin_dev-22.phar"
+    ]
+  },
+  "targets": {
+    "vosaka-php/vosaka/vosaka@1.9.0": {
+      "repo": "vosaka-php/vosaka",
+      "namespace": "venndev\\vosaka",
+      "version": "1.9.0",
+      "last_build_short_id": "2ed49",
+      "status": "unresolved",
+      "historical_revision_candidates": [
+        {
+          "sha": "aa5df4a7dc61c1c249504e9daad13ee985806f12",
+          "evidence": "Packagist 1.9.0 metadata",
+          "software_heritage_status": 404
+        }
+      ],
+      "class_names_in_wayback_index": 0
+    },
+    "zetnex/map/map@1.0.1": {
+      "repo": "ZetNex/Map",
+      "namespace": "ZetNex\\Map",
+      "version": "1.0.1",
+      "last_build_short_id": "2d249",
+      "status": "unresolved",
+      "historical_revision_candidates": [],
+      "class_names_in_wayback_index": 0
+    },
+    "jasson44/telegrambotapi/telegrambotapi@1.0.0": {
+      "repo": "Jasson44/TelegramBotAPI",
+      "namespace": "xeonch\\telegramapi",
+      "version": "1.0.0",
+      "last_build_short_id": "2ccf6",
+      "status": "unresolved",
+      "historical_revision_candidates": [
+        {
+          "sha": "eb1f5bac188acd9f55e79a89a77943c7f5d83aec",
+          "evidence": "Public GH Archive PushEvent; does not identify the original Poggit build",
+          "software_heritage_status": 404
+        },
+        {
+          "sha": "01ca9ba9efa30300158cd3f00dc8bc4a09eb1b9f",
+          "evidence": "Public GH Archive PushEvent; does not identify the original Poggit build",
+          "software_heritage_status": 404
+        },
+        {
+          "sha": "bac3d6eaf02bd894588599cc31cde787bbd3c45e",
+          "evidence": "Public GH Archive PushEvent; does not identify the original Poggit build",
+          "software_heritage_status": 404
+        },
+        {
+          "sha": "d850d0eb72381b7ef512236dab1db6a1e388cc04",
+          "evidence": "Public GH Archive PushEvent; does not identify the original Poggit build",
+          "software_heritage_status": 404
+        },
+        {
+          "sha": "4821c92ffdf30a8073274d869ea1e5d50386c890",
+          "evidence": "Public GH Archive PushEvent; does not identify the original Poggit build",
+          "software_heritage_status": 404
+        },
+        {
+          "sha": "9d6128dcd034042b1cee29cc4622015cc9a49656",
+          "evidence": "Public GH Archive PushEvent; does not identify the original Poggit build",
+          "software_heritage_status": 404
+        }
+      ],
+      "class_names_in_wayback_index": 0
+    },
+    "tobias-2006/commandarguments/commandarguments@latest": {
+      "repo": "Tobias-2006/CommandArguments",
+      "namespace": "tobias14\\CommandArguments",
+      "version": null,
+      "last_build_short_id": "2381f",
+      "status": "unresolved",
+      "historical_revision_candidates": [],
+      "class_names_in_wayback_index": 8
+    },
+    "kenzeve/replaylib/replaylib@1.0.0": {
+      "repo": "kenzeve/ReplayLib",
+      "namespace": "exnthr\\ReplayLib",
+      "version": "1.0.0",
+      "last_build_short_id": "1d4b1",
+      "status": "unresolved",
+      "historical_revision_candidates": [],
+      "class_names_in_wayback_index": 59
+    },
+    "inkohx/krul/krul@0.1.0": {
+      "repo": "InkoHX/Krul",
+      "namespace": "InkoHX\\Krul",
+      "version": "0.1.0",
+      "last_build_short_id": "f5b8",
+      "status": "unresolved",
+      "historical_revision_candidates": [
+        {
+          "sha": "c348e5e9f467f9d3a3959ab9dca3663375cd6419",
+          "evidence": "Public GH Archive PushEvent; does not identify the original Poggit build",
+          "software_heritage_status": 404
+        },
+        {
+          "sha": "129a1fb6cd03311f99797398a428aa6d4ec3a00c",
+          "evidence": "Public GH Archive PushEvent; does not identify the original Poggit build",
+          "software_heritage_status": 404
+        },
+        {
+          "sha": "bb258bb8b980936d22a811f8343896556d8f483d",
+          "evidence": "Public GH Archive PushEvent; does not identify the original Poggit build",
+          "software_heritage_status": 404
+        },
+        {
+          "sha": "f3ce854526eef6b0a9a318eca5f768e62f91cbbe",
+          "evidence": "Public GH Archive PushEvent; does not identify the original Poggit build",
+          "software_heritage_status": 404
+        }
+      ],
+      "class_names_in_wayback_index": 12
+    }
+  },
+  "historical_push_events": {
+    "InkoHX/Krul@2019-08-02 12:11:35": {
+      "event_id": "10136136996",
+      "created_at": "2019-08-02T12:11:35Z",
+      "repo": {
+        "id": 199837026,
+        "name": "InkoHX/Krul",
+        "url": "https://api.github.com/repos/InkoHX/Krul"
+      },
+      "archive_url": "https://data.gharchive.org/2019-08-02-12.json.gz",
+      "head": "c348e5e9f467f9d3a3959ab9dca3663375cd6419",
+      "before": "129a1fb6cd03311f99797398a428aa6d4ec3a00c",
+      "commits": [
+        {
+          "sha": "c348e5e9f467f9d3a3959ab9dca3663375cd6419",
+          "message": "Fixes",
+          "url": "https://api.github.com/repos/InkoHX/Krul/commits/c348e5e9f467f9d3a3959ab9dca3663375cd6419"
+        }
+      ]
+    },
+    "InkoHX/Krul@2019-08-02 12:16:10": {
+      "event_id": "10136162941",
+      "created_at": "2019-08-02T12:16:10Z",
+      "repo": {
+        "id": 199837026,
+        "name": "InkoHX/Krul",
+        "url": "https://api.github.com/repos/InkoHX/Krul"
+      },
+      "archive_url": "https://data.gharchive.org/2019-08-02-12.json.gz",
+      "head": "bb258bb8b980936d22a811f8343896556d8f483d",
+      "before": "c348e5e9f467f9d3a3959ab9dca3663375cd6419",
+      "commits": [
+        {
+          "sha": "bb258bb8b980936d22a811f8343896556d8f483d",
+          "message": "update",
+          "url": "https://api.github.com/repos/InkoHX/Krul/commits/bb258bb8b980936d22a811f8343896556d8f483d"
+        }
+      ]
+    },
+    "InkoHX/Krul@2019-08-02 12:29:05": {
+      "event_id": "10136238535",
+      "created_at": "2019-08-02T12:29:05Z",
+      "repo": {
+        "id": 199837026,
+        "name": "InkoHX/Krul",
+        "url": "https://api.github.com/repos/InkoHX/Krul"
+      },
+      "archive_url": "https://data.gharchive.org/2019-08-02-12.json.gz",
+      "head": "f3ce854526eef6b0a9a318eca5f768e62f91cbbe",
+      "before": "bb258bb8b980936d22a811f8343896556d8f483d",
+      "commits": [
+        {
+          "sha": "f3ce854526eef6b0a9a318eca5f768e62f91cbbe",
+          "message": "Fix type & Add types",
+          "url": "https://api.github.com/repos/InkoHX/Krul/commits/f3ce854526eef6b0a9a318eca5f768e62f91cbbe"
+        }
+      ]
+    },
+    "Jasson44/TelegramBotAPI@2024-12-29 16:16:35": {
+      "event_id": "45142239806",
+      "created_at": "2024-12-29T16:16:35Z",
+      "repo": {
+        "id": 909733463,
+        "name": "Jasson44/TelegramBotAPI",
+        "url": "https://api.github.com/repos/Jasson44/TelegramBotAPI"
+      },
+      "archive_url": "https://data.gharchive.org/2024-12-29-16.json.gz",
+      "head": "eb1f5bac188acd9f55e79a89a77943c7f5d83aec",
+      "before": "01ca9ba9efa30300158cd3f00dc8bc4a09eb1b9f",
+      "commits": [
+        {
+          "sha": "bac3d6eaf02bd894588599cc31cde787bbd3c45e",
+          "message": "Initial commit",
+          "url": "https://api.github.com/repos/Jasson44/TelegramBotAPI/commits/bac3d6eaf02bd894588599cc31cde787bbd3c45e"
+        },
+        {
+          "sha": "eb1f5bac188acd9f55e79a89a77943c7f5d83aec",
+          "message": "Merge branch 'main' of https://github.com/Jasson44/TelegramBotAPI",
+          "url": "https://api.github.com/repos/Jasson44/TelegramBotAPI/commits/eb1f5bac188acd9f55e79a89a77943c7f5d83aec"
+        }
+      ]
+    },
+    "Jasson44/TelegramBotAPI@2024-12-29 16:57:28": {
+      "event_id": "45142603233",
+      "created_at": "2024-12-29T16:57:28Z",
+      "repo": {
+        "id": 909733463,
+        "name": "Jasson44/TelegramBotAPI",
+        "url": "https://api.github.com/repos/Jasson44/TelegramBotAPI"
+      },
+      "archive_url": "https://data.gharchive.org/2024-12-29-16.json.gz",
+      "head": "d850d0eb72381b7ef512236dab1db6a1e388cc04",
+      "before": "4821c92ffdf30a8073274d869ea1e5d50386c890",
+      "commits": [
+        {
+          "sha": "d850d0eb72381b7ef512236dab1db6a1e388cc04",
+          "message": "Create composer.json",
+          "url": "https://api.github.com/repos/Jasson44/TelegramBotAPI/commits/d850d0eb72381b7ef512236dab1db6a1e388cc04"
+        }
+      ]
+    },
+    "Jasson44/TelegramBotAPI@2024-12-29 16:59:34": {
+      "event_id": "45142620124",
+      "created_at": "2024-12-29T16:59:34Z",
+      "repo": {
+        "id": 909733463,
+        "name": "Jasson44/TelegramBotAPI",
+        "url": "https://api.github.com/repos/Jasson44/TelegramBotAPI"
+      },
+      "archive_url": "https://data.gharchive.org/2024-12-29-16.json.gz",
+      "head": "9d6128dcd034042b1cee29cc4622015cc9a49656",
+      "before": "d850d0eb72381b7ef512236dab1db6a1e388cc04",
+      "commits": [
+        {
+          "sha": "9d6128dcd034042b1cee29cc4622015cc9a49656",
+          "message": "Create .poggit.yml\r\nPoggit-CI is enabled for this repo by @Jasson44\r\nVisit the Poggit-CI page for this repo at https://poggit.pmmp.io/ci/Jasson44/TelegramBotAPI",
+          "url": "https://api.github.com/repos/Jasson44/TelegramBotAPI/commits/9d6128dcd034042b1cee29cc4622015cc9a49656"
+        }
+      ]
+    }
+  },
+  "revision_checks": {
+    "c348e5e9f467f9d3a3959ab9dca3663375cd6419": {
+      "repo": "InkoHX/Krul",
+      "swh": {
+        "url": "https://archive.softwareheritage.org/api/1/revision/c348e5e9f467f9d3a3959ab9dca3663375cd6419/",
+        "status": 404
+      },
+      "github": {
+        "status": 200,
+        "total_count": 0,
+        "items": []
+      }
+    },
+    "129a1fb6cd03311f99797398a428aa6d4ec3a00c": {
+      "repo": "InkoHX/Krul",
+      "swh": {
+        "url": "https://archive.softwareheritage.org/api/1/revision/129a1fb6cd03311f99797398a428aa6d4ec3a00c/",
+        "status": 404
+      },
+      "github": {
+        "status": 200,
+        "total_count": 0,
+        "items": []
+      }
+    },
+    "bb258bb8b980936d22a811f8343896556d8f483d": {
+      "repo": "InkoHX/Krul",
+      "swh": {
+        "status": 404,
+        "url": "https://archive.softwareheritage.org/api/1/revision/bb258bb8b980936d22a811f8343896556d8f483d/",
+        "retry_after": null,
+        "body_excerpt": "{\"exception\":\"NotFoundExc\",\"reason\":\"Revision with sha1_git bb258bb8b980936d22a811f8343896556d8f483d not found.\"}"
+      },
+      "github": {
+        "status": 200,
+        "total_count": 0,
+        "items": []
+      }
+    },
+    "f3ce854526eef6b0a9a318eca5f768e62f91cbbe": {
+      "repo": "InkoHX/Krul",
+      "swh": {
+        "status": 404,
+        "url": "https://archive.softwareheritage.org/api/1/revision/f3ce854526eef6b0a9a318eca5f768e62f91cbbe/",
+        "retry_after": null,
+        "body_excerpt": "{\"exception\":\"NotFoundExc\",\"reason\":\"Revision with sha1_git f3ce854526eef6b0a9a318eca5f768e62f91cbbe not found.\"}"
+      },
+      "github": {
+        "status": 200,
+        "total_count": 0,
+        "items": []
+      }
+    },
+    "eb1f5bac188acd9f55e79a89a77943c7f5d83aec": {
+      "repo": "Jasson44/TelegramBotAPI",
+      "swh": {
+        "url": "https://archive.softwareheritage.org/api/1/revision/eb1f5bac188acd9f55e79a89a77943c7f5d83aec/",
+        "status": 404
+      },
+      "github": {
+        "status": 200,
+        "total_count": 0,
+        "items": []
+      }
+    },
+    "01ca9ba9efa30300158cd3f00dc8bc4a09eb1b9f": {
+      "repo": "Jasson44/TelegramBotAPI",
+      "swh": {
+        "url": "https://archive.softwareheritage.org/api/1/revision/01ca9ba9efa30300158cd3f00dc8bc4a09eb1b9f/",
+        "status": 404
+      },
+      "github": {
+        "status": 200,
+        "total_count": 0,
+        "items": []
+      }
+    },
+    "bac3d6eaf02bd894588599cc31cde787bbd3c45e": {
+      "repo": "Jasson44/TelegramBotAPI",
+      "swh": {
+        "url": "https://archive.softwareheritage.org/api/1/revision/bac3d6eaf02bd894588599cc31cde787bbd3c45e/",
+        "status": 404
+      },
+      "github": {
+        "status": 200,
+        "total_count": 0,
+        "items": []
+      }
+    },
+    "d850d0eb72381b7ef512236dab1db6a1e388cc04": {
+      "repo": "Jasson44/TelegramBotAPI",
+      "swh": {
+        "status": 404,
+        "url": "https://archive.softwareheritage.org/api/1/revision/d850d0eb72381b7ef512236dab1db6a1e388cc04/",
+        "retry_after": null,
+        "body_excerpt": "{\"exception\":\"NotFoundExc\",\"reason\":\"Revision with sha1_git d850d0eb72381b7ef512236dab1db6a1e388cc04 not found.\"}"
+      },
+      "github": {
+        "status": 200,
+        "total_count": 0,
+        "items": []
+      }
+    },
+    "4821c92ffdf30a8073274d869ea1e5d50386c890": {
+      "repo": "Jasson44/TelegramBotAPI",
+      "swh": {
+        "url": "https://archive.softwareheritage.org/api/1/revision/4821c92ffdf30a8073274d869ea1e5d50386c890/",
+        "status": 404
+      },
+      "github": {
+        "status": 200,
+        "total_count": 0,
+        "items": []
+      }
+    },
+    "9d6128dcd034042b1cee29cc4622015cc9a49656": {
+      "repo": "Jasson44/TelegramBotAPI",
+      "swh": {
+        "status": 404,
+        "url": "https://archive.softwareheritage.org/api/1/revision/9d6128dcd034042b1cee29cc4622015cc9a49656/",
+        "retry_after": null,
+        "body_excerpt": "{\"exception\":\"NotFoundExc\",\"reason\":\"Revision with sha1_git 9d6128dcd034042b1cee29cc4622015cc9a49656 not found.\"}"
+      },
+      "github": {
+        "status": 200,
+        "total_count": 0,
+        "items": []
+      }
+    },
+    "aa5df4a7dc61c1c249504e9daad13ee985806f12": {
+      "repo": "vosaka-php/vosaka",
+      "swh": {
+        "status": 404,
+        "url": "https://archive.softwareheritage.org/api/1/revision/aa5df4a7dc61c1c249504e9daad13ee985806f12/",
+        "retry_after": null,
+        "body_excerpt": "{\"exception\":\"NotFoundExc\",\"reason\":\"Revision with sha1_git aa5df4a7dc61c1c249504e9daad13ee985806f12 not found.\"}"
+      }
+    }
+  },
+  "wayback_cdx": {
+    "github.com/vosaka-php/vosaka/": {
+      "status": 200,
+      "url": "https://web.archive.org/cdx/search/cdx?url=github.com%2Fvosaka-php%2Fvosaka%2F%2A&output=json&filter=statuscode%3A%28200%7C301%7C302%7C307%7C308%29&collapse=urlkey&limit=200",
+      "data": [
+        [
+          "urlkey",
+          "timestamp",
+          "original",
+          "mimetype",
+          "statuscode",
+          "digest",
+          "length"
+        ],
+        [
+          "com,github)/vosaka-php/vosaka-foroutines",
+          "20260307211705",
+          "https://github.com/vosaka-php/vosaka-foroutines",
+          "text/html",
+          "200",
+          "JZVSTYFV2NWYQJTMYRLXS5SBYHWFX4KI",
+          "56944"
+        ],
+        [
+          "com,github)/vosaka-php/vosaka-foroutines/blob/main/composer.json",
+          "20260307221146",
+          "https://github.com/vosaka-php/vosaka-foroutines/blob/main/composer.json",
+          "text/html",
+          "200",
+          "LMQRZNHSQS2M2ULFXLGPU7UMMK6ZPVQA",
+          "40271"
+        ],
+        [
+          "com,github)/vosaka-php/vosaka-foroutines/raw/main/rules.png",
+          "20260307224626",
+          "https://github.com/vosaka-php/vosaka-foroutines/raw/main/rules.png",
+          "text/html",
+          "302",
+          "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ",
+          "1049"
+        ],
+        [
+          "com,github)/vosaka-php/vosaka-http",
+          "20260308013504",
+          "https://github.com/vosaka-php/vosaka-http",
+          "text/html",
+          "200",
+          "UZGWFJKCP4IFJWKY77HTJJWPVTOEVTF3",
+          "44016"
+        ],
+        [
+          "com,github)/vosaka-php/vosaka-http/blob/main/composer.json",
+          "20260308041357",
+          "https://github.com/vosaka-php/vosaka-http/blob/main/composer.json",
+          "text/html",
+          "200",
+          "CTCORZ2NG34GKOPMKUBLKBAH634A5JCY",
+          "39035"
+        ],
+        [
+          "com,github)/vosaka-php/vosaka-libsql",
+          "20260312100719",
+          "https://github.com/vosaka-php/vosaka-libsql",
+          "text/html",
+          "200",
+          "2Y2ANUQBGROBK66IHI54VWDT43AUQIWJ",
+          "43649"
+        ],
+        [
+          "com,github)/vosaka-php/vosaka-libsql/blob/main/composer.json",
+          "20260312104125",
+          "https://github.com/vosaka-php/vosaka-libsql/blob/main/composer.json",
+          "text/html",
+          "200",
+          "KXWQVKXXMSPIHNH3BLJEBFIUXOXIY7JQ",
+          "38863"
+        ]
+      ],
+      "requested_repository_captures": [],
+      "other_repository_captures": [
+        [
+          "com,github)/vosaka-php/vosaka-foroutines",
+          "20260307211705",
+          "https://github.com/vosaka-php/vosaka-foroutines",
+          "text/html",
+          "200",
+          "JZVSTYFV2NWYQJTMYRLXS5SBYHWFX4KI",
+          "56944"
+        ],
+        [
+          "com,github)/vosaka-php/vosaka-foroutines/blob/main/composer.json",
+          "20260307221146",
+          "https://github.com/vosaka-php/vosaka-foroutines/blob/main/composer.json",
+          "text/html",
+          "200",
+          "LMQRZNHSQS2M2ULFXLGPU7UMMK6ZPVQA",
+          "40271"
+        ],
+        [
+          "com,github)/vosaka-php/vosaka-foroutines/raw/main/rules.png",
+          "20260307224626",
+          "https://github.com/vosaka-php/vosaka-foroutines/raw/main/rules.png",
+          "text/html",
+          "302",
+          "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ",
+          "1049"
+        ],
+        [
+          "com,github)/vosaka-php/vosaka-http",
+          "20260308013504",
+          "https://github.com/vosaka-php/vosaka-http",
+          "text/html",
+          "200",
+          "UZGWFJKCP4IFJWKY77HTJJWPVTOEVTF3",
+          "44016"
+        ],
+        [
+          "com,github)/vosaka-php/vosaka-http/blob/main/composer.json",
+          "20260308041357",
+          "https://github.com/vosaka-php/vosaka-http/blob/main/composer.json",
+          "text/html",
+          "200",
+          "CTCORZ2NG34GKOPMKUBLKBAH634A5JCY",
+          "39035"
+        ],
+        [
+          "com,github)/vosaka-php/vosaka-libsql",
+          "20260312100719",
+          "https://github.com/vosaka-php/vosaka-libsql",
+          "text/html",
+          "200",
+          "2Y2ANUQBGROBK66IHI54VWDT43AUQIWJ",
+          "43649"
+        ],
+        [
+          "com,github)/vosaka-php/vosaka-libsql/blob/main/composer.json",
+          "20260312104125",
+          "https://github.com/vosaka-php/vosaka-libsql/blob/main/composer.json",
+          "text/html",
+          "200",
+          "KXWQVKXXMSPIHNH3BLJEBFIUXOXIY7JQ",
+          "38863"
+        ]
+      ]
+    },
+    "raw.githubusercontent.com/vosaka-php/vosaka/": {
+      "status": 200,
+      "url": "https://web.archive.org/cdx/search/cdx?url=raw.githubusercontent.com%2Fvosaka-php%2Fvosaka%2F%2A&output=json&filter=statuscode%3A%28200%7C301%7C302%7C307%7C308%29&collapse=urlkey&limit=200",
+      "data": [
+        [
+          "urlkey",
+          "timestamp",
+          "original",
+          "mimetype",
+          "statuscode",
+          "digest",
+          "length"
+        ],
+        [
+          "com,githubusercontent,raw)/vosaka-php/vosaka-foroutines/main/rules.png",
+          "20260307224626",
+          "https://raw.githubusercontent.com/vosaka-php/vosaka-foroutines/main/rules.png",
+          "image/png",
+          "200",
+          "3IHRQWLYHICI4R6NT7M2HXDLPZA3DXQD",
+          "49929"
+        ]
+      ],
+      "requested_repository_captures": [],
+      "other_repository_captures": [
+        [
+          "com,githubusercontent,raw)/vosaka-php/vosaka-foroutines/main/rules.png",
+          "20260307224626",
+          "https://raw.githubusercontent.com/vosaka-php/vosaka-foroutines/main/rules.png",
+          "image/png",
+          "200",
+          "3IHRQWLYHICI4R6NT7M2HXDLPZA3DXQD",
+          "49929"
+        ]
+      ]
+    },
+    "poggit.pmmp.io/ci/vosaka-php/vosaka": {
+      "status": 200,
+      "url": "https://web.archive.org/cdx/search/cdx?url=poggit.pmmp.io%2Fci%2Fvosaka-php%2Fvosaka%2A&output=json&filter=statuscode%3A%28200%7C301%7C302%7C307%7C308%29&collapse=urlkey&limit=200",
+      "data": [],
+      "requested_repository_captures": [],
+      "other_repository_captures": []
+    },
+    "poggit.pmmp.io/v.dl/vosaka-php/vosaka/": {
+      "status": 200,
+      "url": "https://web.archive.org/cdx/search/cdx?url=poggit.pmmp.io%2Fv.dl%2Fvosaka-php%2Fvosaka%2F%2A&output=json&filter=statuscode%3A%28200%7C301%7C302%7C307%7C308%29&collapse=urlkey&limit=200",
+      "data": [],
+      "requested_repository_captures": [],
+      "other_repository_captures": []
+    },
+    "github.com/ZetNex/Map/": {
+      "status": 200,
+      "url": "https://web.archive.org/cdx/search/cdx?url=github.com%2FZetNex%2FMap%2F%2A&output=json&filter=statuscode%3A%28200%7C301%7C302%7C307%7C308%29&collapse=urlkey&limit=200",
+      "data": [],
+      "requested_repository_captures": [],
+      "other_repository_captures": []
+    },
+    "raw.githubusercontent.com/ZetNex/Map/": {
+      "status": 200,
+      "url": "https://web.archive.org/cdx/search/cdx?url=raw.githubusercontent.com%2FZetNex%2FMap%2F%2A&output=json&filter=statuscode%3A%28200%7C301%7C302%7C307%7C308%29&collapse=urlkey&limit=200",
+      "data": [],
+      "requested_repository_captures": [],
+      "other_repository_captures": []
+    },
+    "poggit.pmmp.io/ci/ZetNex/Map": {
+      "status": 200,
+      "url": "https://web.archive.org/cdx/search/cdx?url=poggit.pmmp.io%2Fci%2FZetNex%2FMap%2A&output=json&filter=statuscode%3A%28200%7C301%7C302%7C307%7C308%29&collapse=urlkey&limit=200",
+      "data": [],
+      "requested_repository_captures": [],
+      "other_repository_captures": []
+    },
+    "poggit.pmmp.io/v.dl/ZetNex/Map/": {
+      "status": 200,
+      "url": "https://web.archive.org/cdx/search/cdx?url=poggit.pmmp.io%2Fv.dl%2FZetNex%2FMap%2F%2A&output=json&filter=statuscode%3A%28200%7C301%7C302%7C307%7C308%29&collapse=urlkey&limit=200",
+      "data": [],
+      "requested_repository_captures": [],
+      "other_repository_captures": []
+    },
+    "github.com/Jasson44/TelegramBotAPI/": {
+      "status": 200,
+      "url": "https://web.archive.org/cdx/search/cdx?url=github.com%2FJasson44%2FTelegramBotAPI%2F%2A&output=json&filter=statuscode%3A%28200%7C301%7C302%7C307%7C308%29&collapse=urlkey&limit=200",
+      "data": [],
+      "requested_repository_captures": [],
+      "other_repository_captures": []
+    },
+    "raw.githubusercontent.com/Jasson44/TelegramBotAPI/": {
+      "status": 200,
+      "url": "https://web.archive.org/cdx/search/cdx?url=raw.githubusercontent.com%2FJasson44%2FTelegramBotAPI%2F%2A&output=json&filter=statuscode%3A%28200%7C301%7C302%7C307%7C308%29&collapse=urlkey&limit=200",
+      "data": [],
+      "requested_repository_captures": [],
+      "other_repository_captures": []
+    },
+    "poggit.pmmp.io/ci/Jasson44/TelegramBotAPI": {
+      "status": 200,
+      "url": "https://web.archive.org/cdx/search/cdx?url=poggit.pmmp.io%2Fci%2FJasson44%2FTelegramBotAPI%2A&output=json&filter=statuscode%3A%28200%7C301%7C302%7C307%7C308%29&collapse=urlkey&limit=200",
+      "data": [],
+      "requested_repository_captures": [],
+      "other_repository_captures": []
+    },
+    "poggit.pmmp.io/v.dl/Jasson44/TelegramBotAPI/": {
+      "status": 200,
+      "url": "https://web.archive.org/cdx/search/cdx?url=poggit.pmmp.io%2Fv.dl%2FJasson44%2FTelegramBotAPI%2F%2A&output=json&filter=statuscode%3A%28200%7C301%7C302%7C307%7C308%29&collapse=urlkey&limit=200",
+      "data": [],
+      "requested_repository_captures": [],
+      "other_repository_captures": []
+    },
+    "github.com/Tobias-2006/CommandArguments/": {
+      "status": 200,
+      "url": "https://web.archive.org/cdx/search/cdx?url=github.com%2FTobias-2006%2FCommandArguments%2F%2A&output=json&filter=statuscode%3A%28200%7C301%7C302%7C307%7C308%29&collapse=urlkey&limit=200",
+      "data": [],
+      "requested_repository_captures": [],
+      "other_repository_captures": []
+    },
+    "raw.githubusercontent.com/Tobias-2006/CommandArguments/": {
+      "status": 200,
+      "url": "https://web.archive.org/cdx/search/cdx?url=raw.githubusercontent.com%2FTobias-2006%2FCommandArguments%2F%2A&output=json&filter=statuscode%3A%28200%7C301%7C302%7C307%7C308%29&collapse=urlkey&limit=200",
+      "data": [],
+      "requested_repository_captures": [],
+      "other_repository_captures": []
+    },
+    "poggit.pmmp.io/ci/Tobias-2006/CommandArguments": {
+      "status": 200,
+      "url": "https://web.archive.org/cdx/search/cdx?url=poggit.pmmp.io%2Fci%2FTobias-2006%2FCommandArguments%2A&output=json&filter=statuscode%3A%28200%7C301%7C302%7C307%7C308%29&collapse=urlkey&limit=200",
+      "data": [],
+      "requested_repository_captures": [],
+      "other_repository_captures": []
+    },
+    "poggit.pmmp.io/v.dl/Tobias-2006/CommandArguments/": {
+      "status": 200,
+      "url": "https://web.archive.org/cdx/search/cdx?url=poggit.pmmp.io%2Fv.dl%2FTobias-2006%2FCommandArguments%2F%2A&output=json&filter=statuscode%3A%28200%7C301%7C302%7C307%7C308%29&collapse=urlkey&limit=200",
+      "data": [],
+      "requested_repository_captures": [],
+      "other_repository_captures": []
+    },
+    "github.com/kenzeve/ReplayLib/": {
+      "status": 200,
+      "url": "https://web.archive.org/cdx/search/cdx?url=github.com%2Fkenzeve%2FReplayLib%2F%2A&output=json&filter=statuscode%3A%28200%7C301%7C302%7C307%7C308%29&collapse=urlkey&limit=200",
+      "data": [],
+      "requested_repository_captures": [],
+      "other_repository_captures": []
+    },
+    "raw.githubusercontent.com/kenzeve/ReplayLib/": {
+      "status": 200,
+      "url": "https://web.archive.org/cdx/search/cdx?url=raw.githubusercontent.com%2Fkenzeve%2FReplayLib%2F%2A&output=json&filter=statuscode%3A%28200%7C301%7C302%7C307%7C308%29&collapse=urlkey&limit=200",
+      "data": [],
+      "requested_repository_captures": [],
+      "other_repository_captures": []
+    },
+    "poggit.pmmp.io/ci/kenzeve/ReplayLib": {
+      "status": 200,
+      "url": "https://web.archive.org/cdx/search/cdx?url=poggit.pmmp.io%2Fci%2Fkenzeve%2FReplayLib%2A&output=json&filter=statuscode%3A%28200%7C301%7C302%7C307%7C308%29&collapse=urlkey&limit=200",
+      "data": [],
+      "requested_repository_captures": [],
+      "other_repository_captures": []
+    },
+    "poggit.pmmp.io/v.dl/kenzeve/ReplayLib/": {
+      "status": 200,
+      "url": "https://web.archive.org/cdx/search/cdx?url=poggit.pmmp.io%2Fv.dl%2Fkenzeve%2FReplayLib%2F%2A&output=json&filter=statuscode%3A%28200%7C301%7C302%7C307%7C308%29&collapse=urlkey&limit=200",
+      "data": [],
+      "requested_repository_captures": [],
+      "other_repository_captures": []
+    },
+    "github.com/InkoHX/Krul/": {
+      "status": "transport_error",
+      "url": "https://web.archive.org/cdx/search/cdx?url=github.com%2FInkoHX%2FKrul%2F%2A&output=json&filter=statuscode%3A%28200%7C301%7C302%7C307%7C308%29&collapse=urlkey&limit=200",
+      "error": "<urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>",
+      "requested_repository_captures": [],
+      "other_repository_captures": []
+    },
+    "raw.githubusercontent.com/InkoHX/Krul/": {
+      "status": "transport_error",
+      "url": "https://web.archive.org/cdx/search/cdx?url=raw.githubusercontent.com%2FInkoHX%2FKrul%2F%2A&output=json&filter=statuscode%3A%28200%7C301%7C302%7C307%7C308%29&collapse=urlkey&limit=200",
+      "error": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>",
+      "requested_repository_captures": [],
+      "other_repository_captures": []
+    },
+    "poggit.pmmp.io/ci/InkoHX/Krul": {
+      "status": 200,
+      "url": "https://web.archive.org/cdx/search/cdx?url=poggit.pmmp.io%2Fci%2FInkoHX%2FKrul%2A&output=json&filter=statuscode%3A%28200%7C301%7C302%7C307%7C308%29&collapse=urlkey&limit=200",
+      "data": [],
+      "requested_repository_captures": [],
+      "other_repository_captures": []
+    },
+    "poggit.pmmp.io/v.dl/InkoHX/Krul/": {
+      "status": 200,
+      "url": "https://web.archive.org/cdx/search/cdx?url=poggit.pmmp.io%2Fv.dl%2FInkoHX%2FKrul%2F%2A&output=json&filter=statuscode%3A%28200%7C301%7C302%7C307%7C308%29&collapse=urlkey&limit=200",
+      "data": [],
+      "requested_repository_captures": [],
+      "other_repository_captures": []
+    }
+  },
+  "wayback_sha_queries": {
+    "https://github.com/InkoHX/Krul/commit/c348e5e9f467f9d3a3959ab9dca3663375cd6419": {
+      "status": 200,
+      "query_url": "https://archive.org/wayback/available?url=https%3A%2F%2Fgithub.com%2FInkoHX%2FKrul%2Fcommit%2Fc348e5e9f467f9d3a3959ab9dca3663375cd6419",
+      "data": {
+        "url": "https://github.com/InkoHX/Krul/commit/c348e5e9f467f9d3a3959ab9dca3663375cd6419",
+        "archived_snapshots": {}
+      }
+    },
+    "https://api.github.com/repos/InkoHX/Krul/zipball/c348e5e9f467f9d3a3959ab9dca3663375cd6419": {
+      "status": 200,
+      "query_url": "https://archive.org/wayback/available?url=https%3A%2F%2Fapi.github.com%2Frepos%2FInkoHX%2FKrul%2Fzipball%2Fc348e5e9f467f9d3a3959ab9dca3663375cd6419",
+      "data": {
+        "url": "https://api.github.com/repos/InkoHX/Krul/zipball/c348e5e9f467f9d3a3959ab9dca3663375cd6419",
+        "archived_snapshots": {}
+      }
+    },
+    "https://codeload.github.com/InkoHX/Krul/zip/c348e5e9f467f9d3a3959ab9dca3663375cd6419": {
+      "status": 200,
+      "query_url": "https://archive.org/wayback/available?url=https%3A%2F%2Fcodeload.github.com%2FInkoHX%2FKrul%2Fzip%2Fc348e5e9f467f9d3a3959ab9dca3663375cd6419",
+      "data": {
+        "url": "https://codeload.github.com/InkoHX/Krul/zip/c348e5e9f467f9d3a3959ab9dca3663375cd6419",
+        "archived_snapshots": {}
+      }
+    },
+    "https://github.com/InkoHX/Krul/commit/129a1fb6cd03311f99797398a428aa6d4ec3a00c": {
+      "status": 200,
+      "query_url": "https://archive.org/wayback/available?url=https%3A%2F%2Fgithub.com%2FInkoHX%2FKrul%2Fcommit%2F129a1fb6cd03311f99797398a428aa6d4ec3a00c",
+      "data": {
+        "url": "https://github.com/InkoHX/Krul/commit/129a1fb6cd03311f99797398a428aa6d4ec3a00c",
+        "archived_snapshots": {}
+      }
+    },
+    "https://api.github.com/repos/InkoHX/Krul/zipball/129a1fb6cd03311f99797398a428aa6d4ec3a00c": {
+      "status": 200,
+      "query_url": "https://archive.org/wayback/available?url=https%3A%2F%2Fapi.github.com%2Frepos%2FInkoHX%2FKrul%2Fzipball%2F129a1fb6cd03311f99797398a428aa6d4ec3a00c",
+      "data": {
+        "url": "https://api.github.com/repos/InkoHX/Krul/zipball/129a1fb6cd03311f99797398a428aa6d4ec3a00c",
+        "archived_snapshots": {}
+      }
+    },
+    "https://codeload.github.com/InkoHX/Krul/zip/129a1fb6cd03311f99797398a428aa6d4ec3a00c": {
+      "status": 200,
+      "query_url": "https://archive.org/wayback/available?url=https%3A%2F%2Fcodeload.github.com%2FInkoHX%2FKrul%2Fzip%2F129a1fb6cd03311f99797398a428aa6d4ec3a00c",
+      "data": {
+        "url": "https://codeload.github.com/InkoHX/Krul/zip/129a1fb6cd03311f99797398a428aa6d4ec3a00c",
+        "archived_snapshots": {}
+      }
+    },
+    "https://github.com/InkoHX/Krul/commit/bb258bb8b980936d22a811f8343896556d8f483d": {
+      "status": 200,
+      "query_url": "https://archive.org/wayback/available?url=https%3A%2F%2Fgithub.com%2FInkoHX%2FKrul%2Fcommit%2Fbb258bb8b980936d22a811f8343896556d8f483d",
+      "data": {
+        "url": "https://github.com/InkoHX/Krul/commit/bb258bb8b980936d22a811f8343896556d8f483d",
+        "archived_snapshots": {}
+      }
+    },
+    "https://api.github.com/repos/InkoHX/Krul/zipball/bb258bb8b980936d22a811f8343896556d8f483d": {
+      "status": 200,
+      "query_url": "https://archive.org/wayback/available?url=https%3A%2F%2Fapi.github.com%2Frepos%2FInkoHX%2FKrul%2Fzipball%2Fbb258bb8b980936d22a811f8343896556d8f483d",
+      "data": {
+        "url": "https://api.github.com/repos/InkoHX/Krul/zipball/bb258bb8b980936d22a811f8343896556d8f483d",
+        "archived_snapshots": {}
+      }
+    },
+    "https://codeload.github.com/InkoHX/Krul/zip/bb258bb8b980936d22a811f8343896556d8f483d": {
+      "status": 200,
+      "query_url": "https://archive.org/wayback/available?url=https%3A%2F%2Fcodeload.github.com%2FInkoHX%2FKrul%2Fzip%2Fbb258bb8b980936d22a811f8343896556d8f483d",
+      "data": {
+        "url": "https://codeload.github.com/InkoHX/Krul/zip/bb258bb8b980936d22a811f8343896556d8f483d",
+        "archived_snapshots": {}
+      }
+    },
+    "https://github.com/InkoHX/Krul/commit/f3ce854526eef6b0a9a318eca5f768e62f91cbbe": {
+      "status": 200,
+      "query_url": "https://archive.org/wayback/available?url=https%3A%2F%2Fgithub.com%2FInkoHX%2FKrul%2Fcommit%2Ff3ce854526eef6b0a9a318eca5f768e62f91cbbe",
+      "data": {
+        "url": "https://github.com/InkoHX/Krul/commit/f3ce854526eef6b0a9a318eca5f768e62f91cbbe",
+        "archived_snapshots": {}
+      }
+    },
+    "https://api.github.com/repos/InkoHX/Krul/zipball/f3ce854526eef6b0a9a318eca5f768e62f91cbbe": {
+      "status": 200,
+      "query_url": "https://archive.org/wayback/available?url=https%3A%2F%2Fapi.github.com%2Frepos%2FInkoHX%2FKrul%2Fzipball%2Ff3ce854526eef6b0a9a318eca5f768e62f91cbbe",
+      "data": {
+        "url": "https://api.github.com/repos/InkoHX/Krul/zipball/f3ce854526eef6b0a9a318eca5f768e62f91cbbe",
+        "archived_snapshots": {}
+      }
+    },
+    "https://codeload.github.com/InkoHX/Krul/zip/f3ce854526eef6b0a9a318eca5f768e62f91cbbe": {
+      "status": 200,
+      "query_url": "https://archive.org/wayback/available?url=https%3A%2F%2Fcodeload.github.com%2FInkoHX%2FKrul%2Fzip%2Ff3ce854526eef6b0a9a318eca5f768e62f91cbbe",
+      "data": {
+        "url": "https://codeload.github.com/InkoHX/Krul/zip/f3ce854526eef6b0a9a318eca5f768e62f91cbbe",
+        "archived_snapshots": {}
+      }
+    },
+    "https://github.com/Jasson44/TelegramBotAPI/commit/eb1f5bac188acd9f55e79a89a77943c7f5d83aec": {
+      "status": 200,
+      "query_url": "https://archive.org/wayback/available?url=https%3A%2F%2Fgithub.com%2FJasson44%2FTelegramBotAPI%2Fcommit%2Feb1f5bac188acd9f55e79a89a77943c7f5d83aec",
+      "data": {
+        "url": "https://github.com/Jasson44/TelegramBotAPI/commit/eb1f5bac188acd9f55e79a89a77943c7f5d83aec",
+        "archived_snapshots": {}
+      }
+    },
+    "https://api.github.com/repos/Jasson44/TelegramBotAPI/zipball/eb1f5bac188acd9f55e79a89a77943c7f5d83aec": {
+      "status": 200,
+      "query_url": "https://archive.org/wayback/available?url=https%3A%2F%2Fapi.github.com%2Frepos%2FJasson44%2FTelegramBotAPI%2Fzipball%2Feb1f5bac188acd9f55e79a89a77943c7f5d83aec",
+      "data": {
+        "url": "https://api.github.com/repos/Jasson44/TelegramBotAPI/zipball/eb1f5bac188acd9f55e79a89a77943c7f5d83aec",
+        "archived_snapshots": {}
+      }
+    },
+    "https://codeload.github.com/Jasson44/TelegramBotAPI/zip/eb1f5bac188acd9f55e79a89a77943c7f5d83aec": {
+      "status": 200,
+      "query_url": "https://archive.org/wayback/available?url=https%3A%2F%2Fcodeload.github.com%2FJasson44%2FTelegramBotAPI%2Fzip%2Feb1f5bac188acd9f55e79a89a77943c7f5d83aec",
+      "data": {
+        "url": "https://codeload.github.com/Jasson44/TelegramBotAPI/zip/eb1f5bac188acd9f55e79a89a77943c7f5d83aec",
+        "archived_snapshots": {}
+      }
+    },
+    "https://github.com/Jasson44/TelegramBotAPI/commit/01ca9ba9efa30300158cd3f00dc8bc4a09eb1b9f": {
+      "status": 200,
+      "query_url": "https://archive.org/wayback/available?url=https%3A%2F%2Fgithub.com%2FJasson44%2FTelegramBotAPI%2Fcommit%2F01ca9ba9efa30300158cd3f00dc8bc4a09eb1b9f",
+      "data": {
+        "url": "https://github.com/Jasson44/TelegramBotAPI/commit/01ca9ba9efa30300158cd3f00dc8bc4a09eb1b9f",
+        "archived_snapshots": {}
+      }
+    },
+    "https://api.github.com/repos/Jasson44/TelegramBotAPI/zipball/01ca9ba9efa30300158cd3f00dc8bc4a09eb1b9f": {
+      "status": 200,
+      "query_url": "https://archive.org/wayback/available?url=https%3A%2F%2Fapi.github.com%2Frepos%2FJasson44%2FTelegramBotAPI%2Fzipball%2F01ca9ba9efa30300158cd3f00dc8bc4a09eb1b9f",
+      "data": {
+        "url": "https://api.github.com/repos/Jasson44/TelegramBotAPI/zipball/01ca9ba9efa30300158cd3f00dc8bc4a09eb1b9f",
+        "archived_snapshots": {}
+      }
+    },
+    "https://codeload.github.com/Jasson44/TelegramBotAPI/zip/01ca9ba9efa30300158cd3f00dc8bc4a09eb1b9f": {
+      "status": 200,
+      "query_url": "https://archive.org/wayback/available?url=https%3A%2F%2Fcodeload.github.com%2FJasson44%2FTelegramBotAPI%2Fzip%2F01ca9ba9efa30300158cd3f00dc8bc4a09eb1b9f",
+      "data": {
+        "url": "https://codeload.github.com/Jasson44/TelegramBotAPI/zip/01ca9ba9efa30300158cd3f00dc8bc4a09eb1b9f",
+        "archived_snapshots": {}
+      }
+    },
+    "https://github.com/Jasson44/TelegramBotAPI/commit/bac3d6eaf02bd894588599cc31cde787bbd3c45e": {
+      "status": 200,
+      "query_url": "https://archive.org/wayback/available?url=https%3A%2F%2Fgithub.com%2FJasson44%2FTelegramBotAPI%2Fcommit%2Fbac3d6eaf02bd894588599cc31cde787bbd3c45e",
+      "data": {
+        "url": "https://github.com/Jasson44/TelegramBotAPI/commit/bac3d6eaf02bd894588599cc31cde787bbd3c45e",
+        "archived_snapshots": {}
+      }
+    },
+    "https://api.github.com/repos/Jasson44/TelegramBotAPI/zipball/bac3d6eaf02bd894588599cc31cde787bbd3c45e": {
+      "status": 200,
+      "query_url": "https://archive.org/wayback/available?url=https%3A%2F%2Fapi.github.com%2Frepos%2FJasson44%2FTelegramBotAPI%2Fzipball%2Fbac3d6eaf02bd894588599cc31cde787bbd3c45e",
+      "data": {
+        "url": "https://api.github.com/repos/Jasson44/TelegramBotAPI/zipball/bac3d6eaf02bd894588599cc31cde787bbd3c45e",
+        "archived_snapshots": {}
+      }
+    },
+    "https://codeload.github.com/Jasson44/TelegramBotAPI/zip/bac3d6eaf02bd894588599cc31cde787bbd3c45e": {
+      "status": 200,
+      "query_url": "https://archive.org/wayback/available?url=https%3A%2F%2Fcodeload.github.com%2FJasson44%2FTelegramBotAPI%2Fzip%2Fbac3d6eaf02bd894588599cc31cde787bbd3c45e",
+      "data": {
+        "url": "https://codeload.github.com/Jasson44/TelegramBotAPI/zip/bac3d6eaf02bd894588599cc31cde787bbd3c45e",
+        "archived_snapshots": {}
+      }
+    },
+    "https://github.com/Jasson44/TelegramBotAPI/commit/d850d0eb72381b7ef512236dab1db6a1e388cc04": {
+      "status": 200,
+      "query_url": "https://archive.org/wayback/available?url=https%3A%2F%2Fgithub.com%2FJasson44%2FTelegramBotAPI%2Fcommit%2Fd850d0eb72381b7ef512236dab1db6a1e388cc04",
+      "data": {
+        "url": "https://github.com/Jasson44/TelegramBotAPI/commit/d850d0eb72381b7ef512236dab1db6a1e388cc04",
+        "archived_snapshots": {}
+      }
+    },
+    "https://api.github.com/repos/Jasson44/TelegramBotAPI/zipball/d850d0eb72381b7ef512236dab1db6a1e388cc04": {
+      "status": 200,
+      "query_url": "https://archive.org/wayback/available?url=https%3A%2F%2Fapi.github.com%2Frepos%2FJasson44%2FTelegramBotAPI%2Fzipball%2Fd850d0eb72381b7ef512236dab1db6a1e388cc04",
+      "data": {
+        "url": "https://api.github.com/repos/Jasson44/TelegramBotAPI/zipball/d850d0eb72381b7ef512236dab1db6a1e388cc04",
+        "archived_snapshots": {}
+      }
+    },
+    "https://codeload.github.com/Jasson44/TelegramBotAPI/zip/d850d0eb72381b7ef512236dab1db6a1e388cc04": {
+      "status": 200,
+      "query_url": "https://archive.org/wayback/available?url=https%3A%2F%2Fcodeload.github.com%2FJasson44%2FTelegramBotAPI%2Fzip%2Fd850d0eb72381b7ef512236dab1db6a1e388cc04",
+      "data": {
+        "url": "https://codeload.github.com/Jasson44/TelegramBotAPI/zip/d850d0eb72381b7ef512236dab1db6a1e388cc04",
+        "archived_snapshots": {}
+      }
+    },
+    "https://github.com/Jasson44/TelegramBotAPI/commit/4821c92ffdf30a8073274d869ea1e5d50386c890": {
+      "status": 200,
+      "query_url": "https://archive.org/wayback/available?url=https%3A%2F%2Fgithub.com%2FJasson44%2FTelegramBotAPI%2Fcommit%2F4821c92ffdf30a8073274d869ea1e5d50386c890",
+      "data": {
+        "url": "https://github.com/Jasson44/TelegramBotAPI/commit/4821c92ffdf30a8073274d869ea1e5d50386c890",
+        "archived_snapshots": {}
+      }
+    },
+    "https://api.github.com/repos/Jasson44/TelegramBotAPI/zipball/4821c92ffdf30a8073274d869ea1e5d50386c890": {
+      "status": 200,
+      "query_url": "https://archive.org/wayback/available?url=https%3A%2F%2Fapi.github.com%2Frepos%2FJasson44%2FTelegramBotAPI%2Fzipball%2F4821c92ffdf30a8073274d869ea1e5d50386c890",
+      "data": {
+        "url": "https://api.github.com/repos/Jasson44/TelegramBotAPI/zipball/4821c92ffdf30a8073274d869ea1e5d50386c890",
+        "archived_snapshots": {}
+      }
+    },
+    "https://codeload.github.com/Jasson44/TelegramBotAPI/zip/4821c92ffdf30a8073274d869ea1e5d50386c890": {
+      "status": 200,
+      "query_url": "https://archive.org/wayback/available?url=https%3A%2F%2Fcodeload.github.com%2FJasson44%2FTelegramBotAPI%2Fzip%2F4821c92ffdf30a8073274d869ea1e5d50386c890",
+      "data": {
+        "url": "https://codeload.github.com/Jasson44/TelegramBotAPI/zip/4821c92ffdf30a8073274d869ea1e5d50386c890",
+        "archived_snapshots": {}
+      }
+    },
+    "https://github.com/Jasson44/TelegramBotAPI/commit/9d6128dcd034042b1cee29cc4622015cc9a49656": {
+      "status": 200,
+      "query_url": "https://archive.org/wayback/available?url=https%3A%2F%2Fgithub.com%2FJasson44%2FTelegramBotAPI%2Fcommit%2F9d6128dcd034042b1cee29cc4622015cc9a49656",
+      "data": {
+        "url": "https://github.com/Jasson44/TelegramBotAPI/commit/9d6128dcd034042b1cee29cc4622015cc9a49656",
+        "archived_snapshots": {}
+      }
+    },
+    "https://api.github.com/repos/Jasson44/TelegramBotAPI/zipball/9d6128dcd034042b1cee29cc4622015cc9a49656": {
+      "status": 200,
+      "query_url": "https://archive.org/wayback/available?url=https%3A%2F%2Fapi.github.com%2Frepos%2FJasson44%2FTelegramBotAPI%2Fzipball%2F9d6128dcd034042b1cee29cc4622015cc9a49656",
+      "data": {
+        "url": "https://api.github.com/repos/Jasson44/TelegramBotAPI/zipball/9d6128dcd034042b1cee29cc4622015cc9a49656",
+        "archived_snapshots": {}
+      }
+    },
+    "https://codeload.github.com/Jasson44/TelegramBotAPI/zip/9d6128dcd034042b1cee29cc4622015cc9a49656": {
+      "status": 429,
+      "query_url": "https://archive.org/wayback/available?url=https%3A%2F%2Fcodeload.github.com%2FJasson44%2FTelegramBotAPI%2Fzip%2F9d6128dcd034042b1cee29cc4622015cc9a49656",
+      "retry_after": null
+    }
+  },
+  "pending_wayback_sha_urls": [
+    {
+      "url": "https://codeload.github.com/Jasson44/TelegramBotAPI/zip/9d6128dcd034042b1cee29cc4622015cc9a49656",
+      "reason": "Provider returned 429; batch stopped, Retry-After not supplied"
+    },
+    {
+      "url": "https://github.com/vosaka-php/vosaka/commit/aa5df4a7dc61c1c249504e9daad13ee985806f12",
+      "reason": "Not attempted after provider returned 429"
+    },
+    {
+      "url": "https://api.github.com/repos/vosaka-php/vosaka/zipball/aa5df4a7dc61c1c249504e9daad13ee985806f12",
+      "reason": "Not attempted after provider returned 429"
+    },
+    {
+      "url": "https://codeload.github.com/vosaka-php/vosaka/zip/aa5df4a7dc61c1c249504e9daad13ee985806f12",
+      "reason": "Not attempted after provider returned 429"
+    }
+  ],
+  "wayback_additional_cdx": {
+    "poggit-fqn-yml-cdx": {
+      "url": "https://web.archive.org/cdx/search/cdx?url=poggit.pmmp.io%2Ffqn.yml&output=json&filter=statuscode%3A200&collapse=digest&limit=30",
+      "status": 200,
+      "final_url": "https://web.archive.org/cdx/search/cdx?url=poggit.pmmp.io%2Ffqn.yml&output=json&filter=statuscode%3A200&collapse=digest&limit=30",
+      "content_type": "application/json",
+      "data": []
+    },
+    "poggit-fqn-txt-cdx": {
+      "url": "https://web.archive.org/cdx/search/cdx?url=poggit.pmmp.io%2Ffqn.txt&output=json&filter=statuscode%3A200&collapse=digest&limit=30",
+      "status": 200,
+      "final_url": "https://web.archive.org/cdx/search/cdx?url=poggit.pmmp.io%2Ffqn.txt&output=json&filter=statuscode%3A200&collapse=digest&limit=30",
+      "content_type": "application/json",
+      "data": [
+        [
+          "urlkey",
+          "timestamp",
+          "original",
+          "mimetype",
+          "statuscode",
+          "digest",
+          "length"
+        ],
+        [
+          "io,pmmp,poggit)/fqn.txt",
+          "20260805235236",
+          "https://poggit.pmmp.io/fqn.txt",
+          "text/plain",
+          "200",
+          "YDPWAQWDW2MKQEDSX57YWZG6VLOHIKGW",
+          "493659"
+        ]
+      ]
+    },
+    "venndev-old-name-cdx": {
+      "url": "https://web.archive.org/cdx/search/cdx?url=github.com%2FVennDev%2FVOsaka%2A&output=json&filter=statuscode%3A200&collapse=urlkey&limit=200",
+      "status": 200,
+      "final_url": "https://web.archive.org/cdx/search/cdx?url=github.com%2FVennDev%2FVOsaka%2A&output=json&filter=statuscode%3A200&collapse=urlkey&limit=200",
+      "content_type": "application/json",
+      "data": []
+    },
+    "krul-github-retry": {
+      "url": "https://web.archive.org/cdx/search/cdx?url=github.com%2FInkoHX%2FKrul%2A&output=json&filter=statuscode%3A200&collapse=urlkey&limit=200",
+      "status": 200,
+      "final_url": "https://web.archive.org/cdx/search/cdx?url=github.com%2FInkoHX%2FKrul%2A&output=json&filter=statuscode%3A200&collapse=urlkey&limit=200",
+      "content_type": "application/json",
+      "data": []
+    },
+    "krul-raw-retry": {
+      "url": "https://web.archive.org/cdx/search/cdx?url=raw.githubusercontent.com%2FInkoHX%2FKrul%2F%2A&output=json&filter=statuscode%3A200&collapse=urlkey&limit=200",
+      "status": 200,
+      "final_url": "https://web.archive.org/cdx/search/cdx?url=raw.githubusercontent.com%2FInkoHX%2FKrul%2F%2A&output=json&filter=statuscode%3A200&collapse=urlkey&limit=200",
+      "content_type": "application/json",
+      "data": []
+    }
+  },
+  "provider_controls": {
+    "wayback": {
+      "url": "https://web.archive.org/cdx/search/cdx?url=example.com%2F&output=json&limit=1",
+      "status": 200,
+      "final_url": "https://web.archive.org/cdx/search/cdx?url=example.com%2F&output=json&limit=1",
+      "content_type": "application/json",
+      "body": "[[\"urlkey\",\"timestamp\",\"original\",\"mimetype\",\"statuscode\",\"digest\",\"length\"],\n[\"com,example)/\",\"20020120142510\",\"http://example.com:80/\",\"text/html\",\"200\",\"HT2DYGA5UKZCPBSFVCV3JOBXGW2G5UUA\",\"1792\"]]\n"
+    },
+    "software_heritage": {
+      "status": 200,
+      "url": "https://archive.softwareheritage.org/api/1/revision/518776689807424fcfcfdefe2df0942c88585954/",
+      "id": "518776689807424fcfcfdefe2df0942c88585954"
+    }
+  },
+  "class_index": {
+    "original_url": "https://poggit.pmmp.io/fqn.txt",
+    "capture_url": "https://web.archive.org/web/20260805235236id_/https://poggit.pmmp.io/fqn.txt",
+    "captured_at": "2026-08-05T23:52:36Z",
+    "bytes": 3049633,
+    "sha256": "9cf00efb9ef48fb377f605eec2db1d5791e4a5927482b585a7b0765128ae4646",
+    "scope": "List of fully qualified class names once observed by Poggit CI; no PHP implementations, source revision, dependency edges or version identity.",
+    "matches": {
+      "vosaka-php/vosaka/vosaka@1.9.0": [],
+      "zetnex/map/map@1.0.1": [],
+      "jasson44/telegrambotapi/telegrambotapi@1.0.0": [],
+      "tobias-2006/commandarguments/commandarguments@latest": [
+        "tobias14\\CommandArguments\\CommandArguments",
+        "tobias14\\CommandArguments\\SyntaxError",
+        "tobias14\\CommandArguments\\SyntaxErrorException",
+        "tobias14\\CommandArguments\\argument\\Argument",
+        "tobias14\\CommandArguments\\argument\\BooleanArgument",
+        "tobias14\\CommandArguments\\argument\\FloatArgument",
+        "tobias14\\CommandArguments\\argument\\IntegerArgument",
+        "tobias14\\CommandArguments\\argument\\StringArgument"
+      ],
+      "kenzeve/replaylib/replaylib@1.0.0": [
+        "exnthr\\ReplayLib\\EventHandler",
+        "exnthr\\ReplayLib\\ReplayAsyncPool",
+        "exnthr\\ReplayLib\\ReplayException",
+        "exnthr\\ReplayLib\\ReplayManager",
+        "exnthr\\ReplayLib\\entry\\EntryCategories",
+        "exnthr\\ReplayLib\\entry\\EntrySerializers",
+        "exnthr\\ReplayLib\\entry\\category\\EntryCategory",
+        "exnthr\\ReplayLib\\entry\\category\\serializer\\EntryCategorySerializer",
+        "exnthr\\ReplayLib\\entry\\category\\type\\CurrentBlocksCategory",
+        "exnthr\\ReplayLib\\entry\\category\\type\\EntityDataCategory",
+        "exnthr\\ReplayLib\\entry\\category\\type\\EventDataCategory",
+        "exnthr\\ReplayLib\\entry\\serializer\\EntrySerializer",
+        "exnthr\\ReplayLib\\entry\\serializer\\StaticTickSerializer",
+        "exnthr\\ReplayLib\\entry\\serializer\\type\\AnimationSerializer",
+        "exnthr\\ReplayLib\\entry\\serializer\\type\\BlockSerializer",
+        "exnthr\\ReplayLib\\entry\\serializer\\type\\ItemSerializer",
+        "exnthr\\ReplayLib\\entry\\serializer\\type\\LevelEventSerializer",
+        "exnthr\\ReplayLib\\entry\\serializer\\type\\LocationSerializer",
+        "exnthr\\ReplayLib\\entry\\serializer\\type\\PlacedBlocksSerializer",
+        "exnthr\\ReplayLib\\entry\\serializer\\type\\PlayerFlagsSerializer",
+        "exnthr\\ReplayLib\\entry\\serializer\\type\\PlayerItemsSerializer",
+        "exnthr\\ReplayLib\\entry\\serializer\\type\\PlayerSerializer",
+        "exnthr\\ReplayLib\\entry\\serializer\\type\\PositionSerializer",
+        "exnthr\\ReplayLib\\entry\\serializer\\type\\ProjectileSerializer",
+        "exnthr\\ReplayLib\\entry\\serializer\\type\\SoundSerializer",
+        "exnthr\\ReplayLib\\entry\\serializer\\type\\SplashPotionProjectileSerializer",
+        "exnthr\\ReplayLib\\entry\\type\\AnimationData",
+        "exnthr\\ReplayLib\\entry\\type\\BlockData",
+        "exnthr\\ReplayLib\\entry\\type\\EntityData",
+        "exnthr\\ReplayLib\\entry\\type\\ItemData",
+        "exnthr\\ReplayLib\\entry\\type\\LevelEventData",
+        "exnthr\\ReplayLib\\entry\\type\\LocationData",
+        "exnthr\\ReplayLib\\entry\\type\\PlacedBlocksData",
+        "exnthr\\ReplayLib\\entry\\type\\PlayerData",
+        "exnthr\\ReplayLib\\entry\\type\\PlayerFlagsData",
+        "exnthr\\ReplayLib\\entry\\type\\PlayerItemsData",
+        "exnthr\\ReplayLib\\entry\\type\\PositionData",
+        "exnthr\\ReplayLib\\entry\\type\\ProjectileData",
+        "exnthr\\ReplayLib\\entry\\type\\SoundData",
+        "exnthr\\ReplayLib\\entry\\type\\SplashPotionProjectileData",
+        "exnthr\\ReplayLib\\recorder\\ReplayRecorder",
+        "exnthr\\ReplayLib\\recorder\\ReplayRecorderPool",
+        "exnthr\\ReplayLib\\recorder\\storage\\LevelDBProvider",
+        "exnthr\\ReplayLib\\recorder\\storage\\ZstdCompressToClosureTask",
+        "exnthr\\ReplayLib\\recorder\\storage\\ZstdCompressToFileTask",
+        "exnthr\\ReplayLib\\recorder\\storage\\ZstdProvider",
+        "exnthr\\ReplayLib\\recorder\\storage\\ZstdToClosureProvider",
+        "exnthr\\ReplayLib\\recorder\\storage\\ZstdToFileProvider",
+        "exnthr\\ReplayLib\\viewer\\DecompressedData",
+        "exnthr\\ReplayLib\\viewer\\PacketBuilder",
+        "exnthr\\ReplayLib\\viewer\\ReplayViewer",
+        "exnthr\\ReplayLib\\viewer\\decompress\\DecompressProvider",
+        "exnthr\\ReplayLib\\viewer\\decompress\\DecompressTask",
+        "exnthr\\ReplayLib\\viewer\\decompress\\LevelDBDecompressTask",
+        "exnthr\\ReplayLib\\viewer\\decompress\\LevelDBDecompressor",
+        "exnthr\\ReplayLib\\viewer\\decompress\\ZstdDecompressFromFileTask",
+        "exnthr\\ReplayLib\\viewer\\decompress\\ZstdDecompressTask",
+        "exnthr\\ReplayLib\\viewer\\decompress\\ZstdDecompressor",
+        "exnthr\\ReplayLib\\viewer\\decompress\\ZstdDecompressorFromFile"
+      ],
+      "inkohx/krul/krul@0.1.0": [
+        "InkoHX\\Krul\\DataBase",
+        "InkoHX\\Krul\\KurlCore",
+        "InkoHX\\Krul\\Settings\\Error\\TypeError",
+        "InkoHX\\Krul\\Settings\\PlayerSettings",
+        "InkoHX\\Krul\\Settings\\Settings",
+        "InkoHX\\Krul\\Settings\\Type\\Type",
+        "InkoHX\\Krul\\Settings\\Type\\TypeStore",
+        "InkoHX\\Krul\\types\\ArrayType",
+        "InkoHX\\Krul\\types\\BooleanType",
+        "InkoHX\\Krul\\types\\FloatType",
+        "InkoHX\\Krul\\types\\IntegerType",
+        "InkoHX\\Krul\\types\\StringType"
+      ]
+    }
+  },
+  "external_repository_candidates": {
+    "Pars-Network/ObsidianX": {
+      "repository": {
+        "id": 1314294018,
+        "full_name": "Pars-Network/ObsidianX",
+        "fork": false,
+        "default_branch": "main"
+      },
+      "commit": "797c87c2b1b0bb02c439d888ac224884f965690e",
+      "zip_url": "https://codeload.github.com/Pars-Network/ObsidianX/zip/797c87c2b1b0bb02c439d888ac224884f965690e",
+      "zip_sha256": "dc3c2ccbed96f4c51425709311490d26a6669a5cc114b272d93d9189aded49f1",
+      "git_archive_root_and_crc_verified": true,
+      "tree_status": 200,
+      "tree_truncated": false,
+      "release_query_status": 200,
+      "releases": []
+    },
+    "MrLeMoNPM/ObsidianX": {
+      "repository": {
+        "id": 1287009735,
+        "full_name": "MrLeMoNPM/ObsidianX",
+        "fork": false,
+        "default_branch": "main"
+      },
+      "commit": "1c0a681771743d4ecd7bcb182fdcee842d965967",
+      "zip_url": "https://codeload.github.com/MrLeMoNPM/ObsidianX/zip/1c0a681771743d4ecd7bcb182fdcee842d965967",
+      "zip_sha256": "6ebe1a8d7e0991f07d17184629fcf668d5f6bee4e6522147324482da77394124",
+      "git_archive_root_and_crc_verified": true,
+      "tree_status": 200,
+      "tree_truncated": false,
+      "release_query_status": 200,
+      "releases": []
+    },
+    "RajadorDev/SmartCommand": {
+      "repository": {
+        "id": 976847952,
+        "full_name": "RajadorDev/SmartCommand",
+        "fork": false,
+        "default_branch": "master"
+      },
+      "commit": "382bc61b42d76f1a70cf220b9b7eb8884b3214b0",
+      "zip_url": "https://codeload.github.com/RajadorDev/SmartCommand/zip/382bc61b42d76f1a70cf220b9b7eb8884b3214b0",
+      "zip_sha256": "fb4983a84ac770ed3c81e7b932a94671f0eac161b55b238e318c5914aa07ce29",
+      "git_archive_root_and_crc_verified": true,
+      "tree_status": 200,
+      "tree_truncated": false,
+      "release_query_status": 200,
+      "releases": [
+        {
+          "id": 364329240,
+          "tag_name": "2.4.0",
+          "draft": false,
+          "assets": [
+            {
+              "id": 500235287,
+              "name": "SmartCommand_v2.4.0.phar",
+              "bytes": 357725,
+              "url": "https://github.com/RajadorDev/SmartCommand/releases/download/2.4.0/SmartCommand_v2.4.0.phar",
+              "digest": "sha256:21993841632ddde243cd51e0dab2413288e86118d6e7b1ab139b3cbc5745d9b4"
+            }
+          ]
+        },
+        {
+          "id": 298481578,
+          "tag_name": "2.3.2",
+          "draft": false,
+          "assets": [
+            {
+              "id": 376485719,
+              "name": "SmartCommand_v2.3.2.phar",
+              "bytes": 184565,
+              "url": "https://github.com/RajadorDev/SmartCommand/releases/download/2.3.2/SmartCommand_v2.3.2.phar",
+              "digest": "sha256:d016f7ef4a547a09ccb3e5d308313542cd038e853d03906e4781f69f4304ea6e"
+            }
+          ]
+        },
+        {
+          "id": 298179520,
+          "tag_name": "3.1.0",
+          "draft": false,
+          "assets": []
+        },
+        {
+          "id": 284437313,
+          "tag_name": "3.0.3",
+          "draft": false,
+          "assets": []
+        },
+        {
+          "id": 274555220,
+          "tag_name": "2.3.1",
+          "draft": false,
+          "assets": [
+            {
+              "id": 337010658,
+              "name": "SmartCommand_v2.3.1.phar",
+              "bytes": 182311,
+              "url": "https://github.com/RajadorDev/SmartCommand/releases/download/2.3.1/SmartCommand_v2.3.1.phar",
+              "digest": "sha256:79031f693534415247304a8d71e6f0d051a612a995375e836a664153eae7cce7"
+            }
+          ]
+        },
+        {
+          "id": 270374222,
+          "tag_name": "3.0.2",
+          "draft": false,
+          "assets": []
+        },
+        {
+          "id": 264628168,
+          "tag_name": "3.0.1",
+          "draft": false,
+          "assets": []
+        },
+        {
+          "id": 258190913,
+          "tag_name": "3.0.0",
+          "draft": false,
+          "assets": []
+        },
+        {
+          "id": 228555398,
+          "tag_name": "2.3.0",
+          "draft": false,
+          "assets": [
+            {
+              "id": 268192678,
+              "name": "SmartCommand_v2.3.0.phar",
+              "bytes": 152921,
+              "url": "https://github.com/RajadorDev/SmartCommand/releases/download/2.3.0/SmartCommand_v2.3.0.phar",
+              "digest": "sha256:c47849b27108f22bdcf05482786a0dabce04786288feaf11c805b87a90e032cd"
+            }
+          ]
+        },
+        {
+          "id": 219875527,
+          "tag_name": "2.2.1",
+          "draft": false,
+          "assets": [
+            {
+              "id": 256449509,
+              "name": "SmartCommand_v2.2.1.phar",
+              "bytes": 105582,
+              "url": "https://github.com/RajadorDev/SmartCommand/releases/download/2.2.1/SmartCommand_v2.2.1.phar",
+              "digest": null
+            }
+          ]
+        },
+        {
+          "id": 218991119,
+          "tag_name": "2.2.0",
+          "draft": false,
+          "assets": [
+            {
+              "id": 255127914,
+              "name": "SmartCommand_v2.2.0.phar",
+              "bytes": 108635,
+              "url": "https://github.com/RajadorDev/SmartCommand/releases/download/2.2.0/SmartCommand_v2.2.0.phar",
+              "digest": null
+            }
+          ]
+        },
+        {
+          "id": 218955908,
+          "tag_name": "2.1.0",
+          "draft": false,
+          "assets": [
+            {
+              "id": 255041465,
+              "name": "SmartCommand_v2.1.0.phar",
+              "bytes": 105973,
+              "url": "https://github.com/RajadorDev/SmartCommand/releases/download/2.1.0/SmartCommand_v2.1.0.phar",
+              "digest": null
+            }
+          ]
+        },
+        {
+          "id": 218116542,
+          "tag_name": "2.0.0",
+          "draft": false,
+          "assets": [
+            {
+              "id": 254064663,
+              "name": "SmartCommand_v2.0.0.phar",
+              "bytes": 87191,
+              "url": "https://github.com/RajadorDev/SmartCommand/releases/download/2.0.0/SmartCommand_v2.0.0.phar",
+              "digest": null
+            }
+          ]
+        },
+        {
+          "id": 216316940,
+          "tag_name": "1.0.0",
+          "draft": false,
+          "assets": [
+            {
+              "id": 251605817,
+              "name": "SmartCommand_v1.0.0.phar",
+              "bytes": 80528,
+              "url": "https://github.com/RajadorDev/SmartCommand/releases/download/1.0.0/SmartCommand_v1.0.0.phar",
+              "digest": null
+            }
+          ]
+        }
+      ]
+    },
+    "Bietio/SmartCommand": {
+      "repository": {
+        "id": 1316972324,
+        "full_name": "Bietio/SmartCommand",
+        "fork": true,
+        "default_branch": "master"
+      },
+      "commit": "382bc61b42d76f1a70cf220b9b7eb8884b3214b0",
+      "zip_url": "https://codeload.github.com/Bietio/SmartCommand/zip/382bc61b42d76f1a70cf220b9b7eb8884b3214b0",
+      "zip_sha256": "fb4983a84ac770ed3c81e7b932a94671f0eac161b55b238e318c5914aa07ce29",
+      "git_archive_root_and_crc_verified": true,
+      "tree_status": 200,
+      "tree_truncated": false,
+      "release_query_status": 200,
+      "releases": []
+    }
+  },
+  "external_distribution_scan": {
+    "Pars-Network/ObsidianX@797c87c2b1b0bb02c439d888ac224884f965690e": {
+      "type": "zip",
+      "bytes": 4688432,
+      "sha256": "dc3c2ccbed96f4c51425709311490d26a6669a5cc114b272d93d9189aded49f1",
+      "file_count": 20,
+      "matches": []
+    },
+    "Pars-Network/ObsidianX@797c87c2b1b0bb02c439d888ac224884f965690e!ObsidianX-797c87c2b1b0bb02c439d888ac224884f965690e/PocketMine-MP.phar": {
+      "type": "phar",
+      "sha256": "f24b3978a99fb28d82536890b9b79a5967d6f6667fad44a2dacd2b030ce7738d",
+      "bytes": 5241356,
+      "file_count": 2669,
+      "matches": []
+    },
+    "Pars-Network/ObsidianX@797c87c2b1b0bb02c439d888ac224884f965690e!ObsidianX-797c87c2b1b0bb02c439d888ac224884f965690e/plugins/TeleConsole_v1_1_0(1).phar": {
+      "type": "phar",
+      "sha256": "32b209e79c6f12c0c8c92fe094141205792cdb5dd6940096b3908a2b0e64213c",
+      "bytes": 76066,
+      "file_count": 26,
+      "matches": []
+    },
+    "MrLeMoNPM/ObsidianX@1c0a681771743d4ecd7bcb182fdcee842d965967": {
+      "type": "zip",
+      "bytes": 5036544,
+      "sha256": "6ebe1a8d7e0991f07d17184629fcf668d5f6bee4e6522147324482da77394124",
+      "file_count": 6,
+      "matches": []
+    },
+    "MrLeMoNPM/ObsidianX@1c0a681771743d4ecd7bcb182fdcee842d965967!ObsidianX-1c0a681771743d4ecd7bcb182fdcee842d965967/ObsidianX_Library.zip": {
+      "type": "zip",
+      "bytes": 5022056,
+      "sha256": "1368674ab776aaf36d27071b58e1b626ee2772462e3487e7b4a69f492cccc415",
+      "file_count": 34,
+      "matches": []
+    },
+    "MrLeMoNPM/ObsidianX@1c0a681771743d4ecd7bcb182fdcee842d965967!ObsidianX-1c0a681771743d4ecd7bcb182fdcee842d965967/ObsidianX_Library.zip!ObsidianX/PocketMine-MP.phar": {
+      "type": "phar",
+      "sha256": "f24b3978a99fb28d82536890b9b79a5967d6f6667fad44a2dacd2b030ce7738d",
+      "bytes": 5241356,
+      "file_count": 2669,
+      "matches": []
+    },
+    "MrLeMoNPM/ObsidianX@1c0a681771743d4ecd7bcb182fdcee842d965967!ObsidianX-1c0a681771743d4ecd7bcb182fdcee842d965967/ObsidianX_Library.zip!ObsidianX/plugins/CustomKnockBack_v0_0_1.phar": {
+      "type": "phar",
+      "sha256": "c9d17e5e0c603c541c094a96c77e074a10a214e2b6cf9d3b243d56e2841412cd",
+      "bytes": 7269,
+      "file_count": 4,
+      "matches": []
+    },
+    "MrLeMoNPM/ObsidianX@1c0a681771743d4ecd7bcb182fdcee842d965967!ObsidianX-1c0a681771743d4ecd7bcb182fdcee842d965967/ObsidianX_Library.zip!ObsidianX/plugins/Elytra_v0_0_4.phar": {
+      "type": "phar",
+      "sha256": "4e7c3e12579a3bfab0facdf5812b66f17b281d4ed12b72f4953b1a670239208f",
+      "bytes": 15849,
+      "file_count": 8,
+      "matches": []
+    },
+    "MrLeMoNPM/ObsidianX@1c0a681771743d4ecd7bcb182fdcee842d965967!ObsidianX-1c0a681771743d4ecd7bcb182fdcee842d965967/ObsidianX_Library.zip!ObsidianX/plugins/VanillaMinecarts_dev-2.phar": {
+      "type": "phar",
+      "sha256": "be70657c6eff2c0e222a6cb7bfe546679f9946675a01004e218eab5e45237d56",
+      "bytes": 20003,
+      "file_count": 27,
+      "matches": []
+    },
+    "MrLeMoNPM/ObsidianX@1c0a681771743d4ecd7bcb182fdcee842d965967!ObsidianX-1c0a681771743d4ecd7bcb182fdcee842d965967/ObsidianX_Library.zip!ObsidianX/plugins/VanillaGenerator_v0_0_5.phar": {
+      "type": "phar",
+      "sha256": "178ebbaa4acb199df07edceca447a80e2246daf5ab21b017f9921eebb5ebedd4",
+      "bytes": 344557,
+      "file_count": 136,
+      "matches": []
+    },
+    "MrLeMoNPM/ObsidianX@1c0a681771743d4ecd7bcb182fdcee842d965967!ObsidianX-1c0a681771743d4ecd7bcb182fdcee842d965967/ObsidianX_Library.zip!ObsidianX/plugins/AZVanillaMobs_dev-18.phar": {
+      "type": "phar",
+      "sha256": "58dcfa88d4f60ce919f7be43f1cbe052aaf3035195269ea0065e84b421d73a7d",
+      "bytes": 95005,
+      "file_count": 92,
+      "matches": []
+    },
+    "MrLeMoNPM/ObsidianX@1c0a681771743d4ecd7bcb182fdcee842d965967!ObsidianX-1c0a681771743d4ecd7bcb182fdcee842d965967/ObsidianX_Library.zip!ObsidianX/plugins/PiggyFactions_v2_1_1.phar": {
+      "type": "phar",
+      "sha256": "12606dc6e6e94f4216305c80e8628dabbb8ad97df47d14ab483c0a5360454df9",
+      "bytes": 641190,
+      "file_count": 230,
+      "matches": []
+    },
+    "MrLeMoNPM/ObsidianX@1c0a681771743d4ecd7bcb182fdcee842d965967!ObsidianX-1c0a681771743d4ecd7bcb182fdcee842d965967/ObsidianX_Library.zip!ObsidianX/plugins/Sponge_v0_3_0.phar": {
+      "type": "phar",
+      "sha256": "5711647ea3ca37d1872dea0a8e686ba78dc270e1802c9bb8d02df417fdde76b6",
+      "bytes": 21295,
+      "file_count": 6,
+      "matches": []
+    },
+    "MrLeMoNPM/ObsidianX@1c0a681771743d4ecd7bcb182fdcee842d965967!ObsidianX-1c0a681771743d4ecd7bcb182fdcee842d965967/ObsidianX_Library.zip!ObsidianX/plugins/VanillaHopper_v2_2_2.phar": {
+      "type": "phar",
+      "sha256": "3b1dcc2482f81dfec34b9593c2cc4771d52e7adc5a30286a4c5b88a14aa404c1",
+      "bytes": 74212,
+      "file_count": 24,
+      "matches": []
+    },
+    "MrLeMoNPM/ObsidianX@1c0a681771743d4ecd7bcb182fdcee842d965967!ObsidianX-1c0a681771743d4ecd7bcb182fdcee842d965967/ObsidianX_Library.zip!ObsidianX/plugins/LiveXYZ_v1_0_1.phar": {
+      "type": "phar",
+      "sha256": "b6ce6a9b692886a2f3fdd74e1c93b93d6dd30d01ce6234c5e1225488adced7fb",
+      "bytes": 9059,
+      "file_count": 5,
+      "matches": []
+    },
+    "MrLeMoNPM/ObsidianX@1c0a681771743d4ecd7bcb182fdcee842d965967!ObsidianX-1c0a681771743d4ecd7bcb182fdcee842d965967/ObsidianX_Library.zip!ObsidianX/plugins/PersonaSkin_dev-22.phar": {
+      "type": "phar",
+      "sha256": "1d5e6577bd07ef310adf92c9f33b435c81711f99ce48adda0f19d0d821138800",
+      "bytes": 2341,
+      "file_count": 4,
+      "matches": []
+    },
+    "MrLeMoNPM/ObsidianX@1c0a681771743d4ecd7bcb182fdcee842d965967!ObsidianX-1c0a681771743d4ecd7bcb182fdcee842d965967/ObsidianX_Library.zip!ObsidianX/plugins/PetsChoice_v0_0_1.phar": {
+      "type": "phar",
+      "sha256": "f1b86a3daa5ba7f83af1d562eb87e02b597ce7ed291f1986881872c6b2415c34",
+      "bytes": 57354,
+      "file_count": 34,
+      "matches": []
+    },
+    "MrLeMoNPM/ObsidianX@1c0a681771743d4ecd7bcb182fdcee842d965967!ObsidianX-1c0a681771743d4ecd7bcb182fdcee842d965967/ObsidianX_Library.zip!ObsidianX/plugins/MacePM.phar": {
+      "type": "phar",
+      "sha256": "0d85a0a01552876da1cc7b8e5794adf2a916273533dac7423751efe2fad1f3da",
+      "bytes": 10179,
+      "file_count": 10,
+      "matches": []
+    },
+    "MrLeMoNPM/ObsidianX@1c0a681771743d4ecd7bcb182fdcee842d965967!ObsidianX-1c0a681771743d4ecd7bcb182fdcee842d965967/ObsidianX_Library.zip!ObsidianX/plugins/BubbleElevator_v1_0_1.phar": {
+      "type": "phar",
+      "sha256": "f876cf082b1046ee1908dce932eff607fd36550bae148b78aebc2f0fd86867a4",
+      "bytes": 11906,
+      "file_count": 5,
+      "matches": []
+    },
+    "MrLeMoNPM/ObsidianX@1c0a681771743d4ecd7bcb182fdcee842d965967!ObsidianX-1c0a681771743d4ecd7bcb182fdcee842d965967/ObsidianX_Library.zip!ObsidianX/plugins/NetherPortal_v1_0_0.phar": {
+      "type": "phar",
+      "sha256": "e8a9005e21dd5e6c500de24136d6eb70a02953345b3226b0ed5a981916901a78",
+      "bytes": 33795,
+      "file_count": 8,
+      "matches": []
+    },
+    "MrLeMoNPM/ObsidianX@1c0a681771743d4ecd7bcb182fdcee842d965967!ObsidianX-1c0a681771743d4ecd7bcb182fdcee842d965967/ObsidianX_Library.zip!ObsidianX/plugins/TeleConsole_v1_1_0.phar": {
+      "type": "phar",
+      "sha256": "32b209e79c6f12c0c8c92fe094141205792cdb5dd6940096b3908a2b0e64213c",
+      "bytes": 76066,
+      "file_count": 26,
+      "matches": []
+    },
+    "RajadorDev/SmartCommand@382bc61b42d76f1a70cf220b9b7eb8884b3214b0": {
+      "type": "zip",
+      "bytes": 47748,
+      "sha256": "fb4983a84ac770ed3c81e7b932a94671f0eac161b55b238e318c5914aa07ce29",
+      "file_count": 38,
+      "matches": []
+    },
+    "Bietio/SmartCommand@382bc61b42d76f1a70cf220b9b7eb8884b3214b0": {
+      "type": "zip",
+      "bytes": 47748,
+      "sha256": "fb4983a84ac770ed3c81e7b932a94671f0eac161b55b238e318c5914aa07ce29",
+      "file_count": 38,
+      "matches": []
+    }
+  },
+  "external_scan_method": "Read bounded Git ZIPs, nested ZIPs, and regular PHAR file entries. Source ZIP roots, CRC, byte sizes and SHA-256 recorded. Searched all six target namespaces . No PHP source, PHAR stub or serialized metadata was executed.",
+  "external_scan_limits": "These selected public server packs and development builds do not cover all PHARs ever published. GitHub code search does not reliably index binary PHARs. A library with all identifying names removed can be missed.",
+  "class_fingerprint_scan": {
+    "method": "Prefilter cached PHAR bytes for distinctive class filenames and strings from the Wayback class index; verify SHA-256 and size; read candidate regular entries with PHP Phar without executing source or deserializing metadata. This supplements, and does not replace, the earlier namespace scan.",
+    "needles": [
+      "ReplayRecorderPool",
+      "ZstdCompressToClosureTask",
+      "StaticTickSerializer",
+      "KurlCore",
+      "CommandArguments",
+      "ReplayLib",
+      "PlayerFlagsData"
+    ],
+    "checked": 5021,
+    "bytes": 231279477,
+    "candidates": [
+      {
+        "release_id": "1537",
+        "phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0006/plugin-1537-44147-worldbackup-1.0-ad3310c048a4.phar",
+        "sha256": "ad3310c048a46109d27984e3712c17d79ebeb86f6409e1b1f5fe075ba716300b",
+        "matches": [
+          {
+            "path": "src/Jhelom/Core/CommandArguments.php",
+            "identifiers": [
+              "CommandArguments"
+            ],
+            "sha256": "8304e2522cfd55e6b5515cb6bf76ddd89fec3ea5d783d88eb642082c7b71dc7f",
+            "bytes": 2143,
+            "namespace": [
+              "Jhelom\\Core"
+            ]
+          },
+          {
+            "path": "src/Jhelom/Core/CommandInvoker.php",
+            "identifiers": [
+              "CommandArguments"
+            ],
+            "sha256": "8aeb40280d24d9deb84920070d31314c9f7b5e48210b172fbecb2cd38808729a",
+            "bytes": 1447,
+            "namespace": [
+              "Jhelom\\Core"
+            ]
+          },
+          {
+            "path": "src/Jhelom/WorldBackup/Commands/WorldBackupCommand.php",
+            "identifiers": [
+              "CommandArguments"
+            ],
+            "sha256": "e7d3240f8c6689e5bdbf757888687c69b63b0b21e9e725b0ebb0286351c59a74",
+            "bytes": 7567,
+            "namespace": [
+              "Jhelom\\WorldBackup\\Commands"
+            ]
+          }
+        ]
+      },
+      {
+        "release_id": "1562",
+        "phar_url": "https://github.com/poggit-archive/artifacts/releases/download/plugins-2026-10-14-0002/plugin-1562-44265-compassxyz-1.0-1da306de8ee7.phar",
+        "sha256": "1da306de8ee768e238bc49ae23cacf4bbfffc4083306eba32a318e7f8410dca4",
+        "matches": [
+          {
+            "path": "src/Jhelom/CompassXYZ/Commands/XYZCommand.php",
+            "identifiers": [
+              "CommandArguments"
+            ],
+            "sha256": "738b0f11bb0d1a2331b8cef41e167322a6717b5e7ce55df9d62e1c0fc116ca93",
+            "bytes": 1594,
+            "namespace": [
+              "Jhelom\\CompassXYZ\\Commands"
+            ]
+          },
+          {
+            "path": "src/Jhelom/Core/CommandArguments.php",
+            "identifiers": [
+              "CommandArguments"
+            ],
+            "sha256": "8d50fdfbc2c59ec58b1f0a7204cdac2519fb022747b1f5b6d70035cc8a55f644",
+            "bytes": 2142,
+            "namespace": [
+              "Jhelom\\Core"
+            ]
+          },
+          {
+            "path": "src/Jhelom/Core/CommandInvoker.php",
+            "identifiers": [
+              "CommandArguments"
+            ],
+            "sha256": "8aeb40280d24d9deb84920070d31314c9f7b5e48210b172fbecb2cd38808729a",
+            "bytes": 1447,
+            "namespace": [
+              "Jhelom\\Core"
+            ]
+          }
+        ]
+      }
+    ],
+    "limitations": "A raw-byte prefilter can miss a completely compressed outer archive or renamed files and identifiers. A shared class name does not establish provenance or version. Candidates were not accepted as recovered source."
+  },
+  "repository_searches": {
+    "\"ReplayLib\" in:readme fork:true": {
+      "status": 200,
+      "total_count": 64,
+      "incomplete_results": false,
+      "items": [
+        {
+          "id": 719221,
+          "full_name": "storborg/replaylib",
+          "fork": false,
+          "description": "Record and replay httplib actions for testing.",
+          "default_branch": "master",
+          "size": 155
+        },
+        {
+          "id": 1100800397,
+          "full_name": "radif/ReplayLib",
+          "fork": false,
+          "description": "ReplayLib is a comprehensive utility library for Unity game development, providing core patterns, extensions, and systems used throughout \"The Last Word\" project. The library emphasizes memory management, performance optimization, and consistent coding patterns.",
+          "default_branch": "main",
+          "size": 91
+        },
+        {
+          "id": 1070423166,
+          "full_name": "orozcoorellana2004-creator/ReplayLib",
+          "fork": false,
+          "description": "Small library for reversing Roblox anti-cheats or other scripts.",
+          "default_branch": "main",
+          "size": 10
+        },
+        {
+          "id": 33323431,
+          "full_name": "HoTSStuff/replaylib",
+          "fork": false,
+          "description": null,
+          "default_branch": "master",
+          "size": 900
+        },
+        {
+          "id": 1142080663,
+          "full_name": "frvgmxnt/ReplayLib",
+          "fork": true,
+          "description": "Small library for reversing Roblox anti-cheats or other scripts.",
+          "default_branch": "main",
+          "size": 10
+        },
+        {
+          "id": 1312413632,
+          "full_name": "CliveUnger/aoe2",
+          "fork": false,
+          "description": null,
+          "default_branch": "main",
+          "size": 228
+        },
+        {
+          "id": 166401300,
+          "full_name": "crazyshader/GameDev",
+          "fork": false,
+          "description": "# Unity\u6e38\u620f\u5f00\u53d1\u8d44\u6e90",
+          "default_branch": "master",
+          "size": 484
+        },
+        {
+          "id": 7906523,
+          "full_name": "charlax/vcrpy",
+          "fork": true,
+          "description": "A Python port of Ruby's VCR that almost works",
+          "default_branch": "master",
+          "size": 879
+        },
+        {
+          "id": 7979543,
+          "full_name": "bradjasper/vcrpy",
+          "fork": true,
+          "description": "A Python port of Ruby's VCR that almost works",
+          "default_branch": "master",
+          "size": 93
+        },
+        {
+          "id": 9734600,
+          "full_name": "zapier/vcrpy",
+          "fork": true,
+          "description": "A Python port of Ruby's VCR to make mocking HTTP easier",
+          "default_branch": "master",
+          "size": 157
+        },
+        {
+          "id": 10850387,
+          "full_name": "vitormazzi/vcrpy",
+          "fork": true,
+          "description": "A Python port of Ruby's VCR to make mocking HTTP easier",
+          "default_branch": "master",
+          "size": 137
+        },
+        {
+          "id": 8374559,
+          "full_name": "tjmcewan/vcrpy",
+          "fork": true,
+          "description": "A Python port of Ruby's VCR to make mocking HTTP easier",
+          "default_branch": "master",
+          "size": 131
+        },
+        {
+          "id": 11620575,
+          "full_name": "dlecocq/vcrpy",
+          "fork": true,
+          "description": "A Python port of Ruby's VCR to make mocking HTTP easier",
+          "default_branch": "master",
+          "size": 102
+        },
+        {
+          "id": 8331948,
+          "full_name": "sriprasanna/vcrpy",
+          "fork": true,
+          "description": "A Python port of Ruby's VCR that almost works",
+          "default_branch": "master",
+          "size": 131
+        },
+        {
+          "id": 4852252,
+          "full_name": "msabramo/vcrpy",
+          "fork": true,
+          "description": "A proof-of-concept start at a Python version of Ruby's VCR library",
+          "default_branch": "master",
+          "size": 657
+        },
+        {
+          "id": 14230174,
+          "full_name": "bryanhelmig/vcrpy",
+          "fork": true,
+          "description": "A Python port of Ruby's VCR to make mocking HTTP easier",
+          "default_branch": "master",
+          "size": 233
+        },
+        {
+          "id": 14136710,
+          "full_name": "VerosK/vcrpy",
+          "fork": true,
+          "description": "A Python port of Ruby's VCR to make mocking HTTP easier",
+          "default_branch": "master",
+          "size": 242
+        },
+        {
+          "id": 13001540,
+          "full_name": "chromy/vcrpy",
+          "fork": true,
+          "description": "A Python port of Ruby's VCR to make mocking HTTP easier",
+          "default_branch": "master",
+          "size": 248
+        },
+        {
+          "id": 13865700,
+          "full_name": "kacieh80/vcrpy",
+          "fork": true,
+          "description": "A Python port of Ruby's VCR to make mocking HTTP easier",
+          "default_branch": "master",
+          "size": 519
+        },
+        {
+          "id": 16417063,
+          "full_name": "daachi/vcrpy",
+          "fork": true,
+          "description": "Automatically mock your HTTP interactions to simplify and speed up testing",
+          "default_branch": "master",
+          "size": 995
+        },
+        {
+          "id": 16509993,
+          "full_name": "nilp0inter/vcrpy",
+          "fork": true,
+          "description": "Automatically mock your HTTP interactions to simplify and speed up testing",
+          "default_branch": "master",
+          "size": 606
+        },
+        {
+          "id": 16546580,
+          "full_name": "gkuhn1/vcrpy",
+          "fork": true,
+          "description": "Automatically mock your HTTP interactions to simplify and speed up testing",
+          "default_branch": "master",
+          "size": 548
+        },
+        {
+          "id": 11937587,
+          "full_name": "bjmc/vcrpy",
+          "fork": true,
+          "description": "A Python port of Ruby's VCR to make mocking HTTP easier",
+          "default_branch": "master",
+          "size": 567
+        },
+        {
+          "id": 16463972,
+          "full_name": "asmundg/vcrpy",
+          "fork": true,
+          "description": "Automatically mock your HTTP interactions to simplify and speed up testing",
+          "default_branch": "master",
+          "size": 593
+        },
+        {
+          "id": 16928190,
+          "full_name": "iAcquire/vcrpy",
+          "fork": true,
+          "description": "Automatically mock your HTTP interactions to simplify and speed up testing",
+          "default_branch": "master",
+          "size": 1244
+        },
+        {
+          "id": 1112123760,
+          "full_name": "websprit/GameDev",
+          "fork": true,
+          "description": "# Unity\u6e38\u620f\u5f00\u53d1\u8d44\u6e90",
+          "default_branch": "master",
+          "size": 896
+        },
+        {
+          "id": 1111681323,
+          "full_name": "vnz2v99kk8-afk/GameDev",
+          "fork": true,
+          "description": "# Unity\u6e38\u620f\u5f00\u53d1\u8d44\u6e90",
+          "default_branch": "master",
+          "size": 896
+        },
+        {
+          "id": 1111485426,
+          "full_name": "zhonghua-5545/GameDev",
+          "fork": true,
+          "description": "# Unity\u6e38\u620f\u5f00\u53d1\u8d44\u6e90",
+          "default_branch": "master",
+          "size": 896
+        },
+        {
+          "id": 1142360476,
+          "full_name": "oathx/GameDev",
+          "fork": true,
+          "description": "# Unity\u6e38\u620f\u5f00\u53d1\u8d44\u6e90",
+          "default_branch": "master",
+          "size": 218
+        },
+        {
+          "id": 1126892607,
+          "full_name": "Linktp/GameDev",
+          "fork": true,
+          "description": "# Unity\u6e38\u620f\u5f00\u53d1\u8d44\u6e90",
+          "default_branch": "master",
+          "size": 932
+        },
+        {
+          "id": 1127024530,
+          "full_name": "kzy50sea/GameDev",
+          "fork": true,
+          "description": "# Unity\u6e38\u620f\u5f00\u53d1\u8d44\u6e90",
+          "default_branch": "master",
+          "size": 932
+        },
+        {
+          "id": 1134307741,
+          "full_name": "quping123/GameDev",
+          "fork": true,
+          "description": "# Unity\u6e38\u620f\u5f00\u53d1\u8d44\u6e90",
+          "default_branch": "master",
+          "size": 181
+        },
+        {
+          "id": 1130410301,
+          "full_name": "mingspy/GameDev",
+          "fork": true,
+          "description": "# Unity\u6e38\u620f\u5f00\u53d1\u8d44\u6e90",
+          "default_branch": "master",
+          "size": 181
+        },
+        {
+          "id": 1120632312,
+          "full_name": "ganshuangfeng/GameDev",
+          "fork": true,
+          "description": "# Unity\u6e38\u620f\u5f00\u53d1\u8d44\u6e90",
+          "default_branch": "master",
+          "size": 932
+        },
+        {
+          "id": 1123693317,
+          "full_name": "JackCheng520/GameDev",
+          "fork": true,
+          "description": "# Unity\u6e38\u620f\u5f00\u53d1\u8d44\u6e90",
+          "default_branch": "master",
+          "size": 932
+        },
+        {
+          "id": 1193856657,
+          "full_name": "JonasDC5/GameDev",
+          "fork": true,
+          "description": "unity El autor recopila diferentes \"juguetes\" y prototipos que pod\u00e9s estudiar o copiar para tus propios proyectos:",
+          "default_branch": "master",
+          "size": 255
+        },
+        {
+          "id": 1156925172,
+          "full_name": "linleli/GameDev",
+          "fork": true,
+          "description": "# Unity\u6e38\u620f\u5f00\u53d1\u8d44\u6e90",
+          "default_branch": "master",
+          "size": 218
+        },
+        {
+          "id": 901959140,
+          "full_name": "hafewa/GameDev",
+          "fork": true,
+          "description": "# Unity\u6e38\u620f\u5f00\u53d1\u8d44\u6e90",
+          "default_branch": "master",
+          "size": 484
+        },
+        {
+          "id": 1350204232,
+          "full_name": "AlianBlank/GameDev",
+          "fork": true,
+          "description": "# Unity\u6e38\u620f\u5f00\u53d1\u8d44\u6e90",
+          "default_branch": "master",
+          "size": 484
+        },
+        {
+          "id": 1270922835,
+          "full_name": "MetaNewB/GameDev",
+          "fork": true,
+          "description": "# Unity\u6e38\u620f\u5f00\u53d1\u8d44\u6e90",
+          "default_branch": "master",
+          "size": 484
+        },
+        {
+          "id": 1369304355,
+          "full_name": "nalanjingqi/GameDev",
+          "fork": true,
+          "description": "# Unity\u6e38\u620f\u5f00\u53d1\u8d44\u6e90",
+          "default_branch": "master",
+          "size": 484
+        },
+        {
+          "id": 1087016524,
+          "full_name": "aftera2008/GameDev",
+          "fork": true,
+          "description": "# Unity\u6e38\u620f\u5f00\u53d1\u8d44\u6e90",
+          "default_branch": "master",
+          "size": 484
+        },
+        {
+          "id": 1413984605,
+          "full_name": "liupan-xiaoqi/GameDev",
+          "fork": true,
+          "description": "# Unity\u6e38\u620f\u5f00\u53d1\u8d44\u6e90",
+          "default_branch": "master",
+          "size": 484
+        },
+        {
+          "id": 1250864998,
+          "full_name": "seiya1223/GameDev",
+          "fork": true,
+          "description": "# Unity\u6e38\u620f\u5f00\u53d1\u8d44\u6e90",
+          "default_branch": "master",
+          "size": 484
+        },
+        {
+          "id": 1234503408,
+          "full_name": "KuoHaXu/UnityGameDev",
+          "fork": true,
+          "description": "# Unity\u6e38\u620f\u5f00\u53d1\u8d44\u6e90",
+          "default_branch": "master",
+          "size": 407
+        },
+        {
+          "id": 1280380142,
+          "full_name": "tuke-code/GameDev",
+          "fork": true,
+          "description": "# Unity\u6e38\u620f\u5f00\u53d1\u8d44\u6e90",
+          "default_branch": "master",
+          "size": 484
+        },
+        {
+          "id": 1220793244,
+          "full_name": "Kurumioi/GameDev",
+          "fork": true,
+          "description": "# Unity\u6e38\u620f\u5f00\u53d1\u8d44\u6e90",
+          "default_branch": "master",
+          "size": 369
+        },
+        {
+          "id": 1209071023,
+          "full_name": "MaiKuraki/GameDev",
+          "fork": true,
+          "description": "# Unity\u6e38\u620f\u5f00\u53d1\u8d44\u6e90",
+          "default_branch": "master",
+          "size": 484
+        },
+        {
+          "id": 1253524015,
+          "full_name": "xiebiao99/GameDev",
+          "fork": true,
+          "description": "# Unity\u6e38\u620f\u5f00\u53d1\u8d44\u6e90",
+          "default_branch": "master",
+          "size": 484
+        },
+        {
+          "id": 1413302048,
+          "full_name": "luoson/GameDev",
+          "fork": true,
+          "description": "# Unity\u6e38\u620f\u5f00\u53d1\u8d44\u6e90",
+          "default_branch": "master",
+          "size": 484
+        },
+        {
+          "id": 1230609298,
+          "full_name": "yukinazttttto0110-beep/GameDev",
+          "fork": true,
+          "description": "# Unity\u6e38\u620f\u5f00\u53d1\u8d44\u6e90",
+          "default_branch": "master",
+          "size": 369
+        },
+        {
+          "id": 1416334051,
+          "full_name": "rociron/GameDev",
+          "fork": true,
+          "description": "# Unity\u6e38\u620f\u5f00\u53d1\u8d44\u6e90",
+          "default_branch": "master",
+          "size": 484
+        },
+        {
+          "id": 1235291913,
+          "full_name": "makoolabs/GameDev",
+          "fork": true,
+          "description": "# Unity\u6e38\u620f\u5f00\u53d1\u8d44\u6e90",
+          "default_branch": "master",
+          "size": 407
+        },
+        {
+          "id": 1207552624,
+          "full_name": "boqijianghhg55/GameDev",
+          "fork": true,
+          "description": "# Unity\u6e38\u620f\u5f00\u53d1\u8d44\u6e90",
+          "default_branch": "master",
+          "size": 293
+        },
+        {
+          "id": 1217034428,
+          "full_name": "MarsBryant114/GameDev",
+          "fork": true,
+          "description": "# Unity\u6e38\u620f\u5f00\u53d1\u8d44\u6e90",
+          "default_branch": "master",
+          "size": 331
+        },
+        {
+          "id": 1305196942,
+          "full_name": "davidchennbg/GameDev",
+          "fork": true,
+          "description": "# Unity\u6e38\u620f\u5f00\u53d1\u8d44\u6e90",
+          "default_branch": "master",
+          "size": 484
+        },
+        {
+          "id": 915544714,
+          "full_name": "FreezeSoul/GameDev",
+          "fork": true,
+          "description": "# Unity\u6e38\u620f\u5f00\u53d1\u8d44\u6e90",
+          "default_branch": "master",
+          "size": 484
+        },
+        {
+          "id": 981908695,
+          "full_name": "trananh1992/GameDev-unity",
+          "fork": true,
+          "description": "# Unity\u6e38\u620f\u5f00\u53d1\u8d44\u6e90",
+          "default_branch": "master",
+          "size": 484
+        },
+        {
+          "id": 1299294871,
+          "full_name": "zlgspace2026/GameDev",
+          "fork": true,
+          "description": "# Unity\u6e38\u620f\u5f00\u53d1\u8d44\u6e90",
+          "default_branch": "master",
+          "size": 484
+        },
+        {
+          "id": 1258930363,
+          "full_name": "malaxiya2019/GameDev",
+          "fork": true,
+          "description": "# Unity\u6e38\u620f\u5f00\u53d1\u8d44\u6e90",
+          "default_branch": "master",
+          "size": 484
+        },
+        {
+          "id": 1371063163,
+          "full_name": "yujin2625/GameDev",
+          "fork": true,
+          "description": "# Unity Game Development Resources",
+          "default_branch": "master",
+          "size": 525
+        },
+        {
+          "id": 1253991228,
+          "full_name": "xionglei191-goo/GameDev",
+          "fork": true,
+          "description": "# Unity\u6e38\u620f\u5f00\u53d1\u8d44\u6e90",
+          "default_branch": "master",
+          "size": 484
+        },
+        {
+          "id": 1250905752,
+          "full_name": "wxy257/GameDev",
+          "fork": true,
+          "description": "# Unity\u6e38\u620f\u5f00\u53d1\u8d44\u6e90",
+          "default_branch": "master",
+          "size": 484
+        },
+        {
+          "id": 1194385014,
+          "full_name": "lizheyang612-ux/GameDev",
+          "fork": true,
+          "description": "# Unity\u6e38\u620f\u5f00\u53d1\u8d44\u6e90",
+          "default_branch": "master",
+          "size": 255
+        }
+      ]
+    },
+    "\"CommandArguments\" \"Poggit\" in:readme fork:true": {
+      "status": 200,
+      "total_count": 2,
+      "incomplete_results": false,
+      "items": [
+        {
+          "id": 976847952,
+          "full_name": "RajadorDev/SmartCommand",
+          "fork": false,
+          "description": "a mini framework to create commands in PocketMine",
+          "default_branch": "master",
+          "size": 214
+        },
+        {
+          "id": 1316972324,
+          "full_name": "Bietio/SmartCommand",
+          "fork": true,
+          "description": "a mini framework to create commands in PocketMine",
+          "default_branch": "master",
+          "size": 181
+        }
+      ]
+    },
+    "\"TelegramBotAPI\" \"Poggit\" in:readme fork:true": {
+      "status": 200,
+      "total_count": 0,
+      "incomplete_results": false,
+      "items": []
+    },
+    "\"Krul\" \"Poggit\" in:readme fork:true": {
+      "status": 200,
+      "total_count": 0,
+      "incomplete_results": false,
+      "items": []
+    },
+    "\"ZetNex/Map\" in:readme fork:true": {
+      "status": 200,
+      "total_count": 0,
+      "incomplete_results": false,
+      "items": []
+    },
+    "\"vosaka\" \"phar\" in:readme fork:true": {
+      "status": 200,
+      "total_count": 0,
+      "incomplete_results": false,
+      "items": []
+    },
+    "\"vosaka-php/vosaka\" in:readme fork:true": {
+      "status": 200,
+      "total_count": 0,
+      "incomplete_results": false,
+      "items": []
+    },
+    "\"venndev/v-osaka\" in:readme fork:true": {
+      "status": 200,
+      "total_count": 0,
+      "incomplete_results": false,
+      "items": []
+    },
+    "\"xeonch\" \"telegram\" in:readme fork:true": {
+      "status": 200,
+      "total_count": 2,
+      "incomplete_results": false,
+      "items": [
+        {
+          "id": 1314294018,
+          "full_name": "Pars-Network/ObsidianX",
+          "fork": false,
+          "description": "A curated PocketMine-MP server pack bundling several vanilla/utility plugins plus a custom-built bridge between your server console and Telegram.",
+          "default_branch": "main",
+          "size": 4572
+        },
+        {
+          "id": 1287009735,
+          "full_name": "MrLeMoNPM/ObsidianX",
+          "fork": false,
+          "description": "ObsidianX",
+          "default_branch": "main",
+          "size": 9500
+        }
+      ]
+    },
+    "\"ReplayLib\" language:PHP fork:true": {
+      "status": 200,
+      "total_count": 0,
+      "incomplete_results": false,
+      "items": []
+    },
+    "\"Krul\" language:PHP fork:true": {
+      "status": 200,
+      "total_count": 3,
+      "incomplete_results": false,
+      "items": [
+        {
+          "id": 881845033,
+          "full_name": "MichalKrul/git-ukol-Krul",
+          "fork": false,
+          "description": null,
+          "default_branch": "vysledek",
+          "size": 2
+        },
+        {
+          "id": 263976008,
+          "full_name": "0x42697262/krulyuno-plazmaburst2",
+          "fork": false,
+          "description": "A web server for some of my maps in Plazma Burst 2.",
+          "default_branch": "master",
+          "size": 23
+        },
+        {
+          "id": 1024743177,
+          "full_name": "kristofkruller/kruller_kristof_SZV2025",
+          "fork": false,
+          "description": "php tesztfeladat",
+          "default_branch": "main",
+          "size": 17
+        }
+      ]
+    },
+    "\"Map\" user:ZetNex fork:true": {
+      "status": 200,
+      "total_count": 0,
+      "incomplete_results": false,
+      "items": []
+    }
+  },
+  "code_searches": {
+    "\"venndev\\vosaka\" fork:true": {
+      "status": 200,
+      "total_count": 0,
+      "incomplete_results": false,
+      "items": []
+    },
+    "\"xeonch\\telegramapi\" fork:true": {
+      "status": 200,
+      "total_count": 0,
+      "incomplete_results": false,
+      "items": []
+    },
+    "\"ZetNex\\Map\" fork:true": {
+      "status": 200,
+      "total_count": 0,
+      "incomplete_results": false,
+      "items": []
+    },
+    "\"tobias14\\CommandArguments\" fork:true": {
+      "status": 200,
+      "total_count": 0,
+      "incomplete_results": false,
+      "items": []
+    },
+    "\"exnthr\\ReplayLib\" fork:true": {
+      "status": 200,
+      "total_count": 0,
+      "incomplete_results": false,
+      "items": []
+    },
+    "\"InkoHX\\Krul\" fork:true": {
+      "status": 200,
+      "total_count": 0,
+      "incomplete_results": false,
+      "items": []
+    },
+    "\"ReplayLib\" extension:phar fork:true": {
+      "status": 200,
+      "total_count": 0,
+      "incomplete_results": false,
+      "items": []
+    },
+    "\"TelegramBotAPI\" extension:phar fork:true": {
+      "status": 200,
+      "total_count": 0,
+      "incomplete_results": false,
+      "items": []
+    },
+    "\"vosaka\" extension:phar fork:true": {
+      "status": 200,
+      "total_count": 0,
+      "incomplete_results": false,
+      "items": []
+    },
+    "\"CommandArguments\" extension:phar fork:true": {
+      "status": 200,
+      "total_count": 0,
+      "incomplete_results": false,
+      "items": []
+    }
+  },
+  "class_name_searches": {
+    "\"ReplayRecorderPool\" fork:true": {
+      "status": 200,
+      "total_count": 0,
+      "incomplete_results": false,
+      "items": []
+    },
+    "\"ZstdCompressToClosureTask\" fork:true": {
+      "status": 200,
+      "total_count": 0,
+      "incomplete_results": false,
+      "items": []
+    },
+    "\"StaticTickSerializer\" fork:true": {
+      "status": 200,
+      "total_count": 0,
+      "incomplete_results": false,
+      "items": []
+    },
+    "\"KurlCore\" language:PHP fork:true": {
+      "status": 200,
+      "total_count": 0,
+      "incomplete_results": false,
+      "items": []
+    },
+    "\"TypeStore\" \"InkoHX\" fork:true": {
+      "status": 200,
+      "total_count": 0,
+      "incomplete_results": false,
+      "items": []
+    },
+    "\"SyntaxErrorException\" \"tobias14\" fork:true": {
+      "status": 200,
+      "total_count": 0,
+      "incomplete_results": false,
+      "items": []
+    },
+    "\"vosaka\" filename:.poggit.yml fork:true": {
+      "status": 200,
+      "total_count": 0,
+      "incomplete_results": false,
+      "items": []
+    }
+  },
+  "live_poggit_endpoints": {
+    "poggit-correct-info": {
+      "url": "https://poggit.pmmp.io/ci.info?owner=Jasson44&repo=TelegramBotAPI&sha=9d6128dcd034042b1cee29cc4622015cc9a49656",
+      "status": 200,
+      "final_url": "https://github.com/poggit/release-archive",
+      "content_type": "application/json; charset=utf-8",
+      "body_excerpt": "{\"meta\":{\"title\":\"GitHub - poggit/release-archive: All approved release artifacts and metadata from Poggit\"},\"payload\":{\"codeViewRepoRoute\":{\"path\":\"/\",\"refInfo\":{\"name\":\"master\",\"listCacheKey\":\"v0:1792004590.0\",\"canEdit\":false,\"refType\":\"branch\",\"currentOid\":\"102194b0b1022180fc774318f39cd2a10ee4bb27\"},\"tree\":{\"items\":[{\"name\":\"0x00032/EmoteAnnounce/1.0.0\",\"path\":\"0x00032/EmoteAnnounce/1.0.0\",\"contentType\":\"directory\",\"hasSimplifiedPath\":true},{\"name\":\"0xliam627/NoFarmlandDecay\",\"path\":\"0xliam62"
+    },
+    "poggit-dev-download": {
+      "url": "https://poggit.pmmp.io/p.dl/Jasson44/TelegramBotAPI/TelegramBotAPI?build=1",
+      "status": 200,
+      "final_url": "https://github.com/poggit/release-archive",
+      "content_type": "application/json; charset=utf-8",
+      "body_excerpt": "{\"meta\":{\"title\":\"GitHub - poggit/release-archive: All approved release artifacts and metadata from Poggit\"},\"payload\":{\"codeViewRepoRoute\":{\"path\":\"/\",\"refInfo\":{\"name\":\"master\",\"listCacheKey\":\"v0:1792004590.0\",\"canEdit\":false,\"refType\":\"branch\",\"currentOid\":\"102194b0b1022180fc774318f39cd2a10ee4bb27\"},\"tree\":{\"items\":[{\"name\":\"0x00032/EmoteAnnounce/1.0.0\",\"path\":\"0x00032/EmoteAnnounce/1.0.0\",\"contentType\":\"directory\",\"hasSimplifiedPath\":true},{\"name\":\"0xliam627/NoFarmlandDecay\",\"path\":\"0xliam62"
+    }
+  },
+  "poggit_endpoint_contract_source": {
+    "repository": "poggit/poggit",
+    "commit": "9d03d45ea041cd3314c930a20851acc5249f5601",
+    "files": [
+      "src/modules.php",
+      "src/poggit/ci/api/BuildInfoModule.php",
+      "src/poggit/ci/api/GetPluginModule.php",
+      "src/poggit/module/RobotsTxtModule.php"
+    ],
+    "finding": "The ci.info API accepts owner/repo/sha query parameters. p.dl accepts a project and build number. Current requests redirect to release-archive; HTTP 200 at the final URL does not establish a downloadable build. Build IDs and resource IDs are distinct."
+  },
+  "additional_composer_mirror": {
+    "metadata_url": "https://repo.huaweicloud.com/repository/php/p2/venndev/v-osaka.json",
+    "metadata_status": 200,
+    "version": "1.9.0",
+    "source": {
+      "url": "https://github.com/vosaka-php/vosaka.git",
+      "type": "git",
+      "reference": "aa5df4a7dc61c1c249504e9daad13ee985806f12"
+    },
+    "dist": {
+      "url": "https://repo.huaweicloud.com/repository/php/venndev/v-osaka/1.9.0/venndev-v-osaka-1.9.0.zip",
+      "type": "zip",
+      "reference": "aa5df4a7dc61c1c249504e9daad13ee985806f12",
+      "shasum": ""
+    },
+    "download": {
+      "url": "https://repo.huaweicloud.com/repository/php/venndev/v-osaka/1.9.0/venndev-v-osaka-1.9.0.zip",
+      "status": 404
+    },
+    "tencent_distribution_wayback": {
+      "url": "https://archive.org/wayback/available?url=https%3A%2F%2Fmirrors.cloud.tencent.com%2Frepository%2Fcomposer%2Fvenndev%2Fv-osaka%2F1.9.0%2Fvenndev-v-osaka-1.9.0.zip",
+      "status": 200,
+      "final_url": "https://archive.org/wayback/available?url=https%3A%2F%2Fmirrors.cloud.tencent.com%2Frepository%2Fcomposer%2Fvenndev%2Fv-osaka%2F1.9.0%2Fvenndev-v-osaka-1.9.0.zip",
+      "content_type": "application/json",
+      "data": {
+        "url": "https://mirrors.cloud.tencent.com/repository/composer/venndev/v-osaka/1.9.0/venndev-v-osaka-1.9.0.zip",
+        "archived_snapshots": {}
+      }
+    }
+  },
+  "next_recovery_inputs": [
+    "Retry only the listed unverified SHA URLs after Wayback permits requests, using a slow resumable batch.",
+    "Obtain a surviving Poggit CI database or development resource export; build short IDs alone do not identify resource IDs.",
+    "Use recovered class names to inspect a newly discovered PHAR or historical source copy.",
+    "Request exact historical source or development PHARs from original authors if the user separately authorizes outreach."
+  ]
+}
