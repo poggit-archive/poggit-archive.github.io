@@ -14,6 +14,7 @@
     virionDownloads: {},
     sourceDownloads: {},
     recoveredSources: {},
+    virionSources: {},
     loaded: false,
   };
   const $ = (selector) => document.querySelector(selector);
@@ -192,6 +193,20 @@
   }
 
   function sourceArtifact(item) {
+    if (state.kind === "virions") {
+      const source = state.virionSources[String(item.id)];
+      if (source?.status !== "uploaded" || !archiveUrl(source.remote_url)) return null;
+      if (source.method === "unphar" && source.complete_git_snapshot === false) {
+        return { url: source.remote_url, label: "Source from PHAR", details: "Files recovered from the original PHAR. Repository files excluded during the build may be missing." };
+      }
+      if (source.method !== "git_archive" || source.complete_git_snapshot !== true || !["original_poggit_build", "rebuilt_phar"].includes(source.source_scope) || !/^[a-f0-9]{40}$/.test(source.verified_revision || "")) return null;
+      const original = source.source_scope === "original_poggit_build";
+      return {
+        url: source.remote_url,
+        label: original ? "Archived source" : "Rebuild source",
+        details: `${source.source_repository_used || source.source_repo}@${source.verified_revision}. ${original ? "Source revision recorded by the original Poggit build." : "Source used for the rebuilt PHAR; the original Poggit revision is unconfirmed."}`,
+      };
+    }
     if (state.kind !== "plugins" || !item.repo_id || !item.build_commit) return null;
     const key = `${item.repo_id}@${String(item.build_commit).toLowerCase()}`;
     const archived = state.sourceDownloads[key];
@@ -445,6 +460,9 @@
     } else {
       addMeta(meta, item.version || "Version unknown");
       addMeta(meta, `${number(item.used_by_projects)} projects use this`);
+      const source = state.virionSources[String(item.id)];
+      const license = String(source?.license_display || item.license || "").trim();
+      addMeta(meta, !license || ["none", "unknown", "no license"].includes(license.toLowerCase()) ? "No License" : `License ${license}`);
       if (item.last_updated) addMeta(meta, date(Number(item.last_updated)));
     }
     content.append(meta);
@@ -634,7 +652,7 @@
       const pointerUrl = new URL("data/api/v1/current.json", location.href);
       const pointer = await getJson(pointerUrl);
       const base = (relative) => new URL(relative, pointerUrl).href;
-      const [summary, releases, virions, pluginDownloads, virionDownloads, sourceDownloads, recoveredSources] = await Promise.all([
+      const [summary, releases, virions, pluginDownloads, virionDownloads, sourceDownloads, recoveredSources, virionSources] = await Promise.all([
         getJson(base(pointer.files.summary)),
         getJson(base(pointer.files.releases)),
         getJson(base(pointer.files.virions)),
@@ -642,6 +660,7 @@
         optionalJson(base(pointer.files.downloads_virions)),
         optionalJson(base(pointer.files.source_downloads)),
         pointer.files.recovered_sources ? optionalJson(base(pointer.files.recovered_sources)) : Promise.resolve({}),
+        pointer.files.virion_sources ? optionalJson(base(pointer.files.virion_sources)) : Promise.resolve({}),
       ]);
 
       state.releases = Array.isArray(releases) ? releases : [];
@@ -652,6 +671,7 @@
       state.virionDownloads = virionDownloads;
       state.sourceDownloads = sourceDownloads;
       state.recoveredSources = recoveredSources;
+      state.virionSources = virionSources;
       $("#plugins-tab-count").textContent = number(state.pluginProjects.length);
       $("#virions-tab-count").textContent = number(summary.counts?.virion_entries);
       state.loaded = true;

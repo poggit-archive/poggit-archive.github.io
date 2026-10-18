@@ -170,6 +170,10 @@ def upload_asset(token: str, release_id: int, path: Path, asset_name: str, size:
 
 
 def manifest_setup(snapshot_dir: Path, kind: str):
+    if kind in {"virion-sources", "rebuilt-virions"}:
+        catalog = read_json(snapshot_dir / "virions.json")
+        filename = "virion-source-downloads.json" if kind == "virion-sources" else "rebuilt-virions.json"
+        return snapshot_dir / filename, [(str(row["id"]), row) for row in catalog], "zip" if kind == "virion-sources" else "phar"
     if kind == "recovered-sources":
         catalog = read_json(snapshot_dir / "releases.json")
         return snapshot_dir / "recovered-sources.json", [(str(row["id"]), row) for row in catalog], "zip"
@@ -201,7 +205,9 @@ def manifest_setup(snapshot_dir: Path, kind: str):
 
 
 def asset_name(kind: str, key: str, record: dict, digest: str, extension: str) -> str:
-    if kind == "recovered-sources":
+    if kind in {"virion-sources", "rebuilt-virions"}:
+        identity = f"{kind}-{safe_slug(key)}-{safe_slug(record.get('source_commit') or 'distribution')}"
+    elif kind == "recovered-sources":
         identity = f"recovered-source-{key}-{safe_slug(record.get('name'))}-{safe_slug(record.get('version'))}"
     elif kind == "plugins":
         identity = f"plugin-{key}-{record.get('build_id', 'build')}-{safe_slug(record.get('name'))}-{safe_slug(record.get('version'))}"
@@ -271,7 +277,7 @@ def reconcile(token: str, kind: str, snapshot_id: str, rows: list[tuple[str, dic
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--snapshot", help="snapshot id, defaults to the current snapshot")
-    parser.add_argument("--kind", choices=("plugins", "virions", "sources", "recovered-sources"), required=True)
+    parser.add_argument("--kind", choices=("plugins", "virions", "sources", "recovered-sources", "virion-sources", "rebuilt-virions"), required=True)
     parser.add_argument("--limit", type=int, default=0, help="maximum new uploads, 0 means all available")
     parser.add_argument("--key-file", type=Path, help="publish only catalog keys listed one per line")
     parser.add_argument("--keep-local", action="store_true", help="verify remote assets but keep local files")
@@ -358,6 +364,19 @@ def main() -> int:
                     f"Distribution source recovered from original PHARs in snapshot {snapshot_id}.\n\n"
                     "Each ZIP preserves all packaged files byte for byte and includes RECOVERY.json with the original PHAR SHA-256, source attribution, declared license and per-file hashes. "
                     "These are PHAR distribution trees; a complete Git source snapshot is not claimed."
+                )
+            elif args.kind == "virion-sources":
+                notes = (
+                    f"Separate virion source ZIPs for snapshot {snapshot_id}.\n\n"
+                    "The catalog records each immutable source revision and whether it identifies an original Poggit build, a reconstruction, or files recovered from a PHAR. "
+                    "Git snapshots retain upstream repository files. PHAR source ZIPs include RECOVERY.json and preserve packaged files byte for byte; they are not complete Git snapshots. "
+                    "Each asset is verified by its full SHA-256 and byte size."
+                )
+            elif args.kind == "rebuilt-virions":
+                notes = (
+                    f"Virion PHAR reconstructions for snapshot {snapshot_id}.\n\n"
+                    "Built with pinned VirionTools from the source commits recorded in the catalog. These are reconstructions, not original Poggit artifact bytes. "
+                    "Missing license documents are recorded as No License; no replacement license is granted. Source ZIPs are preserved separately in the virion-sources release."
                 )
             release = ensure_release(token, tag, title, notes)
             assets = release_assets(token, release["id"])

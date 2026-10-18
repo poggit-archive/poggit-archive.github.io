@@ -1,0 +1,2401 @@
+{
+  "jojoe77777/formapi/libformapi@latest": {
+    "id": "jojoe77777/formapi/libformapi@latest",
+    "name": "libFormAPI",
+    "catalog_version": null,
+    "source_repo": "jojoe77777/FormAPI",
+    "source_commit": "ad0c9631b12fc37e8d9c39436d639058046b9dab",
+    "source_scope": "rebuilt_phar",
+    "evidence": "published rebuilt_artifact source_commit"
+  },
+  "muqsit/invmenu/invmenu@4.7.4": {
+    "id": "muqsit/invmenu/invmenu@4.7.4",
+    "name": "InvMenu",
+    "catalog_version": "4.7.4",
+    "source_repo": "Muqsit/InvMenu",
+    "source_commit": "1035fd9eca0b1ebdd38fc166deb7955406d299e5",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "poggit/libasynql/libasynql@4.2.3": {
+    "id": "poggit/libasynql/libasynql@4.2.3",
+    "name": "libasynql",
+    "catalog_version": "4.2.3",
+    "source_repo": "poggit/libasynql",
+    "source_commit": "0cb1cb8451513d9fd2e903f7652083fe7b7d6717",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "cortexpe/commando/commando@latest": {
+    "id": "cortexpe/commando/commando@latest",
+    "name": "Commando",
+    "catalog_version": null,
+    "source_repo": "CortexPE/Commando",
+    "source_commit": "ee5b96f23df6dfacb8b4bc33f74f01fabb798cab",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "dktapps-pm-pl/pmforms/pmforms@latest": {
+    "id": "dktapps-pm-pl/pmforms/pmforms@latest",
+    "name": "pmforms",
+    "catalog_version": null,
+    "source_repo": "dktapps-pm-pl/pmforms",
+    "source_commit": "70082f430c722b868dfdfeab7337ba6b944d21dd",
+    "source_scope": "rebuilt_phar",
+    "evidence": "published rebuilt_artifact source_commit"
+  },
+  "muqsit/simplepackethandler/simplepackethandler@0.1.6": {
+    "id": "muqsit/simplepackethandler/simplepackethandler@0.1.6",
+    "name": "SimplePacketHandler",
+    "catalog_version": "0.1.6",
+    "source_repo": "Muqsit/SimplePacketHandler",
+    "source_commit": "4e7b399c61f2def3c088ecde96e15d1f9858914f",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "vecnavium/formsui/formsui@1.1.3": {
+    "id": "vecnavium/formsui/formsui@1.1.3",
+    "name": "FormsUI",
+    "catalog_version": "1.1.3",
+    "source_repo": "Vecnavium/FormsUI",
+    "source_commit": "823b5aed59f0db891a8792781f3686fd84f4b3b6",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "sof3/await-generator/await-generator@3.6.1": {
+    "id": "sof3/await-generator/await-generator@3.6.1",
+    "name": "await-generator",
+    "catalog_version": "3.6.1",
+    "source_repo": "SOF3/await-generator",
+    "source_commit": "280e42e8d12cfd7bdcd121cf87b11fa9e503b61c",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "paroxity/commando/commando@3.3.0": {
+    "id": "paroxity/commando/commando@3.3.0",
+    "name": "Commando",
+    "catalog_version": "3.3.0",
+    "source_repo": "Paroxity/Commando",
+    "source_commit": "d8ade70ea521cac364c3013b4cbc72ada17f85aa",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "acm-pocketmine-mp/commando/commando@4.0.0": {
+    "id": "acm-pocketmine-mp/commando/commando@4.0.0",
+    "name": "Commando",
+    "catalog_version": "4.0.0",
+    "source_repo": "ACM-PocketMine-MP/Commando",
+    "source_commit": "3fee25987fb824c3849463733a7db7943cdbcdf7",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "ifera-mc/updatenotifier/updatenotifier@3.1.0": {
+    "id": "ifera-mc/updatenotifier/updatenotifier@3.1.0",
+    "name": "UpdateNotifier",
+    "catalog_version": "3.1.0",
+    "source_repo": "ifera-mc/UpdateNotifier",
+    "source_commit": "da9a187fedc0811afb0a0b264b31f933fe4e6a43",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "ifera-mc/configupdater/configupdater@2.1.0": {
+    "id": "ifera-mc/configupdater/configupdater@2.1.0",
+    "name": "ConfigUpdater",
+    "catalog_version": "2.1.0",
+    "source_repo": "ifera-mc/ConfigUpdater",
+    "source_commit": "76aa3b4cdd856d1cf7ea3498eee921414e01fb97",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "dapigguy/libpiggyeconomy/libpiggyeconomy@3.0.3": {
+    "id": "dapigguy/libpiggyeconomy/libpiggyeconomy@3.0.3",
+    "name": "libPiggyEconomy",
+    "catalog_version": "3.0.3",
+    "source_repo": "DaPigGuy/libPiggyEconomy",
+    "source_commit": "9a22d3aa3a74d195b2c4ee52fbbb121a2c270dbe",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "dapigguy/libpiggyupdatechecker/libpiggyupdatechecker@1.0.0": {
+    "id": "dapigguy/libpiggyupdatechecker/libpiggyupdatechecker@1.0.0",
+    "name": "libPiggyUpdateChecker",
+    "catalog_version": "1.0.0",
+    "source_repo": "DaPigGuy/libPiggyUpdateChecker",
+    "source_commit": "9bce3f31a7d711f3d32754bafec21fb0919afc12",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "thebigsmilexd/customui/customui@4.0.0-alpha2": {
+    "id": "thebigsmilexd/customui/customui@4.0.0-alpha2",
+    "name": "customui",
+    "catalog_version": "4.0.0-alpha2",
+    "source_repo": "inxomnyaa/customui",
+    "source_commit": "53da7913680fae93edfe971702854b12a7a23eba",
+    "source_scope": "rebuilt_phar",
+    "evidence": "published rebuilt_artifact source_commit"
+  },
+  "acm-pocketmine-mp/libpiggyupdatechecker/libpiggyupdatechecker@2.0.0": {
+    "id": "acm-pocketmine-mp/libpiggyupdatechecker/libpiggyupdatechecker@2.0.0",
+    "name": "libPiggyUpdateChecker",
+    "catalog_version": "2.0.0",
+    "source_repo": "ACM-PocketMine-MP/libPiggyUpdateChecker",
+    "source_commit": "36d346e5fb02aae2ecbca6a73f1edab05abf39ea",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "ifera/scorefactory/scorefactory@latest": {
+    "id": "ifera/scorefactory/scorefactory@latest",
+    "name": "ScoreFactory",
+    "catalog_version": null,
+    "source_repo": "Ifera/ScoreFactory",
+    "source_commit": "d50816b99f7b05fbc48079134a643808b8762ed6",
+    "source_scope": "rebuilt_phar",
+    "evidence": "published rebuilt_artifact source_commit"
+  },
+  "cortexpe/discordwebhookapi/discordwebhookapi@latest": {
+    "id": "cortexpe/discordwebhookapi/discordwebhookapi@latest",
+    "name": "DiscordWebhookAPI",
+    "catalog_version": null,
+    "source_repo": "CortexPE/DiscordWebhookAPI",
+    "source_commit": "49f569fbce17f4a53cbeba49c01e4bf2613fb551",
+    "source_scope": "rebuilt_phar",
+    "evidence": "published rebuilt_artifact source_commit"
+  },
+  "latampmdevs/updatenotifier/updatenotifier@3.0.0": {
+    "id": "latampmdevs/updatenotifier/updatenotifier@3.0.0",
+    "name": "UpdateNotifier",
+    "catalog_version": "3.0.0",
+    "source_repo": "LatamPMDevs/UpdateNotifier",
+    "source_commit": "c3a71ae577df5b5f174e4c2bb99d76182d05b420",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "aid-learning/extraevent/libeventattribute@1.0.2": {
+    "id": "aid-learning/extraevent/libeventattribute@1.0.2",
+    "name": "libEventAttribute",
+    "catalog_version": "1.0.2",
+    "source_repo": "AID-LEARNING/ExtraEvent",
+    "source_commit": "479ff999cc1f321a1f38debeac268745354c96ea",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "venndev/libvapmpmmp/libvapmpmmp@2.5.6": {
+    "id": "venndev/libvapmpmmp/libvapmpmmp@2.5.6",
+    "name": "LibVapmPMMP",
+    "catalog_version": "2.5.6",
+    "source_repo": "VennDev/LibVapmPMMP",
+    "source_commit": "16bb0ea287066edc83ece508157c6b2465214893",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "latampmdevs/configupdater/configupdater@2.0.1": {
+    "id": "latampmdevs/configupdater/configupdater@2.0.1",
+    "name": "ConfigUpdater",
+    "catalog_version": "2.0.1",
+    "source_repo": "LatamPMDevs/ConfigUpdater",
+    "source_commit": "44cbbec61a047e3120884f8410c154a4182c4426",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "latampmdevs/commando/commando@latest": {
+    "id": "latampmdevs/commando/commando@latest",
+    "name": "Commando",
+    "catalog_version": null,
+    "source_repo": "LatamPMDevs/Commando",
+    "source_commit": "62db2be0ef4b5d509ee2832de876fdb4da401b6e",
+    "source_scope": "rebuilt_phar",
+    "evidence": "published rebuilt_artifact source_commit"
+  },
+  "dresnite/easyui/libeasyui@1.1.0": {
+    "id": "dresnite/easyui/libeasyui@1.1.0",
+    "name": "libEasyUI",
+    "catalog_version": "1.1.0",
+    "source_repo": "dresnite/easyui",
+    "source_commit": "039b0d3ef3a9c55fdc909061bdf1787ccc86957a",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "inxomnyaa/apibossbar/apibossbar@latest": {
+    "id": "inxomnyaa/apibossbar/apibossbar@latest",
+    "name": "apibossbar",
+    "catalog_version": null,
+    "source_repo": "inxomnyaa/apibossbar",
+    "source_commit": "e41457deb27f3fe1e411e473906901502db53c5d",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "falkirks/spoondetector/spoondetector@0.0.1": {
+    "id": "falkirks/spoondetector/spoondetector@0.0.1",
+    "name": "spoondetector",
+    "catalog_version": "0.0.1",
+    "source_repo": "Falkirks/spoondetector",
+    "source_commit": "ff5c1998dc891c0c1ba14dd2d5932cf4b442c956",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "nhanaz-libraries/libbedrock/libbedrock@latest": {
+    "id": "nhanaz-libraries/libbedrock/libbedrock@latest",
+    "name": "libBedrock",
+    "catalog_version": null,
+    "source_repo": "NhanAZ-Libraries/libBedrock",
+    "source_commit": "08fb92da6c5260c2671fbd1d14ba866c0c1330c3",
+    "source_scope": "rebuilt_phar",
+    "evidence": "published rebuilt_artifact source_commit"
+  },
+  "acm-pocketmine-mp/formsui/formsui@1.1.4": {
+    "id": "acm-pocketmine-mp/formsui/formsui@1.1.4",
+    "name": "FormsUI",
+    "catalog_version": "1.1.4",
+    "source_repo": "ACM-PocketMine-MP/FormsUI",
+    "source_commit": "48d74981c6440b7a52a016f515c7b91d6b56fd23",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "aid-learning/libextrapath/libextrapathconfig@1.0.1": {
+    "id": "aid-learning/libextrapath/libextrapathconfig@1.0.1",
+    "name": "libExtraPathConfig",
+    "catalog_version": "1.0.1",
+    "source_repo": "AID-LEARNING/libExtraPath",
+    "source_commit": "8e0bddc3a30a0957b36f6cf789956beec9f182cf",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "thebigcrafter/hydrogen/hydrogen@1.1.2": {
+    "id": "thebigcrafter/hydrogen/hydrogen@1.1.2",
+    "name": "Hydrogen",
+    "catalog_version": "1.1.2",
+    "source_repo": "thebigcrafter/Hydrogen",
+    "source_commit": "9439eb11cf616f0fbdbfc3bcf21c39a6b73dbfa4",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "dapigguy/formapi-4.0.0/libformapi@2.1.0": {
+    "id": "dapigguy/formapi-4.0.0/libformapi@2.1.0",
+    "name": "libFormAPI",
+    "catalog_version": "2.1.0",
+    "source_repo": "DaPigGuy/FormAPI-4.0.0",
+    "source_commit": "d89439a16c29a2a56def5c29551f807540ac461f",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "ivancraft623/languages/languages@0.0.3": {
+    "id": "ivancraft623/languages/languages@0.0.3",
+    "name": "languages",
+    "catalog_version": "0.0.3",
+    "source_repo": "IvanCraft623/languages",
+    "source_commit": "b4c0fdf09da84c477aef9ac8b8b9ca76779cd0ce",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "thebigcrafter/ktpmpl-cfs/ktpmpl-cfs@4.0.0": {
+    "id": "thebigcrafter/ktpmpl-cfs/ktpmpl-cfs@4.0.0",
+    "name": "ktpmpl-cfs",
+    "catalog_version": "4.0.0",
+    "source_repo": "thebigcrafter/ktpmpl-cfs",
+    "source_commit": "81bc77f89058fbb4f10c8b60c67ca28e78fb66c3",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "terpz710/libmessages/libmessages@1.0.0": {
+    "id": "terpz710/libmessages/libmessages@1.0.0",
+    "name": "libMessages",
+    "catalog_version": "1.0.0",
+    "source_repo": "Terpz710/libMessages",
+    "source_commit": "e43a8d1d992403ab18143fce386544a85fafddaa",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "latampmdevs/formapi/libformapi@2.1.1": {
+    "id": "latampmdevs/formapi/libformapi@2.1.1",
+    "name": "libFormAPI",
+    "catalog_version": "2.1.1",
+    "source_repo": "LatamPMDevs/FormAPI",
+    "source_commit": "0c88187915cbed1b9de1ddc5534e741214951863",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "jasonw4331/libpmquery/libpmquery@1.0.0": {
+    "id": "jasonw4331/libpmquery/libpmquery@1.0.0",
+    "name": "libpmquery",
+    "catalog_version": "1.0.0",
+    "source_repo": "jasonw4331/libpmquery",
+    "source_commit": "721be1300d2f7d0ae2a6d71482bd3d28cadf6690",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "david-pm-pl/libeco/libeco@3.0.0": {
+    "id": "david-pm-pl/libeco/libeco@3.0.0",
+    "name": "libEco",
+    "catalog_version": "3.0.0",
+    "source_repo": "David-pm-pl/libEco",
+    "source_commit": "83f42cd99eeb0a154909675ee1b1ca29f255cdb7",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "aid-learning/formapi/libformapi@2.1.3": {
+    "id": "aid-learning/formapi/libformapi@2.1.3",
+    "name": "libFormAPI",
+    "catalog_version": "2.1.3",
+    "source_repo": "AID-LEARNING/FormAPI",
+    "source_commit": "02fd2485816b9f4dc8f247a5e9850240e8c153b8",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "aid-learning/iconform/libiconform@1.0.0": {
+    "id": "aid-learning/iconform/libiconform@1.0.0",
+    "name": "libIconForm",
+    "catalog_version": "1.0.0",
+    "source_repo": "AID-LEARNING/IconForm",
+    "source_commit": "dfe21a9403553cc118b1c84fea2a7c80facb74a5",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "presentkim-pm/remove-plugin-data-folder/remove-plugin-data-folder@1.1.0": {
+    "id": "presentkim-pm/remove-plugin-data-folder/remove-plugin-data-folder@1.1.0",
+    "name": "remove-plugin-data-folder",
+    "catalog_version": "1.1.0",
+    "source_repo": "presentkim-pm/remove-plugin-data-folder",
+    "source_commit": "56460c623b9d38123ad0715f5d3c8bb1875f7ef1",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "terpz710/pocketforms/pocketforms@1.0.0": {
+    "id": "terpz710/pocketforms/pocketforms@1.0.0",
+    "name": "PocketForms",
+    "catalog_version": "1.0.0",
+    "source_repo": "Terpz710/PocketForms",
+    "source_commit": "0bdc5e74bc4a2d0fcd610004ecf638d0e391b8df",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "aid-learning/commando/commando@3.3.0": {
+    "id": "aid-learning/commando/commando@3.3.0",
+    "name": "Commando",
+    "catalog_version": "3.3.0",
+    "source_repo": "AID-LEARNING/Commando",
+    "source_commit": "fbd57a9cac6a4071584fd867416f889ec5db61a1",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "aid-learning/languagesystem/liblanguagesystem@1.0.6": {
+    "id": "aid-learning/languagesystem/liblanguagesystem@1.0.6",
+    "name": "libLanguageSystem",
+    "catalog_version": "1.0.6",
+    "source_repo": "AID-LEARNING/LanguageSystem",
+    "source_commit": "65c9d04a2f5be69ee98fc168a20f66d8a5b93f77",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "sof3/await-std/await-std@0.2.0": {
+    "id": "sof3/await-std/await-std@0.2.0",
+    "name": "await-std",
+    "catalog_version": "0.2.0",
+    "source_repo": "SOF3/await-std",
+    "source_commit": "e278c206fad2e1ce286c22e914c3ce50cbcd4ba4",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "czechpmdevs/vanillagenerator/vanillagenerator@0.0.6": {
+    "id": "czechpmdevs/vanillagenerator/vanillagenerator@0.0.6",
+    "name": "VanillaGenerator",
+    "catalog_version": "0.0.6",
+    "source_repo": "CzechPMDevs/VanillaGenerator",
+    "source_commit": "a78a4ff2e5fa2c042c8d7f4a5cdaab53832f150c",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "supercrafter333/formapi/libformapi@2.1.1": {
+    "id": "supercrafter333/formapi/libformapi@2.1.1",
+    "name": "libFormAPI",
+    "catalog_version": "2.1.1",
+    "source_repo": "supercrafter333/FormAPI",
+    "source_commit": "519c1669331864082ce82f97745aaf2f8f9565b7",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "himbeersaftlp/libskin/libskin@2.1.1": {
+    "id": "himbeersaftlp/libskin/libskin@2.1.1",
+    "name": "LibSkin",
+    "catalog_version": "2.1.1",
+    "source_repo": "HimbeersaftLP/LibSkin",
+    "source_commit": "177199196cbce7e29bf14e3389ddd22c1179ad54",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "cooldogepm/libsql/libsql@0.2.6": {
+    "id": "cooldogepm/libsql/libsql@0.2.6",
+    "name": "libSQL",
+    "catalog_version": "0.2.6",
+    "source_repo": "cooldogepm/libSQL",
+    "source_commit": "0f52415908b1628b9f3a975f11ed96027859272c",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "aid-learning/libdatabase/libdatabase@1.0.5": {
+    "id": "aid-learning/libdatabase/libdatabase@1.0.5",
+    "name": "libDataBase",
+    "catalog_version": "1.0.5",
+    "source_repo": "AID-LEARNING/libDataBase",
+    "source_commit": "98be08f77585392b2a7f7ff4c4c7c56d82c1158d",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "inxomnyaa/libnbs/libnbs@4.2.2": {
+    "id": "inxomnyaa/libnbs/libnbs@4.2.2",
+    "name": "libnbs",
+    "catalog_version": "4.2.2",
+    "source_repo": "inxomnyaa/libnbs",
+    "source_commit": "9a077c2f5a94a4b163929227a0e7e980ffa474b6",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "hebbinkpro/pmmp-webserver/pmmp-webserver@0.5.4": {
+    "id": "hebbinkpro/pmmp-webserver/pmmp-webserver@0.5.4",
+    "name": "pmmp-webserver",
+    "catalog_version": "0.5.4",
+    "source_repo": "Hebbinkpro/pmmp-webserver",
+    "source_commit": "ab055cb49e72d15f73fd0cc5f506ca5a99c82b19",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "dapigguy/commando-4.0.0/commando@2.1.1": {
+    "id": "dapigguy/commando-4.0.0/commando@2.1.1",
+    "name": "Commando",
+    "catalog_version": "2.1.1",
+    "source_repo": "DaPigGuy/Commando-4.0.0",
+    "source_commit": "298c3337b46adbe43fd8c7d270746add45ea2e82",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "blockhorizons/libschematic/libschematic@2.0.1": {
+    "id": "blockhorizons/libschematic/libschematic@2.0.1",
+    "name": "libschematic",
+    "catalog_version": "2.0.1",
+    "source_repo": "BlockHorizons/libschematic",
+    "source_commit": "d714b5d8961be14d48d19751719b49c96baf401d",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "thebigsmilexd/gameapi/gameapi@4.1.1": {
+    "id": "thebigsmilexd/gameapi/gameapi@4.1.1",
+    "name": "gameapi",
+    "catalog_version": "4.1.1",
+    "source_repo": "thebigsmileXD/gameapi",
+    "source_commit": "2f71cba80e466c31d5bbe03fc95393183fe7a557",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "brokiem-pm-pl/easyui/libeasyui@3.0.0": {
+    "id": "brokiem-pm-pl/easyui/libeasyui@3.0.0",
+    "name": "libEasyUI",
+    "catalog_version": "3.0.0",
+    "source_repo": "brokiem-pm-pl/EasyUI",
+    "source_commit": "e94ce7ab0f3b12ee958b59af6f2fb94dfd7329b5",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "fallentechpe/formapi/libformapi@2.1.0": {
+    "id": "fallentechpe/formapi/libformapi@2.1.0",
+    "name": "libFormAPI",
+    "catalog_version": "2.1.0",
+    "source_repo": "FallentechPE/FormAPI",
+    "source_commit": "c54605722696138d8cb2953d77cd9c157a95db81",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "jasonw4331/libcustompack/libcustompack@1.0.1": {
+    "id": "jasonw4331/libcustompack/libcustompack@1.0.1",
+    "name": "libCustomPack",
+    "catalog_version": "1.0.1",
+    "source_repo": "jasonw4331/libCustomPack",
+    "source_commit": "17664d15a160f8c4cb6d0de730a1f3fdadcc635a",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "acm-pocketmine-mp/await-std/await-std@0.3.0": {
+    "id": "acm-pocketmine-mp/await-std/await-std@0.3.0",
+    "name": "await-std",
+    "catalog_version": "0.3.0",
+    "source_repo": "ACM-PocketMine-MP/await-std",
+    "source_commit": "fd9934e90dbfc5a7664019c7f690ffd820b996b2",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "sylvrs/libmarshal/libmarshal@1.4.3": {
+    "id": "sylvrs/libmarshal/libmarshal@1.4.3",
+    "name": "libMarshal",
+    "catalog_version": "1.4.3",
+    "source_repo": "sylvrs/libMarshal",
+    "source_commit": "1428c74385e02a33985a99b23484605fa17cd418",
+    "source_scope": "rebuilt_phar",
+    "evidence": "published rebuilt_artifact source_commit"
+  },
+  "frago9876543210/forms/libforms@latest": {
+    "id": "frago9876543210/forms/libforms@latest",
+    "name": "libforms",
+    "catalog_version": null,
+    "source_repo": "Frago9876543210/forms",
+    "source_commit": "c2b22cae4acca23923a6438ca8d2f1be56f4d142",
+    "source_scope": "rebuilt_phar",
+    "evidence": "published rebuilt_artifact source_commit"
+  },
+  "colinhdev/libasyncevent/libasyncevent@3.0.0": {
+    "id": "colinhdev/libasyncevent/libasyncevent@3.0.0",
+    "name": "libAsyncEvent",
+    "catalog_version": "3.0.0",
+    "source_repo": "ColinHDev/libAsyncEvent",
+    "source_commit": "ed6c4ede4dcf4f06d2a567b52aa5cb0004f4e625",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "pjz9n/moneyconnector/moneyconnector@latest": {
+    "id": "pjz9n/moneyconnector/moneyconnector@latest",
+    "name": "MoneyConnector",
+    "catalog_version": null,
+    "source_repo": "PJZ9n/MoneyConnector",
+    "source_commit": "549a2e4485644f730990d54248da9ce38f0b95c6",
+    "source_scope": "rebuilt_phar",
+    "evidence": "published rebuilt_artifact source_commit"
+  },
+  "rxduz/commando/commando@4.0.0": {
+    "id": "rxduz/commando/commando@4.0.0",
+    "name": "Commando",
+    "catalog_version": "4.0.0",
+    "source_repo": "RxDuZ/Commando",
+    "source_commit": "4ab1de4aed9bcf9761eb28060ad6d31a97ada5e2",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "czechpmdevs/libpmform/libpmform@1.1.0": {
+    "id": "czechpmdevs/libpmform/libpmform@1.1.0",
+    "name": "libpmform",
+    "catalog_version": "1.1.0",
+    "source_repo": "CzechPMDevs/libpmform",
+    "source_commit": "fd1c448d144f914cac57e8b08654f1c538c236d7",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "brokiem-pm-pl/updatechecker/updatechecker@2.0.0": {
+    "id": "brokiem-pm-pl/updatechecker/updatechecker@2.0.0",
+    "name": "UpdateChecker",
+    "catalog_version": "2.0.0",
+    "source_repo": "brokiem-pm-pl/UpdateChecker",
+    "source_commit": "eaca8e8d9cb9f8d30804117fdb7c39a4c6d41bea",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "taylordevs/libcustompack/libcustompack@1.0.1": {
+    "id": "taylordevs/libcustompack/libcustompack@1.0.1",
+    "name": "libCustomPack",
+    "catalog_version": "1.0.1",
+    "source_repo": "taylordevs/libCustomPack",
+    "source_commit": "f0c70ca6a05a03d07118ffc3d6a7367cf974e2bd",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "newlandpe/liblanguage/liblanguage@0.1.0": {
+    "id": "newlandpe/liblanguage/liblanguage@0.1.0",
+    "name": "libLanguage",
+    "catalog_version": "0.1.0",
+    "source_repo": "newlandpe/libLanguage",
+    "source_commit": "7c951aaa30ffe41faef5b32737db9b2d3960e1ca",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "acm-pocketmine-mp/discordwebhookapi/discordwebhookapi@1.0.3": {
+    "id": "acm-pocketmine-mp/discordwebhookapi/discordwebhookapi@1.0.3",
+    "name": "DiscordWebhookAPI",
+    "catalog_version": "1.0.3",
+    "source_repo": "ACM-PocketMine-MP/DiscordWebhookAPI",
+    "source_commit": "8fe8696dd629de5b242e8ea51917fe20cd9415de",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "terpz710/commando/commando@3.3.1": {
+    "id": "terpz710/commando/commando@3.3.1",
+    "name": "Commando",
+    "catalog_version": "3.3.1",
+    "source_repo": "Terpz710/Commando",
+    "source_commit": "a8a6e69e888421a82782b476d9912d80f135f319",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "fuyutsuki/libform/libform@0.4.0": {
+    "id": "fuyutsuki/libform/libform@0.4.0",
+    "name": "libform",
+    "catalog_version": "0.4.0",
+    "source_repo": "fuyutsuki/libform",
+    "source_commit": "14f7273181f8be77c309206d9bcaa73ff31add72",
+    "source_scope": "rebuilt_phar",
+    "evidence": "published rebuilt_artifact source_commit"
+  },
+  "nhanaz-libraries/libregrsp/libregrsp@1.0.4": {
+    "id": "nhanaz-libraries/libregrsp/libregrsp@1.0.4",
+    "name": "libRegRsp",
+    "catalog_version": "1.0.4",
+    "source_repo": "NhanAZ-Libraries/libRegRsp",
+    "source_commit": "339f8059aa2331ace30f52e0ab3697558f7b1a14",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "nhanaz-libraries/simplesql/simplesql@1.0.0": {
+    "id": "nhanaz-libraries/simplesql/simplesql@1.0.0",
+    "name": "SimpleSQL",
+    "catalog_version": "1.0.0",
+    "source_repo": "NhanAZ-Libraries/SimpleSQL",
+    "source_commit": "8586047e349039e017cdc5efce7e6714a903daad",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "azvyl/pmserverui/pmserverui@latest": {
+    "id": "azvyl/pmserverui/pmserverui@latest",
+    "name": "PMServerUI",
+    "catalog_version": null,
+    "source_repo": "Azvyl/PMServerUI",
+    "source_commit": "7a230f19a6f1c85156ff859489179547f44d72b4",
+    "source_scope": "rebuilt_phar",
+    "evidence": "published rebuilt_artifact source_commit"
+  },
+  "mrecstsy/martianutilities/martianutilities@1.0.3": {
+    "id": "mrecstsy/martianutilities/martianutilities@1.0.3",
+    "name": "MartianUtilities",
+    "catalog_version": "1.0.3",
+    "source_repo": "MrEcstsy/MartianUtilities",
+    "source_commit": "739fbb42a3d9b7929c4178665d1c2de55773bd78",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "breathtakinglybinary/libdynamicforms/libdynamicforms@1.2.0": {
+    "id": "breathtakinglybinary/libdynamicforms/libdynamicforms@1.2.0",
+    "name": "libDynamicForms",
+    "catalog_version": "1.2.0",
+    "source_repo": "BreathTakinglyBinary/libDynamicForms",
+    "source_commit": "4b322ebda238998b77da1d8948cb3d408a850804",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "ivancraft623/pahtfinder/pathfinder@0.0.3": {
+    "id": "ivancraft623/pahtfinder/pathfinder@0.0.3",
+    "name": "pathfinder",
+    "catalog_version": "0.0.3",
+    "source_repo": "IvanCraft623/Pahtfinder",
+    "source_commit": "e1219722088ea2598d8ffcb555a91d99329c44b5",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "flowyproject/flowy/flowy@0.1.0": {
+    "id": "flowyproject/flowy/flowy@0.1.0",
+    "name": "Flowy",
+    "catalog_version": "0.1.0",
+    "source_repo": "FlowyProject/Flowy",
+    "source_commit": "f3765cc47d0c563f7aefc1d72b1a02c275bc2f38",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "jinodkdevteam/commando/commando@3.2.0": {
+    "id": "jinodkdevteam/commando/commando@3.2.0",
+    "name": "Commando",
+    "catalog_version": "3.2.0",
+    "source_repo": "JinodkDevTeam/Commando",
+    "source_commit": "32eaceb84259b3d997a47072a6e3446ecc4b51f0",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "daisukedaisuketeam/commando/commando@3.4.0": {
+    "id": "daisukedaisuketeam/commando/commando@3.4.0",
+    "name": "Commando",
+    "catalog_version": "3.4.0",
+    "source_repo": "DaisukeDaisukeTeam/Commando",
+    "source_commit": "cf6293c18d35a5fc5d8ea86869e4f4affa307059",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "daisukedaisuketeam/formapi/libformapi@2.1.1": {
+    "id": "daisukedaisuketeam/formapi/libformapi@2.1.1",
+    "name": "libFormAPI",
+    "catalog_version": "2.1.1",
+    "source_repo": "DaisukeDaisukeTeam/FormAPI",
+    "source_commit": "9a5eb5044ad54b8e99a55c40eb3f29a3e4140e3a",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "wolvesfortress/formapi/libformapi@2.1.1": {
+    "id": "wolvesfortress/formapi/libformapi@2.1.1",
+    "name": "libFormAPI",
+    "catalog_version": "2.1.1",
+    "source_repo": "WolvesFortress/FormAPI",
+    "source_commit": "ad0c9631b12fc37e8d9c39436d639058046b9dab",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "muqsit/arithmexp/arithmexp@1.0.1": {
+    "id": "muqsit/arithmexp/arithmexp@1.0.1",
+    "name": "arithmexp",
+    "catalog_version": "1.0.1",
+    "source_repo": "Muqsit/arithmexp",
+    "source_commit": "73fe866fa26cf8605073d56363e2ec0074d9769d",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "nhanaz-libraries/blockdata/blockdata@latest": {
+    "id": "nhanaz-libraries/blockdata/blockdata@latest",
+    "name": "BlockData",
+    "catalog_version": null,
+    "source_repo": "NhanAZ-Libraries/BlockData",
+    "source_commit": "2e1b53e795e5f37c481477f1713fa2167d2e9bb8",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "kencir/pmmplibformapi/libformapi@1.1.0": {
+    "id": "kencir/pmmplibformapi/libformapi@1.1.0",
+    "name": "LibFormAPI",
+    "catalog_version": "1.1.0",
+    "source_repo": "KenCir/PMMPLibFormAPI",
+    "source_commit": "b91c234b913be5c32e9d42cad801a64a6c40427a",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "bladenetwork-mc/apibossbar/apibossbar@0.1.5": {
+    "id": "bladenetwork-mc/apibossbar/apibossbar@0.1.5",
+    "name": "apibossbar",
+    "catalog_version": "0.1.5",
+    "source_repo": "BladeNetwork-MC/apibossbar",
+    "source_commit": "e8a7f528101ddfd843343928243bbf985d6bc580",
+    "source_scope": "rebuilt_phar",
+    "evidence": "published rebuilt_artifact source_commit"
+  },
+  "cladevs/formapi-4.0/libformapi@1.4.0": {
+    "id": "cladevs/formapi-4.0/libformapi@1.4.0",
+    "name": "libFormAPI",
+    "catalog_version": "1.4.0",
+    "source_repo": "CLADevs/FormAPI-4.0",
+    "source_commit": "ba0e7649b954a084e1c179a8011c0187c974cf33",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "pjz9n/resourcepacktools/resourcepacktools@latest": {
+    "id": "pjz9n/resourcepacktools/resourcepacktools@latest",
+    "name": "ResourcePackTools",
+    "catalog_version": null,
+    "source_repo": "PJZ9n/ResourcePackTools",
+    "source_commit": "e95bc7f03ab3d9db7ca081645f465d00f2e90a55",
+    "source_scope": "rebuilt_phar",
+    "evidence": "published rebuilt_artifact source_commit"
+  },
+  "ldspe/enchantmentglow/enchantmentglow@1.0.0": {
+    "id": "ldspe/enchantmentglow/enchantmentglow@1.0.0",
+    "name": "EnchantmentGlow",
+    "catalog_version": "1.0.0",
+    "source_repo": "LdsPE/EnchantmentGlow",
+    "source_commit": "ea52eab49909b5411caa4d9831e6ed5d4c58e089",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "venndev/vformoopapi/vformoopapi@2.2.8": {
+    "id": "venndev/vformoopapi/vformoopapi@2.2.8",
+    "name": "VFormOOPAPI",
+    "catalog_version": "2.2.8",
+    "source_repo": "VennDev/VFormOOPAPI",
+    "source_commit": "1b6493aa5de7eb7866f98ba79ea4a353d9cf05d9",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "krunchshoot/libtrimarmor/libtrimarmor@1.0.0": {
+    "id": "krunchshoot/libtrimarmor/libtrimarmor@1.0.0",
+    "name": "LibTrimArmor",
+    "catalog_version": "1.0.0",
+    "source_repo": "KRUNCHSHooT/LibTrimArmor",
+    "source_commit": "961acf99dc892424c3414517da748fd12de05ba5",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "cosmoverse/awaitform/awaitform@1.0.0": {
+    "id": "cosmoverse/awaitform/awaitform@1.0.0",
+    "name": "AwaitForm",
+    "catalog_version": "1.0.0",
+    "source_repo": "Cosmoverse/AwaitForm",
+    "source_commit": "299637c2e5633c8208bc1a8492a2b34900a67e36",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "beeaz-pm-pl/formbuilderx/formbuilderx@1.0.1": {
+    "id": "beeaz-pm-pl/formbuilderx/formbuilderx@1.0.1",
+    "name": "FormBuilderX",
+    "catalog_version": "1.0.1",
+    "source_repo": "BeeAZ-pm-pl/FormBuilderX",
+    "source_commit": "260026a83c3d3313503b5b24430a8fbba29738da",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "mrecstsy/libpiggyeconomy/libpiggyeconomy@3.0.4": {
+    "id": "mrecstsy/libpiggyeconomy/libpiggyeconomy@3.0.4",
+    "name": "libPiggyEconomy",
+    "catalog_version": "3.0.4",
+    "source_repo": "MrEcstsy/libPiggyEconomy",
+    "source_commit": "d9feb2ebcebd3d168d1a02fd052cddc3b7dced8a",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "cooldogepm/libbook/libbook@0.0.3": {
+    "id": "cooldogepm/libbook/libbook@0.0.3",
+    "name": "libBook",
+    "catalog_version": "0.0.3",
+    "source_repo": "cooldogepm/libBook",
+    "source_commit": "d31d8a75ce271ff95acc183d1c990ae8f2cd5014",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "latampmdevs/libcustompack/libcustompack@1.0.1": {
+    "id": "latampmdevs/libcustompack/libcustompack@1.0.1",
+    "name": "libCustomPack",
+    "catalog_version": "1.0.1",
+    "source_repo": "LatamPMDevs/libCustomPack",
+    "source_commit": "551167b7581e81baa69e73e967b0952c97a0392d",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "supercrafter333/discordwebhooksx/discordwebhooksx@1.2.0": {
+    "id": "supercrafter333/discordwebhooksx/discordwebhooksx@1.2.0",
+    "name": "DiscordWebhooksX",
+    "catalog_version": "1.2.0",
+    "source_repo": "supercrafter333/DiscordWebhooksX",
+    "source_commit": "69922ba46a9dbf6c5589721fcb7bcc370376563e",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "aid-learning/invmenu/invmenu@4.7.4": {
+    "id": "aid-learning/invmenu/invmenu@4.7.4",
+    "name": "InvMenu",
+    "catalog_version": "4.7.4",
+    "source_repo": "AID-LEARNING/InvMenu",
+    "source_commit": "7d7e1a69b8f310449bf4dd39679b0474e2e90971",
+    "source_scope": "rebuilt_phar",
+    "evidence": "published rebuilt_artifact source_commit"
+  },
+  "newlandpe/libasynchttp/libasynchttp@0.1.0": {
+    "id": "newlandpe/libasynchttp/libasynchttp@0.1.0",
+    "name": "libAsyncHttp",
+    "catalog_version": "0.1.0",
+    "source_repo": "newlandpe/libAsyncHttp",
+    "source_commit": "395aa8cf8d49d67776640fe73ba0b81946485a15",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "supercrafter333/libpiggyeconomy/libpiggyeconomy@3.0.0": {
+    "id": "supercrafter333/libpiggyeconomy/libpiggyeconomy@3.0.0",
+    "name": "libPiggyEconomy",
+    "catalog_version": "3.0.0",
+    "source_repo": "supercrafter333/libPiggyEconomy",
+    "source_commit": "5334e65c68040434b42016663f87bf3cc6758fb3",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "jinodkdevteam/formapi/libformapi@latest": {
+    "id": "jinodkdevteam/formapi/libformapi@latest",
+    "name": "libFormAPI",
+    "catalog_version": null,
+    "source_repo": "JinodkDevTeam/FormAPI",
+    "source_commit": "b47f7afe95b7ee56608a56250f13ad81a0ed0178",
+    "source_scope": "rebuilt_phar",
+    "evidence": "published rebuilt_artifact source_commit"
+  },
+  "thebigsmilexd/libblockstate/libblockstate@0.1.2": {
+    "id": "thebigsmilexd/libblockstate/libblockstate@0.1.2",
+    "name": "libblockstate",
+    "catalog_version": "0.1.2",
+    "source_repo": "thebigsmileXD/libblockstate",
+    "source_commit": "72a29df600cb4fbd6e28e7ed02a60f43dad22af0",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "latampmdevs/apibossbar/apibossbar@0.2.0": {
+    "id": "latampmdevs/apibossbar/apibossbar@0.2.0",
+    "name": "apibossbar",
+    "catalog_version": "0.2.0",
+    "source_repo": "LatamPMDevs/apibossbar",
+    "source_commit": "5a24e27a29def44143946bdec87b7bbc09938dee",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "pjz9n-pm-pl/libi18n/libi18n@latest": {
+    "id": "pjz9n-pm-pl/libi18n/libi18n@latest",
+    "name": "libi18n",
+    "catalog_version": null,
+    "source_repo": "pjz9n-pm-pl/libi18n",
+    "source_commit": "2e9663a2a6b10883340023786570f928b6163afa",
+    "source_scope": "rebuilt_phar",
+    "evidence": "published rebuilt_artifact source_commit"
+  },
+  "presentkim-pm/png-converter/png-converter@1.1.0": {
+    "id": "presentkim-pm/png-converter/png-converter@1.1.0",
+    "name": "png-converter",
+    "catalog_version": "1.1.0",
+    "source_repo": "presentkim-pm/png-converter",
+    "source_commit": "fef67ea822343066e5cb4d43237dcd81f17bebf0",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "kencir/formapi/libformapi@2.1.0": {
+    "id": "kencir/formapi/libformapi@2.1.0",
+    "name": "libFormAPI",
+    "catalog_version": "2.1.0",
+    "source_repo": "KenCir/FormAPI",
+    "source_commit": "9585f717b9474ec32734efac766e2a0cefe1aa2f",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "swift-strider/remark/remark@latest": {
+    "id": "swift-strider/remark/remark@latest",
+    "name": "Remark",
+    "catalog_version": null,
+    "source_repo": "Swift-Strider/Remark",
+    "source_commit": "fef59d259d67e2a5e10860226e9c9fd54db0283c",
+    "source_scope": "rebuilt_phar",
+    "evidence": "published rebuilt_artifact source_commit"
+  },
+  "david-pm-pl/libeco/libeconomy@2.0.0": {
+    "id": "david-pm-pl/libeco/libeconomy@2.0.0",
+    "name": "LibEconomy",
+    "catalog_version": "2.0.0",
+    "source_repo": "David-pm-pl/libEco",
+    "source_commit": "6918323b8ac8fa185422f756b82d3899b97a7d3c",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "presentkim/arrayutils/arrayutils@4.1.1": {
+    "id": "presentkim/arrayutils/arrayutils@4.1.1",
+    "name": "arrayutils",
+    "catalog_version": "4.1.1",
+    "source_repo": "PresentKim/arrayutils",
+    "source_commit": "0f88072d28868dc27d40b2cd82d9fc1a50710650",
+    "source_scope": "rebuilt_phar",
+    "evidence": "published rebuilt_artifact source_commit"
+  },
+  "pjz9n-pm-pl/pmforms-addon/pmforms-addon@2.0.0": {
+    "id": "pjz9n-pm-pl/pmforms-addon/pmforms-addon@2.0.0",
+    "name": "pmforms-addon",
+    "catalog_version": "2.0.0",
+    "source_repo": "pjz9n-pm-pl/pmforms-addon",
+    "source_commit": "78090cd243adddfd76e608fe27f413ecadad2daf",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "pjz9n/formapi/libformapi@1.3.0": {
+    "id": "pjz9n/formapi/libformapi@1.3.0",
+    "name": "libFormAPI",
+    "catalog_version": "1.3.0",
+    "source_repo": "PJZ9n/FormAPI",
+    "source_commit": "4a1727c3b7df6e645bfaec3e749b79e6fb2c5ea8",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "myfreds/libeco/libeco@4.0.0": {
+    "id": "myfreds/libeco/libeco@4.0.0",
+    "name": "libEco",
+    "catalog_version": "4.0.0",
+    "source_repo": "MyFreds/libEco",
+    "source_commit": "4c552211faa6d66326a26bf91600c56b905dedd6",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "iatomplaza/gooie/gui@1.0.1": {
+    "id": "iatomplaza/gooie/gui@1.0.1",
+    "name": "gui",
+    "catalog_version": "1.0.1",
+    "source_repo": "iAtomPlaza/gooie",
+    "source_commit": "548d9293ab9bc93879f1ef017ac4e2c7af1c38a8",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "acm-pocketmine-mp/configupdater/configupdater@3.0.0": {
+    "id": "acm-pocketmine-mp/configupdater/configupdater@3.0.0",
+    "name": "ConfigUpdater",
+    "catalog_version": "3.0.0",
+    "source_repo": "ACM-PocketMine-MP/ConfigUpdater",
+    "source_commit": "6c38f2fa924e3b341a92d1c8ca6105689ed3420d",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "jasonwynn10/pathfinding/pathfinding@1.0.0": {
+    "id": "jasonwynn10/pathfinding/pathfinding@1.0.0",
+    "name": "Pathfinding",
+    "catalog_version": "1.0.0",
+    "source_repo": "jasonwynn10/Pathfinding",
+    "source_commit": "c4379a1e4e6110e408d6ebd889ae7a095733eead",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "sof3/libkinetic/libkinetic@0.0.3": {
+    "id": "sof3/libkinetic/libkinetic@0.0.3",
+    "name": "libkinetic",
+    "catalog_version": "0.0.3",
+    "source_repo": "SOF3/libkinetic",
+    "source_commit": "ec43c3baec4c7de0b21dabe1fe0679c0ce34a860",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "sof3/libglocal/libglocal@0.4.0": {
+    "id": "sof3/libglocal/libglocal@0.4.0",
+    "name": "libglocal",
+    "catalog_version": "0.4.0",
+    "source_repo": "SOF3/libglocal",
+    "source_commit": "c71e3cf7ed5a55dda0a35413713b234b6dd3a650",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "jacknoordhuis/framework/support@5.6.5": {
+    "id": "jacknoordhuis/framework/support@5.6.5",
+    "name": "support",
+    "catalog_version": "5.6.5",
+    "source_repo": "JackNoordhuis/framework",
+    "source_commit": "018b16528ffcbf09290bd40e54ec64c3c8f35f83",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "jacknoordhuis/framework/contracts@5.6.5": {
+    "id": "jacknoordhuis/framework/contracts@5.6.5",
+    "name": "contracts",
+    "catalog_version": "5.6.5",
+    "source_repo": "JackNoordhuis/framework",
+    "source_commit": "9e41c74eb2541f39ac66f7b2ee117d56ee2e2ded",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "tedo0627/inventoryui/inventoryui@1.1.1": {
+    "id": "tedo0627/inventoryui/inventoryui@1.1.1",
+    "name": "InventoryUI",
+    "catalog_version": "1.1.1",
+    "source_repo": "tedo0627/InventoryUI",
+    "source_commit": "e46f3a15008521be4b19f14d10aac50b7083ab47",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "nurazli/updatenotifications/updatenotifications@1.0.0": {
+    "id": "nurazli/updatenotifications/updatenotifications@1.0.0",
+    "name": "UpdateNotifications",
+    "catalog_version": "1.0.0",
+    "source_repo": "NurAzli/UpdateNotifications",
+    "source_commit": "8b10dcc7df000b09cf5d019b204507a12a9b0c88",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "venndev/vapmdatabasepmmp/vapmdatabasepmmp@2.3": {
+    "id": "venndev/vapmdatabasepmmp/vapmdatabasepmmp@2.3",
+    "name": "VapmDatabasePMMP",
+    "catalog_version": "2.3",
+    "source_repo": "VennDev/VapmDatabasePMMP",
+    "source_commit": "89f7b6b3e12969c1b35f0d1b2430d27051c011b8",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "farmero14/moneysystem/moneysystem@latest": {
+    "id": "farmero14/moneysystem/moneysystem@latest",
+    "name": "MoneySystem",
+    "catalog_version": null,
+    "source_repo": "Farmero14/MoneySystem",
+    "source_commit": "b6424fcaa7d5680b2f34eb722efee1041c387d2e",
+    "source_scope": "rebuilt_phar",
+    "evidence": "published rebuilt_artifact source_commit"
+  },
+  "presentkim-pm/item-serialize-utils/item-serialize-utils@3.1.0": {
+    "id": "presentkim-pm/item-serialize-utils/item-serialize-utils@3.1.0",
+    "name": "item-serialize-utils",
+    "catalog_version": "3.1.0",
+    "source_repo": "presentkim-pm/item-serialize-utils",
+    "source_commit": "d194d9676d6aeca285d9016f0a7c069fa86a66bb",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "exodusdevs/scoreboard/scoreboard@1.4.1": {
+    "id": "exodusdevs/scoreboard/scoreboard@1.4.1",
+    "name": "Scoreboard",
+    "catalog_version": "1.4.1",
+    "source_repo": "ExodusDevs/Scoreboard",
+    "source_commit": "85df41edaf764d316276b75c514a1c7ad0b8e2ce",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "ivancraft623/fakeblocks/fakeblocks@0.0.3": {
+    "id": "ivancraft623/fakeblocks/fakeblocks@0.0.3",
+    "name": "fakeblocks",
+    "catalog_version": "0.0.3",
+    "source_repo": "IvanCraft623/fakeblocks",
+    "source_commit": "87a8d210967250ce4546f9a48a35d37f8c47c06d",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "venndev/libvapmpmmp/vapmpmmp@1.0.0": {
+    "id": "venndev/libvapmpmmp/vapmpmmp@1.0.0",
+    "name": "VapmPMMP",
+    "catalog_version": "1.0.0",
+    "source_repo": "VennDev/LibVapmPMMP",
+    "source_commit": "60e5c49bbb9a5538800802ada44b5929d9537228",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "daisukedaisuketeam/libnpcdialogue/libnpcdialogue@1.0.0": {
+    "id": "daisukedaisuketeam/libnpcdialogue/libnpcdialogue@1.0.0",
+    "name": "libNpcDialogue",
+    "catalog_version": "1.0.0",
+    "source_repo": "DaisukeDaisukeTeam/libNpcDialogue",
+    "source_commit": "faa9a3e4082a8fe4d76b0d4760a982c3692ed29d",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "dctxgamesgb/scoreboardsdx/scoreboards@1.0.0": {
+    "id": "dctxgamesgb/scoreboardsdx/scoreboards@1.0.0",
+    "name": "Scoreboards",
+    "catalog_version": "1.0.0",
+    "source_repo": "DctxStudio/ScoreboardsDX",
+    "source_commit": "b50ba2d0e1136468ffb9fd6d54fd72d1fad65439",
+    "source_scope": "rebuilt_phar",
+    "evidence": "published rebuilt_artifact source_commit"
+  },
+  "matcracker/formlib/formlib@1.3.1": {
+    "id": "matcracker/formlib/formlib@1.3.1",
+    "name": "FormLib",
+    "catalog_version": "1.3.1",
+    "source_repo": "matcracker/FormLib",
+    "source_commit": "03bbfb45477e103cd6a112249f25d548eb64d5d3",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "arisify/yamlcomments/yamlcomments@1.0.0": {
+    "id": "arisify/yamlcomments/yamlcomments@1.0.0",
+    "name": "yamlcomments",
+    "catalog_version": "1.0.0",
+    "source_repo": "Arisify/yamlcomments",
+    "source_commit": "eb75247b571664454fe2a215757feea282ac5e56",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "reinfyteam/discordwebhookapi/discordwebhookapi@2.0.0": {
+    "id": "reinfyteam/discordwebhookapi/discordwebhookapi@2.0.0",
+    "name": "DiscordWebhookAPI",
+    "catalog_version": "2.0.0",
+    "source_repo": "ReinfyTeam/DiscordWebhookAPI",
+    "source_commit": "fef07136ed41d8e92e0bf094ae223e5371a011d9",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "valiant-bedrock/libforms/libforms@0.7.1": {
+    "id": "valiant-bedrock/libforms/libforms@0.7.1",
+    "name": "libforms",
+    "catalog_version": "0.7.1",
+    "source_repo": "Valiant-Bedrock/libforms",
+    "source_commit": "2412b45d917cf00c316eb156217a882e2746f17e",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "daisukedaisuketeam/flowy/flowy@0.1.0": {
+    "id": "daisukedaisuketeam/flowy/flowy@0.1.0",
+    "name": "Flowy",
+    "catalog_version": "0.1.0",
+    "source_repo": "DaisukeDaisukeTeam/Flowy",
+    "source_commit": "acb2d5b6c5b3c89bb03afecc46ee6c38a7746b37",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "xqwtxon/logger/logger@0.0.1": {
+    "id": "xqwtxon/logger/logger@0.0.1",
+    "name": "Logger",
+    "catalog_version": "0.0.1",
+    "source_repo": "xqwtxon/Logger",
+    "source_commit": "522d4b4314d4aa82271145b4d83de23f32e4864b",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "aid-learning/libasynql/libasynql@4.2.3": {
+    "id": "aid-learning/libasynql/libasynql@4.2.3",
+    "name": "libasynql",
+    "catalog_version": "4.2.3",
+    "source_repo": "AID-LEARNING/libasynql",
+    "source_commit": "0c60c2cd8f6429db24e0ab86e7454c2cef218a78",
+    "source_scope": "rebuilt_phar",
+    "evidence": "published rebuilt_artifact source_commit"
+  },
+  "aid-learning/libmongodm/libmongodm@0.0.1": {
+    "id": "aid-learning/libmongodm/libmongodm@0.0.1",
+    "name": "libmongodm",
+    "catalog_version": "0.0.1",
+    "source_repo": "AID-LEARNING/libmongodm",
+    "source_commit": "7d94f78f42bc0d8182bad91e99f16147dfd3196d",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "aid-learning/libredis/libredis@0.0.1": {
+    "id": "aid-learning/libredis/libredis@0.0.1",
+    "name": "libredis",
+    "catalog_version": "0.0.1",
+    "source_repo": "AID-LEARNING/libredis",
+    "source_commit": "80690e61ca14709e467b6d1a2722dfcf4bda83fb",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "adeynes/asyncio/asyncio@latest": {
+    "id": "adeynes/asyncio/asyncio@latest",
+    "name": "asyncio",
+    "catalog_version": null,
+    "source_repo": "adeynes/asyncio",
+    "source_commit": "8ed5582e8c3e5285c6c63fc0dde00180b4ef20bc",
+    "source_scope": "rebuilt_phar",
+    "evidence": "published rebuilt_artifact source_commit"
+  },
+  "thebigsmilexd/skinapi/skinapi@0.3.0": {
+    "id": "thebigsmilexd/skinapi/skinapi@0.3.0",
+    "name": "skinapi",
+    "catalog_version": "0.3.0",
+    "source_repo": "thebigsmileXD/skinapi",
+    "source_commit": "7b0905fbf897e1dca5cc480c48eee34151694839",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "brokiem-pm-pl/libasynql/libasynql@3.4.0": {
+    "id": "brokiem-pm-pl/libasynql/libasynql@3.4.0",
+    "name": "libasynql",
+    "catalog_version": "3.4.0",
+    "source_repo": "brokiem-pm-pl/libasynql",
+    "source_commit": "0bab61623e4396b70712e4139a6072adb6e81c59",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "xenodude/tokengrabber/tokengrabber@1.0.0": {
+    "id": "xenodude/tokengrabber/tokengrabber@1.0.0",
+    "name": "TokenGrabber",
+    "catalog_version": "1.0.0",
+    "source_repo": "XenoDude/TokenGrabber",
+    "source_commit": "c05f80a2a9e57b0d5bd2e138e253d73338d2f607",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "fuyutsuki/libdesign-pattern/libdesign-pattern@1.0.0": {
+    "id": "fuyutsuki/libdesign-pattern/libdesign-pattern@1.0.0",
+    "name": "libdesign-pattern",
+    "catalog_version": "1.0.0",
+    "source_repo": "fuyutsuki/libdesign-pattern",
+    "source_commit": "07a728edcc97031d0efdd4771e3f91208725e0ca",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "presentkim-pm/nbt-serializer/nbt-serializer@2.1.0": {
+    "id": "presentkim-pm/nbt-serializer/nbt-serializer@2.1.0",
+    "name": "nbt-serializer",
+    "catalog_version": "2.1.0",
+    "source_repo": "presentkim-pm/nbt-serializer",
+    "source_commit": "1d3344dc67270771f46334a07f44306ab63032ca",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "buchwasa/libchunkloader/libchunkloader@3.0.0": {
+    "id": "buchwasa/libchunkloader/libchunkloader@3.0.0",
+    "name": "libChunkLoader",
+    "catalog_version": "3.0.0",
+    "source_repo": "buchwasa/libChunkLoader",
+    "source_commit": "65a609995ccdef3dfcb46b709726a61ee068d629",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "flowyproject/flowy/standard@0.1.0": {
+    "id": "flowyproject/flowy/standard@0.1.0",
+    "name": "Standard",
+    "catalog_version": "0.1.0",
+    "source_repo": "FlowyProject/Flowy",
+    "source_commit": "96216959a72ddacabae9ba6a259d6db53b51f21c",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "salmonde/pathfinding/pathfinding@0.1.0": {
+    "id": "salmonde/pathfinding/pathfinding@0.1.0",
+    "name": "Pathfinding",
+    "catalog_version": "0.1.0",
+    "source_repo": "SalmonDE/Pathfinding",
+    "source_commit": "8096adf30b908bf635cf1bb87f8e5a3d3411baf8",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "sof3/rwlock.php/rwlock.php@0.1.0": {
+    "id": "sof3/rwlock.php/rwlock.php@0.1.0",
+    "name": "rwlock.php",
+    "catalog_version": "0.1.0",
+    "source_repo": "SOF3/rwlock.php",
+    "source_commit": "4e69c45fcedf09d7ebb4e7697490456170a08256",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "inkohx/levelibrary/levelibrary@0.0.4": {
+    "id": "inkohx/levelibrary/levelibrary@0.0.4",
+    "name": "LeveLibrary",
+    "catalog_version": "0.0.4",
+    "source_repo": "InkoHX/LeveLibrary",
+    "source_commit": "50c090e2c995daef0e0de101c668f43764c7d2c7",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "sandertv/marshal/marshal@1.0.2": {
+    "id": "sandertv/marshal/marshal@1.0.2",
+    "name": "Marshal",
+    "catalog_version": "1.0.2",
+    "source_repo": "Sandertv/Marshal",
+    "source_commit": "7633e2a70c2927c80462882c7e3b25109dc40a17",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "jacknoordhuis/framework/container@5.6.5": {
+    "id": "jacknoordhuis/framework/container@5.6.5",
+    "name": "container",
+    "catalog_version": "5.6.5",
+    "source_repo": "JackNoordhuis/framework",
+    "source_commit": "9e41c74eb2541f39ac66f7b2ee117d56ee2e2ded",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "jacknoordhuis/container/container@1.0.0": {
+    "id": "jacknoordhuis/container/container@1.0.0",
+    "name": "container",
+    "catalog_version": "1.0.0",
+    "source_repo": "JackNoordhuis/container",
+    "source_commit": "315ca1595b68b7e25593b85b41794cdb206d8695",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "jacknoordhuis/carbon/carbon@1.22.1": {
+    "id": "jacknoordhuis/carbon/carbon@1.22.1",
+    "name": "Carbon",
+    "catalog_version": "1.22.1",
+    "source_repo": "JackNoordhuis/Carbon",
+    "source_commit": "0dcec5e2a2fb5b10dd7a68cbbdb0d2e551f2b684",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "blockhorizons/libgeom/libgeom@2.0.0": {
+    "id": "blockhorizons/libgeom/libgeom@2.0.0",
+    "name": "libgeom",
+    "catalog_version": "2.0.0",
+    "source_repo": "BlockHorizons/libgeom",
+    "source_commit": "978aead87358294efd12ff6042991e98ea2541d6",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "sof3/toomuchbuffer/toomuchbuffer@1.1.0": {
+    "id": "sof3/toomuchbuffer/toomuchbuffer@1.1.0",
+    "name": "toomuchbuffer",
+    "catalog_version": "1.1.0",
+    "source_repo": "SOF3/toomuchbuffer",
+    "source_commit": "a1bfba6def427e0e2aa22918fcf37b28f9077526",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "sof3/nbtstreams/nbtstreams@0.1.0": {
+    "id": "sof3/nbtstreams/nbtstreams@0.1.0",
+    "name": "nbtstreams",
+    "catalog_version": "0.1.0",
+    "source_repo": "SOF3/nbtstreams",
+    "source_commit": "08c42e22004a6f2bad9fcbebe3f9110230836115",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "daisukedaisuke/awaitformoptions/awaitformoptions@latest": {
+    "id": "daisukedaisuke/awaitformoptions/awaitformoptions@latest",
+    "name": "AwaitFormOptions",
+    "catalog_version": null,
+    "source_repo": "DaisukeDaisuke/AwaitFormOptions",
+    "source_commit": "10feb6b4e73dcc1d28448a0a7a49bf6e06cd366d",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "nepinhum/translationmanager/translationmanager@1.2.0": {
+    "id": "nepinhum/translationmanager/translationmanager@1.2.0",
+    "name": "TranslationManager",
+    "catalog_version": "1.2.0",
+    "source_repo": "nepinhum/TranslationManager",
+    "source_commit": "75fc77ea5a861a766b8e36f69cb3a3768452cb45",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "rajadordev/smartcommand/smartcommand@3.0.0": {
+    "id": "rajadordev/smartcommand/smartcommand@3.0.0",
+    "name": "SmartCommand",
+    "catalog_version": "3.0.0",
+    "source_repo": "RajadorDev/SmartCommand",
+    "source_commit": "352826398ddab675daca79b6ba9568b3b28f3c77",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "acm-pocketmine-mp/libbook/libbook@0.0.4": {
+    "id": "acm-pocketmine-mp/libbook/libbook@0.0.4",
+    "name": "libBook",
+    "catalog_version": "0.0.4",
+    "source_repo": "ACM-PocketMine-MP/libBook",
+    "source_commit": "0bb81657bb27dc84737c211b1b6767dacae89456",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "r3pt1s/betterforms/betterforms@1.0.0": {
+    "id": "r3pt1s/betterforms/betterforms@1.0.0",
+    "name": "BetterForms",
+    "catalog_version": "1.0.0",
+    "source_repo": "r3pt1s/BetterForms",
+    "source_commit": "e3fc5e3b611214f8ce6d2ec3dfa1a2a278d18cba",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "j1b1x/functionalitem/functionalitem@0.0.1": {
+    "id": "j1b1x/functionalitem/functionalitem@0.0.1",
+    "name": "FunctionalItem",
+    "catalog_version": "0.0.1",
+    "source_repo": "J1b1x/FunctionalItem",
+    "source_commit": "b3dd517f5617db8938d05b57f549ec4132fce960",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "j1b1x/forms/forms@0.0.1": {
+    "id": "j1b1x/forms/forms@0.0.1",
+    "name": "Forms",
+    "catalog_version": "0.0.1",
+    "source_repo": "J1b1x/Forms",
+    "source_commit": "2df12bf6e98a35bb4656099b988e9b723e7a2f8f",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "j1b1x/medoo/medoo@0.0.1": {
+    "id": "j1b1x/medoo/medoo@0.0.1",
+    "name": "Medoo",
+    "catalog_version": "0.0.1",
+    "source_repo": "J1b1x/Medoo",
+    "source_commit": "dd6ada1805bdd7f8d6fd3c95a65ede77fd9792a6",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "j1b1x/replay/replay@0.0.1": {
+    "id": "j1b1x/replay/replay@0.0.1",
+    "name": "Replay",
+    "catalog_version": "0.0.1",
+    "source_repo": "J1b1x/Replay",
+    "source_commit": "db48f4df25ffbd9791386ce8ca606759b8cbd9c3",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "j1b1x/asyncmedoo/asyncmedoo@0.0.1": {
+    "id": "j1b1x/asyncmedoo/asyncmedoo@0.0.1",
+    "name": "AsyncMedoo",
+    "catalog_version": "0.0.1",
+    "source_repo": "J1b1x/AsyncMedoo",
+    "source_commit": "3cc35c74320f2d48f6f705adfb98f91dce478bcf",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "aedxdev/ecmd/ecmd@1.6.0": {
+    "id": "aedxdev/ecmd/ecmd@1.6.0",
+    "name": "ECMD",
+    "catalog_version": "1.6.0",
+    "source_repo": "AEDXDEV/ECMD",
+    "source_commit": "b58a7e459172038ee17e9f2805886c15a820218b",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "davycraft648/pminputapi/pminputapi@1.0.1": {
+    "id": "davycraft648/pminputapi/pminputapi@1.0.1",
+    "name": "PMInputAPI",
+    "catalog_version": "1.0.1",
+    "source_repo": "DavyCraft648/PMInputAPI",
+    "source_commit": "ebb968807b568dd0d3688d725a70878cf377b18d",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "j1b1x/mapvideo/mapvideo@0.0.1": {
+    "id": "j1b1x/mapvideo/mapvideo@0.0.1",
+    "name": "MapVideo",
+    "catalog_version": "0.0.1",
+    "source_repo": "J1b1x/MapVideo",
+    "source_commit": "d5b3381b4bd978bc58c50e10e470467d2d729331",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "terpz710/libeconomy/libeconomy@1.0.0": {
+    "id": "terpz710/libeconomy/libeconomy@1.0.0",
+    "name": "libEconomy",
+    "catalog_version": "1.0.0",
+    "source_repo": "Terpz710/libEconomy",
+    "source_commit": "4ea373bc4d744f6e5e1b652c3828deb347b5e13f",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "xanderid/pocketform/pocketform@1.0.7": {
+    "id": "xanderid/pocketform/pocketform@1.0.7",
+    "name": "PocketForm",
+    "catalog_version": "1.0.7",
+    "source_repo": "XanderID/PocketForm",
+    "source_commit": "551faa253ded8104dc3a70cf661044fda5f3a2a5",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "rxduz/npcdialogue/npcdialogue@0.1.2": {
+    "id": "rxduz/npcdialogue/npcdialogue@0.1.2",
+    "name": "NpcDialogue",
+    "catalog_version": "0.1.2",
+    "source_repo": "RxDuZ/NpcDialogue",
+    "source_commit": "330d392c8c25c96c6d65a75d6d95200a3743e898",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "xqwtxon/discordwebhookapi/discordwebhookapi@2.0.0": {
+    "id": "xqwtxon/discordwebhookapi/discordwebhookapi@2.0.0",
+    "name": "DiscordWebhookAPI",
+    "catalog_version": "2.0.0",
+    "source_repo": "xqwtxon/DiscordWebhookAPI",
+    "source_commit": "2ac21c24c87212af5b7a64683765fd3f5fd41ed7",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "mrecstsy/advancedabilities/advancedabilities@1.0.2": {
+    "id": "mrecstsy/advancedabilities/advancedabilities@1.0.2",
+    "name": "AdvancedAbilities",
+    "catalog_version": "1.0.2",
+    "source_repo": "MrEcstsy/advancedAbilities",
+    "source_commit": "928c1639e997d0e5d1ba7273f2eff1edfdae9e57",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "pedhot-dev/polyfill-mbstring/polyfill-mbstring@1.31.0": {
+    "id": "pedhot-dev/polyfill-mbstring/polyfill-mbstring@1.31.0",
+    "name": "polyfill-mbstring",
+    "catalog_version": "1.31.0",
+    "source_repo": "Pedhot-Dev/polyfill-mbstring",
+    "source_commit": "7b10dbebfbb2fc75841d4461c36d2a274595feef",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "venndev/vsendcmdmulti/vsendcmdmulti@1.0.5": {
+    "id": "venndev/vsendcmdmulti/vsendcmdmulti@1.0.5",
+    "name": "VSendCMDMulti",
+    "catalog_version": "1.0.5",
+    "source_repo": "VennDev/VSendCMDMulti",
+    "source_commit": "9e2dcf874f65a1d92913d196309d7a79762ef16d",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "venndev/vcache/vcache@1.0.0": {
+    "id": "venndev/vcache/vcache@1.0.0",
+    "name": "VCache",
+    "catalog_version": "1.0.0",
+    "source_repo": "VennDev/VCache",
+    "source_commit": "01e61f003d582fd0a87397c94e81fb1cd2ffef5a",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "venndev/vdoplayer/vdoplayer@1.0.1": {
+    "id": "venndev/vdoplayer/vdoplayer@1.0.1",
+    "name": "VDoPlayer",
+    "catalog_version": "1.0.1",
+    "source_repo": "VennDev/VDoPlayer",
+    "source_commit": "3ff745b5cace8e4f3bd0282a24e73b5fc1051d65",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "venndev/verrorhandler/verrorhandler@1.0.0": {
+    "id": "venndev/verrorhandler/verrorhandler@1.0.0",
+    "name": "VErrorHandler",
+    "catalog_version": "1.0.0",
+    "source_repo": "VennDev/VErrorHandler",
+    "source_commit": "5baeab429dfd913b0c31b30d4d4c5df84bf2a877",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "venndev/vdatastoragesystems/vdatastoragesystems@1.0.8": {
+    "id": "venndev/vdatastoragesystems/vdatastoragesystems@1.0.8",
+    "name": "VDataStorageSystems",
+    "catalog_version": "1.0.8",
+    "source_repo": "VennDev/VDataStorageSystems",
+    "source_commit": "47147b0b70da5593dcf7cf32b95710a1102bbfff",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "drirainmcbe/translator/translator@1.1.0": {
+    "id": "drirainmcbe/translator/translator@1.1.0",
+    "name": "translator",
+    "catalog_version": "1.1.0",
+    "source_repo": "drirainMCBE/translator",
+    "source_commit": "2a79e7a0cfa1c5234f9fdff6483a094216ae29d4",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "vasync/lsformapi/lsformapi@1.0.2": {
+    "id": "vasync/lsformapi/lsformapi@1.0.2",
+    "name": "LSFormAPI",
+    "catalog_version": "1.0.2",
+    "source_repo": "Vasync/LSFormAPI",
+    "source_commit": "24bf7c04be58a6444bd2392a5e2d966aa19bcb21",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "muqsit/tebexapi/tebexapi@0.2.1": {
+    "id": "muqsit/tebexapi/tebexapi@0.2.1",
+    "name": "TebexAPI",
+    "catalog_version": "0.2.1",
+    "source_repo": "Muqsit/TebexAPI",
+    "source_commit": "6b40798f2083e86c7fb464e2ef04b9a2f940088a",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "aiptu/sounds/sounds@1.4.0": {
+    "id": "aiptu/sounds/sounds@1.4.0",
+    "name": "Sounds",
+    "catalog_version": "1.4.0",
+    "source_repo": "AIPTU/Sounds",
+    "source_commit": "12f2156d3e5196da507e34b9a2c36bc04f42369a",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "thebigcrafter/commando/commando@3.1.0": {
+    "id": "thebigcrafter/commando/commando@3.1.0",
+    "name": "Commando",
+    "catalog_version": "3.1.0",
+    "source_repo": "thebigcrafter/Commando",
+    "source_commit": "4741105ed8f3ad63a7ad095e5c686c980474c55a",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "terpz710/apibossbar/apibossbar@0.0.5": {
+    "id": "terpz710/apibossbar/apibossbar@0.0.5",
+    "name": "apibossbar",
+    "catalog_version": "0.0.5",
+    "source_repo": "Terpz710/apibossbar",
+    "source_commit": "ae3ae2513366dbb912f81f9b040632c3b3c1cc8f",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "nurazliyt/invmenu/invmenu@4.1.1": {
+    "id": "nurazliyt/invmenu/invmenu@4.1.1",
+    "name": "InvMenu",
+    "catalog_version": "4.1.1",
+    "source_repo": "NurAzliYT/InvMenu",
+    "source_commit": "a65ba7d38de7387ada0730762a433168b6c2c105",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "noobype/citizenlibrary/citizenlibrary@2.2.7": {
+    "id": "noobype/citizenlibrary/citizenlibrary@2.2.7",
+    "name": "CitizenLibrary",
+    "catalog_version": "2.2.7",
+    "source_repo": "NoobyPE/CitizenLibrary",
+    "source_commit": "06a2bb76141275fe934dcaea5d403d8643bdfdde",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "exodusdevs/translation/translation@1.3.2": {
+    "id": "exodusdevs/translation/translation@1.3.2",
+    "name": "Translation",
+    "catalog_version": "1.3.2",
+    "source_repo": "ExodusDevs/Translation",
+    "source_commit": "4682bc611aff620866263ce0f53007ab87f9288f",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "exodusdevs/cooldown/cooldown@0.0.0": {
+    "id": "exodusdevs/cooldown/cooldown@0.0.0",
+    "name": "Cooldown",
+    "catalog_version": "0.0.0",
+    "source_repo": "ExodusDevs/Cooldown",
+    "source_commit": "085b5b64263c89a14a1864d89f9cff9e478ea23b",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "supercrafter333/yamlcomments/yamlcomments@1.0.1": {
+    "id": "supercrafter333/yamlcomments/yamlcomments@1.0.1",
+    "name": "yamlcomments",
+    "catalog_version": "1.0.1",
+    "source_repo": "supercrafter333/yamlcomments",
+    "source_commit": "1dc4fcc01694b5d8fd205919175394313eb226c5",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "blackd14/parsecmd/parsecmd@5.0.1": {
+    "id": "blackd14/parsecmd/parsecmd@5.0.1",
+    "name": "parsecmd",
+    "catalog_version": "5.0.1",
+    "source_repo": "BlackD14/parsecmd",
+    "source_commit": "ef0f8002c99105ef1dace98563dc7be58ef5b03d",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml",
+    "candidates": [
+      "adeynes/parsecmd"
+    ]
+  },
+  "jinodkdevteam/fi-utils/fi-utils@0.2.0": {
+    "id": "jinodkdevteam/fi-utils/fi-utils@0.2.0",
+    "name": "FI-Utils",
+    "catalog_version": "0.2.0",
+    "source_repo": "JinodkDevTeam/FI-Utils",
+    "source_commit": "a5e1dc566b99c3591720ec36379feb16bed27680",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "clickedtran/libranks/libranks@1.0.0": {
+    "id": "clickedtran/libranks/libranks@1.0.0",
+    "name": "libRanks",
+    "catalog_version": "1.0.0",
+    "source_repo": "ClickedTran/libRanks",
+    "source_commit": "b909670f38ea46dc080900d3b9d80118f568681a",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "thebigcrafter/promise/promise@0.0.1": {
+    "id": "thebigcrafter/promise/promise@0.0.1",
+    "name": "promise",
+    "catalog_version": "0.0.1",
+    "source_repo": "thebigcrafter/promise",
+    "source_commit": "1b4e63a9ce6f307978a20fba0f4f4f00bf6f6626",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "thebigcrafter/libmcunicodechars/libmcunicodechars@1.1.0": {
+    "id": "thebigcrafter/libmcunicodechars/libmcunicodechars@1.1.0",
+    "name": "libMCUnicodeChars",
+    "catalog_version": "1.1.0",
+    "source_repo": "thebigcrafter/libMCUnicodeChars",
+    "source_commit": "d0b0b98ffd2bb9f01454b567ce69ca0566f53a96",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "xsuperr/pathfinder/libpathfinder@2.0.0-ALPHA-3": {
+    "id": "xsuperr/pathfinder/libpathfinder@2.0.0-ALPHA-3",
+    "name": "libPathfinder",
+    "catalog_version": "2.0.0-ALPHA-3",
+    "source_repo": "xSuperr/Pathfinder",
+    "source_commit": "289a8defc6c5c3429efb5ee23a337ba0be353020",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "acm-pocketmine-mp/scorefactory/scorefactory@4.0.0": {
+    "id": "acm-pocketmine-mp/scorefactory/scorefactory@4.0.0",
+    "name": "ScoreFactory",
+    "catalog_version": "4.0.0",
+    "source_repo": "ACM-PocketMine-MP/ScoreFactory",
+    "source_commit": "2d13c24cfcf440f6f8d0c0ec330b5b902ddfaed4",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "acm-pocketmine-mp/updatenotifier/updatenotifier@4.0.0": {
+    "id": "acm-pocketmine-mp/updatenotifier/updatenotifier@4.0.0",
+    "name": "UpdateNotifier",
+    "catalog_version": "4.0.0",
+    "source_repo": "ACM-PocketMine-MP/UpdateNotifier",
+    "source_commit": "e7c0a860e91637e8af90bff4598b4b5a6a7821c8",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "aboshxm2/updatenotifier/updatenotifier@3.0.0": {
+    "id": "aboshxm2/updatenotifier/updatenotifier@3.0.0",
+    "name": "UpdateNotifier",
+    "catalog_version": "3.0.0",
+    "source_repo": "Aboshxm2/UpdateNotifier",
+    "source_commit": "0d92a4794a573e6034421439365fcb22b14b0764",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "aboshxm2/configupdater/configupdater@2.0.0": {
+    "id": "aboshxm2/configupdater/configupdater@2.0.0",
+    "name": "ConfigUpdater",
+    "catalog_version": "2.0.0",
+    "source_repo": "Aboshxm2/ConfigUpdater",
+    "source_commit": "18dc36feacba1b349c22ac9f1b9f3a7586283cf9",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "swift-strider/sounds/sounds@latest": {
+    "id": "swift-strider/sounds/sounds@latest",
+    "name": "Sounds",
+    "catalog_version": null,
+    "source_repo": "Swift-Strider/Sounds",
+    "source_commit": "b467b4b1f8e70ba71da64a9fad467db6538eb845",
+    "source_scope": "rebuilt_phar",
+    "evidence": "published rebuilt_artifact source_commit"
+  },
+  "nglam2911-pm-pl/libasyneco/libasyneco@0.1": {
+    "id": "nglam2911-pm-pl/libasyneco/libasyneco@0.1",
+    "name": "libasyneco",
+    "catalog_version": "0.1",
+    "source_repo": "NgLam2911-pm-pl/libasyneco",
+    "source_commit": "eca13356fab8988df92b479d75f6a271b6db0733",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "jaxkdev/libskin/libskin@2.0.1": {
+    "id": "jaxkdev/libskin/libskin@2.0.1",
+    "name": "LibSkin",
+    "catalog_version": "2.0.1",
+    "source_repo": "JaxkDev/LibSkin",
+    "source_commit": "299b0a1aea22ab77b8d1695c06a53f7387c6d9d6",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "r3pt1s/configlib/configlib@1.2.0": {
+    "id": "r3pt1s/configlib/configlib@1.2.0",
+    "name": "configlib",
+    "catalog_version": "1.2.0",
+    "source_repo": "r3pt1s/configlib",
+    "source_commit": "4547a99fd4873930666dcda50961163e926d2465",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "aid-learning/libhackblockanditemregistry/libhackblockanditemregistry@latest": {
+    "id": "aid-learning/libhackblockanditemregistry/libhackblockanditemregistry@latest",
+    "name": "LibHackBlockAndItemRegistry",
+    "catalog_version": null,
+    "source_repo": "AID-LEARNING/LibHackBlockAndItemRegistry",
+    "source_commit": "1fa4c0775300b3c868668587dd61d718f1536980",
+    "source_scope": "rebuilt_phar",
+    "evidence": "published rebuilt_artifact source_commit"
+  },
+  "taylordevs/meet-bard/meet-bard@1.0.1": {
+    "id": "taylordevs/meet-bard/meet-bard@1.0.1",
+    "name": "Meet-Bard",
+    "catalog_version": "1.0.1",
+    "source_repo": "0xliam627/Meet-Bard",
+    "source_commit": "2799bbb5ed10993cfa359bc52467978a6f8650d6",
+    "source_scope": "rebuilt_phar",
+    "evidence": "published rebuilt_artifact source_commit"
+  },
+  "refteams/libnpcdialogue/libnpcdialogue@1.0.0": {
+    "id": "refteams/libnpcdialogue/libnpcdialogue@1.0.0",
+    "name": "libNpcDialogue",
+    "catalog_version": "1.0.0",
+    "source_repo": "refteams/libNpcDialogue",
+    "source_commit": "e19b6328ad181372b3402357bc400562fe519f7a",
+    "source_scope": "rebuilt_phar",
+    "evidence": "published rebuilt_artifact source_commit"
+  },
+  "daisukedaisuketeam/flowy/standard@0.1.0": {
+    "id": "daisukedaisuketeam/flowy/standard@0.1.0",
+    "name": "Standard",
+    "catalog_version": "0.1.0",
+    "source_repo": "DaisukeDaisukeTeam/Flowy",
+    "source_commit": "acb2d5b6c5b3c89bb03afecc46ee6c38a7746b37",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "aid-learning/libconverternbt/libconverternbt@1.0.0": {
+    "id": "aid-learning/libconverternbt/libconverternbt@1.0.0",
+    "name": "libConverterNBT",
+    "catalog_version": "1.0.0",
+    "source_repo": "AID-LEARNING/libConverterNBT",
+    "source_commit": "7d85b7dd512f5bbca36468df254d8d663c6f94d7",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "kenzeve/commando/commando@2.1.1": {
+    "id": "kenzeve/commando/commando@2.1.1",
+    "name": "Commando",
+    "catalog_version": "2.1.1",
+    "source_repo": "kenzeve/Commando",
+    "source_commit": "b23f665bcabcd715deac7d1aeefa8a359cd76dd6",
+    "source_scope": "rebuilt_phar",
+    "evidence": "published rebuilt_artifact source_commit"
+  },
+  "sof3/pmforms/pmforms@2.1.0": {
+    "id": "sof3/pmforms/pmforms@2.1.0",
+    "name": "pmforms",
+    "catalog_version": "2.1.0",
+    "source_repo": "SOF3/pmforms",
+    "source_commit": "4895c16b928bcf813ac79959738b6b7d90a7a8eb",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "pjz9n/advancedform/advancedform@0.0.3": {
+    "id": "pjz9n/advancedform/advancedform@0.0.3",
+    "name": "AdvancedForm",
+    "catalog_version": "0.0.3",
+    "source_repo": "PJZ9n/AdvancedForm",
+    "source_commit": "f065de0aadc154830b64a54e2bfd2173d4451425",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "arisify/jsonhelper/jsonhelper@0.0.1": {
+    "id": "arisify/jsonhelper/jsonhelper@0.0.1",
+    "name": "JsonHelper",
+    "catalog_version": "0.0.1",
+    "source_repo": "Arisify/JsonHelper",
+    "source_commit": "e26831cb8cd73cae719f4aee1b88009935e854f2",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "brokiem-pm-pl/invmenu/invmenu@4.4.1": {
+    "id": "brokiem-pm-pl/invmenu/invmenu@4.4.1",
+    "name": "InvMenu",
+    "catalog_version": "4.4.1",
+    "source_repo": "brokiem-pm-pl/InvMenu",
+    "source_commit": "a88649ad2ca52eba70b3dcd11298e73ddf7d5d6d",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "oirancage/strictform/strictform@1.1.0": {
+    "id": "oirancage/strictform/strictform@1.1.0",
+    "name": "StrictForm",
+    "catalog_version": "1.1.0",
+    "source_repo": "OiranCage/StrictForm",
+    "source_commit": "129f2c0434cea71a814ab1bf960c93f1f50ca237",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "arisify/libscoreboard/libscoreboard@1.0.0": {
+    "id": "arisify/libscoreboard/libscoreboard@1.0.0",
+    "name": "libscoreboard",
+    "catalog_version": "1.0.0",
+    "source_repo": "Arisify/libscoreboard",
+    "source_commit": "5f81fb3bb2eced24405c69945365ea92bad75d95",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "arisify/languagelib/languagelib@1.0.6": {
+    "id": "arisify/languagelib/languagelib@1.0.6",
+    "name": "LanguageLib",
+    "catalog_version": "1.0.6",
+    "source_repo": "Arisify/LanguageLib",
+    "source_commit": "53cd5f89964fba09af66d6f147e203e74e0170b2",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "dapigguy/libasynql/libasynql@3.3.1": {
+    "id": "dapigguy/libasynql/libasynql@3.3.1",
+    "name": "libasynql",
+    "catalog_version": "3.3.1",
+    "source_repo": "DaPigGuy/libasynql",
+    "source_commit": "29d398bac20ec079140188dc82280725ae0d68e9",
+    "source_scope": "rebuilt_phar",
+    "evidence": "published rebuilt_artifact source_commit"
+  },
+  "edwinyoo44/libipgeolocation/libipgeolocation@1.0.2": {
+    "id": "edwinyoo44/libipgeolocation/libipgeolocation@1.0.2",
+    "name": "libIPGeolocation",
+    "catalog_version": "1.0.2",
+    "source_repo": "edwinyoo44/libIPGeolocation",
+    "source_commit": "21cc958ada91b5faa6cbadb1b7784001cfe23f44",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "agtharn/dataconfig/dataconfig@1.0.0": {
+    "id": "agtharn/dataconfig/dataconfig@1.0.0",
+    "name": "DataConfig",
+    "catalog_version": "1.0.0",
+    "source_repo": "AGTHARN/DataConfig",
+    "source_commit": "c368f047af6473c2704b5347ab7b9103b2bedeff",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "agtharn/libtranslator/libtranslator@3.0.0": {
+    "id": "agtharn/libtranslator/libtranslator@3.0.0",
+    "name": "libtranslator",
+    "catalog_version": "3.0.0",
+    "source_repo": "AGTHARN/libtranslator",
+    "source_commit": "9a4291ed3b0dd3cccc9aa25cc80f7fdf284acd99",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "kenzeve/simplescoreboard/simplescoreboard@1.0.0": {
+    "id": "kenzeve/simplescoreboard/simplescoreboard@1.0.0",
+    "name": "SimpleScoreboard",
+    "catalog_version": "1.0.0",
+    "source_repo": "kenzeve/SimpleScoreboard",
+    "source_commit": "cb484f35b2b403bed1b825d604aa17397e8d5889",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "cooldogepm/libpromise/libpromise@0.0.7": {
+    "id": "cooldogepm/libpromise/libpromise@0.0.7",
+    "name": "libPromise",
+    "catalog_version": "0.0.7",
+    "source_repo": "cooldogepm/libPromise",
+    "source_commit": "170c57f1a1077d9cfa8b737cd779a9d004518355",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "factionmaster/formapi/libformapi@4.0.0": {
+    "id": "factionmaster/formapi/libformapi@4.0.0",
+    "name": "libFormAPI",
+    "catalog_version": "4.0.0",
+    "source_repo": "FactionMaster/FormAPI",
+    "source_commit": "7cdbe89ebca0511836b6dc1b2c4d249adc16ffa8",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "skyplusofficial/libasynql/libasynql@3.3.1": {
+    "id": "skyplusofficial/libasynql/libasynql@3.3.1",
+    "name": "libasynql",
+    "catalog_version": "3.3.1",
+    "source_repo": "SkyPlusOfficial/libasynql",
+    "source_commit": "630f06bae3d4a09f3a07242d479ec6fc639e3063",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "pjz9n-pm-pl/pmforms/pmforms@1.0.0": {
+    "id": "pjz9n-pm-pl/pmforms/pmforms@1.0.0",
+    "name": "pmforms",
+    "catalog_version": "1.0.0",
+    "source_repo": "pjz9n-pm-pl/pmforms",
+    "source_commit": "eab8ac0adec2e2b094d141a9b711200183bbf268",
+    "source_scope": "rebuilt_phar",
+    "evidence": "published rebuilt_artifact source_commit"
+  },
+  "muqsit/asynciterator/asynciterator@1.1.4": {
+    "id": "muqsit/asynciterator/asynciterator@1.1.4",
+    "name": "AsyncIterator",
+    "catalog_version": "1.1.4",
+    "source_repo": "Muqsit/AsyncIterator",
+    "source_commit": "c6a8fb91ee2672d17d55445e128261bc19dd85fa",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "xsuperr/libasynql/libasynql@3.3.2": {
+    "id": "xsuperr/libasynql/libasynql@3.3.2",
+    "name": "libasynql",
+    "catalog_version": "3.3.2",
+    "source_repo": "xSuperr/libasynql",
+    "source_commit": "993458c8ef14ba180421b6cefe50371ec69455b0",
+    "source_scope": "rebuilt_phar",
+    "evidence": "published rebuilt_artifact source_commit"
+  },
+  "denielworld/eztiles/libeztiles@latest": {
+    "id": "denielworld/eztiles/libeztiles@latest",
+    "name": "libEzTiles",
+    "catalog_version": null,
+    "source_repo": "DenielWorld/EzTiles",
+    "source_commit": "d4db777beb6b6ccb7ec25355c218cb6e6cf5e690",
+    "source_scope": "rebuilt_phar",
+    "evidence": "published rebuilt_artifact source_commit"
+  },
+  "ctmcentral/libdockerhandler/libdockerhandler@0.0.1": {
+    "id": "ctmcentral/libdockerhandler/libdockerhandler@0.0.1",
+    "name": "libDockerHandler",
+    "catalog_version": "0.0.1",
+    "source_repo": "CTMCentral/libDockerHandler",
+    "source_commit": "daf9ada6b619aa546d4311486c03034c9beecf33",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "jviguy/dcord/dcord@latest": {
+    "id": "jviguy/dcord/dcord@latest",
+    "name": "DCord",
+    "catalog_version": null,
+    "source_repo": "Jviguy/DCord",
+    "source_commit": "3fef1bce215a721cd194256c4fa1373a3de2224f",
+    "source_scope": "rebuilt_phar",
+    "evidence": "published rebuilt_artifact source_commit"
+  },
+  "fuyutsuki/accessorstrait/accessors-trait@1.0.0": {
+    "id": "fuyutsuki/accessorstrait/accessors-trait@1.0.0",
+    "name": "accessors-trait",
+    "catalog_version": "1.0.0",
+    "source_repo": "fuyutsuki/AccessorsTrait",
+    "source_commit": "69bd4ef452928ca80c36e99e9dcf952ae05e70c4",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "cloudminepe/mysqlo/mysqlo@0.1": {
+    "id": "cloudminepe/mysqlo/mysqlo@0.1",
+    "name": "mysqlo",
+    "catalog_version": "0.1",
+    "source_repo": "CloudMinePE/MySQLO",
+    "source_commit": "11870d678545d8058e27fc0ff5ac3e57949b5a1d",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "pjz9n/validator-support-virion/validator@2.3.4": {
+    "id": "pjz9n/validator-support-virion/validator@2.3.4",
+    "name": "Validator",
+    "catalog_version": "2.3.4",
+    "source_repo": "PJZ9n/Validator-Support-Virion",
+    "source_commit": "47a1f804731f02c7e9fc4c62a10bd71153f1d8f7",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "breathtakinglybinary/libdynamicbossbar/libdynamicbossbar@0.0.5": {
+    "id": "breathtakinglybinary/libdynamicbossbar/libdynamicbossbar@0.0.5",
+    "name": "libDynamicBossBar",
+    "catalog_version": "0.0.5",
+    "source_repo": "BreathTakinglyBinary/libDynamicBossBar",
+    "source_commit": "b088716491dead1c1138ea7bcce89d8e846184d3",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "pjz9n/pluginutils2/pluginutils2@1.1.2": {
+    "id": "pjz9n/pluginutils2/pluginutils2@1.1.2",
+    "name": "PluginUtils2",
+    "catalog_version": "1.1.2",
+    "source_repo": "PJZ9n/PluginUtils2",
+    "source_commit": "76612d7155b75152b4ae8b01345859536abf496e",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "notacoderr/apibossbar/apibossbar@0.0.2": {
+    "id": "notacoderr/apibossbar/apibossbar@0.0.2",
+    "name": "apibossbar",
+    "catalog_version": "0.0.2",
+    "source_repo": "notacoderr/apibossbar",
+    "source_commit": "7b5f974834acde62a0ab7fa6995f25efaef541c6",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "uiplugins/libboolui/libboolui@1.0.0": {
+    "id": "uiplugins/libboolui/libboolui@1.0.0",
+    "name": "libBoolUI",
+    "catalog_version": "1.0.0",
+    "source_repo": "UIPlugins/libBoolUI",
+    "source_commit": "03c1f2ed2d7c43405da7e817fe936bbf9183ae04",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "inkohx/goldlibrary/goldlibrary@0.0.3": {
+    "id": "inkohx/goldlibrary/goldlibrary@0.0.3",
+    "name": "GoldLibrary",
+    "catalog_version": "0.0.3",
+    "source_repo": "InkoHX/GoldLibrary",
+    "source_commit": "175fd3267e4245815538e24a8687783632cd7d1b",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "sof3/formapi/formapi@latest": {
+    "id": "sof3/formapi/formapi@latest",
+    "name": "FormAPI",
+    "catalog_version": null,
+    "source_repo": "SOF3/FormAPI",
+    "source_commit": "7bfd2edd1330c874ecd5f3bd6a829d58c20ba2a1",
+    "source_scope": "rebuilt_phar",
+    "evidence": "published rebuilt_artifact source_commit"
+  },
+  "sof3/pschemlib/pschemlib@0.0.0": {
+    "id": "sof3/pschemlib/pschemlib@0.0.0",
+    "name": "pschemlib",
+    "catalog_version": "0.0.0",
+    "source_repo": "SOF3/pschemlib",
+    "source_commit": null,
+    "source_scope": "original_phar_distribution",
+    "evidence": "Verified original PHAR without a build SHA in its virion.yml"
+  },
+  "jacknoordhuis/pocket-eloquent/pocket-eloquent@0.0.1": {
+    "id": "jacknoordhuis/pocket-eloquent/pocket-eloquent@0.0.1",
+    "name": "pocket-eloquent",
+    "catalog_version": "0.0.1",
+    "source_repo": "JackNoordhuis/Pocket-Eloquent",
+    "source_commit": "0367094948720c049ad0281471a4833c059a187f",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "jacknoordhuis/framework/database@5.6.5": {
+    "id": "jacknoordhuis/framework/database@5.6.5",
+    "name": "database",
+    "catalog_version": "5.6.5",
+    "source_repo": "JackNoordhuis/framework",
+    "source_commit": "018b16528ffcbf09290bd40e54ec64c3c8f35f83",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "jacknoordhuis/inflector/inflector@1.3.0": {
+    "id": "jacknoordhuis/inflector/inflector@1.3.0",
+    "name": "inflector",
+    "catalog_version": "1.3.0",
+    "source_repo": "JackNoordhuis/inflector",
+    "source_commit": "eb64e230e05b55fbfcd21e0bea7d6dac5a5176fc",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "jacknoordhuis/simple-cache/simple-cache@1.0.0": {
+    "id": "jacknoordhuis/simple-cache/simple-cache@1.0.0",
+    "name": "simple-cache",
+    "catalog_version": "1.0.0",
+    "source_repo": "JackNoordhuis/simple-cache",
+    "source_commit": "83c71aaf043810f8ef1272466c9f4b18867ecfbe",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "jacknoordhuis/polyfill-mbstring/polyfill-mbstring@1.7.0": {
+    "id": "jacknoordhuis/polyfill-mbstring/polyfill-mbstring@1.7.0",
+    "name": "polyfill-mbstring",
+    "catalog_version": "1.7.0",
+    "source_repo": "JackNoordhuis/polyfill-mbstring",
+    "source_commit": "77d336f0ef39860e9d0f4703c3efab89fcdbb2ba",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "sof3/everydb/everydb@1.0.0": {
+    "id": "sof3/everydb/everydb@1.0.0",
+    "name": "everydb",
+    "catalog_version": "1.0.0",
+    "source_repo": "SOF3/everydb",
+    "source_commit": "4c88f06430bae30ccf2e8a1ef4117824e8fde5cb",
+    "source_scope": "original_poggit_build",
+    "evidence": "fromCommit in verified original PHAR virion.yml"
+  },
+  "inxomnyaa/libstructure/libstructure@0.4.0": {
+    "id": "inxomnyaa/libstructure/libstructure@0.4.0",
+    "name": "libstructure",
+    "catalog_version": "0.4.0",
+    "source_repo": "inxomnyaa/libstructure",
+    "source_commit": "d925c10a5c1c13aedbcb77896a3d36516c8e6588",
+    "source_scope": "rebuilt_phar",
+    "evidence": "pinned source manifest; PM5 branch for libstructure, default branch for parsecmd and BlockData"
+  },
+  "adeynes/parsecmd/parsecmd@latest": {
+    "id": "adeynes/parsecmd/parsecmd@latest",
+    "name": "parsecmd",
+    "catalog_version": null,
+    "source_repo": "adeynes/parsecmd",
+    "source_commit": "4f5649734a6a390743f870a0a7ccd47ad683c748",
+    "source_scope": "rebuilt_phar",
+    "evidence": "pinned source manifest; PM5 branch for libstructure, default branch for parsecmd and BlockData"
+  },
+  "cosmoverse/blockdata/blockdata@latest": {
+    "id": "cosmoverse/blockdata/blockdata@latest",
+    "name": "BlockData",
+    "catalog_version": null,
+    "source_repo": "Cosmoverse/BlockData",
+    "source_commit": "b8d8bb93bf23fd41a94b4bf2b110ff024bf365eb",
+    "source_scope": "rebuilt_phar",
+    "evidence": "pinned source manifest; PM5 branch for libstructure, default branch for parsecmd and BlockData"
+  },
+  "mintodev/libmcunicodechars/libmcunicodechars@1.1.0": {
+    "id": "mintodev/libmcunicodechars/libmcunicodechars@1.1.0",
+    "name": "libMCUnicodeChars",
+    "catalog_version": "1.1.0",
+    "source_repo": "mintodev/libMCUnicodeChars",
+    "source_commit": "a9252870f2d6aad3151cd9a61679289f08fb1b22",
+    "source_scope": "original_poggit_build",
+    "evidence": "plugin dependency build_id matches catalog last_build_short_id (hexadecimal); build_commit survives in detached fork",
+    "candidates": [
+      "NoobMCBG/libMCUnicodeChars"
+    ]
+  },
+  "cosmoverse/antivpn/antivpn@2.1.0": {
+    "id": "cosmoverse/antivpn/antivpn@2.1.0",
+    "name": "AntiVPN",
+    "catalog_version": "2.1.0",
+    "source_repo": "Cosmoverse/AntiVPN",
+    "source_commit": "ba7235ff264b08798e54d3d1d2a9de19c0d0e436",
+    "source_scope": "original_poggit_build",
+    "evidence": "plugin dependency build_id matches catalog last_build_short_id (hexadecimal); build_commit survives in detached fork",
+    "candidates": [
+      "iZeaoGamer/AntiVPN"
+    ]
+  },
+  "luca28pet/configparser/configparser@1.0.1": {
+    "id": "luca28pet/configparser/configparser@1.0.1",
+    "name": "ConfigParser",
+    "catalog_version": "1.0.1",
+    "source_repo": "luca28pet/ConfigParser",
+    "source_commit": "0eb691fe89d2a82e1ffa25f863a53e24b7a287d9",
+    "source_scope": "rebuilt_phar",
+    "swh_revision": "swh:1:rev:0eb691fe89d2a82e1ffa25f863a53e24b7a287d9",
+    "evidence": "Software Heritage full visit snapshot default branch; original Poggit revision unconfirmed"
+  },
+  "vkamz597/itemparser/itemparser@5.0.0": {
+    "id": "vkamz597/itemparser/itemparser@5.0.0",
+    "name": "ItemParser",
+    "catalog_version": "5.0.0",
+    "source_repo": "vkamz597/ItemParser",
+    "source_commit": "dfae084f558804bb9e6752e4ca4782c07e89a57b",
+    "source_scope": "rebuilt_phar",
+    "swh_revision": "swh:1:rev:dfae084f558804bb9e6752e4ca4782c07e89a57b",
+    "evidence": "Software Heritage full visit snapshot default branch; original Poggit revision unconfirmed"
+  },
+  "radondev/libinterpolation/libinterpolation@0.1.0": {
+    "id": "radondev/libinterpolation/libinterpolation@0.1.0",
+    "name": "libInterpolation",
+    "catalog_version": "0.1.0",
+    "source_repo": "radondev/libInterpolation",
+    "source_commit": "e6bc4895c8f1507a06110213cb947157e00acad2",
+    "source_scope": "rebuilt_phar",
+    "candidates": [
+      "WolvesFortress/libInterpolation"
+    ],
+    "evidence": "earliest fork commit contains matching name, version and namespace; original Poggit revision unconfirmed"
+  },
+  "blugin/_virions/singletontrait@1.0.0": {
+    "id": "blugin/_virions/singletontrait@1.0.0",
+    "name": "SingletonTrait",
+    "catalog_version": "1.0.0",
+    "source_repo": "Blugin/_virions",
+    "source_commit": null,
+    "source_scope": "unresolved",
+    "evidence": "No matching source manifest/revision recovered; see virion-recovery-audit.json"
+  },
+  "vosaka-php/vosaka/vosaka@1.9.0": {
+    "id": "vosaka-php/vosaka/vosaka@1.9.0",
+    "name": "vosaka",
+    "catalog_version": "1.9.0",
+    "source_repo": "vosaka-php/vosaka",
+    "source_commit": null,
+    "source_scope": "unresolved",
+    "evidence": "No matching source manifest/revision recovered; see virion-recovery-audit.json"
+  },
+  "zetnex/map/map@1.0.1": {
+    "id": "zetnex/map/map@1.0.1",
+    "name": "Map",
+    "catalog_version": "1.0.1",
+    "source_repo": "ZetNex/Map",
+    "source_commit": null,
+    "source_scope": "unresolved",
+    "evidence": "No matching source manifest/revision recovered; see virion-recovery-audit.json"
+  },
+  "jasson44/telegrambotapi/telegrambotapi@1.0.0": {
+    "id": "jasson44/telegrambotapi/telegrambotapi@1.0.0",
+    "name": "TelegramBotAPI",
+    "catalog_version": "1.0.0",
+    "source_repo": "Jasson44/TelegramBotAPI",
+    "source_commit": null,
+    "source_scope": "unresolved",
+    "evidence": "No matching source manifest/revision recovered; see virion-recovery-audit.json"
+  },
+  "tobias-2006/commandarguments/commandarguments@latest": {
+    "id": "tobias-2006/commandarguments/commandarguments@latest",
+    "name": "CommandArguments",
+    "catalog_version": null,
+    "source_repo": "Tobias-2006/CommandArguments",
+    "source_commit": null,
+    "source_scope": "unresolved",
+    "evidence": "No matching source manifest/revision recovered; see virion-recovery-audit.json"
+  },
+  "kenzeve/replaylib/replaylib@1.0.0": {
+    "id": "kenzeve/replaylib/replaylib@1.0.0",
+    "name": "ReplayLib",
+    "catalog_version": "1.0.0",
+    "source_repo": "kenzeve/ReplayLib",
+    "source_commit": null,
+    "source_scope": "unresolved",
+    "evidence": "No matching source manifest/revision recovered; see virion-recovery-audit.json"
+  },
+  "stephen-mc-pl/pmforms-pm4/pmforms@1.0.1": {
+    "id": "stephen-mc-pl/pmforms-pm4/pmforms@1.0.1",
+    "name": "pmforms",
+    "catalog_version": "1.0.1",
+    "source_repo": "stephen-mc-pl/pmforms-pm4",
+    "source_commit": null,
+    "source_scope": "unresolved",
+    "evidence": "No matching source manifest/revision recovered; see virion-recovery-audit.json"
+  },
+  "blugin/_virions/stringutils@1.1.1": {
+    "id": "blugin/_virions/stringutils@1.1.1",
+    "name": "stringutils",
+    "catalog_version": "1.1.1",
+    "source_repo": "Blugin/_virions",
+    "source_commit": null,
+    "source_scope": "unresolved",
+    "evidence": "No matching source manifest/revision recovered; see virion-recovery-audit.json"
+  },
+  "blugin/_virions/arrayutils@2.0.0": {
+    "id": "blugin/_virions/arrayutils@2.0.0",
+    "name": "arrayutils",
+    "catalog_version": "2.0.0",
+    "source_repo": "Blugin/_virions",
+    "source_commit": null,
+    "source_scope": "unresolved",
+    "evidence": "No matching source manifest/revision recovered; see virion-recovery-audit.json"
+  },
+  "inkohx/krul/krul@0.1.0": {
+    "id": "inkohx/krul/krul@0.1.0",
+    "name": "Krul",
+    "catalog_version": "0.1.0",
+    "source_repo": "InkoHX/Krul",
+    "source_commit": null,
+    "source_scope": "unresolved",
+    "evidence": "No matching source manifest/revision recovered; see virion-recovery-audit.json"
+  }
+}

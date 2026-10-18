@@ -99,6 +99,31 @@ This requires PHP 8 or later with Phar support. The tool reads archive entries w
 
 The catalog prefers exact archived source and otherwise displays a separate **Source from PHAR** link. These distribution trees may omit repository files or contain bundled libraries and build-time changes. Empty or missing license information displays **No License**; original license metadata remains available in the data. `source-recovery-followup.json` records the additional investigation and distinguishes exact Git source from recovered PHAR contents.
 
+The [19-plugin recovery audit](docs/source-recovery-2026-10-19.md) records further Software Heritage, Wayback and historical fork checks. Its machine-readable evidence is in `source-recovery-deep-audit.json`; related source from a different revision remains separate from exact release source.
+
+### Preserve virion sources and rebuild missing PHARs
+
+The [virion recovery report](docs/virion-recovery-2026-10-19.md) covers 255 separate source ZIPs, eight newly rebuilt PHARs and the ten unresolved entries. Virion source provenance is stored separately from plugin source in `virion-source-downloads.json`. The interface distinguishes **Archived source**, **Rebuild source**, and **Source from PHAR**; every link targets a verified archive asset.
+
+The portable `virion-source-plan.json` pins source revisions and records their evidence. Recover sources with:
+
+```powershell
+python .\scripts\recover_virion_sources.py --plan .\data\snapshots\2026-10-14T20-07-25Z\virion-source-plan.json --phase git
+python .\scripts\recover_virion_sources.py --plan .\data\snapshots\2026-10-14T20-07-25Z\virion-source-plan.json --phase swh-request
+python .\scripts\recover_virion_sources.py --plan .\data\snapshots\2026-10-14T20-07-25Z\virion-source-plan.json --phase swh
+python .\scripts\recover_virion_sources.py --plan .\data\snapshots\2026-10-14T20-07-25Z\virion-source-plan.json --phase phar --php <php-path>
+```
+
+Source recovery uses the Python standard library. Building additionally requires PyYAML and PHP with Phar and YAML support. Use a clean VirionTools checkout pinned to `d3bcaa5bbe5344996fb06b6192ca37be980dd7eb` and a key file containing the requested virion IDs:
+
+```powershell
+python .\scripts\build_recovered_virions.py --compiler <VirionTools-checkout> --php <php-path> --key-file <virion-ids.txt>
+python .\scripts\publish_artifacts.py --kind rebuilt-virions --keep-local
+python .\scripts\publish_artifacts.py --kind virion-sources --keep-local
+```
+
+The builder checks the catalog name, version and namespace, records staging adjustments, and reopens each PHAR to compare included source bytes. It never executes target library code. Published reconstructions are recorded in `rebuilt-virions.json`; only verified uploaded records belong in each item's `downloads-virions.json` `rebuilt_artifact` field. Original download status and reconstructed artifact status remain separate.
+
 ## Astro site and JSON API
 
 The catalog is built as a static Astro site and deployed to GitHub Pages with GitHub Actions. Requires Node.js 22.12 or later and npm.
@@ -136,6 +161,9 @@ The API is versioned and immutable by snapshot:
 - `data/snapshots/<snapshot-id>/downloads-plugins.json` - plugin artifact state and SHA-256
 - `data/snapshots/<snapshot-id>/downloads-virions.json` - virion artifact state and SHA-256
 - `data/snapshots/<snapshot-id>/source-downloads.json` - exact source commits, verified ZIP URLs, and SHA-256
+- `data/snapshots/<snapshot-id>/virion-source-downloads.json` - virion source ZIPs, revision scope, license documents, and SHA-256
+- `data/snapshots/<snapshot-id>/virion-source-plan.json` - pinned source discovery plan and supporting evidence
+- `data/snapshots/<snapshot-id>/rebuilt-virions.json` - additional virion reconstruction provenance and verified PHAR assets
 
 The browser links to verified archive release assets for original PHARs and source ZIPs. Rebuilt virion PHARs have a separate “Rebuilt PHAR” link with their source commit and build details in the link description. The browser does not fall back to Poggit downloads. When a source ZIP is unavailable, a clearly labeled upstream GitHub repository link may be shown. Entries without an original or rebuilt PHAR remain listed as metadata and show that the PHAR is not archived.
 

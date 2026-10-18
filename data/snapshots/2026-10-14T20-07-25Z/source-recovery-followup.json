@@ -1,5 +1,6 @@
 {
   "schema_version": 1,
+  "deep_audit_report": "source-recovery-deep-audit.json",
   "snapshot_id": "2026-10-14T20-07-25Z",
   "baseline_commit": "d4e5985c4156ea38006dd5ebea2e03c65a948d63",
   "checked_at": "2026-10-18T18:45:37.524632+00:00",

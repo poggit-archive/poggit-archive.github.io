@@ -1,0 +1,40 @@
+{
+  "checked_at": "2026-10-18T19:57:58.103335+00:00",
+  "repository": "poggit-archive/artifacts",
+  "public": true,
+  "verified_counts": {
+    "source": 255,
+    "original": 213,
+    "rebuilt": 42
+  },
+  "checks": [
+    "release public and non-draft",
+    "asset ID",
+    "asset URL",
+    "uploaded state",
+    "byte size",
+    "SHA-256"
+  ],
+  "releases": [
+    {
+      "tag": "virion-sources-2026-10-14-0001",
+      "url": "https://github.com/poggit-archive/artifacts/releases/tag/virion-sources-2026-10-14-0001",
+      "asset_count": 255
+    },
+    {
+      "tag": "virions-2026-10-14-0001",
+      "url": "https://github.com/poggit-archive/artifacts/releases/tag/virions-2026-10-14-0001",
+      "asset_count": 213
+    },
+    {
+      "tag": "rebuilt-virions-2026-10-17-0001",
+      "url": "https://github.com/poggit-archive/artifacts/releases/tag/rebuilt-virions-2026-10-17-0001",
+      "asset_count": 35
+    },
+    {
+      "tag": "rebuilt-virions-2026-10-14-0001",
+      "url": "https://github.com/poggit-archive/artifacts/releases/tag/rebuilt-virions-2026-10-14-0001",
+      "asset_count": 8
+    }
+  ]
+}
