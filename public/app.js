@@ -244,7 +244,6 @@
   }
 
   function addPluginMeta(container, item, totalDownloads = item.downloads) {
-    addMeta(container, `${number(item.downloads)} downloads for this version`);
     addMeta(container, `${number(totalDownloads)} total downloads`);
     const license = String(item.license || "").trim();
     const source = state.sourceDownloads[`${item.repo_id}@${String(item.build_commit || "").toLowerCase()}`];
@@ -371,6 +370,7 @@
       option.append(
         element("span", "version-option-name", release.version || "Version unknown"),
         element("span", "version-option-date", versionDate(release.submission_date)),
+        element("span", "version-option-downloads", `${number(release.downloads)} downloads`),
       );
       option.addEventListener("click", () => {
         currentVersion.textContent = versionOptionLabel(release);
