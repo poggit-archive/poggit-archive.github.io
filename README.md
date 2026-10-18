@@ -11,6 +11,33 @@ An independent, non-commercial preservation catalog for PocketMine-MP plugin and
 - Verified PHAR and source ZIP files are stored as GitHub release assets in `poggit-archive/artifacts`. The publisher deletes each local copy only after GitHub reports the matching digest and byte size.
 - Empty or missing license documents are recorded as **No License** while preserving upstream metadata and author/source attribution. This label records the absence of a license document; it does not assign a license. Nonempty custom license terms remain recorded for review.
 
+## Static plugin detail pages
+
+Each of the **1,450 plugin projects** has a page under `/plugins/<project-id>-<name>/`. All **5,021 captured releases** also have a permanent page under that project's URL followed by the release ID. Project IDs distinguish plugins that share a name. The catalog title links to the selected release; version menus and history show each version's downloads.
+
+For example: [MultiWorld](https://poggit-archive.github.io/plugins/420-multiworld/) and [MultiWorld 2.1.1](https://poggit-archive.github.io/plugins/420-multiworld/12098/).
+
+Pages are generated as HTML at build time, including descriptions, changelogs, version navigation and artifact links. They work without a backend or JavaScript. JavaScript only improves broken-image handling and dismissing the version menu. Downloads, scores and metadata reflect the **14 October 2026 snapshot**, rather than live counters.
+
+The pinned official [`poggit/release-archive`](https://github.com/poggit/release-archive/tree/102194b0b1022180fc774318f39cd2a10ee4bb27) supplies **5,020 descriptions** and **3,636 changelogs**. These were imported after checking their Git blob SHA-1 and SHA-256. The original HTML/text and provenance are retained in [`plugin-details.json.gz`](data/snapshots/2026-10-14T20-07-25Z/plugin-details.json.gz); HTML is sanitized during the site build. Per-release `plugin.yml`, available license files, file sizes, SHA-256, SHA-1 and MD5 come from the **5,021 original PHARs**, verified against the existing published-artifact manifest. PHAR stubs and serialized metadata are never executed or deserialized.
+
+Coverage and limitations are recorded in [`plugin-details-report.json`](data/snapshots/2026-10-14T20-07-25Z/plugin-details-report.json):
+
+- **MailSystem 1.0.0, release 13728**, has no description in the official release archive. Its metadata, manifest and original PHAR remain available.
+- **1,385 releases** have no preserved changelog. Missing content is stated explicitly on the relevant page.
+- Review text, reviewer details, review counts, replies and their dates were not exported in the release snapshot. The API's recorded integer score is preserved where present; review records are not inferred from it.
+- Runtime-registered commands and permissions, features, generators, languages and credits remain in the description when documented. Structured commands and permissions show exactly what the selected PHAR declares in `plugin.yml`.
+- `last_state_change_date` is labeled **Status updated**, not assumed to be the first approval date. Compatible API ranges are kept individually. Empty license documents retain **No License**.
+- Source ZIP links retain their provenance: **Archived source** for verified Git snapshots and **Source from PHAR** for extracted distribution files.
+
+To reproduce the import with the verified PHAR cache at `archive/virion-recovery/plugin-phars/<release-id>.phar`, install PyYAML and run:
+
+```powershell
+python scripts/import_plugin_details.py --php path/to/php.exe
+```
+
+The importer downloads one pinned official archive ZIP and checks every imported document against its Git tree. The committed compressed snapshot lets normal `npm ci` / `npm run build` deployments run without Python, PHP or another archive download.
+
 ## Remaining preservation gaps
 
 Status checked on **19 October 2026**, for snapshot [`2026-10-14T20-07-25Z`](data/snapshots/2026-10-14T20-07-25Z/). Counts cover **1,450 plugin projects / 5,021 releases** and **265 virion catalog entries**. The virion count covers the captured ranked feed, not every virion ever published.

@@ -404,6 +404,13 @@
     return control;
   }
 
+  function pluginDetailPath(project, release) {
+    const latest = project.releases[0];
+    const slug = String(latest.name || "plugin").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "plugin";
+    const path = `/plugins/${latest.project_id}-${slug}/`;
+    return release.id === latest.id ? path : `${path}${release.id}/`;
+  }
+
   function renderRow(entry) {
     const isPlugin = state.kind === "plugins";
     const project = isPlugin ? entry : null;
@@ -421,7 +428,8 @@
     const content = element("div", "result-content");
     const title = item.name || item.project_name || "Unnamed project";
     const titleElement = element("h2", "result-title");
-    titleElement.append(document.createTextNode(title));
+    const titleLink = isPlugin ? link(title, pluginDetailPath(project, item)) : null;
+    titleElement.append(titleLink || document.createTextNode(title));
     const author = isPlugin ? element("span", "result-title-author") : null;
     if (author) {
       const name = pluginAuthor(item);
@@ -434,7 +442,8 @@
     const description = isPlugin
       ? cleanDescription(item.tagline || item.description)
       : cleanText(item.namespace || "Virion");
-    content.append(element("p", "result-description", description));
+    const descriptionElement = element("p", "result-description", description);
+    content.append(descriptionElement);
 
     const meta = element("div", "result-meta");
     let releaseMeta = null;
@@ -447,7 +456,8 @@
         const nextAuthor = pluginAuthor(release);
         author.textContent = nextAuthor ? `by ${nextAuthor}` : "";
         author.hidden = !nextAuthor;
-        description.textContent = cleanDescription(release.tagline || release.description);
+        descriptionElement.textContent = cleanDescription(release.tagline || release.description);
+        titleLink.href = pluginDetailPath(project, release);
         releaseMeta.replaceChildren();
         addPluginMeta(releaseMeta, release, project.totalDownloads);
         const nextActions = renderActions(release, title);

@@ -1,0 +1,125 @@
+---
+import SeoHead from "../../components/SeoHead.astro";
+import { getCatalog, releaseView, versionPath, number, date, text, list, apiRanges, manifestRows, archiveUrl } from "../../lib/plugin-details.mjs";
+
+export function getStaticPaths() {
+  const catalog = getCatalog();
+  return [...catalog.projects.values()].flatMap((project) => [
+    { params: { path: project.path.slice("/plugins/".length, -1) }, props: { projectId: project.id, releaseId: project.latest.id, latestPage: true } },
+    ...project.releases.map((release) => ({ params: { path: `${project.path.slice("/plugins/".length)}${release.id}` }, props: { projectId: project.id, releaseId: release.id, latestPage: false } })),
+  ]);
+}
+
+const catalog = getCatalog();
+const { projectId, releaseId, latestPage } = Astro.props;
+const project = catalog.projects.get(projectId);
+const release = project.releases.find((row) => row.id === releaseId);
+const view = releaseView(release, catalog);
+const { manifest, record } = view;
+const canonical = latestPage ? project.path : versionPath(project, release);
+const title = `${release.name} ${release.version} - Poggit Archive`;
+const description = text(release.tagline) || `Archived release of ${release.name} for PocketMine-MP.`;
+const commands = manifestRows(manifest.commands);
+const permissions = manifestRows(manifest.permissions);
+const repository = `https://github.com/${release.repo_name}`;
+const people = Object.entries(release.producers || {}).filter(([, names]) => names.length);
+const declaredDependencies = [...list(manifest.depend).map((name) => [name, "Required"]), ...list(manifest.softdepend).map((name) => [name, "Optional"]), ...list(manifest.loadbefore).map((name) => [name, "Load before"])];
+const flags = [[release.is_pre_release, "Pre-release"], [release.is_obsolete, "Obsolete release"], [release.is_outdated, "Outdated API"], [release.is_official, "Official"], [release.is_abandoned, "Abandoned"]].filter(([enabled]) => enabled);
+const owner = release.repo_name?.split("/")[0];
+const fileSize = record.phar ? `${number(record.phar.bytes)} bytes · ${(record.phar.bytes / 1024).toFixed(1)} KiB` : "Not recorded";
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <SeoHead title={title} description={description} path={canonical} />
+    <link rel="icon" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="stylesheet" href="/styles.css?v=plugin-details-1">
+    <link rel="stylesheet" href="/plugin-details.css?v=plugin-details-1">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="site-brand detail-brand" href="/">
+        <img class="site-brand-icon" src="/android-chrome-192x192.png" alt="" width="40" height="40">
+        <span>Poggit Archive <span class="brand-caption">Plugins &amp; Virions</span></span>
+      </a>
+    </header>
+    <main class="plugin-detail">
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Plugins</a><span aria-hidden="true">/</span><a href={project.path}>{project.latest.name}</a><span aria-hidden="true">/</span><span>{release.version}</span></nav>
+      <section class="plugin-hero" aria-labelledby="plugin-title">
+        <img class="detail-icon" src={release.icon_url || "/android-chrome-192x192.png"} alt="" width="80" height="80" referrerpolicy="no-referrer">
+        <div class="hero-copy"><p class="eyebrow">PocketMine-MP plugin</p><h1 id="plugin-title">{release.name}</h1><p class="detail-author">by <a href={`https://github.com/${owner}`}>{owner}</a></p><p class="detail-tagline">{description}</p></div>
+      </section>
+      <div class="release-toolbar">
+        <details class="detail-version-picker">
+          <summary><span>Version <strong>{release.version}</strong></span><span aria-hidden="true">⌄</span></summary>
+          <nav class="detail-version-menu" aria-label="Choose plugin version">
+            {project.releases.map((row) => <a href={versionPath(project, row)} aria-label={`${row.version}, ${number(row.downloads)} downloads, submitted ${date(row.submission_date)}`} aria-current={row.id === release.id ? "page" : undefined}><strong>{row.version}</strong><span class="version-menu-downloads">{number(row.downloads)} downloads</span><time datetime={new Date(row.submission_date * 1000).toISOString()}>{date(row.submission_date)}</time></a>)}
+          </nav>
+        </details>
+        <span class="toolbar-count">{number(project.totalDownloads)} total downloads</span>
+        <span class="license-label">{view.license}</span>
+        {flags.map(([, label]) => <span class="release-flag">{label}</span>)}
+        {release.id !== project.latest.id && <a class="latest-link" href={project.path}>View latest version →</a>}
+      </div>
+      <nav class="detail-tabs" aria-label="Plugin sections"><a href="#overview">Overview</a><a href="#changelog">Changelog</a><a href="#versions">Versions <span>{project.releases.length}</span></a><a href="#manifest">Commands &amp; permissions</a><a href="#license">License</a></nav>
+      <div class="detail-layout">
+        <div class="detail-main">
+          <section id="overview" class="detail-section">
+            <div class="section-heading"><h2>Overview</h2>{view.descriptionUrl && <a href={view.descriptionUrl}>Original document ↗</a>}</div>
+            {view.descriptionHtml ? <div class="archived-document" set:html={view.descriptionHtml} /> : <p class="empty-detail">The description for this release was not preserved in the official archive.</p>}
+          </section>
+          <section id="changelog" class="detail-section">
+            <div class="section-heading"><h2>Changelog <span>{release.version}</span></h2>{view.changelogUrl && <a href={view.changelogUrl}>Original document ↗</a>}</div>
+            {view.changelogHtml ? <div class="archived-document" set:html={view.changelogHtml} /> : <p class="empty-detail">No changelog was preserved for this release.</p>}
+          </section>
+          <section id="versions" class="detail-section">
+            <div class="section-heading"><h2>Version history</h2><span>{number(project.releases.length)} releases</span></div>
+            <div class="detail-table-wrap"><table class="detail-table version-history"><thead><tr><th scope="col">Version</th><th scope="col">Submitted (UTC)</th><th scope="col">Downloads</th><th scope="col">PHAR</th></tr></thead><tbody>
+              {project.releases.map((row) => { const artifact = catalog.downloads[String(row.id)]; return <tr aria-current={row.id === release.id ? "true" : undefined}><th scope="row"><a href={versionPath(project, row)}>{row.version}</a>{row.id === project.latest.id && <span class="history-label">Latest</span>}{row.id === release.id && <span class="history-label">Viewing</span>}</th><td>{date(row.submission_date)}</td><td>{number(row.downloads)}</td><td>{artifact?.status === "uploaded" && archiveUrl(artifact.remote_url) && <a href={artifact.remote_url} aria-label={`Download ${row.name} ${row.version} PHAR`}>Download</a>}</td></tr>; })}
+            </tbody></table></div>
+          </section>
+          <section id="manifest" class="detail-section">
+            <div class="section-heading"><h2>Commands &amp; permissions</h2><span>From this PHAR’s plugin.yml</span></div>
+            <p class="section-note">Commands and permissions registered at runtime may only be described in the overview.</p>
+            <h3>Commands <span class="count-label">{commands.length}</span></h3>
+            {commands.length ? <div class="command-list">{commands.map((command) => <article><h4><code>/{command.name}</code></h4>{command.description && <p>{text(command.description)}</p>}<dl class="compact-facts">{command.usage && <><dt>Usage</dt><dd><code>{text(command.usage)}</code></dd></>}{command.aliases && <><dt>Aliases</dt><dd>{list(command.aliases).join(", ")}</dd></>}{command.permission && <><dt>Permission</dt><dd><code>{text(command.permission)}</code></dd></>}</dl></article>)}</div> : <p class="empty-detail">No commands are declared in this manifest.</p>}
+            <h3>Permission nodes <span class="count-label">{permissions.length}</span></h3>
+            {permissions.length ? <div class="command-list">{permissions.map((permission) => <article><h4><code>{permission.name}</code></h4>{permission.description && <p>{text(permission.description)}</p>}<dl class="compact-facts"><dt>Default</dt><dd>{permission.default === undefined ? "Not declared" : text(permission.default)}</dd>{permission.children && <><dt>Children</dt><dd><code>{text(permission.children)}</code></dd></>}</dl></article>)}</div> : <p class="empty-detail">No permissions are declared in this manifest.</p>}
+            <details class="raw-manifest"><summary>View original plugin.yml</summary><pre>{record.manifest_text || "Manifest not available."}</pre></details>
+          </section>
+          <section id="dependencies" class="detail-section"><h2>Dependencies</h2>
+            {declaredDependencies.length ? <ul class="dependency-list">{declaredDependencies.map(([name, kind]) => <li><strong>{name}</strong><span>{kind}</span></li>)}</ul> : <p class="empty-detail">No plugin dependencies are declared in this manifest.</p>}
+            {(release.deps || []).length > 0 && <><h3>Release requirements recorded by Poggit</h3><ul class="dependency-list">{release.deps.map((dependency) => <li><strong>{dependency.name} {dependency.version}</strong><span>{dependency.isHard ? "Required" : "Optional"}</span></li>)}</ul></>}
+            {(release.virions || []).length > 0 && <><h3>Bundled virions</h3><ul class="dependency-list">{release.virions.map((virion) => <li><a href={`https://github.com/${virion.repo_name}/tree/${virion.build_commit}`}>{virion.name}</a><code>{virion.build_commit.slice(0, 7)}</code></li>)}</ul></>}
+          </section>
+          {people.length > 0 && <section id="people" class="detail-section"><h2>People</h2>{people.map(([role, names]) => <div class="people-group"><h3>{role}s</h3><div>{names.map((name) => <a href={`https://github.com/${encodeURIComponent(name)}`}>{name}</a>)}</div></div>)}</section>}
+          <section id="license" class="detail-section"><h2>License <span>{view.license}</span></h2>{view.licenseText ? <details class="full-license"><summary>Read the preserved license text</summary><pre>{view.licenseText}</pre></details> : <p class="empty-detail">{view.license === "No License" ? "No nonempty license document was preserved for this release." : "The license identifier is recorded above; no full license text was found in the preserved PHAR or official release documents."}</p>}{release.license_url && <a class="text-link" href={view.rawDocumentUrl("LICENSE.txt") || repository}>Original license document ↗</a>}</section>
+          <section id="reviews" class="detail-section"><h2>Reviews</h2><p class="empty-detail">Review records and developer replies were not included in the preserved release data.</p>{release.score != null && <p class="section-note">Recorded Poggit score: {release.score}/5. A review count was not archived.</p>}</section>
+        </div>
+        <aside class="detail-sidebar" aria-label="Release information">
+          <section id="download" class="download-card"><p class="eyebrow">Archived release</p><h2>{release.name} <span>{release.version}</span></h2>{view.download ? <a class="primary-download" href={view.download}>Download .phar <span aria-hidden="true">↓</span></a> : <p class="empty-detail">PHAR unavailable</p>}<p class="file-size">{fileSize}</p>{view.source && <><a class="source-download" href={view.source.url}>{view.source.label} <span aria-hidden="true">↗</span></a><p class="source-note">{view.source.note}</p></>}<details class="install-help"><summary>How to install</summary><ol><li>Download this release’s .phar file.</li><li>Stop your PocketMine-MP server and put the file in its <code>plugins/</code> folder.</li><li>Install required dependencies and check API compatibility below.</li><li>Start the server and follow the plugin’s setup instructions.</li></ol></details></section>
+          <section class="sidebar-section"><h2>Release details</h2><dl class="release-facts"><dt>Version</dt><dd>{release.version}</dd><dt>Compatible APIs</dt><dd>{apiRanges(release)}</dd><dt>Release status</dt><dd>{release.state_name || "Not recorded"}</dd><dt>Release type</dt><dd>{release.is_pre_release ? "Pre-release" : "Stable"}</dd><dt>Submitted (UTC)</dt><dd>{date(release.submission_date)}</dd><dt>Status updated (UTC)</dt><dd>{date(release.last_state_change_date)}</dd><dt>Dev build</dt><dd><a href={`https://poggit.pmmp.io/ci/${release.repo_name}/${release.project_name}/${release.build_number}`}>#{release.build_number} ↗</a></dd>{manifest.main && <><dt>Main class</dt><dd><code>{text(manifest.main)}</code></dd></>}{manifest.load && <><dt>Load phase</dt><dd>{text(manifest.load)}</dd></>}{manifest.website && /^https?:\/\//i.test(text(manifest.website)) && <><dt>Website</dt><dd><a href={text(manifest.website)}>Plugin website ↗</a></dd></>}</dl><p class="section-note">Status updated is Poggit’s last recorded state change, which may differ from the first approval date.</p></section>
+          <section class="sidebar-section"><h2>Links</h2><ul class="sidebar-links"><li><a href={repository}>Source repository ↗</a></li><li><a href={`${repository}/tree/${release.build_commit}`}>Build commit ↗</a></li><li><a href={`${repository}/issues`}>Issues &amp; feature requests ↗</a></li><li><a href={release.html_url}>Original Poggit URL ↗</a></li>{view.rawDocumentUrl("info.json") && <li><a href={view.rawDocumentUrl("info.json")}>Official archive metadata ↗</a></li>}</ul></section>
+          {(release.categories || []).length > 0 && <section class="sidebar-section"><h2>Categories</h2><div class="detail-tags">{release.categories.map((category) => <span>{category.category_name}</span>)}</div>{release.keywords?.length > 0 && <><h3>Keywords</h3><div class="detail-tags">{release.keywords.map((keyword) => <span>{keyword}</span>)}</div></>}</section>}
+          <details class="sidebar-section technical-details"><summary>Archive IDs &amp; checksums</summary><dl class="release-facts"><dt>Plugin / project ID</dt><dd>{release.project_id}</dd><dt>Release ID</dt><dd>{release.id}</dd><dt>Repository ID</dt><dd>{release.repo_id}</dd><dt>Build ID</dt><dd>{release.build_id}</dd><dt>Build commit</dt><dd><code>{release.build_commit}</code></dd>{["sha256", "sha1", "md5"].map((hash) => record.phar?.[hash] && <><dt>{hash.toUpperCase()}</dt><dd><code>{record.phar[hash]}</code></dd></>)}</dl></details>
+        </aside>
+      </div>
+    </main>
+    <footer class="site-footer detail-footer"><p>Snapshot: <time datetime={catalog.pointer.captured_at}>{catalog.pointer.captured_at.slice(0, 10)}</time>. Downloads and metadata reflect this archived snapshot.</p><p>Independent archive · <a href="https://github.com/poggit/release-archive">Documents from Poggit</a> · <a href="https://github.com/poggit-archive/poggit-archive.github.io">Archive source</a></p></footer>
+    <script>
+      // Broken historical image hosts should not leave empty image frames.
+      document.querySelectorAll<HTMLImageElement>(".archived-document img").forEach((image) => {
+        const hide = () => { image.hidden = true; };
+        image.addEventListener("error", hide);
+        if (image.complete && !image.naturalWidth) hide();
+      });
+      document.querySelectorAll<HTMLImageElement>(".detail-icon").forEach((image) => image.addEventListener("error", () => { image.src = "/android-chrome-192x192.png"; }, { once: true }));
+      const picker = document.querySelector<HTMLDetailsElement>(".detail-version-picker");
+      picker?.addEventListener("keydown", (event) => { if (event.key === "Escape") { picker.open = false; picker.querySelector("summary")?.focus(); } });
+      document.addEventListener("click", (event) => { if (picker && !picker.contains(event.target as Node)) picker.open = false; });
+    </script>
+  </body>
+</html>

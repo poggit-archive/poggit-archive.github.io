@@ -11,6 +11,8 @@
     "downloads_virions": "../../snapshots/2026-10-14T20-07-25Z/downloads-virions.json",
     "source_downloads": "../../snapshots/2026-10-14T20-07-25Z/source-downloads.json",
     "recovered_sources": "../../snapshots/2026-10-14T20-07-25Z/recovered-sources.json",
-    "virion_sources": "../../snapshots/2026-10-14T20-07-25Z/virion-source-downloads.json"
+    "virion_sources": "../../snapshots/2026-10-14T20-07-25Z/virion-source-downloads.json",
+    "plugin_details": "../../snapshots/2026-10-14T20-07-25Z/plugin-details.json.gz",
+    "plugin_details_report": "../../snapshots/2026-10-14T20-07-25Z/plugin-details-report.json"
   }
 }

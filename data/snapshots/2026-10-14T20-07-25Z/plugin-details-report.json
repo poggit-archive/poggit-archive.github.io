@@ -1,0 +1,12 @@
+{
+  "releases": 5021,
+  "official_documents": 5020,
+  "descriptions": 5020,
+  "changelogs": 3636,
+  "manifests": 5021,
+  "licenses_in_phar": 1082,
+  "missing_official_documents": [
+    "13728"
+  ],
+  "manifest_errors": []
+}
