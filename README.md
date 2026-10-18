@@ -11,6 +11,63 @@ An independent, non-commercial preservation catalog for PocketMine-MP plugin and
 - Verified PHAR and source ZIP files are stored as GitHub release assets in `poggit-archive/artifacts`. The publisher deletes each local copy only after GitHub reports the matching digest and byte size.
 - Empty or missing license documents are recorded as **No License** while preserving upstream metadata and author/source attribution. This label records the absence of a license document; it does not assign a license. Nonempty custom license terms remain recorded for review.
 
+## Remaining preservation gaps
+
+Status checked on **19 October 2026**, for snapshot [`2026-10-14T20-07-25Z`](data/snapshots/2026-10-14T20-07-25Z/). Counts cover **1,450 plugin projects / 5,021 releases** and **265 virion catalog entries**. The virion count covers the captured ranked feed, not every virion ever published.
+
+| Missing material | Plugins | Virions |
+| --- | ---: | ---: |
+| Source ZIP in any preserved form | **0** | **6** |
+| PHAR, including a verified reconstruction | **0** | **6** |
+| Git source at the original Poggit build revision | **19 projects / 23 releases** | **51 entries** |
+
+For plugins, **4,998 releases** have exact archived Git source. The remaining **23 releases** have separately preserved **Source from PHAR** ZIPs and original PHARs. Their distribution files are available, but the complete repository trees at their original build revisions remain missing.
+
+For virions, **214 entries** have source at the original Poggit build revision, **44** have Git source used for reconstruction with the original Poggit revision unconfirmed, and **1** has source recovered from a PHAR. The remaining **6** have neither a source ZIP nor an original/rebuilt PHAR. Thus **259/265 entries** have both a source ZIP and a PHAR; the **51** entries lacking confirmed original-build Git source comprise those 44 reconstructions, one PHAR-derived source and six unresolved entries. PHAR coverage comprises **213 originals and 46 reconstructions**.
+
+### Plugins still missing exact Git source
+
+All releases below already have original PHARs and source ZIPs recovered from those PHARs. The outstanding gap is the exact Git source tree.
+
+| Plugin | Original repository | Affected release versions |
+| --- | --- | --- |
+| KeepInv | `AstraMCPE/KeepInventory` | 1.0.0 |
+| LuckyPouches | `ecstsylove/LuckyPouches` | 1.0.1, 1.0.0 |
+| OnePlayerSleep | `ecstsylove/OnePlayerSleep` | 1.0.0 |
+| HiveCorruptor | `JustTalDevelops/HiveCorruptor` | 1.0.0 |
+| PlayerSkinStealer | `mote166/SkinStealer` | 1.0.0 |
+| AutoSmelt | `OguzhanUmutlu/AutoSmelt` | 1.0.0 |
+| BoostBlock | `OguzhanUmutlu/BoostBlock` | 1.0.0 |
+| ChatLevel | `OguzhanUmutlu/ChatLevel` | 1.0.0 |
+| ChorusPlant | `OguzhanUmutlu/ChorusPlant` | 1.0.0 |
+| CommandEditor | `OguzhanUmutlu/CommandEditor` | 1.0.2, 1.0.1 |
+| OneBlockAFK | `OguzhanUmutlu/OneBlockAFK` | 1.0.0 |
+| RandomDrops | `OguzhanUmutlu/RandomDrops` | 1.0.1, 1.0.0 |
+| RobotVerification | `OguzhanUmutlu/RobotVerification` | 1.0.0 |
+| StopLag | `OguzhanUmutlu/StopLag` | 1.0.0 |
+| WorkersDemo | `OguzhanUmutlu/WorkersDemo` | 1.0.1, 1.0.0 |
+| AntiEnchantmentAbuse | `radondev/AntiEnchantmentAbuse` | 1.1.0 |
+| ClearPlayer | `radondev/ClearPlayer` | 1.0.0 |
+| PlotRating | `skillDev5235/PlotRating` | 1.1 |
+| CoinsSystem | `VazziDE/CoinsSystem` | 1.2.0 |
+
+The [plugin recovery audit](docs/source-recovery-2026-10-19.md) records the investigation. Exact build commits and PHAR-derived source ZIPs are tracked separately in [`source-downloads.json`](data/snapshots/2026-10-14T20-07-25Z/source-downloads.json) and [`recovered-sources.json`](data/snapshots/2026-10-14T20-07-25Z/recovered-sources.json).
+
+### Virions still missing both source and PHAR
+
+| Original repository / project | Catalog version |
+| --- | --- |
+| `vosaka-php/vosaka` / vosaka | 1.9.0 |
+| `ZetNex/Map` / Map | 1.0.1 |
+| `Jasson44/TelegramBotAPI` / TelegramBotAPI | 1.0.0 |
+| `Tobias-2006/CommandArguments` / CommandArguments | Not recorded (`latest` catalog entry) |
+| `kenzeve/ReplayLib` / ReplayLib | 1.0.0 |
+| `InkoHX/Krul` / Krul | 0.1.0 |
+
+The [latest virion investigation](docs/virion-development-recovery-2026-10-19.md) checked development PHARs outside the approved release catalog, historical forks, Wayback and Software Heritage. It recovered additional SHA candidates and class-name metadata, but no source or PHAR for these six entries. Four exact-SHA Wayback URLs remain unverified after HTTP 429; they are retained as pending requests, not negative archive results.
+
+See [`virion-development-recovery.json`](data/snapshots/2026-10-14T20-07-25Z/virion-development-recovery.json) for evidence and pending URLs, [`virion-source-plan.json`](data/snapshots/2026-10-14T20-07-25Z/virion-source-plan.json) for revision candidates, and [`virion-source-downloads.json`](data/snapshots/2026-10-14T20-07-25Z/virion-source-downloads.json) for preserved source and revision scope. A metadata record, matching name or historical SHA candidate alone does not count as recovered source.
+
 ## Poggit request and build limits
 
 Poggit's API documentation specifies the read endpoints and `/r/{resourceId}` resource URLs, but does not publish a numeric request quota. The importer therefore uses one sequential request at a time, waits two seconds between requests by default, honors `Retry-After` by stopping instead of retrying, and stops on HTTP 403/429. It retries transient server/network errors with exponential backoff. Do not increase concurrency or run multiple importers against Poggit.
