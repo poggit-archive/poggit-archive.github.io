@@ -8,6 +8,8 @@ const root = resolve(fileURLToPath(new URL("..", import.meta.url)));
 const publicData = resolve(root, "public", "data");
 const publicIcons = resolve(root, "public", "memory-icons");
 await copySiteData("public/data");
+const prepare = spawnSync(process.execPath, [resolve(root, "scripts", "prepare-preserved-site.mjs")], { cwd: root, stdio: "inherit" });
+if (prepare.error || prepare.status !== 0) throw prepare.error || new Error("Could not verify preserved media and documents.");
 
 const npmCli = process.env.npm_execpath;
 if (!npmCli) {

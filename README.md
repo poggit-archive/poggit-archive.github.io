@@ -38,6 +38,34 @@ python scripts/import_plugin_details.py --php path/to/php.exe
 
 The importer downloads one pinned official archive ZIP and checks every imported document against its Git tree. The committed compressed snapshot lets normal `npm ci` / `npm run build` deployments run without Python, PHP or another archive download.
 
+## External dependencies and local mirrors
+
+Browsing the catalog, plugin detail pages and Memory no longer requests images, scripts, fonts, styles or data from Poggit, GitHub's raw/camo image hosts or external CDNs. A production Content Security Policy enforces same-origin runtime resources. Normal builds use committed captures and do not download images or documents; the Memory sprite sheets are generated from local images.
+
+- **6,643 image contexts** are tracked by original URL and release revision: **5,512 preserved**, **758 explicitly reconstructed snapshot labels**, and **373 unavailable**. Contexts deduplicate to **2,087 displayed image files**. Own-repository images are pinned to the recorded build commit; 241 additional contexts were recovered from verified Git source ZIPs. External images/badges captured later retain their capture date rather than being presented as historical release-time bytes.
+- **5,562 download URLs** have checksum-verified same-origin copies: all **5,021 plugin PHARs**, **259 original/rebuilt virion PHARs**, **259 virion source ZIPs**, and **23 PHAR-derived plugin source ZIPs**. Original/rebuilt provenance stays unchanged. GitHub release assets remain backups. Full plugin Git source ZIPs (~883 MiB) stay in the project-owned artifact repository because they cannot fit alongside the site within GitHub Pages' 1 GB limit.
+- Original descriptions, changelogs, manifests, license files and release metadata are exported under `/plugin-documents/`. Raw archived HTML, including the original virion listing, is served as `.html.txt` so viewing it cannot invoke old Poggit/CDN scripts.
+- Captured Poggit plugin/version/resource links are rewritten to preserved equivalents. Dev Build links open the saved build record. Unmatched historical references point to the preservation explanation. Profiles, issues, Discord, videos and donation pages remain optional external links, without embedded widgets.
+- Missing images always use a local placeholder, with no fallback request to an upstream host. Reconstructed Poggit badges are labeled as archive snapshot information and remain distinct from captured originals.
+
+See the live [preservation status](https://poggit-archive.github.io/preservation/), the [audit notes](docs/external-dependencies-2026-10-19.md), [`media-mirror-report.json`](data/snapshots/2026-10-14T20-07-25Z/media-mirror-report.json), [`media-mirror.json`](data/snapshots/2026-10-14T20-07-25Z/media-mirror.json) and [`file-mirror.json`](data/snapshots/2026-10-14T20-07-25Z/file-mirror.json). Every build verifies local media/download checksums and audits generated HTML/CSS, Memory sheet references and local navigation/download targets; the public result is `/dependency-audit.json`.
+
+Preservation updates are explicit operations, separate from normal builds:
+
+```powershell
+# Optional: recover images from the verified PHAR cache, using PHP >= 8.
+python scripts/import_phar_media.py --php path/to/php.exe
+npm run preserve:media
+python scripts/recover-media-from-git.py
+node scripts/finalize-media.mjs
+python scripts/preserve_downloads.py
+npm run build
+```
+
+Captures are resumable under `archive/`, use content hashes, and keep upstream URLs and revision evidence. Use `node scripts/preserve-media.mjs --retry-missing` only for a deliberate follow-up attempt. Review changed assets and manifests before committing. Builds never silently replace preserved bytes with upstream changes.
+
+The generated `dist/` directory is portable to another static host. GitHub remains the current hosting/CI platform and the fallback store for large plugin Git ZIPs; npm is needed when installing build tools. Live external services and GitHub's historical CI/review data are not complete offline archives.
+
 ## Remaining preservation gaps
 
 Status checked on **19 October 2026**, for snapshot [`2026-10-14T20-07-25Z`](data/snapshots/2026-10-14T20-07-25Z/). Counts cover **1,450 plugin projects / 5,021 releases** and **265 virion catalog entries**. The virion count covers the captured ranked feed, not every virion ever published.

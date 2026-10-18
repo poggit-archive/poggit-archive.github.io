@@ -1,4 +1,4 @@
-import { cp, mkdir } from "node:fs/promises";
+import { cp, mkdir, readdir, rename } from "node:fs/promises";
 import { resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
@@ -24,6 +24,15 @@ export async function copySiteData(target) {
       force: true,
     });
   }
+  async function makeRawHtmlInert(directory) {
+    for (const entry of await readdir(directory, { withFileTypes: true })) {
+      const path = resolve(directory, entry.name);
+      if (!path.startsWith(destination + "/") && !path.startsWith(destination + "\\")) throw new Error("Raw HTML path escapes the exported data directory");
+      if (entry.isDirectory()) await makeRawHtmlInert(path);
+      else if (entry.name.endsWith(".html")) await rename(path, path + ".txt");
+    }
+  }
+  await makeRawHtmlInert(resolve(destination, "snapshots"));
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {

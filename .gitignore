@@ -7,6 +7,7 @@ dist/
 /.memory-icon-cache/
 /public/data/
 /public/memory-icons/
+/public/plugin-documents/
 
 # Large binary mirrors are kept outside Git's normal source tree.
 /archive/

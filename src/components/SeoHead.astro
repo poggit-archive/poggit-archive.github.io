@@ -53,6 +53,7 @@ const structuredData = JSON.stringify({
 <title>{title}</title>
 <meta name="description" content={description}>
 <meta name="robots" content="index,follow,max-image-preview:large">
+{import.meta.env.PROD && <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; connect-src 'self'; media-src 'self'; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'none'">}
 <link rel="canonical" href={canonicalUrl}>
 {homePage && <meta name="google-site-verification" content="7wr__v7tRKs9GHzQaNq6RK9Sw6NNRHUYVORhu4MASbk">}
 

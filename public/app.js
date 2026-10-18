@@ -16,6 +16,8 @@
     recoveredSources: {},
     virionSources: {},
     loaded: false,
+    icons: {},
+    files: {},
   };
   const $ = (selector) => document.querySelector(selector);
   const results = $("#results");
@@ -192,17 +194,22 @@
     }
   }
 
+  function fileUrl(value) {
+    const mirrored = state.files[value];
+    return archiveUrl(value) && /^\/archive-files\/[a-f0-9]{64}\.(phar|zip)$/.test(mirrored?.path || "") ? mirrored.path : value;
+  }
+
   function sourceArtifact(item) {
     if (state.kind === "virions") {
       const source = state.virionSources[String(item.id)];
       if (source?.status !== "uploaded" || !archiveUrl(source.remote_url)) return null;
       if (source.method === "unphar" && source.complete_git_snapshot === false) {
-        return { url: source.remote_url, label: "Source from PHAR", details: "Files recovered from the original PHAR. Repository files excluded during the build may be missing." };
+        return { url: fileUrl(source.remote_url), label: "Source from PHAR", details: "Files recovered from the original PHAR. Repository files excluded during the build may be missing." };
       }
       if (source.method !== "git_archive" || source.complete_git_snapshot !== true || !["original_poggit_build", "rebuilt_phar"].includes(source.source_scope) || !/^[a-f0-9]{40}$/.test(source.verified_revision || "")) return null;
       const original = source.source_scope === "original_poggit_build";
       return {
-        url: source.remote_url,
+        url: fileUrl(source.remote_url),
         label: original ? "Archived source" : "Rebuild source",
         details: `${source.source_repository_used || source.source_repo}@${source.verified_revision}. ${original ? "Source revision recorded by the original Poggit build." : "Source used for the rebuilt PHAR; the original Poggit revision is unconfirmed."}`,
       };
@@ -211,12 +218,12 @@
     const key = `${item.repo_id}@${String(item.build_commit).toLowerCase()}`;
     const archived = state.sourceDownloads[key];
     if (archived?.status === "uploaded" && archiveUrl(archived.remote_url)) {
-      return { url: archived.remote_url, label: "Archived source" };
+      return { url: fileUrl(archived.remote_url), label: "Archived source" };
     }
     const recovered = state.recoveredSources[String(item.id)];
     return recovered?.status === "uploaded" && recovered.method === "unphar"
       && recovered.complete_git_snapshot === false && archiveUrl(recovered.remote_url)
-      ? { url: recovered.remote_url, label: "Source from PHAR", details: "Files recovered from the original PHAR. Repository files excluded during the build may be missing." }
+      ? { url: fileUrl(recovered.remote_url), label: "Source from PHAR", details: "Files recovered from the original PHAR. Repository files excluded during the build may be missing." }
       : null;
   }
 
@@ -225,7 +232,7 @@
     const downloads = state.kind === "plugins" ? state.pluginDownloads : state.virionDownloads;
     const local = downloads[key];
     if (local?.status === "uploaded" && archiveUrl(local.remote_url)) {
-      return { url: local.remote_url, label: "Archived PHAR", local: false };
+      return { url: fileUrl(local.remote_url), label: "Archived PHAR", local: fileUrl(local.remote_url).startsWith("/") };
     }
     const localPreview = ["localhost", "127.0.0.1", "::1"].includes(location.hostname);
     if (localPreview && local && ["downloaded", "already_present"].includes(local.status) && local.storage_path) {
@@ -233,7 +240,7 @@
     }
     const rebuilt = local?.rebuilt_artifact;
     if (rebuilt?.status === "uploaded" && archiveUrl(rebuilt.remote_url)) {
-      return { url: rebuilt.remote_url, label: "Rebuilt PHAR", local: false, rebuilt };
+      return { url: fileUrl(rebuilt.remote_url), label: "Rebuilt PHAR", local: fileUrl(rebuilt.remote_url).startsWith("/"), rebuilt };
     }
     return null;
   }
@@ -256,7 +263,7 @@
     const actions = element("div", "result-actions");
     const source = sourceArtifact(item);
     if (source) {
-      const sourceLink = link(source.label, source.url, "", true);
+      const sourceLink = link(source.label, source.url, "", !source.url.startsWith("/"));
       if (source.details) {
         sourceLink.title = source.details;
         sourceLink.setAttribute("aria-label", `${source.label} for ${title}. ${source.details}`);
@@ -267,7 +274,7 @@
     const artifact = artifactFor(item);
     if (artifact?.url) {
       const download = link(artifact.label, artifact.url, artifact.local || archiveUrl(artifact.url) ? "download-link" : "", !artifact.local);
-      download.setAttribute("download", "");
+      download.setAttribute("download", `${item.name || "plugin"}-${item.version || item.id}.phar`.replace(/[^a-zA-Z0-9_.-]/g, "-"));
       download.setAttribute("aria-label", `${artifact.label} for ${title} ${item.version || ""}`);
       if (artifact.rebuilt) {
         const provenance = artifact.rebuilt;
@@ -289,14 +296,8 @@
 
   function pluginIconUrl(item) {
     if (!item.icon_url) return null;
-    try {
-      const url = new URL(String(item.icon_url).trim());
-      return url.protocol === "https:" && ["github.com", "raw.githubusercontent.com"].includes(url.hostname)
-        ? url.href
-        : null;
-    } catch {
-      return null;
-    }
+    const local = state.icons[String(item.id)];
+    return /^\/archive-media\/[a-f0-9]{64}\.(png|jpg|gif|webp|avif)$/.test(local || "") ? local : "/assets/image-unavailable.svg";
   }
 
   function updatePluginIcon(frame, item) {
@@ -663,7 +664,7 @@
       const pointerUrl = new URL("data/api/v1/current.json", location.href);
       const pointer = await getJson(pointerUrl);
       const base = (relative) => new URL(relative, pointerUrl).href;
-      const [summary, releases, virions, pluginDownloads, virionDownloads, sourceDownloads, recoveredSources, virionSources] = await Promise.all([
+      const [summary, releases, virions, pluginDownloads, virionDownloads, sourceDownloads, recoveredSources, virionSources, icons, files] = await Promise.all([
         getJson(base(pointer.files.summary)),
         getJson(base(pointer.files.releases)),
         getJson(base(pointer.files.virions)),
@@ -672,6 +673,8 @@
         optionalJson(base(pointer.files.source_downloads)),
         pointer.files.recovered_sources ? optionalJson(base(pointer.files.recovered_sources)) : Promise.resolve({}),
         pointer.files.virion_sources ? optionalJson(base(pointer.files.virion_sources)) : Promise.resolve({}),
+        getJson(new URL("/archive-media/icons.json", location.href)),
+        getJson(new URL("/archive-files/manifest.json", location.href)),
       ]);
 
       state.releases = Array.isArray(releases) ? releases : [];
@@ -683,6 +686,8 @@
       state.sourceDownloads = sourceDownloads;
       state.recoveredSources = recoveredSources;
       state.virionSources = virionSources;
+      state.icons = icons.icons || {};
+      state.files = files.resources || {};
       $("#plugins-tab-count").textContent = number(state.pluginProjects.length);
       $("#virions-tab-count").textContent = number(summary.counts?.virion_entries);
       state.loaded = true;

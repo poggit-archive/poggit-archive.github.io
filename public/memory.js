@@ -93,7 +93,7 @@
       const pointerUrl = new URL("/data/api/v1/current.json", location.origin);
       const [pointerResponse, manifestResponse] = await Promise.all([
         fetch(pointerUrl),
-        fetch("/memory-icons/manifest.json"),
+        fetch("/memory-icons/manifest.json", { cache: "no-cache" }),
       ]);
       if (!pointerResponse.ok) throw new Error(`Snapshot index returned ${pointerResponse.status}`);
       if (!manifestResponse.ok) throw new Error(`Icon cache returned ${manifestResponse.status}`);

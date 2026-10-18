@@ -13,6 +13,10 @@
     "recovered_sources": "../../snapshots/2026-10-14T20-07-25Z/recovered-sources.json",
     "virion_sources": "../../snapshots/2026-10-14T20-07-25Z/virion-source-downloads.json",
     "plugin_details": "../../snapshots/2026-10-14T20-07-25Z/plugin-details.json.gz",
-    "plugin_details_report": "../../snapshots/2026-10-14T20-07-25Z/plugin-details-report.json"
+    "plugin_details_report": "../../snapshots/2026-10-14T20-07-25Z/plugin-details-report.json",
+    "media_mirror": "../../snapshots/2026-10-14T20-07-25Z/media-mirror.json",
+    "media_mirror_report": "../../snapshots/2026-10-14T20-07-25Z/media-mirror-report.json",
+    "file_mirror": "../../snapshots/2026-10-14T20-07-25Z/file-mirror.json",
+    "virions_raw_html": "../../snapshots/2026-10-14T20-07-25Z/virions-top.html.txt"
   }
 }

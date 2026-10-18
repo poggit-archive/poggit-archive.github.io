@@ -1,7 +1,7 @@
 import { getCatalog, versionPath } from "../lib/plugin-details.mjs";
 
 export function GET() {
-  const urls = ["/", "/leaderboard/", "/memory/"];
+  const urls = ["/", "/leaderboard/", "/memory/", "/preservation/"];
   for (const project of getCatalog().projects.values()) {
     urls.push(project.path, ...project.releases.map((release) => versionPath(project, release)));
   }

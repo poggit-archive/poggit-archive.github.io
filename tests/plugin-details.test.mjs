@@ -55,8 +55,8 @@ test("Switching versions changes documents, manifest and archived downloads with
   const project = catalog.projects.get("420");
   const latest = releaseView(project.latest, catalog);
   const previous = releaseView(project.releases.find((release) => release.id === 12098), catalog);
-  assert.match(latest.download, /plugin-14252-/);
-  assert.match(previous.download, /plugin-12098-/);
+  assert.equal(latest.download, `/archive-files/${latest.record.phar.sha256}.phar`);
+  assert.equal(previous.download, `/archive-files/${previous.record.phar.sha256}.phar`);
   assert.notEqual(latest.descriptionUrl, previous.descriptionUrl);
   assert.notEqual(latest.changelogUrl, previous.changelogUrl);
   assert.notEqual(latest.changelogHtml, previous.changelogHtml);
@@ -97,6 +97,6 @@ test("Archived HTML is inert, links are resolved and document IDs cannot shadow 
   assert.match(html, /id="archived-description-plugin-title"/);
   assert.match(html, /href="#archived-description-start"/);
   assert.match(html, /href="https:\/\/github.com\/owner\/repo\/blob\/a{40}\/docs\/help.md"/);
-  assert.match(html, /src="https:\/\/raw.githubusercontent.com\/owner\/repo\/a{40}\/images\/test.png"/);
+  assert.match(html, /src="\/assets\/image-unavailable.svg"/);
   assert.match(cleanDocument({ format: "txt", content: '<script>alert(1)</script>' }, release), /&lt;script&gt;/);
 });

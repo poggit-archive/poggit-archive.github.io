@@ -1,4 +1,13 @@
 html { min-width: 0; }
+.media-preservation-note { margin: 12px 0 0; color: var(--muted); font-size: 10px; }
+.media-preservation-note a { text-decoration: underline; text-underline-offset: 3px; }
+.preservation-page { padding-bottom: 40px; font-size: 13px; overflow-wrap: anywhere; }
+.preservation-page h1 { font-size: 30px; font-weight: 500; letter-spacing: -.04em; }
+.preservation-page .detail-section { margin-top: 32px; }
+.preservation-page td:first-child { max-width: 380px; }
+.preservation-page td { min-width: 120px; }
+.preservation-page td code { font-size: 10px; }
+.preservation-facts { grid-template-columns: 140px minmax(0, 1fr); margin: 20px 0; }
 .detail-brand { font-size: 16px; font-weight: 600; letter-spacing: -.03em; }
 .brand-caption { margin-left: 8px; color: var(--muted); font-size: 12px; font-weight: 400; letter-spacing: 0; }
 .plugin-detail { padding-bottom: 48px; }
@@ -90,6 +99,7 @@ html { min-width: 0; }
 .primary-download:hover { background: #404040; }
 .source-download { margin-top: 14px; border: 1px solid #b8b8b8; }
 .file-size { margin: 8px 0 0; color: var(--muted); font-size: 10px; }
+.artifact-backup { display: inline-block; margin-top: 7px; color: var(--muted); font-size: 10px; }
 .source-note { margin: 8px 0 18px; color: var(--muted); font-size: 10px; line-height: 1.7; }
 .install-help { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 11px; }
 .install-help ol { padding-left: 16px; color: var(--muted); }

@@ -1,0 +1,4 @@
+# Captured bytes and their hashes must survive Windows/Linux checkouts unchanged.
+public/archive-media/** binary
+public/archive-files/** binary
+data/snapshots/*/plugin-details.json.gz -text
