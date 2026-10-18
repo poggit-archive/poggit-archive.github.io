@@ -1,5 +1,7 @@
 # Virion source preservation - 19 October 2026
 
+This is the initial recovery batch. The [follow-up investigation](virion-recovery-followup-2026-10-19.md) recovers four of the ten entries below, bringing coverage to 259/265 source ZIPs and PHARs. The counts and unresolved table in this initial report describe the earlier batch.
+
 The saved catalog contains 265 distinct entries from Poggit's ranked top-300 page. It does not represent every historical virion or version.
 
 After this recovery, **255/265 entries have a separately archived source ZIP and a PHAR**. There are 213 original PHARs and 42 reconstructions, including eight new reconstructions in this batch. Ten entries remain without a matching source tree or PHAR.

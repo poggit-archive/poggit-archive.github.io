@@ -103,7 +103,7 @@ The [19-plugin recovery audit](docs/source-recovery-2026-10-19.md) records furth
 
 ### Preserve virion sources and rebuild missing PHARs
 
-The [virion recovery report](docs/virion-recovery-2026-10-19.md) covers 255 separate source ZIPs, eight newly rebuilt PHARs and the ten unresolved entries. Virion source provenance is stored separately from plugin source in `virion-source-downloads.json`. The interface distinguishes **Archived source**, **Rebuild source**, and **Source from PHAR**; every link targets a verified archive asset.
+The [initial virion recovery report](docs/virion-recovery-2026-10-19.md) and [follow-up investigation](docs/virion-recovery-followup-2026-10-19.md) cover 259 separate source ZIPs, twelve newly rebuilt PHARs across the two batches and six unresolved entries. Virion source provenance is stored separately from plugin source in `virion-source-downloads.json`. The interface distinguishes **Archived source**, **Rebuild source**, and **Source from PHAR**; every link targets a verified archive asset.
 
 The portable `virion-source-plan.json` pins source revisions and records their evidence. Recover sources with:
 
@@ -123,6 +123,14 @@ python .\scripts\publish_artifacts.py --kind virion-sources --keep-local
 ```
 
 The builder checks the catalog name, version and namespace, records staging adjustments, and reopens each PHAR to compare included source bytes. It never executes target library code. Published reconstructions are recorded in `rebuilt-virions.json`; only verified uploaded records belong in each item's `downloads-virions.json` `rebuilt_artifact` field. Original download status and reconstructed artifact status remain separate.
+
+Search the archived plugin PHARs for embedded copies with:
+
+```powershell
+python .\scripts\scan_embedded_virions.py --php <php-path> --workers 4
+```
+
+This scanner checks each original PHAR's size and SHA-256 before reading entries. It searches the ten follow-up targets by namespace and repository signatures, including shaded prefixes, and saves matching file bytes unchanged under `archive/virion-recovery/embedded/`. Checkpoints allow later scans to resume. A match identifies a candidate copy; it does not establish a library version, complete repository tree or original build revision. The scan reads GitHub archive assets and makes no requests to Poggit.
 
 ## Astro site and JSON API
 

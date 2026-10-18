@@ -8294,5 +8294,6 @@
       "status": 404
     }
   },
-  "remote_artifact_verification": "virion-artifact-verification.json"
+  "remote_artifact_verification": "virion-artifact-verification.json",
+  "followup_report": "virion-recovery-followup.json"
 }

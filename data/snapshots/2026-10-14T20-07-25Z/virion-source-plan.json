@@ -2313,9 +2313,13 @@
     "name": "SingletonTrait",
     "catalog_version": "1.0.0",
     "source_repo": "Blugin/_virions",
-    "source_commit": null,
-    "source_scope": "unresolved",
-    "evidence": "No matching source manifest/revision recovered; see virion-recovery-audit.json"
+    "source_commit": "882c98de62cd2134519942102105378c01841ff3",
+    "source_scope": "rebuilt_phar",
+    "evidence": "GH Archive last master PushEvent records this before SHA; unreferenced commit survives in detached fork; matching project name, namespace and version verified; original Poggit build SHA unconfirmed",
+    "source_project_path": "SingletonTrait",
+    "candidates": [
+      "Danding1314/virions"
+    ]
   },
   "vosaka-php/vosaka/vosaka@1.9.0": {
     "id": "vosaka-php/vosaka/vosaka@1.9.0",
@@ -2367,27 +2371,38 @@
     "name": "pmforms",
     "catalog_version": "1.0.1",
     "source_repo": "stephen-mc-pl/pmforms-pm4",
-    "source_commit": null,
-    "source_scope": "unresolved",
-    "evidence": "No matching source manifest/revision recovered; see virion-recovery-audit.json"
+    "source_commit": "6c8d4be86d37e5125975a528e5d3d31fdc3d03df",
+    "source_scope": "rebuilt_phar",
+    "evidence": "GH Archive last prod PushEvent of numeric original repo 278530910; commit survives in upstream network with matching 1.0.1 manifest and API 4.0.0; original Poggit build SHA unconfirmed",
+    "candidates": [
+      "dktapps-pm-pl/pmforms"
+    ]
   },
   "blugin/_virions/stringutils@1.1.1": {
     "id": "blugin/_virions/stringutils@1.1.1",
     "name": "stringutils",
     "catalog_version": "1.1.1",
     "source_repo": "Blugin/_virions",
-    "source_commit": null,
-    "source_scope": "unresolved",
-    "evidence": "No matching source manifest/revision recovered; see virion-recovery-audit.json"
+    "source_commit": "882c98de62cd2134519942102105378c01841ff3",
+    "source_scope": "rebuilt_phar",
+    "evidence": "GH Archive last master PushEvent records this before SHA; unreferenced commit survives in detached fork; matching project name, namespace and version verified; original Poggit build SHA unconfirmed",
+    "source_project_path": "stringutils",
+    "candidates": [
+      "Danding1314/virions"
+    ]
   },
   "blugin/_virions/arrayutils@2.0.0": {
     "id": "blugin/_virions/arrayutils@2.0.0",
     "name": "arrayutils",
     "catalog_version": "2.0.0",
     "source_repo": "Blugin/_virions",
-    "source_commit": null,
-    "source_scope": "unresolved",
-    "evidence": "No matching source manifest/revision recovered; see virion-recovery-audit.json"
+    "source_commit": "882c98de62cd2134519942102105378c01841ff3",
+    "source_scope": "rebuilt_phar",
+    "evidence": "GH Archive last master PushEvent records this before SHA; unreferenced commit survives in detached fork; matching project name, namespace and version verified; original Poggit build SHA unconfirmed",
+    "source_project_path": "arrayutils",
+    "candidates": [
+      "Danding1314/virions"
+    ]
   },
   "inkohx/krul/krul@0.1.0": {
     "id": "inkohx/krul/krul@0.1.0",

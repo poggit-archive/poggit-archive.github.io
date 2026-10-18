@@ -10,8 +10,8 @@ const sources = read("virion-source-downloads.json");
 const newBuilds = read("rebuilt-virions.json");
 const asset = /^https:\/\/github\.com\/poggit-archive\/artifacts\/releases\/download\//;
 
-test("All 255 archived source ZIPs have verified remote identity and a corresponding PHAR", () => {
-  assert.equal(Object.keys(sources).length, 255);
+test("All 259 archived source ZIPs have verified remote identity and a corresponding PHAR", () => {
+  assert.equal(Object.keys(sources).length, 259);
   assert.equal(catalog.length, 265);
   for (const [id, source] of Object.entries(sources)) {
     assert.equal(source.status, "uploaded", id);
@@ -32,8 +32,8 @@ test("All 255 archived source ZIPs have verified remote identity and a correspon
   }
 });
 
-test("Eight new reconstructions match catalog namespaces, versions and source ZIPs", () => {
-  assert.equal(Object.keys(newBuilds).length, 8);
+test("Twelve reconstructions match catalog namespaces, versions and source ZIPs", () => {
+  assert.equal(Object.keys(newBuilds).length, 12);
   for (const [id, build] of Object.entries(newBuilds)) {
     const item = catalog.find(item => item.id === id);
     assert.equal(build.original_poggit_artifact, false, id);

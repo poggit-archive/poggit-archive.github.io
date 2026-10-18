@@ -13731,5 +13731,252 @@
     "remote_asset_id": 654346117,
     "uploaded_at": "2026-10-18T19:56:47Z",
     "local_deleted": false
+  },
+  "blugin/_virions/singletontrait@1.0.0": {
+    "type": "virion",
+    "id": "blugin/_virions/singletontrait@1.0.0",
+    "name": "SingletonTrait",
+    "owner": "Blugin",
+    "repo": "_virions",
+    "project": "SingletonTrait",
+    "version": "1.0.0",
+    "namespace": "blugin\\traits\\singleton",
+    "used_by_projects": 2,
+    "last_updated": "1601702138.510",
+    "last_build_short_id": "15b3b",
+    "poggit_ci_url": "https://poggit.pmmp.io/ci/Blugin/_virions/SingletonTrait",
+    "source_url": "https://github.com/Blugin/_virions",
+    "poggit_download_url": "https://poggit.pmmp.io/v.dl/Blugin/_virions/SingletonTrait/1.0.0?branch=%3Adefault",
+    "artifact_status": "pending",
+    "license": null,
+    "license_status": "document_preserved",
+    "catalog_version": "1.0.0",
+    "source_repo": "Blugin/_virions",
+    "source_commit": "882c98de62cd2134519942102105378c01841ff3",
+    "source_scope": "rebuilt_phar",
+    "evidence": "GH Archive last master PushEvent records this before SHA; unreferenced commit survives in detached fork; matching project name, namespace and version verified; original Poggit build SHA unconfirmed",
+    "source_project_path": "SingletonTrait",
+    "candidates": [
+      "Danding1314/virions"
+    ],
+    "license_display": "MIT",
+    "license_files": [
+      "SingletonTrait/LICENSE"
+    ],
+    "status": "uploaded",
+    "method": "git_archive",
+    "label": "Rebuild source",
+    "verified_revision": "882c98de62cd2134519942102105378c01841ff3",
+    "complete_git_snapshot": true,
+    "source_repository_used": "Danding1314/virions",
+    "source_archive_url": "https://codeload.github.com/Danding1314/virions/zip/882c98de62cd2134519942102105378c01841ff3",
+    "archive_root": "virions-882c98de62cd2134519942102105378c01841ff3/",
+    "sha256": "04a06c76c8305633b7cc57baa489fccc2b08e468c8106372b2616e23518b4b6b",
+    "bytes": 51402,
+    "file_count": 43,
+    "storage_path": null,
+    "candidate_checks": [
+      {
+        "repo": "Blugin/_virions",
+        "status": 404
+      },
+      {
+        "repo": "Danding1314/virions",
+        "status": 200
+      }
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "virion-sources-2026-10-14-0001",
+    "remote_asset_name": "virion-sources-blugin-_virions-singletontrait-1.0.0-882c98de62cd2134519942102105378c01841ff3-04a06c76c830.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/virion-sources-2026-10-14-0001/virion-sources-blugin-_virions-singletontrait-1.0.0-882c98de62cd2134519942102105378c01841ff3-04a06c76c830.zip",
+    "remote_sha256": "04a06c76c8305633b7cc57baa489fccc2b08e468c8106372b2616e23518b4b6b",
+    "remote_asset_id": 654399554,
+    "uploaded_at": "2026-10-18T20:21:50Z",
+    "local_deleted": false
+  },
+  "stephen-mc-pl/pmforms-pm4/pmforms@1.0.1": {
+    "type": "virion",
+    "id": "stephen-mc-pl/pmforms-pm4/pmforms@1.0.1",
+    "name": "pmforms",
+    "owner": "stephen-mc-pl",
+    "repo": "pmforms-pm4",
+    "project": "pmforms",
+    "version": "1.0.1",
+    "namespace": "dktapps\\pmforms",
+    "used_by_projects": 1,
+    "last_updated": "1594698966.844",
+    "last_build_short_id": "1474c",
+    "poggit_ci_url": "https://poggit.pmmp.io/ci/stephen-mc-pl/pmforms-pm4/pmforms",
+    "source_url": "https://github.com/stephen-mc-pl/pmforms-pm4",
+    "poggit_download_url": "https://poggit.pmmp.io/v.dl/stephen-mc-pl/pmforms-pm4/pmforms/1.0.1?branch=%3Adefault",
+    "artifact_status": "pending",
+    "license": null,
+    "license_status": "document_preserved",
+    "catalog_version": "1.0.1",
+    "source_repo": "stephen-mc-pl/pmforms-pm4",
+    "source_commit": "6c8d4be86d37e5125975a528e5d3d31fdc3d03df",
+    "source_scope": "rebuilt_phar",
+    "evidence": "GH Archive last prod PushEvent of numeric original repo 278530910; commit survives in upstream network with matching 1.0.1 manifest and API 4.0.0; original Poggit build SHA unconfirmed",
+    "candidates": [
+      "dktapps-pm-pl/pmforms"
+    ],
+    "license_display": "LGPL",
+    "license_files": [
+      "LICENSE"
+    ],
+    "status": "uploaded",
+    "method": "git_archive",
+    "label": "Rebuild source",
+    "verified_revision": "6c8d4be86d37e5125975a528e5d3d31fdc3d03df",
+    "complete_git_snapshot": true,
+    "source_repository_used": "dktapps-pm-pl/pmforms",
+    "source_archive_url": "https://codeload.github.com/dktapps-pm-pl/pmforms/zip/6c8d4be86d37e5125975a528e5d3d31fdc3d03df",
+    "archive_root": "pmforms-6c8d4be86d37e5125975a528e5d3d31fdc3d03df/",
+    "sha256": "77204abb33b5267a94dfdb9632ae1ea3f58dafd6da357018ae70798b28290fd7",
+    "bytes": 22998,
+    "file_count": 20,
+    "storage_path": null,
+    "candidate_checks": [
+      {
+        "repo": "stephen-mc-pl/pmforms-pm4",
+        "status": 404
+      },
+      {
+        "repo": "dktapps-pm-pl/pmforms",
+        "status": 200
+      }
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "virion-sources-2026-10-14-0001",
+    "remote_asset_name": "virion-sources-stephen-mc-pl-pmforms-pm4-pmforms-1.0.1-6c8d4be86d37e5125975a528e5d3d31fdc3d03df-77204abb33b5.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/virion-sources-2026-10-14-0001/virion-sources-stephen-mc-pl-pmforms-pm4-pmforms-1.0.1-6c8d4be86d37e5125975a528e5d3d31fdc3d03df-77204abb33b5.zip",
+    "remote_sha256": "77204abb33b5267a94dfdb9632ae1ea3f58dafd6da357018ae70798b28290fd7",
+    "remote_asset_id": 654399587,
+    "uploaded_at": "2026-10-18T20:21:51Z",
+    "local_deleted": false
+  },
+  "blugin/_virions/stringutils@1.1.1": {
+    "type": "virion",
+    "id": "blugin/_virions/stringutils@1.1.1",
+    "name": "stringutils",
+    "owner": "Blugin",
+    "repo": "_virions",
+    "project": "stringutils",
+    "version": "1.1.1",
+    "namespace": "blugin\\utils\\string",
+    "used_by_projects": 1,
+    "last_updated": "1601702139.644",
+    "last_build_short_id": "15b3d",
+    "poggit_ci_url": "https://poggit.pmmp.io/ci/Blugin/_virions/stringutils",
+    "source_url": "https://github.com/Blugin/_virions",
+    "poggit_download_url": "https://poggit.pmmp.io/v.dl/Blugin/_virions/stringutils/1.1.1?branch=%3Adefault",
+    "artifact_status": "pending",
+    "license": null,
+    "license_status": "document_preserved",
+    "catalog_version": "1.1.1",
+    "source_repo": "Blugin/_virions",
+    "source_commit": "882c98de62cd2134519942102105378c01841ff3",
+    "source_scope": "rebuilt_phar",
+    "evidence": "GH Archive last master PushEvent records this before SHA; unreferenced commit survives in detached fork; matching project name, namespace and version verified; original Poggit build SHA unconfirmed",
+    "source_project_path": "stringutils",
+    "candidates": [
+      "Danding1314/virions"
+    ],
+    "license_display": "MIT",
+    "license_files": [
+      "stringutils/LICENSE"
+    ],
+    "status": "uploaded",
+    "method": "git_archive",
+    "label": "Rebuild source",
+    "verified_revision": "882c98de62cd2134519942102105378c01841ff3",
+    "complete_git_snapshot": true,
+    "source_repository_used": "Danding1314/virions",
+    "source_archive_url": "https://codeload.github.com/Danding1314/virions/zip/882c98de62cd2134519942102105378c01841ff3",
+    "archive_root": "virions-882c98de62cd2134519942102105378c01841ff3/",
+    "sha256": "04a06c76c8305633b7cc57baa489fccc2b08e468c8106372b2616e23518b4b6b",
+    "bytes": 51402,
+    "file_count": 43,
+    "storage_path": null,
+    "candidate_checks": [
+      {
+        "repo": "Blugin/_virions",
+        "status": 404
+      },
+      {
+        "repo": "Danding1314/virions",
+        "status": 200
+      }
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "virion-sources-2026-10-14-0001",
+    "remote_asset_name": "virion-sources-blugin-_virions-stringutils-1.1.1-882c98de62cd2134519942102105378c01841ff3-04a06c76c830.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/virion-sources-2026-10-14-0001/virion-sources-blugin-_virions-stringutils-1.1.1-882c98de62cd2134519942102105378c01841ff3-04a06c76c830.zip",
+    "remote_sha256": "04a06c76c8305633b7cc57baa489fccc2b08e468c8106372b2616e23518b4b6b",
+    "remote_asset_id": 654399623,
+    "uploaded_at": "2026-10-18T20:21:52Z",
+    "local_deleted": false
+  },
+  "blugin/_virions/arrayutils@2.0.0": {
+    "type": "virion",
+    "id": "blugin/_virions/arrayutils@2.0.0",
+    "name": "arrayutils",
+    "owner": "Blugin",
+    "repo": "_virions",
+    "project": "arrayutils",
+    "version": "2.0.0",
+    "namespace": "blugin\\utils\\arrays",
+    "used_by_projects": 1,
+    "last_updated": "1601702140.271",
+    "last_build_short_id": "15b3e",
+    "poggit_ci_url": "https://poggit.pmmp.io/ci/Blugin/_virions/arrayutils",
+    "source_url": "https://github.com/Blugin/_virions",
+    "poggit_download_url": "https://poggit.pmmp.io/v.dl/Blugin/_virions/arrayutils/2.0.0?branch=%3Adefault",
+    "artifact_status": "pending",
+    "license": null,
+    "license_status": "document_preserved",
+    "catalog_version": "2.0.0",
+    "source_repo": "Blugin/_virions",
+    "source_commit": "882c98de62cd2134519942102105378c01841ff3",
+    "source_scope": "rebuilt_phar",
+    "evidence": "GH Archive last master PushEvent records this before SHA; unreferenced commit survives in detached fork; matching project name, namespace and version verified; original Poggit build SHA unconfirmed",
+    "source_project_path": "arrayutils",
+    "candidates": [
+      "Danding1314/virions"
+    ],
+    "license_display": "MIT",
+    "license_files": [
+      "arrayutils/LICENSE"
+    ],
+    "status": "uploaded",
+    "method": "git_archive",
+    "label": "Rebuild source",
+    "verified_revision": "882c98de62cd2134519942102105378c01841ff3",
+    "complete_git_snapshot": true,
+    "source_repository_used": "Danding1314/virions",
+    "source_archive_url": "https://codeload.github.com/Danding1314/virions/zip/882c98de62cd2134519942102105378c01841ff3",
+    "archive_root": "virions-882c98de62cd2134519942102105378c01841ff3/",
+    "sha256": "04a06c76c8305633b7cc57baa489fccc2b08e468c8106372b2616e23518b4b6b",
+    "bytes": 51402,
+    "file_count": 43,
+    "storage_path": null,
+    "candidate_checks": [
+      {
+        "repo": "Blugin/_virions",
+        "status": 404
+      },
+      {
+        "repo": "Danding1314/virions",
+        "status": 200
+      }
+    ],
+    "remote_repo": "poggit-archive/artifacts",
+    "remote_tag": "virion-sources-2026-10-14-0001",
+    "remote_asset_name": "virion-sources-blugin-_virions-arrayutils-2.0.0-882c98de62cd2134519942102105378c01841ff3-04a06c76c830.zip",
+    "remote_url": "https://github.com/poggit-archive/artifacts/releases/download/virion-sources-2026-10-14-0001/virion-sources-blugin-_virions-arrayutils-2.0.0-882c98de62cd2134519942102105378c01841ff3-04a06c76c830.zip",
+    "remote_sha256": "04a06c76c8305633b7cc57baa489fccc2b08e468c8106372b2616e23518b4b6b",
+    "remote_asset_id": 654399657,
+    "uploaded_at": "2026-10-18T20:21:53Z",
+    "local_deleted": false
   }
 }

@@ -58,8 +58,10 @@ def verify_zip(path: Path, commit: str) -> tuple[list[tuple[str, bytes]], str]:
                 files.append((row.filename[len(root):], archive.read(row)))
         return files, root
 
-def license_details(files: list[tuple[str, bytes]]) -> dict:
-    notices = [(name, data) for name, data in files if PurePosixPath(name).name.lower().startswith(("license", "licence", "copying")) and data.strip()]
+def license_details(files: list[tuple[str, bytes]], project_path: str | None = None) -> dict:
+    prefix = project_path.strip("/") + "/" if project_path else ""
+    notices = [(name, data) for name, data in files if PurePosixPath(name).name.lower().startswith(("license", "licence", "copying")) and data.strip()
+               and (not prefix or name.startswith(prefix) or "/" not in name)]
     texts = "\n".join(data.decode("utf-8", "replace") for _, data in notices)
     display = "License included" if notices else "No License"
     if "Permission is hereby granted, free of charge" in texts:
@@ -122,7 +124,7 @@ def main() -> int:
             if dict(files) != {name: data for name, data, _ in verified}:
                 raise ValueError("ZIP does not preserve the verified Git blobs")
             data = path.read_bytes()
-            states[key] = {**job, **license_details(files), "status": "downloaded", "method": "git_archive", "provider": "Software Heritage", "verified_revision": job["source_commit"], "complete_git_snapshot": True, "git_tree_sha": tree, "git_tree_verified": True, "source_repository_used": job["source_repo"], "source_archive_url": "https://archive.softwareheritage.org/api/1/" + vault + "raw/", "archive_root": root, "sha256": hashlib.sha256(data).hexdigest(), "bytes": len(data), "file_count": len(files), "storage_path": path.relative_to(ROOT).as_posix()}
+            states[key] = {**job, **license_details(files, job.get("source_project_path")), "status": "downloaded", "method": "git_archive", "provider": "Software Heritage", "verified_revision": job["source_commit"], "complete_git_snapshot": True, "git_tree_sha": tree, "git_tree_verified": True, "source_repository_used": job["source_repo"], "source_archive_url": "https://archive.softwareheritage.org/api/1/" + vault + "raw/", "archive_root": root, "sha256": hashlib.sha256(data).hexdigest(), "bytes": len(data), "file_count": len(files), "storage_path": path.relative_to(ROOT).as_posix()}
         elif args.phase == "git":
             if job.get("swh_revision"):
                 continue
@@ -139,7 +141,7 @@ def main() -> int:
                 try:
                     data = download(url, path)
                     files, root = verify_zip(path, commit)
-                    states[key] = {**job, **license_details(files), "status": "downloaded", "method": "git_archive", "label": "Archived source" if job["source_scope"] == "original_poggit_build" else "Rebuild source", "verified_revision": commit, "complete_git_snapshot": True, "source_repository_used": repo, "source_archive_url": url, "archive_root": root, "sha256": hashlib.sha256(data).hexdigest(), "bytes": len(data), "file_count": len(files), "storage_path": path.relative_to(ROOT).as_posix(), "candidate_checks": checks + [{"repo": repo, "status": 200}]}
+                    states[key] = {**job, **license_details(files, job.get("source_project_path")), "status": "downloaded", "method": "git_archive", "label": "Archived source" if job["source_scope"] == "original_poggit_build" else "Rebuild source", "verified_revision": commit, "complete_git_snapshot": True, "source_repository_used": repo, "source_archive_url": url, "archive_root": root, "sha256": hashlib.sha256(data).hexdigest(), "bytes": len(data), "file_count": len(files), "storage_path": path.relative_to(ROOT).as_posix(), "candidate_checks": checks + [{"repo": repo, "status": 200}]}
                     print(key, "Git ZIP verified", commit[:12], repo, flush=True)
                     break
                 except HTTPError as error:
