@@ -9,7 +9,7 @@ The [machine-readable evidence](../data/snapshots/2026-10-14T20-07-25Z/source-re
 - Rechecked all 23 release SHAs in Software Heritage: every direct revision lookup returned 404. Searched all 19 repository names and followed the additional KeepInventory search page.
 - Checked 348 new repository/commit candidates across 326 distinct repositories. Also searched the 23 hashes globally, checked three author monorepos and inspected the renamed fork owner's current repositories.
 - Found 13 historical ForkEvents in the public GitHub event index. Read the corresponding raw GH Archive records to recover numeric repository IDs, then checked all 13 IDs on GitHub. Every ID returned 404. The records prove historical forks existed; they do not prove that the forks still exist publicly.
-- Completed Wayback Availability queries for 117 exact repository, commit and ZIP URLs. No capture was returned for these URLs. A positive control returned an available capture, confirming that Availability was working during the checks. The next request returned HTTP 429; 37 supplementary branch/alias URL probes remain pending.
+- Completed Wayback Availability queries for 117 exact repository, commit and ZIP URLs. No capture was returned for these URLs. A positive control returned an available capture, confirming that Availability was working during the checks. The next request returned HTTP 429 and initially left 37 supplementary branch/alias URL probes pending. The [Chrome follow-up](source-wayback-chrome-recheck-2026-10-19.md) completed all 37 through both CDX and Availability; none returned a capture. The active pending list is now empty, with the original list retained as historical evidence.
 
 ## Related source that does not match the release
 
@@ -55,7 +55,7 @@ Recovered ten forks under the former OguzhanUmutluPlugins organization, plus TPE
 
 ## Limits and follow-up
 
-- Wayback's wildcard CDX endpoint returned a **Temporarily Offline** page in the user's Chrome session. Exact-URL Availability queries succeeded. Empty Availability results do not establish that every possible URL or renamed mirror is absent from Wayback.
+- During the initial investigation, Wayback's wildcard CDX endpoint returned a **Temporarily Offline** page in the user's Chrome session. The later exact-URL Chrome recheck completed successfully. Empty results do not establish that every possible URL or renamed mirror is absent from Wayback; the earlier broad wildcard enumeration remains a separate limitation.
 - Public code search does not index every branch or dangling Git object. The results are evidence for the candidates checked, not proof that no copy exists anywhere.
 - Completed direct-origin visit histories for all original names, aliases and the 13 historical forks. Histories without snapshots record unsuccessful visits, rather than preserved source.
 

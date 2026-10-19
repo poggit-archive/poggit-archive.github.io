@@ -19,9 +19,10 @@
     "wayback_availability_requests_attempted": 118,
     "wayback_availability_urls_checked": 117,
     "wayback_availability_captures_returned": 0,
-    "wayback_supplementary_urls_pending": 37,
+    "wayback_supplementary_urls_pending": 0,
     "plugins_still_without_exact_source": 19,
-    "releases_still_using_source_from_phar": 23
+    "releases_still_using_source_from_phar": 23,
+    "wayback_supplementary_urls_rechecked_in_chrome": 37
   },
   "acceptance_rule": "A candidate must preserve the exact build revision and a verifiable complete Git tree. A different revision, a monorepo copy or matching distribution files alone does not qualify as Archived source.",
   "software_heritage": {
@@ -8517,7 +8518,16 @@
         "checked_at": "2026-10-18T19:17:55.308355+00:00"
       }
     },
-    "pending_supplementary_urls": [
+    "pending_supplementary_urls": [],
+    "cdx_status": "temporarily_offline_in_chrome",
+    "cdx_browser_url": "https://web.archive.org/cdx/search/cdx?url=github.com%2FOguzhanUmutlu%2FRandomDrops&matchType=prefix&output=json&filter=statuscode%3A200&collapse=urlkey&fl=timestamp%2Coriginal%2Cmimetype%2Cstatuscode%2Cdigest&limit=2000",
+    "browser_observation": "Internet Archive: Temporarily Offline; Internet Archive services are temporarily offline.",
+    "limitations": [
+      "Empty Availability results apply only to the exact requested URLs.",
+      "Wildcard CDX enumeration remains incomplete because its backend returned a temporary offline page.",
+      "Supplementary branch/archive-alias probes stopped on HTTP 429; the pending URL list is retained."
+    ],
+    "pending_supplementary_urls_before_chrome_recheck": [
       "https://codeload.github.com/JustTalDevelops/TheBeeServerCorruptor/zip/433b4e79c3952de3cdee9aacda84bb1e3f753285",
       "https://codeload.github.com/iLVOEWOCK/LuckyPouches/zip/14188f882c881d2f77e337afc8ed71db7be38667",
       "https://codeload.github.com/iLVOEWOCK/LuckyPouches/zip/78a3981c05ff803109e3dd86767d56ac47255531",
@@ -8556,14 +8566,13 @@
       "https://github.com/skillDev5235/PlotRating/archive/refs/heads/main.zip",
       "https://github.com/skillDev5235/PlotRating/archive/refs/heads/master.zip"
     ],
-    "cdx_status": "temporarily_offline_in_chrome",
-    "cdx_browser_url": "https://web.archive.org/cdx/search/cdx?url=github.com%2FOguzhanUmutlu%2FRandomDrops&matchType=prefix&output=json&filter=statuscode%3A200&collapse=urlkey&fl=timestamp%2Coriginal%2Cmimetype%2Cstatuscode%2Cdigest&limit=2000",
-    "browser_observation": "Internet Archive: Temporarily Offline; Internet Archive services are temporarily offline.",
-    "limitations": [
-      "Empty Availability results apply only to the exact requested URLs.",
-      "Wildcard CDX enumeration remains incomplete because its backend returned a temporary offline page.",
-      "Supplementary branch/archive-alias probes stopped on HTTP 429; the pending URL list is retained."
-    ]
+    "chrome_recheck": {
+      "checked_at": "2026-10-19T06:48:02.806078Z",
+      "evidence": "source-wayback-chrome-recheck.json",
+      "completed": 37,
+      "no_capture": 37,
+      "pending": 0
+    }
   },
   "related_sources": {
     "HiveCorruptor": {

@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "snapshot_id": "2026-10-14T20-07-25Z",
+  "checked_at": "2026-10-19T06:57:18.600626Z",
+  "reviewed_services": [
+    "Archive.today",
+    "Ghostarchive",
+    "Arquivo.pt",
+    "Perma.cc",
+    "Archive-It",
+    "UK Web Archive",
+    "Common Crawl",
+    "Software Heritage",
+    "GH Archive",
+    "GitHub Arctic Code Vault",
+    "Libraries.io"
+  ],
+  "report": "docs/archive-services-assessment-2026-10-19.md",
+  "sample_checks": [
+    {
+      "service": "Archive.today",
+      "query": "genboy.net",
+      "url": "https://archive.ph/genboy.net",
+      "result": "UI search returned No results for this query."
+    },
+    {
+      "service": "Arquivo.pt",
+      "query": "genboy.net",
+      "url": "https://arquivo.pt/url/search?q=genboy.net&from=19910806&to=20261019&adv_and=genboy.net",
+      "result": "URL-search interface reported no results for the submitted root URL query; domain-wide CDX probe was blocked by Chrome and remains unverified."
+    },
+    {
+      "service": "Ghostarchive",
+      "query": "poggit.pmmp.io",
+      "url": "https://ghostarchive.org/vidsearch?q=poggit.pmmp.io",
+      "result": "Search navigation timed out and exposed no readable results; unverified, not a no-capture result."
+    },
+    {
+      "service": "Common Crawl",
+      "query": "genboy.net/*",
+      "index": "CC-MAIN-2019-35",
+      "url": "https://index.commoncrawl.org/CC-MAIN-2019-35-index?url=genboy.net%2F%2A&output=json",
+      "result": "Chrome blocked the NDJSON result document with ERR_BLOCKED_BY_CLIENT; no result payload verified."
+    }
+  ],
+  "recovered_payloads": 0,
+  "coverage": "Landing-page and selected official-documentation review of eleven user-opened Chrome tabs; four sampled searches, not an exhaustive scan.",
+  "unchanged_source_coverage": {
+    "plugin_exact_git_releases": 4998,
+    "plugin_phar_derived_releases": 23,
+    "virion_source_zips": 259,
+    "virion_entries": 265
+  }
+}

@@ -2,7 +2,7 @@
 
 The follow-up found **no additional recoverable source or PHAR** for the six unresolved catalog entries. Coverage remains **259/265 source ZIPs and PHARs**: 213 original PHARs and 46 reconstructions. This is a bounded investigation of the sources below; it does not establish that the missing code is globally unavailable.
 
-The [machine-readable audit](../data/snapshots/2026-10-14T20-07-25Z/virion-development-recovery.json) preserves requests, responses, immutable repository revisions, archive hashes, class names and four pending Wayback URLs. The [source plan](../data/snapshots/2026-10-14T20-07-25Z/virion-source-plan.json) retains the historical SHA candidates separately from verified source commits. All six `source_commit` values remain null.
+The [machine-readable audit](../data/snapshots/2026-10-14T20-07-25Z/virion-development-recovery.json) preserves requests, responses, immutable repository revisions, archive hashes, class names and the four formerly pending Wayback URLs. The [Chrome follow-up](source-wayback-chrome-recheck-2026-10-19.md) completed those URLs with no capture returned by either CDX or Availability. The [source plan](../data/snapshots/2026-10-14T20-07-25Z/virion-source-plan.json) retains the historical SHA candidates separately from verified source commits. All six `source_commit` values remain null.
 
 ## PHARs beyond the approved release catalog
 
@@ -36,19 +36,19 @@ The new class names also supported a raw-byte fingerprint prefilter over all 5,0
 
 Reading all six known Krul/TelegramBotAPI PushEvents recovered **six additional historical SHAs** beyond the five previously recorded candidates. Software Heritage revision lookup returns **404 for all 11 known SHAs** across Krul, TelegramBotAPI and VOsaka. A known preserved revision returned 200 in the positive control. GitHub global commit searches for the ten Krul/TelegramBotAPI SHAs returned zero results; that search is not an exhaustive test of unreferenced Git objects.
 
-Wayback availability queries used exact GitHub commit, GitHub API ZIP and codeload ZIP URLs. **29 requests returned no capture**. The thirtieth returned **429**, with no `Retry-After`; the batch stopped. Four URLs remain explicitly unverified:
+The initial Wayback availability queries used exact GitHub commit, GitHub API ZIP and codeload ZIP URLs. **29 requests returned no capture**. The thirtieth returned **429**, with no `Retry-After`; the batch stopped. These four URLs were initially unverified:
 
 - The codeload ZIP for TelegramBotAPI SHA `9d6128dcd034042b1cee29cc4622015cc9a49656`.
 - The commit, API ZIP and codeload ZIP URLs for VOsaka SHA `aa5df4a7dc61c1c249504e9daad13ee985806f12`.
 
-These pending requests are not counted as negative archive results. The audit retains their exact URLs for a later slow, resumable retry after the provider permits requests.
+The subsequent Chrome recheck completed all four through both CDX and Availability, with positive controls for both services. Each returned no capture. The original rate-limit response and pending list remain as historical evidence; the active pending list is now empty. These results apply to the queried URLs, not every possible archive location.
 
 ## Status of each missing entry
 
 | Entry | New evidence and remaining gap |
 | --- | --- |
-| vosaka-php/vosaka 1.9.0 | [Packagist](https://packagist.org/packages/venndev/v-osaka) identifies SHA `aa5df4a7dc61c1c249504e9daad13ee985806f12`. Huawei's Composer mirror independently lists the same version/SHA and a mirror ZIP URL, but that ZIP returns 404. The previously tested Tencent ZIP also returns 404 and has no capture in the checked availability response. Exact-SHA Wayback URLs remain pending after 429. |
-| Jasson44/TelegramBotAPI 1.0.0 | Earlier PushEvents add SHAs `eb1f5bac188acd9f55e79a89a77943c7f5d83aec`, `01ca9ba9efa30300158cd3f00dc8bc4a09eb1b9f`, `bac3d6eaf02bd894588599cc31cde787bbd3c45e` and `4821c92ffdf30a8073274d869ea1e5d50386c890`. All six known revisions return SWH 404; the last head's codeload URL hit Wayback's rate limit. No matching implementation was recovered from the external PHARs. |
+| vosaka-php/vosaka 1.9.0 | [Packagist](https://packagist.org/packages/venndev/v-osaka) identifies SHA `aa5df4a7dc61c1c249504e9daad13ee985806f12`. Huawei's Composer mirror independently lists the same version/SHA and a mirror ZIP URL, but that ZIP returns 404. The previously tested Tencent ZIP also returns 404 and has no capture in the checked availability response. Exact-SHA Wayback URLs returned no capture in the later Chrome recheck. |
+| Jasson44/TelegramBotAPI 1.0.0 | Earlier PushEvents add SHAs `eb1f5bac188acd9f55e79a89a77943c7f5d83aec`, `01ca9ba9efa30300158cd3f00dc8bc4a09eb1b9f`, `bac3d6eaf02bd894588599cc31cde787bbd3c45e` and `4821c92ffdf30a8073274d869ea1e5d50386c890`. All six known revisions return SWH 404; the last head's codeload URL initially hit Wayback's rate limit, then returned no capture in the Chrome recheck. No matching implementation was recovered from the external PHARs. |
 | InkoHX/Krul 0.1.0 | Earlier PushEvents add `c348e5e9f467f9d3a3959ab9dca3663375cd6419` and `129a1fb6cd03311f99797398a428aa6d4ec3a00c`. All four known revisions return SWH 404; all 12 exact-SHA Wayback queries returned no capture. The class index preserves 12 class names. |
 | Tobias-2006/CommandArguments | The class index preserves eight class names. Searches for these names did not recover a matching implementation. No full Git SHA is known. |
 | kenzeve/ReplayLib 1.0.0 | The class index preserves 59 class names, including distinctive recorder, serializer and decompression classes. Searches did not recover their implementations. No full Git SHA is known. |
@@ -56,4 +56,4 @@ These pending requests are not counted as negative archive results. The audit re
 
 The live Poggit `ci.info` and `p.dl` endpoints were checked using the parameter forms established by [Poggit's code](https://github.com/poggit/poggit/tree/9d03d45ea041cd3314c930a20851acc5249f5601). Both requests end at `poggit/release-archive`. A final HTTP 200 there is a repository page response and does not identify a PHAR or build record. Poggit build short IDs are distinct from resource IDs, so they cannot safely be substituted into resource download URLs. The official approved-release archive remains at commit `102194b0b1022180fc774318f39cd2a10ee4bb27` in the observed redirect response.
 
-Recovery can continue from the four pending URLs, a newly found development PHAR/source copy, or an export of Poggit's historical CI build/resource records. The class index and SHA candidates make those searches more precise. No source download button or artifact was added without a verified payload, and the existing **No License** rule remains unchanged.
+Recovery now needs another archive location, a newly found development PHAR/source copy, or an export of Poggit's historical CI build/resource records. The four-URL backlog has been checked without recovering a payload. The class index and SHA candidates make further searches more precise. No source download button or artifact was added without a verified payload, and the existing **No License** rule remains unchanged.

@@ -19,7 +19,7 @@
     "wayback_sha_queries": 30,
     "wayback_sha_queries_without_capture": 29,
     "wayback_rate_limited_queries": 1,
-    "pending_wayback_sha_urls": 4,
+    "pending_wayback_sha_urls": 0,
     "class_index_matching_classes": 79,
     "external_phar_occurrences": 18,
     "external_unique_phars": 16,
@@ -35,7 +35,8 @@
       "MrLeMoNPM/ObsidianX@1c0a681771743d4ecd7bcb182fdcee842d965967!ObsidianX-1c0a681771743d4ecd7bcb182fdcee842d965967/ObsidianX_Library.zip!ObsidianX/plugins/VanillaMinecarts_dev-2.phar",
       "MrLeMoNPM/ObsidianX@1c0a681771743d4ecd7bcb182fdcee842d965967!ObsidianX-1c0a681771743d4ecd7bcb182fdcee842d965967/ObsidianX_Library.zip!ObsidianX/plugins/AZVanillaMobs_dev-18.phar",
       "MrLeMoNPM/ObsidianX@1c0a681771743d4ecd7bcb182fdcee842d965967!ObsidianX-1c0a681771743d4ecd7bcb182fdcee842d965967/ObsidianX_Library.zip!ObsidianX/plugins/PersonaSkin_dev-22.phar"
-    ]
+    ],
+    "wayback_sha_urls_rechecked_in_chrome": 4
   },
   "targets": {
     "vosaka-php/vosaka/vosaka@1.9.0": {
@@ -986,24 +987,7 @@
       "retry_after": null
     }
   },
-  "pending_wayback_sha_urls": [
-    {
-      "url": "https://codeload.github.com/Jasson44/TelegramBotAPI/zip/9d6128dcd034042b1cee29cc4622015cc9a49656",
-      "reason": "Provider returned 429; batch stopped, Retry-After not supplied"
-    },
-    {
-      "url": "https://github.com/vosaka-php/vosaka/commit/aa5df4a7dc61c1c249504e9daad13ee985806f12",
-      "reason": "Not attempted after provider returned 429"
-    },
-    {
-      "url": "https://api.github.com/repos/vosaka-php/vosaka/zipball/aa5df4a7dc61c1c249504e9daad13ee985806f12",
-      "reason": "Not attempted after provider returned 429"
-    },
-    {
-      "url": "https://codeload.github.com/vosaka-php/vosaka/zip/aa5df4a7dc61c1c249504e9daad13ee985806f12",
-      "reason": "Not attempted after provider returned 429"
-    }
-  ],
+  "pending_wayback_sha_urls": [],
   "wayback_additional_cdx": {
     "poggit-fqn-yml-cdx": {
       "url": "https://web.archive.org/cdx/search/cdx?url=poggit.pmmp.io%2Ffqn.yml&output=json&filter=statuscode%3A200&collapse=digest&limit=30",
@@ -2467,6 +2451,37 @@
     }
   },
   "next_recovery_inputs": [
+    "Search differently indexed archive locations or newly discovered copies; all four formerly pending Wayback SHA URLs have been checked through CDX and Availability in Chrome.",
+    "Obtain a surviving Poggit CI database or development resource export; build short IDs alone do not identify resource IDs.",
+    "Use recovered class names to inspect a newly discovered PHAR or historical source copy.",
+    "Request exact historical source or development PHARs from original authors if the user separately authorizes outreach."
+  ],
+  "pending_wayback_sha_urls_before_chrome_recheck": [
+    {
+      "url": "https://codeload.github.com/Jasson44/TelegramBotAPI/zip/9d6128dcd034042b1cee29cc4622015cc9a49656",
+      "reason": "Provider returned 429; batch stopped, Retry-After not supplied"
+    },
+    {
+      "url": "https://github.com/vosaka-php/vosaka/commit/aa5df4a7dc61c1c249504e9daad13ee985806f12",
+      "reason": "Not attempted after provider returned 429"
+    },
+    {
+      "url": "https://api.github.com/repos/vosaka-php/vosaka/zipball/aa5df4a7dc61c1c249504e9daad13ee985806f12",
+      "reason": "Not attempted after provider returned 429"
+    },
+    {
+      "url": "https://codeload.github.com/vosaka-php/vosaka/zip/aa5df4a7dc61c1c249504e9daad13ee985806f12",
+      "reason": "Not attempted after provider returned 429"
+    }
+  ],
+  "chrome_recheck": {
+    "checked_at": "2026-10-19T06:48:02.806078Z",
+    "evidence": "source-wayback-chrome-recheck.json",
+    "completed": 4,
+    "no_capture": 4,
+    "pending": 0
+  },
+  "next_recovery_inputs_before_chrome_recheck": [
     "Retry only the listed unverified SHA URLs after Wayback permits requests, using a slow resumable batch.",
     "Obtain a surviving Poggit CI database or development resource export; build short IDs alone do not identify resource IDs.",
     "Use recovered class names to inspect a newly discovered PHAR or historical source copy.",
