@@ -50,6 +50,8 @@ const structuredData = JSON.stringify({
 <meta name="description" content={description}>
 <meta name="robots" content="index,follow,max-image-preview:large">
 {import.meta.env.PROD && <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'none'">}
+<meta name="theme-color" content="#ffffff">
+<script is:inline src="/theme.js?v=1"></script>
 <script is:inline src="/loading.js?v=virions-1"></script>
 <link rel="canonical" href={canonicalUrl}>
 {homePage && <meta name="google-site-verification" content="7wr__v7tRKs9GHzQaNq6RK9Sw6NNRHUYVORhu4MASbk">}

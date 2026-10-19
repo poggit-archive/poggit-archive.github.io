@@ -1,6 +1,4 @@
 ---
-import snapshot from "../../data/api/v1/current.json";
-
 const links = [
   ["/", "Catalog"],
   ["/leaderboard/", "Leaderboard"],
@@ -11,7 +9,7 @@ const links = [
 ];
 ---
 <footer class="site-footer">
-  <p class="footer-meta">Independent community archive<span class="footer-snapshot">Metadata &amp; downloads: <time datetime={snapshot.captured_at}>{snapshot.captured_at.slice(0, 10)}</time> snapshot.</span></p>
+  <p class="footer-meta">Independent community archive</p>
   <nav aria-label="Archive links">
     {links.map(([href, label]) => <a href={href} aria-current={Astro.url.pathname === href ? "page" : undefined} target={href.startsWith("https:") ? "_blank" : undefined} rel={href.startsWith("https:") ? "noreferrer" : undefined}>{label}</a>)}
   </nav>

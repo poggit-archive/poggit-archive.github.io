@@ -21,9 +21,9 @@ const hasChangelog = Boolean(record.documents.changelog);
 const versionNote = item.version ? `Catalog version ${item.version}` : "The catalog did not record a version number.";
 ---
 <!doctype html><html lang="en"><head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#ffffff">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <SeoHead title={`${item.name} - Virion - Poggit Archive`} description={view.description} path={virionPath(item)} />
-  <link rel="icon" href="/favicon-32x32.png"><link rel="stylesheet" href="/styles.css?v=api-1"><link rel="stylesheet" href="/plugin-details.css?v=api-1">
+  <link rel="icon" href="/favicon-32x32.png"><link rel="stylesheet" href="/styles.css?v=theme-1"><link rel="stylesheet" href="/plugin-details.css?v=theme-1">
   <script is:inline src="/plugin-details.js?v=api-1" defer></script><script is:inline src="/virion-details.js?v=virions-1" defer></script>
 </head><body><SiteHeader />
 <main class="plugin-detail" data-virion-id={item.id} data-virion-documents={catalog.documentUrl}>
