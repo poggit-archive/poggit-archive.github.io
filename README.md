@@ -345,7 +345,19 @@ npm run clean
 
 The public catalog is hosted at <https://poggit-archive.github.io/>. Original PHAR and source ZIP assets are stored in <https://github.com/poggit-archive/artifacts> releases.
 
-The API is versioned and immutable by snapshot:
+The API index has a stable address and points to the latest capture. Resolve each `files` entry relative to the index URL; for example, `releases.json` is available at `https://poggit-archive.github.io/data/api/v1/releases.json`. These short `/data/api/v1/` URLs always serve the files from the current snapshot. Timestamped snapshot originals stay in the repository for immutable history and provenance; the Pages build serves the current file only at its stable URL to avoid storing a second copy of the large catalog exports in the static artifact.
+
+- `https://poggit-archive.github.io/data/api/v1/current.json` - latest snapshot pointer
+- `https://poggit-archive.github.io/data/api/v1/summary.json` - capture time and catalog counts
+- `https://poggit-archive.github.io/data/api/v1/releases.json` - all Poggit plugin release rows
+- `https://poggit-archive.github.io/data/api/v1/virions.json` - parsed entries from the ranked top-300 virion page
+- `https://poggit-archive.github.io/data/api/v1/sources.json` - unique GitHub repositories and observed build commits
+- `https://poggit-archive.github.io/data/api/v1/downloads-plugins.json` and `downloads-virions.json` - archived artifact states and SHA-256
+- `https://poggit-archive.github.io/data/api/v1/source-downloads.json` and `virion-source-downloads.json` - source ZIP preservation records
+- `https://poggit-archive.github.io/data/api/v1/plugin-details.json.gz` - detailed plugin records
+- `https://poggit-archive.github.io/data/api/v1/media-mirror.json` and `file-mirror.json` - preserved media and file manifests
+
+The API is versioned. Each timestamped snapshot is immutable in the repository:
 
 - `data/api/v1/current.json` - latest snapshot pointer
 - `data/snapshots/<snapshot-id>/releases.json` - all Poggit release rows in that snapshot

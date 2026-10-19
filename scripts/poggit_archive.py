@@ -307,12 +307,12 @@ def snapshot(args: argparse.Namespace) -> int:
         "snapshot_id": snapshot_id,
         "captured_at": summary["captured_at"],
         "files": {
-            "summary": f"../../snapshots/{snapshot_id}/summary.json",
-            "releases": f"../../snapshots/{snapshot_id}/releases.json",
-            "virions": f"../../snapshots/{snapshot_id}/virions.json",
-            "sources": f"../../snapshots/{snapshot_id}/sources.json",
-            "downloads_plugins": f"../../snapshots/{snapshot_id}/downloads-plugins.json",
-            "downloads_virions": f"../../snapshots/{snapshot_id}/downloads-virions.json",
+            "summary": "summary.json",
+            "releases": "releases.json",
+            "virions": "virions.json",
+            "sources": "sources.json",
+            "downloads_plugins": "downloads-plugins.json",
+            "downloads_virions": "downloads-virions.json",
         },
     })
     print(json.dumps(summary["counts"], indent=2))
