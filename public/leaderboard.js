@@ -1,5 +1,5 @@
 (() => {
-  const pageSize = 40;
+  const pageSize = 30;
   const number = new Intl.NumberFormat();
   const average = new Intl.NumberFormat(undefined, { maximumFractionDigits: 1 });
   const collator = new Intl.Collator(undefined, { sensitivity: "base", numeric: true });

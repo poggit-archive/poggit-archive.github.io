@@ -5,7 +5,7 @@
   const pagination = document.querySelector("#memory-pagination");
   const pageList = document.querySelector("#memory-pages");
   const pageInput = document.querySelector("#memory-page-input");
-  const pageSize = 40;
+  const pageSize = 30;
   const number = new Intl.NumberFormat();
   const dateFormatter = new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
   const sheetLoads = new Map();

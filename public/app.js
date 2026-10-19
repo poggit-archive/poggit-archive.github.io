@@ -1,5 +1,5 @@
 (() => {
-  const PAGE_SIZE = 40;
+  const PAGE_SIZE = 30;
   const state = {
     kind: "plugins",
     page: 1,
