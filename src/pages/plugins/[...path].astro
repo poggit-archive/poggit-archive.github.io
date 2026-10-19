@@ -1,6 +1,6 @@
 ---
 import SeoHead from "../../components/SeoHead.astro";
-import { getCatalog, releaseView, versionPath, number, date, text, list, apiRanges, manifestRows, archiveUrl, fileUrl } from "../../lib/plugin-details.mjs";
+import { getCatalog, releaseView, versionPath, authorPath, number, date, text, list, apiRanges, manifestRows, archiveUrl, fileUrl } from "../../lib/plugin-details.mjs";
 
 export function getStaticPaths() {
   const catalog = getCatalog();
@@ -36,8 +36,9 @@ const fileSize = record.phar ? `${number(record.phar.bytes)} bytes · ${(record.
     <meta name="theme-color" content="#ffffff">
     <SeoHead title={title} description={description} path={canonical} />
     <link rel="icon" href="/favicon-32x32.png" sizes="32x32">
-    <link rel="stylesheet" href="/styles.css?v=preserved-assets-1">
-    <link rel="stylesheet" href="/plugin-details.css?v=preserved-assets-1">
+    <link rel="stylesheet" href="/styles.css?v=vector-caret-1">
+    <link rel="stylesheet" href="/plugin-details.css?v=vector-caret-1">
+    <script is:inline src="/plugin-details.js?v=section-tabs-1" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -50,11 +51,11 @@ const fileSize = record.phar ? `${number(record.phar.bytes)} bytes · ${(record.
       <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Plugins</a><span aria-hidden="true">/</span><a href={project.path}>{project.latest.name}</a><span aria-hidden="true">/</span><span>{release.version}</span></nav>
       <section class="plugin-hero" aria-labelledby="plugin-title">
         <img class="detail-icon" src={view.iconUrl} alt="" title={view.iconTitle} width="80" height="80" referrerpolicy="no-referrer">
-        <div class="hero-copy"><p class="eyebrow">PocketMine-MP plugin</p><h1 id="plugin-title">{release.name}</h1><p class="detail-author">by <a href={`https://github.com/${owner}`}>{owner}</a></p><p class="detail-tagline">{description}</p></div>
+        <div class="hero-copy"><p class="eyebrow">PocketMine-MP plugin</p><h1 id="plugin-title">{release.name}</h1><p class="detail-author">by <a href={authorPath(owner)}>{owner}</a></p><p class="detail-tagline">{description}</p></div>
       </section>
       <div class="release-toolbar">
         <details class="detail-version-picker">
-          <summary><span>Version <strong>{release.version}</strong></span><span aria-hidden="true">⌄</span></summary>
+          <summary><span>Version <strong>{release.version}</strong></span><span class="version-caret" aria-hidden="true"></span></summary>
           <nav class="detail-version-menu" aria-label="Choose plugin version">
             {project.releases.map((row) => <a href={versionPath(project, row)} aria-label={`${row.version}, ${number(row.downloads)} downloads, submitted ${date(row.submission_date)}`} aria-current={row.id === release.id ? "page" : undefined}><strong>{row.version}</strong><span class="version-menu-downloads">{number(row.downloads)} downloads</span><time datetime={new Date(row.submission_date * 1000).toISOString()}>{date(row.submission_date)}</time></a>)}
           </nav>
@@ -110,17 +111,5 @@ const fileSize = record.phar ? `${number(record.phar.bytes)} bytes · ${(record.
       </div>
     </main>
     <footer class="site-footer detail-footer"><p>Snapshot: <time datetime={catalog.pointer.captured_at}>{catalog.pointer.captured_at.slice(0, 10)}</time>. Downloads and metadata reflect this archived snapshot.</p><p>Independent archive · <a href="/preservation/">Preservation status</a> · <a href="https://github.com/poggit-archive/poggit-archive.github.io">Archive source</a></p></footer>
-    <script>
-      // A failed local image uses the local placeholder, never an upstream fallback.
-      document.querySelectorAll<HTMLImageElement>(".archived-document img").forEach((image) => {
-        const placeholder = () => { image.src = "/assets/image-unavailable.svg"; image.alt = "Image unavailable"; };
-        image.addEventListener("error", placeholder, { once: true });
-        if (image.complete && !image.naturalWidth) placeholder();
-      });
-      document.querySelectorAll<HTMLImageElement>(".detail-icon").forEach((image) => image.addEventListener("error", () => { image.src = "/android-chrome-192x192.png"; }, { once: true }));
-      const picker = document.querySelector<HTMLDetailsElement>(".detail-version-picker");
-      picker?.addEventListener("keydown", (event) => { if (event.key === "Escape") { picker.open = false; picker.querySelector("summary")?.focus(); } });
-      document.addEventListener("click", (event) => { if (picker && !picker.contains(event.target as Node)) picker.open = false; });
-    </script>
   </body>
 </html>

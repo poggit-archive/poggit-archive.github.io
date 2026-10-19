@@ -7,6 +7,7 @@ import { imageUrl } from "./media-urls.mjs";
 export const slug = (name) => String(name || "plugin").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "plugin";
 export const projectPath = (release) => `/plugins/${release.project_id}-${slug(release.name)}/`;
 export const versionPath = (project, release) => `${project.path}${release.id}/`;
+export const authorPath = (name) => `/?author=${encodeURIComponent(name)}`;
 export const number = (value) => new Intl.NumberFormat("en-US").format(Number(value) || 0);
 export const date = (value) => value ? new Date(Number(value) * 1000).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" }) : "Not recorded";
 export const text = (value) => value == null ? "" : typeof value === "object" ? JSON.stringify(value) : String(value);

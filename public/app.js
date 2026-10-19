@@ -5,6 +5,7 @@
     page: 1,
     query: "",
     searchField: "name",
+    exactAuthor: false,
     apiVersion: "",
     releases: [],
     pluginProjects: [],
@@ -173,6 +174,18 @@
   function pluginAuthor(item) {
     const owner = String(item?.repo_name || "").split("/")[0].trim();
     return owner || null;
+  }
+
+  function pluginAuthorPath(name) {
+    return `/?author=${encodeURIComponent(name)}`;
+  }
+
+  function clearAuthorView() {
+    if (!state.exactAuthor) return;
+    state.exactAuthor = false;
+    const url = new URL(location.href);
+    url.searchParams.delete("author");
+    history.replaceState(null, "", `${url.pathname}${url.search}${url.hash}`);
   }
 
   function link(text, href, className, external = false) {
@@ -419,22 +432,25 @@
     const item = project
       ? project.releases.find((release) => String(release.id) === selectedId) || project.releases[0]
       : entry;
+    const title = item.name || item.project_name || "Unnamed project";
     const row = element("article", "result-row");
-    const icon = isPlugin ? element("span", "result-icon") : null;
+    const icon = isPlugin ? link("", pluginDetailPath(project, item), "result-icon") : null;
     if (icon) {
       row.classList.add("has-icon");
-      icon.setAttribute("aria-hidden", "true");
+      icon.setAttribute("aria-label", `View ${title} ${item.version || ""} details`);
       updatePluginIcon(icon, item);
     }
     const content = element("div", "result-content");
-    const title = item.name || item.project_name || "Unnamed project";
     const titleElement = element("h2", "result-title");
     const titleLink = isPlugin ? link(title, pluginDetailPath(project, item)) : null;
     titleElement.append(titleLink || document.createTextNode(title));
     const author = isPlugin ? element("span", "result-title-author") : null;
+    const authorLink = isPlugin ? link("", "/") : null;
     if (author) {
       const name = pluginAuthor(item);
-      author.textContent = name ? `by ${name}` : "";
+      authorLink.textContent = name || "";
+      authorLink.href = name ? pluginAuthorPath(name) : "/";
+      author.append("by ", authorLink);
       author.hidden = !name;
       titleElement.append(author);
     }
@@ -454,8 +470,11 @@
       meta.append(renderVersionControl(project, item, title, (release) => {
         state.selectedPluginVersions.set(project.key, String(release.id));
         updatePluginIcon(icon, release);
+        icon.href = pluginDetailPath(project, release);
+        icon.setAttribute("aria-label", `View ${title} ${release.version || ""} details`);
         const nextAuthor = pluginAuthor(release);
-        author.textContent = nextAuthor ? `by ${nextAuthor}` : "";
+        authorLink.textContent = nextAuthor || "";
+        authorLink.href = nextAuthor ? pluginAuthorPath(nextAuthor) : "/";
         author.hidden = !nextAuthor;
         descriptionElement.textContent = cleanDescription(release.tagline || release.description);
         titleLink.href = pluginDetailPath(project, release);
@@ -504,7 +523,7 @@
     const authors = isPlugin
       ? releases.map((release) => String(release.repo_name || "").split("/")[0])
       : [item.owner, String(item.source_url || "").split("/")[3]];
-    if (state.searchField === "author") return textMatches(authors, query) ? 0 : null;
+    if (state.searchField === "author") return textMatches(authors, query, state.exactAuthor ? "exact" : "contains") ? 0 : null;
 
     const names = isPlugin
       ? [item.title, ...releases.flatMap((release) => [release.name, release.project_name])]
@@ -587,6 +606,12 @@
 
   function render() {
     if (!state.loaded) return;
+    const authorView = state.exactAuthor && state.searchField === "author" && state.query.trim();
+    const heading = authorView
+      ? `${state.kind === "plugins" ? "Plugins" : "Virions"} by ${state.query.trim()}`
+      : "Poggit Archive - Plugins & Virions";
+    $("#page-title").textContent = heading;
+    document.title = authorView ? `${heading} - Poggit Archive` : heading;
     const filtered = filteredRows();
     const pages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
     state.page = Math.min(state.page, pages);
@@ -633,6 +658,7 @@
   }
 
   function setSearchField(field) {
+    clearAuthorView();
     state.searchField = field;
     state.page = 1;
     $("#search-mode-current").textContent = field === "author"
@@ -690,6 +716,17 @@
       state.files = files.resources || {};
       $("#plugins-tab-count").textContent = number(state.pluginProjects.length);
       $("#virions-tab-count").textContent = number(summary.counts?.virion_entries);
+      const author = new URL(location.href).searchParams.get("author")?.trim();
+      if (author) {
+        state.query = author;
+        state.searchField = "author";
+        state.exactAuthor = true;
+        $("#search").value = author;
+        $("#search-mode-current").textContent = "Author";
+        $("#search-mode-menu").querySelectorAll("[data-search-field]").forEach((option) => {
+          option.setAttribute("aria-selected", String(option.dataset.searchField === "author"));
+        });
+      }
       state.loaded = true;
       results.setAttribute("aria-busy", "false");
       render();
@@ -768,6 +805,7 @@
     }
   });
   $("#search").addEventListener("input", (event) => {
+    clearAuthorView();
     state.query = event.target.value;
     state.page = 1;
     render();

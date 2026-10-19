@@ -3,7 +3,7 @@ import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import vm from "node:vm";
 import test from "node:test";
-import { getCatalog, releaseView, projectPath, versionPath, cleanDocument, apiRanges, sourceArtifact } from "../src/lib/plugin-details.mjs";
+import { getCatalog, releaseView, projectPath, versionPath, authorPath, cleanDocument, apiRanges, sourceArtifact } from "../src/lib/plugin-details.mjs";
 
 const catalog = getCatalog();
 const projects = [...catalog.projects.values()];
@@ -74,6 +74,34 @@ test("Catalog links resolve to the same generated routes for every selected vers
   vm.runInContext(script, context);
   for (const project of projects) for (const release of project.releases) {
     assert.equal(context.routeTest(project, release), release.id === project.latest.id ? project.path : versionPath(project, release));
+  }
+});
+
+test("Author links select exact accounts across recorded owners without matching similar usernames", () => {
+  const node = { addEventListener() {}, querySelectorAll() { return []; } };
+  const document = { querySelector() { return node; }, querySelectorAll() { return []; }, addEventListener() {} };
+  const script = readFileSync(new URL("../public/app.js", import.meta.url), "utf8")
+    .replace("  init();", "  globalThis.navigationTest = { state, filteredRows, pluginAuthorPath };");
+  const context = vm.createContext({ document, URL });
+  vm.runInContext(script, context);
+  const navigation = context.navigationTest;
+  navigation.state.pluginProjects = [
+    { title: "Current", totalDownloads: 30, releases: [{ repo_name: "CzechPMDevs/Current" }] },
+    { title: "Transferred", totalDownloads: 20, releases: [{ repo_name: "NewOwner/Transferred" }, { repo_name: "czechpmdevs/Transferred" }] },
+    { title: "Similar", totalDownloads: 10, releases: [{ repo_name: "CzechPMDevsExtra/Similar" }] },
+  ];
+  navigation.state.searchField = "author";
+  navigation.state.query = "czechpmdevs";
+  navigation.state.exactAuthor = true;
+  assert.deepEqual(Array.from(navigation.filteredRows(), (row) => row.title), ["Current", "Transferred"]);
+  navigation.state.exactAuthor = false;
+  assert.equal(navigation.filteredRows().length, 3);
+  for (const name of ["CzechPMDevs", "poggit-orphanage", "name & other/#?"]) {
+    const path = navigation.pluginAuthorPath(name);
+    assert.equal(path, authorPath(name));
+    const url = new URL(path, "https://poggit-archive.github.io");
+    assert.equal(url.pathname, "/");
+    assert.equal(url.searchParams.get("author"), name);
   }
 });
 

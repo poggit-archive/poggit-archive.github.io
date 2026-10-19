@@ -82,7 +82,7 @@ main { min-height: calc(100vh - 130px); }
 .search-mode-trigger:hover, .api-filter-trigger:hover, .version-trigger:hover { border-color: #888; }
 .search-mode-trigger:focus-visible, .api-filter-trigger:focus-visible, .version-trigger:focus-visible { border-color: var(--text); outline-offset: 1px; }
 .search-mode-caret { width: 6px; height: 6px; flex: 0 0 auto; margin-top: -3px; transform: rotate(45deg); border-right: 1px solid currentColor; border-bottom: 1px solid currentColor; }
-.search-mode.is-open .search-mode-caret, .api-filter.is-open .search-mode-caret, .version-control.is-open .version-caret { margin-top: 3px; transform: rotate(225deg); }
+.search-mode.is-open .search-mode-caret, .api-filter.is-open .search-mode-caret { margin-top: 3px; transform: rotate(225deg); }
 .search-mode-menu { position: absolute; top: calc(100% + 4px); right: 0; z-index: 30; display: flex; width: 100%; flex-direction: column; }
 .search-mode-menu[hidden] { display: none; }
 .search-mode-option, .api-filter-option { width: 100%; min-height: 34px; flex: 0 0 auto; padding: 6px 8px; }
@@ -107,11 +107,12 @@ main { min-height: calc(100vh - 130px); }
 .result-row { display: grid; grid-template-columns: minmax(0, 1fr); align-items: center; gap: 24px; padding: 17px 0; border-bottom: 1px solid var(--line); }
 .result-row.has-icon { grid-template-columns: 64px minmax(0, 1fr); gap: 14px; }
 .result-icon { display: block; width: 64px; height: 64px; overflow: hidden; border: 1px solid var(--line); background: var(--soft); }
+.result-icon:hover { border-color: #999; }
 .result-icon img { display: block; width: 100%; height: 100%; object-fit: contain; filter: grayscale(1); }
 .result-content { min-width: 0; }
 .result-title { overflow: hidden; margin: 0; font-size: 15px; font-weight: 600; letter-spacing: -0.02em; text-overflow: ellipsis; white-space: nowrap; }
 .result-title-author { margin-left: 5px; color: #858585; font-size: 11px; font-weight: 400; letter-spacing: 0; }
-.result-title > a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.result-title > a:hover, .result-title-author a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .result-description { overflow: hidden; margin: 3px 0 0; color: var(--muted); font-size: 12px; text-overflow: ellipsis; white-space: nowrap; }
 .result-meta { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin: 6px 0 0; color: #858585; font-size: 11px; }
 .result-release-meta { display: contents; }
@@ -119,7 +120,8 @@ main { min-height: calc(100vh - 130px); }
 .version-control.is-open { z-index: 10; }
 .version-trigger { display: inline-flex; width: 150px; min-width: 0; max-width: min(150px, calc(100vw - 148px)); flex: 0 1 150px; align-items: center; justify-content: space-between; gap: 16px; padding: 3px 7px; }
 .version-current { min-width: 0; flex: 1 1 auto; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.version-caret { width: 6px; height: 6px; flex: 0 0 auto; margin-top: -3px; transform: rotate(45deg); border-right: 1px solid currentColor; border-bottom: 1px solid currentColor; }
+.version-caret { display: block; width: 12px; height: 12px; flex: 0 0 12px; background: currentColor; mask: url("/assets/chevron-down.svg") center / contain no-repeat; }
+.version-control.is-open .version-caret { transform: rotate(180deg); }
 .version-menu { position: absolute; top: calc(100% + 4px); left: 0; z-index: 20; width: max(300px, 100%); max-width: min(340px, calc(100vw - 32px)); max-height: min(280px, 50vh); overflow-y: auto; }
 .version-menu { scrollbar-color: #c6c6c6 transparent; scrollbar-width: thin; }
 .version-menu::-webkit-scrollbar { width: 6px; }
