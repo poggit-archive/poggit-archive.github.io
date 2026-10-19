@@ -1,5 +1,7 @@
 ---
 import SeoHead from "../components/SeoHead.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteFooter from "../components/SiteFooter.astro";
 
 const title = "Poggit Archive - Plugins & Virions";
 const description = "An independent archive of PocketMine-MP plugins and virions listed on Poggit.";
@@ -16,24 +18,15 @@ const description = "An independent archive of PocketMine-MP plugins and virions
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="/styles.css?v=vector-caret-1">
-    <script is:inline src="/app.js?v=author-navigation-1" defer></script>
+    <link rel="stylesheet" href="/styles.css?v=api-1">
+    <script is:inline src="/app.js?v=api-1" defer></script>
   </head>
   <body>
-    <header class="site-header">
-      <div class="site-brand">
-        <a class="site-brand-home" href="/" aria-label="Poggit Archive home">
-          <img class="site-brand-icon" src="/android-chrome-192x192.png" alt="" width="40" height="40">
-        </a>
-        <div class="header-intro">
-          <h1 id="page-title">Poggit Archive - Plugins &amp; Virions</h1>
-          <p>A read-only archive of entries listed on Poggit. This independent project preserves available metadata and files.</p>
-        </div>
-      </div>
-    </header>
+    <SiteHeader />
 
     <main>
-      <section class="catalog" aria-label="Catalog">
+      <section class="catalog" aria-labelledby="page-title">
+        <h1 id="page-title" class="catalog-heading sr-only">Plugins &amp; Virions</h1>
         <div class="catalog-tools">
           <div class="tabs" role="tablist" aria-label="Catalog type">
             <button class="tab active" id="tab-plugins" role="tab" aria-selected="true" aria-controls="results" data-kind="plugins">Plugins <span id="plugins-tab-count"></span></button>
@@ -97,15 +90,6 @@ const description = "An independent archive of PocketMine-MP plugins and virions
       </section>
     </main>
 
-    <footer class="site-footer">
-      <span>Independent community archive</span>
-      <nav aria-label="Archive links">
-        <a href="/leaderboard/">Leaderboard</a>
-        <a href="/memory/">Memory</a>
-        <a href="/data/api/v1/current.json" target="_blank" rel="noreferrer">API index</a>
-        <a href="/preservation/">Preservation</a>
-        <a href="https://github.com/poggit-archive" target="_blank" rel="noreferrer">GitHub</a>
-      </nav>
-    </footer>
+    <SiteFooter />
   </body>
 </html>

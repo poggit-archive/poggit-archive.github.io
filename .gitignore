@@ -8,6 +8,7 @@ dist/
 /public/data/
 /public/memory-icons/
 /public/plugin-documents/
+/public/virion-documents/
 
 # Large binary mirrors are kept outside Git's normal source tree.
 /archive/

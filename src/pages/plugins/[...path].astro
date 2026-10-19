@@ -1,5 +1,7 @@
 ---
 import SeoHead from "../../components/SeoHead.astro";
+import SiteHeader from "../../components/SiteHeader.astro";
+import SiteFooter from "../../components/SiteFooter.astro";
 import { getCatalog, releaseView, versionPath, authorPath, number, date, text, list, apiRanges, manifestRows, archiveUrl, fileUrl } from "../../lib/plugin-details.mjs";
 
 export function getStaticPaths() {
@@ -36,17 +38,12 @@ const fileSize = record.phar ? `${number(record.phar.bytes)} bytes · ${(record.
     <meta name="theme-color" content="#ffffff">
     <SeoHead title={title} description={description} path={canonical} />
     <link rel="icon" href="/favicon-32x32.png" sizes="32x32">
-    <link rel="stylesheet" href="/styles.css?v=vector-caret-1">
-    <link rel="stylesheet" href="/plugin-details.css?v=vector-caret-1">
-    <script is:inline src="/plugin-details.js?v=section-tabs-1" defer></script>
+    <link rel="stylesheet" href="/styles.css?v=api-1">
+    <link rel="stylesheet" href="/plugin-details.css?v=api-1">
+    <script is:inline src="/plugin-details.js?v=api-1" defer></script>
   </head>
   <body>
-    <header class="site-header">
-      <a class="site-brand detail-brand" href="/">
-        <img class="site-brand-icon" src="/android-chrome-192x192.png" alt="" width="40" height="40">
-        <span>Poggit Archive <span class="brand-caption">Plugins &amp; Virions</span></span>
-      </a>
-    </header>
+    <SiteHeader />
     <main class="plugin-detail">
       <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Plugins</a><span aria-hidden="true">/</span><a href={project.path}>{project.latest.name}</a><span aria-hidden="true">/</span><span>{release.version}</span></nav>
       <section class="plugin-hero" aria-labelledby="plugin-title">
@@ -66,7 +63,6 @@ const fileSize = record.phar ? `${number(record.phar.bytes)} bytes · ${(record.
         {release.id !== project.latest.id && <a class="latest-link" href={project.path}>View latest version →</a>}
       </div>
       <nav class="detail-tabs" aria-label="Plugin sections"><a href="#overview">Overview</a><a href="#changelog">Changelog</a><a href="#versions">Versions <span>{project.releases.length}</span></a><a href="#manifest">Commands &amp; permissions</a><a href="#license">License</a></nav>
-      <p class="media-preservation-note"><a href="/preservation/">Images and documents are served from preserved copies.</a>{view.missingImages > 0 && <span> {view.missingImages} image references could not be preserved.</span>}</p>
       <div class="detail-layout">
         <div class="detail-main">
           <section id="overview" class="detail-section">
@@ -100,6 +96,7 @@ const fileSize = record.phar ? `${number(record.phar.bytes)} bytes · ${(record.
           {people.length > 0 && <section id="people" class="detail-section"><h2>People</h2>{people.map(([role, names]) => <div class="people-group"><h3>{role}s</h3><div>{names.map((name) => <a href={`https://github.com/${encodeURIComponent(name)}`}>{name}</a>)}</div></div>)}</section>}
           <section id="license" class="detail-section"><h2>License <span>{view.license}</span></h2>{view.licenseText ? <details class="full-license"><summary>Read the preserved license text</summary><pre>{view.licenseText}</pre></details> : <p class="empty-detail">{view.license === "No License" ? "No nonempty license document was preserved for this release." : "The license identifier is recorded above; no full license text was found in the preserved PHAR or official release documents."}</p>}{release.license_url && <a class="text-link" href={view.rawDocumentUrl("LICENSE.txt") || repository}>Original license document ↗</a>}</section>
           <section id="reviews" class="detail-section"><h2>Reviews</h2><p class="empty-detail">Review records and developer replies were not included in the preserved release data.</p>{release.score != null && <p class="section-note">Recorded Poggit score: {release.score}/5. A review count was not archived.</p>}</section>
+          <p class="media-preservation-note"><a href="/preservation/">Images and documents are served from preserved copies.</a>{view.missingImages > 0 && <span> {view.missingImages} image references could not be preserved.</span>}</p>
         </div>
         <aside class="detail-sidebar" aria-label="Release information">
           <section id="download" class="download-card"><p class="eyebrow">Archived release</p><h2>{release.name} <span>{release.version}</span></h2>{view.download ? <a class="primary-download" href={view.download} download={`${release.name}-${release.version}.phar`}>Download .phar <span aria-hidden="true">↓</span></a> : <p class="empty-detail">PHAR unavailable</p>}<p class="file-size">{fileSize}</p>{view.downloadBackup && <a class="artifact-backup" href={view.downloadBackup}>Artifact repository backup ↗</a>}{view.source && <><a class="source-download" href={view.source.url}>{view.source.label} <span aria-hidden="true">↗</span></a><p class="source-note">{view.source.note}</p></>}<details class="install-help"><summary>How to install</summary><ol><li>Download this release’s .phar file.</li><li>Stop your PocketMine-MP server and put the file in its <code>plugins/</code> folder.</li><li>Install required dependencies and check API compatibility below.</li><li>Start the server and follow the plugin’s setup instructions.</li></ol></details></section>
@@ -110,6 +107,6 @@ const fileSize = record.phar ? `${number(record.phar.bytes)} bytes · ${(record.
         </aside>
       </div>
     </main>
-    <footer class="site-footer detail-footer"><p>Snapshot: <time datetime={catalog.pointer.captured_at}>{catalog.pointer.captured_at.slice(0, 10)}</time>. Downloads and metadata reflect this archived snapshot.</p><p>Independent archive · <a href="/preservation/">Preservation status</a> · <a href="https://github.com/poggit-archive/poggit-archive.github.io">Archive source</a></p></footer>
+    <SiteFooter />
   </body>
 </html>

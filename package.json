@@ -7,12 +7,13 @@
   },
   "scripts": {
     "dev": "node scripts/dev-site.mjs",
-    "build": "node scripts/prepare-preserved-site.mjs && astro build && node scripts/copy-site-data.mjs dist/data && node scripts/mirror-memory-icons.mjs dist && node scripts/audit-site-dependencies.mjs dist",
+    "build": "node scripts/prepare-preserved-site.mjs && node scripts/prepare-virion-details.mjs && astro build && node scripts/copy-site-data.mjs dist/data && node scripts/mirror-memory-icons.mjs dist && node scripts/audit-site-dependencies.mjs dist",
     "preserve:media": "node scripts/preserve-media.mjs",
     "preview": "astro preview",
     "clean": "node scripts/clean-build.mjs"
   },
   "devDependencies": {
+    "@astrojs/markdown-satteri": "0.4.3",
     "astro": "7.3.8",
     "sanitize-html": "2.18.1",
     "sharp": "0.35.5"

@@ -15,11 +15,21 @@ An independent, non-commercial preservation catalog for PocketMine-MP plugin and
 
 Each of the **1,450 plugin projects** has a page under `/plugins/<project-id>-<name>/`. All **5,021 captured releases** also have a permanent page under that project's URL followed by the release ID. Project IDs distinguish plugins that share a name. The catalog title links to the selected release; version menus and history show each version's downloads.
 
+Version menus on both catalog and detail pages show the captured compatible API ranges below the submission date. Single APIs, multiple ranges and prerelease API names remain intact; missing metadata is labeled `API not recorded`. The detail menu loads a small, compressed same-origin API index when opened, with skeletons and an unavailable state if loading fails. Reopening retries a failed request; version links remain usable throughout. Without JavaScript, the selected release's compatible APIs remain available in its sidebar. This avoids duplicating API markup across more than 56,000 static menu entries while preserving the 950 MiB site budget.
+
 For example: [MultiWorld](https://poggit-archive.github.io/plugins/420-multiworld/) and [MultiWorld 2.1.1](https://poggit-archive.github.io/plugins/420-multiworld/12098/).
 
 Username links open an exact author filter, such as `/?author=CzechPMDevs`, using the repository owners recorded in the captured releases. These links can be shared or reloaded. Plugin icons and titles open details for the selected version; changing the version updates both links.
 
-Pages are generated as HTML at build time, including descriptions, changelogs, version navigation and artifact links. JavaScript turns the page sections into tabs and divides descriptions by their main headings, with a General tab for introductory content. Changelog version tabs load the relevant section from an existing local release page, with a link to that page if loading fails. Tabs support keyboard navigation and direct links to sections. Without JavaScript, all content remains readable on one page. Image fallbacks and version-menu dismissal also work locally. Downloads, scores and metadata reflect the **14 October 2026 snapshot**, rather than live counters.
+Catalog and detail pages use the same preserved icon for each plugin release. When no icon was recorded or an image cannot load, both use a local vector puzzle icon. Virions use a local vector library icon because their feed did not record icons. These generic placeholders are interface assets, not recovered project logos; they do not change preservation counts or replace original icon metadata. The Poggit Archive logo is reserved for site branding.
+
+All pages share the same header and footer components. The logo and site name return to the catalog; page and author headings stay in the main content. The footer links to Catalog, Leaderboard, Memory, Preservation, the API index and the site source in the same order, marks the current page, and shows the metadata snapshot date from the catalog pointer. Short pages keep the footer at the bottom of the viewport; links wrap on smaller screens.
+
+Page navigation, image requests and changelog requests use the same skeleton animation. Static pages reveal their content as soon as parsing and deferred scripts finish, without an artificial loading delay; images load independently. Preserved image dimensions reserve their space before download. Catalog and Leaderboard keep their existing data placeholders, while Memory also shows placeholders until its metadata arrives. Cached images skip the animation, image failures clear it, and failed or timed-out changelog requests retain a link to the version page. Navigation ignores downloads, external links, section tabs and modified clicks, and clears its loading state when returning through browser history. Reduced-motion settings disable the shimmer. Static plugin content remains readable without JavaScript.
+
+Memory shows **40 unique icons per page**, ordered from oldest to newest. Page numbers, first/previous/next/last controls and a page input use the same styles as the catalog. URLs such as `/memory/?page=2` survive reloads and support browser Back/Forward. Only the current page's cards are created, with lazy image loading and sprite-sheet caching retained.
+
+Pages are generated as HTML at build time, including descriptions, changelogs, version navigation and artifact links. JavaScript turns the page sections into tabs and divides descriptions by their main headings, with a General tab for introductory content. Sections with multiple level-three headings also have a vertical set of subtabs, displayed above their content on smaller screens. Changelog version tabs load the relevant section from an existing local release page, with a link to that page if loading fails. Tabs support keyboard navigation and direct links to sections. Without JavaScript, all content remains readable on one page. Image fallbacks and version-menu dismissal also work locally. Downloads, scores and metadata reflect the **14 October 2026 snapshot**, rather than live counters.
 
 The pinned official [`poggit/release-archive`](https://github.com/poggit/release-archive/tree/102194b0b1022180fc774318f39cd2a10ee4bb27) supplies **5,020 descriptions** and **3,636 changelogs**. These were imported after checking their Git blob SHA-1 and SHA-256. The original HTML/text and provenance are retained in [`plugin-details.json.gz`](data/snapshots/2026-10-14T20-07-25Z/plugin-details.json.gz); HTML is sanitized during the site build. Per-release `plugin.yml`, available license files, file sizes, SHA-256, SHA-1 and MD5 come from the **5,021 original PHARs**, verified against the existing published-artifact manifest. PHAR stubs and serialized metadata are never executed or deserialized.
 
@@ -39,6 +49,29 @@ python scripts/import_plugin_details.py --php path/to/php.exe
 ```
 
 The importer downloads one pinned official archive ZIP and checks every imported document against its Git tree. The committed compressed snapshot lets normal `npm ci` / `npm run build` deployments run without Python, PHP or another archive download.
+
+## Static virion detail pages
+
+All **265 captured virion entries** have a page at `/virions/<owner>/<repository>/<project>/`, linked from their catalog icon and title. Author links select the Virions catalog. Pages share the plugin layout, header, footer, keyboard-accessible tabs, image placeholders and skeleton loading, with sections for Overview, Usage, Dependencies, Used by archived plugins, Snapshot, License and any preserved changelog.
+
+The local ZIP/PHAR import preserves **247 READMEs, 12 changelogs, 232 sets of nonempty license documents and 259 manifests**. The six entries without recovered source or PHAR retain their metadata pages and explicit unavailable states. A generic vector library icon is used because this catalog did not record virion icons. The ranked feed captured one entry per project, so these pages do not claim a complete version history or turn `latest` entries into known catalog version numbers. PHAR manifest versions are shown separately.
+
+Catalog rows, detail headers and download cards show the verified PHAR version when available, falling back to the captured catalog version. Tooltips and Library details identify its source, including rebuilt PHAR manifests. The local document index supplies the same version metadata to the catalog; it does not rewrite the original `virions.json`. Of **27 entries without a catalog version, 26 have a version in their preserved PHAR manifest**. Only `Tobias-2006/CommandArguments/CommandArguments` still has neither a catalog version nor a recovered PHAR version. Snapshot retains the original catalog's missing-version information.
+
+**Archived PHAR**, **Rebuilt PHAR**, **Archived source**, **Rebuild source** and **Source from PHAR** retain their existing provenance. Original PHAR manifests and source ZIP manifests are distinguished; the catalog's last-build marker can differ from the preserved PHAR build. Usage references match repository and project in the archived plugin dependency records and do not imply compatibility with the displayed PHAR. Configuration examples follow the [Poggit library schema](https://github.com/poggit/support/blob/master/poggit.yml.d.ts); virions are bundled libraries, not standalone server plugins.
+
+Long documents use a content-addressed, gzip-compressed local payload with duplicate texts stored once. Browsers decode it locally with `DecompressionStream`; on failure or without JavaScript, static metadata, usage guidance and source/PHAR download links remain usable. Markdown is rendered and sanitized at build time. Images available in the preserved source ZIPs have checksum-linked local previews; unsupported or uncaptured external images use the local placeholder. Full source ZIPs retain the original image bytes. The dependency audit inspects compressed document HTML as well as static pages, and verifies links and local media.
+
+The virion document report records **12 new local image previews** and **224 image references without a preserved preview**, including external badges. These references are counted separately from the plugin image recovery report below; opening a virion page never retries their upstream URLs. See [`virion-details-report.json`](data/snapshots/2026-10-14T20-07-25Z/virion-details-report.json) for the affected documents and original URLs.
+
+Normal builds need neither PHP, Python nor network access. To reproduce the explicit document import from the already mirrored ZIPs/PHARs, run:
+
+```powershell
+python scripts/import_virion_details.py --php path/to/php.exe
+node scripts/prepare-virion-details.mjs --import-images
+```
+
+The committed `src/data/virion-details.json.gz` contains the source capture; `src/data/virion-media.json` records local display previews. Keep the generated preview assets under `public/virion-media/`. `npm run build` validates these files and regenerates the local document payload. To fit the additional pages within the unchanged 950 MiB budget, per-page JSON-LD omits fields duplicated by canonical/OpenGraph/Twitter metadata. Identical fetch restrictions inherit from CSP `default-src 'self'`, following the [CSP fallback rules](https://www.w3.org/TR/CSP3/#directive-default-src); explicit style, frame, object, base and form restrictions remain.
 
 ## External dependencies and local mirrors
 

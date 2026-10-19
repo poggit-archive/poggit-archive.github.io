@@ -2,9 +2,103 @@
   const count = document.querySelector("#memory-count");
   const grid = document.querySelector("#memory-grid");
   const error = document.querySelector("#memory-error");
+  const pagination = document.querySelector("#memory-pagination");
+  const pageList = document.querySelector("#memory-pages");
+  const pageInput = document.querySelector("#memory-page-input");
+  const pageSize = 40;
   const number = new Intl.NumberFormat();
   const dateFormatter = new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
   const sheetLoads = new Map();
+  let entries = [], currentPage = 1, loaded = false, observer, archiveNote = "";
+
+  function pageFromUrl() {
+    const page = Number(new URL(location.href).searchParams.get("page"));
+    return Number.isSafeInteger(page) && page > 0 ? page : 1;
+  }
+
+  function syncUrl(replace = false) {
+    const url = new URL(location.href);
+    if (currentPage > 1) url.searchParams.set("page", String(currentPage));
+    else url.searchParams.delete("page");
+    if (url.href !== location.href) history[replace ? "replaceState" : "pushState"](null, "", url);
+  }
+
+  function pageTokens(page, totalPages) {
+    if (totalPages <= 7) return Array.from({ length: totalPages }, (_, index) => index + 1);
+    const pages = [...new Set([1, totalPages, page - 1, page, page + 1])].filter((value) => value >= 1 && value <= totalPages).sort((a, b) => a - b);
+    const tokens = [];
+    pages.forEach((value, index) => {
+      if (index && value - pages[index - 1] > 1) tokens.push("...");
+      tokens.push(value);
+    });
+    return tokens;
+  }
+
+  function focusHeading() {
+    document.querySelector("#memory-title").focus({ preventScroll: true });
+    document.querySelector(".memory-page").scrollIntoView({ block: "start" });
+  }
+
+  function goToPage(page) {
+    if (!loaded) return;
+    const next = Math.min(Math.max(1, page), Math.max(1, Math.ceil(entries.length / pageSize)));
+    if (next === currentPage) { pageInput.value = ""; return; }
+    currentPage = next;
+    render();
+    syncUrl();
+    focusHeading();
+  }
+
+  function renderPagination(totalPages) {
+    pageList.replaceChildren();
+    pagination.classList.toggle("hidden", totalPages <= 1);
+    pageInput.disabled = totalPages <= 1;
+    pageInput.max = String(totalPages);
+    pageInput.value = "";
+    if (totalPages <= 1) return;
+    const addButton = (label, page, name) => {
+      const button = element("button", `page-button${page === currentPage && !name ? " is-current" : ""}`, label);
+      button.type = "button";
+      button.disabled = Boolean(name && page === currentPage);
+      button.setAttribute("aria-label", name || `Page ${page}`);
+      button.setAttribute("aria-controls", "memory-grid");
+      if (!name && page === currentPage) button.setAttribute("aria-current", "page");
+      button.addEventListener("click", () => goToPage(page));
+      pageList.append(button);
+    };
+    addButton("«", 1, "First page");
+    addButton("‹", Math.max(1, currentPage - 1), "Previous page");
+    for (const token of pageTokens(currentPage, totalPages)) {
+      if (token === "...") pageList.append(element("span", "page-ellipsis", "..."));
+      else addButton(String(token), token);
+    }
+    addButton("›", Math.min(totalPages, currentPage + 1), "Next page");
+    addButton("»", totalPages, "Last page");
+  }
+
+  function render() {
+    observer?.disconnect();
+    const totalPages = Math.max(1, Math.ceil(entries.length / pageSize));
+    currentPage = Math.min(Math.max(1, currentPage), totalPages);
+    const start = (currentPage - 1) * pageSize;
+    grid.replaceChildren();
+    const visible = entries.slice(start, start + pageSize).map(({ release, tile }) => renderCard(release, tile));
+    count.textContent = entries.length
+      ? `Showing ${number.format(start + 1)}-${number.format(start + visible.length)} of ${number.format(entries.length)} unique archived icons, oldest first.${archiveNote}`
+      : "No cached plugin icons found";
+    renderPagination(totalPages);
+    if ("IntersectionObserver" in window) {
+      const entryByCard = new Map(visible.map((entry) => [entry.card, entry]));
+      observer = new IntersectionObserver((observations) => {
+        for (const observation of observations) {
+          if (!observation.isIntersecting) continue;
+          showIcon(entryByCard.get(observation.target));
+          observer.unobserve(observation.target);
+        }
+      }, { rootMargin: "240px 0px" });
+      for (const entry of visible) observer.observe(entry.card);
+    } else visible.forEach(showIcon);
+  }
 
   function element(tag, className, text) {
     const node = document.createElement(tag);
@@ -107,8 +201,6 @@
         .map((release) => ({ release, date: submissionTime(release) }))
         .sort((a, b) => a.date - b.date || Number(a.release.id || 0) - Number(b.release.id || 0));
       const seenTiles = new Set();
-      const entries = [];
-      const entryByCard = new Map();
 
       for (const { release } of sorted) {
         const tile = manifest.icons?.[String(release.id)];
@@ -116,39 +208,41 @@
         const tileKey = `${tile.sheet}:${tile.column}:${tile.row}`;
         if (seenTiles.has(tileKey)) continue;
         seenTiles.add(tileKey);
-        const entry = renderCard(release, tile);
-        entries.push(entry);
-        entryByCard.set(entry.card, entry);
+        entries.push({ release, tile });
       }
 
-      count.textContent = `${number.format(entries.length)} unique archived icons, oldest first.`;
-      if (manifest.partial) count.textContent += " Local preview only shows part of the archive.";
+      if (manifest.partial) archiveNote += " Local preview only shows part of the archive.";
       if (manifest.unavailable_sources > 0) {
-        count.textContent += ` ${number.format(manifest.unavailable_sources)} unavailable icon sources were skipped.`;
+        archiveNote += ` ${number.format(manifest.unavailable_sources)} unavailable icon sources were skipped.`;
       }
-      if (entries.length === 0) {
-        count.textContent = "No cached plugin icons found";
-        return;
-      }
-
-      if ("IntersectionObserver" in window) {
-        const observer = new IntersectionObserver((observations) => {
-          for (const observation of observations) {
-            if (!observation.isIntersecting) continue;
-            showIcon(entryByCard.get(observation.target));
-            observer.unobserve(observation.target);
-          }
-        }, { rootMargin: "240px 0px" });
-        for (const entry of entries) observer.observe(entry.card);
-      } else {
-        entries.forEach(showIcon);
-      }
+      loaded = true;
+      currentPage = pageFromUrl();
+      render();
+      syncUrl(true);
     } catch (cause) {
       error.textContent = `Could not load archived plugin icons. ${cause.message}.`;
       error.classList.remove("hidden");
       count.textContent = "Icon archive unavailable";
+      grid.replaceChildren();
+    } finally {
+      grid.setAttribute("aria-busy", "false");
     }
   }
 
+  function jumpToInput() {
+    if (!pageInput.value.trim()) return;
+    const page = Number(pageInput.value);
+    if (Number.isSafeInteger(page)) goToPage(page);
+  }
+  pageInput.addEventListener("change", jumpToInput);
+  pageInput.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") { event.preventDefault(); jumpToInput(); }
+  });
+  window.addEventListener("popstate", () => {
+    if (!loaded) return;
+    currentPage = pageFromUrl();
+    render();
+    focusHeading();
+  });
   init();
 })();

@@ -1,6 +1,7 @@
 import { readFile, readdir, stat, writeFile } from "node:fs/promises";
 import { resolve, relative, dirname } from "node:path";
 import sanitizeHtml from "sanitize-html";
+import { gunzipSync } from "node:zlib";
 
 const root = resolve(process.argv[2] || "dist");
 const origin = "https://poggit-archive.github.io";
@@ -22,13 +23,11 @@ function dependency(value, page) {
   if (url.origin !== origin) { failures.push({ page: relative(root, page), url: url.href, error: "External runtime dependency" }); return; }
   localFiles.add(decodeURIComponent(url.pathname));
 }
-for (const path of await files(root)) {
-  if (path.endsWith(".html")) {
-    htmlPages++;
-    const content = await readFile(path, "utf8");
+function inspectHtml(content, path) {
     sanitizeHtml(content, { allowedTags: [], transformTags: { "*": (tagName, attributes) => {
       const attribute = { img: "src", script: "src", iframe: "src", source: "src", video: "src", audio: "src", embed: "src", object: "data" }[tagName];
       if (attribute) dependency(attributes[attribute], path);
+      if (attributes["data-virion-documents"]) dependency(attributes["data-virion-documents"], path);
       if (tagName === "video") dependency(attributes.poster, path);
       if (attributes.srcset) for (const item of attributes.srcset.split(",")) dependency(item.trim().split(/\s+/)[0], path);
       if (tagName === "link" && /(?:stylesheet|icon|preload|modulepreload|manifest|preconnect|dns-prefetch)/.test(attributes.rel || "")) dependency(attributes.href, path);
@@ -40,11 +39,29 @@ for (const path of await files(root)) {
       if (attributes.style) for (const match of attributes.style.matchAll(/url\(["']?([^"')]+)["']?\)/g)) dependency(match[1], path);
       return { tagName, attribs: attributes };
     } } });
+}
+for (const path of await files(root)) {
+  if (path.endsWith(".html")) {
+    htmlPages++;
+    inspectHtml(await readFile(path, "utf8"), path);
+  } else if (path.endsWith(".json.gz") && dirname(path) === resolve(root, "virion-documents")) {
+    const payload = JSON.parse(gunzipSync(await readFile(path)));
+    if (payload.schema_version !== 1) throw new Error("Unknown virion document format");
+    for (const document of Object.values(payload.documents)) if (document.html) inspectHtml(document.html, path);
+    for (const record of Object.values(payload.records)) for (const user of record.users) localLinks.add(user.path);
   } else if (path.endsWith(".css")) {
     for (const match of (await readFile(path, "utf8")).matchAll(/url\(["']?([^"')]+)["']?\)/g)) dependency(match[1], path);
   }
 }
 const iconTiles = JSON.parse(await readFile(resolve(root, "memory-icons/manifest.json"), "utf8"));
+localFiles.add("/virion-documents/index.json");
+localFiles.add("/plugin-documents/apis.json.gz");
+const versionApis = JSON.parse(gunzipSync(await readFile(resolve(root, "plugin-documents/apis.json.gz"))));
+if (versionApis.schema_version !== 1) throw new Error("Unknown plugin API metadata format");
+for (const path of localLinks) {
+  const id = path.match(/^\/plugins\/[^/]+\/(\d+)\/$/)?.[1];
+  if (id && typeof versionApis.apis?.[id] !== "string") failures.push({ url: path, error: "Missing version-menu API metadata" });
+}
 for (const tile of Object.values(iconTiles.icons)) localFiles.add(tile.sheet);
 for (const path of localLinks) {
   // This report is written after the audit has finished checking other links.

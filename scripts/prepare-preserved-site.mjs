@@ -1,7 +1,8 @@
 import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
-import { archiveUrl, getCatalog } from "../src/lib/plugin-details.mjs";
+import { gzipSync } from "node:zlib";
+import { archiveUrl, getCatalog, versionApiLabel } from "../src/lib/plugin-details.mjs";
 
 const catalog = getCatalog();
 if (!catalog.media.schema_version) throw new Error("Preserved media manifest is missing. Run the explicit preservation import first.");
@@ -32,6 +33,9 @@ for (const resource of Object.values(catalog.media.resources)) {
 await mkdir(resolve("public/archive-media"), { recursive: true });
 const icons = Object.fromEntries(Object.entries(catalog.media.by_release).map(([id, row]) => [id, catalog.media.resources[row.icon]?.path || null]));
 await writeFile(resolve("public/archive-media/icons.json"), JSON.stringify({ snapshot_id: catalog.pointer.snapshot_id, icons }) + "\n");
+const apis = Object.fromEntries([...catalog.projects.values()].flatMap((project) => project.releases.map((release) => [release.id, versionApiLabel(release)])));
+await mkdir(resolve("public/plugin-documents"), { recursive: true });
+await writeFile(resolve("public/plugin-documents/apis.json.gz"), gzipSync(JSON.stringify({ schema_version: 1, apis })));
 for (const project of catalog.projects.values()) for (const release of project.releases) {
   const record = catalog.details.records[String(release.id)];
   const directory = resolve("public/plugin-documents", String(release.id));

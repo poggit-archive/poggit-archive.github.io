@@ -13,6 +13,7 @@ export const date = (value) => value ? new Date(Number(value) * 1000).toLocaleDa
 export const text = (value) => value == null ? "" : typeof value === "object" ? JSON.stringify(value) : String(value);
 export const list = (value) => (Array.isArray(value) ? value : value == null ? [] : [value]).map(text);
 export const apiRanges = (release) => (release.api || []).map(({ from, to }) => from === to ? from : `${from} – ${to}`).join(", ") || "Not recorded";
+export const versionApiLabel = (release) => (release.api || []).length ? `API ${apiRanges(release).replaceAll(" – ", " - ")}` : "API not recorded";
 
 export function archiveUrl(value) {
   try {
@@ -60,7 +61,7 @@ export function cleanDocument(document, release, catalog) {
   };
   return sanitizeHtml(document.content, {
     allowedTags: [...sanitizeHtml.defaults.allowedTags, "img", "details", "summary", "del", "s", "kbd", "samp", "sub", "sup"],
-    allowedAttributes: { a: ["href", "title", "id", "rel"], img: ["src", "alt", "title", "loading", "decoding", "referrerpolicy"], th: ["colspan", "rowspan"], td: ["colspan", "rowspan"], ol: ["start"], code: [], "*": ["id"] },
+    allowedAttributes: { a: ["href", "title", "id", "rel"], img: ["src", "alt", "title", "width", "height", "loading", "decoding", "referrerpolicy"], th: ["colspan", "rowspan"], td: ["colspan", "rowspan"], ol: ["start"], code: [], "*": ["id"] },
     allowedSchemes: ["https", "http", "mailto"],
     allowProtocolRelative: false,
     disallowedTagsMode: "discard",
@@ -71,7 +72,8 @@ export function cleanDocument(document, release, catalog) {
         const original = imageUrl(attributes.src, release);
         if (!original) return { tagName, attribs: {} };
         const local = mediaFor(original, release, catalog);
-        return { tagName, attribs: { src: local?.path || "/assets/image-unavailable.svg", alt: attributes.alt || (local ? "Preserved image" : "Image not preserved"), title: mediaTitle(local), loading: "lazy", decoding: "async" } };
+        const dimensions = Number.isInteger(local?.width) && local.width > 0 && Number.isInteger(local?.height) && local.height > 0 ? { width: String(local.width), height: String(local.height) } : {};
+        return { tagName, attribs: { src: local?.path || "/assets/image-unavailable.svg", alt: attributes.alt || (local ? "Preserved image" : "Image not preserved"), title: mediaTitle(local), ...dimensions, loading: "lazy", decoding: "async" } };
       },
     },
     exclusiveFilter: (frame) => frame.tag === "img" && !frame.attribs.src,
@@ -144,6 +146,8 @@ export function releaseView(release, catalog) {
   const rawDocumentUrl = (filename) => filename === "info.json" || record.documents?.[filename] ? `/plugin-documents/${release.id}/${filename === "info.json" ? filename : filename + ".txt"}` : null;
   const media = catalog.media.by_release[String(release.id)] || { images: {} };
   const images = Object.values(media.images).map((key) => catalog.media.resources[key]);
+  const icon = catalog.media.resources[media.icon];
+  const iconUrl = /^\/archive-media\/[a-f0-9]{64}\.(png|jpg|gif|webp|avif)$/.test(icon?.path || "") ? icon.path : "/assets/plugin.svg";
   return {
     record, manifest: record.manifest || {}, source,
     download: download?.status === "uploaded" && archiveUrl(download.remote_url) ? fileUrl(download.remote_url, catalog.files) : null,
@@ -151,8 +155,8 @@ export function releaseView(release, catalog) {
     descriptionHtml: cleanDocument(description, release, catalog), changelogHtml: cleanDocument(changelog, release, catalog),
     descriptionUrl: description && rawDocumentUrl(description.filename), changelogUrl: changelog && rawDocumentUrl(changelog.filename),
     license, licenseText, rawDocumentUrl,
-    iconUrl: catalog.media.resources[media.icon]?.path || (release.icon_url ? "/assets/image-unavailable.svg" : "/android-chrome-192x192.png"),
-    iconTitle: mediaTitle(catalog.media.resources[media.icon]),
+    iconUrl,
+    iconTitle: iconUrl === "/assets/plugin.svg" ? "Default plugin icon; original icon not preserved." : mediaTitle(icon),
     missingImages: images.filter((image) => !image?.path).length,
   };
 }

@@ -1,5 +1,7 @@
 ---
 import SeoHead from "../components/SeoHead.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteFooter from "../components/SiteFooter.astro";
 
 const title = "Leaderboard - Poggit Archive";
 const description = "Plugin authors ranked by the combined archived downloads of their Poggit releases.";
@@ -16,27 +18,17 @@ const description = "Plugin authors ranked by the combined archived downloads of
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="/styles.css?v=preserved-assets-1">
+    <link rel="stylesheet" href="/styles.css?v=api-1">
     <script is:inline src="/leaderboard.js?v=preserved-assets-1" defer></script>
   </head>
   <body>
-    <header class="site-header">
-      <div class="site-brand">
-        <a class="site-brand-home" href="/" aria-label="Poggit Archive home">
-          <img class="site-brand-icon" src="/android-chrome-192x192.png" alt="" width="40" height="40">
-        </a>
-        <div class="header-intro">
-          <h1>Poggit Archive - Plugins &amp; Virions</h1>
-          <p>A read-only archive of entries listed on Poggit. This independent project preserves available metadata and files.</p>
-        </div>
-      </div>
-    </header>
+    <SiteHeader />
 
     <main>
       <section class="leaderboard" aria-labelledby="leaderboard-title">
         <div class="leaderboard-heading">
           <div>
-            <h2 id="leaderboard-title">Leaderboard</h2>
+            <h1 id="leaderboard-title">Leaderboard</h1>
             <p>Plugin authors ranked by archived downloads</p>
           </div>
           <label class="leaderboard-search">
@@ -81,14 +73,6 @@ const description = "Plugin authors ranked by the combined archived downloads of
       </section>
     </main>
 
-    <footer class="site-footer">
-      <a href="/">Plugins &amp; Virions</a>
-      <nav aria-label="Archive links">
-        <a href="/memory/">Memory</a>
-        <a href="/data/api/v1/current.json" target="_blank" rel="noreferrer">API index</a>
-        <a href="/preservation/">Preservation</a>
-        <a href="https://github.com/poggit-archive" target="_blank" rel="noreferrer">GitHub</a>
-      </nav>
-    </footer>
+    <SiteFooter />
   </body>
 </html>

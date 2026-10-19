@@ -1,5 +1,7 @@
 ---
 import SeoHead from "../components/SeoHead.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteFooter from "../components/SiteFooter.astro";
 
 const title = "Memory - Poggit Archive";
 const description = "Historical icons from PocketMine-MP plugins across archived Poggit releases, ordered from oldest to newest.";
@@ -16,42 +18,33 @@ const description = "Historical icons from PocketMine-MP plugins across archived
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="/styles.css?v=preserved-assets-1">
-    <script is:inline src="/memory.js?v=preserved-assets-1" defer></script>
+    <link rel="stylesheet" href="/styles.css?v=api-1">
+    <script is:inline src="/memory.js?v=pagination-1" defer></script>
   </head>
   <body>
-    <header class="site-header">
-      <div class="site-brand">
-        <a class="site-brand-home" href="/" aria-label="Poggit Archive home">
-          <img class="site-brand-icon" src="/android-chrome-192x192.png" alt="" width="40" height="40">
-        </a>
-        <div class="header-intro">
-          <h1>Poggit Archive - Plugins &amp; Virions</h1>
-          <p>A read-only archive of entries listed on Poggit. This independent project preserves available metadata and files.</p>
-        </div>
-      </div>
-    </header>
+    <SiteHeader />
 
     <main>
       <section class="memory-page" aria-labelledby="memory-title">
         <div class="memory-heading">
-          <h2 id="memory-title">Memory</h2>
-        <p>Plugin icons from every archived version, oldest first</p>
+          <h1 id="memory-title" tabindex="-1">Memory</h1>
+          <p>Plugin icons from every archived version, oldest first</p>
         </div>
         <p id="memory-count" class="results-count" aria-live="polite">Loading plugin icons</p>
         <div id="memory-error" class="error hidden" role="alert"></div>
-        <div id="memory-grid" class="memory-grid"></div>
+        <div id="memory-grid" class="memory-grid" aria-busy="true">
+          {Array.from({ length: 20 }, () => <div class="memory-card" aria-hidden="true"><span class="skeleton-block loading-square"></span><span class="skeleton-block loading-line"></span><span class="skeleton-block loading-line"></span></div>)}
+        </div>
+        <nav id="memory-pagination" class="pagination hidden" aria-label="Memory pages">
+          <div id="memory-pages" class="page-list"></div>
+          <label class="page-jump">
+            <span class="sr-only">Go to Memory page</span>
+            <input id="memory-page-input" type="number" min="1" step="1" inputmode="numeric" placeholder="Page" aria-label="Go to Memory page" disabled>
+          </label>
+        </nav>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <a href="/">Plugins &amp; Virions</a>
-      <nav aria-label="Archive links">
-        <a href="/leaderboard/">Leaderboard</a>
-        <a href="/data/api/v1/current.json" target="_blank" rel="noreferrer">API index</a>
-        <a href="/preservation/">Preservation</a>
-        <a href="https://github.com/poggit-archive" target="_blank" rel="noreferrer">GitHub</a>
-      </nav>
-    </footer>
+    <SiteFooter />
   </body>
 </html>

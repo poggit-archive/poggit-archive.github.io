@@ -16,6 +16,7 @@
     sourceDownloads: {},
     recoveredSources: {},
     virionSources: {},
+    virionVersions: {},
     loaded: false,
     icons: {},
     files: {},
@@ -308,22 +309,24 @@
   }
 
   function pluginIconUrl(item) {
-    if (!item.icon_url) return null;
     const local = state.icons[String(item.id)];
-    return /^\/archive-media\/[a-f0-9]{64}\.(png|jpg|gif|webp|avif)$/.test(local || "") ? local : "/assets/image-unavailable.svg";
+    return /^\/archive-media\/[a-f0-9]{64}\.(png|jpg|gif|webp|avif)$/.test(local || "") ? local : "/assets/plugin.svg";
   }
 
   function updatePluginIcon(frame, item) {
     frame.replaceChildren();
     const url = pluginIconUrl(item);
-    if (!url) return;
     const image = document.createElement("img");
     image.src = url;
     image.alt = "";
+    image.width = 64;
+    image.height = 64;
     image.loading = "lazy";
     image.decoding = "async";
     image.referrerPolicy = "no-referrer";
-    image.addEventListener("error", () => image.remove(), { once: true });
+    const placeholder = () => { image.src = "/assets/plugin.svg"; image.title = "Default plugin icon; image unavailable."; };
+    if (url === "/assets/plugin.svg") image.title = "Default plugin icon; original icon not preserved.";
+    image.addEventListener("error", placeholder, { once: true });
     frame.append(image);
   }
 
@@ -385,6 +388,7 @@
         element("span", "version-option-name", release.version || "Version unknown"),
         element("span", "version-option-date", versionDate(release.submission_date)),
         element("span", "version-option-downloads", `${number(release.downloads)} downloads`),
+        element("span", "version-option-api", versionApiLabel(release)),
       );
       option.addEventListener("click", () => {
         currentVersion.textContent = versionOptionLabel(release);
@@ -418,11 +422,25 @@
     return control;
   }
 
+  function versionApiLabel(release) {
+    const ranges = (release.api || []).map(({ from, to }) => from === to ? from : `${from} - ${to}`).join(", ");
+    return ranges ? `API ${ranges}` : "API not recorded";
+  }
+
   function pluginDetailPath(project, release) {
     const latest = project.releases[0];
     const slug = String(latest.name || "plugin").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "plugin";
     const path = `/plugins/${latest.project_id}-${slug}/`;
     return release.id === latest.id ? path : `${path}${release.id}/`;
+  }
+
+  function virionDetailPath(item) {
+    return `/virions/${[item.owner, item.repo, item.project].map((value) => String(value).toLowerCase().replace(/[^a-z0-9_.-]/g, "-")).join("/")}/`;
+  }
+
+  function virionVersionInfo(item) {
+    const preserved = state.virionVersions[item.id];
+    return preserved?.version && preserved.source ? preserved : { version: item.version || null, source: item.version ? "Preserved catalog" : null };
   }
 
   function renderRow(entry) {
@@ -433,23 +451,25 @@
       ? project.releases.find((release) => String(release.id) === selectedId) || project.releases[0]
       : entry;
     const title = item.name || item.project_name || "Unnamed project";
+    const version = isPlugin ? item.version : virionVersionInfo(item).version;
     const row = element("article", "result-row");
-    const icon = isPlugin ? link("", pluginDetailPath(project, item), "result-icon") : null;
+    const icon = link("", isPlugin ? pluginDetailPath(project, item) : virionDetailPath(item), "result-icon");
     if (icon) {
       row.classList.add("has-icon");
-      icon.setAttribute("aria-label", `View ${title} ${item.version || ""} details`);
-      updatePluginIcon(icon, item);
+      icon.setAttribute("aria-label", `View ${title} ${version || ""} details`);
+      if (isPlugin) updatePluginIcon(icon, item);
+      else { const image = document.createElement("img"); image.src = "/assets/virion.svg"; image.alt = ""; image.width = 64; image.height = 64; icon.append(image); }
     }
     const content = element("div", "result-content");
     const titleElement = element("h2", "result-title");
-    const titleLink = isPlugin ? link(title, pluginDetailPath(project, item)) : null;
+    const titleLink = link(title, isPlugin ? pluginDetailPath(project, item) : virionDetailPath(item));
     titleElement.append(titleLink || document.createTextNode(title));
-    const author = isPlugin ? element("span", "result-title-author") : null;
-    const authorLink = isPlugin ? link("", "/") : null;
+    const author = element("span", "result-title-author");
+    const authorLink = link("", "/");
     if (author) {
-      const name = pluginAuthor(item);
+      const name = isPlugin ? pluginAuthor(item) : item.owner;
       authorLink.textContent = name || "";
-      authorLink.href = name ? pluginAuthorPath(name) : "/";
+      authorLink.href = name ? isPlugin ? pluginAuthorPath(name) : `/?type=virions&author=${encodeURIComponent(name)}` : "/";
       author.append("by ", authorLink);
       author.hidden = !name;
       titleElement.append(author);
@@ -489,7 +509,10 @@
       addMeta(meta, item.version || "Version unknown");
       addPluginMeta(meta, item, project.totalDownloads);
     } else {
-      addMeta(meta, item.version || "Version unknown");
+      const info = virionVersionInfo(item);
+      const versionMeta = element("span", "", info.version ? `Version ${info.version}` : "Version not preserved");
+      if (info.source) versionMeta.title = `Version from ${info.source.toLowerCase()}.`;
+      meta.append(versionMeta);
       addMeta(meta, `${number(item.used_by_projects)} projects use this`);
       const source = state.virionSources[String(item.id)];
       const license = String(source?.license_display || item.license || "").trim();
@@ -609,9 +632,10 @@
     const authorView = state.exactAuthor && state.searchField === "author" && state.query.trim();
     const heading = authorView
       ? `${state.kind === "plugins" ? "Plugins" : "Virions"} by ${state.query.trim()}`
-      : "Poggit Archive - Plugins & Virions";
+      : "Plugins & Virions";
     $("#page-title").textContent = heading;
-    document.title = authorView ? `${heading} - Poggit Archive` : heading;
+    $("#page-title").classList.toggle("sr-only", !authorView);
+    document.title = authorView ? `${heading} - Poggit Archive` : "Poggit Archive - Plugins & Virions";
     const filtered = filteredRows();
     const pages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
     state.page = Math.min(state.page, pages);
@@ -637,6 +661,10 @@
   function setKind(kind) {
     state.kind = kind;
     state.page = 1;
+    const url = new URL(location.href);
+    if (kind === "virions") url.searchParams.set("type", "virions");
+    else url.searchParams.delete("type");
+    history.replaceState(null, "", `${url.pathname}${url.search}${url.hash}`);
     $("#api-filter-control").hidden = kind !== "plugins";
     const nameLabel = kind === "plugins" ? "Plugin" : "Virion";
     $("#search-mode-menu").querySelector('[data-search-field="name"]').textContent = nameLabel;
@@ -690,7 +718,7 @@
       const pointerUrl = new URL("data/api/v1/current.json", location.href);
       const pointer = await getJson(pointerUrl);
       const base = (relative) => new URL(relative, pointerUrl).href;
-      const [summary, releases, virions, pluginDownloads, virionDownloads, sourceDownloads, recoveredSources, virionSources, icons, files] = await Promise.all([
+      const [summary, releases, virions, pluginDownloads, virionDownloads, sourceDownloads, recoveredSources, virionSources, icons, files, virionDocuments] = await Promise.all([
         getJson(base(pointer.files.summary)),
         getJson(base(pointer.files.releases)),
         getJson(base(pointer.files.virions)),
@@ -701,6 +729,7 @@
         pointer.files.virion_sources ? optionalJson(base(pointer.files.virion_sources)) : Promise.resolve({}),
         getJson(new URL("/archive-media/icons.json", location.href)),
         getJson(new URL("/archive-files/manifest.json", location.href)),
+        optionalJson(new URL("/virion-documents/index.json", location.href)),
       ]);
 
       state.releases = Array.isArray(releases) ? releases : [];
@@ -712,6 +741,7 @@
       state.sourceDownloads = sourceDownloads;
       state.recoveredSources = recoveredSources;
       state.virionSources = virionSources;
+      state.virionVersions = virionDocuments.snapshot_id === pointer.snapshot_id ? virionDocuments.versions || {} : {};
       state.icons = icons.icons || {};
       state.files = files.resources || {};
       $("#plugins-tab-count").textContent = number(state.pluginProjects.length);
@@ -729,7 +759,8 @@
       }
       state.loaded = true;
       results.setAttribute("aria-busy", "false");
-      render();
+      if (new URL(location.href).searchParams.get("type") === "virions") setKind("virions");
+      else render();
     } catch (error) {
       const notice = $("#error");
       notice.textContent = `Could not load the saved catalog. ${error.message}. Open this site through a local web server because browser security blocks data files opened directly from disk.`.replace(/[\u2013\u2014]/g, "-");

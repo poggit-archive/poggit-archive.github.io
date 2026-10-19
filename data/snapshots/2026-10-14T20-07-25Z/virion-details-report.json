@@ -1,0 +1,1132 @@
+{
+  "entries": 265,
+  "with_readme": 247,
+  "with_changelog": 12,
+  "with_license": 232,
+  "with_manifest": 259,
+  "without_source": 6,
+  "display_images": 12,
+  "unavailable_image_references": 224,
+  "missing_images": [
+    {
+      "id": "poggit/libasynql/libasynql@4.2.3",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.badge/poggit/libasynql/libasynql"
+    },
+    {
+      "id": "cortexpe/commando/commando@latest",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/CortexPE/Commando/~"
+    },
+    {
+      "id": "vecnavium/formsui/formsui@1.1.3",
+      "document": "README.md",
+      "url": "https://img.shields.io/github/v/release/Vecnavium/FormsUI?label=release&sort=semver"
+    },
+    {
+      "id": "vecnavium/formsui/formsui@1.1.3",
+      "document": "README.md",
+      "url": "https://img.shields.io/github/stars/Vecnavium/FormsUI?style=for-the-badge"
+    },
+    {
+      "id": "vecnavium/formsui/formsui@1.1.3",
+      "document": "README.md",
+      "url": "https://img.shields.io/discord/837701868649709568?label=discord&color=7289DA&logo=discord"
+    },
+    {
+      "id": "sof3/await-generator/await-generator@3.6.1",
+      "document": "README.md",
+      "url": "https://github.com/SOF3/await-generator/workflows/CI/badge.svg"
+    },
+    {
+      "id": "sof3/await-generator/await-generator@3.6.1",
+      "document": "README.md",
+      "url": "https://img.shields.io/codecov/c/github/codecov/example-python.svg"
+    },
+    {
+      "id": "sof3/await-generator/await-generator@3.6.1",
+      "document": "README.md",
+      "url": "https://github.com/SOF3/await-generator/blob/280e42e8d12cfd7bdcd121cf87b11fa9e503b61c/undefined"
+    },
+    {
+      "id": "paroxity/commando/commando@3.3.0",
+      "document": "README.md",
+      "url": "https://raw.githubusercontent.com/CortexPE/Commando/master/commando.png"
+    },
+    {
+      "id": "acm-pocketmine-mp/commando/commando@4.0.0",
+      "document": "README.md",
+      "url": "https://raw.githubusercontent.com/CortexPE/Commando/master/commando.png"
+    },
+    {
+      "id": "acm-pocketmine-mp/commando/commando@4.0.0",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/CortexPE/Commando/~"
+    },
+    {
+      "id": "ifera-mc/updatenotifier/updatenotifier@3.1.0",
+      "document": "README.md",
+      "url": "https://img.shields.io/badge/chat-on%20discord-7289da.svg"
+    },
+    {
+      "id": "ifera-mc/updatenotifier/updatenotifier@3.1.0",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/ifera-mc/UpdateNotifier/UpdateNotifier"
+    },
+    {
+      "id": "ifera-mc/updatenotifier/updatenotifier@3.1.0",
+      "document": "README.md",
+      "url": "https://img.shields.io/github/license/Ifera/UpdateNotifier.svg"
+    },
+    {
+      "id": "ifera-mc/configupdater/configupdater@2.1.0",
+      "document": "README.md",
+      "url": "https://img.shields.io/badge/chat-on%20discord-7289da.svg"
+    },
+    {
+      "id": "ifera-mc/configupdater/configupdater@2.1.0",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/ifera-mc/ConfigUpdater/ConfigUpdater"
+    },
+    {
+      "id": "ifera-mc/configupdater/configupdater@2.1.0",
+      "document": "README.md",
+      "url": "https://img.shields.io/github/license/ifera-mc/ConfigUpdater.svg"
+    },
+    {
+      "id": "thebigsmilexd/customui/customui@4.0.0-alpha2",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.badge/thebigsmileXD/customui/customui"
+    },
+    {
+      "id": "thebigsmilexd/customui/customui@4.0.0-alpha2",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.badge/thebigsmileXD/customui/customuitest"
+    },
+    {
+      "id": "ifera/scorefactory/scorefactory@latest",
+      "document": "README.md",
+      "url": "https://img.shields.io/badge/chat-on%20discord-7289da.svg"
+    },
+    {
+      "id": "ifera/scorefactory/scorefactory@latest",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/Ifera/ScoreFactory/ScoreFactory"
+    },
+    {
+      "id": "ifera/scorefactory/scorefactory@latest",
+      "document": "README.md",
+      "url": "https://img.shields.io/github/license/Ifera/ScoreFactory.svg"
+    },
+    {
+      "id": "cortexpe/discordwebhookapi/discordwebhookapi@latest",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/CortexPE/DiscordWebhookAPI/~"
+    },
+    {
+      "id": "latampmdevs/updatenotifier/updatenotifier@3.0.0",
+      "document": "README.md",
+      "url": "https://img.shields.io/badge/chat-on%20discord-7289da.svg"
+    },
+    {
+      "id": "latampmdevs/updatenotifier/updatenotifier@3.0.0",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/ifera-mc/UpdateNotifier/UpdateNotifier"
+    },
+    {
+      "id": "latampmdevs/updatenotifier/updatenotifier@3.0.0",
+      "document": "README.md",
+      "url": "https://img.shields.io/github/license/Ifera/UpdateNotifier.svg"
+    },
+    {
+      "id": "venndev/libvapmpmmp/libvapmpmmp@2.5.6",
+      "document": "README.md",
+      "url": "https://github.com/user-attachments/assets/07a39109-8db4-488d-a0db-6e3404edadf3"
+    },
+    {
+      "id": "latampmdevs/configupdater/configupdater@2.0.1",
+      "document": "README.md",
+      "url": "https://img.shields.io/badge/chat-on%20discord-7289da.svg"
+    },
+    {
+      "id": "latampmdevs/configupdater/configupdater@2.0.1",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/ifera-mc/ConfigUpdater/ConfigUpdater"
+    },
+    {
+      "id": "latampmdevs/configupdater/configupdater@2.0.1",
+      "document": "README.md",
+      "url": "https://img.shields.io/github/license/ifera-mc/ConfigUpdater.svg"
+    },
+    {
+      "id": "latampmdevs/commando/commando@latest",
+      "document": "README.md",
+      "url": "https://raw.githubusercontent.com/CortexPE/Commando/master/commando.png"
+    },
+    {
+      "id": "latampmdevs/commando/commando@latest",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/CortexPE/Commando/~"
+    },
+    {
+      "id": "nhanaz-libraries/libbedrock/libbedrock@latest",
+      "document": "README.md",
+      "url": "https://github.com/NhanAZ-Libraries/libBedrock/blob/08fb92da6c5260c2671fbd1d14ba866c0c1330c3/assets/libBedrock_Icon_GIF.gif"
+    },
+    {
+      "id": "acm-pocketmine-mp/formsui/formsui@1.1.4",
+      "document": "README.md",
+      "url": "https://img.shields.io/github/v/release/Vecnavium/FormsUI?label=release&sort=semver"
+    },
+    {
+      "id": "acm-pocketmine-mp/formsui/formsui@1.1.4",
+      "document": "README.md",
+      "url": "https://img.shields.io/github/stars/Vecnavium/FormsUI?style=for-the-badge"
+    },
+    {
+      "id": "acm-pocketmine-mp/formsui/formsui@1.1.4",
+      "document": "README.md",
+      "url": "https://img.shields.io/discord/837701868649709568?label=discord&color=7289DA&logo=discord"
+    },
+    {
+      "id": "thebigcrafter/hydrogen/hydrogen@1.1.2",
+      "document": "README.md",
+      "url": "https://github.com/thebigcrafter/Hydrogen/actions/workflows/ci.yml/badge.svg"
+    },
+    {
+      "id": "thebigcrafter/ktpmpl-cfs/ktpmpl-cfs@4.0.0",
+      "document": "README.md",
+      "url": "https://img.shields.io/discord/970294579372912700.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2"
+    },
+    {
+      "id": "jasonw4331/libpmquery/libpmquery@1.0.0",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/jasonw4331/libpmquery/libpmquery"
+    },
+    {
+      "id": "presentkim-pm/remove-plugin-data-folder/remove-plugin-data-folder@1.1.0",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/presentkim-pm/remove-plugin-data-folder/remove-plugin-data-folder?style=for-the-badge"
+    },
+    {
+      "id": "presentkim-pm/remove-plugin-data-folder/remove-plugin-data-folder@1.1.0",
+      "document": "README.md",
+      "url": "https://img.shields.io/github/stars/presentkim-pm/remove-plugin-data-folder.svg?style=for-the-badge"
+    },
+    {
+      "id": "presentkim-pm/remove-plugin-data-folder/remove-plugin-data-folder@1.1.0",
+      "document": "README.md",
+      "url": "https://img.shields.io/github/license/presentkim-pm/remove-plugin-data-folder.svg?style=for-the-badge"
+    },
+    {
+      "id": "aid-learning/commando/commando@3.3.0",
+      "document": "README.md",
+      "url": "https://raw.githubusercontent.com/CortexPE/Commando/master/commando.png"
+    },
+    {
+      "id": "himbeersaftlp/libskin/libskin@2.1.1",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/HimbeersaftLP/LibSkin/~"
+    },
+    {
+      "id": "himbeersaftlp/libskin/libskin@2.1.1",
+      "document": "README.md",
+      "url": "https://img.shields.io/packagist/v/himbeer/libskin"
+    },
+    {
+      "id": "himbeersaftlp/libskin/libskin@2.1.1",
+      "document": "README.md",
+      "url": "https://img.shields.io/discord/252874887113342976?logo=discord"
+    },
+    {
+      "id": "himbeersaftlp/libskin/libskin@2.1.1",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/HimbeersaftLP/LibSkin/SkinThief"
+    },
+    {
+      "id": "himbeersaftlp/libskin/libskin@2.1.1",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/shield.state/SkinThief"
+    },
+    {
+      "id": "himbeersaftlp/libskin/libskin@2.1.1",
+      "document": "README.md",
+      "url": "https://img.shields.io/discord/252874887113342976?logo=discord"
+    },
+    {
+      "id": "dapigguy/commando-4.0.0/commando@2.1.1",
+      "document": "README.md",
+      "url": "https://raw.githubusercontent.com/CortexPE/Commando/master/commando.png"
+    },
+    {
+      "id": "fallentechpe/formapi/libformapi@2.1.0",
+      "document": "README.md",
+      "url": "https://discordapp.com/api/guilds/412491783486832640/embed.png"
+    },
+    {
+      "id": "jasonw4331/libcustompack/libcustompack@1.0.1",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/jasonw4331/libCustomPack/libCustomPack"
+    },
+    {
+      "id": "frago9876543210/forms/libforms@latest",
+      "document": "README.md",
+      "url": "https://img.shields.io/github/actions/workflow/status/Frago9876543210/forms/main.yml"
+    },
+    {
+      "id": "frago9876543210/forms/libforms@latest",
+      "document": "README.md",
+      "url": "https://img.shields.io/badge/php-8.1-informational"
+    },
+    {
+      "id": "frago9876543210/forms/libforms@latest",
+      "document": "README.md",
+      "url": "https://img.shields.io/badge/pocketmine-5.0-informational"
+    },
+    {
+      "id": "frago9876543210/forms/libforms@latest",
+      "document": "README.md",
+      "url": "https://i.imgur.com/4Hf8RgD.png"
+    },
+    {
+      "id": "frago9876543210/forms/libforms@latest",
+      "document": "README.md",
+      "url": "https://i.imgur.com/jevWyHy.png"
+    },
+    {
+      "id": "frago9876543210/forms/libforms@latest",
+      "document": "README.md",
+      "url": "https://i.imgur.com/304JS1n.png"
+    },
+    {
+      "id": "frago9876543210/forms/libforms@latest",
+      "document": "README.md",
+      "url": "https://i.imgur.com/JXRfoJW.png"
+    },
+    {
+      "id": "frago9876543210/forms/libforms@latest",
+      "document": "README.md",
+      "url": "https://i.imgur.com/5XTOe9d.png"
+    },
+    {
+      "id": "frago9876543210/forms/libforms@latest",
+      "document": "README.md",
+      "url": "https://i.imgur.com/BEIZdvO.png"
+    },
+    {
+      "id": "frago9876543210/forms/libforms@latest",
+      "document": "README.md",
+      "url": "https://i.imgur.com/AtRvSjp.png"
+    },
+    {
+      "id": "rxduz/commando/commando@4.0.0",
+      "document": "README.md",
+      "url": "https://raw.githubusercontent.com/CortexPE/Commando/master/commando.png"
+    },
+    {
+      "id": "taylordevs/libcustompack/libcustompack@1.0.1",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/jasonw4331/libCustomPack/libCustomPack"
+    },
+    {
+      "id": "newlandpe/liblanguage/liblanguage@0.1.0",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/newlandpe/libLanguage/libLanguage"
+    },
+    {
+      "id": "acm-pocketmine-mp/discordwebhookapi/discordwebhookapi@1.0.3",
+      "document": "README.md",
+      "url": "https://raw.githubusercontent.com/CortexPE/DiscordWebhookAPI/master/dwapi.png"
+    },
+    {
+      "id": "acm-pocketmine-mp/discordwebhookapi/discordwebhookapi@1.0.3",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/CortexPE/DiscordWebhookAPI/~"
+    },
+    {
+      "id": "terpz710/commando/commando@3.3.1",
+      "document": "README.md",
+      "url": "https://raw.githubusercontent.com/CortexPE/Commando/master/commando.png"
+    },
+    {
+      "id": "terpz710/commando/commando@3.3.1",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/CortexPE/Commando/~"
+    },
+    {
+      "id": "jinodkdevteam/commando/commando@3.2.0",
+      "document": "README.md",
+      "url": "https://raw.githubusercontent.com/CortexPE/Commando/master/commando.png"
+    },
+    {
+      "id": "jinodkdevteam/commando/commando@3.2.0",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/CortexPE/Commando/~"
+    },
+    {
+      "id": "daisukedaisuketeam/commando/commando@3.4.0",
+      "document": "README.md",
+      "url": "https://raw.githubusercontent.com/CortexPE/Commando/master/commando.png"
+    },
+    {
+      "id": "daisukedaisuketeam/commando/commando@3.4.0",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/CortexPE/Commando/~"
+    },
+    {
+      "id": "muqsit/arithmexp/arithmexp@1.0.1",
+      "document": "README.md",
+      "url": "https://github.com/Muqsit/arithmexp/actions/workflows/ci.yml/badge.svg"
+    },
+    {
+      "id": "muqsit/arithmexp/arithmexp@1.0.1",
+      "document": "README.md",
+      "url": "https://img.shields.io/github/v/release/Muqsit/arithmexp"
+    },
+    {
+      "id": "cladevs/formapi-4.0/libformapi@1.4.0",
+      "document": "README.md",
+      "url": "https://discordapp.com/api/guilds/412491783486832640/embed.png"
+    },
+    {
+      "id": "pjz9n/resourcepacktools/resourcepacktools@latest",
+      "document": "README.md",
+      "url": "https://img.shields.io/github/release/PJZ9n/ResourcePackTools.svg"
+    },
+    {
+      "id": "pjz9n/resourcepacktools/resourcepacktools@latest",
+      "document": "README.md",
+      "url": "https://img.shields.io/badge/License-GPL--v3-green"
+    },
+    {
+      "id": "pjz9n/resourcepacktools/resourcepacktools@latest",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/PJZ9n/ResourcePackTools/ResourcePackTools"
+    },
+    {
+      "id": "pjz9n/resourcepacktools/resourcepacktools@latest",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/PJZ9n/ResourcePackTools/ResourcePackToolsPlugin"
+    },
+    {
+      "id": "pjz9n/resourcepacktools/resourcepacktools@latest",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/PJZ9n/ResourcePackTools/ResourceExample"
+    },
+    {
+      "id": "cosmoverse/awaitform/awaitform@1.0.0",
+      "document": "README.md",
+      "url": "https://github.com/user-attachments/assets/568c3775-6a2e-42d4-9383-ef559093d750"
+    },
+    {
+      "id": "latampmdevs/libcustompack/libcustompack@1.0.1",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/jasonw4331/libCustomPack/libCustomPack"
+    },
+    {
+      "id": "supercrafter333/discordwebhooksx/discordwebhooksx@1.2.0",
+      "document": "README.md",
+      "url": "https://raw.githubusercontent.com/CortexPE/DiscordWebhookAPI/master/dwapi.png"
+    },
+    {
+      "id": "supercrafter333/discordwebhooksx/discordwebhooksx@1.2.0",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/CortexPE/DiscordWebhookAPI/~"
+    },
+    {
+      "id": "newlandpe/libasynchttp/libasynchttp@0.1.0",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/newlandpe/libAsyncHttp/libAsyncHttp"
+    },
+    {
+      "id": "jinodkdevteam/formapi/libformapi@latest",
+      "document": "README.md",
+      "url": "https://discordapp.com/api/guilds/412491783486832640/embed.png"
+    },
+    {
+      "id": "pjz9n-pm-pl/libi18n/libi18n@latest",
+      "document": "README.md",
+      "url": "https://user-images.githubusercontent.com/38120936/122003846-945d8700-cdee-11eb-8735-5b06f8412c02.png"
+    },
+    {
+      "id": "pjz9n-pm-pl/libi18n/libi18n@latest",
+      "document": "README.md",
+      "url": "https://user-images.githubusercontent.com/38120936/122003842-93c4f080-cdee-11eb-8e6a-965370a1569d.png"
+    },
+    {
+      "id": "pjz9n-pm-pl/libi18n/libi18n@latest",
+      "document": "README.md",
+      "url": "https://user-images.githubusercontent.com/38120936/122004273-29608000-cdef-11eb-8077-30ebfca4911b.png"
+    },
+    {
+      "id": "pjz9n-pm-pl/libi18n/libi18n@latest",
+      "document": "README.md",
+      "url": "https://user-images.githubusercontent.com/38120936/122004287-2cf40700-cdef-11eb-8bb6-27ceb784b538.png"
+    },
+    {
+      "id": "presentkim/arrayutils/arrayutils@4.1.1",
+      "document": "README.md",
+      "url": "https://views.whatilearened.today/views/github/presentkim-pm/arrayutils.svg?style=for-the-badge"
+    },
+    {
+      "id": "presentkim/arrayutils/arrayutils@4.1.1",
+      "document": "README.md",
+      "url": "https://poser.pugx.org/presentkim/arrayutils/v?style=for-the-badge"
+    },
+    {
+      "id": "presentkim/arrayutils/arrayutils@4.1.1",
+      "document": "README.md",
+      "url": "https://poser.pugx.org/presentkim/arrayutils/downloads?style=for-the-badge"
+    },
+    {
+      "id": "presentkim/arrayutils/arrayutils@4.1.1",
+      "document": "README.md",
+      "url": "https://img.shields.io/github/stars/presentkim-pm/arrayutils?style=for-the-badge"
+    },
+    {
+      "id": "presentkim/arrayutils/arrayutils@4.1.1",
+      "document": "README.md",
+      "url": "https://img.shields.io/github/license/presentkim-pm/arrayutils.svg?style=for-the-badge"
+    },
+    {
+      "id": "presentkim/arrayutils/arrayutils@4.1.1",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/presentkim-pm/arrayutils/~?style=for-the-badge"
+    },
+    {
+      "id": "pjz9n/formapi/libformapi@1.3.0",
+      "document": "README.md",
+      "url": "https://discordapp.com/api/guilds/412491783486832640/embed.png"
+    },
+    {
+      "id": "acm-pocketmine-mp/configupdater/configupdater@3.0.0",
+      "document": "README.md",
+      "url": "https://img.shields.io/badge/chat-on%20discord-7289da.svg"
+    },
+    {
+      "id": "acm-pocketmine-mp/configupdater/configupdater@3.0.0",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/ifera-mc/ConfigUpdater/ConfigUpdater"
+    },
+    {
+      "id": "acm-pocketmine-mp/configupdater/configupdater@3.0.0",
+      "document": "README.md",
+      "url": "https://img.shields.io/github/license/ifera-mc/ConfigUpdater.svg"
+    },
+    {
+      "id": "sof3/libkinetic/libkinetic@0.0.3",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.badge/SOF3/libkinetic/~"
+    },
+    {
+      "id": "jacknoordhuis/framework/support@5.6.5",
+      "document": "README.md",
+      "url": "https://laravel.com/assets/img/components/logo-laravel.svg"
+    },
+    {
+      "id": "jacknoordhuis/framework/support@5.6.5",
+      "document": "README.md",
+      "url": "https://travis-ci.org/laravel/framework.svg"
+    },
+    {
+      "id": "jacknoordhuis/framework/support@5.6.5",
+      "document": "README.md",
+      "url": "https://poser.pugx.org/laravel/framework/d/total.svg"
+    },
+    {
+      "id": "jacknoordhuis/framework/support@5.6.5",
+      "document": "README.md",
+      "url": "https://poser.pugx.org/laravel/framework/v/stable.svg"
+    },
+    {
+      "id": "jacknoordhuis/framework/support@5.6.5",
+      "document": "README.md",
+      "url": "https://poser.pugx.org/laravel/framework/license.svg"
+    },
+    {
+      "id": "jacknoordhuis/framework/contracts@5.6.5",
+      "document": "README.md",
+      "url": "https://laravel.com/assets/img/components/logo-laravel.svg"
+    },
+    {
+      "id": "jacknoordhuis/framework/contracts@5.6.5",
+      "document": "README.md",
+      "url": "https://travis-ci.org/laravel/framework.svg"
+    },
+    {
+      "id": "jacknoordhuis/framework/contracts@5.6.5",
+      "document": "README.md",
+      "url": "https://poser.pugx.org/laravel/framework/d/total.svg"
+    },
+    {
+      "id": "jacknoordhuis/framework/contracts@5.6.5",
+      "document": "README.md",
+      "url": "https://poser.pugx.org/laravel/framework/v/stable.svg"
+    },
+    {
+      "id": "jacknoordhuis/framework/contracts@5.6.5",
+      "document": "README.md",
+      "url": "https://poser.pugx.org/laravel/framework/license.svg"
+    },
+    {
+      "id": "tedo0627/inventoryui/inventoryui@1.1.1",
+      "document": "README.md",
+      "url": "https://github.com/tedo0627/InventoryUI/blob/e46f3a15008521be4b19f14d10aac50b7083ab47/undefined"
+    },
+    {
+      "id": "tedo0627/inventoryui/inventoryui@1.1.1",
+      "document": "README.md",
+      "url": "https://github.com/tedo0627/InventoryUI/blob/e46f3a15008521be4b19f14d10aac50b7083ab47/undefined"
+    },
+    {
+      "id": "tedo0627/inventoryui/inventoryui@1.1.1",
+      "document": "README.md",
+      "url": "https://github.com/tedo0627/InventoryUI/blob/e46f3a15008521be4b19f14d10aac50b7083ab47/undefined"
+    },
+    {
+      "id": "tedo0627/inventoryui/inventoryui@1.1.1",
+      "document": "README.md",
+      "url": "https://github.com/tedo0627/InventoryUI/blob/e46f3a15008521be4b19f14d10aac50b7083ab47/undefined"
+    },
+    {
+      "id": "tedo0627/inventoryui/inventoryui@1.1.1",
+      "document": "README.md",
+      "url": "https://github.com/tedo0627/InventoryUI/blob/e46f3a15008521be4b19f14d10aac50b7083ab47/undefined"
+    },
+    {
+      "id": "tedo0627/inventoryui/inventoryui@1.1.1",
+      "document": "README.md",
+      "url": "https://github.com/tedo0627/InventoryUI/blob/e46f3a15008521be4b19f14d10aac50b7083ab47/undefined"
+    },
+    {
+      "id": "presentkim-pm/item-serialize-utils/item-serialize-utils@3.1.0",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/presentkim-pm/item-serialize-utils/item-serialize-utils?style=for-the-badge"
+    },
+    {
+      "id": "presentkim-pm/item-serialize-utils/item-serialize-utils@3.1.0",
+      "document": "README.md",
+      "url": "https://img.shields.io/github/stars/presentkim-pm/item-serialize-utils.svg?style=for-the-badge"
+    },
+    {
+      "id": "presentkim-pm/item-serialize-utils/item-serialize-utils@3.1.0",
+      "document": "README.md",
+      "url": "https://img.shields.io/github/license/presentkim-pm/item-serialize-utils.svg?style=for-the-badge"
+    },
+    {
+      "id": "reinfyteam/discordwebhookapi/discordwebhookapi@2.0.0",
+      "document": "README.md",
+      "url": "https://raw.githubusercontent.com/CortexPE/DiscordWebhookAPI/master/dwapi.png"
+    },
+    {
+      "id": "reinfyteam/discordwebhookapi/discordwebhookapi@2.0.0",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/CortexPE/DiscordWebhookAPI/~"
+    },
+    {
+      "id": "mintodev/libmcunicodechars/libmcunicodechars@1.1.0",
+      "document": "README.md",
+      "url": "https://dl.circleci.com/status-badge/img/gh/mintodev/libMCUnicodeChars/tree/main.svg?style=svg"
+    },
+    {
+      "id": "mintodev/libmcunicodechars/libmcunicodechars@1.1.0",
+      "document": "README.md",
+      "url": "https://raw.githubusercontent.com/MintoD/libMCUnicodeChars/main/assets/code-builder.png"
+    },
+    {
+      "id": "aid-learning/libasynql/libasynql@4.2.3",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.badge/poggit/libasynql/libasynql"
+    },
+    {
+      "id": "brokiem-pm-pl/libasynql/libasynql@3.4.0",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.badge/poggit/libasynql/libasynql"
+    },
+    {
+      "id": "presentkim-pm/nbt-serializer/nbt-serializer@2.1.0",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/presentkim-pm/nbt-serializer/nbt-serializer?style=for-the-badge"
+    },
+    {
+      "id": "presentkim-pm/nbt-serializer/nbt-serializer@2.1.0",
+      "document": "README.md",
+      "url": "https://img.shields.io/github/stars/presentkim-pm/nbt-serializer.svg?style=for-the-badge"
+    },
+    {
+      "id": "presentkim-pm/nbt-serializer/nbt-serializer@2.1.0",
+      "document": "README.md",
+      "url": "https://img.shields.io/github/license/presentkim-pm/nbt-serializer.svg?style=for-the-badge"
+    },
+    {
+      "id": "buchwasa/libchunkloader/libchunkloader@3.0.0",
+      "document": "README.md",
+      "url": "https://github.com/buchwasa/libChunkLoader/workflows/CI/badge.svg"
+    },
+    {
+      "id": "jacknoordhuis/framework/container@5.6.5",
+      "document": "README.md",
+      "url": "https://laravel.com/assets/img/components/logo-laravel.svg"
+    },
+    {
+      "id": "jacknoordhuis/framework/container@5.6.5",
+      "document": "README.md",
+      "url": "https://travis-ci.org/laravel/framework.svg"
+    },
+    {
+      "id": "jacknoordhuis/framework/container@5.6.5",
+      "document": "README.md",
+      "url": "https://poser.pugx.org/laravel/framework/d/total.svg"
+    },
+    {
+      "id": "jacknoordhuis/framework/container@5.6.5",
+      "document": "README.md",
+      "url": "https://poser.pugx.org/laravel/framework/v/stable.svg"
+    },
+    {
+      "id": "jacknoordhuis/framework/container@5.6.5",
+      "document": "README.md",
+      "url": "https://poser.pugx.org/laravel/framework/license.svg"
+    },
+    {
+      "id": "jacknoordhuis/carbon/carbon@1.22.1",
+      "document": "readme.md",
+      "url": "https://poser.pugx.org/nesbot/carbon/v/stable.png"
+    },
+    {
+      "id": "jacknoordhuis/carbon/carbon@1.22.1",
+      "document": "readme.md",
+      "url": "https://poser.pugx.org/nesbot/carbon/downloads.png"
+    },
+    {
+      "id": "jacknoordhuis/carbon/carbon@1.22.1",
+      "document": "readme.md",
+      "url": "https://travis-ci.org/briannesbitt/Carbon.svg?branch=master"
+    },
+    {
+      "id": "jacknoordhuis/carbon/carbon@1.22.1",
+      "document": "readme.md",
+      "url": "https://styleci.io/repos/5724990/shield?style=flat"
+    },
+    {
+      "id": "jacknoordhuis/carbon/carbon@1.22.1",
+      "document": "readme.md",
+      "url": "https://codecov.io/github/briannesbitt/Carbon/coverage.svg?branch=master"
+    },
+    {
+      "id": "jacknoordhuis/carbon/carbon@1.22.1",
+      "document": "readme.md",
+      "url": "https://php-eye.com/badge/nesbot/carbon/tested.svg?style=flat"
+    },
+    {
+      "id": "jacknoordhuis/carbon/carbon@1.22.1",
+      "document": "readme.md",
+      "url": "https://img.shields.io/badge/PHPStan-enabled-brightgreen.svg?style=flat"
+    },
+    {
+      "id": "daisukedaisuke/awaitformoptions/awaitformoptions@latest",
+      "document": "README.md",
+      "url": "https://github.com/user-attachments/assets/59789bc9-438f-485a-8ca9-625841ce0c66"
+    },
+    {
+      "id": "daisukedaisuke/awaitformoptions/awaitformoptions@latest",
+      "document": "README.md",
+      "url": "https://github.com/user-attachments/assets/29ac3350-7368-4e00-aac8-caadbfabd75a"
+    },
+    {
+      "id": "daisukedaisuke/awaitformoptions/awaitformoptions@latest",
+      "document": "README.md",
+      "url": "https://github.com/user-attachments/assets/81872ca7-1e99-4919-9e5e-8c5ee3bf3045"
+    },
+    {
+      "id": "daisukedaisuke/awaitformoptions/awaitformoptions@latest",
+      "document": "README.md",
+      "url": "https://github.com/user-attachments/assets/a7bc338d-2851-450a-8827-5bb3392d5137"
+    },
+    {
+      "id": "daisukedaisuke/awaitformoptions/awaitformoptions@latest",
+      "document": "README.md",
+      "url": "https://github.com/user-attachments/assets/8e735c4f-c674-4e4e-8cde-79cbb8ab378f"
+    },
+    {
+      "id": "daisukedaisuke/awaitformoptions/awaitformoptions@latest",
+      "document": "README.md",
+      "url": "https://github.com/user-attachments/assets/d3d51ed1-4b67-4530-8b9b-f95eba980cdb"
+    },
+    {
+      "id": "rajadordev/smartcommand/smartcommand@3.0.0",
+      "document": "README.md",
+      "url": "https://img.shields.io/discord/982037265075302551?label=discord&color=7289DA&logo=discord"
+    },
+    {
+      "id": "j1b1x/functionalitem/functionalitem@0.0.1",
+      "document": "README.MD",
+      "url": "https://img.shields.io/badge/php-8.1-informational"
+    },
+    {
+      "id": "j1b1x/functionalitem/functionalitem@0.0.1",
+      "document": "README.MD",
+      "url": "https://img.shields.io/badge/pocketmine-5.0-informational"
+    },
+    {
+      "id": "j1b1x/forms/forms@0.0.1",
+      "document": "README.md",
+      "url": "https://img.shields.io/badge/php-8.0-informational"
+    },
+    {
+      "id": "j1b1x/forms/forms@0.0.1",
+      "document": "README.md",
+      "url": "https://img.shields.io/badge/pocketmine-5.0-informational"
+    },
+    {
+      "id": "j1b1x/forms/forms@0.0.1",
+      "document": "README.md",
+      "url": "https://img.shields.io/github/downloads/J1b1x/Forms/total?color=violet&label=Downloads&style=flat-square"
+    },
+    {
+      "id": "j1b1x/medoo/medoo@0.0.1",
+      "document": "README.md",
+      "url": "https://cloud.githubusercontent.com/assets/1467904/19835326/ca62bc36-9ebd-11e6-8b37-7240d76319cd.png"
+    },
+    {
+      "id": "j1b1x/medoo/medoo@0.0.1",
+      "document": "README.md",
+      "url": "https://github.com/catfan/Medoo/actions/workflows/php.yml/badge.svg"
+    },
+    {
+      "id": "j1b1x/medoo/medoo@0.0.1",
+      "document": "README.md",
+      "url": "https://poser.pugx.org/catfan/medoo/downloads"
+    },
+    {
+      "id": "j1b1x/medoo/medoo@0.0.1",
+      "document": "README.md",
+      "url": "https://poser.pugx.org/catfan/medoo/v/stable"
+    },
+    {
+      "id": "j1b1x/medoo/medoo@0.0.1",
+      "document": "README.md",
+      "url": "https://poser.pugx.org/catfan/medoo/license"
+    },
+    {
+      "id": "j1b1x/medoo/medoo@0.0.1",
+      "document": "README.md",
+      "url": "https://opencollective.com/Medoo/backers/badge.svg"
+    },
+    {
+      "id": "j1b1x/medoo/medoo@0.0.1",
+      "document": "README.md",
+      "url": "https://opencollective.com/Medoo/sponsors/badge.svg"
+    },
+    {
+      "id": "j1b1x/medoo/medoo@0.0.1",
+      "document": "README.md",
+      "url": "https://github.com/catfan/Medoo/assets/1467904/bc5059d4-6a2d-4bbf-90d9-a9f71bae3335"
+    },
+    {
+      "id": "j1b1x/replay/replay@0.0.1",
+      "document": "README.md",
+      "url": "https://img.shields.io/badge/php-8.1-informational"
+    },
+    {
+      "id": "j1b1x/replay/replay@0.0.1",
+      "document": "README.md",
+      "url": "https://img.shields.io/badge/pocketmine-5.0-informational"
+    },
+    {
+      "id": "j1b1x/asyncmedoo/asyncmedoo@0.0.1",
+      "document": "README.md",
+      "url": "https://img.shields.io/badge/php-8.0-informational"
+    },
+    {
+      "id": "j1b1x/asyncmedoo/asyncmedoo@0.0.1",
+      "document": "README.md",
+      "url": "https://img.shields.io/badge/pocketmine-5.0-informational"
+    },
+    {
+      "id": "j1b1x/mapvideo/mapvideo@0.0.1",
+      "document": "README.md",
+      "url": "https://img.shields.io/badge/php-8.1-informational"
+    },
+    {
+      "id": "j1b1x/mapvideo/mapvideo@0.0.1",
+      "document": "README.md",
+      "url": "https://img.shields.io/badge/pocketmine-5.0-informational"
+    },
+    {
+      "id": "j1b1x/mapvideo/mapvideo@0.0.1",
+      "document": "README.md",
+      "url": "https://github.com/J1b1x/MapVideo/assets/64813399/b2cb44cd-cdcf-4945-b8a8-f6584377d5a6"
+    },
+    {
+      "id": "rxduz/npcdialogue/npcdialogue@0.1.2",
+      "document": "README.md",
+      "url": "https://github.com/RxDuZ/NpcDialogue/blob/330d392c8c25c96c6d65a75d6d95200a3743e898/undefined"
+    },
+    {
+      "id": "rxduz/npcdialogue/npcdialogue@0.1.2",
+      "document": "README.md",
+      "url": "https://github.com/RxDuZ/NpcDialogue/blob/330d392c8c25c96c6d65a75d6d95200a3743e898/undefined"
+    },
+    {
+      "id": "rxduz/npcdialogue/npcdialogue@0.1.2",
+      "document": "README.md",
+      "url": "https://github.com/RxDuZ/NpcDialogue/blob/330d392c8c25c96c6d65a75d6d95200a3743e898/undefined"
+    },
+    {
+      "id": "rxduz/npcdialogue/npcdialogue@0.1.2",
+      "document": "README.md",
+      "url": "https://github.com/RxDuZ/NpcDialogue/blob/330d392c8c25c96c6d65a75d6d95200a3743e898/undefined"
+    },
+    {
+      "id": "xqwtxon/discordwebhookapi/discordwebhookapi@2.0.0",
+      "document": "README.md",
+      "url": "https://raw.githubusercontent.com/CortexPE/DiscordWebhookAPI/master/dwapi.png"
+    },
+    {
+      "id": "xqwtxon/discordwebhookapi/discordwebhookapi@2.0.0",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/CortexPE/DiscordWebhookAPI/~"
+    },
+    {
+      "id": "nurazliyt/invmenu/invmenu@4.1.1",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/shield.state/InvMenu"
+    },
+    {
+      "id": "noobype/citizenlibrary/citizenlibrary@2.2.7",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/jasonw4331/libpmquery/libpmquery"
+    },
+    {
+      "id": "clickedtran/libranks/libranks@1.0.0",
+      "document": "README.md",
+      "url": "https://i.ibb.co/JqVvkhk/facebook.png"
+    },
+    {
+      "id": "clickedtran/libranks/libranks@1.0.0",
+      "document": "README.md",
+      "url": "https://i.ibb.co/rm13YL6/discord.png"
+    },
+    {
+      "id": "thebigcrafter/libmcunicodechars/libmcunicodechars@1.1.0",
+      "document": "README.md",
+      "url": "https://github.com/thebigcrafter/libMCUnicodeChars/actions/workflows/phpstan.yml/badge.svg"
+    },
+    {
+      "id": "acm-pocketmine-mp/scorefactory/scorefactory@4.0.0",
+      "document": "README.md",
+      "url": "https://img.shields.io/badge/chat-on%20discord-7289da.svg"
+    },
+    {
+      "id": "acm-pocketmine-mp/scorefactory/scorefactory@4.0.0",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/Ifera/ScoreFactory/ScoreFactory"
+    },
+    {
+      "id": "acm-pocketmine-mp/scorefactory/scorefactory@4.0.0",
+      "document": "README.md",
+      "url": "https://img.shields.io/github/license/Ifera/ScoreFactory.svg"
+    },
+    {
+      "id": "acm-pocketmine-mp/updatenotifier/updatenotifier@4.0.0",
+      "document": "README.md",
+      "url": "https://img.shields.io/badge/chat-on%20discord-7289da.svg"
+    },
+    {
+      "id": "acm-pocketmine-mp/updatenotifier/updatenotifier@4.0.0",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/ifera-mc/UpdateNotifier/UpdateNotifier"
+    },
+    {
+      "id": "acm-pocketmine-mp/updatenotifier/updatenotifier@4.0.0",
+      "document": "README.md",
+      "url": "https://img.shields.io/github/license/Ifera/UpdateNotifier.svg"
+    },
+    {
+      "id": "aboshxm2/updatenotifier/updatenotifier@3.0.0",
+      "document": "README.md",
+      "url": "https://img.shields.io/badge/chat-on%20discord-7289da.svg"
+    },
+    {
+      "id": "aboshxm2/updatenotifier/updatenotifier@3.0.0",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/ifera-mc/UpdateNotifier/UpdateNotifier"
+    },
+    {
+      "id": "aboshxm2/updatenotifier/updatenotifier@3.0.0",
+      "document": "README.md",
+      "url": "https://img.shields.io/github/license/Ifera/UpdateNotifier.svg"
+    },
+    {
+      "id": "aboshxm2/configupdater/configupdater@2.0.0",
+      "document": "README.md",
+      "url": "https://img.shields.io/badge/chat-on%20discord-7289da.svg"
+    },
+    {
+      "id": "aboshxm2/configupdater/configupdater@2.0.0",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/ifera-mc/ConfigUpdater/ConfigUpdater"
+    },
+    {
+      "id": "aboshxm2/configupdater/configupdater@2.0.0",
+      "document": "README.md",
+      "url": "https://img.shields.io/github/license/ifera-mc/ConfigUpdater.svg"
+    },
+    {
+      "id": "jaxkdev/libskin/libskin@2.0.1",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/HimbeersaftLP/LibSkin/~"
+    },
+    {
+      "id": "jaxkdev/libskin/libskin@2.0.1",
+      "document": "README.md",
+      "url": "https://raw.githubusercontent.com/HimbeersaftLP/LibSkin/master/SkinPluginExample/icon.png"
+    },
+    {
+      "id": "jaxkdev/libskin/libskin@2.0.1",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/HimbeersaftLP/LibSkin/SkinThief"
+    },
+    {
+      "id": "jaxkdev/libskin/libskin@2.0.1",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/shield.state/SkinThief"
+    },
+    {
+      "id": "taylordevs/meet-bard/meet-bard@1.0.1",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/TaylorR47/Meet-Bard/Meet-Bard"
+    },
+    {
+      "id": "taylordevs/meet-bard/meet-bard@1.0.1",
+      "document": "README.md",
+      "url": "https://img.shields.io/discord/1100650029573738508.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2"
+    },
+    {
+      "id": "kenzeve/commando/commando@2.1.1",
+      "document": "README.md",
+      "url": "https://raw.githubusercontent.com/CortexPE/Commando/master/commando.png"
+    },
+    {
+      "id": "kenzeve/commando/commando@2.1.1",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/CortexPE/Commando/~"
+    },
+    {
+      "id": "pjz9n/advancedform/advancedform@0.0.3",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.badge/PJZ9n/AdvancedForm/AdvancedForm"
+    },
+    {
+      "id": "brokiem-pm-pl/invmenu/invmenu@4.4.1",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/shield.state/InvMenu"
+    },
+    {
+      "id": "dapigguy/libasynql/libasynql@3.3.1",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.badge/poggit/libasynql/libasynql"
+    },
+    {
+      "id": "agtharn/libtranslator/libtranslator@3.0.0",
+      "document": "README.md",
+      "url": "https://i.ibb.co/YfKHnVh/icon.png"
+    },
+    {
+      "id": "agtharn/libtranslator/libtranslator@3.0.0",
+      "document": "README.md",
+      "url": "https://img.shields.io/static/v1?label=%ED%95%9C%EA%B5%AD%EC%96%B4&message=%EB%A1%9C+%EC%9D%BD%EA%B8%B0&labelColor=success"
+    },
+    {
+      "id": "agtharn/libtranslator/libtranslator@3.0.0",
+      "document": "README.md",
+      "url": "https://views.whatilearened.today/views/github/PresentKim/libtranslator.svg"
+    },
+    {
+      "id": "agtharn/libtranslator/libtranslator@3.0.0",
+      "document": "README.md",
+      "url": "https://img.shields.io/github/stars/PresentKim/libtranslator?style=for-the-badge"
+    },
+    {
+      "id": "agtharn/libtranslator/libtranslator@3.0.0",
+      "document": "README.md",
+      "url": "https://img.shields.io/github/license/PresentKim/libtranslator.svg?style=for-the-badge"
+    },
+    {
+      "id": "agtharn/libtranslator/libtranslator@3.0.0",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/PresentKim/libtranslator/~?style=for-the-badge"
+    },
+    {
+      "id": "factionmaster/formapi/libformapi@4.0.0",
+      "document": "README.md",
+      "url": "https://discordapp.com/api/guilds/412491783486832640/embed.png"
+    },
+    {
+      "id": "skyplusofficial/libasynql/libasynql@3.3.1",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.badge/poggit/libasynql/libasynql"
+    },
+    {
+      "id": "xsuperr/libasynql/libasynql@3.3.2",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.badge/poggit/libasynql/libasynql"
+    },
+    {
+      "id": "pjz9n/validator-support-virion/validator@2.3.4",
+      "document": "README.md",
+      "url": "https://cloud.githubusercontent.com/assets/6495166/7207286/8b48105e-e538-11e4-9dfa-97c7fb2398aa.png"
+    },
+    {
+      "id": "pjz9n/validator-support-virion/validator@2.3.4",
+      "document": "README.md",
+      "url": "https://img.shields.io/travis/particle-php/Validator/master.svg"
+    },
+    {
+      "id": "pjz9n/validator-support-virion/validator@2.3.4",
+      "document": "README.md",
+      "url": "https://img.shields.io/packagist/v/particle/validator.svg"
+    },
+    {
+      "id": "pjz9n/validator-support-virion/validator@2.3.4",
+      "document": "README.md",
+      "url": "https://img.shields.io/packagist/dt/particle/validator.svg"
+    },
+    {
+      "id": "pjz9n/validator-support-virion/validator@2.3.4",
+      "document": "README.md",
+      "url": "https://img.shields.io/scrutinizer/g/particle-php/Validator.svg"
+    },
+    {
+      "id": "pjz9n/validator-support-virion/validator@2.3.4",
+      "document": "README.md",
+      "url": "https://img.shields.io/scrutinizer/coverage/g/particle-php/Validator/master.svg"
+    },
+    {
+      "id": "cosmoverse/antivpn/antivpn@2.1.0",
+      "document": "README.md",
+      "url": "https://antivpn.cosmicpe.me/images/logo.png"
+    },
+    {
+      "id": "uiplugins/libboolui/libboolui@1.0.0",
+      "document": "README.md",
+      "url": "http://hits.dwyl.io/UIPlugins/libBoolUI.svg"
+    },
+    {
+      "id": "jacknoordhuis/pocket-eloquent/pocket-eloquent@0.0.1",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/JackNoordhuis/Pocket-Eloquent/pocket-eloquent"
+    },
+    {
+      "id": "jacknoordhuis/inflector/inflector@1.3.0",
+      "document": "README.md",
+      "url": "https://travis-ci.org/doctrine/inflector.svg?branch=master"
+    },
+    {
+      "id": "jacknoordhuis/inflector/inflector@1.3.0",
+      "document": "README.md",
+      "url": "https://poggit.pmmp.io/ci.shield/JackNoordhuis/inflector/inflector"
+    }
+  ]
+}
