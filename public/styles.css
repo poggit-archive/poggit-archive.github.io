@@ -250,6 +250,7 @@ main { flex: 1; min-height: 0; }
 .leaderboard-table thead th[aria-sort="ascending"] button::after { margin-left: 5px; color: var(--muted); content: "↑"; }
 .leaderboard-table thead th[aria-sort="descending"] button::after { margin-left: 5px; color: var(--muted); content: "↓"; }
 .leaderboard-table tbody th { font-weight: 500; }
+.leaderboard-author-link:hover { text-decoration: underline; }
 .leaderboard-table .leaderboard-rank { width: 48px; color: var(--muted); text-align: left; white-space: nowrap; }
 .leaderboard-table tbody td:first-child { padding-left: 0; }
 .leaderboard-number { color: var(--muted); text-align: right; white-space: nowrap; }

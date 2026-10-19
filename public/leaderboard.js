@@ -116,8 +116,11 @@
     } else {
       for (const author of visible) {
         const row = element("tr");
-        const authorCell = element("th", "leaderboard-author", author.author);
+        const authorCell = element("th", "leaderboard-author");
         authorCell.scope = "row";
+        const authorLink = element("a", "leaderboard-author-link", author.author);
+        authorLink.href = `/?author=${encodeURIComponent(author.author)}`;
+        authorCell.append(authorLink);
         row.append(
           element("td", "leaderboard-rank", number.format(author.rank)),
           authorCell,
