@@ -75,11 +75,35 @@ Status checked on **19 October 2026**, for snapshot [`2026-10-14T20-07-25Z`](dat
 | --- | ---: | ---: |
 | Source ZIP in any preserved form | **0** | **6** |
 | PHAR, including a verified reconstruction | **0** | **6** |
+| Original Poggit PHAR only | **0** | **52** |
 | Git source at the original Poggit build revision | **19 projects / 23 releases** | **51 entries** |
 
 For plugins, **4,998 releases** have exact archived Git source. The remaining **23 releases** have separately preserved **Source from PHAR** ZIPs and original PHARs. Their distribution files are available, but the complete repository trees at their original build revisions remain missing.
 
-For virions, **214 entries** have source at the original Poggit build revision, **44** have Git source used for reconstruction with the original Poggit revision unconfirmed, and **1** has source recovered from a PHAR. The remaining **6** have neither a source ZIP nor an original/rebuilt PHAR. Thus **259/265 entries** have both a source ZIP and a PHAR; the **51** entries lacking confirmed original-build Git source comprise those 44 reconstructions, one PHAR-derived source and six unresolved entries. PHAR coverage comprises **213 originals and 46 reconstructions**.
+For virions, **214 entries** have source at the original Poggit build revision, **44** have Git source used for reconstruction with the original Poggit revision unconfirmed, and **1** has source recovered from a PHAR. The remaining **6** have neither a source ZIP nor an original/rebuilt PHAR. Thus **259/265 entries** have both a source ZIP and a PHAR; the **51** entries lacking confirmed original-build Git source comprise those 44 reconstructions, one PHAR-derived source and six unresolved entries. PHAR coverage comprises **213 originals and 46 reconstructions**. The **52 missing original PHARs** comprise those 46 reconstructed entries and the six unresolved entries.
+
+### Plugin descriptions, changelogs and images
+
+| Missing material | Current gap |
+| --- | --- |
+| Entire description document | **1 project / 1 release:** MailSystem 1.0.0, release **13728** |
+| Images within descriptions | **122 image contexts / 114 distinct capture URLs**, affecting **59 projects / 155 releases** |
+| Missing-image placements across release descriptions | **259 placements**; a context can occur in several releases or more than once in a document |
+| Latest captured release has missing description images | **47 projects** |
+| Genboy images within the remaining image gap | **33 contexts** |
+| Images within preserved changelogs | **0 unavailable image placements** |
+| Changelog document | **1,385 releases**: **1,372 first captured releases** and **13 later releases** |
+| Icon with a recorded URL but no local image | **0 of 3,906 recorded release icons** |
+
+The archive retains **5,020 nonempty descriptions** and **3,636 changelogs** for its 5,021 plugin releases. A missing changelog record does not establish that a changelog once existed and was lost; most such records are the first captured release of their project. MailSystem's original PHAR, manifest and metadata remain available despite its missing description.
+
+An image context is keyed by its source URL and, where applicable, the release revision. It is distinct from a plugin, a physical image file and a placement inside a document. All **155 releases** affected by the remaining 122 image contexts have missing images in their descriptions. Missing images use local placeholders. The media inventory also contains **758 reconstructed snapshot labels**; these preserve recorded metadata rather than original badge bytes.
+
+Separately, **1,115 releases** did not record an icon URL; **373 projects** have no recorded icon URL in any captured release. These use the default icon and are outside the 3,906 recorded-icon denominator. Their absent metadata is distinct from an image capture failure.
+
+Review records, developer replies and historical Poggit CI logs/UI were not preserved in the imported datasets. A preserved description can still refer to optional external videos, support services or other material outside this archive's coverage.
+
+Document counts come from [`plugin-details-report.json`](data/snapshots/2026-10-14T20-07-25Z/plugin-details-report.json) and the release records in [`plugin-details.json.gz`](data/snapshots/2026-10-14T20-07-25Z/plugin-details.json.gz). Image gaps, affected releases and original URLs are retained in [`media-mirror.json`](data/snapshots/2026-10-14T20-07-25Z/media-mirror.json), [`media-mirror-report.json`](data/snapshots/2026-10-14T20-07-25Z/media-mirror-report.json) and the [public preservation report](https://poggit-archive.github.io/preservation/).
 
 ### Plugins still missing exact Git source
 
@@ -123,6 +147,17 @@ The [plugin recovery audit](docs/source-recovery-2026-10-19.md) records the inve
 The [latest virion investigation](docs/virion-development-recovery-2026-10-19.md) checked development PHARs outside the approved release catalog, historical forks, Wayback and Software Heritage. It recovered additional SHA candidates and class-name metadata, but no source or PHAR for these six entries. Four exact-SHA Wayback URLs remain unverified after HTTP 429; they are retained as pending requests, not negative archive results.
 
 See [`virion-development-recovery.json`](data/snapshots/2026-10-14T20-07-25Z/virion-development-recovery.json) for evidence and pending URLs, [`virion-source-plan.json`](data/snapshots/2026-10-14T20-07-25Z/virion-source-plan.json) for revision candidates, and [`virion-source-downloads.json`](data/snapshots/2026-10-14T20-07-25Z/virion-source-downloads.json) for preserved source and revision scope. A metadata record, matching name or historical SHA candidate alone does not count as recovered source.
+
+### Recovery opportunities still open
+
+These gaps are the result of the documented searches, not proof that every possible copy has disappeared. The latest Chrome pass recovered another 12 image contexts after earlier connection failures and MIME filtering had hidden usable captures. Further recovery remains possible, but the existing evidence does not guarantee more results.
+
+- **Retry unresolved source-archive checks.** The [plugin source audit](data/snapshots/2026-10-14T20-07-25Z/source-recovery-deep-audit.json) retains **37 supplementary branch/alias Wayback URLs**, and the [virion development audit](data/snapshots/2026-10-14T20-07-25Z/virion-development-recovery.json) retains **four exact-SHA URLs** that were left unverified after rate limiting. The image-only Chrome recheck did not resolve these source requests. They remain pending rather than negative archive results.
+- **Inspect additional development distributions and server backups.** The prior virion investigation checked selected external packs, not every historical development PHAR. The recorded namespaces, class names and SHA candidates can identify a new matching copy if another distribution becomes available.
+- **Check further Git mirrors, histories and media variants.** A surviving fork or bundle may retain a requested commit; a renamed image, thumbnail, resized upload or alternate host may preserve missing media. The Genboy index and Festival pages checked so far did not expose the missing images.
+- **Obtain original backups from maintainers or archive operators.** A Git bundle, source ZIP, original PHAR, media backup or export of Poggit CI build/resource records could supply evidence unavailable in public searches. No outreach has been sent as part of these investigations.
+
+Any additional capture must retain its source, revision scope and checksum. A related revision, reconstructed distribution or replacement image remains labeled separately from an exact original.
 
 ## Poggit request and build limits
 
