@@ -49,7 +49,7 @@ const fileSize = record.phar ? `${number(record.phar.bytes)} bytes · ${(record.
     <main class="plugin-detail">
       <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Plugins</a><span aria-hidden="true">/</span><a href={project.path}>{project.latest.name}</a><span aria-hidden="true">/</span><span>{release.version}</span></nav>
       <section class="plugin-hero" aria-labelledby="plugin-title">
-        <img class="detail-icon" src={view.iconUrl} alt="" width="80" height="80" referrerpolicy="no-referrer">
+        <img class="detail-icon" src={view.iconUrl} alt="" title={view.iconTitle} width="80" height="80" referrerpolicy="no-referrer">
         <div class="hero-copy"><p class="eyebrow">PocketMine-MP plugin</p><h1 id="plugin-title">{release.name}</h1><p class="detail-author">by <a href={`https://github.com/${owner}`}>{owner}</a></p><p class="detail-tagline">{description}</p></div>
       </section>
       <div class="release-toolbar">

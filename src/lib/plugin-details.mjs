@@ -70,7 +70,7 @@ export function cleanDocument(document, release, catalog) {
         const original = imageUrl(attributes.src, release);
         if (!original) return { tagName, attribs: {} };
         const local = mediaFor(original, release, catalog);
-        return { tagName, attribs: { src: local?.path || "/assets/image-unavailable.svg", alt: attributes.alt || (local ? "Preserved image" : "Image not preserved"), title: local?.status === "reconstructed" ? "Snapshot label reconstructed from saved metadata; original badge unavailable." : local ? "Preserved copy" : "Original image was unavailable during preservation.", loading: "lazy", decoding: "async" } };
+        return { tagName, attribs: { src: local?.path || "/assets/image-unavailable.svg", alt: attributes.alt || (local ? "Preserved image" : "Image not preserved"), title: mediaTitle(local), loading: "lazy", decoding: "async" } };
       },
     },
     exclusiveFilter: (frame) => frame.tag === "img" && !frame.attribs.src,
@@ -151,6 +151,7 @@ export function releaseView(release, catalog) {
     descriptionUrl: description && rawDocumentUrl(description.filename), changelogUrl: changelog && rawDocumentUrl(changelog.filename),
     license, licenseText, rawDocumentUrl,
     iconUrl: catalog.media.resources[media.icon]?.path || (release.icon_url ? "/assets/image-unavailable.svg" : "/android-chrome-192x192.png"),
+    iconTitle: mediaTitle(catalog.media.resources[media.icon]),
     missingImages: images.filter((image) => !image?.path).length,
   };
 }
@@ -159,6 +160,15 @@ export function mediaFor(value, release, catalog) {
   const key = catalog?.media.by_release[String(release.id)]?.images[value];
   const resource = catalog?.media.resources[key];
   return ["preserved", "reconstructed"].includes(resource?.status) ? resource : null;
+}
+
+export function mediaTitle(resource) {
+  if (!resource || resource.status === "unavailable") return "Original image was unavailable during preservation.";
+  if (resource.status === "reconstructed") return "Snapshot label reconstructed from saved metadata; original badge unavailable.";
+  if (resource.method === "wayback_capture") return `Wayback Machine capture ${resource.wayback_timestamp}${resource.capture_scope === "same_repository_other_revision" ? " from another repository revision" : ""}; original release image identity is not independently verified.`;
+  if (resource.method === "verified_phar_entry" && resource.revision_verified === false) return "Image recovered from the original PHAR; identity at the upstream image URL is not independently verified.";
+  if (resource.revision_verified === false) return resource.note || "Preserved image from another revision; original release image identity is not verified.";
+  return "Preserved copy";
 }
 
 export function localReference(value, release, catalog) {

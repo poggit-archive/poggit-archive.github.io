@@ -11,6 +11,17 @@ const media = catalog.media;
 const snapshot = resolve("data/snapshots", catalog.pointer.snapshot_id);
 let recovered = {};
 try { recovered = JSON.parse(await readFile(resolve("archive/media-git/index.json"), "utf8")); } catch (error) { if (error.code !== "ENOENT") throw error; }
+if (process.argv.includes("--followup")) {
+  const priority = (row) => row.revision_verified === true ? 4 : row.method === "wayback_capture" ? 3 : row.method === "verified_phar_entry" ? 2 : 1;
+  for (const filename of ["index", "repository-index", "fork-index", "local-index", "history-index", "cdx-related-index"]) {
+    let rows = {};
+    try { rows = JSON.parse(await readFile(resolve(`archive/media-followup/${filename}.json`), "utf8")); } catch (error) { if (error.code !== "ENOENT") throw error; }
+    for (const [key, row] of Object.entries(rows)) {
+      if (!/^[a-f0-9]{64}\.image$/.test(row.file) || row.file !== `${row.sha256}.image`) throw new Error("Invalid recovery file identity");
+      if (!recovered[key] || priority(row) > priority(recovered[key])) recovered[key] = { ...row, recovery_directory: "archive/media-followup", recovery_batch: "missing-media-2026-10-19" };
+    }
+  }
+}
 const hash = (bytes) => createHash("sha256").update(bytes).digest("hex");
 async function save(data) {
   const display = await displayImage(data);
@@ -29,10 +40,14 @@ for (const resource of Object.values(media.resources)) {
     Object.assign(resource, await save(source));
   } else if (resource.status !== "preserved" && recovered[resource.key]) {
     const recovery = recovered[resource.key];
-    const data = await readFile(resolve("archive/media-git", recovery.file));
+    const data = await readFile(resolve(recovery.recovery_directory || "archive/media-git", recovery.file));
     if (hash(data) !== recovery.sha256) throw new Error("Recovered Git image checksum mismatch");
     try {
-      const { file, sha256, ...provenance } = recovery;
+      const { file, sha256, recovery_directory, ...provenance } = recovery;
+      if (provenance.method === "wayback_capture") {
+        const archivedUrl = provenance.archived_original_url || provenance.fetched_url.split(/\/web\/\d{14}id_\//)[1];
+        provenance.capture_scope = decodeURI(archivedUrl) === decodeURI(resource.capture_url) ? "original_url" : "same_repository_other_revision";
+      }
       Object.assign(resource, await save(data), { ...provenance, status: "preserved", captured_at: new Date().toISOString() });
     } catch (error) { (resource.attempts ||= []).push(`Verified ZIP image: ${error.message}`); }
   }

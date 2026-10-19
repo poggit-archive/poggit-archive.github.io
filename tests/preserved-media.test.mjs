@@ -4,7 +4,7 @@ import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import sanitizeHtml from "sanitize-html";
 import test from "node:test";
-import { getCatalog, cleanDocument, releaseView, localReference, versionPath } from "../src/lib/plugin-details.mjs";
+import { getCatalog, cleanDocument, releaseView, localReference, versionPath, mediaTitle } from "../src/lib/plugin-details.mjs";
 import { imageUrl, frozenImageUrl } from "../src/lib/media-urls.mjs";
 import { inertSvg, displayImage } from "../src/lib/preserved-image.mjs";
 
@@ -12,6 +12,29 @@ const catalog = getCatalog();
 const projects = [...catalog.projects.values()];
 const releases = projects.flatMap((project) => project.releases);
 const digest = (value) => createHash("sha256").update(value).digest("hex");
+
+test("Recovery evidence distinguishes release source revisions, archive captures and other revisions", () => {
+  const audit = JSON.parse(readFileSync(resolve("data/snapshots", catalog.pointer.snapshot_id, "media-recovery-audit.json"), "utf8"));
+  const records = Object.entries(audit.records);
+  assert.equal(records.length, audit.baseline_unavailable);
+  assert.equal(audit.recovered + audit.remaining, audit.baseline_unavailable);
+  for (const [key, row] of records) {
+    assert.equal(row.baseline_status, "unavailable");
+    assert.equal(row.status, catalog.media.resources[key].status);
+    if (row.status !== "preserved") continue;
+    assert.equal(row.sha256, catalog.media.resources[key].sha256);
+    if (row.revision_verified) {
+      assert.match(row.source_revision, /^[a-f0-9]{40}$/);
+      if (row.source_zip_sha256) assert.ok(Object.values(catalog.sources).some((source) => source.sha256 === row.source_zip_sha256 && source.commit === row.source_revision));
+    } else {
+      assert.match(mediaTitle(row), /not.*verified|unverified/i);
+    }
+    if (row.method === "wayback_capture") {
+      assert.match(row.wayback_timestamp, /^\d{14}$/);
+      assert.match(row.fetched_url, /^https:\/\/web\.archive\.org\/web\/\d{14}id_\//);
+    }
+  }
+});
 
 test("All preserved media, including original SVG text, are committed locally with matching checksums", () => {
   const seen = new Set();
