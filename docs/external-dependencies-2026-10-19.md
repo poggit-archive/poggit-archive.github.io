@@ -24,8 +24,8 @@ Poggit scripts/styles if opened as a web page.
 | Verification | Check media and download SHA-256, generated HTML/CSS resources, Memory sheet paths, local documents, navigation and download targets |
 
 The image inventory contains **6,643 contexts**, keyed by original URL and
-revision-sensitive capture URL: **5,751 preserved**, **758 reconstructed labels**
-and **134 unavailable**. They map to **2,169 distinct display files**. Icons were
+revision-sensitive capture URL: **5,763 preserved**, **758 reconstructed labels**
+and **122 unavailable**. They map to **2,180 distinct display files**. Icons were
 preserved for **all 3,906 releases that recorded an icon URL**; the other
 1,115 releases did not record an icon URL. Unavailable image contexts remain in
 the public manifest with their original addresses and capture failures.
@@ -51,7 +51,7 @@ not establish what that image displayed when an older release was submitted.
   have local copies.
 - Profiles, issue trackers, Discord, videos and donation services are optional
   outgoing references, not embedded widgets. Their live contents are not mirrored.
-- 134 image contexts could not be captured or recovered. They display a local
+- 122 image contexts could not be captured or recovered. They display a local
   placeholder instead of calling a dead or mutable host.
 - Historical Poggit CI logs/UI and reviews were not present in the release export.
 - Installing build tools still uses npm; CI and hosting still use GitHub. The
@@ -71,3 +71,5 @@ records for future investigation, rather than reasons to fetch upstream during
 every build or on visitors' browsers.
 
 The [missing-image follow-up](media-recovery-2026-10-19.md) documents 239 additional recovered contexts, including Wayback and surviving-fork captures. Images from other revisions retain explicit scope labels; a local image does not establish its identity at the original release revision.
+
+The [Chrome recheck](media-chrome-recheck-2026-10-19.md) recovered 12 more contexts. Two large original GIFs are stored in the project-owned artifact repository with verified SHA-256 and size; local animated WebP previews preserve frame counts and timing. Elevator is resized to 720px wide. These original GIF downloads are optional outgoing links; rendering the animations makes no external requests.

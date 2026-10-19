@@ -17,7 +17,12 @@ await mkdir(resolve("public/archive-files"), { recursive: true });
 await writeFile(resolve("public/archive-files/manifest.json"), JSON.stringify(catalog.files) + "\n");
 for (const resource of Object.values(catalog.media.resources)) {
   if (!["preserved", "reconstructed"].includes(resource.status)) continue;
+  if (resource.original_archive) {
+    const original = resource.original_archive;
+    if (!archiveUrl(original.url) || original.status !== "uploaded" || original.digest !== `sha256:${resource.original_sha256}` || original.sha256 !== resource.original_sha256 || original.bytes !== resource.original_bytes || resource.original_path) throw new Error("Unverified archived media original");
+  } else if (!resource.original_path && !resource.generated_svg_path) throw new Error("Preserved media original is missing");
   for (const [path, sha] of [[resource.path, resource.sha256], [resource.original_path || resource.generated_svg_path, resource.original_sha256 || resource.generated_svg_sha256]]) {
+    if (!path && resource.original_archive) continue;
     if (!/^\/archive-media\/[a-f0-9]{64}\.(png|jpg|gif|webp|avif|svg\.txt)$/.test(path)) throw new Error("Unsafe preserved media path");
     if (verified.has(path)) continue;
     if (digest(await readFile(resolve("public", path.slice(1)))) !== sha) throw new Error(`Preserved media checksum mismatch: ${path}`);

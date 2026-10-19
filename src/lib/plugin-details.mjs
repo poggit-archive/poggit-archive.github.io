@@ -165,7 +165,7 @@ export function mediaFor(value, release, catalog) {
 export function mediaTitle(resource) {
   if (!resource || resource.status === "unavailable") return "Original image was unavailable during preservation.";
   if (resource.status === "reconstructed") return "Snapshot label reconstructed from saved metadata; original badge unavailable.";
-  if (resource.method === "wayback_capture") return `Wayback Machine capture ${resource.wayback_timestamp}${resource.capture_scope === "same_repository_other_revision" ? " from another repository revision" : ""}; original release image identity is not independently verified.`;
+  if (resource.method === "wayback_capture") return `Wayback Machine capture ${resource.wayback_timestamp}${resource.capture_scope && resource.capture_scope !== "original_url" ? " from another source URL or revision" : ""}; original release image identity is not independently verified.${resource.original_archive ? " Local WebP animation preview; original GIF archived separately." : ""}`;
   if (resource.method === "verified_phar_entry" && resource.revision_verified === false) return "Image recovered from the original PHAR; identity at the upstream image URL is not independently verified.";
   if (resource.revision_verified === false) return resource.note || "Preserved image from another revision; original release image identity is not verified.";
   return "Preserved copy";

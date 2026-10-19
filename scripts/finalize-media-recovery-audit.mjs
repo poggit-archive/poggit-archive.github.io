@@ -17,6 +17,7 @@ const repositoryChecks = await json("archive/media-followup/repository-audit.jso
 const forkChecks = await json("archive/media-followup/fork-audit.json", []);
 const iconCdx = await json("archive/media-followup/icon-cdx.json", []);
 const browserCaptures = await json("archive/media-followup/browser-captures.json", []);
+const chromeRetry = await json(resolve(directory, "media-chrome-audit.json"), {});
 const records = {};
 for (const key of Object.keys(baseline)) {
   const resource = catalog.media.resources[key];
@@ -32,6 +33,7 @@ for (const key of Object.keys(baseline)) {
       forks: forkChecks.filter((row) => row.key === key),
       browser_captures: browserCaptures.filter((row) => row.key === key),
       related_repository_cdx: iconCdx.filter(([repo]) => resource.capture_url.toLowerCase().startsWith(`https://raw.githubusercontent.com/${repo.toLowerCase()}/`)),
+      chrome_retry: chromeRetry.url_checks?.find((row) => row.url === resource.capture_url) || (resource.capture_url.startsWith("https://genboy.net/") ? chromeRetry.genboy || null : null),
     },
   };
 }
@@ -53,6 +55,7 @@ const report = {
   source_zip_checks: (research.zip?.archives_checked || 0) + (research.local?.archives_checked || 0),
   repository_checks: repositoryChecks.filter((row) => !row.key),
   fork_checks: forkChecks.filter((row) => !row.key),
+  chrome_recheck: chromeRetry.baseline_unavailable ? { baseline_unavailable: chromeRetry.baseline_unavailable, recovered: chromeRetry.recovered, remaining: chromeRetry.remaining, evidence: "media-chrome-audit.json" } : null,
   records,
 };
 await writeFile(resolve(directory, "media-recovery-audit.json"), JSON.stringify(report) + "\n");

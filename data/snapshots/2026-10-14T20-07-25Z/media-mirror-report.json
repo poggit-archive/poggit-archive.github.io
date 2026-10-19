@@ -1,10 +1,10 @@
 {
   "image_contexts": 6643,
-  "preserved": 5751,
+  "preserved": 5763,
   "reconstructed": 758,
-  "unavailable": 134,
-  "unique_display_files": 2169,
-  "display_bytes": 398990206,
+  "unavailable": 122,
+  "unique_display_files": 2180,
+  "display_bytes": 429130909,
   "releases_with_preserved_icons": 3906,
   "release_icon_references": 3906
 }

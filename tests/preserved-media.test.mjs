@@ -4,6 +4,7 @@ import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import sanitizeHtml from "sanitize-html";
 import test from "node:test";
+import sharp from "sharp";
 import { getCatalog, cleanDocument, releaseView, localReference, versionPath, mediaTitle } from "../src/lib/plugin-details.mjs";
 import { imageUrl, frozenImageUrl } from "../src/lib/media-urls.mjs";
 import { inertSvg, displayImage } from "../src/lib/preserved-image.mjs";
@@ -36,7 +37,7 @@ test("Recovery evidence distinguishes release source revisions, archive captures
   }
 });
 
-test("All preserved media, including original SVG text, are committed locally with matching checksums", () => {
+test("Preserved display media and local SVG originals match checksums; remote originals have verified owned archive identities", () => {
   const seen = new Set();
   const counts = { preserved: 0, reconstructed: 0, unavailable: 0 };
   for (const resource of Object.values(catalog.media.resources)) {
@@ -52,7 +53,14 @@ test("All preserved media, including original SVG text, are committed locally wi
       assert.equal(resource.source_snapshot_id, catalog.pointer.snapshot_id);
       assert.equal(resource.original_sha256, undefined);
     }
+    if (resource.original_archive) {
+      assert.match(resource.original_archive.url, /^https:\/\/github\.com\/poggit-archive\/artifacts\/releases\/download\//);
+      assert.equal(resource.original_archive.digest, `sha256:${resource.original_sha256}`);
+      assert.equal(resource.original_archive.bytes, resource.original_bytes);
+      assert.equal(resource.original_path, undefined);
+    }
     for (const [path, sha] of [[resource.path, resource.sha256], [resource.original_path || resource.generated_svg_path, resource.original_sha256 || resource.generated_svg_sha256]]) {
+      if (!path && resource.original_archive) continue;
       if (seen.has(path)) continue;
       seen.add(path);
       assert.equal(digest(readFileSync(resolve("public", path.slice(1)))), sha, path);
@@ -60,6 +68,56 @@ test("All preserved media, including original SVG text, are committed locally wi
   }
   for (const [status, count] of Object.entries(counts)) assert.equal(count, catalog.mediaReport[status]);
   assert.equal(Object.keys(catalog.media.resources).length, catalog.mediaReport.image_contexts);
+});
+
+test("Chrome recheck accounts for every baseline context and keeps related copies distinct", () => {
+  const audit = JSON.parse(readFileSync(resolve("data/snapshots", catalog.pointer.snapshot_id, "media-chrome-audit.json"), "utf8"));
+  assert.equal(Object.keys(audit.records).length, audit.baseline_unavailable);
+  assert.equal(audit.recovered + audit.remaining, audit.baseline_unavailable);
+  assert.equal(audit.original_url_captures + audit.related_url_copies, audit.recovered);
+  assert.equal(audit.url_checks.length + audit.genboy.unique_image_urls, new Set(Object.values(audit.records).map((row) => row.capture_url)).size);
+  assert.equal(audit.genboy.recovered, 0);
+  assert.deepEqual(audit.genboy.matching_media_urls, []);
+  for (const check of audit.url_checks) {
+    assert.equal(check.lookup, "all_mime_types");
+    assert.ok(["no_successful_capture", "captures_found"].includes(check.result), check.result);
+    assert.ok(check.chrome_query_url.startsWith("https://web.archive.org/cdx/"));
+  }
+  for (const [key, row] of Object.entries(audit.records)) {
+    assert.equal(row.status, catalog.media.resources[key].status);
+    if (row.status === "preserved") {
+      assert.equal(row.revision_verified, false);
+      if (row.capture_scope === "original_url") assert.equal(row.archived_original_url, row.capture_url);
+      else {
+        assert.equal(row.capture_scope, "related_repository_url");
+        assert.notEqual(row.archived_original_url, row.capture_url);
+        assert.ok(audit.records[row.source_resource_key]);
+      }
+    } else assert.match(row.attempts.at(-1), /Chrome recheck/);
+  }
+});
+
+test("Inline SVG raster images remain visible without allowing network or nested SVG images", async () => {
+  const red = await sharp({ create: { width: 1, height: 1, channels: 4, background: "red" } }).png().toBuffer();
+  const svg = Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="3" height="1"><image x="0" y="0" width="1" height="1" href="data:image/png;base64,${red.toString("base64")}"/><image x="1" width="1" height="1" href="https://invalid.example/remote.png"/><image x="2" width="1" height="1" href="data:image/svg+xml;base64,${Buffer.from('<svg/>').toString('base64')}"/></svg>`);
+  const display = await displayImage(svg);
+  const pixels = await sharp(display.bytes).ensureAlpha().raw().toBuffer();
+  assert.deepEqual([...pixels.subarray(0, 4)], [255, 0, 0, 255]);
+  assert.equal(pixels[7], 0);
+  assert.equal(pixels[11], 0);
+});
+
+test("Local animated WebP copies retain original GIF frame counts, timing and verified archive identity", async () => {
+  for (const resource of Object.values(catalog.media.resources).filter((row) => row.original_archive)) {
+    const metadata = await sharp(resolve("public", resource.path.slice(1))).metadata();
+    const conversion = resource.display_transformation;
+    assert.equal(conversion.kind, "lossless_animated_webp");
+    assert.equal(metadata.pages, conversion.pages);
+    assert.equal(metadata.loop, conversion.loop);
+    assert.deepEqual(metadata.delay, conversion.delay);
+    assert.equal(conversion.verification.pixel_samples.length, 3);
+    assert.equal(resource.original_archive.status, "uploaded");
+  }
 });
 
 test("Every archived HTML document embeds only local images, including unavailable-image placeholders", () => {

@@ -251,7 +251,9 @@ def main():
             url, keys = item
             log = {'url': url}
             try:
-                endpoint = 'https://web.archive.org/cdx/search/cdx?' + urllib.parse.urlencode({'url': url, 'output': 'json', 'filter': ['statuscode:200', 'mimetype:image/.*'], 'collapse': 'digest', 'fl': 'timestamp,original,mimetype'}, doseq=True)
+                # Raw GitHub GIFs can be indexed as application/octet-stream.
+                # Verify the response bytes instead of filtering by image MIME.
+                endpoint = 'https://web.archive.org/cdx/search/cdx?' + urllib.parse.urlencode({'url': url, 'output': 'json', 'filter': 'statuscode:200', 'collapse': 'digest', 'fl': 'timestamp,original,mimetype'}, doseq=True)
                 data, _, _ = request(endpoint, 1000000)
                 captures = json.loads(data)
                 log['captures'] = captures
@@ -262,7 +264,7 @@ def main():
                     recovered = store(image, method='wayback_capture', fetched_url=final, wayback_timestamp=timestamp, archived_original_url=original, revision_verified=False, note='Image retrieved from an Internet Archive CDX record for the original URL; the capture timestamp is recorded separately from release metadata.')
                     log['result'] = 'image'
                     return keys, recovered, log
-                log['result'] = 'CDX returned no successful image capture'
+                log['result'] = 'CDX returned no successful capture'
             except Exception as error:
                 log['result'] = str(error)
             return keys, None, log
